@@ -1,0 +1,100 @@
+SS_calculation/Mean/Model/Gain1/Gain
+0
+F64
+1
+SS_calculation/Mean/Model/Gain/Gain
+8
+F64
+1
+SS_calculation/Mean1/Model/Gain1/Gain
+16
+F64
+1
+SS_calculation/Mean1/Model/Gain/Gain
+24
+F64
+1
+SS_calculation/Memory/X0
+48
+F64
+1
+SS_calculation/Mean/Model/Integ4/gainval
+152
+F64
+1
+SS_calculation/Mean/Model/Integ4/InitialCondition
+160
+F64
+1
+SS_calculation/Mean/Model/K1/Value
+168
+F64
+1
+SS_calculation/Mean/Model/Discrete Variable Time Delay/S-Function/MaxDelay
+192
+F64
+1
+SS_calculation/Mean/Model/Discrete Variable Time Delay/S-Function/Ts
+216
+F64
+1
+SS_calculation/Mean/Model/Discrete Variable Time Delay/S-Function/InitialValue
+240
+F64
+1
+SS_calculation/Mean/Model/Discrete Variable Time Delay/S-Function/DFT
+264
+F64
+1
+SS_calculation/Mean/Model/Unit Delay/InitialCondition
+272
+F64
+1
+SS_calculation/Mean/Model/K2/Value
+280
+F64
+1
+SS_calculation/Mean/Model/Unit Delay1/InitialCondition
+288
+F64
+1
+SS_calculation/Mean1/Model/Integ4/gainval
+296
+F64
+1
+SS_calculation/Mean1/Model/Integ4/InitialCondition
+304
+F64
+1
+SS_calculation/Mean1/Model/K1/Value
+312
+F64
+1
+SS_calculation/Mean1/Model/Discrete Variable Time Delay/S-Function/MaxDelay
+336
+F64
+1
+SS_calculation/Mean1/Model/Discrete Variable Time Delay/S-Function/Ts
+360
+F64
+1
+SS_calculation/Mean1/Model/Discrete Variable Time Delay/S-Function/InitialValue
+384
+F64
+1
+SS_calculation/Mean1/Model/Discrete Variable Time Delay/S-Function/DFT
+408
+F64
+1
+SS_calculation/Mean1/Model/Unit Delay/InitialCondition
+416
+F64
+1
+SS_calculation/Mean1/Model/K2/Value
+424
+F64
+1
+SS_calculation/Mean1/Model/Unit Delay1/InitialCondition
+432
+F64
+1

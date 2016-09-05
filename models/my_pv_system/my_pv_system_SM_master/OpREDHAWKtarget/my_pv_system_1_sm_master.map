@@ -1,0 +1,156 @@
+[ModelDataStructure]
+0=blkStateChange
+135=zCCacheNeedsReset
+27=derivCacheNeedsReset
+[Parameter]
+0=my_pv_system_1_sm_master/SM_master/Vs 14,400 V/Model/AC|Amplitude|Amplitude|Scalar|0|1|1|20364.675298172569|Sin|
+1=my_pv_system_1_sm_master/SM_master/Vs 14,400 V/Model/AC|Frequency|2*pi*Frequency|Scalar|0|1|1|50.0|Sin|
+10=my_pv_system_1_sm_master/SM_master/H-Bridge /Model/Tail/y=f(t)/Saturation1|UpperLimit|0.9|Scalar|0|1|1|0.9|Saturate|
+11=my_pv_system_1_sm_master/SM_master/H-Bridge /Model/Tail/y=f(t)/Saturation1|LowerLimit|0|Scalar|0|1|1|0.0|Saturate|
+12=my_pv_system_1_sm_master/SM_master/H-Bridge /Model/Tail/y=f(t)/Saturation2|UpperLimit|0.1|Scalar|0|1|1|0.1|Saturate|
+13=my_pv_system_1_sm_master/SM_master/H-Bridge /Model/Tail/y=f(t)/Saturation2|LowerLimit|0|Scalar|0|1|1|0.0|Saturate|
+14=my_pv_system_1_sm_master/SM_master/H-Bridge /Model/Tail/Unit Delay|InitialCondition|0|Scalar|0|1|1|0.0|UnitDelay|
+15=my_pv_system_1_sm_master/SM_master/H-Bridge /Model/Tail/Switch|Threshold|0.5|Scalar|0|1|1|0.5|Switch|
+16=my_pv_system_1_sm_master/SM_master/rtlab_send_subsystem/Subsystem4/Send4/S-Function|P1Size| |RVector|0|1|2|1.0|1.0|S-Function send_rt|
+17=my_pv_system_1_sm_master/SM_master/rtlab_send_subsystem/Subsystem4/Send4/S-Function|P1|dest|Scalar|0|1|1|3.0|S-Function send_rt|
+18=my_pv_system_1_sm_master/SM_master/rtlab_send_subsystem/Subsystem4/Send4/S-Function|P2Size| |RVector|0|1|2|1.0|1.0|S-Function send_rt|
+19=my_pv_system_1_sm_master/SM_master/rtlab_send_subsystem/Subsystem4/Send4/S-Function|P2|priority2|Scalar|0|1|1|0.0|S-Function send_rt|
+2=my_pv_system_1_sm_master/SM_master/Vs 14,400 V/Model/AC|Phase|Phase*pi/180|Scalar|0|1|1|0.0|Sin|
+20=my_pv_system_1_sm_master/SM_master/rtlab_send_subsystem/Subsystem4/Send4/S-Function|P3Size| |RVector|0|1|2|1.0|1.0|S-Function send_rt|
+21=my_pv_system_1_sm_master/SM_master/rtlab_send_subsystem/Subsystem4/Send4/S-Function|P3|st|Scalar|0|1|1|5.0E-5|S-Function send_rt|
+22=my_pv_system_1_sm_master/SM_master/rtlab_send_subsystem/Subsystem5/Send5/S-Function|P1Size| |RVector|0|1|2|1.0|1.0|S-Function send_rt|
+23=my_pv_system_1_sm_master/SM_master/rtlab_send_subsystem/Subsystem5/Send5/S-Function|P1|dest|Scalar|0|1|1|4.0|S-Function send_rt|
+24=my_pv_system_1_sm_master/SM_master/rtlab_send_subsystem/Subsystem5/Send5/S-Function|P2Size| |RVector|0|1|2|1.0|1.0|S-Function send_rt|
+25=my_pv_system_1_sm_master/SM_master/rtlab_send_subsystem/Subsystem5/Send5/S-Function|P2|priority2|Scalar|0|1|1|0.0|S-Function send_rt|
+26=my_pv_system_1_sm_master/SM_master/rtlab_send_subsystem/Subsystem5/Send5/S-Function|P3Size| |RVector|0|1|2|1.0|1.0|S-Function send_rt|
+27=my_pv_system_1_sm_master/SM_master/rtlab_send_subsystem/Subsystem5/Send5/S-Function|P3|st|Scalar|0|1|1|5.0E-5|S-Function send_rt|
+28=my_pv_system_1_sm_master/OpCCode_do_not_touch/S-Function1|Value|0|Scalar|0|1|1|0.0|Constant|
+29=my_pv_system_1_sm_master/OpCCode_do_not_touch/S-Function|X0|0|Scalar|0|1|1|0.0|Memory|
+3=my_pv_system_1_sm_master/SM_master/H-Bridge /Model/Tail/2|Value|double(Tf+Tt>0)|Scalar|0|1|1|0.0|Constant|
+30=my_pv_system_1_sm_master/SM_master/Memory|X0|0|Scalar|0|1|1|0.0|Memory|
+31=my_pv_system_1_sm_master/SM_master/Memory1|X0|0|Scalar|0|1|1|0.0|Memory|
+32=my_pv_system_1_sm_master/SM_master/rtlab_send_subsystem/Subsystem1/Send1/S-Function|P1Size| |RVector|0|1|2|1.0|1.0|S-Function OP_SEND|
+33=my_pv_system_1_sm_master/SM_master/rtlab_send_subsystem/Subsystem1/Send1/S-Function|P1|Acqu_group|Scalar|0|1|1|1.0|S-Function OP_SEND|
+34=my_pv_system_1_sm_master/SM_master/H-Bridge /Model/Unit Delay|InitialCondition|0|Scalar|0|1|1|0.0|UnitDelay|
+35=my_pv_system_1_sm_master/SM_master/zzzOpComm1/Receive_1/S-Function|P1Size| |RVector|0|1|2|1.0|1.0|S-Function recv_rt|
+36=my_pv_system_1_sm_master/SM_master/zzzOpComm1/Receive_1/S-Function|P1|src|Scalar|0|1|1|4.0|S-Function recv_rt|
+37=my_pv_system_1_sm_master/SM_master/zzzOpComm1/Receive_1/S-Function|P2Size| |RVector|0|1|2|1.0|1.0|S-Function recv_rt|
+38=my_pv_system_1_sm_master/SM_master/zzzOpComm1/Receive_1/S-Function|P2|Data_width|Scalar|0|1|1|4.0|S-Function recv_rt|
+39=my_pv_system_1_sm_master/SM_master/zzzOpComm1/Receive_1/S-Function|P3Size| |RVector|0|1|2|1.0|1.0|S-Function recv_rt|
+4=my_pv_system_1_sm_master/SM_master/H-Bridge /Model/Tail/2|Value|double(Tf+Tt>0)|Scalar|0|1|1|0.0|Constant|
+40=my_pv_system_1_sm_master/SM_master/zzzOpComm1/Receive_1/S-Function|P3|st|Scalar|0|1|1|5.0E-5|S-Function recv_rt|
+41=my_pv_system_1_sm_master/SM_master/Vs 14,400 V/Model/AC|Bias|0|Scalar|0|1|1|0.0|Sin|
+42=my_pv_system_1_sm_master/SM_master/Subsystem/Delay2|InitialCondition|0|Scalar|0|1|1|0.0|Delay|
+43=my_pv_system_1_sm_master/SM_master/Subsystem/Delay1|InitialCondition|0|Scalar|0|1|1|0.0|Delay|
+44=my_pv_system_1_sm_master/SM_master/CM2/do not delete this gain|Gain|1|Scalar|0|1|1|1.0|Gain|
+45=my_pv_system_1_sm_master/SM_master/OpComm/Receive/S-Function|P1Size| |RVector|0|1|2|1.0|1.0|S-Function RECV_Param|
+46=my_pv_system_1_sm_master/SM_master/OpComm/Receive/S-Function|P1|Data_width|Scalar|0|1|1|2.0|S-Function RECV_Param|
+47=my_pv_system_1_sm_master/SM_master/OpComm/Receive/S-Function|P2Size| |RVector|0|1|2|2.0|1.0|S-Function RECV_Param|
+48=my_pv_system_1_sm_master/SM_master/OpComm/Receive/S-Function|P2|InitialConditions|CVector|0|2|1|1000.0|25.0|S-Function RECV_Param|
+49=my_pv_system_1_sm_master/SM_master/Subsystem/Constant1|Value|8.55|Scalar|0|1|1|8.55|Constant|
+5=my_pv_system_1_sm_master/SM_master/H-Bridge /Model/Tail/itail|InitialOutput|0|Scalar|0|1|1|0.0|Outport|
+50=my_pv_system_1_sm_master/SM_master/Subsystem/Constant2|Value|37.4*14|Scalar|0|1|1|523.6|Constant|
+51=my_pv_system_1_sm_master/SM_master/Subsystem/Constant3|Value|0.06|Scalar|0|1|1|0.06|Constant|
+52=my_pv_system_1_sm_master/SM_master/Subsystem/Constant4|Value|60*14|Scalar|0|1|1|840.0|Constant|
+53=my_pv_system_1_sm_master/SM_master/Subsystem/Current Measurement/do not delete this gain|Gain|1|Scalar|0|1|1|1.0|Gain|
+54=my_pv_system_1_sm_master/SM_master/Subsystem/Delay|InitialCondition|37.4*14|Scalar|0|1|1|523.6|Delay|
+55=my_pv_system_1_sm_master/SM_master/Subsystem/Voltage Measurement/do not delete this gain|Gain|1|Scalar|0|1|1|1.0|Gain|
+56=my_pv_system_1_sm_master/SM_master/Subsystem/Voltage Measurement1/do not delete this gain|Gain|1|Scalar|0|1|1|1.0|Gain|
+57=my_pv_system_1_sm_master/SM_master/H-Bridge /Model/0 4|Value|0|Scalar|0|1|1|0.0|Constant|
+58=my_pv_system_1_sm_master/SM_master/H-Bridge /Model/1//Ron|Gain|1./Ron|Scalar|0|1|1|1000.0|Gain|
+59=my_pv_system_1_sm_master/SM_master/H-Bridge /Model/Switch|Threshold|0.5|Scalar|0|1|1|0.5|Switch|
+6=my_pv_system_1_sm_master/SM_master/H-Bridge /Model/Tail/1|Value|1|Scalar|0|1|1|1.0|Constant|
+60=my_pv_system_1_sm_master/SM_master/H-Bridge /Model/Saturation|UpperLimit|inf|Scalar|0|1|1|0.0|Saturate|
+61=my_pv_system_1_sm_master/SM_master/H-Bridge /Model/Saturation|LowerLimit|0|Scalar|0|1|1|0.0|Saturate|
+62=my_pv_system_1_sm_master/SM_master/H-Bridge /Model/Vf 1/Vf Devices & Clamping Diodes|Value|Vf_SwitchOn|CVector|0|4|1|0.0|0.0|0.0|0.0|Constant|
+63=my_pv_system_1_sm_master/SM_master/H-Bridge /Model/Vf 1/Vf Diodes|Value|Vf_DiodeOn|CVector|0|4|1|-0.0|-0.0|-0.0|-0.0|Constant|
+64=my_pv_system_1_sm_master/SM_master/Vdc /do not delete this gain|Gain|1|Scalar|0|1|1|1.0|Gain|
+65=my_pv_system_1_sm_master/SM_master/Vdc 1/do not delete this gain|Gain|1|Scalar|0|1|1|1.0|Gain|
+66=my_pv_system_1_sm_master/SM_master/GRID/CM2/do not delete this gain|Gain|1|Scalar|0|1|1|1.0|Gain|
+67=my_pv_system_1_sm_master/SM_master/GRID/Vm2/do not delete this gain|Gain|1|Scalar|0|1|1|1.0|Gain|
+68=my_pv_system_1_sm_master/SM_master/Subsystem/Delay2|DelayLength| |Scalar|7|1|1|1U|Delay|
+69=my_pv_system_1_sm_master/SM_master/Subsystem/Delay1|DelayLength| |Scalar|7|1|1|1U|Delay|
+7=my_pv_system_1_sm_master/SM_master/H-Bridge /Model/Tail/Discrete-Time Integrator|gainval| |Scalar|0|1|1|5.0E-5|DiscreteIntegrator|
+70=my_pv_system_1_sm_master/SM_master/Subsystem/Delay|DelayLength| |Scalar|7|1|1|1U|Delay|
+71=my_pv_system_1_sm_master/SM_master/H-Bridge /Model/2|Value|Tf_sps>0 _ Tt_sps>0|Scalar|8|1|1|false|Constant|
+8=my_pv_system_1_sm_master/SM_master/H-Bridge /Model/Tail/Discrete-Time Integrator|InitialCondition|0|Scalar|0|1|1|0.0|DiscreteIntegrator|
+9=my_pv_system_1_sm_master/SM_master/H-Bridge /Model/Tail/y=f(t)/Constant|Value|0.9|Scalar|0|1|1|0.9|Constant|
+nbParameters=72
+[Signal]
+0=my_pv_system_1_sm_master/OpCCode_do_not_touch/S-Function|NULL|0|1|1|1|S|Memory|0|
+1=my_pv_system_1_sm_master/OpCCode_do_not_touch/Sum|NULL|1|1|1|1|S|Sum|0|
+10=my_pv_system_1_sm_master/powergui/EquivalentModel1/State-Space|NULL|10|4|4|1|V|S-Function sfun_spssw_discc|0|
+11=my_pv_system_1_sm_master/SM_master/CM2/do not delete this gain|NULL|11|1|1|1|S|Gain|0|
+12=my_pv_system_1_sm_master/SM_master/OpComm/Receive/S-Function|NULL|12|2|2|1|V|S-Function RECV_Param|0|
+13=my_pv_system_1_sm_master/SM_master/Subsystem/Current Measurement/do not delete this gain|NULL|13|1|1|1|S|Gain|0|
+14=my_pv_system_1_sm_master/SM_master/Subsystem/Delay|NULL|14|1|1|1|S|Delay|0|
+15=my_pv_system_1_sm_master/SM_master/Subsystem/Voltage Measurement/do not delete this gain|NULL|15|1|1|1|S|Gain|0|
+16=my_pv_system_1_sm_master/SM_master/Subsystem/Voltage Measurement1/do not delete this gain|NULL|16|1|1|1|S|Gain|0|
+17=my_pv_system_1_sm_master/SM_master/H-Bridge /Model/1//Ron|NULL|17|4|4|1|V|Gain|0|
+18=my_pv_system_1_sm_master/SM_master/H-Bridge /Model/Data Type Conversion|NULL|18|4|4|1|V|DataTypeConversion|0|
+19=my_pv_system_1_sm_master/SM_master/H-Bridge /Model/Switch|NULL|19|4|4|1|V|Switch|0|
+2=my_pv_system_1_sm_master/SM_master/Memory|NULL|2|4|4|1|V|Memory|0|
+20=my_pv_system_1_sm_master/SM_master/H-Bridge /Model/Saturation|NULL|20|4|4|1|V|Saturate|0|
+21=my_pv_system_1_sm_master/SM_master/H-Bridge /Model/Vf 1/Switch|NULL|21|4|4|1|V|Switch|0|
+22=my_pv_system_1_sm_master/SM_master/Vdc /do not delete this gain|NULL|22|1|1|1|S|Gain|0|
+23=my_pv_system_1_sm_master/SM_master/Vdc 1/do not delete this gain|NULL|23|1|1|1|S|Gain|0|
+24=my_pv_system_1_sm_master/SM_master/GRID/CM2/do not delete this gain|NULL|24|1|1|1|S|Gain|0|
+25=my_pv_system_1_sm_master/SM_master/GRID/Vm2/do not delete this gain|NULL|25|1|1|1|S|Gain|0|
+26=my_pv_system_1_sm_master/SM_master/Subsystem/MATLAB Function|Iph|26|1|1|1|S|Stateflow|0|
+27=my_pv_system_1_sm_master/SM_master/Subsystem/MATLAB Function|Io|27|1|1|1|S|Stateflow|0|
+28=my_pv_system_1_sm_master/SM_master/H-Bridge /Model/Tail/2|NULL|28|1|1|1|S|Constant|0|
+29=my_pv_system_1_sm_master/SM_master/H-Bridge /Model/Tail/Discrete-Time Integrator|NULL|29|4|4|1|V|DiscreteIntegrator|0|
+3=my_pv_system_1_sm_master/SM_master/Memory1|NULL|3|3|3|1|V|Memory|0|
+30=my_pv_system_1_sm_master/SM_master/H-Bridge /Model/Tail/y=f(t)/-0.9//Tf|NULL|30|4|4|1|V|Gain|0|
+31=my_pv_system_1_sm_master/SM_master/H-Bridge /Model/Tail/y=f(t)/Add|NULL|31|4|4|1|V|Sum|0|
+32=my_pv_system_1_sm_master/SM_master/H-Bridge /Model/Tail/y=f(t)/Saturation1|NULL|32|4|4|1|V|Saturate|0|
+33=my_pv_system_1_sm_master/SM_master/H-Bridge /Model/Tail/y=f(t)/Add1|NULL|33|4|4|1|V|Sum|0|
+34=my_pv_system_1_sm_master/SM_master/H-Bridge /Model/Tail/y=f(t)/0.1//Tt|NULL|34|4|4|1|V|Gain|0|
+35=my_pv_system_1_sm_master/SM_master/H-Bridge /Model/Tail/y=f(t)/Saturation2|NULL|35|4|4|1|V|Saturate|0|
+36=my_pv_system_1_sm_master/SM_master/H-Bridge /Model/Tail/y=f(t)/Add2|NULL|36|4|4|1|V|Sum|0|
+37=my_pv_system_1_sm_master/SM_master/H-Bridge /Model/Tail/Unit Delay|NULL|37|4|4|1|V|UnitDelay|0|
+38=my_pv_system_1_sm_master/SM_master/H-Bridge /Model/Tail/Switch|NULL|38|4|4|1|V|Switch|0|
+39=my_pv_system_1_sm_master/SM_master/H-Bridge /Model/Tail/Product|NULL|39|4|4|1|V|Product|0|
+4=my_pv_system_1_sm_master/SM_master/H-Bridge /Model/Unit Delay|NULL|4|4|4|1|V|UnitDelay|0|
+5=my_pv_system_1_sm_master/SM_master/zzzOpComm1/Receive_1/S-Function|NULL|5|4|4|1|V|S-Function recv_rt|0|
+6=my_pv_system_1_sm_master/SM_master/Vs 14,400 V/Model/AC|NULL|6|1|1|1|S|Sin|0|
+7=my_pv_system_1_sm_master/SM_master/Subsystem/Delay2|I_Diode|7|1|1|1|S|Delay|0|
+8=my_pv_system_1_sm_master/SM_master/Subsystem/Delay1|NULL|8|1|1|1|S|Delay|0|
+9=my_pv_system_1_sm_master/powergui/EquivalentModel1/State-Space|NULL|9|12|12|1|V|S-Function sfun_spssw_discc|0|
+nbSignals=40
+[TimingStructure]
+100=sampleTimesArray
+103=sampleTimeTaskIDArray
+106=simTimeStep
+108=tStart
+109=stepSize
+110=stepSize0
+111=stepSize1
+113=stopRequestedFlag
+123=tArray
+137=timeOfLastOutput
+32=tFinal
+4=clockTick0
+5=clockTick1
+6=clockTickH0
+7=clockTickH1
+74=offsetTimesArray
+80=perTaskSampleHitsArray
+96=sampleHitArray
+[dwork]
+0=UnitDelay_DSTATE|real_T|
+1=Delay2_DSTATE|real_T|
+12=SFunction_IWORK|IWORK|
+13=StateSpace_IWORK|IWORK|
+14=SFunction_IWORK_k|IWORK|
+15=SFunction_IWORK_a|IWORK|
+16=DiscreteTimeIntegrator_PrevRese|int8_T|
+17=Tail_MODE|boolean_T|
+2=Delay1_DSTATE|real_T|
+3=StateSpace_DSTATE|real_T|
+4=Delay_DSTATE|real_T|
+5=DiscreteTimeIntegrator_DSTATE|real_T|
+6=UnitDelay_DSTATE_e|real_T|
+7=SFunction_PreviousInput|real_T|
+8=Memory_PreviousInput|real_T|
+9=Memory1_PreviousInput|real_T|

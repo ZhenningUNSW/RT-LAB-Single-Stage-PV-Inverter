@@ -1,0 +1,144 @@
+SM_master/Memory/port1
+16
+F64
+4
+SM_master/Memory1/port1
+48
+F64
+3
+SM_master/H-Bridge /Model/Unit Delay/port1
+72
+F64
+4
+SM_master/zzzOpComm1/Receive_1/S-Function/port1
+104
+F64
+4
+SM_master/Vs 14,400 V/Model/AC/port1
+136
+F64
+1
+SM_master/Subsystem/Delay2/port1
+144
+F64
+1
+SM_master/Subsystem/Delay1/port1
+152
+F64
+1
+SM_master/CM2/do not delete this gain/port1
+288
+F64
+1
+SM_master/OpComm/Receive/S-Function/port1
+296
+F64
+2
+SM_master/Subsystem/Current Measurement/do not delete this gain/port1
+312
+F64
+1
+SM_master/Subsystem/Delay/port1
+320
+F64
+1
+SM_master/Subsystem/Voltage Measurement/do not delete this gain/port1
+328
+F64
+1
+SM_master/Subsystem/Voltage Measurement1/do not delete this gain/port1
+336
+F64
+1
+SM_master/H-Bridge /Model/1__Ron/port1
+344
+F64
+4
+SM_master/H-Bridge /Model/Data Type Conversion/port1
+376
+F64
+4
+SM_master/H-Bridge /Model/Switch/port1
+408
+F64
+4
+SM_master/H-Bridge /Model/Saturation/port1
+440
+F64
+4
+SM_master/H-Bridge /Model/Vf 1/Switch/port1
+472
+F64
+4
+SM_master/Vdc /do not delete this gain/port1
+504
+F64
+1
+SM_master/Vdc 1/do not delete this gain/port1
+512
+F64
+1
+SM_master/GRID/CM2/do not delete this gain/port1
+520
+F64
+1
+SM_master/GRID/Vm2/do not delete this gain/port1
+528
+F64
+1
+SM_master/Subsystem/MATLAB Function/port1
+536
+F64
+1
+SM_master/Subsystem/MATLAB Function/port2
+544
+F64
+1
+SM_master/H-Bridge /Model/Tail/2/port1
+552
+F64
+1
+SM_master/H-Bridge /Model/Tail/Discrete-Time Integrator/port1
+560
+F64
+4
+SM_master/H-Bridge /Model/Tail/y=f(t)/-0.9__Tf/port1
+592
+F64
+4
+SM_master/H-Bridge /Model/Tail/y=f(t)/Add/port1
+624
+F64
+4
+SM_master/H-Bridge /Model/Tail/y=f(t)/Saturation1/port1
+656
+F64
+4
+SM_master/H-Bridge /Model/Tail/y=f(t)/Add1/port1
+688
+F64
+4
+SM_master/H-Bridge /Model/Tail/y=f(t)/0.1__Tt/port1
+720
+F64
+4
+SM_master/H-Bridge /Model/Tail/y=f(t)/Saturation2/port1
+752
+F64
+4
+SM_master/H-Bridge /Model/Tail/y=f(t)/Add2/port1
+784
+F64
+4
+SM_master/H-Bridge /Model/Tail/Unit Delay/port1
+816
+F64
+4
+SM_master/H-Bridge /Model/Tail/Switch/port1
+848
+F64
+4
+SM_master/H-Bridge /Model/Tail/Product/port1
+880
+F64
+4

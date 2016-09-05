@@ -1,0 +1,20 @@
+[S-Function files]
+my_pv_system_3_ss_calculation/SS_calculation/Mean/Model/Discrete Variable Time Delay/S-Function=sfun_discreteVariableDelay
+my_pv_system_3_ss_calculation/SS_calculation/Mean1/Model/Discrete Variable Time Delay/S-Function=sfun_discreteVariableDelay
+[S-Function list]
+my_pv_system_3_ss_calculation/SS_calculation/Mean/Model/Discrete Variable Time Delay/S-Function=1
+my_pv_system_3_ss_calculation/SS_calculation/Mean1/Model/Discrete Variable Time Delay/S-Function=1
+my_pv_system_3_ss_calculation/SS_calculation/rtlab_send_subsystem/Subsystem1/Send1/S-Function=0
+my_pv_system_3_ss_calculation/SS_calculation/zzzOpComm/Receive_1/S-Function=0
+[S-Function modules]
+my_pv_system_3_ss_calculation/SS_calculation/Mean/Model/Discrete Variable Time Delay/S-Function=''
+my_pv_system_3_ss_calculation/SS_calculation/Mean1/Model/Discrete Variable Time Delay/S-Function=''
+[S-Function parameters]
+my_pv_system_3_ss_calculation/SS_calculation/Mean/Model/Discrete Variable Time Delay/S-Function/P1=MaxDelay
+my_pv_system_3_ss_calculation/SS_calculation/Mean/Model/Discrete Variable Time Delay/S-Function/P2=Ts
+my_pv_system_3_ss_calculation/SS_calculation/Mean/Model/Discrete Variable Time Delay/S-Function/P3=InitialValue
+my_pv_system_3_ss_calculation/SS_calculation/Mean/Model/Discrete Variable Time Delay/S-Function/P4=DFT
+my_pv_system_3_ss_calculation/SS_calculation/Mean1/Model/Discrete Variable Time Delay/S-Function/P1=MaxDelay
+my_pv_system_3_ss_calculation/SS_calculation/Mean1/Model/Discrete Variable Time Delay/S-Function/P2=Ts
+my_pv_system_3_ss_calculation/SS_calculation/Mean1/Model/Discrete Variable Time Delay/S-Function/P3=InitialValue
+my_pv_system_3_ss_calculation/SS_calculation/Mean1/Model/Discrete Variable Time Delay/S-Function/P4=DFT

@@ -1,0 +1,184 @@
+SM_master/Vs 14,400 V/Model/AC/Amplitude
+0
+F64
+1
+SM_master/Vs 14,400 V/Model/AC/Frequency
+8
+F64
+1
+SM_master/Vs 14,400 V/Model/AC/Phase
+16
+F64
+1
+SM_master/H-Bridge /Model/Tail/2/Value
+24
+F64
+1
+SM_master/H-Bridge /Model/Tail/2/Value
+32
+F64
+1
+SM_master/H-Bridge /Model/Tail/itail/InitialOutput
+40
+F64
+1
+SM_master/H-Bridge /Model/Tail/1/Value
+48
+F64
+1
+SM_master/H-Bridge /Model/Tail/Discrete-Time Integrator/gainval
+56
+F64
+1
+SM_master/H-Bridge /Model/Tail/Discrete-Time Integrator/InitialCondition
+64
+F64
+1
+SM_master/H-Bridge /Model/Tail/y=f(t)/Constant/Value
+72
+F64
+1
+SM_master/H-Bridge /Model/Tail/y=f(t)/Saturation1/UpperLimit
+80
+F64
+1
+SM_master/H-Bridge /Model/Tail/y=f(t)/Saturation1/LowerLimit
+88
+F64
+1
+SM_master/H-Bridge /Model/Tail/y=f(t)/Saturation2/UpperLimit
+96
+F64
+1
+SM_master/H-Bridge /Model/Tail/y=f(t)/Saturation2/LowerLimit
+104
+F64
+1
+SM_master/H-Bridge /Model/Tail/Unit Delay/InitialCondition
+112
+F64
+1
+SM_master/H-Bridge /Model/Tail/Switch/Threshold
+120
+F64
+1
+SM_master/Memory/X0
+288
+F64
+1
+SM_master/Memory1/X0
+296
+F64
+1
+SM_master/H-Bridge /Model/Unit Delay/InitialCondition
+328
+F64
+1
+SM_master/Vs 14,400 V/Model/AC/Bias
+408
+F64
+1
+SM_master/Subsystem/Delay2/InitialCondition
+416
+F64
+1
+SM_master/Subsystem/Delay1/InitialCondition
+424
+F64
+1
+SM_master/CM2/do not delete this gain/Gain
+432
+F64
+1
+SM_master/Subsystem/Constant1/Value
+496
+F64
+1
+SM_master/Subsystem/Constant2/Value
+504
+F64
+1
+SM_master/Subsystem/Constant3/Value
+512
+F64
+1
+SM_master/Subsystem/Constant4/Value
+520
+F64
+1
+SM_master/Subsystem/Current Measurement/do not delete this gain/Gain
+528
+F64
+1
+SM_master/Subsystem/Delay/InitialCondition
+536
+F64
+1
+SM_master/Subsystem/Voltage Measurement/do not delete this gain/Gain
+544
+F64
+1
+SM_master/Subsystem/Voltage Measurement1/do not delete this gain/Gain
+552
+F64
+1
+SM_master/H-Bridge /Model/0 4/Value
+560
+F64
+1
+SM_master/H-Bridge /Model/1__Ron/Gain
+568
+F64
+1
+SM_master/H-Bridge /Model/Switch/Threshold
+576
+F64
+1
+SM_master/H-Bridge /Model/Saturation/UpperLimit
+584
+F64
+1
+SM_master/H-Bridge /Model/Saturation/LowerLimit
+592
+F64
+1
+SM_master/H-Bridge /Model/Vf 1/Vf Devices & Clamping Diodes/Value
+600
+F64
+4
+SM_master/H-Bridge /Model/Vf 1/Vf Diodes/Value
+632
+F64
+4
+SM_master/Vdc /do not delete this gain/Gain
+664
+F64
+1
+SM_master/Vdc 1/do not delete this gain/Gain
+672
+F64
+1
+SM_master/GRID/CM2/do not delete this gain/Gain
+680
+F64
+1
+SM_master/GRID/Vm2/do not delete this gain/Gain
+688
+F64
+1
+SM_master/Subsystem/Delay2/DelayLength
+696
+U32
+1
+SM_master/Subsystem/Delay1/DelayLength
+700
+U32
+1
+SM_master/Subsystem/Delay/DelayLength
+704
+U32
+1
+SM_master/H-Bridge /Model/2/Value
+708
+Boolean
+1

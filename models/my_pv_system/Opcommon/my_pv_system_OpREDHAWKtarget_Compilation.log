@@ -1,6 +1,6 @@
 
 -------------------- Starting compilation --------------------
-Start at : Monday, September 05, 2016, 12:37:15
+Start at : Monday, September 05, 2016, 22:13:49
 
 The current RT-LAB version is:  v11.0.7.582
 The current model is:           C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\my_pv_system\my_pv_system.mdl
@@ -11,25 +11,264 @@ Separating model because it has never been built
 Preparing original model for code separation and generation...
 The current Matlab version is:  v8.4 (32 Bit)
 
-??? Error using opvalidatemodel>RaiseNagsError (line 618)
-Invalid RT-LAB block diagram.
-
-Error in opvalidatemodel (line 92)
+Executing command before opening model : opal_internal_separate_nobreaklinks=1...
 
 
+opal_internal_separate_nobreaklinks =
 
-Error in opseparatemodel>ClearSubsystem (line 964)
+     1
+
+ 
+Diagnostics: 
+ 
+Reported by: RT-LAB
+Source     : my_pv_system
+Message    : Warning: Some Goto blocks have their tag visibility set to global. Check if all associated From blocks 
+             are in the same RT-LAB subsystem (SM or SS). Note: It is not possible to send a value from a SM subsystem 
+             to a SS subsystem with Goto/From blocks. The communication between Rt-Lab subsystems must be routed thru 
+             an OpComm block. 
+            
+
+RtlabInfo not loaded
+Separating RT-LAB model (number of RT subsystems = 3, console detected).
+Separating RT-LAB subsystem 'SM_master'.
+Repair completed.
+
+******IMPORTANT******
+Corrupted Stateflow charts are recovered and placed in a subsystem named
+'###Recovered Stateflow Charts###'. You can open it using
+   open_system('my_pv_system_1_sm_master/###Recovered Stateflow Charts###');
+WARNING: Saving subsystems with breaklinks option has been disabled. Subsystems real-time behavior may be different.
+WARNING: Saving subsystems with breaklinks option has been disabled. Subsystems real-time behavior may be different.
+Separating RT-LAB subsystem 'SC_user_interface'.
+WARNING: Saving subsystems with breaklinks option has been disabled. Subsystems real-time behavior may be different.
+WARNING: Saving subsystems with breaklinks option has been disabled. Subsystems real-time behavior may be different.
+Separating RT-LAB subsystem 'SS_calculation'.
+Repair completed.
+
+Repair completed.
+
+******IMPORTANT******
+Corrupted Stateflow charts are recovered and placed in a subsystem named
+'###Recovered Stateflow Charts###'. You can open it using
+   open_system('my_pv_system_3_ss_calculation/###Recovered Stateflow Charts###');
+WARNING: Saving subsystems with breaklinks option has been disabled. Subsystems real-time behavior may be different.
+WARNING: Saving subsystems with breaklinks option has been disabled. Subsystems real-time behavior may be different.
+Separating RT-LAB subsystem 'SS_controller'.
+Repair completed.
+
+******IMPORTANT******
+Corrupted Stateflow charts are recovered and placed in a subsystem named
+'###Recovered Stateflow Charts###'. You can open it using
+   open_system('my_pv_system_4_ss_controller/###Recovered Stateflow Charts###');
+WARNING: Saving subsystems with breaklinks option has been disabled. Subsystems real-time behavior may be different.
+WARNING: Saving subsystems with breaklinks option has been disabled. Subsystems real-time behavior may be different.
+
+Model preparation and separation duration : 00h:00m:47s
+-------------------- Completed successfully --------------------
+
+Generating model because setting 'platform' has changed.
+
+-------------------- Generating C code --------------------
+
+Using System Target File (TLC file) : rtlab_rtmodel.tlc...
+
+Using Template Makefile (TMF file) : rtlab_rtmodel.tmf...
+
+-------------------- Generating my_pv_system_1_sm_master C code --------------------
+Calling RTW Make Command make_rtw...
+### Starting build procedure for model: my_pv_system_1_sm_master
+### Generating code into build folder: C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\my_pv_system\my_pv_system_1_sm_master_rtlab
+[Warning: Matching "From" for "Goto" '<a href="matlab:open_and_hilite_hyperlink ('my_pv_system_1_sm_master/SM_master/Goto1','error')">my_pv_system_1_sm_master/SM_master/Goto1</a>' not found] 
+[Warning: Matching "From" for "Goto" '<a href="matlab:open_and_hilite_hyperlink ('my_pv_system_1_sm_master/SM_master/Goto4','error')">my_pv_system_1_sm_master/SM_master/Goto4</a>' not found] 
+
+### Invoking Target Language Compiler on my_pv_system_1_sm_master.rtw
+### Using System Target File: D:\OPAL-RT\RT-LAB\v11.0.7.582\Simulink\rtw\c\common\rtlab_rtmodel.tlc
+### Loading TLC function libraries
+......
+### Initial pass through model to cache user defined code
+.
+
+### Generating code for S Function : <S50>/State-Space
+
+....
+### Caching model source code
+...............................................................................
+..............
+### Writing source file my_pv_system_1_sm_master.c
+### Writing header file my_pv_system_1_sm_master_private.h
+.
+### Writing header file my_pv_system_1_sm_master.h
+### Writing header file my_pv_system_1_sm_master_types.h
+.
+### Writing header file rtwtypes.h
+### Writing header file builtin_typeid_types.h
+.
+### Writing header file multiword_types.h
+### Writing header file rtGetInf.h
+### Writing source file rtGetInf.c
+.
+### Writing header file rtGetNaN.h
+### Writing source file rtGetNaN.c
+.
+### Writing header file rt_nonfinite.h
+### Writing source file rt_nonfinite.c
+.
+### Writing header file rtmodel.h
+### Writing source file my_pv_system_1_sm_master_data.c
+.
+### Writing header file rt_defines.h
+### TLC code generation complete.
+.
+Warning:  Version[0] 8 Version[1] . Version[2] 7
+### Creating model mapping file my_pv_system_1_sm_master.map using map_r2014b.tlc
+...................### Creating project marker file: rtw_proj.tmw
+.
+### Processing Template Makefile: D:\OPAL-RT\RT-LAB\v11.0.7.582\Simulink\rtw\c\common\rtlab_rtmodel.tmf
+### Wrapping unrecognized make command (angle brackets added)
+###    <make>
+### in default batch file
+### Creating my_pv_system_1_sm_master.mk from D:\OPAL-RT\RT-LAB\v11.0.7.582\Simulink\rtw\c\common\rtlab_rtmodel.tmf
+### Successful completion of code generation for model: my_pv_system_1_sm_master
 
 
+my_pv_system_1_sm_master : Generating C code duration : 00h:00m:17s
 
-Error in opseparatemodel (line 77)
+-------------------- Generating my_pv_system_3_ss_calculation C code --------------------
+Calling RTW Make Command make_rtw...
+### Starting build procedure for model: my_pv_system_3_ss_calculation
+### Generating code into build folder: C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\my_pv_system\my_pv_system_3_ss_calculation_rtlab
+[Warning: Output port 4 of '<a href="matlab:open_and_hilite_hyperlink ('my_pv_system_3_ss_calculation/SS_calculation/Demux1','error')">my_pv_system_3_ss_calculation/SS_calculation/Demux1</a>' is not connected.] 
+
+### Invoking Target Language Compiler on my_pv_system_3_ss_calculation.rtw
+### Using System Target File: D:\OPAL-RT\RT-LAB\v11.0.7.582\Simulink\rtw\c\common\rtlab_rtmodel.tlc
+### Loading TLC function libraries
+.....
+### Initial pass through model to cache user defined code
+....
+### Caching model source code
+.....................................................................
+### Writing header file my_pv_system_3_ss_calculation.h
+### Writing header file my_pv_system_3_ss_calculation_types.h
+.
+### Writing header file rtwtypes.h
+### Writing header file builtin_typeid_types.h
+.
+### Writing header file multiword_types.h
+### Writing source file my_pv_system_3_ss_calculation.c
+.
+### Writing header file my_pv_system_3_ss_calculation_private.h
+### Writing header file rtmodel.h
+.
+### Writing source file my_pv_system_3_ss_calculation_data.c
+### Writing header file rt_nonfinite.h
+### Writing source file rt_nonfinite.c
+.
+### Writing header file rt_defines.h
+### Writing header file rtGetInf.h
+.
+### Writing source file rtGetInf.c
+### Writing header file rtGetNaN.h
+.
+### Writing source file rtGetNaN.c
+### TLC code generation complete.
+Warning:  Version[0] 8 Version[1] . Version[2] 7
+### Creating model mapping file my_pv_system_3_ss_calculation.map using map_r2014b.tlc
+.............### Creating project marker file: rtw_proj.tmw
+.
+### Processing Template Makefile: D:\OPAL-RT\RT-LAB\v11.0.7.582\Simulink\rtw\c\common\rtlab_rtmodel.tmf
+### Wrapping unrecognized make command (angle brackets added)
+###    <make>
+### in default batch file
+### Creating my_pv_system_3_ss_calculation.mk from D:\OPAL-RT\RT-LAB\v11.0.7.582\Simulink\rtw\c\common\rtlab_rtmodel.tmf
+### Successful completion of code generation for model: my_pv_system_3_ss_calculation
 
 
+my_pv_system_3_ss_calculation : Generating C code duration : 00h:00m:05s
 
-Error in opInitFunction>GenerateModel (line 343)
-        RtlabInfo = opseparatemodel(RtlabInfo, listSub, StandAloneModel);
+-------------------- Generating my_pv_system_4_ss_controller C code --------------------
+Calling RTW Make Command make_rtw...
+### Starting build procedure for model: my_pv_system_4_ss_controller
+### Generating code into build folder: C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\my_pv_system\my_pv_system_4_ss_controller_rtlab
+[Warning: Matching "From" for "Goto" '<a href="matlab:open_and_hilite_hyperlink ('my_pv_system_4_ss_controller/SS_controller/Inverter Control/PLL & Measurements/Goto1','error')">my_pv_system_4_ss_controller/SS_controller/Inverter Control/PLL & Measurements/Goto1</a>' not found] 
+[Warning: Matching "From" for "Goto" '<a href="matlab:open_and_hilite_hyperlink ('my_pv_system_4_ss_controller/SS_controller/Inverter Control/PLL & Measurements/Goto3','error')">my_pv_system_4_ss_controller/SS_controller/Inverter Control/PLL & Measurements/Goto3</a>' not found] 
+[Warning: Matching "From" for "Goto" '<a href="matlab:open_and_hilite_hyperlink ('my_pv_system_4_ss_controller/SS_controller/Inverter Control/U_ref Generation /Goto1','error')">my_pv_system_4_ss_controller/SS_controller/Inverter Control/U_ref Generation /Goto1</a>' not found] 
+[Warning: Matching "From" for "Goto" '<a href="matlab:open_and_hilite_hyperlink ('my_pv_system_4_ss_controller/SS_controller/Inverter Control/U_ref Generation /Goto2','error')">my_pv_system_4_ss_controller/SS_controller/Inverter Control/U_ref Generation /Goto2</a>' not found] 
+[Warning: Matching "From" for "Goto" '<a href="matlab:open_and_hilite_hyperlink ('my_pv_system_4_ss_controller/SS_controller/Inverter Control/VDC Regulator/Goto1','error')">my_pv_system_4_ss_controller/SS_controller/Inverter Control/VDC Regulator/Goto1</a>' not found] 
+[Warning: Matching "From" for "Goto" '<a href="matlab:open_and_hilite_hyperlink ('my_pv_system_4_ss_controller/SS_controller/Inverter Control/VDC Regulator/Goto5','error')">my_pv_system_4_ss_controller/SS_controller/Inverter Control/VDC Regulator/Goto5</a>' not found] 
+[Warning: Output port 1 of '<a href="matlab:open_and_hilite_hyperlink ('my_pv_system_4_ss_controller/SS_controller/Demux1','error')">my_pv_system_4_ss_controller/SS_controller/Demux1</a>' is not connected.] 
+[Warning: Output port 4 of '<a href="matlab:open_and_hilite_hyperlink ('my_pv_system_4_ss_controller/SS_controller/Demux1','error')">my_pv_system_4_ss_controller/SS_controller/Demux1</a>' is not connected.] 
 
-Error in opInitFunction (line 71)
-        GenerateModel(action, model, platform, preBuildCmd, postBuildCmd, listSub, StandAloneModel);
+### Invoking Target Language Compiler on my_pv_system_4_ss_controller.rtw
+### Using System Target File: D:\OPAL-RT\RT-LAB\v11.0.7.582\Simulink\rtw\c\common\rtlab_rtmodel.tlc
+### Loading TLC function libraries
+.....
+### Initial pass through model to cache user defined code
+...
+### TLC Scope icon is not supported by RT-LAB.
+........
+### Caching model source code
+...............................................................................
+...............................................................................
+...................................................
+### Writing source file my_pv_system_4_ss_controller.c
+.
+### Writing header file my_pv_system_4_ss_controller_private.h
+### Writing header file my_pv_system_4_ss_controller.h
+.
+### Writing header file my_pv_system_4_ss_controller_types.h
+### Writing header file rtwtypes.h
+.
+### Writing header file builtin_typeid_types.h
+### Writing header file multiword_types.h
+.
+### Writing header file rtGetInf.h
+### Writing source file rtGetInf.c
+.
+### Writing header file rtGetNaN.h
+### Writing source file rtGetNaN.c
+.
+### Writing header file rt_defines.h
+### Writing header file rt_nonfinite.h
+.
+### Writing source file rt_nonfinite.c
+### Writing header file rtmodel.h
+.
+### Writing source file my_pv_system_4_ss_controller_data.c
+### TLC code generation complete.
+...
+Warning:  Version[0] 8 Version[1] . Version[2] 7
+### Creating model mapping file my_pv_system_4_ss_controller.map using map_r2014b.tlc
+..................................................................### Creating project marker file: rtw_proj.tmw
+.
+### Processing Template Makefile: D:\OPAL-RT\RT-LAB\v11.0.7.582\Simulink\rtw\c\common\rtlab_rtmodel.tmf
+### Wrapping unrecognized make command (angle brackets added)
+###    <make>
+### in default batch file
+### Creating my_pv_system_4_ss_controller.mk from D:\OPAL-RT\RT-LAB\v11.0.7.582\Simulink\rtw\c\common\rtlab_rtmodel.tmf
+### Successful completion of code generation for model: my_pv_system_4_ss_controller
 
-??? Error preparing original model for code separation.
+
+my_pv_system_4_ss_controller : Generating C code duration : 00h:00m:13s
+Generating C code total duration : 00h:00m:35s
+
+-------------------- Completed successfully --------------------
+
+-------------------- Creating the parameter database --------------------
+Parameter(s) with more than 20 values will be disabled. 
+Use PARAM_VECTOR_SIZE_LIMIT environment variable to modify this limit.
+Parameter database creation duration: 00h:00m:00s
+-------------------- Parameter database created successfully --------------------
+
+-------------------- Creating the signals database --------------------
+Signal(s) with more than 20 values will be disabled.
+Use SIGNALS_VECTOR_SIZE_LIMIT environment variable to modify this limit.
+
+Signal database creation duration: 00h:00m:01s
+-------------------- Signal database created successfully --------------------
+Generating simulation data...
+Data generated in 00h:00m:00s
+
+Closing Matlab... OK.
+Updating dependencies... OK.
+Compiling model because setting 'platform' has changed.

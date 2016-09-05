@@ -1,0 +1,16 @@
+[AcqGr1]
+1=my_pv_system/SM_master/port1(1)|signal1(1)|1|1|4
+10=my_pv_system/SS_calculation/port1(3)|signal1(3)|3|3|3
+2=my_pv_system/SM_master/port1(2)|signal1(2)|1|2|4
+3=my_pv_system/SM_master/port1(3)|signal1(3)|1|3|4
+4=my_pv_system/SM_master/port1(4)|signal1(4)|1|4|4
+5=my_pv_system/SM_master/port2(1)|signal1(1)|2|1|3
+6=my_pv_system/SM_master/port2(2)|signal1(2)|2|2|3
+7=my_pv_system/SM_master/port2(3)|signal1(3)|2|3|3
+8=my_pv_system/SS_calculation/port1(1)|signal1(1)|3|1|3
+9=my_pv_system/SS_calculation/port1(2)|signal1(2)|3|2|3
+nbsignals=10
+[SM_master]
+1=my_pv_system/SC_user_interface/port1|signal1|1|1|1
+2=my_pv_system/SC_user_interface/port2|signal1|2|1|1
+nbsignals=2

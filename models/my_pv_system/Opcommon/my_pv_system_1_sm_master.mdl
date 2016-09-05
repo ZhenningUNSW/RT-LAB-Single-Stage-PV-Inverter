@@ -1,5 +1,5 @@
 Model {
-  Name			  "my_pv_system"
+  Name			  "my_pv_system_1_sm_master"
   Version		  8.4
   MdlSubVersion		  0
   SavedCharacterEncoding  "windows-1252"
@@ -7,7 +7,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.145"
+    ComputedModelVersion    "1.157"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -26,127 +26,105 @@ Model {
     $PropName		    "BdWindowsInfo"
     $ObjectID		    1
     $ClassName		    "Simulink.BDWindowsInfo"
-    Array {
-      Type		      "Simulink.WindowInfo"
-      Dimension		      3
+    Object {
+      $PropName		      "WindowsInfo"
+      $ObjectID		      2
+      $ClassName	      "Simulink.WindowInfo"
+      IsActive		      [1]
+      Location		      [-9.0, 0.0, 1932.0, 1048.0]
       Object {
-	$ObjectID		2
-	IsActive		[0]
-	Location		[-9.0, -9.0, 1938.0, 1048.0]
+	$PropName		"ModelBrowserInfo"
+	$ObjectID		3
+	$ClassName		"Simulink.ModelBrowserInfo"
+	Visible			[0]
+	DockPosition		"Left"
+	Width			[50]
+	Height			[50]
+	Filter			[9]
+      }
+      Object {
+	$PropName		"ExplorerBarInfo"
+	$ObjectID		4
+	$ClassName		"Simulink.ExplorerBarInfo"
+	Visible			[1]
+      }
+      Array {
+	Type			"Simulink.EditorInfo"
+	Dimension		8
 	Object {
-	  $PropName		  "ModelBrowserInfo"
-	  $ObjectID		  3
-	  $ClassName		  "Simulink.ModelBrowserInfo"
-	  Visible		  [0]
-	  DockPosition		  "Left"
-	  Width			  [50]
-	  Height		  [50]
-	  Filter		  [9]
-	}
-	Object {
-	  $PropName		  "ExplorerBarInfo"
-	  $ObjectID		  4
-	  $ClassName		  "Simulink.ExplorerBarInfo"
-	  Visible		  [1]
-	}
-	Object {
-	  $PropName		  "EditorsInfo"
 	  $ObjectID		  5
-	  $ClassName		  "Simulink.EditorInfo"
-	  IsActive		  [1]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "118"
-	  Extents		  [1886.0, 844.0]
-	  ZoomFactor		  [1.5]
-	  Offset		  [119.06740196078442, 128.74264705882365]
-	}
-      }
-      Object {
-	$ObjectID		6
-	IsActive		[0]
-	Location		[-9.0, 0.0, 1932.0, 1048.0]
-	Object {
-	  $PropName		  "ModelBrowserInfo"
-	  $ObjectID		  7
-	  $ClassName		  "Simulink.ModelBrowserInfo"
-	  Visible		  [0]
-	  DockPosition		  "Left"
-	  Width			  [50]
-	  Height		  [50]
-	  Filter		  [9]
-	}
-	Object {
-	  $PropName		  "ExplorerBarInfo"
-	  $ObjectID		  8
-	  $ClassName		  "Simulink.ExplorerBarInfo"
-	  Visible		  [1]
-	}
-	Array {
-	  Type			  "Simulink.EditorInfo"
-	  Dimension		  3
-	  Object {
-	    $ObjectID		    9
-	    IsActive		    [0]
-	    ViewObjType		    "SimulinkTopLevel"
-	    LoadSaveID		    "0"
-	    Extents		    [1886.0, 841.0]
-	    ZoomFactor		    [1.75]
-	    Offset		    [-14.885017421602811, -24.41811846689896]
-	  }
-	  Object {
-	    $ObjectID		    10
-	    IsActive		    [1]
-	    ViewObjType		    "SimulinkSubsys"
-	    LoadSaveID		    "2"
-	    Extents		    [1880.0, 841.0]
-	    ZoomFactor		    [1.8352144469525962]
-	    Offset		    [-12.139222017220133, 5.3714637146371462]
-	  }
-	  Object {
-	    $ObjectID		    11
-	    IsActive		    [0]
-	    ViewObjType		    "SimulinkSubsys"
-	    LoadSaveID		    "187"
-	    Extents		    [1880.0, 841.0]
-	    ZoomFactor		    [1.6067193675889331]
-	    Offset		    [-8.1602091020909029, 42.28659286592864]
-	  }
-	  PropName		  "EditorsInfo"
-	}
-      }
-      Object {
-	$ObjectID		12
-	IsActive		[1]
-	Location		[-9.0, 0.0, 1932.0, 1048.0]
-	Object {
-	  $PropName		  "ModelBrowserInfo"
-	  $ObjectID		  13
-	  $ClassName		  "Simulink.ModelBrowserInfo"
-	  Visible		  [0]
-	  DockPosition		  "Left"
-	  Width			  [50]
-	  Height		  [50]
-	  Filter		  [9]
-	}
-	Object {
-	  $PropName		  "ExplorerBarInfo"
-	  $ObjectID		  14
-	  $ClassName		  "Simulink.ExplorerBarInfo"
-	  Visible		  [1]
-	}
-	Object {
-	  $PropName		  "EditorsInfo"
-	  $ObjectID		  15
-	  $ClassName		  "Simulink.EditorInfo"
 	  IsActive		  [1]
 	  ViewObjType		  "SimulinkTopLevel"
 	  LoadSaveID		  "0"
-	  Extents		  [1880.0, 844.0]
-	  ZoomFactor		  [2.1045454545454545]
-	  Offset		  [6.3477321814254859, -33.5183585313175]
+	  Extents		  [1880.0, 841.0]
+	  ZoomFactor		  [1.75]
+	  Offset		  [-14.885017421602811, -24.41811846689896]
 	}
+	Object {
+	  $ObjectID		  6
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "27"
+	  Extents		  [1886.0, 841.0]
+	  ZoomFactor		  [1.58]
+	  Offset		  [0.0, 0.0]
+	}
+	Object {
+	  $ObjectID		  7
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "104:286"
+	  Extents		  [1886.0, 841.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [0.0, 0.0]
+	}
+	Object {
+	  $ObjectID		  8
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "14"
+	  Extents		  [1880.0, 841.0]
+	  ZoomFactor		  [1.0725593667546174]
+	  Offset		  [-93.658364083640976, 330.94710947109473]
+	}
+	Object {
+	  $ObjectID		  9
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "104"
+	  Extents		  [1886.0, 841.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [0.0, 0.0]
+	}
+	Object {
+	  $ObjectID		  10
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "104:286:582"
+	  Extents		  [1886.0, 841.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [-9.0, 0.0]
+	}
+	Object {
+	  $ObjectID		  11
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "172:34"
+	  Extents		  [1886.0, 841.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [0.0, 0.0]
+	}
+	Object {
+	  $ObjectID		  12
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "153"
+	  Extents		  [1880.0, 841.0]
+	  ZoomFactor		  [2.14]
+	  Offset		  [0.0, 8.5265128291212022e-14]
+	}
+	PropName		"EditorsInfo"
       }
-      PropName		      "WindowsInfo"
     }
   }
   PhysicalModelingChecksum "885943994"
@@ -158,9 +136,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "jiang"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Mon Sep 05 12:37:38 2016"
-  RTWModifiedTimeStamp	  394979819
-  ModelVersionFormat	  "1.%<AutoIncrement:145>"
+  LastModifiedDate	  "Mon Sep 05 22:14:39 2016"
+  RTWModifiedTimeStamp	  395014478
+  ModelVersionFormat	  "1.%<AutoIncrement:157>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -201,13 +179,13 @@ Model {
   TryForcingSFcnDF	  off
   Object {
     $PropName		    "DataLoggingOverride"
-    $ObjectID		    16
+    $ObjectID		    13
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
-    model_		    "my_pv_system"
+    model_		    "my_pv_system_1_sm_master"
     Array {
       Type		      "Cell"
       Dimension		      1
-      Cell		      "my_pv_system"
+      Cell		      "my_pv_system_1_sm_master"
       PropName		      "logAsSpecifiedByModels_"
     }
     Array {
@@ -266,18 +244,18 @@ Model {
     Type		    "Handle"
     Dimension		    1
     Simulink.ConfigSet {
-      $ObjectID		      17
+      $ObjectID		      14
       Version		      "1.14.3"
       Array {
 	Type			"Handle"
 	Dimension		9
 	Simulink.SolverCC {
-	  $ObjectID		  18
+	  $ObjectID		  15
 	  Version		  "1.14.3"
 	  StartTime		  "0.0"
 	  StopTime		  "inf"
 	  AbsTol		  "auto"
-	  FixedStep		  "1e-6"
+	  FixedStep		  "5e-05"
 	  InitialStep		  "auto"
 	  MaxNumMinSteps	  "-1"
 	  MaxOrder		  5
@@ -293,8 +271,8 @@ Model {
 	  SolverMode		  "Auto"
 	  EnableConcurrentExecution off
 	  ConcurrentTasks	  off
-	  Solver		  "ode4"
-	  SolverName		  "ode4"
+	  Solver		  "ode3"
+	  SolverName		  "ode3"
 	  SolverJacobianMethodControl "auto"
 	  ShapePreserveControl	  "DisableAll"
 	  ZeroCrossControl	  "UseLocalSettings"
@@ -307,7 +285,7 @@ Model {
 	  InsertRTBMode		  "Whenever possible"
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  19
+	  $ObjectID		  16
 	  Version		  "1.14.3"
 	  Decimation		  "1"
 	  ExternalInput		  "[t, u]"
@@ -340,7 +318,7 @@ Model {
 	  Refine		  "1"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  20
+	  $ObjectID		  17
 	  Version		  "1.14.3"
 	  Array {
 	    Type		    "Cell"
@@ -396,7 +374,7 @@ Model {
 	  ParallelExecutionInRapidAccelerator on
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  21
+	  $ObjectID		  18
 	  Version		  "1.14.3"
 	  RTPrefix		  "error"
 	  ConsistencyChecking	  "none"
@@ -487,7 +465,7 @@ Model {
 	  IntegerSaturationMsg	  "warning"
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  22
+	  $ObjectID		  19
 	  Version		  "1.14.3"
 	  ProdBitPerChar	  8
 	  ProdBitPerShort	  16
@@ -528,7 +506,7 @@ Model {
 	  ProdEqTarget		  off
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  23
+	  $ObjectID		  20
 	  Version		  "1.14.3"
 	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
 	  CheckModelReferenceTargetMessage "error"
@@ -543,7 +521,7 @@ Model {
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  24
+	  $ObjectID		  21
 	  Version		  "1.14.3"
 	  SFSimEnableDebug	  on
 	  SFSimOverflowDetection  on
@@ -559,7 +537,7 @@ Model {
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  25
+	  $ObjectID		  22
 	  Version		  "1.14.3"
 	  Array {
 	    Type		    "Cell"
@@ -569,7 +547,7 @@ Model {
 	  }
 	  SystemTargetFile	  "grt.tlc"
 	  TLCOptions		  ""
-	  GenCodeOnly		  off
+	  GenCodeOnly		  on
 	  MakeCommand		  "make_rtw"
 	  GenerateMakefile	  on
 	  PackageGeneratedCodeAndArtifacts off
@@ -632,7 +610,7 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      26
+	      $ObjectID		      23
 	      Version		      "1.14.3"
 	      Array {
 		Type			"Cell"
@@ -689,7 +667,7 @@ Model {
 	    }
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      27
+	      $ObjectID		      24
 	      Version		      "1.14.3"
 	      Array {
 		Type			"Cell"
@@ -771,7 +749,7 @@ Model {
 	  }
 	}
 	SSC.SimscapeCC {
-	  $ObjectID		  28
+	  $ObjectID		  25
 	  Version		  "1.0"
 	  Array {
 	    Type		    "Cell"
@@ -795,18 +773,18 @@ Model {
       }
       Name		      "Configuration"
       ExtraOptions	      "-aInitFltsAndDblsToZero=1 "
-      CurrentDlgPage	      "Code Generation/Report"
+      CurrentDlgPage	      "Solver"
       ConfigPrmDlgPosition     [ 380, 117, 1540, 884 ] 
     }
     PropName		    "ConfigurationSets"
   }
   Simulink.ConfigSet {
     $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    17
+    $ObjectID		    14
   }
   Object {
     $PropName		    "DataTransfer"
-    $ObjectID		    29
+    $ObjectID		    26
     $ClassName		    "Simulink.GlobalDataTransfer"
     DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
@@ -867,16 +845,6 @@ Model {
   }
   BlockParameterDefaults {
     Block {
-      BlockType		      ComplexToMagnitudeAngle
-      Output		      "Magnitude and angle"
-      SampleTime	      "-1"
-    }
-    Block {
-      BlockType		      ComplexToRealImag
-      Output		      "Real and imag"
-      SampleTime	      "-1"
-    }
-    Block {
       BlockType		      Constant
       Value		      "1"
       VectorParams1D	      on
@@ -919,21 +887,6 @@ Model {
       TagVisibility	      "local"
     }
     Block {
-      BlockType		      Gain
-      Gain		      "1"
-      Multiplication	      "Element-wise(K.*u)"
-      ParamMin		      "[]"
-      ParamMax		      "[]"
-      ParamDataTypeStr	      "Inherit: Same as input"
-      OutMin		      "[]"
-      OutMax		      "[]"
-      OutDataTypeStr	      "Inherit: Same as input"
-      LockScale		      off
-      RndMeth		      "Floor"
-      SaturateOnIntegerOverflow	on
-      SampleTime	      "-1"
-    }
-    Block {
       BlockType		      Goto
       GotoTag		      "A"
       IconDisplay	      "Tag"
@@ -956,30 +909,6 @@ Model {
       LatchByDelayingOutsideSignal off
       LatchInputForFeedbackSignals off
       Interpolate	      on
-    }
-    Block {
-      BlockType		      MagnitudeAngleToComplex
-      Input		      "Magnitude and angle"
-      ConstantPart	      "0"
-      ApproximationMethod     "None"
-      NumberOfIterations      "11"
-      ScaleReciprocalGainFactor	on
-      SampleTime	      "-1"
-    }
-    Block {
-      BlockType		      Math
-      Operator		      "exp"
-      OutputSignalType	      "auto"
-      SampleTime	      "-1"
-      OutMin		      "[]"
-      OutMax		      "[]"
-      OutDataTypeStr	      "Inherit: Same as first input"
-      LockScale		      off
-      RndMeth		      "Floor"
-      SaturateOnIntegerOverflow	on
-      IntermediateResultsDataTypeStr "Inherit: Inherit via internal rule"
-      AlgorithmType	      "Newton-Raphson"
-      Iterations	      "3"
     }
     Block {
       BlockType		      Memory
@@ -1019,101 +948,11 @@ Model {
       BlockType		      PMIOPort
     }
     Block {
-      BlockType		      Product
-      Inputs		      "2"
-      Multiplication	      "Element-wise(.*)"
-      CollapseMode	      "All dimensions"
-      CollapseDim	      "1"
-      InputSameDT	      on
-      OutMin		      "[]"
-      OutMax		      "[]"
-      OutDataTypeStr	      "Inherit: Same as first input"
-      LockScale		      off
-      RndMeth		      "Zero"
-      SaturateOnIntegerOverflow	on
-      SampleTime	      "-1"
-    }
-    Block {
-      BlockType		      RateLimiter
-      RisingSlewLimit	      "1"
-      FallingSlewLimit	      "-1"
-      SampleTimeMode	      "continuous"
-      InitialCondition	      "0"
-      LinearizeAsGain	      on
-    }
-    Block {
-      BlockType		      RateTransition
-      Integrity		      on
-      Deterministic	      on
-      X0		      "0"
-      OutPortSampleTimeOpt    "Specify"
-      OutPortSampleTimeMultiple	"1"
-      OutPortSampleTime	      "-1"
-    }
-    Block {
-      BlockType		      RealImagToComplex
-      Input		      "Real and imag"
-      ConstantPart	      "0"
-      SampleTime	      "-1"
-    }
-    Block {
       BlockType		      S-Function
       FunctionName	      "system"
       SFunctionModules	      "''"
       PortCounts	      "[]"
       SFunctionDeploymentMode off
-    }
-    Block {
-      BlockType		      Saturate
-      UpperLimitSource	      "Dialog"
-      UpperLimit	      "0.5"
-      LowerLimitSource	      "Dialog"
-      LowerLimit	      "-0.5"
-      LinearizeAsGain	      on
-      ZeroCross		      on
-      SampleTime	      "-1"
-      OutMin		      "[]"
-      OutMax		      "[]"
-      OutDataTypeStr	      "Inherit: Same as input"
-      LockScale		      off
-      RndMeth		      "Floor"
-    }
-    Block {
-      BlockType		      Scope
-      ModelBased	      off
-      TickLabels	      "OneTimeTick"
-      ZoomMode		      "on"
-      Grid		      "on"
-      TimeRange		      "auto"
-      YMin		      "-5"
-      YMax		      "5"
-      SaveToWorkspace	      off
-      SaveName		      "ScopeData"
-      DataFormat	      "Array"
-      LimitDataPoints	      on
-      MaxDataPoints	      "5000"
-      Decimation	      "1"
-      SampleInput	      off
-      SampleTime	      "-1"
-    }
-    Block {
-      BlockType		      Selector
-      NumberOfDimensions      "1"
-      IndexMode		      "One-based"
-      InputPortWidth	      "-1"
-      SampleTime	      "-1"
-      IndexOptions	      "Index vector (dialog)"
-      Indices		      "1"
-      OutputSizes	      "1"
-    }
-    Block {
-      BlockType		      Step
-      Time		      "1"
-      Before		      "0"
-      After		      "1"
-      SampleTime	      "-1"
-      VectorParams1D	      on
-      ZeroCross		      on
     }
     Block {
       BlockType		      SubSystem
@@ -1147,59 +986,11 @@ Model {
       ContentPreviewEnabled   off
     }
     Block {
-      BlockType		      Sum
-      IconShape		      "rectangular"
-      Inputs		      "++"
-      CollapseMode	      "All dimensions"
-      CollapseDim	      "1"
-      InputSameDT	      on
-      AccumDataTypeStr	      "Inherit: Inherit via internal rule"
-      OutMin		      "[]"
-      OutMax		      "[]"
-      OutDataTypeStr	      "Inherit: Same as first input"
-      LockScale		      off
-      RndMeth		      "Floor"
-      SaturateOnIntegerOverflow	on
-      SampleTime	      "-1"
-    }
-    Block {
-      BlockType		      Switch
-      Criteria		      "u2 >= Threshold"
-      Threshold		      "0"
-      InputSameDT	      on
-      OutMin		      "[]"
-      OutMax		      "[]"
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      LockScale		      off
-      RndMeth		      "Floor"
-      SaturateOnIntegerOverflow	on
-      ZeroCross		      on
-      SampleTime	      "-1"
-      AllowDiffInputSizes     off
-    }
-    Block {
       BlockType		      Terminator
-    }
-    Block {
-      BlockType		      Trigonometry
-      Operator		      "sin"
-      ApproximationMethod     "None"
-      NumberOfIterations      "11"
-      OutputSignalType	      "auto"
-      SampleTime	      "-1"
-    }
-    Block {
-      BlockType		      UnitDelay
-      InitialCondition	      "0"
-      InputProcessing	      "Inherited"
-      SampleTime	      "1"
-      StateMustResolveToSignalObject off
-      CodeGenStateStorageClass "Auto"
-      HasFrameUpgradeWarning  on
     }
   }
   System {
-    Name		    "my_pv_system"
+    Name		    "my_pv_system_1_sm_master"
     Location		    [-9, 0, 1923, 1048]
     Open		    off
     ModelBrowserVisibility  off
@@ -1212,9 +1003,9 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "210"
+    ZoomFactor		    "175"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "331"
+    SIDHighWatermark	    "421"
     Block {
       BlockType		      Reference
       Name		      "Logo"
@@ -1230,11 +1021,29 @@ Model {
       vide		      "[]"
     }
     Block {
+      BlockType		      Reference
+      Name		      "OpCCode_do_not_touch"
+      SID		      "347"
+      Ports		      []
+      Position		      [0, 0, 1, 1]
+      ZOrder		      4351
+      ForegroundColor	      "white"
+      ShowName		      off
+      LibraryVersion	      "1.294"
+      SourceBlock	      "opal_lib/Communication/OpCCode"
+      SourceType	      ""
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      GeneratePreprocessorConditionals off
+      ContentPreviewEnabled   off
+    }
+    Block {
       BlockType		      SubSystem
       Name		      "SM_master"
       SID		      "14"
-      Ports		      [3, 2]
-      Position		      [65, 106, 230, 174]
+      Ports		      []
+      Position		      [65, 110, 230, 180]
       ZOrder		      -3
       BackgroundColor	      "[0.380392, 0.741176, 0.988235]"
       RequestExecContextInheritance off
@@ -1252,36 +1061,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"108"
-	Block {
-	  BlockType		  Inport
-	  Name			  "sm_in1_irradiance"
-	  SID			  "15"
-	  Position		  [35, 428, 65, 442]
-	  ZOrder		  -1
-	  BackgroundColor	  "lightBlue"
-	  IconDisplay		  "Port number"
-	}
-	Block {
-	  BlockType		  Inport
-	  Name			  "sm_in4_temperature"
-	  SID			  "82"
-	  Position		  [35, 473, 65, 487]
-	  ZOrder		  4296
-	  BackgroundColor	  "lightBlue"
-	  Port			  "2"
-	  IconDisplay		  "Port number"
-	}
-	Block {
-	  BlockType		  Inport
-	  Name			  "sm_in1"
-	  SID			  "17"
-	  Position		  [35, 638, 65, 652]
-	  ZOrder		  -3
-	  BackgroundColor	  "lightBlue"
-	  Port			  "3"
-	  IconDisplay		  "Port number"
-	}
+	ZoomFactor		"107"
 	Block {
 	  BlockType		  Reference
 	  Name			  "75-kVA Transformer\n(120V/120V/14.4 kV)"
@@ -1745,7 +1525,7 @@ Model {
 	  ForwardVoltages	  "[ 0 0 ]"
 	  ForwardVoltage	  "0"
 	  GTOparameters		  "[ 10e-6 , 20e-6 ]"
-	  IGBTparameters	  "[ 1e-6 , 2e-6 ]*0"
+	  IGBTparameters	  "[ 50e-6 , 50e-6 ]*0"
 	  Measurements		  "None"
 	  Measurements_2	  "None"
 	  converterType		  "Rectifier"
@@ -1845,66 +1625,318 @@ Model {
 	  DisplayOption		  "bar"
 	}
 	Block {
-	  BlockType		  Reference
+	  BlockType		  SubSystem
 	  Name			  "OpComm"
-	  SID			  "21"
-	  Ports			  [2, 2]
+	  SID			  "364"
+	  Ports			  [0, 2]
 	  Position		  [125, 420, 185, 475]
-	  ZOrder		  -7
-	  LibraryVersion	  "1.471"
-	  FontSize		  10
-	  SourceBlock		  "rtlab/OpComm"
-	  SourceType		  "RT-LAB OpComm"
-	  ContentPreviewEnabled	  off
-	  nbport		  "2"
-	  groupe_acq		  "1"
-	  subsys_rate		  "0"
-	  st			  "0"
-	  Synchronization	  on
-	  Interpolation		  on
-	  Threshold		  "1.0"
-	  Missed_Data		  off
-	  Offset		  off
-	  Sim_Time		  off
-	  Samples		  off
-	  dynSigOut		  off
-	  from_console		  "1"
-	  warning_done		  off
-	  writeOpCommFile	  off
+	  ZOrder		  4349
+	  RequestExecContextInheritance	off
+	  Object {
+	    $PropName		    "MaskObject"
+	    $ObjectID		    27
+	    $ClassName		    "Simulink.Mask"
+	    Initialization	    "opmaskdisplay('maskdisplay_block',gcb,'disp(''OpComm'')');"
+	    Display		    "patch([0 0.5 0.7 0],[1 1 0 0],[0.7 0.75 0.9]);\npatch([1 0.53 0.73 1],[1 1 0 0],[1 0.8 0.7]);\nplot"
+	    "([0 0 1 1 0],[0 1 1 0 0]);\ndisp('OpComm')\n"
+	    IconFrame		    "off"
+	  }
 	  Port {
 	    PortNumber		    1
 	    Name		    "Irradiance(W/m^2)"
 	    RTWStorageClass	    "Auto"
 	    DataLoggingNameMode	    "SignalName"
 	  }
-	}
-	Block {
-	  BlockType		  Reference
-	  Name			  "OpComm1"
-	  SID			  "22"
-	  Ports			  [1, 1]
-	  Position		  [125, 607, 185, 683]
-	  ZOrder		  -8
-	  LibraryVersion	  "1.471"
-	  FontSize		  10
-	  SourceBlock		  "rtlab/OpComm"
-	  SourceType		  "RT-LAB OpComm"
-	  ContentPreviewEnabled	  off
-	  nbport		  "1"
-	  groupe_acq		  "1"
-	  subsys_rate		  "0"
-	  st			  "0"
-	  Synchronization	  on
-	  Interpolation		  on
-	  Threshold		  "1.0"
-	  Missed_Data		  off
-	  Offset		  off
-	  Sim_Time		  off
-	  Samples		  off
-	  dynSigOut		  off
-	  from_console		  "0"
-	  warning_done		  off
-	  writeOpCommFile	  off
+	  System {
+	    Name		    "OpComm"
+	    Location		    [10, 10, 350, 130]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Demux
+	      Name		      "Demux"
+	      SID		      "365"
+	      Ports		      [1, 2]
+	      Position		      [150, 14, 160, 121]
+	      ZOrder		      2
+	      Outputs		      "[1  1]"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Receive"
+	      SID		      "366"
+	      Ports		      [0, 1]
+	      Position		      [30, 25, 130, 105]
+	      ZOrder		      1
+	      LibraryVersion	      "1.294"
+	      SourceBlock	      "opal_lib/Communication/OpRecPar\nFromNT"
+	      SourceType	      "OPAL Receive Icon"
+	      ContentPreviewEnabled   off
+	      Data_width	      "2"
+	      InitialConditions	      "[1000;25]"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "busStruct"
+	      SID		      "367"
+	      Ports		      [2, 2]
+	      Position		      [200, 14, 240, 121]
+	      ZOrder		      3
+	      RequestExecContextInheritance off
+	      System {
+		Name			"busStruct"
+		Location		[100, 100, 600, 900]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "In1"
+		  SID			  "368"
+		  Position		  [50, 52, 80, 68]
+		  ZOrder		  1
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "In2"
+		  SID			  "369"
+		  Position		  [50, 102, 80, 118]
+		  ZOrder		  4
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "Sub1"
+		  SID			  "370"
+		  Ports			  [1, 1]
+		  Position		  [165, 42, 265, 78]
+		  ZOrder		  3
+		  RequestExecContextInheritance	off
+		  System {
+		    Name		    "Sub1"
+		    Location		    [100, 100, 600, 900]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "in"
+		    SID			    "371"
+		    Position		    [50, 52, 75, 68]
+		    ZOrder		    1
+		    IconDisplay		    "Port number"
+		    Port {
+		    PortNumber		    1
+		    Name		    "signal1"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		    }
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "out"
+		    SID			    "372"
+		    Position		    [150, 52, 175, 68]
+		    ZOrder		    2
+		    IconDisplay		    "Port number"
+		    }
+		    Line {
+		    Name		    "signal1"
+		    ZOrder		    1
+		    Labels		    [0, 0]
+		    SrcBlock		    "in"
+		    SrcPort		    1
+		    DstBlock		    "out"
+		    DstPort		    1
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "Sub2"
+		  SID			  "373"
+		  Ports			  [1, 1]
+		  Position		  [165, 92, 265, 128]
+		  ZOrder		  6
+		  RequestExecContextInheritance	off
+		  System {
+		    Name		    "Sub2"
+		    Location		    [100, 100, 600, 900]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "in"
+		    SID			    "374"
+		    Position		    [50, 52, 75, 68]
+		    ZOrder		    1
+		    IconDisplay		    "Port number"
+		    Port {
+		    PortNumber		    1
+		    Name		    "signal1"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		    }
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "out"
+		    SID			    "375"
+		    Position		    [150, 52, 175, 68]
+		    ZOrder		    2
+		    IconDisplay		    "Port number"
+		    }
+		    Line {
+		    Name		    "signal1"
+		    ZOrder		    1
+		    Labels		    [0, 0]
+		    SrcBlock		    "in"
+		    SrcPort		    1
+		    DstBlock		    "out"
+		    DstPort		    1
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  SID			  "376"
+		  Position		  [350, 52, 380, 68]
+		  ZOrder		  2
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out2"
+		  SID			  "377"
+		  Position		  [350, 102, 380, 118]
+		  ZOrder		  5
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "Sub2"
+		  SrcPort		  1
+		  DstBlock		  "Out2"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "In2"
+		  SrcPort		  1
+		  DstBlock		  "Sub2"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  3
+		  SrcBlock		  "Sub1"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  4
+		  SrcBlock		  "In1"
+		  SrcPort		  1
+		  DstBlock		  "Sub1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out1"
+	      SID		      "378"
+	      Position		      [300, 32, 330, 48]
+	      ZOrder		      4
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out2"
+	      SID		      "379"
+	      Position		      [300, 82, 330, 98]
+	      ZOrder		      5
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "Demux"
+	      SrcPort		      2
+	      DstBlock		      "busStruct"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      2
+	      SrcBlock		      "Demux"
+	      SrcPort		      1
+	      DstBlock		      "busStruct"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      3
+	      SrcBlock		      "busStruct"
+	      SrcPort		      2
+	      DstBlock		      "Out2"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      4
+	      SrcBlock		      "busStruct"
+	      SrcPort		      1
+	      DstBlock		      "Out1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      5
+	      SrcBlock		      "Receive"
+	      SrcPort		      1
+	      DstBlock		      "Demux"
+	      DstPort		      1
+	    }
+	  }
 	}
 	Block {
 	  BlockType		  Reference
@@ -2097,7 +2129,7 @@ Model {
 	  RequestExecContextInheritance	off
 	  System {
 	    Name		    "Subsystem"
-	    Location		    [-9, -9, 1929, 1039]
+	    Location		    [-9, 0, 1923, 1048]
 	    Open		    off
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
@@ -2109,7 +2141,7 @@ Model {
 	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
-	    ZoomFactor		    "150"
+	    ZoomFactor		    "80"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "irradiance"
@@ -2332,7 +2364,7 @@ Model {
 		  BlockType		  S-Function
 		  Name			  " SFunction "
 		  SID			  "128::16"
-		  Tag			  "Stateflow S-Function my_pv_system 1"
+		  Tag			  "Stateflow S-Function my_pv_system_1_sm_master 1"
 		  Ports			  [7, 3]
 		  Position		  [180, 110, 230, 270]
 		  ZOrder		  7
@@ -2985,109 +3017,582 @@ Model {
 	  LConnTagsString	  "a"
 	}
 	Block {
-	  BlockType		  Reference
-	  Name			  "powergui"
-	  SID			  "327"
+	  BlockType		  SubSystem
+	  Name			  "rtlab_send_subsystem"
+	  SID			  "400"
 	  Ports			  []
-	  Position		  [855, 775, 921, 814]
-	  ZOrder		  4348
-	  Priority		  "1"
-	  LibraryVersion	  "1.2446"
-	  UserDataPersistent	  on
-	  UserData		  "DataTag0"
-	  SourceBlock		  "powerlib/powergui"
-	  SourceType		  "PSB option menu block"
-	  ContentPreviewEnabled	  off
-	  SimulationMode	  "Discrete"
-	  SolverType		  "Tustin/Backward Euler (TBE)"
-	  SampleTime		  "1e-6"
-	  frequency		  "60"
-	  SPID			  off
-	  DisableSnubberDevices	  off
-	  DisableRonSwitches	  off
-	  DisableVfSwitches	  off
-	  SwTol			  "0"
-	  DisplayEquations	  off
-	  Interpol		  off
-	  methode		  off
-	  Ts			  "100"
-	  frequencyindice	  "50"
-	  Pbase			  "100e6"
-	  ErrMax		  "1e-4"
-	  Iterations		  "50"
-	  UnitsV		  "kV"
-	  UnitsW		  "MW"
-	  FunctionMessages	  off
-	  echomessages		  off
-	  HookPort		  off
-	  EnableUseOfTLC	  off
-	  x0status		  "blocks"
-	  RestoreLinks		  "warning"
-	  ResistiveCurrentMeasurement off
-	  Frange		  "[0:2:500]"
-	  Ylog			  off
-	  Xlog			  on
-	  ShowGrid		  off
-	  save			  off
-	  variable		  "ZData"
-	  structure		  "0"
-	  ZoomFFT		  off
-	  StartTime		  "0.0"
-	  cycles		  "1"
-	  DisplayStyle		  "1"
-	  fundamental		  "60"
-	  FreqAxis		  off
-	  MaxFrequency		  "1000"
-	  frequencyindicesteady	  "1"
-	  RmsSteady		  "1"
-	  display		  off
+	  Position		  [0, 0, 0, 0]
+	  ZOrder		  4352
+	  ShowName		  off
+	  Priority		  "-100"
+	  RequestExecContextInheritance	off
+	  Object {
+	    $PropName		    "MaskObject"
+	    $ObjectID		    28
+	    $ClassName		    "Simulink.Mask"
+	    Display		    "text(0,0,'');"
+	    IconFrame		    "off"
+	  }
+	  System {
+	    Name		    "rtlab_send_subsystem"
+	    Location		    [100, 100, 600, 900]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      From
+	      Name		      "From1_1"
+	      SID		      "404"
+	      Position		      [20, 42, 50, 58]
+	      ZOrder		      2
+	      GotoTag		      "rtlab_send_1"
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From1_2"
+	      SID		      "406"
+	      Position		      [20, 92, 50, 108]
+	      ZOrder		      3
+	      GotoTag		      "rtlab_send_2"
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From4_1"
+	      SID		      "411"
+	      Position		      [220, 42, 250, 58]
+	      ZOrder		      5
+	      GotoTag		      "rtlab_send_1"
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From5_1"
+	      SID		      "416"
+	      Position		      [420, 42, 450, 58]
+	      ZOrder		      7
+	      GotoTag		      "rtlab_send_1"
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From5_2"
+	      SID		      "418"
+	      Position		      [420, 92, 450, 108]
+	      ZOrder		      8
+	      GotoTag		      "rtlab_send_2"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Subsystem1"
+	      SID		      "401"
+	      Ports		      [2]
+	      Position		      [120, 25, 140, 125]
+	      ZOrder		      1
+	      RequestExecContextInheritance off
+	      System {
+		Name			"Subsystem1"
+		Location		[100, 100, 600, 900]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "In1"
+		  SID			  "405"
+		  Position		  [20, 42, 50, 58]
+		  ZOrder		  3
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "In2"
+		  SID			  "407"
+		  Position		  [20, 92, 50, 108]
+		  ZOrder		  4
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Mux
+		  Name			  "Mux"
+		  SID			  "402"
+		  Ports			  [2, 1]
+		  Position		  [100, 25, 105, 125]
+		  ZOrder		  1
+		  Inputs		  "2"
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "Send1"
+		  SID			  "403"
+		  Ports			  [1]
+		  Position		  [150, 65, 190, 85]
+		  ZOrder		  2
+		  LibraryVersion	  "1.294"
+		  SourceBlock		  "opal_lib/Communication/OpSendToNT"
+		  SourceType		  "OPAL Send Icon"
+		  ContentPreviewEnabled	  off
+		  Acqu_group		  "1"
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "Mux"
+		  SrcPort		  1
+		  DstBlock		  "Send1"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "In1"
+		  SrcPort		  1
+		  DstBlock		  "Mux"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  3
+		  SrcBlock		  "In2"
+		  SrcPort		  1
+		  DstBlock		  "Mux"
+		  DstPort		  2
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Subsystem4"
+	      SID		      "408"
+	      Ports		      [1]
+	      Position		      [320, 25, 340, 75]
+	      ZOrder		      4
+	      Priority		      "-200000"
+	      TreatAsAtomicUnit	      on
+	      RequestExecContextInheritance off
+	      System {
+		Name			"Subsystem4"
+		Location		[100, 100, 600, 900]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "In1"
+		  SID			  "412"
+		  Position		  [20, 42, 50, 58]
+		  ZOrder		  3
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Mux
+		  Name			  "Mux"
+		  SID			  "409"
+		  Ports			  [1, 1]
+		  Position		  [100, 25, 105, 75]
+		  ZOrder		  1
+		  Inputs		  "1"
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "Send4"
+		  SID			  "410"
+		  Ports			  [1]
+		  Position		  [150, 40, 190, 60]
+		  ZOrder		  2
+		  LibraryVersion	  "1.294"
+		  SourceBlock		  "opal_lib/Communication/OpSend_rt"
+		  SourceType		  "OPAL Send_rt Icon"
+		  ContentPreviewEnabled	  off
+		  dest			  "3"
+		  priority2		  "0"
+		  st			  "5e-05"
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "Mux"
+		  SrcPort		  1
+		  DstBlock		  "Send4"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "In1"
+		  SrcPort		  1
+		  DstBlock		  "Mux"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Subsystem5"
+	      SID		      "413"
+	      Ports		      [2]
+	      Position		      [520, 25, 540, 125]
+	      ZOrder		      6
+	      Priority		      "-200000"
+	      TreatAsAtomicUnit	      on
+	      RequestExecContextInheritance off
+	      System {
+		Name			"Subsystem5"
+		Location		[100, 100, 600, 900]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "In1"
+		  SID			  "417"
+		  Position		  [20, 42, 50, 58]
+		  ZOrder		  3
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "In2"
+		  SID			  "419"
+		  Position		  [20, 92, 50, 108]
+		  ZOrder		  4
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Mux
+		  Name			  "Mux"
+		  SID			  "414"
+		  Ports			  [2, 1]
+		  Position		  [100, 25, 105, 125]
+		  ZOrder		  1
+		  Inputs		  "2"
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "Send5"
+		  SID			  "415"
+		  Ports			  [1]
+		  Position		  [150, 65, 190, 85]
+		  ZOrder		  2
+		  LibraryVersion	  "1.294"
+		  SourceBlock		  "opal_lib/Communication/OpSend_rt"
+		  SourceType		  "OPAL Send_rt Icon"
+		  ContentPreviewEnabled	  off
+		  dest			  "4"
+		  priority2		  "0"
+		  st			  "5e-05"
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "Mux"
+		  SrcPort		  1
+		  DstBlock		  "Send5"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "In1"
+		  SrcPort		  1
+		  DstBlock		  "Mux"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  3
+		  SrcBlock		  "In2"
+		  SrcPort		  1
+		  DstBlock		  "Mux"
+		  DstPort		  2
+		}
+	      }
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "From1_1"
+	      SrcPort		      1
+	      DstBlock		      "Subsystem1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      2
+	      SrcBlock		      "From1_2"
+	      SrcPort		      1
+	      DstBlock		      "Subsystem1"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      3
+	      SrcBlock		      "From4_1"
+	      SrcPort		      1
+	      DstBlock		      "Subsystem4"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      4
+	      SrcBlock		      "From5_1"
+	      SrcPort		      1
+	      DstBlock		      "Subsystem5"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      5
+	      SrcBlock		      "From5_2"
+	      SrcPort		      1
+	      DstBlock		      "Subsystem5"
+	      DstPort		      2
+	    }
+	  }
 	}
 	Block {
-	  BlockType		  Outport
+	  BlockType		  Goto
 	  Name			  "sm_out1_s"
-	  SID			  "24"
+	  SID			  "420"
 	  Position		  [525, 783, 555, 797]
-	  ZOrder		  -10
-	  BackgroundColor	  "lightBlue"
-	  IconDisplay		  "Port number"
+	  ZOrder		  4353
+	  GotoTag		  "rtlab_send_1"
+	  TagVisibility		  "global"
 	}
 	Block {
-	  BlockType		  Outport
+	  BlockType		  Goto
 	  Name			  "sm_out1_s1"
-	  SID			  "161"
+	  SID			  "421"
 	  Position		  [535, 983, 565, 997]
-	  ZOrder		  4339
-	  BackgroundColor	  "lightBlue"
-	  Port			  "2"
-	  IconDisplay		  "Port number"
+	  ZOrder		  4354
+	  GotoTag		  "rtlab_send_2"
+	  TagVisibility		  "global"
 	}
-	Line {
-	  ZOrder		  1
-	  SrcBlock		  "sm_in1_irradiance"
-	  SrcPort		  1
-	  DstBlock		  "OpComm"
-	  DstPort		  1
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "zzzOpComm1"
+	  SID			  "390"
+	  Ports			  [0, 1]
+	  Position		  [125, 607, 185, 683]
+	  ZOrder		  4351
+	  RequestExecContextInheritance	off
+	  Object {
+	    $PropName		    "MaskObject"
+	    $ObjectID		    29
+	    $ClassName		    "Simulink.Mask"
+	    Initialization	    "opmaskdisplay('maskdisplay_block',gcb,'disp(''OpComm'')');"
+	    Display		    "patch([0 0.5 0.7 0],[1 1 0 0],[0.7 0.75 0.9]);\npatch([1 0.53 0.73 1],[1 1 0 0],[1 0.8 0.7]);\nplot"
+	    "([0 0 1 1 0],[0 1 1 0 0]);\ndisp('OpComm')\n"
+	    IconFrame		    "off"
+	  }
+	  System {
+	    Name		    "zzzOpComm1"
+	    Location		    [10, 10, 350, 130]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Demux
+	      Name		      "Demux_1"
+	      SID		      "391"
+	      Ports		      [1, 1]
+	      Position		      [150, 10, 160, 60]
+	      ZOrder		      2
+	      Outputs		      "[4]"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Receive_1"
+	      SID		      "392"
+	      Ports		      [0, 1]
+	      Position		      [30, 15, 60, 55]
+	      ZOrder		      1
+	      LibraryVersion	      "1.294"
+	      SourceBlock	      "opal_lib/Communication/OpRec_rt"
+	      SourceType	      "OPAL Recv_rt Icon"
+	      ContentPreviewEnabled   off
+	      src		      "4"
+	      Data_width	      "4"
+	      st		      "5e-05"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "busStruct"
+	      SID		      "393"
+	      Ports		      [1, 1]
+	      Position		      [200, 12, 240, 68]
+	      ZOrder		      3
+	      RequestExecContextInheritance off
+	      System {
+		Name			"busStruct"
+		Location		[100, 100, 600, 900]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "In1"
+		  SID			  "394"
+		  Position		  [50, 52, 80, 68]
+		  ZOrder		  1
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "Sub1"
+		  SID			  "395"
+		  Ports			  [1, 1]
+		  Position		  [165, 42, 265, 78]
+		  ZOrder		  3
+		  RequestExecContextInheritance	off
+		  System {
+		    Name		    "Sub1"
+		    Location		    [100, 100, 600, 900]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "in"
+		    SID			    "396"
+		    Position		    [50, 52, 75, 68]
+		    ZOrder		    1
+		    IconDisplay		    "Port number"
+		    Port {
+		    PortNumber		    1
+		    Name		    "signal1"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		    }
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "out"
+		    SID			    "397"
+		    Position		    [150, 52, 175, 68]
+		    ZOrder		    2
+		    IconDisplay		    "Port number"
+		    }
+		    Line {
+		    Name		    "signal1"
+		    ZOrder		    1
+		    Labels		    [0, 0]
+		    SrcBlock		    "in"
+		    SrcPort		    1
+		    DstBlock		    "out"
+		    DstPort		    1
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  SID			  "398"
+		  Position		  [350, 52, 380, 68]
+		  ZOrder		  2
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "Sub1"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "In1"
+		  SrcPort		  1
+		  DstBlock		  "Sub1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out1"
+	      SID		      "399"
+	      Position		      [300, 32, 330, 48]
+	      ZOrder		      4
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "Demux_1"
+	      SrcPort		      1
+	      DstBlock		      "busStruct"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      2
+	      SrcBlock		      "busStruct"
+	      SrcPort		      1
+	      DstBlock		      "Out1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      3
+	      SrcBlock		      "Receive_1"
+	      SrcPort		      1
+	      DstBlock		      "Demux_1"
+	      DstPort		      1
+	    }
+	  }
 	}
 	Line {
 	  ZOrder		  7
 	  SrcBlock		  "Memory"
 	  SrcPort		  1
 	  DstBlock		  "sm_out1_s"
-	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  44
-	  SrcBlock		  "sm_in4_temperature"
-	  SrcPort		  1
-	  Points		  [40, 0]
-	  DstBlock		  "OpComm"
-	  DstPort		  2
-	}
-	Line {
-	  ZOrder		  130
-	  SrcBlock		  "sm_in1"
-	  SrcPort		  1
-	  DstBlock		  "OpComm1"
 	  DstPort		  1
 	}
 	Line {
@@ -3475,7 +3980,7 @@ Model {
 	}
 	Line {
 	  ZOrder		  157
-	  SrcBlock		  "OpComm1"
+	  SrcBlock		  "zzzOpComm1"
 	  SrcPort		  1
 	  DstBlock		  "Goto3"
 	  DstPort		  1
@@ -3561,7 +4066,77 @@ Model {
 	}
       }
     }
+    Block {
+      BlockType		      Reference
+      Name		      "powergui"
+      SID		      "327"
+      Ports		      []
+      Position		      [455, 10, 521, 49]
+      ZOrder		      4349
+      LibraryVersion	      "1.2446"
+      UserDataPersistent      on
+      UserData		      "DataTag0"
+      SourceBlock	      "powerlib/powergui"
+      SourceType	      "PSB option menu block"
+      ContentPreviewEnabled   off
+      SimulationMode	      "Discrete"
+      SolverType	      "Tustin/Backward Euler (TBE)"
+      SampleTime	      "5e-05"
+      frequency		      "60"
+      SPID		      off
+      DisableSnubberDevices   off
+      DisableRonSwitches      off
+      DisableVfSwitches	      off
+      SwTol		      "0"
+      DisplayEquations	      off
+      Interpol		      off
+      methode		      off
+      Ts		      "100"
+      frequencyindice	      "50"
+      Pbase		      "100e6"
+      ErrMax		      "1e-4"
+      Iterations	      "50"
+      UnitsV		      "kV"
+      UnitsW		      "MW"
+      FunctionMessages	      off
+      echomessages	      off
+      HookPort		      off
+      EnableUseOfTLC	      off
+      x0status		      "blocks"
+      RestoreLinks	      "warning"
+      ResistiveCurrentMeasurement off
+      Frange		      "[0:2:500]"
+      Ylog		      off
+      Xlog		      on
+      ShowGrid		      off
+      save		      off
+      variable		      "ZData"
+      structure		      "0"
+      ZoomFFT		      off
+      StartTime		      "0.0"
+      cycles		      "1"
+      DisplayStyle	      "1"
+      fundamental	      "60"
+      FreqAxis		      off
+      MaxFrequency	      "1000"
+      frequencyindicesteady   "1"
+      RmsSteady		      "1"
+      display		      off
     }
+    Annotation {
+      SID		      "346"
+      Name		      "Automatically generated by RT-LAB during compilation."
+      Position		      [0, 0, 312, 17]
+      InternalMargins	      [0, 0, 0, 0]
+      FixedHeight	      off
+      FixedWidth	      off
+      HorizontalAlignment     "left"
+      VerticalAlignment	      "top"
+      BackgroundColor	      "yellow"
+      ZOrder		      -1
+      FontWeight	      "bold"
+    }
+  }
 }
 MatData {
   NumRecords		  1
@@ -3588,10 +4163,10 @@ MatData {
 Stateflow {
   machine {
     id			    1
-    name		    "my_pv_system"
+    name		    "my_pv_system_1_sm_master"
     created		    "29-Aug-2016 13:15:45"
     isLibrary		    0
-    firstTarget		    26
+    firstTarget		    16
     sfVersion		    80000001
   }
   chart {
@@ -3874,210 +4449,8 @@ Stateflow {
     machine		    1
     chart		    2
   }
-  chart {
-    id			    16
-    name		    "SS_controller/Inverter Control/MPPT Controller\nusing Perturbe \n& Observe technique\n "
-    windowPosition	    [313 52 230 645]
-    viewLimits		    [0 156.75 0 153.75]
-    screen		    [1 1 1280 1024 1.333333333333333]
-    treeNode		    [0 17 0 0]
-    firstTransition	    24
-    firstJunction	    23
-    viewObj		    16
-    machine		    1
-    ssIdHighWaterMark	    90
-    decomposition	    CLUSTER_CHART
-    type		    EML_CHART
-    firstData		    18
-    updateMethod	    DISCRETE
-    sampleTime		    "Ts_Control"
-    chartFileNumber	    2
-    disableImplicitCasting  1
-    eml {
-      name		      "PandO"
-    }
-  }
-  state {
-    id			    17
-    labelString		    "eML_blk_kernel()"
-    position		    [18 64.5 118 66]
-    fontSize		    12
-    chart		    16
-    treeNode		    [16 0 0 0]
-    superState		    SUBCHART
-    subviewer		    16
-    ssIdNumber		    1
-    type		    FUNC_STATE
-    decomposition	    CLUSTER_STATE
-    eml {
-      isEML		      1
-      script		      "function D  = PandO(Param, Enabled, V, I)\n\n% MPPT controller based on the Perturb & Observe alg"
-      "orithm.\n\n% D output = Reference for DC link voltage (Vdc_ref) \n%\n% Enabled input = 1 to enable the MPPT cont"
-      "roller\n% V input = PV array terminal voltage (V)\n% I input = PV array current (A)\n%\n% Param input:\nDinit = "
-      "Param(1);  %Initial value for Vdc_ref\nDmax = Param(2);   %Maximum value for Vdc_ref\nDmin = Param(3);   %Minimu"
-      "m value for Vdc_ref\ndeltaD = Param(4); %Increment value used to increase/decrease Vdc_ref\n%  \n\npersistent Vo"
-      "ld Pold Dold;\n\ndataType = 'double';\n\nif isempty(Vold)\n    Vold=0;\n    Pold=0;\n    Dold=Dinit;\nend\nP= V*"
-      "I;\ndV= V - Vold;\ndP= P - Pold;\n\nif dP ~= 0 & Enabled ~=0\n    if dP < 0\n        if dV < 0\n            D = "
-      "Dold + deltaD;\n        else\n            D = Dold - deltaD;\n        end\n    else\n        if dV < 0\n        "
-      "    D = Dold - deltaD;\n        else\n            D = Dold + deltaD;\n        end    \n    end\nelse D=Dold;\nen"
-      "d\n\nif D >= Dmax | D<= Dmin\n    D=Dold;\nend\n\nDold=D;\nVold=V;\nPold=P;\n\n\n"
-      editorLayout	      "100 M4x1[10 5 700 500]"
-      fimathString	      "fimath(...\n'RoundMode', 'floor',...\n'OverflowMode', 'wrap',...\n'ProductMode', 'KeepLSB', "
-      "'ProductWordLength', 32,...\n'SumMode', 'KeepLSB', 'SumWordLength', 32,...\n'CastBeforeSum', true)"
-      emlDefaultFimath	      FimathUserSpecified
-    }
-  }
-  data {
-    id			    18
-    ssIdNumber		    88
-    name		    "Param"
-    linkNode		    [16 0 19]
-    scope		    INPUT_DATA
-    machine		    1
-    props {
-      array {
-	size			"-1"
-      }
-      type {
-	method			SF_INHERITED_TYPE
-	primitive		SF_DOUBLE_TYPE
-	isSigned		1
-	wordLength		"16"
-      }
-      complexity	      SF_COMPLEX_INHERITED
-      frame		      SF_FRAME_INHERITED
-    }
-    dataType		    "Inherit: Same as Simulink"
-  }
-  data {
-    id			    19
-    ssIdNumber		    83
-    name		    "Enabled"
-    linkNode		    [16 18 20]
-    scope		    INPUT_DATA
-    machine		    1
-    props {
-      array {
-	size			"-1"
-      }
-      type {
-	method			SF_INHERITED_TYPE
-	primitive		SF_DOUBLE_TYPE
-	isSigned		1
-	wordLength		"16"
-      }
-      complexity	      SF_COMPLEX_INHERITED
-      frame		      SF_FRAME_INHERITED
-    }
-    dataType		    "Inherit: Same as Simulink"
-  }
-  data {
-    id			    20
-    ssIdNumber		    7
-    name		    "V"
-    linkNode		    [16 19 21]
-    scope		    INPUT_DATA
-    initFromWorkspace	    1
-    isNonTunable	    1
-    machine		    1
-    props {
-      array {
-	size			"-1"
-      }
-      type {
-	method			SF_INHERITED_TYPE
-	primitive		SF_DOUBLE_TYPE
-	isSigned		1
-	wordLength		"16"
-      }
-      complexity	      SF_COMPLEX_INHERITED
-      frame		      SF_FRAME_INHERITED
-    }
-    dataType		    "Inherit: Same as Simulink"
-  }
-  data {
-    id			    21
-    ssIdNumber		    12
-    name		    "I"
-    linkNode		    [16 20 22]
-    scope		    INPUT_DATA
-    machine		    1
-    props {
-      array {
-	size			"-1"
-      }
-      type {
-	method			SF_INHERITED_TYPE
-	primitive		SF_DOUBLE_TYPE
-	isSigned		1
-	wordLength		"16"
-      }
-      complexity	      SF_COMPLEX_INHERITED
-      frame		      SF_FRAME_INHERITED
-    }
-    dataType		    "Inherit: Same as Simulink"
-  }
-  data {
-    id			    22
-    ssIdNumber		    5
-    name		    "D"
-    linkNode		    [16 21 0]
-    scope		    OUTPUT_DATA
-    machine		    1
-    props {
-      array {
-	size			"-1"
-      }
-      type {
-	method			SF_INHERITED_TYPE
-	primitive		SF_DOUBLE_TYPE
-      }
-      complexity	      SF_COMPLEX_INHERITED
-      frame		      SF_FRAME_NO
-    }
-    dataType		    "Inherit: Same as Simulink"
-  }
-  junction {
-    id			    23
-    position		    [23.5747 49.5747 7]
-    chart		    16
-    linkNode		    [16 0 0]
-    subviewer		    16
-    ssIdNumber		    3
-    type		    CONNECTIVE_JUNCTION
-  }
-  transition {
-    id			    24
-    labelString		    "{eML_blk_kernel();}"
-    labelPosition	    [32.125 19.875 102.544 14.964]
-    fontSize		    12
-    src {
-      intersection	      [0 0 1 0 23.5747 14.625 0 0]
-    }
-    dst {
-      id		      23
-      intersection	      [1 0 -1 0 23.5747 42.5747 0 0]
-    }
-    midPoint		    [23.5747 24.9468]
-    chart		    16
-    linkNode		    [16 0 0]
-    dataLimits		    [21.175 25.975 14.625 42.575]
-    subviewer		    16
-    drawStyle		    SMART
-    slide {
-      sticky		      BOTH_STICK
-    }
-    executionOrder	    1
-    ssIdNumber		    2
-  }
-  instance {
-    id			    25
-    name		    "SS_controller/Inverter Control/MPPT Controller\nusing Perturbe \n& Observe technique\n "
-    machine		    1
-    chart		    16
-  }
   target {
-    id			    26
+    id			    16
     name		    "sfun"
     description		    "Default Simulink S-Function Target."
     machine		    1
