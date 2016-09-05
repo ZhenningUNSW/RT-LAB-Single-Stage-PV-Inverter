@@ -1,0 +1,35 @@
+
+-------------------- Starting compilation --------------------
+Start at : Monday, September 05, 2016, 12:37:15
+
+The current RT-LAB version is:  v11.0.7.582
+The current model is:           C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\my_pv_system\my_pv_system.mdl
+The current host platform is:   Windows
+The current target platform is: Redhat
+The current compiler is:        Automatic
+Separating model because it has never been built
+Preparing original model for code separation and generation...
+The current Matlab version is:  v8.4 (32 Bit)
+
+??? Error using opvalidatemodel>RaiseNagsError (line 618)
+Invalid RT-LAB block diagram.
+
+Error in opvalidatemodel (line 92)
+
+
+
+Error in opseparatemodel>ClearSubsystem (line 964)
+
+
+
+Error in opseparatemodel (line 77)
+
+
+
+Error in opInitFunction>GenerateModel (line 343)
+        RtlabInfo = opseparatemodel(RtlabInfo, listSub, StandAloneModel);
+
+Error in opInitFunction (line 71)
+        GenerateModel(action, model, platform, preBuildCmd, postBuildCmd, listSub, StandAloneModel);
+
+??? Error preparing original model for code separation.

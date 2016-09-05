@@ -1,0 +1,1317 @@
+2016-8-29 13h4m12s:Controller.cpp: ------- NEW CONTROLLER STARTED (pid 14080) ------
+2016-8-29 13h4m12s:Controller.cpp: new client: 9980
+2016-8-29 13h4m12s:CClient.cpp: Creating new client ID: 15284
+2016-8-29 13h4m12s:CClient.cpp: clientThread started with port:892
+2016-8-29 13h4m12s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-29 13h4m12s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 2992
+2016-8-29 13h4m12s:WinUtils.cpp: Could not get the subsystem list. Verify that the model has been compiled.
+2016-8-29 13h4m12s:CtrlException.cpp: CtrlException, code 3, msg Could not get the subsystem list. Verify that the model has been compiled.
+2016-8-29 13h4m12s:Controller.cpp: API function call : Get model list changes
+2016-8-29 13h4m12s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-29 13h4m12s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-29 13h4m12s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 13h4m12s:Controller.cpp: API function call : GetSystemControl (true)
+2016-8-29 13h4m12s:Controller.cpp: API function call : GetSystemControl (false)
+2016-8-29 13h4m12s:Controller.cpp: API function call : GetParamControl (true)
+2016-8-29 13h4m12s:Controller.cpp: API function call : GetParamControl (false)
+2016-8-29 13h4m12s:Controller.cpp: API function call : Take control of configurations, prio 127
+2016-8-29 13h4m12s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 13h4m12s:Controller.cpp: API function call : Release control of configurations
+2016-8-29 13h4m12s:Controller.cpp: API function call : Release control of the system
+2016-8-29 13h4m12s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 13h4m12s:Controller.cpp: new client: 9980
+2016-8-29 13h4m12s:CClient.cpp: Creating new client ID: 3828
+2016-8-29 13h4m12s:CClient.cpp: clientThread started with port:1028
+2016-8-29 13h4m12s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-29 13h4m12s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 2992
+2016-8-29 13h4m12s:Controller.cpp: API function call : Get model list changes
+2016-8-29 13h4m12s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-29 13h4m12s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-29 13h4m12s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 13h4m12s:Controller.cpp: API function call : NotificationConnect
+2016-8-29 13h4m12s:Controller.cpp: pClient->notifCommSock = 1180
+2016-8-29 13h4m12s:Controller.cpp: API function call : SetEventInterest
+2016-8-29 13h4m12s:Controller.cpp: API function call : GET_CHILDREN Project
+2016-8-29 13h4m12s:Controller.cpp: API function call : GET_CHILDREN Model List
+2016-8-29 13h4m12s:Controller.cpp: API function call : NotificationConnect
+2016-8-29 13h4m12s:Controller.cpp: pClient->notifCommSock = 1172
+2016-8-29 13h4m12s:Controller.cpp: API function call : SetEventInterest
+2016-8-29 13h4m12s:Controller.cpp: API function call : GET_CHILDREN Environment Variable List
+2016-8-29 13h4m12s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-29 13h4m12s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-29 13h4m12s:Controller.cpp: API function call : GET_CHILDREN Missing Model List
+2016-8-29 13h4m12s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 13h4m12s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-29 13h4m12s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-29 13h4m12s:Controller.cpp: API function call : RegisterDisplay
+2016-8-29 13h4m13s:Controller.cpp: new client: 9980
+2016-8-29 13h4m13s:CClient.cpp: Creating new client ID: 4864
+2016-8-29 13h4m13s:CClient.cpp: clientThread started with port:1204
+2016-8-29 13h4m13s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-29 13h4m13s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 2992
+2016-8-29 13h4m13s:Controller.cpp: API function call : Get model list changes
+2016-8-29 13h4m13s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-29 13h4m13s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-29 13h4m13s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 13h11m5s:Controller.cpp: new client: 9980
+2016-8-29 13h11m5s:CClient.cpp: Creating new client ID: 8916
+2016-8-29 13h11m5s:CClient.cpp: clientThread started with port:1196
+2016-8-29 13h11m5s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-29 13h11m5s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 2992
+2016-8-29 13h11m5s:Controller.cpp: API function call : Get model list changes
+2016-8-29 13h11m5s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-29 13h11m5s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-29 13h11m5s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 13h11m5s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-29 13h11m5s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-29 13h11m5s:Controller.cpp: API function call : GET_CHILDREN Model
+2016-8-29 13h11m5s:Controller.cpp: API function call : GET_CHILDREN Model Variable List
+2016-8-29 13h11m5s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-29 13h11m8s:Controller.cpp: new client: 9980
+2016-8-29 13h11m8s:CClient.cpp: Creating new client ID: 9080
+2016-8-29 13h11m8s:CClient.cpp: clientThread started with port:1276
+2016-8-29 13h11m8s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-29 13h11m8s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 2992
+2016-8-29 13h11m8s:Controller.cpp: API function call : Get model list changes
+2016-8-29 13h11m8s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-29 13h11m8s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-29 13h11m8s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 13h11m8s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-29 13h11m8s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-29 13h11m8s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 13h11m8s:Controller.cpp: API function call : COMMAND Matlab Handler Open
+2016-8-29 13h11m8s:Service Matlab/CommandsProcessor found
+2016-8-29 13h11m15s:MatlabHandler - createConnection: create connection has been successful with Matlab version = 8.4
+2016-8-29 13h11m15s:Controller.cpp: API function call : COMMAND Matlab Handler Execute
+2016-8-29 13h11m15s:Controller.cpp: API function call : COMMAND Matlab Handler Execute
+2016-8-29 13h11m20s:Controller.cpp: API function call : COMMAND Matlab Handler Load
+2016-8-29 13h11m20s:MatlabHandler - getConflictFlag: The model version is older than Matlab's (Model[UnknownMatlabVersion]<->Matlab[v8.4])
+2016-8-29 13h29m4s:Controller.cpp: API function call : SetEventInterest
+2016-8-29 13h29m4s:Controller.cpp: API function call : SetEventInterest
+2016-8-29 13h29m4s:Controller.cpp: Removing client: 8916
+2016-8-29 13h29m4s:CClient.cpp: clientThread exit.
+2016-8-29 13h29m4s:Controller.cpp: Removing client: 15284
+2016-8-29 13h29m4s:CClient.cpp: clientThread exit.
+2016-8-29 13h29m4s:Controller.cpp: Removing client: 3828
+2016-8-29 13h29m4s:Controller.cpp: Removing client: 4864
+2016-8-29 13h29m4s:CClient.cpp: clientThread exit.
+2016-8-29 13h29m4s:Controller.cpp: Removing client: 9080
+2016-8-29 13h29m4s:CClient.cpp: clientThread exit.
+2016-8-29 13h29m4s:Controller.cpp: terminateControlCommThread, call OpalInitializeSend with ipAddr 192.168.44.1:65028
+2016-8-29 13h29m4s:Controller.cpp: Entering CloseSubControllers
+2016-8-29 13h29m4s:Stopping OpalNode watchdog.
+2016-8-29 13h29m4s:CClient.cpp: clientThread exit.
+2016-8-29 13h30m15s:Controller.cpp: ------- NEW CONTROLLER STARTED (pid 7876) ------
+2016-8-29 13h30m15s:Controller.cpp: new client: 12700
+2016-8-29 13h30m15s:CClient.cpp: Creating new client ID: 2816
+2016-8-29 13h30m15s:CClient.cpp: clientThread started with port:684
+2016-8-29 13h30m15s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-29 13h30m15s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 11276
+2016-8-29 13h30m15s:WinUtils.cpp: Could not get the subsystem list. Verify that the model has been compiled.
+2016-8-29 13h30m15s:CtrlException.cpp: CtrlException, code 3, msg Could not get the subsystem list. Verify that the model has been compiled.
+2016-8-29 13h30m15s:Controller.cpp: API function call : Get model list changes
+2016-8-29 13h30m15s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-29 13h30m15s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-29 13h30m15s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 13h30m15s:Controller.cpp: API function call : GetSystemControl (true)
+2016-8-29 13h30m15s:Controller.cpp: API function call : GetSystemControl (false)
+2016-8-29 13h30m15s:Controller.cpp: API function call : GetParamControl (true)
+2016-8-29 13h30m15s:Controller.cpp: API function call : GetParamControl (false)
+2016-8-29 13h30m15s:Controller.cpp: API function call : Take control of configurations, prio 127
+2016-8-29 13h30m15s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 13h30m15s:Controller.cpp: API function call : Release control of configurations
+2016-8-29 13h30m15s:Controller.cpp: API function call : Release control of the system
+2016-8-29 13h30m15s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 13h30m15s:Controller.cpp: new client: 12700
+2016-8-29 13h30m15s:CClient.cpp: Creating new client ID: 16040
+2016-8-29 13h30m15s:CClient.cpp: clientThread started with port:1132
+2016-8-29 13h30m15s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-29 13h30m15s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 11276
+2016-8-29 13h30m15s:Controller.cpp: API function call : Get model list changes
+2016-8-29 13h30m15s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-29 13h30m15s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-29 13h30m15s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 13h30m15s:Controller.cpp: API function call : NotificationConnect
+2016-8-29 13h30m15s:Controller.cpp: pClient->notifCommSock = 1168
+2016-8-29 13h30m15s:Controller.cpp: API function call : SetEventInterest
+2016-8-29 13h30m15s:Controller.cpp: API function call : GET_CHILDREN Project
+2016-8-29 13h30m15s:Controller.cpp: API function call : GET_CHILDREN Model List
+2016-8-29 13h30m15s:Controller.cpp: API function call : NotificationConnect
+2016-8-29 13h30m15s:Controller.cpp: pClient->notifCommSock = 1172
+2016-8-29 13h30m15s:Controller.cpp: API function call : SetEventInterest
+2016-8-29 13h30m15s:Controller.cpp: API function call : GET_CHILDREN Environment Variable List
+2016-8-29 13h30m15s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-29 13h30m15s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-29 13h30m15s:Controller.cpp: API function call : GET_CHILDREN Missing Model List
+2016-8-29 13h30m15s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 13h30m15s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-29 13h30m15s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-29 13h30m15s:Controller.cpp: API function call : RegisterDisplay
+2016-8-29 13h30m16s:Controller.cpp: new client: 12700
+2016-8-29 13h30m16s:CClient.cpp: Creating new client ID: 5932
+2016-8-29 13h30m16s:CClient.cpp: clientThread started with port:1192
+2016-8-29 13h30m16s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-29 13h30m16s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 11276
+2016-8-29 13h30m16s:Controller.cpp: API function call : Get model list changes
+2016-8-29 13h30m16s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-29 13h30m16s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-29 13h30m16s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 14h8m39s:Controller.cpp: ------- NEW CONTROLLER STARTED (pid 3532) ------
+2016-8-29 14h8m39s:Controller.cpp: new client: 8832
+2016-8-29 14h8m39s:CClient.cpp: Creating new client ID: 5616
+2016-8-29 14h8m39s:CClient.cpp: clientThread started with port:896
+2016-8-29 14h8m39s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-29 14h8m39s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 6904
+2016-8-29 14h8m39s:WinUtils.cpp: Could not get the subsystem list. Verify that the model has been compiled.
+2016-8-29 14h8m39s:CtrlException.cpp: CtrlException, code 3, msg Could not get the subsystem list. Verify that the model has been compiled.
+2016-8-29 14h8m39s:Controller.cpp: API function call : Get model list changes
+2016-8-29 14h8m39s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-29 14h8m39s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-29 14h8m39s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 14h8m39s:Controller.cpp: API function call : GetSystemControl (true)
+2016-8-29 14h8m39s:Controller.cpp: API function call : GetSystemControl (false)
+2016-8-29 14h8m39s:Controller.cpp: API function call : GetParamControl (true)
+2016-8-29 14h8m39s:Controller.cpp: API function call : GetParamControl (false)
+2016-8-29 14h8m40s:Controller.cpp: API function call : Take control of configurations, prio 127
+2016-8-29 14h8m40s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 14h8m40s:Controller.cpp: API function call : Release control of configurations
+2016-8-29 14h8m40s:Controller.cpp: API function call : Release control of the system
+2016-8-29 14h8m40s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 14h8m40s:Controller.cpp: new client: 8832
+2016-8-29 14h8m40s:CClient.cpp: Creating new client ID: 6404
+2016-8-29 14h8m40s:CClient.cpp: clientThread started with port:1128
+2016-8-29 14h8m40s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-29 14h8m40s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 6904
+2016-8-29 14h8m40s:Controller.cpp: API function call : Get model list changes
+2016-8-29 14h8m40s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-29 14h8m40s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-29 14h8m40s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 14h8m40s:Controller.cpp: API function call : NotificationConnect
+2016-8-29 14h8m40s:Controller.cpp: pClient->notifCommSock = 1116
+2016-8-29 14h8m40s:Controller.cpp: API function call : SetEventInterest
+2016-8-29 14h8m40s:Controller.cpp: API function call : GET_CHILDREN Project
+2016-8-29 14h8m40s:Controller.cpp: API function call : GET_CHILDREN Model List
+2016-8-29 14h8m40s:Controller.cpp: API function call : NotificationConnect
+2016-8-29 14h8m40s:Controller.cpp: pClient->notifCommSock = 1184
+2016-8-29 14h8m40s:Controller.cpp: API function call : SetEventInterest
+2016-8-29 14h8m40s:Controller.cpp: API function call : GET_CHILDREN Environment Variable List
+2016-8-29 14h8m40s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-29 14h8m40s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-29 14h8m40s:Controller.cpp: API function call : GET_CHILDREN Missing Model List
+2016-8-29 14h8m40s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 14h8m40s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-29 14h8m40s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-29 14h8m40s:Controller.cpp: API function call : RegisterDisplay
+2016-8-29 14h8m40s:Controller.cpp: new client: 8832
+2016-8-29 14h8m41s:CClient.cpp: Creating new client ID: 2944
+2016-8-29 14h8m41s:CClient.cpp: clientThread started with port:1188
+2016-8-29 14h8m41s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-29 14h8m41s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 6904
+2016-8-29 14h8m41s:Controller.cpp: API function call : Get model list changes
+2016-8-29 14h8m41s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-29 14h8m41s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-29 14h8m41s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 14h9m27s:Controller.cpp: new client: 8832
+2016-8-29 14h9m27s:CClient.cpp: Creating new client ID: 8464
+2016-8-29 14h9m27s:CClient.cpp: clientThread started with port:1232
+2016-8-29 14h9m27s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-29 14h9m27s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 6904
+2016-8-29 14h9m27s:Controller.cpp: API function call : Get model list changes
+2016-8-29 14h9m27s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-29 14h9m27s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-29 14h9m27s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 15h1m19s:Controller.cpp: API function call : SetEventInterest
+2016-8-29 15h1m19s:Controller.cpp: API function call : SetEventInterest
+2016-8-29 15h1m19s:Controller.cpp: Removing client: 8464
+2016-8-29 15h1m19s:CClient.cpp: clientThread exit.
+2016-8-29 15h1m19s:Controller.cpp: Removing client: 5616
+2016-8-29 15h1m19s:CClient.cpp: clientThread exit.
+2016-8-29 15h1m19s:Controller.cpp: Removing client: 6404
+2016-8-29 15h1m19s:Controller.cpp: Removing client: 2944
+2016-8-29 15h1m19s:CClient.cpp: clientThread exit.
+2016-8-29 15h1m19s:Controller.cpp: terminateControlCommThread, call OpalInitializeSend with ipAddr 192.168.44.1:58898
+2016-8-29 15h1m19s:Controller.cpp: Entering CloseSubControllers
+2016-8-29 15h1m19s:Stopping OpalNode watchdog.
+2016-8-29 15h1m19s:CClient.cpp: clientThread exit.
+2016-8-29 15h1m46s:Controller.cpp: ------- NEW CONTROLLER STARTED (pid 8456) ------
+2016-8-29 15h1m46s:Controller.cpp: new client: 9188
+2016-8-29 15h1m46s:CClient.cpp: Creating new client ID: 1232
+2016-8-29 15h1m46s:CClient.cpp: clientThread started with port:892
+2016-8-29 15h1m46s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-29 15h1m46s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 11736
+2016-8-29 15h1m46s:WinUtils.cpp: Could not get the subsystem list. Verify that the model has been compiled.
+2016-8-29 15h1m46s:CtrlException.cpp: CtrlException, code 3, msg Could not get the subsystem list. Verify that the model has been compiled.
+2016-8-29 15h1m46s:Controller.cpp: API function call : Get model list changes
+2016-8-29 15h1m46s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-29 15h1m46s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-29 15h1m46s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 15h1m46s:Controller.cpp: API function call : GetSystemControl (true)
+2016-8-29 15h1m46s:Controller.cpp: API function call : GetSystemControl (false)
+2016-8-29 15h1m46s:Controller.cpp: API function call : GetParamControl (true)
+2016-8-29 15h1m46s:Controller.cpp: API function call : GetParamControl (false)
+2016-8-29 15h1m46s:Controller.cpp: API function call : Take control of configurations, prio 127
+2016-8-29 15h1m46s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 15h1m46s:Controller.cpp: API function call : Release control of configurations
+2016-8-29 15h1m46s:Controller.cpp: API function call : Release control of the system
+2016-8-29 15h1m46s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 15h1m46s:Controller.cpp: new client: 9188
+2016-8-29 15h1m46s:CClient.cpp: Creating new client ID: 7532
+2016-8-29 15h1m46s:CClient.cpp: clientThread started with port:1124
+2016-8-29 15h1m46s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-29 15h1m46s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 11736
+2016-8-29 15h1m46s:Controller.cpp: API function call : Get model list changes
+2016-8-29 15h1m46s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-29 15h1m46s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-29 15h1m46s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 15h1m46s:Controller.cpp: API function call : NotificationConnect
+2016-8-29 15h1m46s:Controller.cpp: pClient->notifCommSock = 996
+2016-8-29 15h1m46s:Controller.cpp: API function call : SetEventInterest
+2016-8-29 15h1m46s:Controller.cpp: API function call : GET_CHILDREN Project
+2016-8-29 15h1m46s:Controller.cpp: API function call : GET_CHILDREN Model List
+2016-8-29 15h1m46s:Controller.cpp: API function call : NotificationConnect
+2016-8-29 15h1m46s:Controller.cpp: pClient->notifCommSock = 1172
+2016-8-29 15h1m46s:Controller.cpp: API function call : SetEventInterest
+2016-8-29 15h1m46s:Controller.cpp: API function call : GET_CHILDREN Environment Variable List
+2016-8-29 15h1m46s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-29 15h1m46s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-29 15h1m46s:Controller.cpp: API function call : GET_CHILDREN Missing Model List
+2016-8-29 15h1m46s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 15h1m46s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-29 15h1m46s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-29 15h1m46s:Controller.cpp: API function call : RegisterDisplay
+2016-8-29 15h1m47s:Controller.cpp: new client: 9188
+2016-8-29 15h1m47s:CClient.cpp: Creating new client ID: 11496
+2016-8-29 15h1m47s:CClient.cpp: clientThread started with port:1180
+2016-8-29 15h1m47s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-29 15h1m47s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 11736
+2016-8-29 15h1m47s:Controller.cpp: API function call : Get model list changes
+2016-8-29 15h1m47s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-29 15h1m47s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-29 15h1m47s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 15h4m4s:Controller.cpp: new client: 9188
+2016-8-29 15h4m4s:CClient.cpp: Creating new client ID: 12148
+2016-8-29 15h4m4s:CClient.cpp: clientThread started with port:1220
+2016-8-29 15h4m4s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-29 15h4m4s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 11736
+2016-8-29 15h4m4s:Controller.cpp: API function call : Get model list changes
+2016-8-29 15h4m4s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-29 15h4m4s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-29 15h4m4s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 15h4m43s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-29 15h4m43s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-29 15h4m43s:Controller.cpp: API function call : GET_CHILDREN Model
+2016-8-29 15h4m43s:Controller.cpp: API function call : GET_CHILDREN Model Variable List
+2016-8-29 15h4m43s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-29 15h48m34s:Controller.cpp: API function call : SetEventInterest
+2016-8-29 15h48m34s:Controller.cpp: API function call : SetEventInterest
+2016-8-29 15h48m34s:Controller.cpp: Removing client: 12148
+2016-8-29 15h48m34s:CClient.cpp: clientThread exit.
+2016-8-29 15h48m34s:Controller.cpp: Removing client: 1232
+2016-8-29 15h48m34s:Controller.cpp: Removing client: 11496
+2016-8-29 15h48m34s:Controller.cpp: Removing client: 7532
+2016-8-29 15h48m34s:CClient.cpp: clientThread exit.
+2016-8-29 15h48m35s:CClient.cpp: clientThread exit.
+2016-8-29 15h48m35s:Controller.cpp: terminateControlCommThread, call OpalInitializeSend with ipAddr 192.168.44.1:60159
+2016-8-29 15h48m35s:Controller.cpp: Entering CloseSubControllers
+2016-8-29 15h48m35s:Stopping OpalNode watchdog.
+2016-8-29 15h48m35s:CClient.cpp: clientThread exit.
+2016-8-29 15h57m28s:Controller.cpp: ------- NEW CONTROLLER STARTED (pid 9488) ------
+2016-8-29 15h57m28s:Controller.cpp: new client: 1628
+2016-8-29 15h57m28s:CClient.cpp: Creating new client ID: 8684
+2016-8-29 15h57m28s:CClient.cpp: clientThread started with port:928
+2016-8-29 15h57m28s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-29 15h57m28s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 12120
+2016-8-29 15h57m28s:WinUtils.cpp: Could not get the subsystem list. Verify that the model has been compiled.
+2016-8-29 15h57m28s:CtrlException.cpp: CtrlException, code 3, msg Could not get the subsystem list. Verify that the model has been compiled.
+2016-8-29 15h57m29s:Controller.cpp: API function call : Get model list changes
+2016-8-29 15h57m29s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-29 15h57m29s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-29 15h57m29s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 15h57m29s:Controller.cpp: API function call : GetSystemControl (true)
+2016-8-29 15h57m29s:Controller.cpp: API function call : GetSystemControl (false)
+2016-8-29 15h57m29s:Controller.cpp: API function call : GetParamControl (true)
+2016-8-29 15h57m29s:Controller.cpp: API function call : GetParamControl (false)
+2016-8-29 15h57m29s:Controller.cpp: API function call : Take control of configurations, prio 127
+2016-8-29 15h57m29s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 15h57m29s:Controller.cpp: API function call : Release control of configurations
+2016-8-29 15h57m29s:Controller.cpp: API function call : Release control of the system
+2016-8-29 15h57m29s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 15h57m29s:Controller.cpp: new client: 1628
+2016-8-29 15h57m29s:CClient.cpp: Creating new client ID: 9364
+2016-8-29 15h57m29s:CClient.cpp: clientThread started with port:1180
+2016-8-29 15h57m29s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-29 15h57m29s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 12120
+2016-8-29 15h57m29s:Controller.cpp: API function call : Get model list changes
+2016-8-29 15h57m29s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-29 15h57m29s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-29 15h57m29s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 15h57m29s:Controller.cpp: API function call : NotificationConnect
+2016-8-29 15h57m29s:Controller.cpp: pClient->notifCommSock = 1052
+2016-8-29 15h57m29s:Controller.cpp: API function call : SetEventInterest
+2016-8-29 15h57m29s:Controller.cpp: API function call : GET_CHILDREN Project
+2016-8-29 15h57m29s:Controller.cpp: API function call : GET_CHILDREN Model List
+2016-8-29 15h57m29s:Controller.cpp: API function call : NotificationConnect
+2016-8-29 15h57m29s:Controller.cpp: pClient->notifCommSock = 1232
+2016-8-29 15h57m29s:Controller.cpp: API function call : SetEventInterest
+2016-8-29 15h57m29s:Controller.cpp: API function call : GET_CHILDREN Environment Variable List
+2016-8-29 15h57m29s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-29 15h57m29s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-29 15h57m29s:Controller.cpp: API function call : GET_CHILDREN Missing Model List
+2016-8-29 15h57m29s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 15h57m29s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-29 15h57m29s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-29 15h57m29s:Controller.cpp: API function call : RegisterDisplay
+2016-8-29 15h57m29s:Controller.cpp: new client: 1628
+2016-8-29 15h57m29s:CClient.cpp: Creating new client ID: 8540
+2016-8-29 15h57m30s:CClient.cpp: clientThread started with port:1236
+2016-8-29 15h57m30s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-29 15h57m30s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 12120
+2016-8-29 15h57m30s:Controller.cpp: API function call : Get model list changes
+2016-8-29 15h57m30s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-29 15h57m30s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-29 15h57m30s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 16h12m15s:Controller.cpp: new client: 1628
+2016-8-29 16h12m15s:CClient.cpp: Creating new client ID: 8328
+2016-8-29 16h12m15s:CClient.cpp: clientThread started with port:1292
+2016-8-29 16h12m15s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-29 16h12m15s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 12120
+2016-8-29 16h12m15s:Controller.cpp: API function call : Get model list changes
+2016-8-29 16h12m15s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-29 16h12m15s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-29 16h12m15s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 16h12m15s:Controller.cpp: API function call : SetEventInterest
+2016-8-29 16h12m15s:Controller.cpp: API function call : SetEventInterest
+2016-8-29 16h12m15s:Controller.cpp: Removing client: 8328
+2016-8-29 16h12m15s:CClient.cpp: clientThread exit.
+2016-8-29 16h12m15s:Controller.cpp: Removing client: 8684
+2016-8-29 16h12m15s:CClient.cpp: clientThread exit.
+2016-8-29 16h12m15s:Controller.cpp: Removing client: 9364
+2016-8-29 16h12m15s:Controller.cpp: Removing client: 8540
+2016-8-29 16h12m15s:CClient.cpp: clientThread exit.
+2016-8-29 16h12m15s:Controller.cpp: terminateControlCommThread, call OpalInitializeSend with ipAddr 192.168.44.1:51266
+2016-8-29 16h12m15s:Controller.cpp: Entering CloseSubControllers
+2016-8-29 16h12m15s:Stopping OpalNode watchdog.
+2016-8-29 16h12m15s:CClient.cpp: clientThread exit.
+2016-8-29 16h14m26s:Controller.cpp: ------- NEW CONTROLLER STARTED (pid 9724) ------
+2016-8-29 16h14m26s:Controller.cpp: new client: 11320
+2016-8-29 16h14m26s:CClient.cpp: Creating new client ID: 4984
+2016-8-29 16h14m26s:CClient.cpp: clientThread started with port:900
+2016-8-29 16h14m26s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-29 16h14m26s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 9232
+2016-8-29 16h14m26s:WinUtils.cpp: Could not get the subsystem list. Verify that the model has been compiled.
+2016-8-29 16h14m26s:CtrlException.cpp: CtrlException, code 3, msg Could not get the subsystem list. Verify that the model has been compiled.
+2016-8-29 16h14m26s:Controller.cpp: API function call : Get model list changes
+2016-8-29 16h14m26s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-29 16h14m26s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-29 16h14m26s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 16h14m26s:Controller.cpp: API function call : GetSystemControl (true)
+2016-8-29 16h14m26s:Controller.cpp: API function call : GetSystemControl (false)
+2016-8-29 16h14m26s:Controller.cpp: API function call : GetParamControl (true)
+2016-8-29 16h14m26s:Controller.cpp: API function call : GetParamControl (false)
+2016-8-29 16h14m26s:Controller.cpp: API function call : Take control of configurations, prio 127
+2016-8-29 16h14m26s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 16h14m26s:Controller.cpp: API function call : Release control of configurations
+2016-8-29 16h14m26s:Controller.cpp: API function call : Release control of the system
+2016-8-29 16h14m26s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 16h14m26s:Controller.cpp: new client: 11320
+2016-8-29 16h14m26s:CClient.cpp: Creating new client ID: 6268
+2016-8-29 16h14m26s:CClient.cpp: clientThread started with port:1140
+2016-8-29 16h14m26s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-29 16h14m26s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 9232
+2016-8-29 16h14m26s:Controller.cpp: API function call : Get model list changes
+2016-8-29 16h14m26s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-29 16h14m26s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-29 16h14m26s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 16h14m26s:Controller.cpp: API function call : NotificationConnect
+2016-8-29 16h14m26s:Controller.cpp: pClient->notifCommSock = 1184
+2016-8-29 16h14m26s:Controller.cpp: API function call : SetEventInterest
+2016-8-29 16h14m26s:Controller.cpp: API function call : GET_CHILDREN Project
+2016-8-29 16h14m26s:Controller.cpp: API function call : GET_CHILDREN Model List
+2016-8-29 16h14m26s:Controller.cpp: API function call : NotificationConnect
+2016-8-29 16h14m26s:Controller.cpp: pClient->notifCommSock = 1188
+2016-8-29 16h14m26s:Controller.cpp: API function call : SetEventInterest
+2016-8-29 16h14m26s:Controller.cpp: API function call : GET_CHILDREN Environment Variable List
+2016-8-29 16h14m26s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-29 16h14m26s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-29 16h14m26s:Controller.cpp: API function call : GET_CHILDREN Missing Model List
+2016-8-29 16h14m26s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 16h14m26s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-29 16h14m26s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-29 16h14m26s:Controller.cpp: API function call : RegisterDisplay
+2016-8-29 16h14m27s:Controller.cpp: new client: 11320
+2016-8-29 16h14m27s:CClient.cpp: Creating new client ID: 5308
+2016-8-29 16h14m27s:CClient.cpp: clientThread started with port:1196
+2016-8-29 16h14m27s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-29 16h14m27s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 9232
+2016-8-29 16h14m27s:Controller.cpp: API function call : Get model list changes
+2016-8-29 16h14m27s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-29 16h14m27s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-29 16h14m27s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 16h17m38s:Controller.cpp: new client: 11320
+2016-8-29 16h17m38s:CClient.cpp: Creating new client ID: 6320
+2016-8-29 16h17m38s:CClient.cpp: clientThread started with port:1064
+2016-8-29 16h17m38s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-29 16h17m38s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 9232
+2016-8-29 16h17m38s:Controller.cpp: API function call : Get model list changes
+2016-8-29 16h17m38s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-29 16h17m38s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-29 16h17m38s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 16h17m38s:Controller.cpp: API function call : SetEventInterest
+2016-8-29 16h17m38s:Controller.cpp: API function call : SetEventInterest
+2016-8-29 16h17m38s:Controller.cpp: Removing client: 6320
+2016-8-29 16h17m38s:CClient.cpp: clientThread exit.
+2016-8-29 16h17m38s:Controller.cpp: Removing client: 4984
+2016-8-29 16h17m38s:Controller.cpp: Removing client: 6268
+2016-8-29 16h17m38s:CClient.cpp: clientThread exit.
+2016-8-29 16h17m38s:Controller.cpp: Removing client: 5308
+2016-8-29 16h17m38s:CClient.cpp: clientThread exit.
+2016-8-29 16h17m38s:Controller.cpp: terminateControlCommThread, call OpalInitializeSend with ipAddr 192.168.44.1:53673
+2016-8-29 16h17m38s:Controller.cpp: Entering CloseSubControllers
+2016-8-29 16h17m38s:Stopping OpalNode watchdog.
+2016-8-29 16h17m38s:CClient.cpp: clientThread exit.
+2016-8-29 16h29m1s:Controller.cpp: ------- NEW CONTROLLER STARTED (pid 9024) ------
+2016-8-29 16h29m1s:Controller.cpp: new client: 4920
+2016-8-29 16h29m1s:CClient.cpp: Creating new client ID: 3852
+2016-8-29 16h29m1s:CClient.cpp: clientThread started with port:896
+2016-8-29 16h29m1s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-29 16h29m1s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 5640
+2016-8-29 16h29m1s:WinUtils.cpp: Could not get the subsystem list. Verify that the model has been compiled.
+2016-8-29 16h29m1s:CtrlException.cpp: CtrlException, code 3, msg Could not get the subsystem list. Verify that the model has been compiled.
+2016-8-29 16h29m2s:Controller.cpp: API function call : Get model list changes
+2016-8-29 16h29m2s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-29 16h29m2s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-29 16h29m2s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 16h29m2s:Controller.cpp: API function call : GetSystemControl (true)
+2016-8-29 16h29m2s:Controller.cpp: API function call : GetSystemControl (false)
+2016-8-29 16h29m2s:Controller.cpp: API function call : GetParamControl (true)
+2016-8-29 16h29m2s:Controller.cpp: API function call : GetParamControl (false)
+2016-8-29 16h29m2s:Controller.cpp: API function call : Take control of configurations, prio 127
+2016-8-29 16h29m2s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 16h29m2s:Controller.cpp: API function call : Release control of configurations
+2016-8-29 16h29m2s:Controller.cpp: API function call : Release control of the system
+2016-8-29 16h29m2s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 16h29m2s:Controller.cpp: new client: 4920
+2016-8-29 16h29m2s:CClient.cpp: Creating new client ID: 8528
+2016-8-29 16h29m2s:CClient.cpp: clientThread started with port:1028
+2016-8-29 16h29m2s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-29 16h29m2s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 5640
+2016-8-29 16h29m2s:Controller.cpp: API function call : Get model list changes
+2016-8-29 16h29m2s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-29 16h29m2s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-29 16h29m2s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 16h29m2s:Controller.cpp: API function call : NotificationConnect
+2016-8-29 16h29m2s:Controller.cpp: pClient->notifCommSock = 1172
+2016-8-29 16h29m2s:Controller.cpp: API function call : SetEventInterest
+2016-8-29 16h29m2s:Controller.cpp: API function call : GET_CHILDREN Project
+2016-8-29 16h29m2s:Controller.cpp: API function call : GET_CHILDREN Model List
+2016-8-29 16h29m2s:Controller.cpp: API function call : NotificationConnect
+2016-8-29 16h29m2s:Controller.cpp: pClient->notifCommSock = 1176
+2016-8-29 16h29m2s:Controller.cpp: API function call : SetEventInterest
+2016-8-29 16h29m2s:Controller.cpp: API function call : GET_CHILDREN Environment Variable List
+2016-8-29 16h29m2s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-29 16h29m2s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-29 16h29m2s:Controller.cpp: API function call : GET_CHILDREN Missing Model List
+2016-8-29 16h29m2s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 16h29m2s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-29 16h29m2s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-29 16h29m2s:Controller.cpp: API function call : RegisterDisplay
+2016-8-29 16h29m3s:Controller.cpp: new client: 4920
+2016-8-29 16h29m3s:CClient.cpp: Creating new client ID: 6936
+2016-8-29 16h29m3s:CClient.cpp: clientThread started with port:1196
+2016-8-29 16h29m3s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-29 16h29m3s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 5640
+2016-8-29 16h29m3s:Controller.cpp: API function call : Get model list changes
+2016-8-29 16h29m3s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-29 16h29m3s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-29 16h29m3s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 16h31m5s:Controller.cpp: new client: 4920
+2016-8-29 16h31m5s:CClient.cpp: Creating new client ID: 9532
+2016-8-29 16h31m5s:CClient.cpp: clientThread started with port:1248
+2016-8-29 16h31m5s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-29 16h31m5s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 5640
+2016-8-29 16h31m5s:Controller.cpp: API function call : Get model list changes
+2016-8-29 16h31m5s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-29 16h31m5s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-29 16h31m5s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 16h31m5s:Controller.cpp: API function call : SetEventInterest
+2016-8-29 16h31m5s:Controller.cpp: API function call : SetEventInterest
+2016-8-29 16h31m6s:Controller.cpp: Removing client: 9532
+2016-8-29 16h31m6s:CClient.cpp: clientThread exit.
+2016-8-29 16h31m6s:Controller.cpp: Removing client: 3852
+2016-8-29 16h31m6s:CClient.cpp: clientThread exit.
+2016-8-29 16h31m6s:Controller.cpp: Removing client: 6936
+2016-8-29 16h31m6s:Controller.cpp: Removing client: 8528
+2016-8-29 16h31m6s:CClient.cpp: clientThread exit.
+2016-8-29 16h31m6s:Controller.cpp: terminateControlCommThread, call OpalInitializeSend with ipAddr 192.168.44.1:54400
+2016-8-29 16h31m6s:Controller.cpp: Entering CloseSubControllers
+2016-8-29 16h31m6s:Stopping OpalNode watchdog.
+2016-8-29 16h31m6s:CClient.cpp: clientThread exit.
+2016-8-29 16h33m1s:Controller.cpp: ------- NEW CONTROLLER STARTED (pid 10572) ------
+2016-8-29 16h33m1s:Controller.cpp: new client: 3664
+2016-8-29 16h33m1s:CClient.cpp: Creating new client ID: 7832
+2016-8-29 16h33m1s:CClient.cpp: clientThread started with port:884
+2016-8-29 16h33m1s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-29 16h33m1s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 12112
+2016-8-29 16h33m1s:WinUtils.cpp: Could not get the subsystem list. Verify that the model has been compiled.
+2016-8-29 16h33m1s:CtrlException.cpp: CtrlException, code 3, msg Could not get the subsystem list. Verify that the model has been compiled.
+2016-8-29 16h33m2s:Controller.cpp: API function call : Get model list changes
+2016-8-29 16h33m2s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-29 16h33m2s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-29 16h33m2s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 16h33m2s:Controller.cpp: API function call : GetSystemControl (true)
+2016-8-29 16h33m2s:Controller.cpp: API function call : GetSystemControl (false)
+2016-8-29 16h33m2s:Controller.cpp: API function call : GetParamControl (true)
+2016-8-29 16h33m2s:Controller.cpp: API function call : GetParamControl (false)
+2016-8-29 16h33m2s:Controller.cpp: API function call : Take control of configurations, prio 127
+2016-8-29 16h33m2s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 16h33m2s:Controller.cpp: API function call : Release control of configurations
+2016-8-29 16h33m2s:Controller.cpp: API function call : Release control of the system
+2016-8-29 16h33m2s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 16h33m2s:Controller.cpp: new client: 3664
+2016-8-29 16h33m2s:CClient.cpp: Creating new client ID: 3780
+2016-8-29 16h33m2s:CClient.cpp: clientThread started with port:1128
+2016-8-29 16h33m2s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-29 16h33m2s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 12112
+2016-8-29 16h33m2s:Controller.cpp: API function call : Get model list changes
+2016-8-29 16h33m2s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-29 16h33m2s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-29 16h33m2s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 16h33m2s:Controller.cpp: API function call : NotificationConnect
+2016-8-29 16h33m2s:Controller.cpp: pClient->notifCommSock = 1188
+2016-8-29 16h33m2s:Controller.cpp: API function call : SetEventInterest
+2016-8-29 16h33m2s:Controller.cpp: API function call : GET_CHILDREN Project
+2016-8-29 16h33m2s:Controller.cpp: API function call : GET_CHILDREN Model List
+2016-8-29 16h33m2s:Controller.cpp: API function call : NotificationConnect
+2016-8-29 16h33m2s:Controller.cpp: pClient->notifCommSock = 1124
+2016-8-29 16h33m2s:Controller.cpp: API function call : SetEventInterest
+2016-8-29 16h33m2s:Controller.cpp: API function call : GET_CHILDREN Environment Variable List
+2016-8-29 16h33m2s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-29 16h33m2s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-29 16h33m2s:Controller.cpp: API function call : GET_CHILDREN Missing Model List
+2016-8-29 16h33m2s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 16h33m2s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-29 16h33m2s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-29 16h33m2s:Controller.cpp: API function call : RegisterDisplay
+2016-8-29 16h33m2s:Controller.cpp: new client: 3664
+2016-8-29 16h33m2s:CClient.cpp: Creating new client ID: 8056
+2016-8-29 16h33m2s:CClient.cpp: clientThread started with port:1184
+2016-8-29 16h33m2s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-29 16h33m2s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 12112
+2016-8-29 16h33m2s:Controller.cpp: API function call : Get model list changes
+2016-8-29 16h33m2s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-29 16h33m2s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-29 16h33m2s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 16h34m49s:Controller.cpp: new client: 3664
+2016-8-29 16h34m49s:CClient.cpp: Creating new client ID: 10212
+2016-8-29 16h34m49s:CClient.cpp: clientThread started with port:1252
+2016-8-29 16h34m49s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-29 16h34m49s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 12112
+2016-8-29 16h34m49s:Controller.cpp: API function call : Get model list changes
+2016-8-29 16h34m49s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-29 16h34m49s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-29 16h34m49s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 16h34m49s:Controller.cpp: API function call : SetEventInterest
+2016-8-29 16h34m49s:Controller.cpp: API function call : SetEventInterest
+2016-8-29 16h34m49s:Controller.cpp: Removing client: 10212
+2016-8-29 16h34m49s:CClient.cpp: clientThread exit.
+2016-8-29 16h34m49s:Controller.cpp: Removing client: 7832
+2016-8-29 16h34m49s:CClient.cpp: clientThread exit.
+2016-8-29 16h34m49s:Controller.cpp: Removing client: 3780
+2016-8-29 16h34m49s:Controller.cpp: Removing client: 8056
+2016-8-29 16h34m49s:CClient.cpp: clientThread exit.
+2016-8-29 16h34m49s:Controller.cpp: terminateControlCommThread, call OpalInitializeSend with ipAddr 192.168.44.1:54940
+2016-8-29 16h34m49s:Controller.cpp: Entering CloseSubControllers
+2016-8-29 16h34m49s:Stopping OpalNode watchdog.
+2016-8-29 16h34m49s:CClient.cpp: clientThread exit.
+2016-8-29 16h43m58s:Controller.cpp: ------- NEW CONTROLLER STARTED (pid 11980) ------
+2016-8-29 16h43m58s:Controller.cpp: new client: 200
+2016-8-29 16h43m58s:CClient.cpp: Creating new client ID: 5940
+2016-8-29 16h43m58s:CClient.cpp: clientThread started with port:924
+2016-8-29 16h43m58s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-29 16h43m58s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 12052
+2016-8-29 16h43m59s:WinUtils.cpp: Could not get the subsystem list. Verify that the model has been compiled.
+2016-8-29 16h43m59s:CtrlException.cpp: CtrlException, code 3, msg Could not get the subsystem list. Verify that the model has been compiled.
+2016-8-29 16h43m59s:Controller.cpp: API function call : Get model list changes
+2016-8-29 16h43m59s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-29 16h43m59s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-29 16h43m59s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 16h43m59s:Controller.cpp: API function call : GetSystemControl (true)
+2016-8-29 16h43m59s:Controller.cpp: API function call : GetSystemControl (false)
+2016-8-29 16h43m59s:Controller.cpp: API function call : GetParamControl (true)
+2016-8-29 16h43m59s:Controller.cpp: API function call : GetParamControl (false)
+2016-8-29 16h43m59s:Controller.cpp: API function call : Take control of configurations, prio 127
+2016-8-29 16h43m59s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 16h43m59s:Controller.cpp: API function call : Release control of configurations
+2016-8-29 16h43m59s:Controller.cpp: API function call : Release control of the system
+2016-8-29 16h43m59s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 16h43m59s:Controller.cpp: new client: 200
+2016-8-29 16h43m59s:CClient.cpp: Creating new client ID: 11848
+2016-8-29 16h43m59s:CClient.cpp: clientThread started with port:1144
+2016-8-29 16h43m59s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-29 16h43m59s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 12052
+2016-8-29 16h43m59s:Controller.cpp: API function call : Get model list changes
+2016-8-29 16h43m59s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-29 16h43m59s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-29 16h43m59s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 16h43m59s:Controller.cpp: API function call : NotificationConnect
+2016-8-29 16h43m59s:Controller.cpp: pClient->notifCommSock = 1192
+2016-8-29 16h43m59s:Controller.cpp: API function call : SetEventInterest
+2016-8-29 16h43m59s:Controller.cpp: API function call : GET_CHILDREN Project
+2016-8-29 16h43m59s:Controller.cpp: API function call : GET_CHILDREN Model List
+2016-8-29 16h43m59s:Controller.cpp: API function call : NotificationConnect
+2016-8-29 16h43m59s:Controller.cpp: pClient->notifCommSock = 1196
+2016-8-29 16h43m59s:Controller.cpp: API function call : SetEventInterest
+2016-8-29 16h43m59s:Controller.cpp: API function call : GET_CHILDREN Environment Variable List
+2016-8-29 16h43m59s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-29 16h43m59s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-29 16h43m59s:Controller.cpp: API function call : GET_CHILDREN Missing Model List
+2016-8-29 16h43m59s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 16h43m59s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-29 16h43m59s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-29 16h43m59s:Controller.cpp: API function call : RegisterDisplay
+2016-8-29 16h44m0s:Controller.cpp: new client: 200
+2016-8-29 16h44m0s:CClient.cpp: Creating new client ID: 9292
+2016-8-29 16h44m0s:CClient.cpp: clientThread started with port:1212
+2016-8-29 16h44m0s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-29 16h44m0s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 12052
+2016-8-29 16h44m0s:Controller.cpp: API function call : Get model list changes
+2016-8-29 16h44m0s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-29 16h44m0s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-29 16h44m0s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 17h22m51s:Controller.cpp: Removing client: 11848
+2016-8-29 17h22m51s:Controller.cpp: Removing client: 5940
+2016-8-29 17h22m51s:Controller.cpp: Removing client: 9292
+2016-8-29 17h22m51s:CClient.cpp: clientThread exit.
+2016-8-29 17h22m51s:CClient.cpp: clientThread exit.
+2016-8-29 17h22m51s:Controller.cpp: terminateControlCommThread, call OpalInitializeSend with ipAddr 192.168.44.1:55454
+2016-8-29 17h22m51s:Controller.cpp: Entering CloseSubControllers
+2016-8-29 17h22m51s:Stopping OpalNode watchdog.
+2016-8-29 17h22m51s:CClient.cpp: clientThread exit.
+2016-8-29 23h8m5s:Controller.cpp: ------- NEW CONTROLLER STARTED (pid 8168) ------
+2016-8-29 23h8m5s:Controller.cpp: new client: 6856
+2016-8-29 23h8m5s:CClient.cpp: Creating new client ID: 12736
+2016-8-29 23h8m5s:CClient.cpp: clientThread started with port:908
+2016-8-29 23h8m5s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-29 23h8m5s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 2432
+2016-8-29 23h8m5s:WinUtils.cpp: Could not get the subsystem list. Verify that the model has been compiled.
+2016-8-29 23h8m5s:CtrlException.cpp: CtrlException, code 3, msg Could not get the subsystem list. Verify that the model has been compiled.
+2016-8-29 23h8m6s:Controller.cpp: API function call : Get model list changes
+2016-8-29 23h8m6s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-29 23h8m6s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-29 23h8m6s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 23h8m6s:Controller.cpp: API function call : GetSystemControl (true)
+2016-8-29 23h8m6s:Controller.cpp: API function call : GetSystemControl (false)
+2016-8-29 23h8m6s:Controller.cpp: API function call : GetParamControl (true)
+2016-8-29 23h8m6s:Controller.cpp: API function call : GetParamControl (false)
+2016-8-29 23h8m6s:Controller.cpp: API function call : Take control of configurations, prio 127
+2016-8-29 23h8m6s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 23h8m6s:Controller.cpp: API function call : Release control of configurations
+2016-8-29 23h8m6s:Controller.cpp: API function call : Release control of the system
+2016-8-29 23h8m6s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 23h8m6s:Controller.cpp: new client: 6856
+2016-8-29 23h8m6s:CClient.cpp: Creating new client ID: 6280
+2016-8-29 23h8m6s:CClient.cpp: clientThread started with port:1204
+2016-8-29 23h8m6s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-29 23h8m6s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 2432
+2016-8-29 23h8m6s:Controller.cpp: API function call : Get model list changes
+2016-8-29 23h8m6s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-29 23h8m6s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-29 23h8m6s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 23h8m6s:Controller.cpp: API function call : NotificationConnect
+2016-8-29 23h8m6s:Controller.cpp: pClient->notifCommSock = 1220
+2016-8-29 23h8m6s:Controller.cpp: API function call : SetEventInterest
+2016-8-29 23h8m6s:Controller.cpp: API function call : GET_CHILDREN Project
+2016-8-29 23h8m6s:Controller.cpp: API function call : GET_CHILDREN Model List
+2016-8-29 23h8m6s:Controller.cpp: API function call : NotificationConnect
+2016-8-29 23h8m6s:Controller.cpp: pClient->notifCommSock = 1228
+2016-8-29 23h8m6s:Controller.cpp: API function call : SetEventInterest
+2016-8-29 23h8m6s:Controller.cpp: API function call : GET_CHILDREN Environment Variable List
+2016-8-29 23h8m6s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-29 23h8m6s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-29 23h8m6s:Controller.cpp: API function call : GET_CHILDREN Missing Model List
+2016-8-29 23h8m6s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 23h8m6s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-29 23h8m6s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-29 23h8m6s:Controller.cpp: API function call : RegisterDisplay
+2016-8-29 23h8m6s:Controller.cpp: new client: 6856
+2016-8-29 23h8m6s:CClient.cpp: Creating new client ID: 3636
+2016-8-29 23h8m6s:CClient.cpp: clientThread started with port:1252
+2016-8-29 23h8m6s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-29 23h8m6s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 2432
+2016-8-29 23h8m6s:Controller.cpp: API function call : Get model list changes
+2016-8-29 23h8m6s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-29 23h8m6s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-29 23h8m6s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 23h8m59s:Controller.cpp: new client: 6856
+2016-8-29 23h8m59s:CClient.cpp: Creating new client ID: 6468
+2016-8-29 23h8m59s:CClient.cpp: clientThread started with port:1224
+2016-8-29 23h8m59s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-29 23h8m59s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 2432
+2016-8-29 23h8m59s:Controller.cpp: API function call : Get model list changes
+2016-8-29 23h8m59s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-29 23h8m59s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-29 23h8m59s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-29 23h8m59s:Controller.cpp: API function call : SetEventInterest
+2016-8-29 23h8m59s:Controller.cpp: API function call : SetEventInterest
+2016-8-29 23h8m59s:Controller.cpp: Removing client: 6468
+2016-8-29 23h8m59s:CClient.cpp: clientThread exit.
+2016-8-29 23h8m59s:Controller.cpp: Removing client: 12736
+2016-8-29 23h8m59s:CClient.cpp: clientThread exit.
+2016-8-29 23h8m59s:Controller.cpp: Removing client: 6280
+2016-8-29 23h8m59s:Controller.cpp: Removing client: 3636
+2016-8-29 23h8m59s:CClient.cpp: clientThread exit.
+2016-8-29 23h8m59s:Controller.cpp: terminateControlCommThread, call OpalInitializeSend with ipAddr 192.168.44.1:61916
+2016-8-29 23h8m59s:Controller.cpp: Entering CloseSubControllers
+2016-8-29 23h8m59s:Stopping OpalNode watchdog.
+2016-8-29 23h8m59s:CClient.cpp: clientThread exit.
+2016-8-31 11h52m16s:Controller.cpp: ------- NEW CONTROLLER STARTED (pid 11364) ------
+2016-8-31 11h52m16s:Controller.cpp: new client: 9080
+2016-8-31 11h52m16s:CClient.cpp: Creating new client ID: 8304
+2016-8-31 11h52m16s:CClient.cpp: clientThread started with port:140
+2016-8-31 11h52m16s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-31 11h52m16s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 11424
+2016-8-31 11h52m16s:WinUtils.cpp: Could not get the subsystem list. Verify that the model has been compiled.
+2016-8-31 11h52m16s:CtrlException.cpp: CtrlException, code 3, msg Could not get the subsystem list. Verify that the model has been compiled.
+2016-8-31 11h52m16s:Controller.cpp: API function call : Get model list changes
+2016-8-31 11h52m16s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-31 11h52m16s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-31 11h52m16s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-31 11h52m16s:Controller.cpp: API function call : GetSystemControl (true)
+2016-8-31 11h52m16s:Controller.cpp: API function call : GetSystemControl (false)
+2016-8-31 11h52m16s:Controller.cpp: API function call : GetParamControl (true)
+2016-8-31 11h52m16s:Controller.cpp: API function call : GetParamControl (false)
+2016-8-31 11h52m16s:Controller.cpp: API function call : Take control of configurations, prio 127
+2016-8-31 11h52m16s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-31 11h52m16s:Controller.cpp: API function call : Release control of configurations
+2016-8-31 11h52m16s:Controller.cpp: API function call : Release control of the system
+2016-8-31 11h52m16s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-31 11h52m16s:Controller.cpp: new client: 9080
+2016-8-31 11h52m16s:CClient.cpp: Creating new client ID: 6572
+2016-8-31 11h52m16s:CClient.cpp: clientThread started with port:1012
+2016-8-31 11h52m16s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-31 11h52m16s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 11424
+2016-8-31 11h52m16s:Controller.cpp: API function call : Get model list changes
+2016-8-31 11h52m16s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-31 11h52m16s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-31 11h52m16s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-31 11h52m16s:Controller.cpp: API function call : NotificationConnect
+2016-8-31 11h52m16s:Controller.cpp: pClient->notifCommSock = 1180
+2016-8-31 11h52m16s:Controller.cpp: API function call : SetEventInterest
+2016-8-31 11h52m16s:Controller.cpp: API function call : GET_CHILDREN Project
+2016-8-31 11h52m16s:Controller.cpp: API function call : GET_CHILDREN Model List
+2016-8-31 11h52m16s:Controller.cpp: API function call : NotificationConnect
+2016-8-31 11h52m16s:Controller.cpp: pClient->notifCommSock = 1172
+2016-8-31 11h52m16s:Controller.cpp: API function call : SetEventInterest
+2016-8-31 11h52m16s:Controller.cpp: API function call : GET_CHILDREN Environment Variable List
+2016-8-31 11h52m16s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-31 11h52m16s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-31 11h52m16s:Controller.cpp: API function call : GET_CHILDREN Missing Model List
+2016-8-31 11h52m16s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-31 11h52m16s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-31 11h52m16s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-31 11h52m16s:Controller.cpp: API function call : RegisterDisplay
+2016-8-31 11h52m17s:Controller.cpp: new client: 9080
+2016-8-31 11h52m17s:CClient.cpp: Creating new client ID: 12016
+2016-8-31 11h52m17s:CClient.cpp: clientThread started with port:1176
+2016-8-31 11h52m17s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-31 11h52m17s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 11424
+2016-8-31 11h52m17s:Controller.cpp: API function call : Get model list changes
+2016-8-31 11h52m17s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-31 11h52m17s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-31 11h52m17s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-31 12h8m15s:Controller.cpp: new client: 9080
+2016-8-31 12h8m15s:CClient.cpp: Creating new client ID: 8636
+2016-8-31 12h8m15s:CClient.cpp: clientThread started with port:1052
+2016-8-31 12h8m15s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-31 12h8m15s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 11424
+2016-8-31 12h8m15s:Controller.cpp: API function call : Get model list changes
+2016-8-31 12h8m15s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-31 12h8m15s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-31 12h8m15s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-31 12h8m15s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-31 12h8m15s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-31 12h8m15s:Controller.cpp: API function call : GET_CHILDREN Model
+2016-8-31 12h8m15s:Controller.cpp: API function call : GET_CHILDREN Model Variable List
+2016-8-31 12h8m15s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-31 12h8m18s:Controller.cpp: new client: 9080
+2016-8-31 12h8m18s:CClient.cpp: Creating new client ID: 6868
+2016-8-31 12h8m18s:CClient.cpp: clientThread started with port:1272
+2016-8-31 12h8m18s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-31 12h8m18s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 11424
+2016-8-31 12h8m18s:Controller.cpp: API function call : Get model list changes
+2016-8-31 12h8m18s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-31 12h8m18s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-31 12h8m18s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-31 12h8m18s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-31 12h8m18s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-31 12h8m18s:Controller.cpp: API function call : COMMAND Matlab Handler Load
+2016-8-31 12h8m18s:Service Matlab/CommandsProcessor found
+2016-8-31 12h8m18s:MatlabHandler - createConnection: create connection has been successful with Matlab version = 8.4
+2016-8-31 12h8m18s:MatlabHandler - getConflictFlag: The model version is older than Matlab's (Model[UnknownMatlabVersion]<->Matlab[v8.4])
+2016-8-31 13h22m58s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-31 13h22m58s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-31 13h22m58s:Controller.cpp: API function call : COMMAND Matlab Handler Load
+2016-8-31 13h22m58s:MatlabHandler - getConflictFlag: The model version is older than Matlab's (Model[UnknownMatlabVersion]<->Matlab[v8.4])
+2016-8-31 13h23m57s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-31 13h23m57s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-31 13h23m57s:Controller.cpp: API function call : COMMAND Matlab Handler Load
+2016-8-31 13h23m57s:MatlabHandler - getConflictFlag: The model version is older than Matlab's (Model[UnknownMatlabVersion]<->Matlab[v8.4])
+2016-8-31 15h19m55s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-31 15h19m55s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-31 15h19m55s:Controller.cpp: API function call : COMMAND Matlab Handler Load
+2016-8-31 15h19m55s:MatlabHandler - getConflictFlag: The model version is older than Matlab's (Model[UnknownMatlabVersion]<->Matlab[v8.4])
+2016-8-31 15h20m53s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-31 15h20m53s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-31 15h20m53s:Controller.cpp: API function call : RegisterDisplay
+2016-8-31 15h20m53s:Controller.cpp: API function call : Clean model
+2016-8-31 15h20m53s:Controller.cpp: API function call : Compile (my_pv_system.mdl   C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\my_pv_system)
+2016-8-31 15h20m53s:Controller.cpp: NOTIFICATION MSG IS: MODEL_COMPILING
+2016-8-31 15h20m53s:Compile.cpp: compileThread launched with id = 12168
+2016-8-31 15h20m53s:Controller.cpp: NOTIFICATION MSG IS: Preparing model
+2016-8-31 15h20m53s:CIniFileCache.cpp: CIniFileCache.Load():: Empty line (#1) before EOF has been reached
+2016-8-31 15h20m53s:CIniFileCache.cpp: Saving my_pv_system.md5 because error was detected
+2016-8-31 15h20m53s:Controller.cpp: NOTIFICATION MSG IS: Model separation
+2016-8-31 15h20m59s:MatlabHandler - createConnection: create connection has been successful with Matlab version = 8.4
+2016-8-31 15h21m21s:MatlabCOM::initializeClassCOM: CoInitialize function failed with code 262
+2016-8-31 15h21m21s:CtrlException.cpp: CtrlException, code 5, msg Compilation failed. 
+
+Please see the compilation results display for more information.
+2016-8-31 15h21m21s:Controller.cpp: NOTIFICATION MSG IS: MODEL_NOT_LOADABLE
+2016-8-31 15h21m21s:CtrlException.cpp: CtrlException, code 5, msg Compilation failed. 
+
+Please see the compilation results display for more information.
+2016-8-31 15h21m21s:Compile.cpp: Compilation Thread closed.
+2016-8-31 15h21m21s:Controller.cpp: new client: 9080
+2016-8-31 15h21m21s:CClient.cpp: Creating new client ID: 9840
+2016-8-31 15h21m21s:CClient.cpp: clientThread started with port:1464
+2016-8-31 15h21m21s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-31 15h21m21s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 11424
+2016-8-31 15h21m21s:Controller.cpp: API function call : Get model list changes
+2016-8-31 15h21m21s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-31 15h21m21s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-31 15h21m21s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-31 15h21m21s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-31 15h21m21s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-31 15h21m21s:Controller.cpp: API function call : COMMAND Model Find
+2016-8-31 15h21m21s:Controller.cpp: NOTIFICATION MSG IS: 0
+2016-8-31 15h21m21s:Controller.cpp: API function call : GET_CHILDREN SearchResult List
+2016-8-31 15h21m21s:Controller.cpp: API function call : RegisterDisplay
+2016-8-31 15h21m21s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-31 15h21m21s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-31 15h21m21s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-31 15h21m21s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-31 15h21m21s:Controller.cpp: API function call : GET_CHILDREN Model
+2016-8-31 15h21m21s:Controller.cpp: API function call : GET_CHILDREN Model Variable List
+2016-8-31 15h21m21s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-31 15h23m37s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-31 15h23m37s:Controller.cpp: NOTIFICATION MSG IS: 216455356602122240,2039
+2016-8-31 15h23m42s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-31 15h23m42s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-31 15h23m42s:Controller.cpp: API function call : RegisterDisplay
+2016-8-31 15h23m42s:Controller.cpp: API function call : Clean model
+2016-8-31 15h23m42s:Controller.cpp: API function call : Compile (my_pv_system.mdl   C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\my_pv_system)
+2016-8-31 15h23m42s:Controller.cpp: NOTIFICATION MSG IS: MODEL_COMPILING
+2016-8-31 15h23m42s:Compile.cpp: compileThread launched with id = 12372
+2016-8-31 15h23m42s:Controller.cpp: NOTIFICATION MSG IS: Preparing model
+2016-8-31 15h23m42s:Controller.cpp: NOTIFICATION MSG IS: Model separation
+2016-8-31 15h23m48s:MatlabHandler - createConnection: create connection has been successful with Matlab version = 8.4
+2016-8-31 15h24m16s:MatlabCOM::initializeClassCOM: CoInitialize function failed with code 262
+2016-8-31 15h24m16s:CtrlException.cpp: CtrlException, code 5, msg Compilation failed. 
+
+Please see the compilation results display for more information.
+2016-8-31 15h24m16s:Controller.cpp: NOTIFICATION MSG IS: MODEL_NOT_LOADABLE
+2016-8-31 15h24m16s:CtrlException.cpp: CtrlException, code 5, msg Compilation failed. 
+
+Please see the compilation results display for more information.
+2016-8-31 15h24m16s:Compile.cpp: Compilation Thread closed.
+2016-8-31 15h24m16s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-31 15h24m16s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-31 15h24m16s:Controller.cpp: API function call : COMMAND Model Find
+2016-8-31 15h24m16s:Controller.cpp: NOTIFICATION MSG IS: 0
+2016-8-31 15h24m16s:Controller.cpp: API function call : GET_CHILDREN SearchResult List
+2016-8-31 15h24m16s:Controller.cpp: API function call : RegisterDisplay
+2016-8-31 15h24m16s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-31 15h24m16s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-31 15h24m16s:Controller.cpp: new client: 9080
+2016-8-31 15h24m16s:CClient.cpp: Creating new client ID: 13184
+2016-8-31 15h24m16s:CClient.cpp: clientThread started with port:1584
+2016-8-31 15h24m16s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-8-31 15h24m16s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 11424
+2016-8-31 15h24m16s:Controller.cpp: API function call : Get model list changes
+2016-8-31 15h24m16s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-8-31 15h24m16s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-31 15h24m16s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-31 15h24m16s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-31 15h24m16s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-31 15h24m16s:Controller.cpp: API function call : GET_CHILDREN Model
+2016-8-31 15h24m16s:Controller.cpp: API function call : GET_CHILDREN Model Variable List
+2016-8-31 15h24m16s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-31 16h2m41s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-31 16h2m41s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-31 16h2m41s:Controller.cpp: API function call : COMMAND Matlab Handler Load
+2016-8-31 16h2m41s:MatlabHandler - getConflictFlag: The model version is older than Matlab's (Model[UnknownMatlabVersion]<->Matlab[v8.4])
+2016-8-31 16h15m12s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-31 16h15m12s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-31 16h15m12s:Controller.cpp: API function call : RegisterDisplay
+2016-8-31 16h15m12s:Controller.cpp: API function call : Clean model
+2016-8-31 16h15m12s:Controller.cpp: API function call : Compile (my_pv_system.mdl   C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\my_pv_system)
+2016-8-31 16h15m12s:Controller.cpp: NOTIFICATION MSG IS: MODEL_COMPILING
+2016-8-31 16h15m12s:Compile.cpp: compileThread launched with id = 11628
+2016-8-31 16h15m12s:Controller.cpp: NOTIFICATION MSG IS: Preparing model
+2016-8-31 16h15m12s:Controller.cpp: NOTIFICATION MSG IS: Model separation
+2016-8-31 16h15m18s:MatlabHandler - createConnection: create connection has been successful with Matlab version = 8.4
+2016-8-31 16h15m44s:MatlabCOM::initializeClassCOM: CoInitialize function failed with code 262
+2016-8-31 16h15m44s:CtrlException.cpp: CtrlException, code 5, msg Compilation failed. 
+
+Please see the compilation results display for more information.
+2016-8-31 16h15m44s:Controller.cpp: NOTIFICATION MSG IS: MODEL_NOT_LOADABLE
+2016-8-31 16h15m44s:CtrlException.cpp: CtrlException, code 5, msg Compilation failed. 
+
+Please see the compilation results display for more information.
+2016-8-31 16h15m44s:Compile.cpp: Compilation Thread closed.
+2016-8-31 16h15m44s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-31 16h15m44s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-31 16h15m44s:Controller.cpp: API function call : COMMAND Model Find
+2016-8-31 16h15m44s:Controller.cpp: NOTIFICATION MSG IS: 0
+2016-8-31 16h15m44s:Controller.cpp: API function call : GET_CHILDREN SearchResult List
+2016-8-31 16h15m44s:Controller.cpp: API function call : RegisterDisplay
+2016-8-31 16h15m44s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-31 16h15m44s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-31 16h15m44s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-31 16h15m44s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-31 16h15m44s:Controller.cpp: API function call : GET_CHILDREN Model
+2016-8-31 16h15m44s:Controller.cpp: API function call : GET_CHILDREN Model Variable List
+2016-8-31 16h15m44s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-31 16h18m4s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-31 16h18m4s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-31 16h18m4s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-8-31 16h18m4s:Controller.cpp: API function call : COMMAND Matlab Handler Open
+2016-8-31 16h18m4s:MatlabHandler - Open: an instance of matlab with the same version is already opened
+2016-8-31 16h18m4s:Controller.cpp: API function call : COMMAND Matlab Handler Execute
+2016-8-31 16h18m4s:Controller.cpp: API function call : COMMAND Matlab Handler Execute
+2016-8-31 16h18m4s:Controller.cpp: API function call : COMMAND Matlab Handler Load
+2016-8-31 16h18m5s:MatlabHandler - getConflictFlag: The model version is older than Matlab's (Model[UnknownMatlabVersion]<->Matlab[v8.4])
+2016-8-31 16h30m2s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-31 16h30m2s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-31 16h30m2s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-31 16h30m2s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-31 16h30m2s:Controller.cpp: API function call : GET_CHILDREN Model
+2016-8-31 16h30m2s:Controller.cpp: API function call : GET_CHILDREN Model Variable List
+2016-8-31 16h30m2s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-31 16h35m2s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-31 16h35m2s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-31 16h35m2s:Controller.cpp: API function call : RegisterDisplay
+2016-8-31 16h35m2s:Controller.cpp: API function call : Clean model
+2016-8-31 16h35m2s:Controller.cpp: API function call : Compile (my_pv_system.mdl   C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\my_pv_system)
+2016-8-31 16h35m2s:Controller.cpp: NOTIFICATION MSG IS: MODEL_COMPILING
+2016-8-31 16h35m2s:Compile.cpp: compileThread launched with id = 13012
+2016-8-31 16h35m2s:Controller.cpp: NOTIFICATION MSG IS: Preparing model
+2016-8-31 16h35m2s:Controller.cpp: NOTIFICATION MSG IS: Model separation
+2016-8-31 16h35m8s:MatlabHandler - createConnection: create connection has been successful with Matlab version = 8.4
+2016-8-31 16h35m41s:MatlabCOM::initializeClassCOM: CoInitialize function failed with code 262
+2016-8-31 16h35m41s:CtrlException.cpp: CtrlException, code 5, msg Compilation failed. 
+
+Please see the compilation results display for more information.
+2016-8-31 16h35m41s:Controller.cpp: NOTIFICATION MSG IS: MODEL_NOT_LOADABLE
+2016-8-31 16h35m41s:CtrlException.cpp: CtrlException, code 5, msg Compilation failed. 
+
+Please see the compilation results display for more information.
+2016-8-31 16h35m41s:Compile.cpp: Compilation Thread closed.
+2016-8-31 16h35m41s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-31 16h35m41s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-31 16h35m41s:Controller.cpp: API function call : COMMAND Model Find
+2016-8-31 16h35m41s:Controller.cpp: NOTIFICATION MSG IS: 0
+2016-8-31 16h35m41s:Controller.cpp: API function call : GET_CHILDREN SearchResult List
+2016-8-31 16h35m41s:Controller.cpp: API function call : RegisterDisplay
+2016-8-31 16h35m41s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-31 16h35m41s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-31 16h35m41s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-31 16h35m41s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-31 16h35m41s:Controller.cpp: API function call : GET_CHILDREN Model
+2016-8-31 16h35m41s:Controller.cpp: API function call : GET_CHILDREN Model Variable List
+2016-8-31 16h35m41s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-31 16h36m32s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-31 16h36m32s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-31 16h36m32s:Controller.cpp: API function call : RegisterDisplay
+2016-8-31 16h36m32s:Controller.cpp: API function call : Clean model
+2016-8-31 16h36m32s:Controller.cpp: API function call : Compile (my_pv_system.mdl   C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\my_pv_system)
+2016-8-31 16h36m32s:Controller.cpp: NOTIFICATION MSG IS: MODEL_COMPILING
+2016-8-31 16h36m32s:Compile.cpp: compileThread launched with id = 12456
+2016-8-31 16h36m32s:Controller.cpp: NOTIFICATION MSG IS: Preparing model
+2016-8-31 16h36m32s:Controller.cpp: NOTIFICATION MSG IS: Model separation
+2016-8-31 16h36m37s:MatlabHandler - createConnection: create connection has been successful with Matlab version = 8.4
+2016-8-31 16h37m10s:MatlabCOM::initializeClassCOM: CoInitialize function failed with code 262
+2016-8-31 16h37m10s:CtrlException.cpp: CtrlException, code 5, msg Compilation failed. 
+
+Please see the compilation results display for more information.
+2016-8-31 16h37m10s:Controller.cpp: NOTIFICATION MSG IS: MODEL_NOT_LOADABLE
+2016-8-31 16h37m10s:CtrlException.cpp: CtrlException, code 5, msg Compilation failed. 
+
+Please see the compilation results display for more information.
+2016-8-31 16h37m10s:Compile.cpp: Compilation Thread closed.
+2016-8-31 16h37m10s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-31 16h37m10s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-31 16h37m10s:Controller.cpp: API function call : COMMAND Model Find
+2016-8-31 16h37m10s:Controller.cpp: NOTIFICATION MSG IS: 0
+2016-8-31 16h37m10s:Controller.cpp: API function call : GET_CHILDREN SearchResult List
+2016-8-31 16h37m10s:Controller.cpp: API function call : RegisterDisplay
+2016-8-31 16h37m10s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-31 16h37m10s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-31 16h37m10s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-31 16h37m10s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-31 16h37m10s:Controller.cpp: API function call : GET_CHILDREN Model
+2016-8-31 16h37m10s:Controller.cpp: API function call : GET_CHILDREN Model Variable List
+2016-8-31 16h37m10s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-31 16h41m55s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-31 16h41m55s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-31 16h41m55s:Controller.cpp: API function call : RegisterDisplay
+2016-8-31 16h41m55s:Controller.cpp: API function call : Clean model
+2016-8-31 16h41m55s:Controller.cpp: API function call : Compile (my_pv_system.mdl   C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\my_pv_system)
+2016-8-31 16h41m55s:Controller.cpp: NOTIFICATION MSG IS: MODEL_COMPILING
+2016-8-31 16h41m55s:Compile.cpp: compileThread launched with id = 2440
+2016-8-31 16h41m55s:Controller.cpp: NOTIFICATION MSG IS: Preparing model
+2016-8-31 16h41m55s:Controller.cpp: NOTIFICATION MSG IS: Model separation
+2016-8-31 16h42m1s:MatlabHandler - createConnection: create connection has been successful with Matlab version = 8.4
+2016-8-31 16h42m27s:MatlabCOM::initializeClassCOM: CoInitialize function failed with code 262
+2016-8-31 16h42m27s:CtrlException.cpp: CtrlException, code 5, msg Compilation failed. 
+
+Please see the compilation results display for more information.
+2016-8-31 16h42m27s:Controller.cpp: NOTIFICATION MSG IS: MODEL_NOT_LOADABLE
+2016-8-31 16h42m27s:CtrlException.cpp: CtrlException, code 5, msg Compilation failed. 
+
+Please see the compilation results display for more information.
+2016-8-31 16h42m27s:Controller.cpp: API function call : RegisterDisplay
+2016-8-31 16h42m27s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-31 16h42m27s:Compile.cpp: Compilation Thread closed.
+2016-8-31 16h42m28s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-31 16h42m28s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-31 16h42m28s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-31 16h42m28s:Controller.cpp: API function call : COMMAND Model Find
+2016-8-31 16h42m28s:Controller.cpp: NOTIFICATION MSG IS: 0
+2016-8-31 16h42m28s:Controller.cpp: API function call : GET_CHILDREN SearchResult List
+2016-8-31 16h42m28s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-8-31 16h42m28s:Controller.cpp: API function call : COMMAND Selection Add
+2016-8-31 16h42m28s:Controller.cpp: API function call : GET_CHILDREN Model
+2016-8-31 16h42m28s:Controller.cpp: API function call : GET_CHILDREN Model Variable List
+2016-8-31 16h42m28s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-8-31 20h44m49s:Controller.cpp: API function call : SetEventInterest
+2016-8-31 20h44m49s:Controller.cpp: API function call : SetEventInterest
+2016-8-31 20h44m49s:Controller.cpp: Removing client: 8636
+2016-8-31 20h44m49s:CClient.cpp: clientThread exit.
+2016-8-31 20h44m49s:Controller.cpp: Removing client: 8304
+2016-8-31 20h44m49s:CClient.cpp: clientThread exit.
+2016-8-31 20h44m49s:Controller.cpp: Removing client: 6572
+2016-8-31 20h44m49s:Controller.cpp: Removing client: 12016
+2016-8-31 20h44m49s:CClient.cpp: clientThread exit.
+2016-8-31 20h44m49s:CClient.cpp: clientThread exit.
+2016-8-31 20h44m49s:Controller.cpp: Removing client: 6868
+2016-8-31 20h44m49s:Controller.cpp: Removing client: 9840
+2016-8-31 20h44m49s:Controller.cpp: Removing client: 13184
+2016-8-31 20h44m49s:CClient.cpp: clientThread exit.
+2016-8-31 20h44m49s:CClient.cpp: clientThread exit.
+2016-8-31 20h44m49s:Controller.cpp: terminateControlCommThread, call OpalInitializeSend with ipAddr 192.168.44.1:52601
+2016-8-31 20h44m49s:Controller.cpp: Entering CloseSubControllers
+2016-8-31 20h44m50s:CClient.cpp: clientThread exit.
+2016-8-31 20h44m50s:Stopping OpalNode watchdog.
+2016-9-5 12h17m9s:Controller.cpp: ------- NEW CONTROLLER STARTED (pid 13708) ------
+2016-9-5 12h17m9s:Controller.cpp: new client: 9008
+2016-9-5 12h17m9s:CClient.cpp: Creating new client ID: 7480
+2016-9-5 12h17m9s:CClient.cpp: clientThread started with port:924
+2016-9-5 12h17m9s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-9-5 12h17m9s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 5336
+2016-9-5 12h17m9s:WinUtils.cpp: Could not get the subsystem list. Verify that the model has been compiled.
+2016-9-5 12h17m9s:CtrlException.cpp: CtrlException, code 3, msg Could not get the subsystem list. Verify that the model has been compiled.
+2016-9-5 12h17m9s:Controller.cpp: API function call : Get model list changes
+2016-9-5 12h17m9s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-9-5 12h17m9s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-9-5 12h17m9s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-9-5 12h17m9s:Controller.cpp: API function call : GetSystemControl (true)
+2016-9-5 12h17m9s:Controller.cpp: API function call : GetSystemControl (false)
+2016-9-5 12h17m9s:Controller.cpp: API function call : GetParamControl (true)
+2016-9-5 12h17m9s:Controller.cpp: API function call : GetParamControl (false)
+2016-9-5 12h17m9s:Controller.cpp: API function call : Take control of configurations, prio 127
+2016-9-5 12h17m9s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-9-5 12h17m9s:Controller.cpp: API function call : Release control of configurations
+2016-9-5 12h17m9s:Controller.cpp: API function call : Release control of the system
+2016-9-5 12h17m9s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-9-5 12h17m9s:Controller.cpp: new client: 9008
+2016-9-5 12h17m9s:CClient.cpp: Creating new client ID: 120
+2016-9-5 12h17m9s:CClient.cpp: clientThread started with port:1168
+2016-9-5 12h17m9s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-9-5 12h17m9s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 5336
+2016-9-5 12h17m9s:Controller.cpp: API function call : Get model list changes
+2016-9-5 12h17m9s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-9-5 12h17m9s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-9-5 12h17m9s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-9-5 12h17m9s:Controller.cpp: API function call : NotificationConnect
+2016-9-5 12h17m9s:Controller.cpp: pClient->notifCommSock = 1124
+2016-9-5 12h17m9s:Controller.cpp: API function call : SetEventInterest
+2016-9-5 12h17m9s:Controller.cpp: API function call : GET_CHILDREN Project
+2016-9-5 12h17m9s:Controller.cpp: API function call : GET_CHILDREN Model List
+2016-9-5 12h17m9s:Controller.cpp: API function call : NotificationConnect
+2016-9-5 12h17m9s:Controller.cpp: pClient->notifCommSock = 1196
+2016-9-5 12h17m9s:Controller.cpp: API function call : SetEventInterest
+2016-9-5 12h17m9s:Controller.cpp: API function call : GET_CHILDREN Environment Variable List
+2016-9-5 12h17m9s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-9-5 12h17m9s:Controller.cpp: API function call : COMMAND Selection Add
+2016-9-5 12h17m9s:Controller.cpp: API function call : GET_CHILDREN Missing Model List
+2016-9-5 12h17m9s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-9-5 12h17m9s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-9-5 12h17m9s:Controller.cpp: API function call : COMMAND Selection Add
+2016-9-5 12h17m9s:Controller.cpp: API function call : RegisterDisplay
+2016-9-5 12h17m11s:Controller.cpp: new client: 9008
+2016-9-5 12h17m11s:CClient.cpp: Creating new client ID: 14492
+2016-9-5 12h17m11s:CClient.cpp: clientThread started with port:1172
+2016-9-5 12h17m11s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-9-5 12h17m11s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 5336
+2016-9-5 12h17m11s:Controller.cpp: API function call : Get model list changes
+2016-9-5 12h17m11s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-9-5 12h17m11s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-9-5 12h17m11s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-9-5 12h17m11s:Controller.cpp: new client: 9008
+2016-9-5 12h17m11s:CClient.cpp: Creating new client ID: 5600
+2016-9-5 12h17m11s:CClient.cpp: clientThread started with port:1132
+2016-9-5 12h17m11s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-9-5 12h17m11s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 5336
+2016-9-5 12h17m11s:Controller.cpp: API function call : Get model list changes
+2016-9-5 12h17m11s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-9-5 12h17m11s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-9-5 12h17m11s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-9-5 12h17m51s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-9-5 12h17m51s:Controller.cpp: API function call : COMMAND Selection Add
+2016-9-5 12h17m51s:Controller.cpp: API function call : GET_CHILDREN Model
+2016-9-5 12h17m51s:Controller.cpp: API function call : GET_CHILDREN Model Variable List
+2016-9-5 12h17m51s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-9-5 12h24m55s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-9-5 12h24m55s:Controller.cpp: NOTIFICATION MSG IS: 216455356602122240,2039
+2016-9-5 12h25m0s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-9-5 12h25m0s:Controller.cpp: API function call : COMMAND Selection Add
+2016-9-5 12h25m0s:Controller.cpp: API function call : RegisterDisplay
+2016-9-5 12h25m0s:Controller.cpp: API function call : Clean model
+2016-9-5 12h25m0s:Controller.cpp: API function call : Compile (my_pv_system.mdl   C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\my_pv_system)
+2016-9-5 12h25m0s:Controller.cpp: NOTIFICATION MSG IS: MODEL_COMPILING
+2016-9-5 12h25m0s:Compile.cpp: compileThread launched with id = 1912
+2016-9-5 12h25m1s:Controller.cpp: NOTIFICATION MSG IS: Preparing model
+2016-9-5 12h25m1s:Controller.cpp: NOTIFICATION MSG IS: Model separation
+2016-9-5 12h25m1s:Service Matlab/CommandsProcessor found
+2016-9-5 12h25m7s:MatlabHandler - createConnection: create connection has been successful with Matlab version = 8.4
+2016-9-5 12h25m40s:MatlabCOM::initializeClassCOM: CoInitialize function failed with code 262
+2016-9-5 12h25m40s:CtrlException.cpp: CtrlException, code 5, msg Compilation failed. 
+
+Please see the compilation results display for more information.
+2016-9-5 12h25m40s:Controller.cpp: NOTIFICATION MSG IS: MODEL_NOT_LOADABLE
+2016-9-5 12h25m40s:CtrlException.cpp: CtrlException, code 5, msg Compilation failed. 
+
+Please see the compilation results display for more information.
+2016-9-5 12h25m40s:Compile.cpp: Compilation Thread closed.
+2016-9-5 12h25m40s:Controller.cpp: new client: 9008
+2016-9-5 12h25m40s:CClient.cpp: Creating new client ID: 404
+2016-9-5 12h25m40s:CClient.cpp: clientThread started with port:1336
+2016-9-5 12h25m40s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-9-5 12h25m40s:Controller.cpp: API function call : RegisterDisplay
+2016-9-5 12h25m40s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 5336
+2016-9-5 12h25m40s:Controller.cpp: API function call : Get model list changes
+2016-9-5 12h25m40s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-9-5 12h25m40s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-9-5 12h25m40s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-9-5 12h25m40s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-9-5 12h25m40s:Controller.cpp: API function call : COMMAND Selection Add
+2016-9-5 12h25m40s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-9-5 12h25m40s:Controller.cpp: API function call : COMMAND Selection Add
+2016-9-5 12h25m41s:Controller.cpp: API function call : GET_CHILDREN Model
+2016-9-5 12h25m41s:Controller.cpp: API function call : GET_CHILDREN Model Variable List
+2016-9-5 12h25m41s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-9-5 12h26m43s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-9-5 12h26m43s:Controller.cpp: API function call : COMMAND Selection Add
+2016-9-5 12h26m43s:Controller.cpp: API function call : COMMAND Model Find
+2016-9-5 12h26m43s:Controller.cpp: NOTIFICATION MSG IS: 0
+2016-9-5 12h26m43s:Controller.cpp: API function call : GET_CHILDREN SearchResult List
+2016-9-5 12h27m13s:Controller.cpp: new client: 9008
+2016-9-5 12h27m13s:CClient.cpp: Creating new client ID: 5480
+2016-9-5 12h27m13s:CClient.cpp: clientThread started with port:1332
+2016-9-5 12h27m13s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-9-5 12h27m13s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 5336
+2016-9-5 12h27m13s:Controller.cpp: API function call : Get model list changes
+2016-9-5 12h27m13s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-9-5 12h27m13s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-9-5 12h27m13s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-9-5 12h27m13s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-9-5 12h27m13s:Controller.cpp: API function call : COMMAND Selection Add
+2016-9-5 12h27m13s:Controller.cpp: API function call : COMMAND Matlab Handler Load
+2016-9-5 12h27m13s:MatlabHandler - createConnection: create connection has been successful with Matlab version = 8.4
+2016-9-5 12h27m13s:MatlabHandler - getConflictFlag: The model version is older than Matlab's (Model[UnknownMatlabVersion]<->Matlab[v8.4])
+2016-9-5 12h31m41s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-9-5 12h31m41s:Controller.cpp: NOTIFICATION MSG IS: 216455356602122240,2039
+2016-9-5 12h31m46s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-9-5 12h31m46s:Controller.cpp: API function call : COMMAND Selection Add
+2016-9-5 12h31m46s:Controller.cpp: API function call : RegisterDisplay
+2016-9-5 12h31m46s:Controller.cpp: API function call : Clean model
+2016-9-5 12h31m46s:Controller.cpp: API function call : Compile (my_pv_system.mdl   C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\my_pv_system)
+2016-9-5 12h31m46s:Controller.cpp: NOTIFICATION MSG IS: MODEL_COMPILING
+2016-9-5 12h31m46s:Compile.cpp: compileThread launched with id = 13612
+2016-9-5 12h31m46s:Controller.cpp: NOTIFICATION MSG IS: Preparing model
+2016-9-5 12h31m46s:Controller.cpp: NOTIFICATION MSG IS: Model separation
+2016-9-5 12h31m52s:MatlabHandler - createConnection: create connection has been successful with Matlab version = 8.4
+2016-9-5 12h32m19s:MatlabCOM::initializeClassCOM: CoInitialize function failed with code 262
+2016-9-5 12h32m19s:CtrlException.cpp: CtrlException, code 5, msg Compilation failed. 
+
+Please see the compilation results display for more information.
+2016-9-5 12h32m19s:Controller.cpp: NOTIFICATION MSG IS: MODEL_NOT_LOADABLE
+2016-9-5 12h32m19s:CtrlException.cpp: CtrlException, code 5, msg Compilation failed. 
+
+Please see the compilation results display for more information.
+2016-9-5 12h32m19s:Compile.cpp: Compilation Thread closed.
+2016-9-5 12h32m20s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-9-5 12h32m20s:Controller.cpp: API function call : COMMAND Selection Add
+2016-9-5 12h32m20s:Controller.cpp: API function call : COMMAND Model Find
+2016-9-5 12h32m20s:Controller.cpp: NOTIFICATION MSG IS: 0
+2016-9-5 12h32m20s:Controller.cpp: API function call : GET_CHILDREN SearchResult List
+2016-9-5 12h32m20s:Controller.cpp: API function call : RegisterDisplay
+2016-9-5 12h32m20s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-9-5 12h32m20s:Controller.cpp: API function call : COMMAND Selection Add
+2016-9-5 12h32m20s:Controller.cpp: new client: 9008
+2016-9-5 12h32m20s:CClient.cpp: Creating new client ID: 6868
+2016-9-5 12h32m20s:CClient.cpp: clientThread started with port:1420
+2016-9-5 12h32m20s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2016-9-5 12h32m20s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 5336
+2016-9-5 12h32m20s:Controller.cpp: API function call : Get model list changes
+2016-9-5 12h32m20s:Controller.cpp: API function call : COMMAND Project ApiSync
+2016-9-5 12h32m20s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-9-5 12h32m20s:Controller.cpp: API function call : SET ATTRIBUTES
+2016-9-5 12h32m20s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-9-5 12h32m20s:Controller.cpp: API function call : COMMAND Selection Add
+2016-9-5 12h32m20s:Controller.cpp: API function call : GET_CHILDREN Model
+2016-9-5 12h32m20s:Controller.cpp: API function call : GET_CHILDREN Model Variable List
+2016-9-5 12h32m20s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2016-9-5 12h37m15s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-9-5 12h37m15s:Controller.cpp: API function call : COMMAND Selection Add
+2016-9-5 12h37m15s:Controller.cpp: API function call : RegisterDisplay
+2016-9-5 12h37m15s:Controller.cpp: API function call : Clean model
+2016-9-5 12h37m15s:Controller.cpp: API function call : Compile (my_pv_system.mdl   C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\my_pv_system)
+2016-9-5 12h37m15s:Controller.cpp: NOTIFICATION MSG IS: MODEL_COMPILING
+2016-9-5 12h37m15s:Compile.cpp: compileThread launched with id = 9232
+2016-9-5 12h37m15s:Controller.cpp: NOTIFICATION MSG IS: Preparing model
+2016-9-5 12h37m15s:Controller.cpp: NOTIFICATION MSG IS: Model separation
+2016-9-5 12h37m22s:MatlabHandler - createConnection: create connection has been successful with Matlab version = 8.4
+2016-9-5 12h37m53s:MatlabCOM::initializeClassCOM: CoInitialize function failed with code 262
+2016-9-5 12h37m53s:CtrlException.cpp: CtrlException, code 5, msg Compilation failed. 
+
+Please see the compilation results display for more information.
+2016-9-5 12h37m53s:Controller.cpp: NOTIFICATION MSG IS: MODEL_NOT_LOADABLE
+2016-9-5 12h37m53s:CtrlException.cpp: CtrlException, code 5, msg Compilation failed. 
+
+Please see the compilation results display for more information.
+2016-9-5 12h37m53s:Compile.cpp: Compilation Thread closed.
+2016-9-5 12h37m53s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-9-5 12h37m53s:Controller.cpp: API function call : COMMAND Selection Add
+2016-9-5 12h37m53s:Controller.cpp: API function call : COMMAND Model Find
+2016-9-5 12h37m53s:Controller.cpp: NOTIFICATION MSG IS: 0
+2016-9-5 12h37m53s:Controller.cpp: API function call : GET_CHILDREN SearchResult List
+2016-9-5 12h37m53s:Controller.cpp: API function call : RegisterDisplay
+2016-9-5 12h37m53s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-9-5 12h37m53s:Controller.cpp: API function call : COMMAND Selection Add
+2016-9-5 12h37m53s:Controller.cpp: API function call : COMMAND Selection Remove
+2016-9-5 12h37m53s:Controller.cpp: API function call : COMMAND Selection Add
+2016-9-5 12h37m53s:Controller.cpp: API function call : GET_CHILDREN Model
+2016-9-5 12h37m53s:Controller.cpp: API function call : GET_CHILDREN Model Variable List
+2016-9-5 12h37m53s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
