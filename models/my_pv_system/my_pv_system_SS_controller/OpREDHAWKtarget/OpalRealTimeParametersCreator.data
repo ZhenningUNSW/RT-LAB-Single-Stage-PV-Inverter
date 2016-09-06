@@ -214,427 +214,451 @@ SS_controller/Memory/X0
 736
 F64
 1
+SS_controller/Memory/X0
+744
+F64
+1
+SS_controller/Memory/X0
+752
+F64
+1
+SS_controller/Constant1/Value
+1176
+F64
+1
+SS_controller/Constant2/Value
+1184
+F64
+1
+SS_controller/Constant3/Value
+1192
+F64
+1
+SS_controller/Constant4/Value
+1200
+F64
+1
 SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Unit Delay/InitialCondition
-1232
-F64
-1
-SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/avoid division by zero/UpperLimit
-1240
-F64
-1
-SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/avoid division by zero/LowerLimit
-1248
-F64
-1
-SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Gain/Gain
-1256
-F64
-1
-SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Discrete Variable Time Delay/S-Function/MaxDelay
 1280
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Discrete Variable Time Delay/S-Function/Ts
+SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/avoid division by zero/UpperLimit
+1288
+F64
+1
+SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/avoid division by zero/LowerLimit
+1296
+F64
+1
+SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Gain/Gain
 1304
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Discrete Variable Time Delay/S-Function/InitialValue
+SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Discrete Variable Time Delay/S-Function/MaxDelay
 1328
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Discrete Variable Time Delay/S-Function/DFT
+SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Discrete Variable Time Delay/S-Function/Ts
 1352
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Discrete-Time Integrator/gainval
-1360
-F64
-1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Discrete-Time Integrator/InitialCondition
-1368
-F64
-1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Constant4/Value
+SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Discrete Variable Time Delay/S-Function/InitialValue
 1376
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/First cycle of simulation Id=0.92, Iq=0/Before
-1384
-F64
-1
-SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/First cycle of simulation Id=0.92, Iq=0/After
-1392
-F64
-1
-SS_controller/Inverter Control/PLL & Measurements/Second-Order Filter/Model/D*u(k)/Gain
+SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Discrete Variable Time Delay/S-Function/DFT
 1400
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Second-Order Filter/Model/Delay_x1/InitialCondition
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Discrete-Time Integrator/gainval
 1408
 F64
-2
-SS_controller/Inverter Control/PLL & Measurements/Second-Order Filter/Model/C*x(k)/C11/Gain
+1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Discrete-Time Integrator/InitialCondition
+1416
+F64
+1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Constant4/Value
 1424
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Second-Order Filter/Model/Delay_x2/InitialCondition
+SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/First cycle of simulation Id=0.92, Iq=0/Before
 1432
 F64
-2
-SS_controller/Inverter Control/PLL & Measurements/Second-Order Filter/Model/C*x(k)/C12/Gain
+1
+SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/First cycle of simulation Id=0.92, Iq=0/After
+1440
+F64
+1
+SS_controller/Inverter Control/PLL & Measurements/Second-Order Filter/Model/D*u(k)/Gain
 1448
 F64
 1
-SS_controller/Inverter Control/Unit Delay2/InitialCondition
+SS_controller/Inverter Control/PLL & Measurements/Second-Order Filter/Model/Delay_x1/InitialCondition
 1456
 F64
-1
-SS_controller/Inverter Control/Iq_ref/Value
-1464
-F64
-1
-SS_controller/Inverter Control/Current Regulator/PI/Integrator/gainval
+2
+SS_controller/Inverter Control/PLL & Measurements/Second-Order Filter/Model/C*x(k)/C11/Gain
 1472
 F64
 1
-SS_controller/Inverter Control/Current Regulator/PI/Integrator/InitialCondition
+SS_controller/Inverter Control/PLL & Measurements/Second-Order Filter/Model/Delay_x2/InitialCondition
 1480
 F64
-1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Gain1/Gain
-1488
-F64
-1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Integ4/gainval
+2
+SS_controller/Inverter Control/PLL & Measurements/Second-Order Filter/Model/C*x(k)/C12/Gain
 1496
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Integ4/InitialCondition
+SS_controller/Inverter Control/Unit Delay2/InitialCondition
 1504
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/To avoid division  by zero/UpperLimit
+SS_controller/Inverter Control/Iq_ref/Value
 1512
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/To avoid division  by zero/LowerLimit
+SS_controller/Inverter Control/Current Regulator/PI/Integrator/gainval
 1520
 F64
 1
+SS_controller/Inverter Control/Current Regulator/PI/Integrator/InitialCondition
+1528
+F64
+1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Gain1/Gain
+1536
+F64
+1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Integ4/gainval
+1544
+F64
+1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Integ4/InitialCondition
+1552
+F64
+1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/To avoid division  by zero/UpperLimit
+1560
+F64
+1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/To avoid division  by zero/LowerLimit
+1568
+F64
+1
 SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Unit Delay/InitialCondition
-1624
-F64
-1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Constant/Value
-1632
-F64
-1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Unit Delay1/InitialCondition
-1640
-F64
-1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Gain3/Gain
-1648
-F64
-1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Integ4/gainval
-1656
-F64
-1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Integ4/InitialCondition
-1664
-F64
-1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/To avoid division  by zero/UpperLimit
 1672
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/To avoid division  by zero/LowerLimit
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Constant/Value
 1680
 F64
 1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Unit Delay1/InitialCondition
+1688
+F64
+1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Gain3/Gain
+1696
+F64
+1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Integ4/gainval
+1704
+F64
+1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Integ4/InitialCondition
+1712
+F64
+1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/To avoid division  by zero/UpperLimit
+1720
+F64
+1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/To avoid division  by zero/LowerLimit
+1728
+F64
+1
 SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Unit Delay/InitialCondition
-1784
-F64
-1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Constant/Value
-1792
-F64
-1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Unit Delay1/InitialCondition
-1800
-F64
-1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Rad->Deg./Gain
-1808
-F64
-1
-SS_controller/Inverter Control/PLL & Measurements/to-rad/Gain
-1816
-F64
-1
-SS_controller/Inverter Control/Current Regulator/Rff /Gain
-1824
-F64
-1
-SS_controller/Inverter Control/Current Regulator/Lff  /Gain
 1832
 F64
 1
-SS_controller/Inverter Control/Current Regulator/Rff/Gain
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Constant/Value
 1840
 F64
 1
-SS_controller/Inverter Control/Current Regulator/Lff/Gain
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Unit Delay1/InitialCondition
 1848
 F64
 1
-SS_controller/Inverter Control/Current Regulator/Saturation/UpperLimit
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Rad->Deg./Gain
 1856
 F64
 1
-SS_controller/Inverter Control/Current Regulator/Saturation/LowerLimit
+SS_controller/Inverter Control/PLL & Measurements/to-rad/Gain
 1864
 F64
 1
-SS_controller/Inverter Control/MPPT  Parameters/Iph_1/Value
+SS_controller/Inverter Control/Current Regulator/Rff /Gain
 1872
 F64
 1
-SS_controller/Inverter Control/MPPT  Parameters/Iph_2/Value
+SS_controller/Inverter Control/Current Regulator/Lff  /Gain
 1880
 F64
 1
-SS_controller/MPPT_On/Value
+SS_controller/Inverter Control/Current Regulator/Rff/Gain
 1888
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Mean/Model/Integ4/gainval
+SS_controller/Inverter Control/Current Regulator/Lff/Gain
 1896
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Mean/Model/Integ4/InitialCondition
+SS_controller/Inverter Control/Current Regulator/Saturation/UpperLimit
 1904
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Mean/Model/K1/Value
+SS_controller/Inverter Control/Current Regulator/Saturation/LowerLimit
 1912
 F64
 1
+SS_controller/Inverter Control/MPPT  Parameters/Iph_1/Value
+1920
+F64
+1
+SS_controller/Inverter Control/MPPT  Parameters/Iph_2/Value
+1928
+F64
+1
+SS_controller/MPPT_On/Value
+1936
+F64
+1
+SS_controller/Inverter Control/PLL & Measurements/Mean/Model/Integ4/gainval
+1944
+F64
+1
+SS_controller/Inverter Control/PLL & Measurements/Mean/Model/Integ4/InitialCondition
+1952
+F64
+1
+SS_controller/Inverter Control/PLL & Measurements/Mean/Model/K1/Value
+1960
+F64
+1
 SS_controller/Inverter Control/PLL & Measurements/Mean/Model/Unit Delay/InitialCondition
-2016
-F64
-1
-SS_controller/Inverter Control/PLL & Measurements/Mean/Model/K2/Value
-2024
-F64
-1
-SS_controller/Inverter Control/PLL & Measurements/Mean/Model/Unit Delay1/InitialCondition
-2032
-F64
-1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Integ4/gainval
-2040
-F64
-1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Integ4/InitialCondition
-2048
-F64
-1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/To avoid division  by zero/UpperLimit
-2056
-F64
-1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/To avoid division  by zero/LowerLimit
 2064
 F64
 1
+SS_controller/Inverter Control/PLL & Measurements/Mean/Model/K2/Value
+2072
+F64
+1
+SS_controller/Inverter Control/PLL & Measurements/Mean/Model/Unit Delay1/InitialCondition
+2080
+F64
+1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Integ4/gainval
+2088
+F64
+1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Integ4/InitialCondition
+2096
+F64
+1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/To avoid division  by zero/UpperLimit
+2104
+F64
+1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/To avoid division  by zero/LowerLimit
+2112
+F64
+1
 SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Correction subsystem/Unit Delay/InitialCondition
-2168
-F64
-1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Constant/Value
-2176
-F64
-1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Unit Delay1/InitialCondition
-2184
-F64
-1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Discrete/Discrete Derivative /Denominator
-2192
-F64
-2
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Discrete/Discrete Derivative /InitialStates
-2208
-F64
-1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Discrete/Discrete-Time Integrator/gainval
 2216
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Discrete/Discrete-Time Integrator/UpperSaturationLimit
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Constant/Value
 2224
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Discrete/Discrete-Time Integrator/LowerSaturationLimit
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Unit Delay1/InitialCondition
 2232
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Discrete/Saturation1/UpperLimit
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Discrete/Discrete Derivative /Denominator
 2240
 F64
-1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Discrete/Saturation1/LowerLimit
-2248
-F64
-1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Gain10/Gain
+2
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Discrete/Discrete Derivative /InitialStates
 2256
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Rate Limiter/RisingSlewLimit
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Discrete/Discrete-Time Integrator/gainval
 2264
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Rate Limiter/FallingSlewLimit
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Discrete/Discrete-Time Integrator/UpperSaturationLimit
 2272
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Rate Limiter/InitialCondition
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Discrete/Discrete-Time Integrator/LowerSaturationLimit
 2280
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/Delay_x1/InitialCondition
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Discrete/Saturation1/UpperLimit
 2288
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/A*k(k-1)/A11/Gain
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Discrete/Saturation1/LowerLimit
 2296
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/Delay_x2/InitialCondition
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Gain10/Gain
 2304
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/A*k(k-1)/A12/Gain
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Rate Limiter/RisingSlewLimit
 2312
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/A*k(k-1)/A21/Gain
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Rate Limiter/FallingSlewLimit
 2320
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/A*k(k-1)/A22/Gain
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Rate Limiter/InitialCondition
 2328
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/B*(u(k)+u(k-1))/B11/Gain
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/Delay_x1/InitialCondition
 2336
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/B*(u(k)+u(k-1))/B21/Gain
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/A*k(k-1)/A11/Gain
 2344
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/D*u(k)/Gain
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/Delay_x2/InitialCondition
 2352
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/C*x(k)/C11/Gain
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/A*k(k-1)/A12/Gain
 2360
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/C*x(k)/C12/Gain
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/A*k(k-1)/A21/Gain
 2368
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Second-Order Filter/Model/A*k(k-1)/A11/Gain
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/A*k(k-1)/A22/Gain
 2376
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Second-Order Filter/Model/A*k(k-1)/A12/Gain
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/B*(u(k)+u(k-1))/B11/Gain
 2384
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Second-Order Filter/Model/A*k(k-1)/A21/Gain
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/B*(u(k)+u(k-1))/B21/Gain
 2392
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Second-Order Filter/Model/A*k(k-1)/A22/Gain
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/D*u(k)/Gain
 2400
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Second-Order Filter/Model/B*(u(k)+u(k-1))/B11/Gain
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/C*x(k)/C11/Gain
 2408
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Second-Order Filter/Model/B*(u(k)+u(k-1))/B21/Gain
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/C*x(k)/C12/Gain
 2416
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Constant1/Value
+SS_controller/Inverter Control/PLL & Measurements/Second-Order Filter/Model/A*k(k-1)/A11/Gain
 2424
 F64
 1
-SS_controller/Inverter Control/PWM_Generator/Sampling/Unsync Natural/Unsync_NaturalSampling/Triangle Generator/Model/Constant3/Value
+SS_controller/Inverter Control/PLL & Measurements/Second-Order Filter/Model/A*k(k-1)/A12/Gain
 2432
 F64
 1
-SS_controller/Inverter Control/PWM_Generator/Sampling/Unsync Natural/Unsync_NaturalSampling/Triangle Generator/Model/Constant1/Value
+SS_controller/Inverter Control/PLL & Measurements/Second-Order Filter/Model/A*k(k-1)/A21/Gain
 2440
 F64
 1
-SS_controller/Inverter Control/PWM_Generator/Sampling/Unsync Natural/Unsync_NaturalSampling/Triangle Generator/Model/1ib1/Gain
+SS_controller/Inverter Control/PLL & Measurements/Second-Order Filter/Model/A*k(k-1)/A22/Gain
 2448
 F64
 1
-SS_controller/Inverter Control/PWM_Generator/Sampling/Unsync Natural/Unsync_NaturalSampling/Triangle Generator/Model/Lookup Table/InputValues
+SS_controller/Inverter Control/PLL & Measurements/Second-Order Filter/Model/B*(u(k)+u(k-1))/B11/Gain
 2456
+F64
+1
+SS_controller/Inverter Control/PLL & Measurements/Second-Order Filter/Model/B*(u(k)+u(k-1))/B21/Gain
+2464
+F64
+1
+SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Constant1/Value
+2472
+F64
+1
+SS_controller/Inverter Control/PWM_Generator/Sampling/Unsync Natural/Unsync_NaturalSampling/Triangle Generator/Model/Constant3/Value
+2480
+F64
+1
+SS_controller/Inverter Control/PWM_Generator/Sampling/Unsync Natural/Unsync_NaturalSampling/Triangle Generator/Model/Constant1/Value
+2488
+F64
+1
+SS_controller/Inverter Control/PWM_Generator/Sampling/Unsync Natural/Unsync_NaturalSampling/Triangle Generator/Model/1ib1/Gain
+2496
+F64
+1
+SS_controller/Inverter Control/PWM_Generator/Sampling/Unsync Natural/Unsync_NaturalSampling/Triangle Generator/Model/Lookup Table/InputValues
+2504
 F64
 3
 SS_controller/Inverter Control/PWM_Generator/Sampling/Unsync Natural/Unsync_NaturalSampling/Triangle Generator/Model/Lookup Table/Table
-2480
+2528
 F64
 3
 SS_controller/Inverter Control/PWM_Generator/Sampling/Unsync Natural/Unsync_NaturalSampling/Triangle Generator/Model/Constant2/Value
-2504
-F64
-1
-SS_controller/Inverter Control/PWM_Generator/Cr_MinMax/Gain1/Gain
-2512
-F64
-1
-SS_controller/Inverter Control/Unit Delay/InitialCondition
-2520
-F64
-1
-SS_controller/Inverter Control/PWM_Generator/Modulator type/Full Bridge Unipolar/Gain/Gain
-2528
-F64
-1
-SS_controller/Inverter Control/U_ref Generation /Constant2/Value
-2536
-F64
-1
-SS_controller/Inverter Control/Unit Delay3/InitialCondition
-2544
-F64
-1
-SS_controller/Inverter Control/U_ref Generation /Gain1/Gain
 2552
 F64
 1
-SS_controller/Inverter Control/Unit Delay1/InitialCondition
+SS_controller/Inverter Control/PWM_Generator/Cr_MinMax/Gain1/Gain
 2560
 F64
 1
-SS_controller/Inverter Control/VDC Regulator/PI/Integrator/gainval
+SS_controller/Inverter Control/Unit Delay/InitialCondition
 2568
 F64
 1
-SS_controller/Inverter Control/VDC Regulator/PI/Integrator/InitialCondition
+SS_controller/Inverter Control/PWM_Generator/Modulator type/Full Bridge Unipolar/Gain/Gain
 2576
+F64
+1
+SS_controller/Inverter Control/U_ref Generation /Constant2/Value
+2584
+F64
+1
+SS_controller/Inverter Control/Unit Delay3/InitialCondition
+2592
+F64
+1
+SS_controller/Inverter Control/U_ref Generation /Gain1/Gain
+2600
+F64
+1
+SS_controller/Inverter Control/Unit Delay1/InitialCondition
+2608
+F64
+1
+SS_controller/Inverter Control/VDC Regulator/PI/Integrator/gainval
+2616
+F64
+1
+SS_controller/Inverter Control/VDC Regulator/PI/Integrator/InitialCondition
+2624
 F64
 1

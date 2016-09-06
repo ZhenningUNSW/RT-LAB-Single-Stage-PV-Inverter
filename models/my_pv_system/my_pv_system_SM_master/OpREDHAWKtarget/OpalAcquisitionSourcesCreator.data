@@ -14,175 +14,163 @@ SM_master/Memory/port4
 40
 F64
 1
-SM_master/Memory1/port1
+SM_master/Memory/port5
 48
 F64
 1
-SM_master/Memory1/port2
+SM_master/Memory/port6
 56
 F64
 1
-SM_master/Memory1/port3
+SM_master/Memory1/port1
 64
 F64
 1
-SM_master/Memory1/port4
+SM_master/Memory1/port2
 72
 F64
 1
-SM_master/Memory1/port5
+SM_master/Memory1/port3
 80
 F64
 1
-SM_master/OpMonitor/port1
+SM_master/Memory1/port4
 88
 F64
 1
-SM_master/OpMonitor/port2
+SM_master/Memory1/port5
 96
 F64
 1
-SM_master/OpMonitor/port3
+SM_master/OpMonitor/port1
 104
 F64
 1
-SM_master/OpMonitor/port4
+SM_master/OpMonitor/port2
 112
 F64
 1
-SM_master/H-Bridge /Model/Unit Delay/port1
+SM_master/OpMonitor/port3
 120
+F64
+1
+SM_master/OpMonitor/port4
+128
+F64
+1
+SM_master/H-Bridge /Model/Unit Delay/port1
+136
 F64
 4
 SM_master/zzzOpComm1/Receive_1/S-Function/port1
-152
+168
 F64
-4
+6
 SM_master/Vs 14,400 V/Model/AC/port1
-184
-F64
-1
-SM_master/Subsystem/Delay2/port1
-192
-F64
-1
-SM_master/Subsystem/Delay1/port1
-200
+216
 F64
 1
 SM_master/CM2/do not delete this gain/port1
-336
-F64
-1
-SM_master/Vdc /do not delete this gain/port1
-344
-F64
-1
-SM_master/Vdc 1/do not delete this gain/port1
 352
 F64
 1
-SM_master/OpComm/Receive/S-Function/port1
+SM_master/Vdc /do not delete this gain/port1
 360
 F64
-2
-SM_master/Subsystem/Current Measurement/do not delete this gain/port1
-376
-F64
 1
-SM_master/Subsystem/Delay/port1
-384
-F64
-1
-SM_master/Subsystem/Voltage Measurement/do not delete this gain/port1
-392
-F64
-1
-SM_master/Subsystem/Voltage Measurement1/do not delete this gain/port1
-400
+SM_master/Vdc 1/do not delete this gain/port1
+368
 F64
 1
 SM_master/H-Bridge /Model/1__Ron/port1
-408
+376
 F64
 4
 SM_master/H-Bridge /Model/Data Type Conversion/port1
-440
+408
 F64
 4
 SM_master/H-Bridge /Model/Switch/port1
-472
+440
 F64
 4
 SM_master/H-Bridge /Model/Saturation/port1
-504
+472
 F64
 4
 SM_master/H-Bridge /Model/Vf 1/Switch/port1
-536
+504
 F64
 4
-SM_master/GRID/CM2/do not delete this gain/port1
+SM_master/OpComm/Receive/S-Function/port1
+536
+F64
+2
+SM_master/Subsystem/Current Measurement/do not delete this gain/port1
+552
+F64
+1
+SM_master/Subsystem/Voltage Measurement/do not delete this gain/port1
+560
+F64
+1
+SM_master/Subsystem/Voltage Measurement1/do not delete this gain/port1
 568
 F64
 1
-SM_master/GRID/Vm2/do not delete this gain/port1
+SM_master/GRID/CM2/do not delete this gain/port1
 576
 F64
 1
-SM_master/Subsystem/MATLAB Function/port1
+SM_master/GRID/Vm2/do not delete this gain/port1
 584
 F64
 1
-SM_master/Subsystem/MATLAB Function/port2
+SM_master/H-Bridge /Model/Tail/2/port1
 592
 F64
 1
-SM_master/H-Bridge /Model/Tail/2/port1
-600
-F64
-1
 SM_master/H-Bridge /Model/Tail/Discrete-Time Integrator/port1
-608
+600
 F64
 4
 SM_master/H-Bridge /Model/Tail/y=f(t)/-0.9__Tf/port1
-640
+632
 F64
 4
 SM_master/H-Bridge /Model/Tail/y=f(t)/Add/port1
-672
+664
 F64
 4
 SM_master/H-Bridge /Model/Tail/y=f(t)/Saturation1/port1
-704
+696
 F64
 4
 SM_master/H-Bridge /Model/Tail/y=f(t)/Add1/port1
-736
+728
 F64
 4
 SM_master/H-Bridge /Model/Tail/y=f(t)/0.1__Tt/port1
-768
+760
 F64
 4
 SM_master/H-Bridge /Model/Tail/y=f(t)/Saturation2/port1
-800
+792
 F64
 4
 SM_master/H-Bridge /Model/Tail/y=f(t)/Add2/port1
-832
+824
 F64
 4
 SM_master/H-Bridge /Model/Tail/Unit Delay/port1
-864
+856
 F64
 4
 SM_master/H-Bridge /Model/Tail/Switch/port1
-896
+888
 F64
 4
 SM_master/H-Bridge /Model/Tail/Product/port1
-928
+920
 F64
 4

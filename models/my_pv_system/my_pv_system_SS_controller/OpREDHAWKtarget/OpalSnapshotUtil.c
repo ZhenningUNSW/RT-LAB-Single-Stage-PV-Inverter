@@ -141,8 +141,16 @@ int OpalSnapshot_Copy_DWork(void * src, void * dst) {
    memcpy(&pDst->SFunction_PreviousInput, &pSrc->SFunction_PreviousInput, eltSize);
    size += eltSize;
 
-   eltSize = sizeof(pSrc->Memory_PreviousInput);
-   memcpy(&pDst->Memory_PreviousInput, &pSrc->Memory_PreviousInput, eltSize);
+   eltSize = sizeof(pSrc->Memory_1_PreviousInput);
+   memcpy(&pDst->Memory_1_PreviousInput, &pSrc->Memory_1_PreviousInput, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->Memory_2_PreviousInput);
+   memcpy(&pDst->Memory_2_PreviousInput, &pSrc->Memory_2_PreviousInput, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->Memory_3_PreviousInput);
+   memcpy(&pDst->Memory_3_PreviousInput, &pSrc->Memory_3_PreviousInput, eltSize);
    size += eltSize;
 
    eltSize = sizeof(pSrc->DiscreteDerivative_tmp);
@@ -217,8 +225,8 @@ int OpalSnapshot_Copy_DWork(void * src, void * dst) {
    memcpy(&pDst->SFunction_IWORK_c, &pSrc->SFunction_IWORK_c, eltSize);
    size += eltSize;
 
-   eltSize = sizeof(pSrc->SFunction_IWORK_d);
-   memcpy(&pDst->SFunction_IWORK_d, &pSrc->SFunction_IWORK_d, eltSize);
+   eltSize = sizeof(pSrc->SFunction_IWORK_i);
+   memcpy(&pDst->SFunction_IWORK_i, &pSrc->SFunction_IWORK_i, eltSize);
    size += eltSize;
 
    eltSize = sizeof(pSrc->SFunction_IWORK_pd);

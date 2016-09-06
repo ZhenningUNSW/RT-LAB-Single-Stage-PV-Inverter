@@ -13,7 +13,7 @@
         </property>
         <property name="Date">
             <value>
-                Tue, 06 Sep 2016 10:41:40
+                Tue, 06 Sep 2016 11:35:41
             </value>
         </property>
     </item>
@@ -25,22 +25,22 @@
                         <item name="Memory">
                             <property name="Active">
                                 <value>
-                                    94412 kB
+                                    163348 kB
                                 </value>
                             </property>
                             <property name="Active(anon)">
                                 <value>
-                                    27472 kB
+                                    27360 kB
                                 </value>
                             </property>
                             <property name="Active(file)">
                                 <value>
-                                    66940 kB
+                                    135988 kB
                                 </value>
                             </property>
                             <property name="AnonPages">
                                 <value>
-                                    27044 kB
+                                    26932 kB
                                 </value>
                             </property>
                             <property name="Bounce">
@@ -50,12 +50,12 @@
                             </property>
                             <property name="Buffers">
                                 <value>
-                                    33384 kB
+                                    85372 kB
                                 </value>
                             </property>
                             <property name="Cached">
                                 <value>
-                                    390880 kB
+                                    588628 kB
                                 </value>
                             </property>
                             <property name="CommitLimit">
@@ -65,7 +65,7 @@
                             </property>
                             <property name="Committed_AS">
                                 <value>
-                                    37744 kB
+                                    37476 kB
                                 </value>
                             </property>
                             <property name="DirectMap2M">
@@ -80,12 +80,12 @@
                             </property>
                             <property name="Dirty">
                                 <value>
-                                    10876 kB
+                                    11140 kB
                                 </value>
                             </property>
                             <property name="HighFree">
                                 <value>
-                                    6949908 kB
+                                    6751732 kB
                                 </value>
                             </property>
                             <property name="HighTotal">
@@ -95,7 +95,7 @@
                             </property>
                             <property name="Inactive">
                                 <value>
-                                    356808 kB
+                                    537456 kB
                                 </value>
                             </property>
                             <property name="Inactive(anon)">
@@ -105,12 +105,12 @@
                             </property>
                             <property name="Inactive(file)">
                                 <value>
-                                    356808 kB
+                                    537456 kB
                                 </value>
                             </property>
                             <property name="LowFree">
                                 <value>
-                                    770588 kB
+                                    693816 kB
                                 </value>
                             </property>
                             <property name="LowTotal">
@@ -120,12 +120,12 @@
                             </property>
                             <property name="Mapped">
                                 <value>
-                                    14624 kB
+                                    14580 kB
                                 </value>
                             </property>
                             <property name="MemFree">
                                 <value>
-                                    7720496 kB
+                                    7445548 kB
                                 </value>
                             </property>
                             <property name="MemTotal">
@@ -145,22 +145,22 @@
                             </property>
                             <property name="PageTables">
                                 <value>
-                                    948 kB
+                                    928 kB
                                 </value>
                             </property>
                             <property name="SReclaimable">
                                 <value>
-                                    8968 kB
+                                    33960 kB
                                 </value>
                             </property>
                             <property name="SUnreclaim">
                                 <value>
-                                    5188 kB
+                                    5256 kB
                                 </value>
                             </property>
                             <property name="Slab">
                                 <value>
-                                    14156 kB
+                                    39216 kB
                                 </value>
                             </property>
                             <property name="SwapCached">
@@ -4251,22 +4251,22 @@
                         <item name="Memory">
                             <property name="Active">
                                 <value>
-                                    101192 kB
+                                    170120 kB
                                 </value>
                             </property>
                             <property name="Active(anon)">
                                 <value>
-                                    27476 kB
+                                    27364 kB
                                 </value>
                             </property>
                             <property name="Active(file)">
                                 <value>
-                                    73716 kB
+                                    142756 kB
                                 </value>
                             </property>
                             <property name="AnonPages">
                                 <value>
-                                    26960 kB
+                                    26848 kB
                                 </value>
                             </property>
                             <property name="Bounce">
@@ -4276,12 +4276,12 @@
                             </property>
                             <property name="Buffers">
                                 <value>
-                                    33664 kB
+                                    85740 kB
                                 </value>
                             </property>
                             <property name="Cached">
                                 <value>
-                                    435096 kB
+                                    632884 kB
                                 </value>
                             </property>
                             <property name="CommitLimit">
@@ -4291,7 +4291,7 @@
                             </property>
                             <property name="Committed_AS">
                                 <value>
-                                    37428 kB
+                                    37160 kB
                                 </value>
                             </property>
                             <property name="DirectMap2M">
@@ -4306,12 +4306,12 @@
                             </property>
                             <property name="Dirty">
                                 <value>
-                                    40820 kB
+                                    22204 kB
                                 </value>
                             </property>
                             <property name="HighFree">
                                 <value>
-                                    6905736 kB
+                                    6707736 kB
                                 </value>
                             </property>
                             <property name="HighTotal">
@@ -4321,7 +4321,7 @@
                             </property>
                             <property name="Inactive">
                                 <value>
-                                    394528 kB
+                                    575312 kB
                                 </value>
                             </property>
                             <property name="Inactive(anon)">
@@ -4331,12 +4331,12 @@
                             </property>
                             <property name="Inactive(file)">
                                 <value>
-                                    394528 kB
+                                    575312 kB
                                 </value>
                             </property>
                             <property name="LowFree">
                                 <value>
-                                    769572 kB
+                                    692200 kB
                                 </value>
                             </property>
                             <property name="LowTotal">
@@ -4346,12 +4346,12 @@
                             </property>
                             <property name="Mapped">
                                 <value>
-                                    14632 kB
+                                    14588 kB
                                 </value>
                             </property>
                             <property name="MemFree">
                                 <value>
-                                    7675308 kB
+                                    7399936 kB
                                 </value>
                             </property>
                             <property name="MemTotal">
@@ -4371,22 +4371,22 @@
                             </property>
                             <property name="PageTables">
                                 <value>
-                                    948 kB
+                                    928 kB
                                 </value>
                             </property>
                             <property name="SReclaimable">
                                 <value>
-                                    9708 kB
+                                    34904 kB
                                 </value>
                             </property>
                             <property name="SUnreclaim">
                                 <value>
-                                    5176 kB
+                                    5688 kB
                                 </value>
                             </property>
                             <property name="Slab">
                                 <value>
-                                    14884 kB
+                                    40592 kB
                                 </value>
                             </property>
                             <property name="SwapCached">
@@ -4638,13 +4638,14 @@
                         <value>
                             
 -------------------- Starting compilation --------------------
-Start at : Tuesday, September 06, 2016, 10:32:30
+Start at : Tuesday, September 06, 2016, 11:30:57
 
 The current RT-LAB version is:  v11.0.7.582
 The current model is:           C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\my_pv_system\my_pv_system.mdl
 The current host platform is:   Windows
 The current target platform is: Redhat
 The current compiler is:        Automatic
+Separating model because C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\my_pv_system\my_pv_system.mdl has changed.
 Preparing original model for code separation and generation...
 The current Matlab version is:  v8.4 (32 Bit)
 
@@ -4671,6 +4672,8 @@ Separating RT-LAB model (number of RT subsystems = 2, console detected).
 Separating RT-LAB subsystem 'SM_master'.
 Repair completed.
 
+Repair completed.
+
 ******IMPORTANT******
 Corrupted Stateflow charts are recovered and placed in a subsystem named
 '###Recovered Stateflow Charts###'. You can open it using
@@ -4681,18 +4684,13 @@ Separating RT-LAB subsystem 'SC_user_interface'.
 WARNING: Saving subsystems with breaklinks option has been disabled. Subsystems real-time behavior may be different.
 WARNING: Saving subsystems with breaklinks option has been disabled. Subsystems real-time behavior may be different.
 Separating RT-LAB subsystem 'SS_controller'.
-Repair completed.
-
-******IMPORTANT******
-Corrupted Stateflow charts are recovered and placed in a subsystem named
-'###Recovered Stateflow Charts###'. You can open it using
-   open_system('my_pv_system_3_ss_controller/###Recovered Stateflow Charts###');
 WARNING: Saving subsystems with breaklinks option has been disabled. Subsystems real-time behavior may be different.
 WARNING: Saving subsystems with breaklinks option has been disabled. Subsystems real-time behavior may be different.
 A monitoring block (OpMonitor) has been found. The monitoring will be enabled.
-Model preparation and separation duration : 00h:00m:31s
+Model preparation and separation duration : 00h:00m:39s
 -------------------- Completed successfully --------------------
 
+Generating model because C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\my_pv_system\Opcommon\my_pv_system_1_sm_master.mdl has changed.
 
 -------------------- Generating C code --------------------
 
@@ -4705,47 +4703,7 @@ Calling RTW Make Command make_rtw...
 ### Starting build procedure for model: my_pv_system_1_sm_master
 ### Generating code into build folder: C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\my_pv_system\my_pv_system_1_sm_master_rtlab
 
-### Invoking Target Language Compiler on my_pv_system_1_sm_master.rtw
-### Using System Target File: D:\OPAL-RT\RT-LAB\v11.0.7.582\Simulink\rtw\c\common\rtlab_rtmodel.tlc
-### Loading TLC function libraries
-......
-### Initial pass through model to cache user defined code
-.
-
-### Generating code for S Function : &lt;S50&gt;/State-Space
-
-.....
-### Caching model source code
-...............................................................................
-........................
-### Writing source file my_pv_system_1_sm_master.c
-### Writing header file my_pv_system_1_sm_master_private.h
-.
-### Writing header file my_pv_system_1_sm_master.h
-### Writing header file my_pv_system_1_sm_master_types.h
-.
-### Writing header file rtwtypes.h
-### Writing header file builtin_typeid_types.h
-.
-### Writing header file multiword_types.h
-### Writing header file rtGetInf.h
-.
-### Writing source file rtGetInf.c
-### Writing header file rtGetNaN.h
-.
-### Writing source file rtGetNaN.c
-### Writing header file rt_nonfinite.h
-.
-### Writing source file rt_nonfinite.c
-### Writing header file rtmodel.h
-### Writing source file my_pv_system_1_sm_master_data.c
-.
-### Writing header file rt_defines.h
-### TLC code generation complete.
-.
-Warning:  Version[0] 8 Version[1] . Version[2] 7
-### Creating model mapping file my_pv_system_1_sm_master.map using map_r2014b.tlc
-.........................### Creating project marker file: rtw_proj.tmw
+### Generated code for 'my_pv_system_1_sm_master' is up to date because no structural, parameter or code replacement library changes were found.
 .
 ### Processing Template Makefile: D:\OPAL-RT\RT-LAB\v11.0.7.582\Simulink\rtw\c\common\rtlab_rtmodel.tmf
 ### Wrapping unrecognized make command (angle brackets added)
@@ -4755,7 +4713,7 @@ Warning:  Version[0] 8 Version[1] . Version[2] 7
 ### Successful completion of code generation for model: my_pv_system_1_sm_master
 
 
-my_pv_system_1_sm_master : Generating C code duration : 00h:00m:12s
+my_pv_system_1_sm_master : Generating C code duration : 00h:00m:06s
 
 -------------------- Generating my_pv_system_3_ss_controller C code --------------------
 Calling RTW Make Command make_rtw...
@@ -4779,20 +4737,20 @@ Calling RTW Make Command make_rtw...
 ### Caching model source code
 ...............................................................................
 ...............................................................................
-..............................................................
+...................................................................
 ### Writing source file my_pv_system_3_ss_controller.c
 ### Writing header file my_pv_system_3_ss_controller_private.h
-.
 ### Writing header file my_pv_system_3_ss_controller.h
+.
 ### Writing header file my_pv_system_3_ss_controller_types.h
-.
 ### Writing header file rtwtypes.h
+.
 ### Writing header file builtin_typeid_types.h
-.
 ### Writing header file multiword_types.h
-### Writing header file rtGetInf.h
 .
+### Writing header file rtGetInf.h
 ### Writing source file rtGetInf.c
+.
 ### Writing header file rtGetNaN.h
 ### Writing source file rtGetNaN.c
 .
@@ -4807,7 +4765,7 @@ Calling RTW Make Command make_rtw...
 ...
 Warning:  Version[0] 8 Version[1] . Version[2] 7
 ### Creating model mapping file my_pv_system_3_ss_controller.map using map_r2014b.tlc
-........................................................................### Creating project marker file: rtw_proj.tmw
+.........................................................................### Creating project marker file: rtw_proj.tmw
 .
 ### Processing Template Makefile: D:\OPAL-RT\RT-LAB\v11.0.7.582\Simulink\rtw\c\common\rtlab_rtmodel.tmf
 ### Wrapping unrecognized make command (angle brackets added)
@@ -4817,7 +4775,7 @@ Warning:  Version[0] 8 Version[1] . Version[2] 7
 ### Successful completion of code generation for model: my_pv_system_3_ss_controller
 
 
-my_pv_system_3_ss_controller : Generating C code duration : 00h:00m:10s
+my_pv_system_3_ss_controller : Generating C code duration : 00h:00m:16s
 Generating C code total duration : 00h:00m:22s
 
 -------------------- Completed successfully --------------------
@@ -4839,6 +4797,7 @@ Data generated in 00h:00m:00s
 
 Closing Matlab... OK.
 Updating dependencies... OK.
+Compiling model because C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\my_pv_system\my_pv_system_SM_master\OpREDHAWKtarget\OpalSnapshotUtil.c has changed.
 
 -------------------- Validating sources files --------------------------
 
@@ -4914,7 +4873,7 @@ Transferring user extra files:
 Transferring in ascii: C:\Program Files (x86)\MATLAB\R2014b\toolbox\physmod\powersys\powersys\sfun_discreteVariableDelay.c (SM_master) ... OK.
 Transferring in ascii: C:\Program Files (x86)\MATLAB\R2014b\toolbox\physmod\powersys\powersys\sfun_discreteVariableDelay.c (SS_controller) ... OK.
 
-File transfer duration : 00h:00m:07s
+File transfer duration : 00h:00m:15s
 -------------------- Completed successfully --------------------
 
 -------------------- Building the generated C code --------------------
@@ -4941,7 +4900,7 @@ opicpc  -Wl,-rpath='/usr/opalrt/v11.0.7.582/common/bin' -Wl,'-rpath=/usr/opalrt/
 chmod a+x my_pv_system_1_sm_master
 ### Created executable: my_pv_system_1_sm_master
 
-my_pv_system_1_sm_master : Building subsystem duration : 00h:00m:02s
+my_pv_system_1_sm_master : Building subsystem duration : 00h:00m:09s
 
 Executing script /usr/opalrt/v11.0.7.582/common/python/rtlab/global/target_subsys_precompile.py ... done
 
@@ -4965,7 +4924,7 @@ chmod a+x my_pv_system_3_ss_controller
 
 my_pv_system_3_ss_controller : Building subsystem duration : 00h:00m:03s
 
-Building model total duration : 00h:00m:05s
+Building model total duration : 00h:00m:12s
 -------------------- Completed successfully --------------------
 
 -------------------- Transferring the built model --------------------
@@ -4974,12 +4933,12 @@ Transferring in binary mode /home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_
 Transferring in ascii mode /home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_workspace/pv_inverter/models/my_pv_system/compilation_target_report.xml ... OK.
 Transferring in binary mode /home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_workspace/pv_inverter/models/my_pv_system/my_pv_system_ss_controller/my_pv_system_3_ss_controller ... OK.
 
-File transfer duration : 00h:00m:02s
+File transfer duration : 00h:00m:12s
 -------------------- Completed successfully --------------------
 
-End at : Tuesday, September 06, 2016, 10:33:47
+End at : Tuesday, September 06, 2016, 11:32:55
 
-Compilation duration : 00h:01m:17s
+Compilation duration : 00h:01m:58s
 
 Updating status for next build...OK
 
@@ -5005,7 +4964,7 @@ Transferring in binary: C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\m
 
 Executing script /usr/opalrt/v11.0.7.582/common/python/rtlab/global/target_preload.py ... done
 Executing script /usr/opalrt/v11.0.7.582/common/python/rtlab/global/target_subsys_preload.py ... done
-WatchDogServer service - server socket created, available on address: 192.168.1.10:42354
+WatchDogServer service - server socket created, available on address: 192.168.1.10:41736
 Root initialized: 192.168.1.10:2525/resources/root
 Model 'my_pv_system_1_sm_master' compiled in RELEASE mode.
 4 CPUs active on this Computer
@@ -5027,31 +4986,23 @@ RT-LAB license ok. Unlimited time license.
 Snapshot taken (opmy_pv_system_sm_master_0.snap).
  [0]: PAUSE mode, IO set to pause value.
 		Total of 0 Overrun detected.
-		Tue Sep  6 10:33:24 2016
+		Tue Sep  6 11:33:43 2016
 
 Starting transfer of /home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_workspace/pv_inverter/models/my_pv_system/my_pv_system_sm_master/opmy_pv_system_sm_master_0.snap...
 Transfer of /home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_workspace/pv_inverter/models/my_pv_system/my_pv_system_sm_master/opmy_pv_system_sm_master_0.snap OK
            [1]: RUN mode, IO set to run value.
           		Synchronized step size = 50 us.
-          		Tue Sep  6 10:33:33 2016
+          		Tue Sep  6 11:33:50 2016
 
           Main priority set to 99
-           [2448036]: PAUSE mode, IO set to pause value.
-          		Total of 25 Overruns detected.
-          		Tue Sep  6 10:35:35 2016
-
-           [2448037]: RUN mode, IO set to run value.
-          		Synchronized step size = 50 us.
-          		Tue Sep  6 10:35:56 2016
-
-           [8021920]: Reset
-          		Total of 40 Overruns detected.
-          		Tue Sep  6 10:40:35 2016
+           [1831510]: Reset
+          		Total of 1 Overrun detected.
+          		Tue Sep  6 11:35:22 2016
 
           
 
 
-WARNING:  40 OVERRUNS detected.
+WARNING:  1 OVERRUN detected.
           Reset done
           SEND: connection to host closed
 Executing script /usr/opalrt/v11.0.7.582/common/python/rtlab/global/target_postreset.py ... done
@@ -5081,7 +5032,7 @@ Transferring in binary: C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\m
 
 
 Executing script /usr/opalrt/v11.0.7.582/common/python/rtlab/global/target_subsys_preload.py ... done
-WatchDogServer service - server socket created, available on address: 192.168.1.10:44633
+WatchDogServer service - server socket created, available on address: 192.168.1.10:46256
 Root initialized: 192.168.1.10:25250/resources/root
 Model 'my_pv_system_3_ss_controller' compiled in RELEASE mode.
 4 CPUs active on this Computer
@@ -5098,27 +5049,20 @@ SubSystem step size = 0.000050 sec. Status updated at every 1 local step.
 Not synchronized: Time step is determined by reception of data from another subsystem.
 Real-time SingleTasking mode.
 RT-LAB license ok. Unlimited time license.
-Monitoring: start time = 979.612 ms, using CPU speed = 3399 MHz
+Monitoring: start time = 1003.477 ms, using CPU speed = 3399 MHz
 Snapshot taken (opmy_pv_system_ss_controller_0.snap).
  [0]: PAUSE mode, IO set to pause value.
-		Tue Sep  6 10:33:24 2016
+		Tue Sep  6 11:33:43 2016
 
 Starting transfer of /home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_workspace/pv_inverter/models/my_pv_system/my_pv_system_ss_controller/opmy_pv_system_ss_controller_0.snap...
 Transfer of /home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_workspace/pv_inverter/models/my_pv_system/my_pv_system_ss_controller/opmy_pv_system_ss_controller_0.snap OK
            [1]: RUN mode, IO set to run value.
           		Approximative step size = 50 us.
-          		Tue Sep  6 10:33:33 2016
+          		Tue Sep  6 11:33:50 2016
 
           Main priority set to 99
-           [2448036]: PAUSE mode, IO set to pause value.
-          		Tue Sep  6 10:35:35 2016
-
-           [2448037]: RUN mode, IO set to run value.
-          		Approximative step size = 50 us.
-          		Tue Sep  6 10:35:56 2016
-
-           [8021920]: Reset
-          		Tue Sep  6 10:40:35 2016
+           [1831510]: Reset
+          		Tue Sep  6 11:35:22 2016
 
           Reset done
           SEND: connection to host closed

@@ -8,22 +8,22 @@
                         <item name="Memory">
                             <property name="Active">
                                 <value>
-                                    94412 kB
+                                    163348 kB
                                 </value>
                             </property>
                             <property name="Active(anon)">
                                 <value>
-                                    27472 kB
+                                    27360 kB
                                 </value>
                             </property>
                             <property name="Active(file)">
                                 <value>
-                                    66940 kB
+                                    135988 kB
                                 </value>
                             </property>
                             <property name="AnonPages">
                                 <value>
-                                    27044 kB
+                                    26932 kB
                                 </value>
                             </property>
                             <property name="Bounce">
@@ -33,12 +33,12 @@
                             </property>
                             <property name="Buffers">
                                 <value>
-                                    33384 kB
+                                    85372 kB
                                 </value>
                             </property>
                             <property name="Cached">
                                 <value>
-                                    390880 kB
+                                    588628 kB
                                 </value>
                             </property>
                             <property name="CommitLimit">
@@ -48,7 +48,7 @@
                             </property>
                             <property name="Committed_AS">
                                 <value>
-                                    37744 kB
+                                    37476 kB
                                 </value>
                             </property>
                             <property name="DirectMap2M">
@@ -63,12 +63,12 @@
                             </property>
                             <property name="Dirty">
                                 <value>
-                                    10876 kB
+                                    11140 kB
                                 </value>
                             </property>
                             <property name="HighFree">
                                 <value>
-                                    6949908 kB
+                                    6751732 kB
                                 </value>
                             </property>
                             <property name="HighTotal">
@@ -78,7 +78,7 @@
                             </property>
                             <property name="Inactive">
                                 <value>
-                                    356808 kB
+                                    537456 kB
                                 </value>
                             </property>
                             <property name="Inactive(anon)">
@@ -88,12 +88,12 @@
                             </property>
                             <property name="Inactive(file)">
                                 <value>
-                                    356808 kB
+                                    537456 kB
                                 </value>
                             </property>
                             <property name="LowFree">
                                 <value>
-                                    770588 kB
+                                    693816 kB
                                 </value>
                             </property>
                             <property name="LowTotal">
@@ -103,12 +103,12 @@
                             </property>
                             <property name="Mapped">
                                 <value>
-                                    14624 kB
+                                    14580 kB
                                 </value>
                             </property>
                             <property name="MemFree">
                                 <value>
-                                    7720496 kB
+                                    7445548 kB
                                 </value>
                             </property>
                             <property name="MemTotal">
@@ -128,22 +128,22 @@
                             </property>
                             <property name="PageTables">
                                 <value>
-                                    948 kB
+                                    928 kB
                                 </value>
                             </property>
                             <property name="SReclaimable">
                                 <value>
-                                    8968 kB
+                                    33960 kB
                                 </value>
                             </property>
                             <property name="SUnreclaim">
                                 <value>
-                                    5188 kB
+                                    5256 kB
                                 </value>
                             </property>
                             <property name="Slab">
                                 <value>
-                                    14156 kB
+                                    39216 kB
                                 </value>
                             </property>
                             <property name="SwapCached">

@@ -3,9 +3,9 @@
  *
  * Code generation for model "my_pv_system_1_sm_master".
  *
- * Model version              : 1.177
+ * Model version              : 1.189
  * Simulink Coder version : 8.7 (R2014b) 08-Sep-2014
- * C source code generated on : Tue Sep 06 10:33:15 2016
+ * C source code generated on : Tue Sep 06 11:04:11 2016
  *
  * Target selection: rtlab_rtmodel.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -19,13 +19,13 @@
 /* Block parameters (auto storage) */
 P_my_pv_system_1_sm_master_T my_pv_system_1_sm_master_P = {
   20364.675298172569,                  /* Mask Parameter: Vs14400V_Amplitude
-                                        * Referenced by: '<S40>/AC'
+                                        * Referenced by: '<S38>/AC'
                                         */
   50.0,                                /* Mask Parameter: Vs14400V_Frequency
-                                        * Referenced by: '<S40>/AC'
+                                        * Referenced by: '<S38>/AC'
                                         */
   0.0,                                 /* Mask Parameter: Vs14400V_Phase
-                                        * Referenced by: '<S40>/AC'
+                                        * Referenced by: '<S38>/AC'
                                         */
   0.0,                                 /* Mask Parameter: Tail_Tf
                                         * Referenced by:
@@ -74,27 +74,27 @@ P_my_pv_system_1_sm_master_T my_pv_system_1_sm_master_P = {
                                         */
 
   /*  Computed Parameter: SFunction_P1_Size
-   * Referenced by: '<S46>/S-Function'
+   * Referenced by: '<S44>/S-Function'
    */
   { 1.0, 1.0 },
   3.0,                                 /* Expression: dest
-                                        * Referenced by: '<S46>/S-Function'
+                                        * Referenced by: '<S44>/S-Function'
                                         */
 
   /*  Computed Parameter: SFunction_P2_Size
-   * Referenced by: '<S46>/S-Function'
+   * Referenced by: '<S44>/S-Function'
    */
   { 1.0, 1.0 },
   0.0,                                 /* Expression: priority2
-                                        * Referenced by: '<S46>/S-Function'
+                                        * Referenced by: '<S44>/S-Function'
                                         */
 
   /*  Computed Parameter: SFunction_P3_Size
-   * Referenced by: '<S46>/S-Function'
+   * Referenced by: '<S44>/S-Function'
    */
   { 1.0, 1.0 },
   5.0E-5,                              /* Expression: st
-                                        * Referenced by: '<S46>/S-Function'
+                                        * Referenced by: '<S44>/S-Function'
                                         */
   0.0,                                 /* Expression: 0
                                         * Referenced by: '<S1>/S-Function1'
@@ -115,6 +115,12 @@ P_my_pv_system_1_sm_master_T my_pv_system_1_sm_master_P = {
                                         * Referenced by: '<S2>/Memory'
                                         */
   0.0,                                 /* Expression: 0
+                                        * Referenced by: '<S2>/Memory'
+                                        */
+  0.0,                                 /* Expression: 0
+                                        * Referenced by: '<S2>/Memory'
+                                        */
+  0.0,                                 /* Expression: 0
                                         * Referenced by: '<S2>/Memory1'
                                         */
   0.0,                                 /* Expression: 0
@@ -130,12 +136,12 @@ P_my_pv_system_1_sm_master_T my_pv_system_1_sm_master_P = {
                                         * Referenced by: '<S2>/Memory1'
                                         */
 
-  /*  Computed Parameter: SFunction_P1_Size_b
-   * Referenced by: '<S44>/S-Function'
+  /*  Computed Parameter: SFunction_P1_Size_n
+   * Referenced by: '<S42>/S-Function'
    */
   { 1.0, 1.0 },
   1.0,                                 /* Expression: Acqu_group
-                                        * Referenced by: '<S44>/S-Function'
+                                        * Referenced by: '<S42>/S-Function'
                                         */
 
   /*  Computed Parameter: OpMonitor_P1_Size
@@ -190,48 +196,42 @@ P_my_pv_system_1_sm_master_T my_pv_system_1_sm_master_P = {
     109.0, 101.0, 44.0, 97.0, 110.0, 111.0, 116.0, 104.0, 101.0, 114.0, 95.0,
     101.0, 118.0, 101.0, 110.0, 116.0, 95.0, 110.0, 97.0, 109.0, 101.0 },
 
-  /*  Computed Parameter: SFunction_P1_Size_l
-   * Referenced by: '<S45>/S-Function'
+  /*  Computed Parameter: SFunction_P1_Size_j
+   * Referenced by: '<S43>/S-Function'
    */
   { 1.0, 1.0 },
   2.0,                                 /* Expression: Acqu_group
-                                        * Referenced by: '<S45>/S-Function'
+                                        * Referenced by: '<S43>/S-Function'
                                         */
   0.0,                                 /* Expression: 0
                                         * Referenced by: '<S21>/Unit Delay'
                                         */
 
-  /*  Computed Parameter: SFunction_P1_Size_o
-   * Referenced by: '<S47>/S-Function'
+  /*  Computed Parameter: SFunction_P1_Size_p
+   * Referenced by: '<S45>/S-Function'
    */
   { 1.0, 1.0 },
   3.0,                                 /* Expression: src
-                                        * Referenced by: '<S47>/S-Function'
+                                        * Referenced by: '<S45>/S-Function'
                                         */
 
-  /*  Computed Parameter: SFunction_P2_Size_h
-   * Referenced by: '<S47>/S-Function'
+  /*  Computed Parameter: SFunction_P2_Size_p
+   * Referenced by: '<S45>/S-Function'
    */
   { 1.0, 1.0 },
-  4.0,                                 /* Expression: Data_width
-                                        * Referenced by: '<S47>/S-Function'
+  6.0,                                 /* Expression: Data_width
+                                        * Referenced by: '<S45>/S-Function'
                                         */
 
-  /*  Computed Parameter: SFunction_P3_Size_j
-   * Referenced by: '<S47>/S-Function'
+  /*  Computed Parameter: SFunction_P3_Size_m
+   * Referenced by: '<S45>/S-Function'
    */
   { 1.0, 1.0 },
   5.0E-5,                              /* Expression: st
-                                        * Referenced by: '<S47>/S-Function'
+                                        * Referenced by: '<S45>/S-Function'
                                         */
   0.0,                                 /* Expression: 0
-                                        * Referenced by: '<S40>/AC'
-                                        */
-  0.0,                                 /* Expression: 0
-                                        * Referenced by: '<S9>/Delay2'
-                                        */
-  0.0,                                 /* Expression: 0
-                                        * Referenced by: '<S9>/Delay1'
+                                        * Referenced by: '<S38>/AC'
                                         */
   1.0,                                 /* Expression: 1
                                         * Referenced by: '<S5>/do not delete this gain'
@@ -241,48 +241,6 @@ P_my_pv_system_1_sm_master_T my_pv_system_1_sm_master_P = {
                                         */
   1.0,                                 /* Expression: 1
                                         * Referenced by: '<S11>/do not delete this gain'
-                                        */
-
-  /*  Computed Parameter: SFunction_P1_Size_bw
-   * Referenced by: '<S25>/S-Function'
-   */
-  { 1.0, 1.0 },
-  2.0,                                 /* Expression: Data_width
-                                        * Referenced by: '<S25>/S-Function'
-                                        */
-
-  /*  Computed Parameter: SFunction_P2_Size_d
-   * Referenced by: '<S25>/S-Function'
-   */
-  { 2.0, 1.0 },
-
-  /*  Expression: InitialConditions
-   * Referenced by: '<S25>/S-Function'
-   */
-  { 1000.0, 25.0 },
-  8.55,                                /* Expression: 8.55
-                                        * Referenced by: '<S9>/Constant1'
-                                        */
-  523.6,                               /* Expression: 37.4*14
-                                        * Referenced by: '<S9>/Constant2'
-                                        */
-  0.06,                                /* Expression: 0.06
-                                        * Referenced by: '<S9>/Constant3'
-                                        */
-  840.0,                               /* Expression: 60*14
-                                        * Referenced by: '<S9>/Constant4'
-                                        */
-  1.0,                                 /* Expression: 1
-                                        * Referenced by: '<S29>/do not delete this gain'
-                                        */
-  523.6,                               /* Expression: 37.4*14
-                                        * Referenced by: '<S9>/Delay'
-                                        */
-  1.0,                                 /* Expression: 1
-                                        * Referenced by: '<S31>/do not delete this gain'
-                                        */
-  1.0,                                 /* Expression: 1
-                                        * Referenced by: '<S32>/do not delete this gain'
                                         */
   0.0,                                 /* Expression: 0
                                         * Referenced by: '<S21>/0 4'
@@ -309,20 +267,38 @@ P_my_pv_system_1_sm_master_T my_pv_system_1_sm_master_P = {
    * Referenced by: '<S23>/Vf Diodes'
    */
   { -0.0, -0.0, -0.0, -0.0 },
+
+  /*  Computed Parameter: SFunction_P1_Size_k
+   * Referenced by: '<S25>/S-Function'
+   */
+  { 1.0, 1.0 },
+  2.0,                                 /* Expression: Data_width
+                                        * Referenced by: '<S25>/S-Function'
+                                        */
+
+  /*  Computed Parameter: SFunction_P2_Size_h
+   * Referenced by: '<S25>/S-Function'
+   */
+  { 2.0, 1.0 },
+
+  /*  Expression: InitialConditions
+   * Referenced by: '<S25>/S-Function'
+   */
+  { 1000.0, 25.0 },
+  1.0,                                 /* Expression: 1
+                                        * Referenced by: '<S28>/do not delete this gain'
+                                        */
+  1.0,                                 /* Expression: 1
+                                        * Referenced by: '<S29>/do not delete this gain'
+                                        */
+  1.0,                                 /* Expression: 1
+                                        * Referenced by: '<S30>/do not delete this gain'
+                                        */
   1.0,                                 /* Expression: 1
                                         * Referenced by: '<S17>/do not delete this gain'
                                         */
   1.0,                                 /* Expression: 1
                                         * Referenced by: '<S18>/do not delete this gain'
-                                        */
-  1U,                                  /* Computed Parameter: Delay2_DelayLength
-                                        * Referenced by: '<S9>/Delay2'
-                                        */
-  1U,                                  /* Computed Parameter: Delay1_DelayLength
-                                        * Referenced by: '<S9>/Delay1'
-                                        */
-  1U,                                  /* Computed Parameter: Delay_DelayLength
-                                        * Referenced by: '<S9>/Delay'
                                         */
   0                                    /* Expression: Tf_sps>0 | Tt_sps>0
                                         * Referenced by: '<S21>/2'

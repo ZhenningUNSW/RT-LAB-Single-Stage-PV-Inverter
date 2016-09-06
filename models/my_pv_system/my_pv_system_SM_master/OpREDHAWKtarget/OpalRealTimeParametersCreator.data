@@ -78,11 +78,11 @@ SM_master/Memory/X0
 240
 F64
 1
-SM_master/Memory1/X0
+SM_master/Memory/X0
 248
 F64
 1
-SM_master/Memory1/X0
+SM_master/Memory/X0
 256
 F64
 1
@@ -98,19 +98,19 @@ SM_master/Memory1/X0
 280
 F64
 1
+SM_master/Memory1/X0
+288
+F64
+1
+SM_master/Memory1/X0
+296
+F64
+1
 SM_master/H-Bridge /Model/Unit Delay/InitialCondition
-728
+744
 F64
 1
 SM_master/Vs 14,400 V/Model/AC/Bias
-808
-F64
-1
-SM_master/Subsystem/Delay2/InitialCondition
-816
-F64
-1
-SM_master/Subsystem/Delay1/InitialCondition
 824
 F64
 1
@@ -126,87 +126,55 @@ SM_master/Vdc 1/do not delete this gain/Gain
 848
 F64
 1
-SM_master/Subsystem/Constant1/Value
-912
-F64
-1
-SM_master/Subsystem/Constant2/Value
-920
-F64
-1
-SM_master/Subsystem/Constant3/Value
-928
-F64
-1
-SM_master/Subsystem/Constant4/Value
-936
-F64
-1
-SM_master/Subsystem/Current Measurement/do not delete this gain/Gain
-944
-F64
-1
-SM_master/Subsystem/Delay/InitialCondition
-952
-F64
-1
-SM_master/Subsystem/Voltage Measurement/do not delete this gain/Gain
-960
-F64
-1
-SM_master/Subsystem/Voltage Measurement1/do not delete this gain/Gain
-968
-F64
-1
 SM_master/H-Bridge /Model/0 4/Value
-976
+856
 F64
 1
 SM_master/H-Bridge /Model/1__Ron/Gain
-984
+864
 F64
 1
 SM_master/H-Bridge /Model/Switch/Threshold
-992
+872
 F64
 1
 SM_master/H-Bridge /Model/Saturation/UpperLimit
-1000
+880
 F64
 1
 SM_master/H-Bridge /Model/Saturation/LowerLimit
-1008
+888
 F64
 1
 SM_master/H-Bridge /Model/Vf 1/Vf Devices & Clamping Diodes/Value
-1016
+896
 F64
 4
 SM_master/H-Bridge /Model/Vf 1/Vf Diodes/Value
-1048
+928
 F64
 4
+SM_master/Subsystem/Current Measurement/do not delete this gain/Gain
+1016
+F64
+1
+SM_master/Subsystem/Voltage Measurement/do not delete this gain/Gain
+1024
+F64
+1
+SM_master/Subsystem/Voltage Measurement1/do not delete this gain/Gain
+1032
+F64
+1
 SM_master/GRID/CM2/do not delete this gain/Gain
-1080
+1040
 F64
 1
 SM_master/GRID/Vm2/do not delete this gain/Gain
-1088
+1048
 F64
 1
-SM_master/Subsystem/Delay2/DelayLength
-1096
-U32
-1
-SM_master/Subsystem/Delay1/DelayLength
-1100
-U32
-1
-SM_master/Subsystem/Delay/DelayLength
-1104
-U32
-1
 SM_master/H-Bridge /Model/2/Value
-1108
+1056
 Boolean
 1

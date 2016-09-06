@@ -8,7 +8,7 @@ Transferring in binary: C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\m
 
 
 Executing script /usr/opalrt/v11.0.7.582/common/python/rtlab/global/target_subsys_preload.py ... done
-WatchDogServer service - server socket created, available on address: 192.168.1.10:44633
+WatchDogServer service - server socket created, available on address: 192.168.1.10:46256
 Root initialized: 192.168.1.10:25250/resources/root
 Model 'my_pv_system_3_ss_controller' compiled in RELEASE mode.
 4 CPUs active on this Computer
@@ -25,27 +25,20 @@ SubSystem step size = 0.000050 sec. Status updated at every 1 local step.
 Not synchronized: Time step is determined by reception of data from another subsystem.
 Real-time SingleTasking mode.
 RT-LAB license ok. Unlimited time license.
-Monitoring: start time = 979.612 ms, using CPU speed = 3399 MHz
+Monitoring: start time = 1003.477 ms, using CPU speed = 3399 MHz
 Snapshot taken (opmy_pv_system_ss_controller_0.snap).
  [0]: PAUSE mode, IO set to pause value.
-		Tue Sep  6 10:33:24 2016
+		Tue Sep  6 11:33:43 2016
 
 Starting transfer of /home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_workspace/pv_inverter/models/my_pv_system/my_pv_system_ss_controller/opmy_pv_system_ss_controller_0.snap...
 Transfer of /home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_workspace/pv_inverter/models/my_pv_system/my_pv_system_ss_controller/opmy_pv_system_ss_controller_0.snap OK
            [1]: RUN mode, IO set to run value.
           		Approximative step size = 50 us.
-          		Tue Sep  6 10:33:33 2016
+          		Tue Sep  6 11:33:50 2016
 
           Main priority set to 99
-           [2448036]: PAUSE mode, IO set to pause value.
-          		Tue Sep  6 10:35:35 2016
-
-           [2448037]: RUN mode, IO set to run value.
-          		Approximative step size = 50 us.
-          		Tue Sep  6 10:35:56 2016
-
-           [8021920]: Reset
-          		Tue Sep  6 10:40:35 2016
+           [1831510]: Reset
+          		Tue Sep  6 11:35:22 2016
 
           Reset done
           SEND: connection to host closed

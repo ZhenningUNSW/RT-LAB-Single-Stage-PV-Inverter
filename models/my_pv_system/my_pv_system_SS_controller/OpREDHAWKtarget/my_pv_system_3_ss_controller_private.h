@@ -3,9 +3,9 @@
  *
  * Code generation for model "my_pv_system_3_ss_controller".
  *
- * Model version              : 1.177
+ * Model version              : 1.189
  * Simulink Coder version : 8.7 (R2014b) 08-Sep-2014
- * C source code generated on : Tue Sep 06 10:33:25 2016
+ * C source code generated on : Tue Sep 06 11:32:06 2016
  *
  * Target selection: rtlab_rtmodel.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -24,6 +24,7 @@ extern real_T rt_modd_snf(real_T u0, real_T u1);
 extern real_T rt_hypotd_snf(real_T u0, real_T u1);
 extern real_T rt_atan2d_snf(real_T u0, real_T u1);
 extern real_T rt_remd_snf(real_T u0, real_T u1);
+extern real_T rt_powd_snf(real_T u0, real_T u1);
 void BINARYSEARCH_real_T(uint32_T *piLeft, uint32_T *piRght, real_T u, const
   real_T *pData, uint32_T iHi);
 void LookUp_real_T_real_T(real_T *pY, const real_T *pYData, real_T u, const
