@@ -4,7 +4,9 @@ my_pv_system_4_ss_controller/SS_controller/Inverter Control/PLL & Measurements/S
 [S-Function list]
 my_pv_system_4_ss_controller/SS_controller/Inverter Control/MPPT Controller using Perturbe  & Observe technique  / SFunction =0
 my_pv_system_4_ss_controller/SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Discrete Variable Time Delay/S-Function=1
-my_pv_system_4_ss_controller/SS_controller/rtlab_send_subsystem/Subsystem3/Send3/S-Function=0
+my_pv_system_4_ss_controller/SS_controller/OpMonitor=0
+my_pv_system_4_ss_controller/SS_controller/rtlab_send_subsystem/Subsystem2/Send2/S-Function=0
+my_pv_system_4_ss_controller/SS_controller/rtlab_send_subsystem/Subsystem4/Send4/S-Function=0
 my_pv_system_4_ss_controller/SS_controller/zzzOpComm/Receive_1/S-Function=0
 [S-Function modules]
 my_pv_system_4_ss_controller/SS_controller/Inverter Control/MPPT Controller using Perturbe  & Observe technique  / SFunction =''

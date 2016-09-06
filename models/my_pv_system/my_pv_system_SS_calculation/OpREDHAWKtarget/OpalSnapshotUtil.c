@@ -37,8 +37,12 @@ int OpalSnapshot_Copy_DWork(void * src, void * dst) {
    memcpy(&pDst->SFunction_PreviousInput, &pSrc->SFunction_PreviousInput, eltSize);
    size += eltSize;
 
-   eltSize = sizeof(pSrc->Memory_PreviousInput);
-   memcpy(&pDst->Memory_PreviousInput, &pSrc->Memory_PreviousInput, eltSize);
+   eltSize = sizeof(pSrc->Memory_1_PreviousInput);
+   memcpy(&pDst->Memory_1_PreviousInput, &pSrc->Memory_1_PreviousInput, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->Memory_2_PreviousInput);
+   memcpy(&pDst->Memory_2_PreviousInput, &pSrc->Memory_2_PreviousInput, eltSize);
    size += eltSize;
 
    eltSize = sizeof(pSrc->SFunction_RWORK);

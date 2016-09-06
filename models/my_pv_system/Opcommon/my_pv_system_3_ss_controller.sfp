@@ -1,0 +1,18 @@
+[S-Function files]
+my_pv_system_3_ss_controller/SS_controller/Inverter Control/MPPT Controller using Perturbe  & Observe technique  / SFunction =sf_sfun
+my_pv_system_3_ss_controller/SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Discrete Variable Time Delay/S-Function=sfun_discreteVariableDelay
+[S-Function list]
+my_pv_system_3_ss_controller/SS_controller/Inverter Control/MPPT Controller using Perturbe  & Observe technique  / SFunction =0
+my_pv_system_3_ss_controller/SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Discrete Variable Time Delay/S-Function=1
+my_pv_system_3_ss_controller/SS_controller/OpMonitor=0
+my_pv_system_3_ss_controller/SS_controller/rtlab_send_subsystem/Subsystem2/Send2/S-Function=0
+my_pv_system_3_ss_controller/SS_controller/rtlab_send_subsystem/Subsystem4/Send4/S-Function=0
+my_pv_system_3_ss_controller/SS_controller/zzzOpComm/Receive_1/S-Function=0
+[S-Function modules]
+my_pv_system_3_ss_controller/SS_controller/Inverter Control/MPPT Controller using Perturbe  & Observe technique  / SFunction =''
+my_pv_system_3_ss_controller/SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Discrete Variable Time Delay/S-Function=''
+[S-Function parameters]
+my_pv_system_3_ss_controller/SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Discrete Variable Time Delay/S-Function/P1=MaxDelay
+my_pv_system_3_ss_controller/SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Discrete Variable Time Delay/S-Function/P2=Ts
+my_pv_system_3_ss_controller/SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Discrete Variable Time Delay/S-Function/P3=InitialValue
+my_pv_system_3_ss_controller/SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Discrete Variable Time Delay/S-Function/P4=DFT

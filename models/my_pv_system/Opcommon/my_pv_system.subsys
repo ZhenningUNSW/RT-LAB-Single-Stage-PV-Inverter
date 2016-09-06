@@ -1,4 +1,3 @@
 my_pv_system/SM_master,my_pv_system_1_sm_master,1
 my_pv_system/SC_user_interface,my_pv_system_2_sc_user_interface,2
-my_pv_system/SS_calculation,my_pv_system_3_ss_calculation,3
-my_pv_system/SS_controller,my_pv_system_4_ss_controller,4
+my_pv_system/SS_controller,my_pv_system_3_ss_controller,3

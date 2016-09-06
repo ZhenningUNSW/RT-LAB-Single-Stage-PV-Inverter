@@ -1,4 +1,4 @@
-MODEL=my_pv_system_4_ss_controller
+MODEL=my_pv_system_3_ss_controller
 NUMST=1
 NCSTATES=0
 HAVESTDIO

@@ -1,15 +1,19 @@
 SS_calculation/Memory/port1
 16
 F64
-3
+1
+SS_calculation/Memory/port2
+24
+F64
+1
 SS_calculation/Mean/Model/Digital  Clock/port1
-40
+32
 F64
 1
 SS_calculation/zzzOpComm/Receive_1/S-Function/port1
-48
+40
 F64
-4
+5
 SS_calculation/Mean/Model/Integ4/port1
 80
 F64

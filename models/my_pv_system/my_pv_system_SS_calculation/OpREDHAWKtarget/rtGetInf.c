@@ -3,9 +3,9 @@
  *
  * Code generation for model "my_pv_system_3_ss_calculation".
  *
- * Model version              : 1.157
+ * Model version              : 1.174
  * Simulink Coder version : 8.7 (R2014b) 08-Sep-2014
- * C source code generated on : Mon Sep 05 22:15:04 2016
+ * C source code generated on : Tue Sep 06 10:11:57 2016
  *
  * Target selection: rtlab_rtmodel.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping

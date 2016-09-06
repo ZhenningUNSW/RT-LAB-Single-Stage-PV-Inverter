@@ -3,9 +3,9 @@
  *
  * Code generation for model "my_pv_system_3_ss_calculation".
  *
- * Model version              : 1.157
+ * Model version              : 1.174
  * Simulink Coder version : 8.7 (R2014b) 08-Sep-2014
- * C source code generated on : Mon Sep 05 22:15:04 2016
+ * C source code generated on : Tue Sep 06 10:11:57 2016
  *
  * Target selection: rtlab_rtmodel.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -39,6 +39,9 @@ P_my_pv_system_3_ss_calculation_T my_pv_system_3_ss_calculation_P = {
   0.0,                                 /* Expression: 0
                                         * Referenced by: '<S2>/Memory'
                                         */
+  0.0,                                 /* Expression: 0
+                                        * Referenced by: '<S2>/Memory'
+                                        */
 
   /*  Computed Parameter: SFunction_P1_Size
    * Referenced by: '<S13>/S-Function'
@@ -48,7 +51,7 @@ P_my_pv_system_3_ss_calculation_T my_pv_system_3_ss_calculation_P = {
                                         * Referenced by: '<S13>/S-Function'
                                         */
 
-  /*  Computed Parameter: SFunction_P1_Size_g
+  /*  Computed Parameter: SFunction_P1_Size_h
    * Referenced by: '<S14>/S-Function'
    */
   { 1.0, 1.0 },
@@ -60,7 +63,7 @@ P_my_pv_system_3_ss_calculation_T my_pv_system_3_ss_calculation_P = {
    * Referenced by: '<S14>/S-Function'
    */
   { 1.0, 1.0 },
-  4.0,                                 /* Expression: Data_width
+  5.0,                                 /* Expression: Data_width
                                         * Referenced by: '<S14>/S-Function'
                                         */
 
@@ -118,7 +121,7 @@ P_my_pv_system_3_ss_calculation_T my_pv_system_3_ss_calculation_P = {
   50.0,                                /* Expression: sps.Freq
                                         * Referenced by: '<S8>/K2'
                                         */
-  406.0,                               /* Expression: sps.Vinit
+  0.0,                                 /* Expression: sps.Vinit
                                         * Referenced by: '<S8>/Unit Delay1'
                                         */
   2.5E-5,                              /* Computed Parameter: Integ4_gainval_n
@@ -168,7 +171,7 @@ P_my_pv_system_3_ss_calculation_T my_pv_system_3_ss_calculation_P = {
   50.0,                                /* Expression: sps.Freq
                                         * Referenced by: '<S10>/K2'
                                         */
-  8.05                                 /* Expression: sps.Vinit
+  0.0                                  /* Expression: sps.Vinit
                                         * Referenced by: '<S10>/Unit Delay1'
                                         */
 };

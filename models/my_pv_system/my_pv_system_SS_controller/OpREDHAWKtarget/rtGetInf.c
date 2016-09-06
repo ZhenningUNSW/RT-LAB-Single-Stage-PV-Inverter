@@ -1,11 +1,11 @@
 /*
  * rtGetInf.c
  *
- * Code generation for model "my_pv_system_4_ss_controller".
+ * Code generation for model "my_pv_system_3_ss_controller".
  *
- * Model version              : 1.157
+ * Model version              : 1.177
  * Simulink Coder version : 8.7 (R2014b) 08-Sep-2014
- * C source code generated on : Mon Sep 05 22:15:14 2016
+ * C source code generated on : Tue Sep 06 10:33:25 2016
  *
  * Target selection: rtlab_rtmodel.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping

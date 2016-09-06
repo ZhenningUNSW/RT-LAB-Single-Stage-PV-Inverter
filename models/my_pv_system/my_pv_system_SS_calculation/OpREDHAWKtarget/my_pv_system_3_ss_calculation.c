@@ -3,9 +3,9 @@
  *
  * Code generation for model "my_pv_system_3_ss_calculation".
  *
- * Model version              : 1.157
+ * Model version              : 1.174
  * Simulink Coder version : 8.7 (R2014b) 08-Sep-2014
- * C source code generated on : Mon Sep 05 22:15:04 2016
+ * C source code generated on : Tue Sep 06 10:11:57 2016
  *
  * Target selection: rtlab_rtmodel.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -49,12 +49,12 @@ static void my_pv_system_3_ss_calculation_output(void)
   /* End of Stop: '<S1>/Stop Simulation' */
 
   /* Memory: '<S2>/Memory' */
-  my_pv_system_3_ss_calculation_B.Memory[0] =
-    my_pv_system_3_ss_calculation_DW.Memory_PreviousInput[0];
-  my_pv_system_3_ss_calculation_B.Memory[1] =
-    my_pv_system_3_ss_calculation_DW.Memory_PreviousInput[1];
-  my_pv_system_3_ss_calculation_B.Memory[2] =
-    my_pv_system_3_ss_calculation_DW.Memory_PreviousInput[2];
+  my_pv_system_3_ss_calculation_B.Vmean =
+    my_pv_system_3_ss_calculation_DW.Memory_1_PreviousInput;
+
+  /* Memory: '<S2>/Memory' */
+  my_pv_system_3_ss_calculation_B.Pmean =
+    my_pv_system_3_ss_calculation_DW.Memory_2_PreviousInput;
 
   /* Level2 S-Function Block: '<S13>/S-Function' (OP_SEND) */
   {
@@ -79,7 +79,7 @@ static void my_pv_system_3_ss_calculation_output(void)
   } else {
     my_pv_system_3_ss_calculation_B.Integ4 =
       my_pv_system_3_ss_calculation_P.Integ4_gainval *
-      my_pv_system_3_ss_calculation_B.SFunction_d[2] +
+      my_pv_system_3_ss_calculation_B.SFunction_e[3] +
       my_pv_system_3_ss_calculation_DW.Integ4_DSTATE;
   }
 
@@ -112,7 +112,7 @@ static void my_pv_system_3_ss_calculation_output(void)
     /* Gain: '<S8>/Gain1' */
     my_pv_system_3_ss_calculation_B.Gain1_m =
       my_pv_system_3_ss_calculation_P.Gain1_Gain *
-      my_pv_system_3_ss_calculation_B.SFunction_d[2];
+      my_pv_system_3_ss_calculation_B.SFunction_e[3];
 
     /* Gain: '<S8>/Gain' */
     my_pv_system_3_ss_calculation_B.Gain_a =
@@ -160,7 +160,7 @@ static void my_pv_system_3_ss_calculation_output(void)
   } else {
     my_pv_system_3_ss_calculation_B.Integ4_b =
       my_pv_system_3_ss_calculation_P.Integ4_gainval_n *
-      my_pv_system_3_ss_calculation_B.SFunction_d[1] +
+      my_pv_system_3_ss_calculation_B.SFunction_e[2] +
       my_pv_system_3_ss_calculation_DW.Integ4_DSTATE_e;
   }
 
@@ -194,7 +194,7 @@ static void my_pv_system_3_ss_calculation_output(void)
     /* Gain: '<S10>/Gain1' */
     my_pv_system_3_ss_calculation_B.Gain1 =
       my_pv_system_3_ss_calculation_P.Gain1_Gain_o *
-      my_pv_system_3_ss_calculation_B.SFunction_d[1];
+      my_pv_system_3_ss_calculation_B.SFunction_e[2];
 
     /* Gain: '<S10>/Gain' */
     my_pv_system_3_ss_calculation_B.Gain =
@@ -230,8 +230,9 @@ static void my_pv_system_3_ss_calculation_output(void)
   /* End of Switch: '<S10>/Switch' */
 
   /* Product: '<S2>/Product' */
-  my_pv_system_3_ss_calculation_B.Pmean = my_pv_system_3_ss_calculation_B.Switch
-    * my_pv_system_3_ss_calculation_B.Switch_j;
+  my_pv_system_3_ss_calculation_B.Pmean_d =
+    my_pv_system_3_ss_calculation_B.Switch *
+    my_pv_system_3_ss_calculation_B.Switch_j;
 }
 
 /* Model update function */
@@ -242,18 +243,18 @@ static void my_pv_system_3_ss_calculation_update(void)
     my_pv_system_3_ss_calculation_B.Sum;
 
   /* Update for Memory: '<S2>/Memory' */
-  my_pv_system_3_ss_calculation_DW.Memory_PreviousInput[0] =
-    my_pv_system_3_ss_calculation_B.SFunction_d[0];
-  my_pv_system_3_ss_calculation_DW.Memory_PreviousInput[1] =
+  my_pv_system_3_ss_calculation_DW.Memory_1_PreviousInput =
     my_pv_system_3_ss_calculation_B.Switch;
-  my_pv_system_3_ss_calculation_DW.Memory_PreviousInput[2] =
-    my_pv_system_3_ss_calculation_B.Pmean;
+
+  /* Update for Memory: '<S2>/Memory' */
+  my_pv_system_3_ss_calculation_DW.Memory_2_PreviousInput =
+    my_pv_system_3_ss_calculation_B.Pmean_d;
 
   /* Update for DiscreteIntegrator: '<S8>/Integ4' */
   my_pv_system_3_ss_calculation_DW.Integ4_SYSTEM_ENABLE = 0U;
   my_pv_system_3_ss_calculation_DW.Integ4_DSTATE =
     my_pv_system_3_ss_calculation_P.Integ4_gainval *
-    my_pv_system_3_ss_calculation_B.SFunction_d[2] +
+    my_pv_system_3_ss_calculation_B.SFunction_e[3] +
     my_pv_system_3_ss_calculation_B.Integ4;
 
   /* Level2 S-Function Block: '<S9>/S-Function' (sfun_discreteVariableDelay) */
@@ -266,7 +267,7 @@ static void my_pv_system_3_ss_calculation_update(void)
 
   /* Update for UnitDelay: '<S8>/Unit Delay' */
   my_pv_system_3_ss_calculation_DW.UnitDelay_DSTATE =
-    my_pv_system_3_ss_calculation_B.SFunction_d[2];
+    my_pv_system_3_ss_calculation_B.SFunction_e[3];
 
   /* Update for UnitDelay: '<S8>/Unit Delay1' */
   my_pv_system_3_ss_calculation_DW.UnitDelay1_DSTATE =
@@ -276,7 +277,7 @@ static void my_pv_system_3_ss_calculation_update(void)
   my_pv_system_3_ss_calculation_DW.Integ4_SYSTEM_ENABLE_f = 0U;
   my_pv_system_3_ss_calculation_DW.Integ4_DSTATE_e =
     my_pv_system_3_ss_calculation_P.Integ4_gainval_n *
-    my_pv_system_3_ss_calculation_B.SFunction_d[1] +
+    my_pv_system_3_ss_calculation_B.SFunction_e[2] +
     my_pv_system_3_ss_calculation_B.Integ4_b;
 
   /* Level2 S-Function Block: '<S11>/S-Function' (sfun_discreteVariableDelay) */
@@ -289,7 +290,7 @@ static void my_pv_system_3_ss_calculation_update(void)
 
   /* Update for UnitDelay: '<S10>/Unit Delay' */
   my_pv_system_3_ss_calculation_DW.UnitDelay_DSTATE_l =
-    my_pv_system_3_ss_calculation_B.SFunction_d[1];
+    my_pv_system_3_ss_calculation_B.SFunction_e[2];
 
   /* Update for UnitDelay: '<S10>/Unit Delay1' */
   my_pv_system_3_ss_calculation_DW.UnitDelay1_DSTATE_p =
@@ -377,12 +378,12 @@ static void my_pv_system_3_ss_calculation_initialize(void)
     my_pv_system_3_ss_calculation_P.SFunction_X0;
 
   /* InitializeConditions for Memory: '<S2>/Memory' */
-  my_pv_system_3_ss_calculation_DW.Memory_PreviousInput[0] =
-    my_pv_system_3_ss_calculation_P.Memory_X0;
-  my_pv_system_3_ss_calculation_DW.Memory_PreviousInput[1] =
-    my_pv_system_3_ss_calculation_P.Memory_X0;
-  my_pv_system_3_ss_calculation_DW.Memory_PreviousInput[2] =
-    my_pv_system_3_ss_calculation_P.Memory_X0;
+  my_pv_system_3_ss_calculation_DW.Memory_1_PreviousInput =
+    my_pv_system_3_ss_calculation_P.Memory_1_X0;
+
+  /* InitializeConditions for Memory: '<S2>/Memory' */
+  my_pv_system_3_ss_calculation_DW.Memory_2_PreviousInput =
+    my_pv_system_3_ss_calculation_P.Memory_2_X0;
 
   /* Level2 S-Function Block: '<S13>/S-Function' (OP_SEND) */
   {
@@ -595,16 +596,16 @@ RT_MODEL_my_pv_system_3_ss_calculation_T *my_pv_system_3_ss_calculation(void)
                 sizeof(B_my_pv_system_3_ss_calculation_T));
 
   {
+    int_T i;
+    for (i = 0; i < 5; i++) {
+      my_pv_system_3_ss_calculation_B.SFunction_e[i] = 0.0;
+    }
+
     my_pv_system_3_ss_calculation_B.SFunction = 0.0;
     my_pv_system_3_ss_calculation_B.Sum = 0.0;
-    my_pv_system_3_ss_calculation_B.Memory[0] = 0.0;
-    my_pv_system_3_ss_calculation_B.Memory[1] = 0.0;
-    my_pv_system_3_ss_calculation_B.Memory[2] = 0.0;
+    my_pv_system_3_ss_calculation_B.Vmean = 0.0;
+    my_pv_system_3_ss_calculation_B.Pmean = 0.0;
     my_pv_system_3_ss_calculation_B.DigitalClock = 0.0;
-    my_pv_system_3_ss_calculation_B.SFunction_d[0] = 0.0;
-    my_pv_system_3_ss_calculation_B.SFunction_d[1] = 0.0;
-    my_pv_system_3_ss_calculation_B.SFunction_d[2] = 0.0;
-    my_pv_system_3_ss_calculation_B.SFunction_d[3] = 0.0;
     my_pv_system_3_ss_calculation_B.Integ4 = 0.0;
     my_pv_system_3_ss_calculation_B.K1 = 0.0;
     my_pv_system_3_ss_calculation_B.SFunction_a = 0.0;
@@ -618,7 +619,7 @@ RT_MODEL_my_pv_system_3_ss_calculation_T *my_pv_system_3_ss_calculation(void)
     my_pv_system_3_ss_calculation_B.UnitDelay_m = 0.0;
     my_pv_system_3_ss_calculation_B.UnitDelay1_k = 0.0;
     my_pv_system_3_ss_calculation_B.Switch_j = 0.0;
-    my_pv_system_3_ss_calculation_B.Pmean = 0.0;
+    my_pv_system_3_ss_calculation_B.Pmean_d = 0.0;
     my_pv_system_3_ss_calculation_B.Gain1 = 0.0;
     my_pv_system_3_ss_calculation_B.Gain = 0.0;
     my_pv_system_3_ss_calculation_B.Correction = 0.0;
@@ -649,9 +650,8 @@ RT_MODEL_my_pv_system_3_ss_calculation_T *my_pv_system_3_ss_calculation(void)
   my_pv_system_3_ss_calculation_DW.UnitDelay_DSTATE_l = 0.0;
   my_pv_system_3_ss_calculation_DW.UnitDelay1_DSTATE_p = 0.0;
   my_pv_system_3_ss_calculation_DW.SFunction_PreviousInput = 0.0;
-  my_pv_system_3_ss_calculation_DW.Memory_PreviousInput[0] = 0.0;
-  my_pv_system_3_ss_calculation_DW.Memory_PreviousInput[1] = 0.0;
-  my_pv_system_3_ss_calculation_DW.Memory_PreviousInput[2] = 0.0;
+  my_pv_system_3_ss_calculation_DW.Memory_1_PreviousInput = 0.0;
+  my_pv_system_3_ss_calculation_DW.Memory_2_PreviousInput = 0.0;
   my_pv_system_3_ss_calculation_DW.SFunction_RWORK = 0.0;
   my_pv_system_3_ss_calculation_DW.SFunction_RWORK_f = 0.0;
 
@@ -770,12 +770,11 @@ RT_MODEL_my_pv_system_3_ss_calculation_T *my_pv_system_3_ss_calculation(void)
         {
           real_T const **sfcnUPtrs = (real_T const **)
             &my_pv_system_3_ss_calculation_M->NonInlinedSFcns.Sfcn0.UPtrs0;
-          sfcnUPtrs[0] = my_pv_system_3_ss_calculation_B.Memory;
-          sfcnUPtrs[1] = &my_pv_system_3_ss_calculation_B.Memory[1];
-          sfcnUPtrs[2] = &my_pv_system_3_ss_calculation_B.Memory[2];
+          sfcnUPtrs[0] = &my_pv_system_3_ss_calculation_B.Vmean;
+          sfcnUPtrs[1] = &my_pv_system_3_ss_calculation_B.Pmean;
           ssSetInputPortSignalPtrs(rts, 0, (InputPtrsType)&sfcnUPtrs[0]);
           _ssSetInputPortNumDimensions(rts, 0, 1);
-          ssSetInputPortWidth(rts, 0, 3);
+          ssSetInputPortWidth(rts, 0, 2);
         }
       }
 
@@ -829,7 +828,7 @@ RT_MODEL_my_pv_system_3_ss_calculation_T *my_pv_system_3_ss_calculation(void)
       sfcnTsMap[0] = 0;
 
       /* set compiled values of dynamic vector attributes */
-      ssSetInputPortWidth(rts, 0, 3);
+      ssSetInputPortWidth(rts, 0, 2);
       ssSetInputPortDataType(rts, 0, SS_DOUBLE);
       ssSetInputPortComplexSignal(rts, 0, 0);
       ssSetInputPortFrameData(rts, 0, 0);
@@ -901,9 +900,9 @@ RT_MODEL_my_pv_system_3_ss_calculation_T *my_pv_system_3_ss_calculation(void)
         /* port 0 */
         {
           _ssSetOutputPortNumDimensions(rts, 0, 1);
-          ssSetOutputPortWidth(rts, 0, 4);
+          ssSetOutputPortWidth(rts, 0, 5);
           ssSetOutputPortSignal(rts, 0, ((real_T *)
-            my_pv_system_3_ss_calculation_B.SFunction_d));
+            my_pv_system_3_ss_calculation_B.SFunction_e));
         }
       }
 
@@ -923,7 +922,7 @@ RT_MODEL_my_pv_system_3_ss_calculation_T *my_pv_system_3_ss_calculation(void)
         ssSetSFcnParamsCount(rts, 3);
         ssSetSFcnParamsPtr(rts, &sfcnParams[0]);
         ssSetSFcnParam(rts, 0, (mxArray*)
-                       my_pv_system_3_ss_calculation_P.SFunction_P1_Size_g);
+                       my_pv_system_3_ss_calculation_P.SFunction_P1_Size_h);
         ssSetSFcnParam(rts, 1, (mxArray*)
                        my_pv_system_3_ss_calculation_P.SFunction_P2_Size);
         ssSetSFcnParam(rts, 2, (mxArray*)
@@ -1361,9 +1360,9 @@ RT_MODEL_my_pv_system_3_ss_calculation_T *my_pv_system_3_ss_calculation(void)
   my_pv_system_3_ss_calculation_M->Sizes.numU = (0);/* Number of model inputs */
   my_pv_system_3_ss_calculation_M->Sizes.sysDirFeedThru = (0);/* The model is not direct feedthrough */
   my_pv_system_3_ss_calculation_M->Sizes.numSampTimes = (1);/* Number of sample times */
-  my_pv_system_3_ss_calculation_M->Sizes.numBlocks = (40);/* Number of blocks */
-  my_pv_system_3_ss_calculation_M->Sizes.numBlockIO = (33);/* Number of block outputs */
-  my_pv_system_3_ss_calculation_M->Sizes.numBlockPrms = (55);/* Sum of parameter "widths" */
+  my_pv_system_3_ss_calculation_M->Sizes.numBlocks = (41);/* Number of blocks */
+  my_pv_system_3_ss_calculation_M->Sizes.numBlockIO = (34);/* Number of block outputs */
+  my_pv_system_3_ss_calculation_M->Sizes.numBlockPrms = (56);/* Sum of parameter "widths" */
   return my_pv_system_3_ss_calculation_M;
 }
 

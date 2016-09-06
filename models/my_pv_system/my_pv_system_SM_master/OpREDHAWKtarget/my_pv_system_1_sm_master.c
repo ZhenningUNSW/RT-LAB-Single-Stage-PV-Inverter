@@ -3,9 +3,9 @@
  *
  * Code generation for model "my_pv_system_1_sm_master".
  *
- * Model version              : 1.157
+ * Model version              : 1.177
  * Simulink Coder version : 8.7 (R2014b) 08-Sep-2014
- * C source code generated on : Mon Sep 05 22:14:56 2016
+ * C source code generated on : Tue Sep 06 10:33:15 2016
  *
  * Target selection: rtlab_rtmodel.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -15,6 +15,8 @@
  */
 #include "my_pv_system_1_sm_master.h"
 #include "my_pv_system_1_sm_master_private.h"
+
+const real_T my_pv_system_1_sm_master_RGND = 0.0;/* real_T ground */
 
 /* Block signals (auto storage) */
 B_my_pv_system_1_sm_master_T my_pv_system_1_sm_master_B;
@@ -98,38 +100,46 @@ static void my_pv_system_1_sm_master_output(void)
   /* End of Stop: '<S1>/Stop Simulation' */
 
   /* Memory: '<S2>/Memory' */
-  my_pv_system_1_sm_master_B.Memory[0] =
-    my_pv_system_1_sm_master_DW.Memory_PreviousInput[0];
-  my_pv_system_1_sm_master_B.Memory[1] =
-    my_pv_system_1_sm_master_DW.Memory_PreviousInput[1];
-  my_pv_system_1_sm_master_B.Memory[2] =
-    my_pv_system_1_sm_master_DW.Memory_PreviousInput[2];
-  my_pv_system_1_sm_master_B.Memory[3] =
-    my_pv_system_1_sm_master_DW.Memory_PreviousInput[3];
+  my_pv_system_1_sm_master_B.IrradianceWm2 =
+    my_pv_system_1_sm_master_DW.Memory_1_PreviousInput;
 
-  /* Outputs for Atomic SubSystem: '<S13>/Subsystem4' */
+  /* Memory: '<S2>/Memory' */
+  my_pv_system_1_sm_master_B.I_PV =
+    my_pv_system_1_sm_master_DW.Memory_2_PreviousInput;
 
-  /* Level2 S-Function Block: '<S45>/S-Function' (send_rt) */
-  {
-    SimStruct *rts = my_pv_system_1_sm_master_M->childSfunctions[0];
-    sfcnOutputs(rts, 1);
-  }
+  /* Memory: '<S2>/Memory' */
+  my_pv_system_1_sm_master_B.V_PV =
+    my_pv_system_1_sm_master_DW.Memory_3_PreviousInput;
 
-  /* End of Outputs for SubSystem: '<S13>/Subsystem4' */
+  /* Memory: '<S2>/Memory' */
+  my_pv_system_1_sm_master_B.I_Diode =
+    my_pv_system_1_sm_master_DW.Memory_4_PreviousInput;
 
   /* Memory: '<S2>/Memory1' */
-  my_pv_system_1_sm_master_B.Memory1[0] =
-    my_pv_system_1_sm_master_DW.Memory1_PreviousInput[0];
-  my_pv_system_1_sm_master_B.Memory1[1] =
-    my_pv_system_1_sm_master_DW.Memory1_PreviousInput[1];
-  my_pv_system_1_sm_master_B.Memory1[2] =
-    my_pv_system_1_sm_master_DW.Memory1_PreviousInput[2];
+  my_pv_system_1_sm_master_B.Vinv =
+    my_pv_system_1_sm_master_DW.Memory1_1_PreviousInput;
+
+  /* Memory: '<S2>/Memory1' */
+  my_pv_system_1_sm_master_B.Vdc =
+    my_pv_system_1_sm_master_DW.Memory1_2_PreviousInput;
+
+  /* Memory: '<S2>/Memory1' */
+  my_pv_system_1_sm_master_B.Igrid =
+    my_pv_system_1_sm_master_DW.Memory1_3_PreviousInput;
+
+  /* Memory: '<S2>/Memory1' */
+  my_pv_system_1_sm_master_B.Vgrid =
+    my_pv_system_1_sm_master_DW.Memory1_4_PreviousInput;
+
+  /* Memory: '<S2>/Memory1' */
+  my_pv_system_1_sm_master_B.Ig =
+    my_pv_system_1_sm_master_DW.Memory1_5_PreviousInput;
 
   /* Outputs for Atomic SubSystem: '<S13>/Subsystem5' */
 
   /* Level2 S-Function Block: '<S46>/S-Function' (send_rt) */
   {
-    SimStruct *rts = my_pv_system_1_sm_master_M->childSfunctions[1];
+    SimStruct *rts = my_pv_system_1_sm_master_M->childSfunctions[0];
     sfcnOutputs(rts, 1);
   }
 
@@ -137,7 +147,19 @@ static void my_pv_system_1_sm_master_output(void)
 
   /* Level2 S-Function Block: '<S44>/S-Function' (OP_SEND) */
   {
+    SimStruct *rts = my_pv_system_1_sm_master_M->childSfunctions[1];
+    sfcnOutputs(rts, 1);
+  }
+
+  /* Level2 S-Function Block: '<S2>/OpMonitor' (opmonitor) */
+  {
     SimStruct *rts = my_pv_system_1_sm_master_M->childSfunctions[2];
+    sfcnOutputs(rts, 1);
+  }
+
+  /* Level2 S-Function Block: '<S45>/S-Function' (OP_SEND) */
+  {
+    SimStruct *rts = my_pv_system_1_sm_master_M->childSfunctions[3];
     sfcnOutputs(rts, 1);
   }
 
@@ -153,7 +175,7 @@ static void my_pv_system_1_sm_master_output(void)
 
   /* Level2 S-Function Block: '<S47>/S-Function' (recv_rt) */
   {
-    SimStruct *rts = my_pv_system_1_sm_master_M->childSfunctions[3];
+    SimStruct *rts = my_pv_system_1_sm_master_M->childSfunctions[4];
     sfcnOutputs(rts, 1);
   }
 
@@ -195,25 +217,25 @@ static void my_pv_system_1_sm_master_output(void)
     my_pv_system_1_sm_master_B.u = y;
 
     /* DiscreteIntegrator: '<S22>/Discrete-Time Integrator' */
-    if ((my_pv_system_1_sm_master_B.SFunction_a[0] <= 0.0) &&
+    if ((my_pv_system_1_sm_master_B.SFunction_p[0] <= 0.0) &&
         (my_pv_system_1_sm_master_DW.DiscreteTimeIntegrator_PrevRese[0] == 1)) {
       my_pv_system_1_sm_master_DW.DiscreteTimeIntegrator_DSTATE[0] =
         my_pv_system_1_sm_master_P.DiscreteTimeIntegrator_IC;
     }
 
-    if ((my_pv_system_1_sm_master_B.SFunction_a[1] <= 0.0) &&
+    if ((my_pv_system_1_sm_master_B.SFunction_p[1] <= 0.0) &&
         (my_pv_system_1_sm_master_DW.DiscreteTimeIntegrator_PrevRese[1] == 1)) {
       my_pv_system_1_sm_master_DW.DiscreteTimeIntegrator_DSTATE[1] =
         my_pv_system_1_sm_master_P.DiscreteTimeIntegrator_IC;
     }
 
-    if ((my_pv_system_1_sm_master_B.SFunction_a[2] <= 0.0) &&
+    if ((my_pv_system_1_sm_master_B.SFunction_p[2] <= 0.0) &&
         (my_pv_system_1_sm_master_DW.DiscreteTimeIntegrator_PrevRese[2] == 1)) {
       my_pv_system_1_sm_master_DW.DiscreteTimeIntegrator_DSTATE[2] =
         my_pv_system_1_sm_master_P.DiscreteTimeIntegrator_IC;
     }
 
-    if ((my_pv_system_1_sm_master_B.SFunction_a[3] <= 0.0) &&
+    if ((my_pv_system_1_sm_master_B.SFunction_p[3] <= 0.0) &&
         (my_pv_system_1_sm_master_DW.DiscreteTimeIntegrator_PrevRese[3] == 1)) {
       my_pv_system_1_sm_master_DW.DiscreteTimeIntegrator_DSTATE[3] =
         my_pv_system_1_sm_master_P.DiscreteTimeIntegrator_IC;
@@ -405,7 +427,7 @@ static void my_pv_system_1_sm_master_output(void)
       my_pv_system_1_sm_master_DW.UnitDelay_DSTATE_e[3];
 
     /* Switch: '<S22>/Switch' */
-    if (my_pv_system_1_sm_master_B.SFunction_a[0] >=
+    if (my_pv_system_1_sm_master_B.SFunction_p[0] >=
         my_pv_system_1_sm_master_P.Switch_Threshold) {
       my_pv_system_1_sm_master_B.Switch_j[0] =
         my_pv_system_1_sm_master_B.UnitDelay[0];
@@ -414,7 +436,7 @@ static void my_pv_system_1_sm_master_output(void)
         my_pv_system_1_sm_master_B.UnitDelay_l[0];
     }
 
-    if (my_pv_system_1_sm_master_B.SFunction_a[1] >=
+    if (my_pv_system_1_sm_master_B.SFunction_p[1] >=
         my_pv_system_1_sm_master_P.Switch_Threshold) {
       my_pv_system_1_sm_master_B.Switch_j[1] =
         my_pv_system_1_sm_master_B.UnitDelay[1];
@@ -423,7 +445,7 @@ static void my_pv_system_1_sm_master_output(void)
         my_pv_system_1_sm_master_B.UnitDelay_l[1];
     }
 
-    if (my_pv_system_1_sm_master_B.SFunction_a[2] >=
+    if (my_pv_system_1_sm_master_B.SFunction_p[2] >=
         my_pv_system_1_sm_master_P.Switch_Threshold) {
       my_pv_system_1_sm_master_B.Switch_j[2] =
         my_pv_system_1_sm_master_B.UnitDelay[2];
@@ -432,7 +454,7 @@ static void my_pv_system_1_sm_master_output(void)
         my_pv_system_1_sm_master_B.UnitDelay_l[2];
     }
 
-    if (my_pv_system_1_sm_master_B.SFunction_a[3] >=
+    if (my_pv_system_1_sm_master_B.SFunction_p[3] >=
         my_pv_system_1_sm_master_P.Switch_Threshold) {
       my_pv_system_1_sm_master_B.Switch_j[3] =
         my_pv_system_1_sm_master_B.UnitDelay[3];
@@ -470,7 +492,8 @@ static void my_pv_system_1_sm_master_output(void)
     my_pv_system_1_sm_master_P.AC_Bias;
 
   /* Delay: '<S9>/Delay2' */
-  my_pv_system_1_sm_master_B.I_Diode = my_pv_system_1_sm_master_DW.Delay2_DSTATE;
+  my_pv_system_1_sm_master_B.I_Diode_k =
+    my_pv_system_1_sm_master_DW.Delay2_DSTATE;
 
   /* Delay: '<S9>/Delay1' */
   my_pv_system_1_sm_master_B.Delay1 = my_pv_system_1_sm_master_DW.Delay1_DSTATE;
@@ -552,7 +575,7 @@ static void my_pv_system_1_sm_master_output(void)
             accum += *(Ds++) * my_pv_system_1_sm_master_B.Product[2];
             accum += *(Ds++) * my_pv_system_1_sm_master_B.Product[3];
             accum += *(Ds++) * my_pv_system_1_sm_master_B.AC;
-            accum += *(Ds++) * my_pv_system_1_sm_master_B.I_Diode;
+            accum += *(Ds++) * my_pv_system_1_sm_master_B.I_Diode_k;
             accum += *(Ds++) * my_pv_system_1_sm_master_B.Delay1;
             y0[i1] = accum * Chopper[i1];
           }
@@ -719,7 +742,7 @@ static void my_pv_system_1_sm_master_output(void)
           accum += *(Ds++) * my_pv_system_1_sm_master_B.Product[2];
           accum += *(Ds++) * my_pv_system_1_sm_master_B.Product[3];
           accum += *(Ds++) * my_pv_system_1_sm_master_B.AC;
-          accum += *(Ds++) * my_pv_system_1_sm_master_B.I_Diode;
+          accum += *(Ds++) * my_pv_system_1_sm_master_B.I_Diode_k;
           accum += *(Ds++) * my_pv_system_1_sm_master_B.Delay1;
           y0[i1] = accum * Chopper[i1];
         }
@@ -738,9 +761,19 @@ static void my_pv_system_1_sm_master_output(void)
     my_pv_system_1_sm_master_P.donotdeletethisgain_Gain *
     my_pv_system_1_sm_master_B.StateSpace_o1[9];
 
+  /* Gain: '<S10>/do not delete this gain' */
+  my_pv_system_1_sm_master_B.donotdeletethisgain_e =
+    my_pv_system_1_sm_master_P.donotdeletethisgain_Gain_g *
+    my_pv_system_1_sm_master_B.StateSpace_o1[7];
+
+  /* Gain: '<S11>/do not delete this gain' */
+  my_pv_system_1_sm_master_B.donotdeletethisgain_g =
+    my_pv_system_1_sm_master_P.donotdeletethisgain_Gain_h *
+    my_pv_system_1_sm_master_B.StateSpace_o1[8];
+
   /* Level2 S-Function Block: '<S25>/S-Function' (RECV_Param) */
   {
-    SimStruct *rts = my_pv_system_1_sm_master_M->childSfunctions[4];
+    SimStruct *rts = my_pv_system_1_sm_master_M->childSfunctions[5];
     sfcnOutputs(rts, 1);
   }
 
@@ -769,9 +802,9 @@ static void my_pv_system_1_sm_master_output(void)
   /* '<S30>:1:13' */
   /* '<S30>:1:14' */
   /* '<S30>:1:17' */
-  my_pv_system_1_sm_master_B.Iph = (((my_pv_system_1_sm_master_B.SFunction_k[1]
+  my_pv_system_1_sm_master_B.Iph = (((my_pv_system_1_sm_master_B.SFunction_d[1]
     + 273.0) - 298.0) * (my_pv_system_1_sm_master_P.Constant3_Value / 100.0) +
-    1.0) * (my_pv_system_1_sm_master_B.SFunction_k[0] / 1000.0 *
+    1.0) * (my_pv_system_1_sm_master_B.SFunction_d[0] / 1000.0 *
             my_pv_system_1_sm_master_P.Constant1_Value);
 
   /* '<S30>:1:18' */
@@ -781,11 +814,11 @@ static void my_pv_system_1_sm_master_output(void)
     (exp(my_pv_system_1_sm_master_P.Constant2_Value /
          (my_pv_system_1_sm_master_P.Constant4_Value * 1.381E-23 * 1.3 * 298.0 /
           1.6E-19)) - 1.0) * rt_powd_snf
-    ((my_pv_system_1_sm_master_B.SFunction_k[1] + 273.0) / 298.0, 3.0) * exp
-    ((0.0033557046979865771 - 1.0 / (my_pv_system_1_sm_master_B.SFunction_k[1] +
+    ((my_pv_system_1_sm_master_B.SFunction_d[1] + 273.0) / 298.0, 3.0) * exp
+    ((0.0033557046979865771 - 1.0 / (my_pv_system_1_sm_master_B.SFunction_d[1] +
        273.0)) * 9981.61867097421) * (exp(my_pv_system_1_sm_master_B.Delay /
     (my_pv_system_1_sm_master_P.Constant4_Value * 1.381E-23 * 1.3 *
-     (my_pv_system_1_sm_master_B.SFunction_k[1] + 273.0) / 1.6E-19)) - 1.0);
+     (my_pv_system_1_sm_master_B.SFunction_d[1] + 273.0) / 1.6E-19)) - 1.0);
 
   /* Gain: '<S31>/do not delete this gain' */
   my_pv_system_1_sm_master_B.donotdeletethisgain_d =
@@ -809,13 +842,13 @@ static void my_pv_system_1_sm_master_output(void)
 
   /* DataTypeConversion: '<S21>/Data Type Conversion' */
   my_pv_system_1_sm_master_B.DataTypeConversion[0] =
-    my_pv_system_1_sm_master_B.SFunction_a[0];
+    my_pv_system_1_sm_master_B.SFunction_p[0];
   my_pv_system_1_sm_master_B.DataTypeConversion[1] =
-    my_pv_system_1_sm_master_B.SFunction_a[1];
+    my_pv_system_1_sm_master_B.SFunction_p[1];
   my_pv_system_1_sm_master_B.DataTypeConversion[2] =
-    my_pv_system_1_sm_master_B.SFunction_a[2];
+    my_pv_system_1_sm_master_B.SFunction_p[2];
   my_pv_system_1_sm_master_B.DataTypeConversion[3] =
-    my_pv_system_1_sm_master_B.SFunction_a[3];
+    my_pv_system_1_sm_master_B.SFunction_p[3];
 
   /* Switch: '<S21>/Switch' incorporates:
    *  Constant: '<S21>/0 4'
@@ -940,16 +973,6 @@ static void my_pv_system_1_sm_master_output(void)
 
   /* End of Switch: '<S23>/Switch' */
 
-  /* Gain: '<S10>/do not delete this gain' */
-  my_pv_system_1_sm_master_B.donotdeletethisgain_e =
-    my_pv_system_1_sm_master_P.donotdeletethisgain_Gain_g *
-    my_pv_system_1_sm_master_B.StateSpace_o1[7];
-
-  /* Gain: '<S11>/do not delete this gain' */
-  my_pv_system_1_sm_master_B.donotdeletethisgain_g =
-    my_pv_system_1_sm_master_P.donotdeletethisgain_Gain_h *
-    my_pv_system_1_sm_master_B.StateSpace_o1[8];
-
   /* Gain: '<S17>/do not delete this gain' */
   my_pv_system_1_sm_master_B.donotdeletethisgain_i =
     my_pv_system_1_sm_master_P.donotdeletethisgain_Gain_c *
@@ -971,22 +994,40 @@ static void my_pv_system_1_sm_master_update(void)
     my_pv_system_1_sm_master_B.Sum;
 
   /* Update for Memory: '<S2>/Memory' */
-  my_pv_system_1_sm_master_DW.Memory_PreviousInput[0] =
-    my_pv_system_1_sm_master_B.SFunction_k[0];
-  my_pv_system_1_sm_master_DW.Memory_PreviousInput[1] =
+  my_pv_system_1_sm_master_DW.Memory_1_PreviousInput =
+    my_pv_system_1_sm_master_B.SFunction_d[0];
+
+  /* Update for Memory: '<S2>/Memory' */
+  my_pv_system_1_sm_master_DW.Memory_2_PreviousInput =
     my_pv_system_1_sm_master_B.donotdeletethisgain_a;
-  my_pv_system_1_sm_master_DW.Memory_PreviousInput[2] =
+
+  /* Update for Memory: '<S2>/Memory' */
+  my_pv_system_1_sm_master_DW.Memory_3_PreviousInput =
     my_pv_system_1_sm_master_B.donotdeletethisgain_d;
-  my_pv_system_1_sm_master_DW.Memory_PreviousInput[3] =
-    my_pv_system_1_sm_master_B.I_Diode;
+
+  /* Update for Memory: '<S2>/Memory' */
+  my_pv_system_1_sm_master_DW.Memory_4_PreviousInput =
+    my_pv_system_1_sm_master_B.I_Diode_k;
 
   /* Update for Memory: '<S2>/Memory1' */
-  my_pv_system_1_sm_master_DW.Memory1_PreviousInput[0] =
+  my_pv_system_1_sm_master_DW.Memory1_1_PreviousInput =
+    my_pv_system_1_sm_master_B.donotdeletethisgain_g;
+
+  /* Update for Memory: '<S2>/Memory1' */
+  my_pv_system_1_sm_master_DW.Memory1_2_PreviousInput =
     my_pv_system_1_sm_master_B.donotdeletethisgain_e;
-  my_pv_system_1_sm_master_DW.Memory1_PreviousInput[1] =
+
+  /* Update for Memory: '<S2>/Memory1' */
+  my_pv_system_1_sm_master_DW.Memory1_3_PreviousInput =
     my_pv_system_1_sm_master_B.donotdeletethisgain_i;
-  my_pv_system_1_sm_master_DW.Memory1_PreviousInput[2] =
+
+  /* Update for Memory: '<S2>/Memory1' */
+  my_pv_system_1_sm_master_DW.Memory1_4_PreviousInput =
     my_pv_system_1_sm_master_B.donotdeletethisgain_de;
+
+  /* Update for Memory: '<S2>/Memory1' */
+  my_pv_system_1_sm_master_DW.Memory1_5_PreviousInput =
+    my_pv_system_1_sm_master_B.donotdeletethisgain;
 
   /* Update for UnitDelay: '<S21>/Unit Delay' */
   my_pv_system_1_sm_master_DW.UnitDelay_DSTATE[0] =
@@ -1011,41 +1052,41 @@ static void my_pv_system_1_sm_master_update(void)
     my_pv_system_1_sm_master_DW.DiscreteTimeIntegrator_DSTATE[1] += tmp;
     my_pv_system_1_sm_master_DW.DiscreteTimeIntegrator_DSTATE[2] += tmp;
     my_pv_system_1_sm_master_DW.DiscreteTimeIntegrator_DSTATE[3] += tmp;
-    if (my_pv_system_1_sm_master_B.SFunction_a[0] > 0.0) {
+    if (my_pv_system_1_sm_master_B.SFunction_p[0] > 0.0) {
       my_pv_system_1_sm_master_DW.DiscreteTimeIntegrator_PrevRese[0] = 1;
-    } else if (my_pv_system_1_sm_master_B.SFunction_a[0] < 0.0) {
+    } else if (my_pv_system_1_sm_master_B.SFunction_p[0] < 0.0) {
       my_pv_system_1_sm_master_DW.DiscreteTimeIntegrator_PrevRese[0] = -1;
-    } else if (my_pv_system_1_sm_master_B.SFunction_a[0] == 0.0) {
+    } else if (my_pv_system_1_sm_master_B.SFunction_p[0] == 0.0) {
       my_pv_system_1_sm_master_DW.DiscreteTimeIntegrator_PrevRese[0] = 0;
     } else {
       my_pv_system_1_sm_master_DW.DiscreteTimeIntegrator_PrevRese[0] = 2;
     }
 
-    if (my_pv_system_1_sm_master_B.SFunction_a[1] > 0.0) {
+    if (my_pv_system_1_sm_master_B.SFunction_p[1] > 0.0) {
       my_pv_system_1_sm_master_DW.DiscreteTimeIntegrator_PrevRese[1] = 1;
-    } else if (my_pv_system_1_sm_master_B.SFunction_a[1] < 0.0) {
+    } else if (my_pv_system_1_sm_master_B.SFunction_p[1] < 0.0) {
       my_pv_system_1_sm_master_DW.DiscreteTimeIntegrator_PrevRese[1] = -1;
-    } else if (my_pv_system_1_sm_master_B.SFunction_a[1] == 0.0) {
+    } else if (my_pv_system_1_sm_master_B.SFunction_p[1] == 0.0) {
       my_pv_system_1_sm_master_DW.DiscreteTimeIntegrator_PrevRese[1] = 0;
     } else {
       my_pv_system_1_sm_master_DW.DiscreteTimeIntegrator_PrevRese[1] = 2;
     }
 
-    if (my_pv_system_1_sm_master_B.SFunction_a[2] > 0.0) {
+    if (my_pv_system_1_sm_master_B.SFunction_p[2] > 0.0) {
       my_pv_system_1_sm_master_DW.DiscreteTimeIntegrator_PrevRese[2] = 1;
-    } else if (my_pv_system_1_sm_master_B.SFunction_a[2] < 0.0) {
+    } else if (my_pv_system_1_sm_master_B.SFunction_p[2] < 0.0) {
       my_pv_system_1_sm_master_DW.DiscreteTimeIntegrator_PrevRese[2] = -1;
-    } else if (my_pv_system_1_sm_master_B.SFunction_a[2] == 0.0) {
+    } else if (my_pv_system_1_sm_master_B.SFunction_p[2] == 0.0) {
       my_pv_system_1_sm_master_DW.DiscreteTimeIntegrator_PrevRese[2] = 0;
     } else {
       my_pv_system_1_sm_master_DW.DiscreteTimeIntegrator_PrevRese[2] = 2;
     }
 
-    if (my_pv_system_1_sm_master_B.SFunction_a[3] > 0.0) {
+    if (my_pv_system_1_sm_master_B.SFunction_p[3] > 0.0) {
       my_pv_system_1_sm_master_DW.DiscreteTimeIntegrator_PrevRese[3] = 1;
-    } else if (my_pv_system_1_sm_master_B.SFunction_a[3] < 0.0) {
+    } else if (my_pv_system_1_sm_master_B.SFunction_p[3] < 0.0) {
       my_pv_system_1_sm_master_DW.DiscreteTimeIntegrator_PrevRese[3] = -1;
-    } else if (my_pv_system_1_sm_master_B.SFunction_a[3] == 0.0) {
+    } else if (my_pv_system_1_sm_master_B.SFunction_p[3] == 0.0) {
       my_pv_system_1_sm_master_DW.DiscreteTimeIntegrator_PrevRese[3] = 0;
     } else {
       my_pv_system_1_sm_master_DW.DiscreteTimeIntegrator_PrevRese[3] = 2;
@@ -1099,7 +1140,7 @@ static void my_pv_system_1_sm_master_update(void)
         accum += *(Bs++) * my_pv_system_1_sm_master_B.Product[2];
         accum += *(Bs++) * my_pv_system_1_sm_master_B.Product[3];
         accum += *(Bs++) * my_pv_system_1_sm_master_B.AC;
-        accum += *(Bs++) * my_pv_system_1_sm_master_B.I_Diode;
+        accum += *(Bs++) * my_pv_system_1_sm_master_B.I_Diode_k;
         accum += *(Bs++) * my_pv_system_1_sm_master_B.Delay1;
         xtmp[i1] = accum;
       }
@@ -1283,40 +1324,46 @@ static void my_pv_system_1_sm_master_initialize(void)
     my_pv_system_1_sm_master_P.SFunction_X0;
 
   /* InitializeConditions for Memory: '<S2>/Memory' */
-  my_pv_system_1_sm_master_DW.Memory_PreviousInput[0] =
-    my_pv_system_1_sm_master_P.Memory_X0;
-  my_pv_system_1_sm_master_DW.Memory_PreviousInput[1] =
-    my_pv_system_1_sm_master_P.Memory_X0;
-  my_pv_system_1_sm_master_DW.Memory_PreviousInput[2] =
-    my_pv_system_1_sm_master_P.Memory_X0;
-  my_pv_system_1_sm_master_DW.Memory_PreviousInput[3] =
-    my_pv_system_1_sm_master_P.Memory_X0;
+  my_pv_system_1_sm_master_DW.Memory_1_PreviousInput =
+    my_pv_system_1_sm_master_P.Memory_1_X0;
 
-  /* InitializeConditions for Atomic SubSystem: '<S13>/Subsystem4' */
+  /* InitializeConditions for Memory: '<S2>/Memory' */
+  my_pv_system_1_sm_master_DW.Memory_2_PreviousInput =
+    my_pv_system_1_sm_master_P.Memory_2_X0;
 
-  /* Level2 S-Function Block: '<S45>/S-Function' (send_rt) */
-  {
-    SimStruct *rts = my_pv_system_1_sm_master_M->childSfunctions[0];
-    sfcnInitializeConditions(rts);
-    if (ssGetErrorStatus(rts) != (NULL))
-      return;
-  }
+  /* InitializeConditions for Memory: '<S2>/Memory' */
+  my_pv_system_1_sm_master_DW.Memory_3_PreviousInput =
+    my_pv_system_1_sm_master_P.Memory_3_X0;
 
-  /* End of InitializeConditions for SubSystem: '<S13>/Subsystem4' */
+  /* InitializeConditions for Memory: '<S2>/Memory' */
+  my_pv_system_1_sm_master_DW.Memory_4_PreviousInput =
+    my_pv_system_1_sm_master_P.Memory_4_X0;
 
   /* InitializeConditions for Memory: '<S2>/Memory1' */
-  my_pv_system_1_sm_master_DW.Memory1_PreviousInput[0] =
-    my_pv_system_1_sm_master_P.Memory1_X0;
-  my_pv_system_1_sm_master_DW.Memory1_PreviousInput[1] =
-    my_pv_system_1_sm_master_P.Memory1_X0;
-  my_pv_system_1_sm_master_DW.Memory1_PreviousInput[2] =
-    my_pv_system_1_sm_master_P.Memory1_X0;
+  my_pv_system_1_sm_master_DW.Memory1_1_PreviousInput =
+    my_pv_system_1_sm_master_P.Memory1_1_X0;
+
+  /* InitializeConditions for Memory: '<S2>/Memory1' */
+  my_pv_system_1_sm_master_DW.Memory1_2_PreviousInput =
+    my_pv_system_1_sm_master_P.Memory1_2_X0;
+
+  /* InitializeConditions for Memory: '<S2>/Memory1' */
+  my_pv_system_1_sm_master_DW.Memory1_3_PreviousInput =
+    my_pv_system_1_sm_master_P.Memory1_3_X0;
+
+  /* InitializeConditions for Memory: '<S2>/Memory1' */
+  my_pv_system_1_sm_master_DW.Memory1_4_PreviousInput =
+    my_pv_system_1_sm_master_P.Memory1_4_X0;
+
+  /* InitializeConditions for Memory: '<S2>/Memory1' */
+  my_pv_system_1_sm_master_DW.Memory1_5_PreviousInput =
+    my_pv_system_1_sm_master_P.Memory1_5_X0;
 
   /* InitializeConditions for Atomic SubSystem: '<S13>/Subsystem5' */
 
   /* Level2 S-Function Block: '<S46>/S-Function' (send_rt) */
   {
-    SimStruct *rts = my_pv_system_1_sm_master_M->childSfunctions[1];
+    SimStruct *rts = my_pv_system_1_sm_master_M->childSfunctions[0];
     sfcnInitializeConditions(rts);
     if (ssGetErrorStatus(rts) != (NULL))
       return;
@@ -1326,7 +1373,23 @@ static void my_pv_system_1_sm_master_initialize(void)
 
   /* Level2 S-Function Block: '<S44>/S-Function' (OP_SEND) */
   {
+    SimStruct *rts = my_pv_system_1_sm_master_M->childSfunctions[1];
+    sfcnInitializeConditions(rts);
+    if (ssGetErrorStatus(rts) != (NULL))
+      return;
+  }
+
+  /* Level2 S-Function Block: '<S2>/OpMonitor' (opmonitor) */
+  {
     SimStruct *rts = my_pv_system_1_sm_master_M->childSfunctions[2];
+    sfcnInitializeConditions(rts);
+    if (ssGetErrorStatus(rts) != (NULL))
+      return;
+  }
+
+  /* Level2 S-Function Block: '<S45>/S-Function' (OP_SEND) */
+  {
+    SimStruct *rts = my_pv_system_1_sm_master_M->childSfunctions[3];
     sfcnInitializeConditions(rts);
     if (ssGetErrorStatus(rts) != (NULL))
       return;
@@ -1344,7 +1407,7 @@ static void my_pv_system_1_sm_master_initialize(void)
 
   /* Level2 S-Function Block: '<S47>/S-Function' (recv_rt) */
   {
-    SimStruct *rts = my_pv_system_1_sm_master_M->childSfunctions[3];
+    SimStruct *rts = my_pv_system_1_sm_master_M->childSfunctions[4];
     sfcnInitializeConditions(rts);
     if (ssGetErrorStatus(rts) != (NULL))
       return;
@@ -1806,7 +1869,7 @@ static void my_pv_system_1_sm_master_initialize(void)
 
   /* Level2 S-Function Block: '<S25>/S-Function' (RECV_Param) */
   {
-    SimStruct *rts = my_pv_system_1_sm_master_M->childSfunctions[4];
+    SimStruct *rts = my_pv_system_1_sm_master_M->childSfunctions[5];
     sfcnInitializeConditions(rts);
     if (ssGetErrorStatus(rts) != (NULL))
       return;
@@ -1820,21 +1883,11 @@ static void my_pv_system_1_sm_master_initialize(void)
 /* Model terminate function */
 static void my_pv_system_1_sm_master_terminate(void)
 {
-  /* Terminate for Atomic SubSystem: '<S13>/Subsystem4' */
-
-  /* Level2 S-Function Block: '<S45>/S-Function' (send_rt) */
-  {
-    SimStruct *rts = my_pv_system_1_sm_master_M->childSfunctions[0];
-    sfcnTerminate(rts);
-  }
-
-  /* End of Terminate for SubSystem: '<S13>/Subsystem4' */
-
   /* Terminate for Atomic SubSystem: '<S13>/Subsystem5' */
 
   /* Level2 S-Function Block: '<S46>/S-Function' (send_rt) */
   {
-    SimStruct *rts = my_pv_system_1_sm_master_M->childSfunctions[1];
+    SimStruct *rts = my_pv_system_1_sm_master_M->childSfunctions[0];
     sfcnTerminate(rts);
   }
 
@@ -1842,13 +1895,25 @@ static void my_pv_system_1_sm_master_terminate(void)
 
   /* Level2 S-Function Block: '<S44>/S-Function' (OP_SEND) */
   {
+    SimStruct *rts = my_pv_system_1_sm_master_M->childSfunctions[1];
+    sfcnTerminate(rts);
+  }
+
+  /* Level2 S-Function Block: '<S2>/OpMonitor' (opmonitor) */
+  {
     SimStruct *rts = my_pv_system_1_sm_master_M->childSfunctions[2];
+    sfcnTerminate(rts);
+  }
+
+  /* Level2 S-Function Block: '<S45>/S-Function' (OP_SEND) */
+  {
+    SimStruct *rts = my_pv_system_1_sm_master_M->childSfunctions[3];
     sfcnTerminate(rts);
   }
 
   /* Level2 S-Function Block: '<S47>/S-Function' (recv_rt) */
   {
-    SimStruct *rts = my_pv_system_1_sm_master_M->childSfunctions[3];
+    SimStruct *rts = my_pv_system_1_sm_master_M->childSfunctions[4];
     sfcnTerminate(rts);
   }
 
@@ -1876,7 +1941,7 @@ static void my_pv_system_1_sm_master_terminate(void)
 
   /* Level2 S-Function Block: '<S25>/S-Function' (RECV_Param) */
   {
-    SimStruct *rts = my_pv_system_1_sm_master_M->childSfunctions[4];
+    SimStruct *rts = my_pv_system_1_sm_master_M->childSfunctions[5];
     sfcnTerminate(rts);
   }
 }
@@ -2027,31 +2092,39 @@ RT_MODEL_my_pv_system_1_sm_master_T *my_pv_system_1_sm_master(void)
 
     my_pv_system_1_sm_master_B.SFunction = 0.0;
     my_pv_system_1_sm_master_B.Sum = 0.0;
-    my_pv_system_1_sm_master_B.Memory[0] = 0.0;
-    my_pv_system_1_sm_master_B.Memory[1] = 0.0;
-    my_pv_system_1_sm_master_B.Memory[2] = 0.0;
-    my_pv_system_1_sm_master_B.Memory[3] = 0.0;
-    my_pv_system_1_sm_master_B.Memory1[0] = 0.0;
-    my_pv_system_1_sm_master_B.Memory1[1] = 0.0;
-    my_pv_system_1_sm_master_B.Memory1[2] = 0.0;
+    my_pv_system_1_sm_master_B.IrradianceWm2 = 0.0;
+    my_pv_system_1_sm_master_B.I_PV = 0.0;
+    my_pv_system_1_sm_master_B.V_PV = 0.0;
+    my_pv_system_1_sm_master_B.I_Diode = 0.0;
+    my_pv_system_1_sm_master_B.Vinv = 0.0;
+    my_pv_system_1_sm_master_B.Vdc = 0.0;
+    my_pv_system_1_sm_master_B.Igrid = 0.0;
+    my_pv_system_1_sm_master_B.Vgrid = 0.0;
+    my_pv_system_1_sm_master_B.Ig = 0.0;
+    my_pv_system_1_sm_master_B.OpMonitor_o1 = 0.0;
+    my_pv_system_1_sm_master_B.OpMonitor_o2 = 0.0;
+    my_pv_system_1_sm_master_B.OpMonitor_o3 = 0.0;
+    my_pv_system_1_sm_master_B.OpMonitor_o4 = 0.0;
     my_pv_system_1_sm_master_B.UnitDelay[0] = 0.0;
     my_pv_system_1_sm_master_B.UnitDelay[1] = 0.0;
     my_pv_system_1_sm_master_B.UnitDelay[2] = 0.0;
     my_pv_system_1_sm_master_B.UnitDelay[3] = 0.0;
-    my_pv_system_1_sm_master_B.SFunction_a[0] = 0.0;
-    my_pv_system_1_sm_master_B.SFunction_a[1] = 0.0;
-    my_pv_system_1_sm_master_B.SFunction_a[2] = 0.0;
-    my_pv_system_1_sm_master_B.SFunction_a[3] = 0.0;
+    my_pv_system_1_sm_master_B.SFunction_p[0] = 0.0;
+    my_pv_system_1_sm_master_B.SFunction_p[1] = 0.0;
+    my_pv_system_1_sm_master_B.SFunction_p[2] = 0.0;
+    my_pv_system_1_sm_master_B.SFunction_p[3] = 0.0;
     my_pv_system_1_sm_master_B.AC = 0.0;
-    my_pv_system_1_sm_master_B.I_Diode = 0.0;
+    my_pv_system_1_sm_master_B.I_Diode_k = 0.0;
     my_pv_system_1_sm_master_B.Delay1 = 0.0;
     my_pv_system_1_sm_master_B.StateSpace_o2[0] = 0.0;
     my_pv_system_1_sm_master_B.StateSpace_o2[1] = 0.0;
     my_pv_system_1_sm_master_B.StateSpace_o2[2] = 0.0;
     my_pv_system_1_sm_master_B.StateSpace_o2[3] = 0.0;
     my_pv_system_1_sm_master_B.donotdeletethisgain = 0.0;
-    my_pv_system_1_sm_master_B.SFunction_k[0] = 0.0;
-    my_pv_system_1_sm_master_B.SFunction_k[1] = 0.0;
+    my_pv_system_1_sm_master_B.donotdeletethisgain_e = 0.0;
+    my_pv_system_1_sm_master_B.donotdeletethisgain_g = 0.0;
+    my_pv_system_1_sm_master_B.SFunction_d[0] = 0.0;
+    my_pv_system_1_sm_master_B.SFunction_d[1] = 0.0;
     my_pv_system_1_sm_master_B.donotdeletethisgain_a = 0.0;
     my_pv_system_1_sm_master_B.Delay = 0.0;
     my_pv_system_1_sm_master_B.donotdeletethisgain_d = 0.0;
@@ -2076,8 +2149,6 @@ RT_MODEL_my_pv_system_1_sm_master_T *my_pv_system_1_sm_master(void)
     my_pv_system_1_sm_master_B.Switch_e[1] = 0.0;
     my_pv_system_1_sm_master_B.Switch_e[2] = 0.0;
     my_pv_system_1_sm_master_B.Switch_e[3] = 0.0;
-    my_pv_system_1_sm_master_B.donotdeletethisgain_e = 0.0;
-    my_pv_system_1_sm_master_B.donotdeletethisgain_g = 0.0;
     my_pv_system_1_sm_master_B.donotdeletethisgain_i = 0.0;
     my_pv_system_1_sm_master_B.donotdeletethisgain_de = 0.0;
     my_pv_system_1_sm_master_B.Iph = 0.0;
@@ -2162,13 +2233,15 @@ RT_MODEL_my_pv_system_1_sm_master_T *my_pv_system_1_sm_master(void)
   my_pv_system_1_sm_master_DW.UnitDelay_DSTATE_e[2] = 0.0;
   my_pv_system_1_sm_master_DW.UnitDelay_DSTATE_e[3] = 0.0;
   my_pv_system_1_sm_master_DW.SFunction_PreviousInput = 0.0;
-  my_pv_system_1_sm_master_DW.Memory_PreviousInput[0] = 0.0;
-  my_pv_system_1_sm_master_DW.Memory_PreviousInput[1] = 0.0;
-  my_pv_system_1_sm_master_DW.Memory_PreviousInput[2] = 0.0;
-  my_pv_system_1_sm_master_DW.Memory_PreviousInput[3] = 0.0;
-  my_pv_system_1_sm_master_DW.Memory1_PreviousInput[0] = 0.0;
-  my_pv_system_1_sm_master_DW.Memory1_PreviousInput[1] = 0.0;
-  my_pv_system_1_sm_master_DW.Memory1_PreviousInput[2] = 0.0;
+  my_pv_system_1_sm_master_DW.Memory_1_PreviousInput = 0.0;
+  my_pv_system_1_sm_master_DW.Memory_2_PreviousInput = 0.0;
+  my_pv_system_1_sm_master_DW.Memory_3_PreviousInput = 0.0;
+  my_pv_system_1_sm_master_DW.Memory_4_PreviousInput = 0.0;
+  my_pv_system_1_sm_master_DW.Memory1_1_PreviousInput = 0.0;
+  my_pv_system_1_sm_master_DW.Memory1_2_PreviousInput = 0.0;
+  my_pv_system_1_sm_master_DW.Memory1_3_PreviousInput = 0.0;
+  my_pv_system_1_sm_master_DW.Memory1_4_PreviousInput = 0.0;
+  my_pv_system_1_sm_master_DW.Memory1_5_PreviousInput = 0.0;
 
   /* child S-Function registration */
   {
@@ -2206,26 +2279,26 @@ RT_MODEL_my_pv_system_1_sm_master_T *my_pv_system_1_sm_master(void)
     rtssSetSolverInfoPtr(sfcnInfo, &my_pv_system_1_sm_master_M->solverInfoPtr);
   }
 
-  my_pv_system_1_sm_master_M->Sizes.numSFcns = (5);
+  my_pv_system_1_sm_master_M->Sizes.numSFcns = (6);
 
   /* register each child */
   {
     (void) memset((void *)
                   &my_pv_system_1_sm_master_M->NonInlinedSFcns.childSFunctions[0],
                   0,
-                  5*sizeof(SimStruct));
+                  6*sizeof(SimStruct));
     my_pv_system_1_sm_master_M->childSfunctions =
       (&my_pv_system_1_sm_master_M->NonInlinedSFcns.childSFunctionPtrs[0]);
 
     {
       int_T i;
-      for (i = 0; i < 5; i++) {
+      for (i = 0; i < 6; i++) {
         my_pv_system_1_sm_master_M->childSfunctions[i] =
           (&my_pv_system_1_sm_master_M->NonInlinedSFcns.childSFunctions[i]);
       }
     }
 
-    /* Level2 S-Function Block: my_pv_system_1_sm_master/<S45>/S-Function (send_rt) */
+    /* Level2 S-Function Block: my_pv_system_1_sm_master/<S46>/S-Function (send_rt) */
     {
       SimStruct *rts = my_pv_system_1_sm_master_M->childSfunctions[0];
 
@@ -2283,20 +2356,25 @@ RT_MODEL_my_pv_system_1_sm_master_T *my_pv_system_1_sm_master(void)
         {
           real_T const **sfcnUPtrs = (real_T const **)
             &my_pv_system_1_sm_master_M->NonInlinedSFcns.Sfcn0.UPtrs0;
-          sfcnUPtrs[0] = my_pv_system_1_sm_master_B.Memory;
-          sfcnUPtrs[1] = &my_pv_system_1_sm_master_B.Memory[1];
-          sfcnUPtrs[2] = &my_pv_system_1_sm_master_B.Memory[2];
-          sfcnUPtrs[3] = &my_pv_system_1_sm_master_B.Memory[3];
+          sfcnUPtrs[0] = &my_pv_system_1_sm_master_B.IrradianceWm2;
+          sfcnUPtrs[1] = &my_pv_system_1_sm_master_B.I_PV;
+          sfcnUPtrs[2] = &my_pv_system_1_sm_master_B.V_PV;
+          sfcnUPtrs[3] = &my_pv_system_1_sm_master_B.I_Diode;
+          sfcnUPtrs[4] = &my_pv_system_1_sm_master_B.Vinv;
+          sfcnUPtrs[5] = &my_pv_system_1_sm_master_B.Vdc;
+          sfcnUPtrs[6] = &my_pv_system_1_sm_master_B.Igrid;
+          sfcnUPtrs[7] = &my_pv_system_1_sm_master_B.Vgrid;
+          sfcnUPtrs[8] = &my_pv_system_1_sm_master_B.Ig;
           ssSetInputPortSignalPtrs(rts, 0, (InputPtrsType)&sfcnUPtrs[0]);
           _ssSetInputPortNumDimensions(rts, 0, 1);
-          ssSetInputPortWidth(rts, 0, 4);
+          ssSetInputPortWidth(rts, 0, 9);
         }
       }
 
       /* path info */
       ssSetModelName(rts, "S-Function");
       ssSetPath(rts,
-                "my_pv_system_1_sm_master/SM_master/rtlab_send_subsystem/Subsystem4/Send4/S-Function");
+                "my_pv_system_1_sm_master/SM_master/rtlab_send_subsystem/Subsystem5/Send5/S-Function");
       ssSetRTModel(rts,my_pv_system_1_sm_master_M);
       ssSetParentSS(rts, (NULL));
       ssSetRootSS(rts, rts);
@@ -2317,7 +2395,7 @@ RT_MODEL_my_pv_system_1_sm_master_T *my_pv_system_1_sm_master(void)
       }
 
       /* work vectors */
-      ssSetIWork(rts, (int_T *) &my_pv_system_1_sm_master_DW.SFunction_IWORK_a[0]);
+      ssSetIWork(rts, (int_T *) &my_pv_system_1_sm_master_DW.SFunction_IWORK_g[0]);
 
       {
         struct _ssDWorkRecord *dWorkRecord = (struct _ssDWorkRecord *)
@@ -2332,7 +2410,7 @@ RT_MODEL_my_pv_system_1_sm_master_T *my_pv_system_1_sm_master(void)
         ssSetDWorkWidth(rts, 0, 5);
         ssSetDWorkDataType(rts, 0,SS_INTEGER);
         ssSetDWorkComplexSignal(rts, 0, 0);
-        ssSetDWork(rts, 0, &my_pv_system_1_sm_master_DW.SFunction_IWORK_a[0]);
+        ssSetDWork(rts, 0, &my_pv_system_1_sm_master_DW.SFunction_IWORK_g[0]);
       }
 
       /* registration */
@@ -2346,7 +2424,7 @@ RT_MODEL_my_pv_system_1_sm_master_T *my_pv_system_1_sm_master(void)
       sfcnTsMap[0] = 1;
 
       /* set compiled values of dynamic vector attributes */
-      ssSetInputPortWidth(rts, 0, 4);
+      ssSetInputPortWidth(rts, 0, 9);
       ssSetInputPortDataType(rts, 0, SS_DOUBLE);
       ssSetInputPortComplexSignal(rts, 0, 0);
       ssSetInputPortFrameData(rts, 0, 0);
@@ -2359,7 +2437,7 @@ RT_MODEL_my_pv_system_1_sm_master_T *my_pv_system_1_sm_master(void)
       ssSetInputPortBufferDstPort(rts, 0, -1);
     }
 
-    /* Level2 S-Function Block: my_pv_system_1_sm_master/<S46>/S-Function (send_rt) */
+    /* Level2 S-Function Block: my_pv_system_1_sm_master/<S44>/S-Function (OP_SEND) */
     {
       SimStruct *rts = my_pv_system_1_sm_master_M->childSfunctions[1];
 
@@ -2417,23 +2495,25 @@ RT_MODEL_my_pv_system_1_sm_master_T *my_pv_system_1_sm_master(void)
         {
           real_T const **sfcnUPtrs = (real_T const **)
             &my_pv_system_1_sm_master_M->NonInlinedSFcns.Sfcn1.UPtrs0;
-          sfcnUPtrs[0] = &my_pv_system_1_sm_master_B.Memory[0];
-          sfcnUPtrs[1] = &my_pv_system_1_sm_master_B.Memory[1];
-          sfcnUPtrs[2] = &my_pv_system_1_sm_master_B.Memory[2];
-          sfcnUPtrs[3] = &my_pv_system_1_sm_master_B.Memory[3];
-          sfcnUPtrs[4] = &my_pv_system_1_sm_master_B.Memory1[0];
-          sfcnUPtrs[5] = &my_pv_system_1_sm_master_B.Memory1[1];
-          sfcnUPtrs[6] = &my_pv_system_1_sm_master_B.Memory1[2];
+          sfcnUPtrs[0] = &my_pv_system_1_sm_master_B.IrradianceWm2;
+          sfcnUPtrs[1] = &my_pv_system_1_sm_master_B.I_PV;
+          sfcnUPtrs[2] = &my_pv_system_1_sm_master_B.V_PV;
+          sfcnUPtrs[3] = &my_pv_system_1_sm_master_B.I_Diode;
+          sfcnUPtrs[4] = &my_pv_system_1_sm_master_B.Vinv;
+          sfcnUPtrs[5] = &my_pv_system_1_sm_master_B.Vdc;
+          sfcnUPtrs[6] = &my_pv_system_1_sm_master_B.Igrid;
+          sfcnUPtrs[7] = &my_pv_system_1_sm_master_B.Vgrid;
+          sfcnUPtrs[8] = &my_pv_system_1_sm_master_B.Ig;
           ssSetInputPortSignalPtrs(rts, 0, (InputPtrsType)&sfcnUPtrs[0]);
           _ssSetInputPortNumDimensions(rts, 0, 1);
-          ssSetInputPortWidth(rts, 0, 7);
+          ssSetInputPortWidth(rts, 0, 9);
         }
       }
 
       /* path info */
       ssSetModelName(rts, "S-Function");
       ssSetPath(rts,
-                "my_pv_system_1_sm_master/SM_master/rtlab_send_subsystem/Subsystem5/Send5/S-Function");
+                "my_pv_system_1_sm_master/SM_master/rtlab_send_subsystem/Subsystem1/Send1/S-Function");
       ssSetRTModel(rts,my_pv_system_1_sm_master_M);
       ssSetParentSS(rts, (NULL));
       ssSetRootSS(rts, rts);
@@ -2443,18 +2523,14 @@ RT_MODEL_my_pv_system_1_sm_master_T *my_pv_system_1_sm_master(void)
       {
         mxArray **sfcnParams = (mxArray **)
           &my_pv_system_1_sm_master_M->NonInlinedSFcns.Sfcn1.params;
-        ssSetSFcnParamsCount(rts, 3);
+        ssSetSFcnParamsCount(rts, 1);
         ssSetSFcnParamsPtr(rts, &sfcnParams[0]);
         ssSetSFcnParam(rts, 0, (mxArray*)
-                       my_pv_system_1_sm_master_P.SFunction_P1_Size_k);
-        ssSetSFcnParam(rts, 1, (mxArray*)
-                       my_pv_system_1_sm_master_P.SFunction_P2_Size_c);
-        ssSetSFcnParam(rts, 2, (mxArray*)
-                       my_pv_system_1_sm_master_P.SFunction_P3_Size_i);
+                       my_pv_system_1_sm_master_P.SFunction_P1_Size_b);
       }
 
       /* work vectors */
-      ssSetIWork(rts, (int_T *) &my_pv_system_1_sm_master_DW.SFunction_IWORK_k[0]);
+      ssSetIWork(rts, (int_T *) &my_pv_system_1_sm_master_DW.SFunction_IWORK[0]);
 
       {
         struct _ssDWorkRecord *dWorkRecord = (struct _ssDWorkRecord *)
@@ -2469,11 +2545,11 @@ RT_MODEL_my_pv_system_1_sm_master_T *my_pv_system_1_sm_master(void)
         ssSetDWorkWidth(rts, 0, 5);
         ssSetDWorkDataType(rts, 0,SS_INTEGER);
         ssSetDWorkComplexSignal(rts, 0, 0);
-        ssSetDWork(rts, 0, &my_pv_system_1_sm_master_DW.SFunction_IWORK_k[0]);
+        ssSetDWork(rts, 0, &my_pv_system_1_sm_master_DW.SFunction_IWORK[0]);
       }
 
       /* registration */
-      send_rt(rts);
+      OP_SEND(rts);
       sfcnInitializeSizes(rts);
       sfcnInitializeSampleTimes(rts);
 
@@ -2483,7 +2559,7 @@ RT_MODEL_my_pv_system_1_sm_master_T *my_pv_system_1_sm_master(void)
       sfcnTsMap[0] = 1;
 
       /* set compiled values of dynamic vector attributes */
-      ssSetInputPortWidth(rts, 0, 7);
+      ssSetInputPortWidth(rts, 0, 9);
       ssSetInputPortDataType(rts, 0, SS_DOUBLE);
       ssSetInputPortComplexSignal(rts, 0, 0);
       ssSetInputPortFrameData(rts, 0, 0);
@@ -2496,7 +2572,7 @@ RT_MODEL_my_pv_system_1_sm_master_T *my_pv_system_1_sm_master(void)
       ssSetInputPortBufferDstPort(rts, 0, -1);
     }
 
-    /* Level2 S-Function Block: my_pv_system_1_sm_master/<S44>/S-Function (OP_SEND) */
+    /* Level2 S-Function Block: my_pv_system_1_sm_master/<S2>/OpMonitor (opmonitor) */
     {
       SimStruct *rts = my_pv_system_1_sm_master_M->childSfunctions[2];
 
@@ -2554,23 +2630,55 @@ RT_MODEL_my_pv_system_1_sm_master_T *my_pv_system_1_sm_master(void)
         {
           real_T const **sfcnUPtrs = (real_T const **)
             &my_pv_system_1_sm_master_M->NonInlinedSFcns.Sfcn2.UPtrs0;
-          sfcnUPtrs[0] = &my_pv_system_1_sm_master_B.Memory[0];
-          sfcnUPtrs[1] = &my_pv_system_1_sm_master_B.Memory[1];
-          sfcnUPtrs[2] = &my_pv_system_1_sm_master_B.Memory[2];
-          sfcnUPtrs[3] = &my_pv_system_1_sm_master_B.Memory[3];
-          sfcnUPtrs[4] = &my_pv_system_1_sm_master_B.Memory1[0];
-          sfcnUPtrs[5] = &my_pv_system_1_sm_master_B.Memory1[1];
-          sfcnUPtrs[6] = &my_pv_system_1_sm_master_B.Memory1[2];
+          sfcnUPtrs[0] = (real_T*)&my_pv_system_1_sm_master_RGND;
           ssSetInputPortSignalPtrs(rts, 0, (InputPtrsType)&sfcnUPtrs[0]);
           _ssSetInputPortNumDimensions(rts, 0, 1);
-          ssSetInputPortWidth(rts, 0, 7);
+          ssSetInputPortWidth(rts, 0, 1);
+        }
+      }
+
+      /* outputs */
+      {
+        ssSetPortInfoForOutputs(rts,
+          &my_pv_system_1_sm_master_M->NonInlinedSFcns.Sfcn2.outputPortInfo[0]);
+        _ssSetNumOutputPorts(rts, 4);
+
+        /* port 0 */
+        {
+          _ssSetOutputPortNumDimensions(rts, 0, 1);
+          ssSetOutputPortWidth(rts, 0, 1);
+          ssSetOutputPortSignal(rts, 0, ((real_T *)
+            &my_pv_system_1_sm_master_B.OpMonitor_o1));
+        }
+
+        /* port 1 */
+        {
+          _ssSetOutputPortNumDimensions(rts, 1, 1);
+          ssSetOutputPortWidth(rts, 1, 1);
+          ssSetOutputPortSignal(rts, 1, ((real_T *)
+            &my_pv_system_1_sm_master_B.OpMonitor_o2));
+        }
+
+        /* port 2 */
+        {
+          _ssSetOutputPortNumDimensions(rts, 2, 1);
+          ssSetOutputPortWidth(rts, 2, 1);
+          ssSetOutputPortSignal(rts, 2, ((real_T *)
+            &my_pv_system_1_sm_master_B.OpMonitor_o3));
+        }
+
+        /* port 3 */
+        {
+          _ssSetOutputPortNumDimensions(rts, 3, 1);
+          ssSetOutputPortWidth(rts, 3, 1);
+          ssSetOutputPortSignal(rts, 3, ((real_T *)
+            &my_pv_system_1_sm_master_B.OpMonitor_o4));
         }
       }
 
       /* path info */
-      ssSetModelName(rts, "S-Function");
-      ssSetPath(rts,
-                "my_pv_system_1_sm_master/SM_master/rtlab_send_subsystem/Subsystem1/Send1/S-Function");
+      ssSetModelName(rts, "OpMonitor");
+      ssSetPath(rts, "my_pv_system_1_sm_master/SM_master/OpMonitor");
       ssSetRTModel(rts,my_pv_system_1_sm_master_M);
       ssSetParentSS(rts, (NULL));
       ssSetRootSS(rts, rts);
@@ -2580,14 +2688,24 @@ RT_MODEL_my_pv_system_1_sm_master_T *my_pv_system_1_sm_master(void)
       {
         mxArray **sfcnParams = (mxArray **)
           &my_pv_system_1_sm_master_M->NonInlinedSFcns.Sfcn2.params;
-        ssSetSFcnParamsCount(rts, 1);
+        ssSetSFcnParamsCount(rts, 6);
         ssSetSFcnParamsPtr(rts, &sfcnParams[0]);
         ssSetSFcnParam(rts, 0, (mxArray*)
-                       my_pv_system_1_sm_master_P.SFunction_P1_Size_c);
+                       my_pv_system_1_sm_master_P.OpMonitor_P1_Size);
+        ssSetSFcnParam(rts, 1, (mxArray*)
+                       my_pv_system_1_sm_master_P.OpMonitor_P2_Size);
+        ssSetSFcnParam(rts, 2, (mxArray*)
+                       my_pv_system_1_sm_master_P.OpMonitor_P3_Size);
+        ssSetSFcnParam(rts, 3, (mxArray*)
+                       my_pv_system_1_sm_master_P.OpMonitor_P4_Size);
+        ssSetSFcnParam(rts, 4, (mxArray*)
+                       my_pv_system_1_sm_master_P.OpMonitor_P5_Size);
+        ssSetSFcnParam(rts, 5, (mxArray*)
+                       my_pv_system_1_sm_master_P.OpMonitor_P6_Size);
       }
 
       /* work vectors */
-      ssSetIWork(rts, (int_T *) &my_pv_system_1_sm_master_DW.SFunction_IWORK[0]);
+      ssSetPWork(rts, (void **) &my_pv_system_1_sm_master_DW.OpMonitor_PWORK);
 
       {
         struct _ssDWorkRecord *dWorkRecord = (struct _ssDWorkRecord *)
@@ -2598,15 +2716,15 @@ RT_MODEL_my_pv_system_1_sm_master_T *my_pv_system_1_sm_master(void)
         ssSetSFcnDWorkAux(rts, dWorkAuxRecord);
         _ssSetNumDWork(rts, 1);
 
-        /* IWORK */
-        ssSetDWorkWidth(rts, 0, 5);
-        ssSetDWorkDataType(rts, 0,SS_INTEGER);
+        /* PWORK */
+        ssSetDWorkWidth(rts, 0, 1);
+        ssSetDWorkDataType(rts, 0,SS_POINTER);
         ssSetDWorkComplexSignal(rts, 0, 0);
-        ssSetDWork(rts, 0, &my_pv_system_1_sm_master_DW.SFunction_IWORK[0]);
+        ssSetDWork(rts, 0, &my_pv_system_1_sm_master_DW.OpMonitor_PWORK);
       }
 
       /* registration */
-      OP_SEND(rts);
+      opmonitor(rts);
       sfcnInitializeSizes(rts);
       sfcnInitializeSampleTimes(rts);
 
@@ -2616,20 +2734,24 @@ RT_MODEL_my_pv_system_1_sm_master_T *my_pv_system_1_sm_master(void)
       sfcnTsMap[0] = 1;
 
       /* set compiled values of dynamic vector attributes */
-      ssSetInputPortWidth(rts, 0, 7);
-      ssSetInputPortDataType(rts, 0, SS_DOUBLE);
-      ssSetInputPortComplexSignal(rts, 0, 0);
-      ssSetInputPortFrameData(rts, 0, 0);
       ssSetNumNonsampledZCs(rts, 0);
 
       /* Update connectivity flags for each port */
-      _ssSetInputPortConnected(rts, 0, 1);
+      _ssSetInputPortConnected(rts, 0, 0);
+      _ssSetOutputPortConnected(rts, 0, 1);
+      _ssSetOutputPortConnected(rts, 1, 1);
+      _ssSetOutputPortConnected(rts, 2, 1);
+      _ssSetOutputPortConnected(rts, 3, 1);
+      _ssSetOutputPortBeingMerged(rts, 0, 0);
+      _ssSetOutputPortBeingMerged(rts, 1, 0);
+      _ssSetOutputPortBeingMerged(rts, 2, 0);
+      _ssSetOutputPortBeingMerged(rts, 3, 0);
 
       /* Update the BufferDstPort flags for each input port */
       ssSetInputPortBufferDstPort(rts, 0, -1);
     }
 
-    /* Level2 S-Function Block: my_pv_system_1_sm_master/<S47>/S-Function (recv_rt) */
+    /* Level2 S-Function Block: my_pv_system_1_sm_master/<S45>/S-Function (OP_SEND) */
     {
       SimStruct *rts = my_pv_system_1_sm_master_M->childSfunctions[3];
 
@@ -2677,25 +2799,30 @@ RT_MODEL_my_pv_system_1_sm_master_T *my_pv_system_1_sm_master(void)
                          [3]);
       }
 
-      /* outputs */
+      /* inputs */
       {
-        ssSetPortInfoForOutputs(rts,
-          &my_pv_system_1_sm_master_M->NonInlinedSFcns.Sfcn3.outputPortInfo[0]);
-        _ssSetNumOutputPorts(rts, 1);
+        _ssSetNumInputPorts(rts, 1);
+        ssSetPortInfoForInputs(rts,
+          &my_pv_system_1_sm_master_M->NonInlinedSFcns.Sfcn3.inputPortInfo[0]);
 
         /* port 0 */
         {
-          _ssSetOutputPortNumDimensions(rts, 0, 1);
-          ssSetOutputPortWidth(rts, 0, 4);
-          ssSetOutputPortSignal(rts, 0, ((real_T *)
-            my_pv_system_1_sm_master_B.SFunction_a));
+          real_T const **sfcnUPtrs = (real_T const **)
+            &my_pv_system_1_sm_master_M->NonInlinedSFcns.Sfcn3.UPtrs0;
+          sfcnUPtrs[0] = &my_pv_system_1_sm_master_B.OpMonitor_o1;
+          sfcnUPtrs[1] = &my_pv_system_1_sm_master_B.OpMonitor_o2;
+          sfcnUPtrs[2] = &my_pv_system_1_sm_master_B.OpMonitor_o3;
+          sfcnUPtrs[3] = &my_pv_system_1_sm_master_B.OpMonitor_o4;
+          ssSetInputPortSignalPtrs(rts, 0, (InputPtrsType)&sfcnUPtrs[0]);
+          _ssSetInputPortNumDimensions(rts, 0, 1);
+          ssSetInputPortWidth(rts, 0, 4);
         }
       }
 
       /* path info */
       ssSetModelName(rts, "S-Function");
       ssSetPath(rts,
-                "my_pv_system_1_sm_master/SM_master/zzzOpComm1/Receive_1/S-Function");
+                "my_pv_system_1_sm_master/SM_master/rtlab_send_subsystem/Subsystem2/Send2/S-Function");
       ssSetRTModel(rts,my_pv_system_1_sm_master_M);
       ssSetParentSS(rts, (NULL));
       ssSetRootSS(rts, rts);
@@ -2705,18 +2832,14 @@ RT_MODEL_my_pv_system_1_sm_master_T *my_pv_system_1_sm_master(void)
       {
         mxArray **sfcnParams = (mxArray **)
           &my_pv_system_1_sm_master_M->NonInlinedSFcns.Sfcn3.params;
-        ssSetSFcnParamsCount(rts, 3);
+        ssSetSFcnParamsCount(rts, 1);
         ssSetSFcnParamsPtr(rts, &sfcnParams[0]);
         ssSetSFcnParam(rts, 0, (mxArray*)
-                       my_pv_system_1_sm_master_P.SFunction_P1_Size_cu);
-        ssSetSFcnParam(rts, 1, (mxArray*)
-                       my_pv_system_1_sm_master_P.SFunction_P2_Size_f);
-        ssSetSFcnParam(rts, 2, (mxArray*)
-                       my_pv_system_1_sm_master_P.SFunction_P3_Size_b);
+                       my_pv_system_1_sm_master_P.SFunction_P1_Size_l);
       }
 
       /* work vectors */
-      ssSetPWork(rts, (void **) &my_pv_system_1_sm_master_DW.SFunction_PWORK);
+      ssSetIWork(rts, (int_T *) &my_pv_system_1_sm_master_DW.SFunction_IWORK_j[0]);
 
       {
         struct _ssDWorkRecord *dWorkRecord = (struct _ssDWorkRecord *)
@@ -2727,15 +2850,15 @@ RT_MODEL_my_pv_system_1_sm_master_T *my_pv_system_1_sm_master(void)
         ssSetSFcnDWorkAux(rts, dWorkAuxRecord);
         _ssSetNumDWork(rts, 1);
 
-        /* PWORK */
-        ssSetDWorkWidth(rts, 0, 1);
-        ssSetDWorkDataType(rts, 0,SS_POINTER);
+        /* IWORK */
+        ssSetDWorkWidth(rts, 0, 5);
+        ssSetDWorkDataType(rts, 0,SS_INTEGER);
         ssSetDWorkComplexSignal(rts, 0, 0);
-        ssSetDWork(rts, 0, &my_pv_system_1_sm_master_DW.SFunction_PWORK);
+        ssSetDWork(rts, 0, &my_pv_system_1_sm_master_DW.SFunction_IWORK_j[0]);
       }
 
       /* registration */
-      recv_rt(rts);
+      OP_SEND(rts);
       sfcnInitializeSizes(rts);
       sfcnInitializeSampleTimes(rts);
 
@@ -2745,16 +2868,20 @@ RT_MODEL_my_pv_system_1_sm_master_T *my_pv_system_1_sm_master(void)
       sfcnTsMap[0] = 1;
 
       /* set compiled values of dynamic vector attributes */
+      ssSetInputPortWidth(rts, 0, 4);
+      ssSetInputPortDataType(rts, 0, SS_DOUBLE);
+      ssSetInputPortComplexSignal(rts, 0, 0);
+      ssSetInputPortFrameData(rts, 0, 0);
       ssSetNumNonsampledZCs(rts, 0);
 
       /* Update connectivity flags for each port */
-      _ssSetOutputPortConnected(rts, 0, 1);
-      _ssSetOutputPortBeingMerged(rts, 0, 0);
+      _ssSetInputPortConnected(rts, 0, 1);
 
       /* Update the BufferDstPort flags for each input port */
+      ssSetInputPortBufferDstPort(rts, 0, -1);
     }
 
-    /* Level2 S-Function Block: my_pv_system_1_sm_master/<S25>/S-Function (RECV_Param) */
+    /* Level2 S-Function Block: my_pv_system_1_sm_master/<S47>/S-Function (recv_rt) */
     {
       SimStruct *rts = my_pv_system_1_sm_master_M->childSfunctions[4];
 
@@ -2811,9 +2938,134 @@ RT_MODEL_my_pv_system_1_sm_master_T *my_pv_system_1_sm_master(void)
         /* port 0 */
         {
           _ssSetOutputPortNumDimensions(rts, 0, 1);
+          ssSetOutputPortWidth(rts, 0, 4);
+          ssSetOutputPortSignal(rts, 0, ((real_T *)
+            my_pv_system_1_sm_master_B.SFunction_p));
+        }
+      }
+
+      /* path info */
+      ssSetModelName(rts, "S-Function");
+      ssSetPath(rts,
+                "my_pv_system_1_sm_master/SM_master/zzzOpComm1/Receive_1/S-Function");
+      ssSetRTModel(rts,my_pv_system_1_sm_master_M);
+      ssSetParentSS(rts, (NULL));
+      ssSetRootSS(rts, rts);
+      ssSetVersion(rts, SIMSTRUCT_VERSION_LEVEL2);
+
+      /* parameters */
+      {
+        mxArray **sfcnParams = (mxArray **)
+          &my_pv_system_1_sm_master_M->NonInlinedSFcns.Sfcn4.params;
+        ssSetSFcnParamsCount(rts, 3);
+        ssSetSFcnParamsPtr(rts, &sfcnParams[0]);
+        ssSetSFcnParam(rts, 0, (mxArray*)
+                       my_pv_system_1_sm_master_P.SFunction_P1_Size_o);
+        ssSetSFcnParam(rts, 1, (mxArray*)
+                       my_pv_system_1_sm_master_P.SFunction_P2_Size_h);
+        ssSetSFcnParam(rts, 2, (mxArray*)
+                       my_pv_system_1_sm_master_P.SFunction_P3_Size_j);
+      }
+
+      /* work vectors */
+      ssSetPWork(rts, (void **) &my_pv_system_1_sm_master_DW.SFunction_PWORK);
+
+      {
+        struct _ssDWorkRecord *dWorkRecord = (struct _ssDWorkRecord *)
+          &my_pv_system_1_sm_master_M->NonInlinedSFcns.Sfcn4.dWork;
+        struct _ssDWorkAuxRecord *dWorkAuxRecord = (struct _ssDWorkAuxRecord *)
+          &my_pv_system_1_sm_master_M->NonInlinedSFcns.Sfcn4.dWorkAux;
+        ssSetSFcnDWork(rts, dWorkRecord);
+        ssSetSFcnDWorkAux(rts, dWorkAuxRecord);
+        _ssSetNumDWork(rts, 1);
+
+        /* PWORK */
+        ssSetDWorkWidth(rts, 0, 1);
+        ssSetDWorkDataType(rts, 0,SS_POINTER);
+        ssSetDWorkComplexSignal(rts, 0, 0);
+        ssSetDWork(rts, 0, &my_pv_system_1_sm_master_DW.SFunction_PWORK);
+      }
+
+      /* registration */
+      recv_rt(rts);
+      sfcnInitializeSizes(rts);
+      sfcnInitializeSampleTimes(rts);
+
+      /* adjust sample time */
+      ssSetSampleTime(rts, 0, 5.0E-5);
+      ssSetOffsetTime(rts, 0, 0.0);
+      sfcnTsMap[0] = 1;
+
+      /* set compiled values of dynamic vector attributes */
+      ssSetNumNonsampledZCs(rts, 0);
+
+      /* Update connectivity flags for each port */
+      _ssSetOutputPortConnected(rts, 0, 1);
+      _ssSetOutputPortBeingMerged(rts, 0, 0);
+
+      /* Update the BufferDstPort flags for each input port */
+    }
+
+    /* Level2 S-Function Block: my_pv_system_1_sm_master/<S25>/S-Function (RECV_Param) */
+    {
+      SimStruct *rts = my_pv_system_1_sm_master_M->childSfunctions[5];
+
+      /* timing info */
+      time_T *sfcnPeriod =
+        my_pv_system_1_sm_master_M->NonInlinedSFcns.Sfcn5.sfcnPeriod;
+      time_T *sfcnOffset =
+        my_pv_system_1_sm_master_M->NonInlinedSFcns.Sfcn5.sfcnOffset;
+      int_T *sfcnTsMap =
+        my_pv_system_1_sm_master_M->NonInlinedSFcns.Sfcn5.sfcnTsMap;
+      (void) memset((void*)sfcnPeriod, 0,
+                    sizeof(time_T)*1);
+      (void) memset((void*)sfcnOffset, 0,
+                    sizeof(time_T)*1);
+      ssSetSampleTimePtr(rts, &sfcnPeriod[0]);
+      ssSetOffsetTimePtr(rts, &sfcnOffset[0]);
+      ssSetSampleTimeTaskIDPtr(rts, sfcnTsMap);
+
+      /* Set up the mdlInfo pointer */
+      {
+        ssSetBlkInfo2Ptr(rts,
+                         &my_pv_system_1_sm_master_M->NonInlinedSFcns.blkInfo2[5]);
+      }
+
+      ssSetRTWSfcnInfo(rts, my_pv_system_1_sm_master_M->sfcnInfo);
+
+      /* Allocate memory of model methods 2 */
+      {
+        ssSetModelMethods2(rts,
+                           &my_pv_system_1_sm_master_M->
+                           NonInlinedSFcns.methods2[5]);
+      }
+
+      /* Allocate memory of model methods 3 */
+      {
+        ssSetModelMethods3(rts,
+                           &my_pv_system_1_sm_master_M->
+                           NonInlinedSFcns.methods3[5]);
+      }
+
+      /* Allocate memory for states auxilliary information */
+      {
+        ssSetStatesInfo2(rts,
+                         &my_pv_system_1_sm_master_M->NonInlinedSFcns.statesInfo2
+                         [5]);
+      }
+
+      /* outputs */
+      {
+        ssSetPortInfoForOutputs(rts,
+          &my_pv_system_1_sm_master_M->NonInlinedSFcns.Sfcn5.outputPortInfo[0]);
+        _ssSetNumOutputPorts(rts, 1);
+
+        /* port 0 */
+        {
+          _ssSetOutputPortNumDimensions(rts, 0, 1);
           ssSetOutputPortWidth(rts, 0, 2);
           ssSetOutputPortSignal(rts, 0, ((real_T *)
-            my_pv_system_1_sm_master_B.SFunction_k));
+            my_pv_system_1_sm_master_B.SFunction_d));
         }
       }
 
@@ -2829,13 +3081,13 @@ RT_MODEL_my_pv_system_1_sm_master_T *my_pv_system_1_sm_master(void)
       /* parameters */
       {
         mxArray **sfcnParams = (mxArray **)
-          &my_pv_system_1_sm_master_M->NonInlinedSFcns.Sfcn4.params;
+          &my_pv_system_1_sm_master_M->NonInlinedSFcns.Sfcn5.params;
         ssSetSFcnParamsCount(rts, 2);
         ssSetSFcnParamsPtr(rts, &sfcnParams[0]);
         ssSetSFcnParam(rts, 0, (mxArray*)
-                       my_pv_system_1_sm_master_P.SFunction_P1_Size_l);
+                       my_pv_system_1_sm_master_P.SFunction_P1_Size_bw);
         ssSetSFcnParam(rts, 1, (mxArray*)
-                       my_pv_system_1_sm_master_P.SFunction_P2_Size_m);
+                       my_pv_system_1_sm_master_P.SFunction_P2_Size_d);
       }
 
       /* registration */
@@ -2865,9 +3117,9 @@ RT_MODEL_my_pv_system_1_sm_master_T *my_pv_system_1_sm_master(void)
   my_pv_system_1_sm_master_M->Sizes.numU = (0);/* Number of model inputs */
   my_pv_system_1_sm_master_M->Sizes.sysDirFeedThru = (0);/* The model is not direct feedthrough */
   my_pv_system_1_sm_master_M->Sizes.numSampTimes = (2);/* Number of sample times */
-  my_pv_system_1_sm_master_M->Sizes.numBlocks = (126);/* Number of blocks */
-  my_pv_system_1_sm_master_M->Sizes.numBlockIO = (40);/* Number of block outputs */
-  my_pv_system_1_sm_master_M->Sizes.numBlockPrms = (91);/* Sum of parameter "widths" */
+  my_pv_system_1_sm_master_M->Sizes.numBlocks = (133);/* Number of blocks */
+  my_pv_system_1_sm_master_M->Sizes.numBlockIO = (51);/* Number of block outputs */
+  my_pv_system_1_sm_master_M->Sizes.numBlockPrms = (141);/* Sum of parameter "widths" */
   return my_pv_system_1_sm_master_M;
 }
 

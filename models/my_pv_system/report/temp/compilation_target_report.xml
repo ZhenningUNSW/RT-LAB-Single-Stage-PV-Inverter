@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<item name="report">
+    <item name="diagnostic">
+        <item name="Development">
+            <item name="Target">
+                <item name="Rtserver_5_110 192:168:1:1">
+                    <item name="Hardware system">
+                        <item name="Memory">
+                            <property name="Active">
+                                <value>
+                                    94412 kB
+                                </value>
+                            </property>
+                            <property name="Active(anon)">
+                                <value>
+                                    27472 kB
+                                </value>
+                            </property>
+                            <property name="Active(file)">
+                                <value>
+                                    66940 kB
+                                </value>
+                            </property>
+                            <property name="AnonPages">
+                                <value>
+                                    27044 kB
+                                </value>
+                            </property>
+                            <property name="Bounce">
+                                <value>
+                                    0 kB
+                                </value>
+                            </property>
+                            <property name="Buffers">
+                                <value>
+                                    33384 kB
+                                </value>
+                            </property>
+                            <property name="Cached">
+                                <value>
+                                    390880 kB
+                                </value>
+                            </property>
+                            <property name="CommitLimit">
+                                <value>
+                                    13315828 kB
+                                </value>
+                            </property>
+                            <property name="Committed_AS">
+                                <value>
+                                    37744 kB
+                                </value>
+                            </property>
+                            <property name="DirectMap2M">
+                                <value>
+                                    907264 kB
+                                </value>
+                            </property>
+                            <property name="DirectMap4k">
+                                <value>
+                                    4088 kB
+                                </value>
+                            </property>
+                            <property name="Dirty">
+                                <value>
+                                    10876 kB
+                                </value>
+                            </property>
+                            <property name="HighFree">
+                                <value>
+                                    6949908 kB
+                                </value>
+                            </property>
+                            <property name="HighTotal">
+                                <value>
+                                    7375844 kB
+                                </value>
+                            </property>
+                            <property name="Inactive">
+                                <value>
+                                    356808 kB
+                                </value>
+                            </property>
+                            <property name="Inactive(anon)">
+                                <value>
+                                    0 kB
+                                </value>
+                            </property>
+                            <property name="Inactive(file)">
+                                <value>
+                                    356808 kB
+                                </value>
+                            </property>
+                            <property name="LowFree">
+                                <value>
+                                    770588 kB
+                                </value>
+                            </property>
+                            <property name="LowTotal">
+                                <value>
+                                    829280 kB
+                                </value>
+                            </property>
+                            <property name="Mapped">
+                                <value>
+                                    14624 kB
+                                </value>
+                            </property>
+                            <property name="MemFree">
+                                <value>
+                                    7720496 kB
+                                </value>
+                            </property>
+                            <property name="MemTotal">
+                                <value>
+                                    8205124 kB
+                                </value>
+                            </property>
+                            <property name="Mlocked">
+                                <value>
+                                    0 kB
+                                </value>
+                            </property>
+                            <property name="NFS_Unstable">
+                                <value>
+                                    0 kB
+                                </value>
+                            </property>
+                            <property name="PageTables">
+                                <value>
+                                    948 kB
+                                </value>
+                            </property>
+                            <property name="SReclaimable">
+                                <value>
+                                    8968 kB
+                                </value>
+                            </property>
+                            <property name="SUnreclaim">
+                                <value>
+                                    5188 kB
+                                </value>
+                            </property>
+                            <property name="Slab">
+                                <value>
+                                    14156 kB
+                                </value>
+                            </property>
+                            <property name="SwapCached">
+                                <value>
+                                    0 kB
+                                </value>
+                            </property>
+                            <property name="SwapFree">
+                                <value>
+                                    9213268 kB
+                                </value>
+                            </property>
+                            <property name="SwapTotal">
+                                <value>
+                                    9213268 kB
+                                </value>
+                            </property>
+                            <property name="Unevictable">
+                                <value>
+                                    0 kB
+                                </value>
+                            </property>
+                            <property name="VmallocChunk">
+                                <value>
+                                    115660 kB
+                                </value>
+                            </property>
+                            <property name="VmallocTotal">
+                                <value>
+                                    122880 kB
+                                </value>
+                            </property>
+                            <property name="VmallocUsed">
+                                <value>
+                                    6204 kB
+                                </value>
+                            </property>
+                            <property name="Writeback">
+                                <value>
+                                    0 kB
+                                </value>
+                            </property>
+                            <property name="WritebackTmp">
+                                <value>
+                                    0 kB
+                                </value>
+                            </property>
+                        </item>
+                        <item name="Processors">
+                            <item name="Processor 0">
+                                <property name="Cache size">
+                                    <value>
+                                        8192 KB
+                                    </value>
+                                </property>
+                                <property name="Model name">
+                                    <value>
+                                        Intel(R) Xeon(R) CPU E3-1240 V2 @ 3.40GHz
+                                    </value>
+                                </property>
+                                <property name="Physical ID">
+                                    <value>
+                                        0
+                                    </value>
+                                </property>
+                                <property name="Processor ID">
+                                    <value>
+                                        0
+                                    </value>
+                                </property>
+                                <property name="Speed">
+                                    <value>
+                                        3399.762mhz
+                                    </value>
+                                </property>
+                                <property name="Vendor ID">
+                                    <value>
+                                        GenuineIntel
+                                    </value>
+                                </property>
+                            </item>
+                            <item name="Processor 1">
+                                <property name="Cache size">
+                                    <value>
+                                        8192 KB
+                                    </value>
+                                </property>
+                                <property name="Model name">
+                                    <value>
+                                        Intel(R) Xeon(R) CPU E3-1240 V2 @ 3.40GHz
+                                    </value>
+                                </property>
+                                <property name="Physical ID">
+                                    <value>
+                                        0
+                                    </value>
+                                </property>
+                                <property name="Processor ID">
+                                    <value>
+                                        1
+                                    </value>
+                                </property>
+                                <property name="Speed">
+                                    <value>
+                                        3399.762mhz
+                                    </value>
+                                </property>
+                                <property name="Vendor ID">
+                                    <value>
+                                        GenuineIntel
+                                    </value>
+                                </property>
+                            </item>
+                            <item name="Processor 2">
+                                <property name="Cache size">
+                                    <value>
+                                        8192 KB
+                                    </value>
+                                </property>
+                                <property name="Model name">
+                                    <value>
+                                        Intel(R) Xeon(R) CPU E3-1240 V2 @ 3.40GHz
+                                    </value>
+                                </property>
+                                <property name="Physical ID">
+                                    <value>
+                                        0
+                                    </value>
+                                </property>
+                                <property name="Processor ID">
+                                    <value>
+                                        2
+                                    </value>
+                                </property>
+                                <property name="Speed">
+                                    <value>
+                                        3399.762mhz
+                                    </value>
+                                </property>
+                                <property name="Vendor ID">
+                                    <value>
+                                        GenuineIntel
+                                    </value>
+                                </property>
+                            </item>
+                            <item name="Processor 3">
+                                <property name="Cache size">
+                                    <value>
+                                        8192 KB
+                                    </value>
+                                </property>
+                                <property name="Model name">
+                                    <value>
+                                        Intel(R) Xeon(R) CPU E3-1240 V2 @ 3.40GHz
+                                    </value>
+                                </property>
+                                <property name="Physical ID">
+                                    <value>
+                                        0
+                                    </value>
+                                </property>
+                                <property name="Processor ID">
+                                    <value>
+                                        3
+                                    </value>
+                                </property>
+                                <property name="Speed">
+                                    <value>
+                                        3399.762mhz
+                                    </value>
+                                </property>
+                                <property name="Vendor ID">
+                                    <value>
+                                        GenuineIntel
+                                    </value>
+                                </property>
+                            </item>
+                        </item>
+                    </item>
+                    <item name="Network and internet">
+                        <item name="Network">
+                            <item name="General information">
+                                <property name="Computer name">
+                                    <value>
+                                        RTServer_5_110
+                                    </value>
+                                </property>
+                                <property name="Local IP">
+                                    <value>
+                                        192.168.1.1
+                                    </value>
+                                </property>
+                            </item>
+                        </item>
+                    </item>
+                    <item name="Software system">
+                        <item name="Installed programs">
+                            <item name="ARTEMIS"/>
+                            <item name="Gcc">
+                                <property name="Current version">
+                                    <value>
+                                        4.1.2
+                                    </value>
+                                </property>
+                            </item>
+                            <item name="Python">
+                                <property name="Current version">
+                                    <value>
+                                        2.4.3
+                                    </value>
+                                </property>
+                            </item>
+                            <item name="RT-EVENTS"/>
+                            <item name="RT-LAB">
+                                <property name="Current version">
+                                    <value>
+                                        v11.0.7.582
+                                    </value>
+                                </property>
+                            </item>
+                        </item>
+                        <item name="Operating system">
+                            <property name="Release">
+                                <value>
+                                    2.6.29.6-opalrt-6.1
+                                </value>
+                            </property>
+                            <property name="Type">
+                                <value>
+                                    linux2
+                                </value>
+                            </property>
+                            <property name="Version">
+                                <value>
+                                    #8 SMP PREEMPT Thu Oct 3 11:56:23 EDT 2013
+                                </value>
+                            </property>
+                        </item>
+                    </item>
+                </item>
+            </item>
+        </item>
+    </item>
+</item>

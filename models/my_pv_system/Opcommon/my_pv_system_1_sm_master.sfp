@@ -2,9 +2,10 @@
 my_pv_system_1_sm_master/SM_master/Subsystem/MATLAB Function/ SFunction =sf_sfun
 [S-Function list]
 my_pv_system_1_sm_master/SM_master/OpComm/Receive/S-Function=0
+my_pv_system_1_sm_master/SM_master/OpMonitor=0
 my_pv_system_1_sm_master/SM_master/Subsystem/MATLAB Function/ SFunction =0
 my_pv_system_1_sm_master/SM_master/rtlab_send_subsystem/Subsystem1/Send1/S-Function=0
-my_pv_system_1_sm_master/SM_master/rtlab_send_subsystem/Subsystem4/Send4/S-Function=0
+my_pv_system_1_sm_master/SM_master/rtlab_send_subsystem/Subsystem2/Send2/S-Function=0
 my_pv_system_1_sm_master/SM_master/rtlab_send_subsystem/Subsystem5/Send5/S-Function=0
 my_pv_system_1_sm_master/SM_master/zzzOpComm1/Receive_1/S-Function=0
 [S-Function modules]

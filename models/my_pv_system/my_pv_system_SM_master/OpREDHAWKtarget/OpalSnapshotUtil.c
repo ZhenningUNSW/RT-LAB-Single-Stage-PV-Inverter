@@ -41,28 +41,56 @@ int OpalSnapshot_Copy_DWork(void * src, void * dst) {
    memcpy(&pDst->SFunction_PreviousInput, &pSrc->SFunction_PreviousInput, eltSize);
    size += eltSize;
 
-   eltSize = sizeof(pSrc->Memory_PreviousInput);
-   memcpy(&pDst->Memory_PreviousInput, &pSrc->Memory_PreviousInput, eltSize);
+   eltSize = sizeof(pSrc->Memory_1_PreviousInput);
+   memcpy(&pDst->Memory_1_PreviousInput, &pSrc->Memory_1_PreviousInput, eltSize);
    size += eltSize;
 
-   eltSize = sizeof(pSrc->Memory1_PreviousInput);
-   memcpy(&pDst->Memory1_PreviousInput, &pSrc->Memory1_PreviousInput, eltSize);
+   eltSize = sizeof(pSrc->Memory_2_PreviousInput);
+   memcpy(&pDst->Memory_2_PreviousInput, &pSrc->Memory_2_PreviousInput, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->Memory_3_PreviousInput);
+   memcpy(&pDst->Memory_3_PreviousInput, &pSrc->Memory_3_PreviousInput, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->Memory_4_PreviousInput);
+   memcpy(&pDst->Memory_4_PreviousInput, &pSrc->Memory_4_PreviousInput, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->Memory1_1_PreviousInput);
+   memcpy(&pDst->Memory1_1_PreviousInput, &pSrc->Memory1_1_PreviousInput, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->Memory1_2_PreviousInput);
+   memcpy(&pDst->Memory1_2_PreviousInput, &pSrc->Memory1_2_PreviousInput, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->Memory1_3_PreviousInput);
+   memcpy(&pDst->Memory1_3_PreviousInput, &pSrc->Memory1_3_PreviousInput, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->Memory1_4_PreviousInput);
+   memcpy(&pDst->Memory1_4_PreviousInput, &pSrc->Memory1_4_PreviousInput, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->Memory1_5_PreviousInput);
+   memcpy(&pDst->Memory1_5_PreviousInput, &pSrc->Memory1_5_PreviousInput, eltSize);
    size += eltSize;
 
    eltSize = sizeof(pSrc->SFunction_IWORK);
    memcpy(&pDst->SFunction_IWORK, &pSrc->SFunction_IWORK, eltSize);
    size += eltSize;
 
+   eltSize = sizeof(pSrc->SFunction_IWORK_j);
+   memcpy(&pDst->SFunction_IWORK_j, &pSrc->SFunction_IWORK_j, eltSize);
+   size += eltSize;
+
    eltSize = sizeof(pSrc->StateSpace_IWORK);
    memcpy(&pDst->StateSpace_IWORK, &pSrc->StateSpace_IWORK, eltSize);
    size += eltSize;
 
-   eltSize = sizeof(pSrc->SFunction_IWORK_k);
-   memcpy(&pDst->SFunction_IWORK_k, &pSrc->SFunction_IWORK_k, eltSize);
-   size += eltSize;
-
-   eltSize = sizeof(pSrc->SFunction_IWORK_a);
-   memcpy(&pDst->SFunction_IWORK_a, &pSrc->SFunction_IWORK_a, eltSize);
+   eltSize = sizeof(pSrc->SFunction_IWORK_g);
+   memcpy(&pDst->SFunction_IWORK_g, &pSrc->SFunction_IWORK_g, eltSize);
    size += eltSize;
 
    eltSize = sizeof(pSrc->DiscreteTimeIntegrator_PrevRese);

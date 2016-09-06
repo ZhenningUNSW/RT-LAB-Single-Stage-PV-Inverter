@@ -3,9 +3,9 @@
  *
  * Code generation for model "my_pv_system_3_ss_calculation".
  *
- * Model version              : 1.157
+ * Model version              : 1.174
  * Simulink Coder version : 8.7 (R2014b) 08-Sep-2014
- * C source code generated on : Mon Sep 05 22:15:04 2016
+ * C source code generated on : Tue Sep 06 10:11:57 2016
  *
  * Target selection: rtlab_rtmodel.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -789,9 +789,10 @@ int_T Opal_rtmGetNumBlockIO(void *ptr);
 typedef struct {
   real_T SFunction;                    /* '<S1>/S-Function' */
   real_T Sum;                          /* '<S1>/Sum' */
-  real_T Memory[3];                    /* '<S2>/Memory' */
+  real_T Vmean;                        /* '<S2>/Memory' */
+  real_T Pmean;                        /* '<S2>/Memory' */
   real_T DigitalClock;                 /* '<S8>/Digital  Clock' */
-  real_T SFunction_d[4];               /* '<S14>/S-Function' */
+  real_T SFunction_e[5];               /* '<S14>/S-Function' */
   real_T Integ4;                       /* '<S8>/Integ4' */
   real_T K1;                           /* '<S8>/K1' */
   real_T SFunction_a;                  /* '<S9>/S-Function' */
@@ -805,7 +806,7 @@ typedef struct {
   real_T UnitDelay_m;                  /* '<S10>/Unit Delay' */
   real_T UnitDelay1_k;                 /* '<S10>/Unit Delay1' */
   real_T Switch_j;                     /* '<S10>/Switch' */
-  real_T Pmean;                        /* '<S2>/Product' */
+  real_T Pmean_d;                      /* '<S2>/Product' */
   real_T Gain1;                        /* '<S10>/Gain1' */
   real_T Gain;                         /* '<S10>/Gain' */
   real_T Correction;                   /* '<S10>/Sum1' */
@@ -831,7 +832,8 @@ typedef struct {
   real_T UnitDelay_DSTATE_l;           /* '<S10>/Unit Delay' */
   real_T UnitDelay1_DSTATE_p;          /* '<S10>/Unit Delay1' */
   real_T SFunction_PreviousInput;      /* '<S1>/S-Function' */
-  real_T Memory_PreviousInput[3];      /* '<S2>/Memory' */
+  real_T Memory_1_PreviousInput;       /* '<S2>/Memory' */
+  real_T Memory_2_PreviousInput;       /* '<S2>/Memory' */
   real_T SFunction_RWORK;              /* '<S9>/S-Function' */
   real_T SFunction_RWORK_f;            /* '<S11>/S-Function' */
   void *SFunction_PWORK;               /* '<S14>/S-Function' */
@@ -872,7 +874,10 @@ struct P_my_pv_system_3_ss_calculation_T_ {
   real_T SFunction_X0;                 /* Expression: 0
                                         * Referenced by: '<S1>/S-Function'
                                         */
-  real_T Memory_X0;                    /* Expression: 0
+  real_T Memory_1_X0;                  /* Expression: 0
+                                        * Referenced by: '<S2>/Memory'
+                                        */
+  real_T Memory_2_X0;                  /* Expression: 0
                                         * Referenced by: '<S2>/Memory'
                                         */
   real_T SFunction_P1_Size[2];         /* Computed Parameter: SFunction_P1_Size
@@ -881,10 +886,10 @@ struct P_my_pv_system_3_ss_calculation_T_ {
   real_T SFunction_P1;                 /* Expression: Acqu_group
                                         * Referenced by: '<S13>/S-Function'
                                         */
-  real_T SFunction_P1_Size_g[2];       /* Computed Parameter: SFunction_P1_Size_g
+  real_T SFunction_P1_Size_h[2];       /* Computed Parameter: SFunction_P1_Size_h
                                         * Referenced by: '<S14>/S-Function'
                                         */
-  real_T SFunction_P1_b;               /* Expression: src
+  real_T SFunction_P1_l;               /* Expression: src
                                         * Referenced by: '<S14>/S-Function'
                                         */
   real_T SFunction_P2_Size[2];         /* Computed Parameter: SFunction_P2_Size
@@ -953,7 +958,7 @@ struct P_my_pv_system_3_ss_calculation_T_ {
   real_T SFunction_P1_Size_ea[2];      /* Computed Parameter: SFunction_P1_Size_ea
                                         * Referenced by: '<S11>/S-Function'
                                         */
-  real_T SFunction_P1_l;               /* Expression: MaxDelay
+  real_T SFunction_P1_lg;              /* Expression: MaxDelay
                                         * Referenced by: '<S11>/S-Function'
                                         */
   real_T SFunction_P2_Size_l[2];       /* Computed Parameter: SFunction_P2_Size_l
@@ -1017,7 +1022,7 @@ struct tag_RTM_my_pv_system_3_ss_calculation_T {
       time_T sfcnOffset[1];
       int_T sfcnTsMap[1];
       struct _ssPortInputs inputPortInfo[1];
-      real_T const *UPtrs0[3];
+      real_T const *UPtrs0[2];
       uint_T attribs[1];
       mxArray *params[1];
       struct _ssDWorkRecord dWork[1];
