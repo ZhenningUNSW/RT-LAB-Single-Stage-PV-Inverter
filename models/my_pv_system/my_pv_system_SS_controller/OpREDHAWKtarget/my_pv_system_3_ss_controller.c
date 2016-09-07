@@ -3,9 +3,9 @@
  *
  * Code generation for model "my_pv_system_3_ss_controller".
  *
- * Model version              : 1.189
+ * Model version              : 1.207
  * Simulink Coder version : 8.7 (R2014b) 08-Sep-2014
- * C source code generated on : Tue Sep 06 11:32:06 2016
+ * C source code generated on : Wed Sep 07 16:46:24 2016
  *
  * Target selection: rtlab_rtmodel.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -350,7 +350,7 @@ static void my_pv_system_3_ss_controller_output(void)
 
   /* RateTransition: '<S2>/Rate Transition1' */
   my_pv_system_3_ss_controller_B.RateTransition1 =
-    my_pv_system_3_ss_controller_B.SFunction_h[8];
+    my_pv_system_3_ss_controller_B.SFunction_g[8];
 
   /* Gain: '<S11>/A->pu' */
   P = my_pv_system_3_ss_controller_P.InverterControl_Vnom_prim;
@@ -625,7 +625,7 @@ static void my_pv_system_3_ss_controller_output(void)
 
   /* RateTransition: '<S2>/Rate Transition' */
   my_pv_system_3_ss_controller_B.RateTransition =
-    my_pv_system_3_ss_controller_B.SFunction_h[9];
+    my_pv_system_3_ss_controller_B.SFunction_g[9];
 
   /* Gain: '<S11>/V->pu' */
   dP = my_pv_system_3_ss_controller_P.InverterControl_Vnom_prim *
@@ -1027,11 +1027,11 @@ static void my_pv_system_3_ss_controller_output(void)
 
   /* RateTransition: '<S2>/Rate Transition3' */
   my_pv_system_3_ss_controller_B.RateTransition3 =
-    my_pv_system_3_ss_controller_B.SFunction_h[2];
+    my_pv_system_3_ss_controller_B.SFunction_g[2];
 
   /* RateTransition: '<S2>/Rate Transition4' */
   my_pv_system_3_ss_controller_B.RateTransition4 =
-    my_pv_system_3_ss_controller_B.SFunction_h[1];
+    my_pv_system_3_ss_controller_B.SFunction_g[1];
 
   /* SignalConversion: '<S10>/TmpSignal ConversionAt SFunction Inport1' incorporates:
    *  Constant: '<S9>/Iph_'
@@ -1142,7 +1142,7 @@ static void my_pv_system_3_ss_controller_output(void)
 
   /* RateTransition: '<S2>/Rate Transition2' */
   my_pv_system_3_ss_controller_B.RateTransition2 =
-    my_pv_system_3_ss_controller_B.SFunction_h[7];
+    my_pv_system_3_ss_controller_B.SFunction_g[7];
 
   /* DiscreteIntegrator: '<S29>/Integ4' */
   if (my_pv_system_3_ss_controller_DW.Integ4_SYSTEM_ENABLE_d != 0) {
@@ -2169,9 +2169,9 @@ static void my_pv_system_3_ss_controller_output(void)
   /* '<S5>:1:14' */
   /* '<S5>:1:17' */
   my_pv_system_3_ss_controller_B.Iph_p =
-    (((my_pv_system_3_ss_controller_B.SFunction_h[4] + 273.0) - 298.0) *
+    (((my_pv_system_3_ss_controller_B.SFunction_g[4] + 273.0) - 298.0) *
      (my_pv_system_3_ss_controller_P.Constant3_Value / 100.0) + 1.0) *
-    (my_pv_system_3_ss_controller_B.SFunction_h[0] / 1000.0 *
+    (my_pv_system_3_ss_controller_B.SFunction_g[0] / 1000.0 *
      my_pv_system_3_ss_controller_P.Constant1_Value);
 
   /* '<S5>:1:18' */
@@ -2182,12 +2182,12 @@ static void my_pv_system_3_ss_controller_output(void)
     (my_pv_system_3_ss_controller_P.Constant2_Value /
      (my_pv_system_3_ss_controller_P.Constant4_Value * 1.381E-23 * 1.3 * 298.0 /
       1.6E-19)) - 1.0) * rt_powd_snf
-    ((my_pv_system_3_ss_controller_B.SFunction_h[4] + 273.0) / 298.0, 3.0) * exp
-    ((0.0033557046979865771 - 1.0 / (my_pv_system_3_ss_controller_B.SFunction_h
+    ((my_pv_system_3_ss_controller_B.SFunction_g[4] + 273.0) / 298.0, 3.0) * exp
+    ((0.0033557046979865771 - 1.0 / (my_pv_system_3_ss_controller_B.SFunction_g
        [4] + 273.0)) * 9981.61867097421) * (exp
-    (my_pv_system_3_ss_controller_B.SFunction_h[5] /
+    (my_pv_system_3_ss_controller_B.SFunction_g[5] /
      (my_pv_system_3_ss_controller_P.Constant4_Value * 1.381E-23 * 1.3 *
-      (my_pv_system_3_ss_controller_B.SFunction_h[4] + 273.0) / 1.6E-19)) - 1.0);
+      (my_pv_system_3_ss_controller_B.SFunction_g[4] + 273.0) / 1.6E-19)) - 1.0);
 }
 
 /* Model update function */
@@ -3065,8 +3065,8 @@ RT_MODEL_my_pv_system_3_ss_controller_T *my_pv_system_3_ss_controller(void)
 
   {
     int_T i;
-    for (i = 0; i < 11; i++) {
-      my_pv_system_3_ss_controller_B.SFunction_h[i] = 0.0;
+    for (i = 0; i < 12; i++) {
+      my_pv_system_3_ss_controller_B.SFunction_g[i] = 0.0;
     }
 
     my_pv_system_3_ss_controller_B.RealImagtoComplex.re = 0.0;
@@ -3085,10 +3085,10 @@ RT_MODEL_my_pv_system_3_ss_controller_T *my_pv_system_3_ss_controller(void)
     my_pv_system_3_ss_controller_B.Gate[3] = 0.0;
     my_pv_system_3_ss_controller_B.Iph = 0.0;
     my_pv_system_3_ss_controller_B.Io = 0.0;
-    my_pv_system_3_ss_controller_B.OpMonitor_o1 = 0.0;
-    my_pv_system_3_ss_controller_B.OpMonitor_o2 = 0.0;
-    my_pv_system_3_ss_controller_B.OpMonitor_o3 = 0.0;
-    my_pv_system_3_ss_controller_B.OpMonitor_o4 = 0.0;
+    my_pv_system_3_ss_controller_B.Computationtime = 0.0;
+    my_pv_system_3_ss_controller_B.Realstepsize = 0.0;
+    my_pv_system_3_ss_controller_B.Idletime = 0.0;
+    my_pv_system_3_ss_controller_B.Overruntimes = 0.0;
     my_pv_system_3_ss_controller_B.RateTransition1 = 0.0;
     my_pv_system_3_ss_controller_B.Apu = 0.0;
     my_pv_system_3_ss_controller_B.UnitDelay = 0.0;
@@ -3968,11 +3968,11 @@ RT_MODEL_my_pv_system_3_ss_controller_T *my_pv_system_3_ss_controller(void)
         ssSetSFcnParamsCount(rts, 3);
         ssSetSFcnParamsPtr(rts, &sfcnParams[0]);
         ssSetSFcnParam(rts, 0, (mxArray*)
-                       my_pv_system_3_ss_controller_P.SFunction_P1_Size_aw);
+                       my_pv_system_3_ss_controller_P.SFunction_P1_Size_e);
         ssSetSFcnParam(rts, 1, (mxArray*)
                        my_pv_system_3_ss_controller_P.SFunction_P2_Size_p);
         ssSetSFcnParam(rts, 2, (mxArray*)
-                       my_pv_system_3_ss_controller_P.SFunction_P3_Size_b);
+                       my_pv_system_3_ss_controller_P.SFunction_P3_Size_e);
       }
 
       /* work vectors */
@@ -4097,7 +4097,7 @@ RT_MODEL_my_pv_system_3_ss_controller_T *my_pv_system_3_ss_controller(void)
           _ssSetOutputPortNumDimensions(rts, 0, 1);
           ssSetOutputPortWidth(rts, 0, 1);
           ssSetOutputPortSignal(rts, 0, ((real_T *)
-            &my_pv_system_3_ss_controller_B.OpMonitor_o1));
+            &my_pv_system_3_ss_controller_B.Computationtime));
         }
 
         /* port 1 */
@@ -4105,7 +4105,7 @@ RT_MODEL_my_pv_system_3_ss_controller_T *my_pv_system_3_ss_controller(void)
           _ssSetOutputPortNumDimensions(rts, 1, 1);
           ssSetOutputPortWidth(rts, 1, 1);
           ssSetOutputPortSignal(rts, 1, ((real_T *)
-            &my_pv_system_3_ss_controller_B.OpMonitor_o2));
+            &my_pv_system_3_ss_controller_B.Realstepsize));
         }
 
         /* port 2 */
@@ -4113,7 +4113,7 @@ RT_MODEL_my_pv_system_3_ss_controller_T *my_pv_system_3_ss_controller(void)
           _ssSetOutputPortNumDimensions(rts, 2, 1);
           ssSetOutputPortWidth(rts, 2, 1);
           ssSetOutputPortSignal(rts, 2, ((real_T *)
-            &my_pv_system_3_ss_controller_B.OpMonitor_o3));
+            &my_pv_system_3_ss_controller_B.Idletime));
         }
 
         /* port 3 */
@@ -4121,7 +4121,7 @@ RT_MODEL_my_pv_system_3_ss_controller_T *my_pv_system_3_ss_controller(void)
           _ssSetOutputPortNumDimensions(rts, 3, 1);
           ssSetOutputPortWidth(rts, 3, 1);
           ssSetOutputPortSignal(rts, 3, ((real_T *)
-            &my_pv_system_3_ss_controller_B.OpMonitor_o4));
+            &my_pv_system_3_ss_controller_B.Overruntimes));
         }
       }
 
@@ -4259,10 +4259,10 @@ RT_MODEL_my_pv_system_3_ss_controller_T *my_pv_system_3_ss_controller(void)
         {
           real_T const **sfcnUPtrs = (real_T const **)
             &my_pv_system_3_ss_controller_M->NonInlinedSFcns.Sfcn4.UPtrs0;
-          sfcnUPtrs[0] = &my_pv_system_3_ss_controller_B.OpMonitor_o1;
-          sfcnUPtrs[1] = &my_pv_system_3_ss_controller_B.OpMonitor_o2;
-          sfcnUPtrs[2] = &my_pv_system_3_ss_controller_B.OpMonitor_o3;
-          sfcnUPtrs[3] = &my_pv_system_3_ss_controller_B.OpMonitor_o4;
+          sfcnUPtrs[0] = &my_pv_system_3_ss_controller_B.Computationtime;
+          sfcnUPtrs[1] = &my_pv_system_3_ss_controller_B.Realstepsize;
+          sfcnUPtrs[2] = &my_pv_system_3_ss_controller_B.Idletime;
+          sfcnUPtrs[3] = &my_pv_system_3_ss_controller_B.Overruntimes;
           ssSetInputPortSignalPtrs(rts, 0, (InputPtrsType)&sfcnUPtrs[0]);
           _ssSetInputPortNumDimensions(rts, 0, 1);
           ssSetInputPortWidth(rts, 0, 4);
@@ -4285,7 +4285,7 @@ RT_MODEL_my_pv_system_3_ss_controller_T *my_pv_system_3_ss_controller(void)
         ssSetSFcnParamsCount(rts, 1);
         ssSetSFcnParamsPtr(rts, &sfcnParams[0]);
         ssSetSFcnParam(rts, 0, (mxArray*)
-                       my_pv_system_3_ss_controller_P.SFunction_P1_Size_m);
+                       my_pv_system_3_ss_controller_P.SFunction_P1_Size_h);
       }
 
       /* work vectors */
@@ -4391,9 +4391,9 @@ RT_MODEL_my_pv_system_3_ss_controller_T *my_pv_system_3_ss_controller(void)
         /* port 0 */
         {
           _ssSetOutputPortNumDimensions(rts, 0, 1);
-          ssSetOutputPortWidth(rts, 0, 11);
+          ssSetOutputPortWidth(rts, 0, 12);
           ssSetOutputPortSignal(rts, 0, ((real_T *)
-            my_pv_system_3_ss_controller_B.SFunction_h));
+            my_pv_system_3_ss_controller_B.SFunction_g));
         }
       }
 
@@ -4417,7 +4417,7 @@ RT_MODEL_my_pv_system_3_ss_controller_T *my_pv_system_3_ss_controller(void)
         ssSetSFcnParam(rts, 1, (mxArray*)
                        my_pv_system_3_ss_controller_P.SFunction_P2_Size_m);
         ssSetSFcnParam(rts, 2, (mxArray*)
-                       my_pv_system_3_ss_controller_P.SFunction_P3_Size_a);
+                       my_pv_system_3_ss_controller_P.SFunction_P3_Size_b);
       }
 
       /* work vectors */
@@ -5144,7 +5144,7 @@ RT_MODEL_my_pv_system_3_ss_controller_T *my_pv_system_3_ss_controller(void)
         ssSetSFcnParam(rts, 1, (mxArray*)
                        my_pv_system_3_ss_controller_P.SFunction_P2_Size_ar);
         ssSetSFcnParam(rts, 2, (mxArray*)
-                       my_pv_system_3_ss_controller_P.SFunction_P3_Size_e);
+                       my_pv_system_3_ss_controller_P.SFunction_P3_Size_ep);
         ssSetSFcnParam(rts, 3, (mxArray*)
                        my_pv_system_3_ss_controller_P.SFunction_P4_Size_c0);
       }

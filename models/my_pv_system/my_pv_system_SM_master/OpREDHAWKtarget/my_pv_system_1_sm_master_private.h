@@ -3,9 +3,9 @@
  *
  * Code generation for model "my_pv_system_1_sm_master".
  *
- * Model version              : 1.189
+ * Model version              : 1.207
  * Simulink Coder version : 8.7 (R2014b) 08-Sep-2014
- * C source code generated on : Tue Sep 06 11:04:11 2016
+ * C source code generated on : Wed Sep 07 16:46:13 2016
  *
  * Target selection: rtlab_rtmodel.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -60,10 +60,26 @@
 #endif
 #endif
 
+real_T rt_TDelayInterpolate(
+  real_T tMinusDelay,                  /* tMinusDelay = currentSimTime - delay */
+  real_T tStart,
+  real_T *tBuf,
+  real_T *uBuf,
+  int_T bufSz,
+  int_T *lastIdx,
+  int_T oldestIdx,
+  int_T newIdx,
+  real_T initOutput,
+  boolean_T discrete,
+  boolean_T minorStepAndTAtLastMajorOutput)
+  ;
 extern void send_rt(SimStruct *rts);
 extern void OP_SEND(SimStruct *rts);
 extern void opmonitor(SimStruct *rts);
 extern void recv_rt(SimStruct *rts);
 extern void RECV_Param(SimStruct *rts);
+
+/* private model entry point functions */
+extern void my_pv_system_1_sm_master_derivatives(void);
 
 #endif                                 /* RTW_HEADER_my_pv_system_1_sm_master_private_h_ */

@@ -1,6 +1,6 @@
 
 -------------------- Starting compilation --------------------
-Start at : Tuesday, September 06, 2016, 11:30:57
+Start at : Wednesday, September 07, 2016, 16:45:25
 
 The current RT-LAB version is:  v11.0.7.582
 The current model is:           C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\my_pv_system\my_pv_system.mdl
@@ -49,7 +49,7 @@ Separating RT-LAB subsystem 'SS_controller'.
 WARNING: Saving subsystems with breaklinks option has been disabled. Subsystems real-time behavior may be different.
 WARNING: Saving subsystems with breaklinks option has been disabled. Subsystems real-time behavior may be different.
 A monitoring block (OpMonitor) has been found. The monitoring will be enabled.
-Model preparation and separation duration : 00h:00m:39s
+Model preparation and separation duration : 00h:00m:34s
 -------------------- Completed successfully --------------------
 
 Generating model because C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\my_pv_system\Opcommon\my_pv_system_1_sm_master.mdl has changed.
@@ -64,9 +64,55 @@ Using Template Makefile (TMF file) : rtlab_rtmodel.tmf...
 Calling RTW Make Command make_rtw...
 ### Starting build procedure for model: my_pv_system_1_sm_master
 ### Generating code into build folder: C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\my_pv_system\my_pv_system_1_sm_master_rtlab
+[Warning: Use fixed buffer size in 'my_pv_system_1_sm_master/SM_master/Mean/Model/Transport Delay' is not selected. When generating
+GRT/ERT code, Simulink will automatically use fixed buffer of the initial buffer size set by user. Code generation results and
+simulation results may differ] 
+[Warning: Use fixed buffer size in 'my_pv_system_1_sm_master/SM_master/Mean1/Model/Transport Delay' is not selected. When generating
+GRT/ERT code, Simulink will automatically use fixed buffer of the initial buffer size set by user. Code generation results and
+simulation results may differ] 
 
-### Generated code for 'my_pv_system_1_sm_master' is up to date because no structural, parameter or code replacement library changes were found.
+### Invoking Target Language Compiler on my_pv_system_1_sm_master.rtw
+### Using System Target File: D:\OPAL-RT\RT-LAB\v11.0.7.582\Simulink\rtw\c\common\rtlab_rtmodel.tlc
+### Loading TLC function libraries
+......
+### Initial pass through model to cache user defined code
 .
+
+### Generating code for S Function : <S52>/State-Space
+
+.....
+### Caching model source code
+...............................................................................
+..........................................
+### Writing header file my_pv_system_1_sm_master.h
+.
+### Writing header file my_pv_system_1_sm_master_types.h
+### Writing header file rtwtypes.h
+.
+### Writing header file builtin_typeid_types.h
+### Writing header file multiword_types.h
+.
+### Writing header file rtGetInf.h
+### Writing source file rtGetInf.c
+.
+### Writing source file my_pv_system_1_sm_master.c
+### Writing header file my_pv_system_1_sm_master_private.h
+.
+### Writing header file rtmodel.h
+### Writing source file my_pv_system_1_sm_master_data.c
+.
+### Writing header file rt_nonfinite.h
+### Writing source file rt_nonfinite.c
+### Writing header file rt_defines.h
+.
+### Writing header file rtGetNaN.h
+### Writing source file rtGetNaN.c
+.
+### TLC code generation complete.
+.
+Warning:  Version[0] 8 Version[1] . Version[2] 7
+### Creating model mapping file my_pv_system_1_sm_master.map using map_r2014b.tlc
+............................
 ### Processing Template Makefile: D:\OPAL-RT\RT-LAB\v11.0.7.582\Simulink\rtw\c\common\rtlab_rtmodel.tmf
 ### Wrapping unrecognized make command (angle brackets added)
 ###    <make>
@@ -75,7 +121,7 @@ Calling RTW Make Command make_rtw...
 ### Successful completion of code generation for model: my_pv_system_1_sm_master
 
 
-my_pv_system_1_sm_master : Generating C code duration : 00h:00m:06s
+my_pv_system_1_sm_master : Generating C code duration : 00h:00m:12s
 
 -------------------- Generating my_pv_system_3_ss_controller C code --------------------
 Calling RTW Make Command make_rtw...
@@ -127,8 +173,7 @@ Calling RTW Make Command make_rtw...
 ...
 Warning:  Version[0] 8 Version[1] . Version[2] 7
 ### Creating model mapping file my_pv_system_3_ss_controller.map using map_r2014b.tlc
-.........................................................................### Creating project marker file: rtw_proj.tmw
-.
+..........................................................................
 ### Processing Template Makefile: D:\OPAL-RT\RT-LAB\v11.0.7.582\Simulink\rtw\c\common\rtlab_rtmodel.tmf
 ### Wrapping unrecognized make command (angle brackets added)
 ###    <make>
@@ -137,7 +182,7 @@ Warning:  Version[0] 8 Version[1] . Version[2] 7
 ### Successful completion of code generation for model: my_pv_system_3_ss_controller
 
 
-my_pv_system_3_ss_controller : Generating C code duration : 00h:00m:16s
+my_pv_system_3_ss_controller : Generating C code duration : 00h:00m:10s
 Generating C code total duration : 00h:00m:22s
 
 -------------------- Completed successfully --------------------
@@ -235,7 +280,7 @@ Transferring user extra files:
 Transferring in ascii: C:\Program Files (x86)\MATLAB\R2014b\toolbox\physmod\powersys\powersys\sfun_discreteVariableDelay.c (SM_master) ... OK.
 Transferring in ascii: C:\Program Files (x86)\MATLAB\R2014b\toolbox\physmod\powersys\powersys\sfun_discreteVariableDelay.c (SS_controller) ... OK.
 
-File transfer duration : 00h:00m:15s
+File transfer duration : 00h:00m:06s
 -------------------- Completed successfully --------------------
 
 -------------------- Building the generated C code --------------------
@@ -248,21 +293,21 @@ Executing script /usr/opalrt/v11.0.7.582/common/python/rtlab/global/target_subsy
 -------------------- Building my_pv_system_1_sm_master --------------------
 
 rm -f my_pv_system_1_sm_master
-opicc -c  -O2 -xHost -falign-functions=2 -diag-disable remark,warn,cpu-dispatch    -DUSE_RTMODEL -DMODEL=my_pv_system_1_sm_master -DRT=RT -DNUMST=2 -DTID01EQ=1 -DNCSTATES=0 -DMT=0 -DTERMFCN=1 -DMULTITASKING=0 -D_SIMULINK -DRTLAB -DOP_MATLABR2014B	 -DMAT_FILE=1 -DCLASSIC_INTERFACE=1 -DONESTEPFCN=0 -DMULTI_INSTANCE_CODE=0 -DUNIX -I/usr/opalrt/externals/include  -I. -I/usr/matlab/v8.4/simulink/include -I/usr/matlab/v8.4/extern/include -I/usr/matlab/v8.4/rtw/c/src -I/usr/matlab/v8.4/rtw/c/src/matrixmath -I/usr/matlab/v8.4/rtw/c/libsrc  -I/usr/matlab/v8.4/toolbox/simscape/include/drive -I/usr/matlab/v8.4/toolbox/simscape/include/mech -I/usr/matlab/v8.4/toolbox/simscape/include/foundation -I/usr/matlab/v8.4/toolbox/simscape/include/network_engine -I/usr/matlab/v8.4/toolbox/simscape/include/ne_sli -I/usr/matlab/v8.4/toolbox/dspblks/include -I/usr/matlab/v8.4/toolbox/simscape/include/compiler/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/sli/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/utils  -I/usr/opalrt/v11.0.7.582/common/include -I/usr/opalrt/v11.0.7.582/common/include_target -I/usr/opalrt/v11.0.7.582/RT-LAB/include    -I_sharedutils  model_main.c
-opicc -c  -O2 -xHost -falign-functions=2 -diag-disable remark,warn,cpu-dispatch    -DUSE_RTMODEL -DMODEL=my_pv_system_1_sm_master -DRT=RT -DNUMST=2 -DTID01EQ=1 -DNCSTATES=0 -DMT=0 -DTERMFCN=1 -DMULTITASKING=0 -D_SIMULINK -DRTLAB -DOP_MATLABR2014B	 -DMAT_FILE=1 -DCLASSIC_INTERFACE=1 -DONESTEPFCN=0 -DMULTI_INSTANCE_CODE=0 -DUNIX -I/usr/opalrt/externals/include  -I. -I/usr/matlab/v8.4/simulink/include -I/usr/matlab/v8.4/extern/include -I/usr/matlab/v8.4/rtw/c/src -I/usr/matlab/v8.4/rtw/c/src/matrixmath -I/usr/matlab/v8.4/rtw/c/libsrc  -I/usr/matlab/v8.4/toolbox/simscape/include/drive -I/usr/matlab/v8.4/toolbox/simscape/include/mech -I/usr/matlab/v8.4/toolbox/simscape/include/foundation -I/usr/matlab/v8.4/toolbox/simscape/include/network_engine -I/usr/matlab/v8.4/toolbox/simscape/include/ne_sli -I/usr/matlab/v8.4/toolbox/dspblks/include -I/usr/matlab/v8.4/toolbox/simscape/include/compiler/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/sli/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/utils  -I/usr/opalrt/v11.0.7.582/common/include -I/usr/opalrt/v11.0.7.582/common/include_target -I/usr/opalrt/v11.0.7.582/RT-LAB/include    -I_sharedutils  my_pv_system_1_sm_master.c
-opicc -c  -O2 -xHost -falign-functions=2 -diag-disable remark,warn,cpu-dispatch    -DUSE_RTMODEL -DMODEL=my_pv_system_1_sm_master -DRT=RT -DNUMST=2 -DTID01EQ=1 -DNCSTATES=0 -DMT=0 -DTERMFCN=1 -DMULTITASKING=0 -D_SIMULINK -DRTLAB -DOP_MATLABR2014B	 -DMAT_FILE=1 -DCLASSIC_INTERFACE=1 -DONESTEPFCN=0 -DMULTI_INSTANCE_CODE=0 -DUNIX -I/usr/opalrt/externals/include  -I. -I/usr/matlab/v8.4/simulink/include -I/usr/matlab/v8.4/extern/include -I/usr/matlab/v8.4/rtw/c/src -I/usr/matlab/v8.4/rtw/c/src/matrixmath -I/usr/matlab/v8.4/rtw/c/libsrc  -I/usr/matlab/v8.4/toolbox/simscape/include/drive -I/usr/matlab/v8.4/toolbox/simscape/include/mech -I/usr/matlab/v8.4/toolbox/simscape/include/foundation -I/usr/matlab/v8.4/toolbox/simscape/include/network_engine -I/usr/matlab/v8.4/toolbox/simscape/include/ne_sli -I/usr/matlab/v8.4/toolbox/dspblks/include -I/usr/matlab/v8.4/toolbox/simscape/include/compiler/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/sli/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/utils  -I/usr/opalrt/v11.0.7.582/common/include -I/usr/opalrt/v11.0.7.582/common/include_target -I/usr/opalrt/v11.0.7.582/RT-LAB/include    -I_sharedutils  my_pv_system_1_sm_master_data.c
-opicc -c  -O2 -xHost -falign-functions=2 -diag-disable remark,warn,cpu-dispatch    -DUSE_RTMODEL -DMODEL=my_pv_system_1_sm_master -DRT=RT -DNUMST=2 -DTID01EQ=1 -DNCSTATES=0 -DMT=0 -DTERMFCN=1 -DMULTITASKING=0 -D_SIMULINK -DRTLAB -DOP_MATLABR2014B	 -DMAT_FILE=1 -DCLASSIC_INTERFACE=1 -DONESTEPFCN=0 -DMULTI_INSTANCE_CODE=0 -DUNIX -I/usr/opalrt/externals/include  -I. -I/usr/matlab/v8.4/simulink/include -I/usr/matlab/v8.4/extern/include -I/usr/matlab/v8.4/rtw/c/src -I/usr/matlab/v8.4/rtw/c/src/matrixmath -I/usr/matlab/v8.4/rtw/c/libsrc  -I/usr/matlab/v8.4/toolbox/simscape/include/drive -I/usr/matlab/v8.4/toolbox/simscape/include/mech -I/usr/matlab/v8.4/toolbox/simscape/include/foundation -I/usr/matlab/v8.4/toolbox/simscape/include/network_engine -I/usr/matlab/v8.4/toolbox/simscape/include/ne_sli -I/usr/matlab/v8.4/toolbox/dspblks/include -I/usr/matlab/v8.4/toolbox/simscape/include/compiler/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/sli/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/utils  -I/usr/opalrt/v11.0.7.582/common/include -I/usr/opalrt/v11.0.7.582/common/include_target -I/usr/opalrt/v11.0.7.582/RT-LAB/include    -I_sharedutils  rtGetInf.c
-opicc -c  -O2 -xHost -falign-functions=2 -diag-disable remark,warn,cpu-dispatch    -DUSE_RTMODEL -DMODEL=my_pv_system_1_sm_master -DRT=RT -DNUMST=2 -DTID01EQ=1 -DNCSTATES=0 -DMT=0 -DTERMFCN=1 -DMULTITASKING=0 -D_SIMULINK -DRTLAB -DOP_MATLABR2014B	 -DMAT_FILE=1 -DCLASSIC_INTERFACE=1 -DONESTEPFCN=0 -DMULTI_INSTANCE_CODE=0 -DUNIX -I/usr/opalrt/externals/include  -I. -I/usr/matlab/v8.4/simulink/include -I/usr/matlab/v8.4/extern/include -I/usr/matlab/v8.4/rtw/c/src -I/usr/matlab/v8.4/rtw/c/src/matrixmath -I/usr/matlab/v8.4/rtw/c/libsrc  -I/usr/matlab/v8.4/toolbox/simscape/include/drive -I/usr/matlab/v8.4/toolbox/simscape/include/mech -I/usr/matlab/v8.4/toolbox/simscape/include/foundation -I/usr/matlab/v8.4/toolbox/simscape/include/network_engine -I/usr/matlab/v8.4/toolbox/simscape/include/ne_sli -I/usr/matlab/v8.4/toolbox/dspblks/include -I/usr/matlab/v8.4/toolbox/simscape/include/compiler/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/sli/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/utils  -I/usr/opalrt/v11.0.7.582/common/include -I/usr/opalrt/v11.0.7.582/common/include_target -I/usr/opalrt/v11.0.7.582/RT-LAB/include    -I_sharedutils  rtGetNaN.c
-opicc -c  -O2 -xHost -falign-functions=2 -diag-disable remark,warn,cpu-dispatch    -DUSE_RTMODEL -DMODEL=my_pv_system_1_sm_master -DRT=RT -DNUMST=2 -DTID01EQ=1 -DNCSTATES=0 -DMT=0 -DTERMFCN=1 -DMULTITASKING=0 -D_SIMULINK -DRTLAB -DOP_MATLABR2014B	 -DMAT_FILE=1 -DCLASSIC_INTERFACE=1 -DONESTEPFCN=0 -DMULTI_INSTANCE_CODE=0 -DUNIX -I/usr/opalrt/externals/include  -I. -I/usr/matlab/v8.4/simulink/include -I/usr/matlab/v8.4/extern/include -I/usr/matlab/v8.4/rtw/c/src -I/usr/matlab/v8.4/rtw/c/src/matrixmath -I/usr/matlab/v8.4/rtw/c/libsrc  -I/usr/matlab/v8.4/toolbox/simscape/include/drive -I/usr/matlab/v8.4/toolbox/simscape/include/mech -I/usr/matlab/v8.4/toolbox/simscape/include/foundation -I/usr/matlab/v8.4/toolbox/simscape/include/network_engine -I/usr/matlab/v8.4/toolbox/simscape/include/ne_sli -I/usr/matlab/v8.4/toolbox/dspblks/include -I/usr/matlab/v8.4/toolbox/simscape/include/compiler/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/sli/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/utils  -I/usr/opalrt/v11.0.7.582/common/include -I/usr/opalrt/v11.0.7.582/common/include_target -I/usr/opalrt/v11.0.7.582/RT-LAB/include    -I_sharedutils  /usr/matlab/v8.4/rtw/c/src/rt_logging.c
-opicc -c  -O2 -xHost -falign-functions=2 -diag-disable remark,warn,cpu-dispatch    -DUSE_RTMODEL -DMODEL=my_pv_system_1_sm_master -DRT=RT -DNUMST=2 -DTID01EQ=1 -DNCSTATES=0 -DMT=0 -DTERMFCN=1 -DMULTITASKING=0 -D_SIMULINK -DRTLAB -DOP_MATLABR2014B	 -DMAT_FILE=1 -DCLASSIC_INTERFACE=1 -DONESTEPFCN=0 -DMULTI_INSTANCE_CODE=0 -DUNIX -I/usr/opalrt/externals/include  -I. -I/usr/matlab/v8.4/simulink/include -I/usr/matlab/v8.4/extern/include -I/usr/matlab/v8.4/rtw/c/src -I/usr/matlab/v8.4/rtw/c/src/matrixmath -I/usr/matlab/v8.4/rtw/c/libsrc  -I/usr/matlab/v8.4/toolbox/simscape/include/drive -I/usr/matlab/v8.4/toolbox/simscape/include/mech -I/usr/matlab/v8.4/toolbox/simscape/include/foundation -I/usr/matlab/v8.4/toolbox/simscape/include/network_engine -I/usr/matlab/v8.4/toolbox/simscape/include/ne_sli -I/usr/matlab/v8.4/toolbox/dspblks/include -I/usr/matlab/v8.4/toolbox/simscape/include/compiler/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/sli/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/utils  -I/usr/opalrt/v11.0.7.582/common/include -I/usr/opalrt/v11.0.7.582/common/include_target -I/usr/opalrt/v11.0.7.582/RT-LAB/include    -I_sharedutils  rt_nonfinite.c
-opicc -c  -O2 -xHost -falign-functions=2 -diag-disable remark,warn,cpu-dispatch    -DUSE_RTMODEL -DMODEL=my_pv_system_1_sm_master -DRT=RT -DNUMST=2 -DTID01EQ=1 -DNCSTATES=0 -DMT=0 -DTERMFCN=1 -DMULTITASKING=0 -D_SIMULINK -DRTLAB -DOP_MATLABR2014B	 -DMAT_FILE=1 -DCLASSIC_INTERFACE=1 -DONESTEPFCN=0 -DMULTI_INSTANCE_CODE=0 -DUNIX -I/usr/opalrt/externals/include  -I. -I/usr/matlab/v8.4/simulink/include -I/usr/matlab/v8.4/extern/include -I/usr/matlab/v8.4/rtw/c/src -I/usr/matlab/v8.4/rtw/c/src/matrixmath -I/usr/matlab/v8.4/rtw/c/libsrc  -I/usr/matlab/v8.4/toolbox/simscape/include/drive -I/usr/matlab/v8.4/toolbox/simscape/include/mech -I/usr/matlab/v8.4/toolbox/simscape/include/foundation -I/usr/matlab/v8.4/toolbox/simscape/include/network_engine -I/usr/matlab/v8.4/toolbox/simscape/include/ne_sli -I/usr/matlab/v8.4/toolbox/dspblks/include -I/usr/matlab/v8.4/toolbox/simscape/include/compiler/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/sli/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/utils  -I/usr/opalrt/v11.0.7.582/common/include -I/usr/opalrt/v11.0.7.582/common/include_target -I/usr/opalrt/v11.0.7.582/RT-LAB/include    -I_sharedutils  /usr/matlab/v8.4/rtw/c/src/rt_printf.c
-opicc -c  -O2 -xHost -falign-functions=2 -diag-disable remark,warn,cpu-dispatch    -DUSE_RTMODEL -DMODEL=my_pv_system_1_sm_master -DRT=RT -DNUMST=2 -DTID01EQ=1 -DNCSTATES=0 -DMT=0 -DTERMFCN=1 -DMULTITASKING=0 -D_SIMULINK -DRTLAB -DOP_MATLABR2014B	 -DMAT_FILE=1 -DCLASSIC_INTERFACE=1 -DONESTEPFCN=0 -DMULTI_INSTANCE_CODE=0 -DUNIX -I/usr/opalrt/externals/include  -I. -I/usr/matlab/v8.4/simulink/include -I/usr/matlab/v8.4/extern/include -I/usr/matlab/v8.4/rtw/c/src -I/usr/matlab/v8.4/rtw/c/src/matrixmath -I/usr/matlab/v8.4/rtw/c/libsrc  -I/usr/matlab/v8.4/toolbox/simscape/include/drive -I/usr/matlab/v8.4/toolbox/simscape/include/mech -I/usr/matlab/v8.4/toolbox/simscape/include/foundation -I/usr/matlab/v8.4/toolbox/simscape/include/network_engine -I/usr/matlab/v8.4/toolbox/simscape/include/ne_sli -I/usr/matlab/v8.4/toolbox/dspblks/include -I/usr/matlab/v8.4/toolbox/simscape/include/compiler/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/sli/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/utils  -I/usr/opalrt/v11.0.7.582/common/include -I/usr/opalrt/v11.0.7.582/common/include_target -I/usr/opalrt/v11.0.7.582/RT-LAB/include    -I_sharedutils  /usr/matlab/v8.4/rtw/c/src/rt_sim.c
+opicc -c  -O2 -xHost -falign-functions=2 -diag-disable remark,warn,cpu-dispatch    -DUSE_RTMODEL -DMODEL=my_pv_system_1_sm_master -DRT=RT -DNUMST=2 -DTID01EQ=1 -DNCSTATES=2 -DMT=0 -DTERMFCN=1 -DMULTITASKING=0 -D_SIMULINK -DRTLAB -DOP_MATLABR2014B	 -DMAT_FILE=1 -DCLASSIC_INTERFACE=1 -DONESTEPFCN=0 -DMULTI_INSTANCE_CODE=0 -DUNIX -I/usr/opalrt/externals/include  -I. -I/usr/matlab/v8.4/simulink/include -I/usr/matlab/v8.4/extern/include -I/usr/matlab/v8.4/rtw/c/src -I/usr/matlab/v8.4/rtw/c/src/matrixmath -I/usr/matlab/v8.4/rtw/c/libsrc  -I/usr/matlab/v8.4/toolbox/simscape/include/drive -I/usr/matlab/v8.4/toolbox/simscape/include/mech -I/usr/matlab/v8.4/toolbox/simscape/include/foundation -I/usr/matlab/v8.4/toolbox/simscape/include/network_engine -I/usr/matlab/v8.4/toolbox/simscape/include/ne_sli -I/usr/matlab/v8.4/toolbox/dspblks/include -I/usr/matlab/v8.4/toolbox/simscape/include/compiler/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/sli/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/utils  -I/usr/opalrt/v11.0.7.582/common/include -I/usr/opalrt/v11.0.7.582/common/include_target -I/usr/opalrt/v11.0.7.582/RT-LAB/include    -I_sharedutils  model_main.c
+opicc -c  -O2 -xHost -falign-functions=2 -diag-disable remark,warn,cpu-dispatch    -DUSE_RTMODEL -DMODEL=my_pv_system_1_sm_master -DRT=RT -DNUMST=2 -DTID01EQ=1 -DNCSTATES=2 -DMT=0 -DTERMFCN=1 -DMULTITASKING=0 -D_SIMULINK -DRTLAB -DOP_MATLABR2014B	 -DMAT_FILE=1 -DCLASSIC_INTERFACE=1 -DONESTEPFCN=0 -DMULTI_INSTANCE_CODE=0 -DUNIX -I/usr/opalrt/externals/include  -I. -I/usr/matlab/v8.4/simulink/include -I/usr/matlab/v8.4/extern/include -I/usr/matlab/v8.4/rtw/c/src -I/usr/matlab/v8.4/rtw/c/src/matrixmath -I/usr/matlab/v8.4/rtw/c/libsrc  -I/usr/matlab/v8.4/toolbox/simscape/include/drive -I/usr/matlab/v8.4/toolbox/simscape/include/mech -I/usr/matlab/v8.4/toolbox/simscape/include/foundation -I/usr/matlab/v8.4/toolbox/simscape/include/network_engine -I/usr/matlab/v8.4/toolbox/simscape/include/ne_sli -I/usr/matlab/v8.4/toolbox/dspblks/include -I/usr/matlab/v8.4/toolbox/simscape/include/compiler/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/sli/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/utils  -I/usr/opalrt/v11.0.7.582/common/include -I/usr/opalrt/v11.0.7.582/common/include_target -I/usr/opalrt/v11.0.7.582/RT-LAB/include    -I_sharedutils  my_pv_system_1_sm_master.c
+opicc -c  -O2 -xHost -falign-functions=2 -diag-disable remark,warn,cpu-dispatch    -DUSE_RTMODEL -DMODEL=my_pv_system_1_sm_master -DRT=RT -DNUMST=2 -DTID01EQ=1 -DNCSTATES=2 -DMT=0 -DTERMFCN=1 -DMULTITASKING=0 -D_SIMULINK -DRTLAB -DOP_MATLABR2014B	 -DMAT_FILE=1 -DCLASSIC_INTERFACE=1 -DONESTEPFCN=0 -DMULTI_INSTANCE_CODE=0 -DUNIX -I/usr/opalrt/externals/include  -I. -I/usr/matlab/v8.4/simulink/include -I/usr/matlab/v8.4/extern/include -I/usr/matlab/v8.4/rtw/c/src -I/usr/matlab/v8.4/rtw/c/src/matrixmath -I/usr/matlab/v8.4/rtw/c/libsrc  -I/usr/matlab/v8.4/toolbox/simscape/include/drive -I/usr/matlab/v8.4/toolbox/simscape/include/mech -I/usr/matlab/v8.4/toolbox/simscape/include/foundation -I/usr/matlab/v8.4/toolbox/simscape/include/network_engine -I/usr/matlab/v8.4/toolbox/simscape/include/ne_sli -I/usr/matlab/v8.4/toolbox/dspblks/include -I/usr/matlab/v8.4/toolbox/simscape/include/compiler/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/sli/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/utils  -I/usr/opalrt/v11.0.7.582/common/include -I/usr/opalrt/v11.0.7.582/common/include_target -I/usr/opalrt/v11.0.7.582/RT-LAB/include    -I_sharedutils  my_pv_system_1_sm_master_data.c
+opicc -c  -O2 -xHost -falign-functions=2 -diag-disable remark,warn,cpu-dispatch    -DUSE_RTMODEL -DMODEL=my_pv_system_1_sm_master -DRT=RT -DNUMST=2 -DTID01EQ=1 -DNCSTATES=2 -DMT=0 -DTERMFCN=1 -DMULTITASKING=0 -D_SIMULINK -DRTLAB -DOP_MATLABR2014B	 -DMAT_FILE=1 -DCLASSIC_INTERFACE=1 -DONESTEPFCN=0 -DMULTI_INSTANCE_CODE=0 -DUNIX -I/usr/opalrt/externals/include  -I. -I/usr/matlab/v8.4/simulink/include -I/usr/matlab/v8.4/extern/include -I/usr/matlab/v8.4/rtw/c/src -I/usr/matlab/v8.4/rtw/c/src/matrixmath -I/usr/matlab/v8.4/rtw/c/libsrc  -I/usr/matlab/v8.4/toolbox/simscape/include/drive -I/usr/matlab/v8.4/toolbox/simscape/include/mech -I/usr/matlab/v8.4/toolbox/simscape/include/foundation -I/usr/matlab/v8.4/toolbox/simscape/include/network_engine -I/usr/matlab/v8.4/toolbox/simscape/include/ne_sli -I/usr/matlab/v8.4/toolbox/dspblks/include -I/usr/matlab/v8.4/toolbox/simscape/include/compiler/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/sli/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/utils  -I/usr/opalrt/v11.0.7.582/common/include -I/usr/opalrt/v11.0.7.582/common/include_target -I/usr/opalrt/v11.0.7.582/RT-LAB/include    -I_sharedutils  rtGetInf.c
+opicc -c  -O2 -xHost -falign-functions=2 -diag-disable remark,warn,cpu-dispatch    -DUSE_RTMODEL -DMODEL=my_pv_system_1_sm_master -DRT=RT -DNUMST=2 -DTID01EQ=1 -DNCSTATES=2 -DMT=0 -DTERMFCN=1 -DMULTITASKING=0 -D_SIMULINK -DRTLAB -DOP_MATLABR2014B	 -DMAT_FILE=1 -DCLASSIC_INTERFACE=1 -DONESTEPFCN=0 -DMULTI_INSTANCE_CODE=0 -DUNIX -I/usr/opalrt/externals/include  -I. -I/usr/matlab/v8.4/simulink/include -I/usr/matlab/v8.4/extern/include -I/usr/matlab/v8.4/rtw/c/src -I/usr/matlab/v8.4/rtw/c/src/matrixmath -I/usr/matlab/v8.4/rtw/c/libsrc  -I/usr/matlab/v8.4/toolbox/simscape/include/drive -I/usr/matlab/v8.4/toolbox/simscape/include/mech -I/usr/matlab/v8.4/toolbox/simscape/include/foundation -I/usr/matlab/v8.4/toolbox/simscape/include/network_engine -I/usr/matlab/v8.4/toolbox/simscape/include/ne_sli -I/usr/matlab/v8.4/toolbox/dspblks/include -I/usr/matlab/v8.4/toolbox/simscape/include/compiler/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/sli/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/utils  -I/usr/opalrt/v11.0.7.582/common/include -I/usr/opalrt/v11.0.7.582/common/include_target -I/usr/opalrt/v11.0.7.582/RT-LAB/include    -I_sharedutils  rtGetNaN.c
+opicc -c  -O2 -xHost -falign-functions=2 -diag-disable remark,warn,cpu-dispatch    -DUSE_RTMODEL -DMODEL=my_pv_system_1_sm_master -DRT=RT -DNUMST=2 -DTID01EQ=1 -DNCSTATES=2 -DMT=0 -DTERMFCN=1 -DMULTITASKING=0 -D_SIMULINK -DRTLAB -DOP_MATLABR2014B	 -DMAT_FILE=1 -DCLASSIC_INTERFACE=1 -DONESTEPFCN=0 -DMULTI_INSTANCE_CODE=0 -DUNIX -I/usr/opalrt/externals/include  -I. -I/usr/matlab/v8.4/simulink/include -I/usr/matlab/v8.4/extern/include -I/usr/matlab/v8.4/rtw/c/src -I/usr/matlab/v8.4/rtw/c/src/matrixmath -I/usr/matlab/v8.4/rtw/c/libsrc  -I/usr/matlab/v8.4/toolbox/simscape/include/drive -I/usr/matlab/v8.4/toolbox/simscape/include/mech -I/usr/matlab/v8.4/toolbox/simscape/include/foundation -I/usr/matlab/v8.4/toolbox/simscape/include/network_engine -I/usr/matlab/v8.4/toolbox/simscape/include/ne_sli -I/usr/matlab/v8.4/toolbox/dspblks/include -I/usr/matlab/v8.4/toolbox/simscape/include/compiler/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/sli/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/utils  -I/usr/opalrt/v11.0.7.582/common/include -I/usr/opalrt/v11.0.7.582/common/include_target -I/usr/opalrt/v11.0.7.582/RT-LAB/include    -I_sharedutils  /usr/matlab/v8.4/rtw/c/src/rt_logging.c
+opicc -c  -O2 -xHost -falign-functions=2 -diag-disable remark,warn,cpu-dispatch    -DUSE_RTMODEL -DMODEL=my_pv_system_1_sm_master -DRT=RT -DNUMST=2 -DTID01EQ=1 -DNCSTATES=2 -DMT=0 -DTERMFCN=1 -DMULTITASKING=0 -D_SIMULINK -DRTLAB -DOP_MATLABR2014B	 -DMAT_FILE=1 -DCLASSIC_INTERFACE=1 -DONESTEPFCN=0 -DMULTI_INSTANCE_CODE=0 -DUNIX -I/usr/opalrt/externals/include  -I. -I/usr/matlab/v8.4/simulink/include -I/usr/matlab/v8.4/extern/include -I/usr/matlab/v8.4/rtw/c/src -I/usr/matlab/v8.4/rtw/c/src/matrixmath -I/usr/matlab/v8.4/rtw/c/libsrc  -I/usr/matlab/v8.4/toolbox/simscape/include/drive -I/usr/matlab/v8.4/toolbox/simscape/include/mech -I/usr/matlab/v8.4/toolbox/simscape/include/foundation -I/usr/matlab/v8.4/toolbox/simscape/include/network_engine -I/usr/matlab/v8.4/toolbox/simscape/include/ne_sli -I/usr/matlab/v8.4/toolbox/dspblks/include -I/usr/matlab/v8.4/toolbox/simscape/include/compiler/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/sli/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/utils  -I/usr/opalrt/v11.0.7.582/common/include -I/usr/opalrt/v11.0.7.582/common/include_target -I/usr/opalrt/v11.0.7.582/RT-LAB/include    -I_sharedutils  rt_nonfinite.c
+opicc -c  -O2 -xHost -falign-functions=2 -diag-disable remark,warn,cpu-dispatch    -DUSE_RTMODEL -DMODEL=my_pv_system_1_sm_master -DRT=RT -DNUMST=2 -DTID01EQ=1 -DNCSTATES=2 -DMT=0 -DTERMFCN=1 -DMULTITASKING=0 -D_SIMULINK -DRTLAB -DOP_MATLABR2014B	 -DMAT_FILE=1 -DCLASSIC_INTERFACE=1 -DONESTEPFCN=0 -DMULTI_INSTANCE_CODE=0 -DUNIX -I/usr/opalrt/externals/include  -I. -I/usr/matlab/v8.4/simulink/include -I/usr/matlab/v8.4/extern/include -I/usr/matlab/v8.4/rtw/c/src -I/usr/matlab/v8.4/rtw/c/src/matrixmath -I/usr/matlab/v8.4/rtw/c/libsrc  -I/usr/matlab/v8.4/toolbox/simscape/include/drive -I/usr/matlab/v8.4/toolbox/simscape/include/mech -I/usr/matlab/v8.4/toolbox/simscape/include/foundation -I/usr/matlab/v8.4/toolbox/simscape/include/network_engine -I/usr/matlab/v8.4/toolbox/simscape/include/ne_sli -I/usr/matlab/v8.4/toolbox/dspblks/include -I/usr/matlab/v8.4/toolbox/simscape/include/compiler/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/sli/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/utils  -I/usr/opalrt/v11.0.7.582/common/include -I/usr/opalrt/v11.0.7.582/common/include_target -I/usr/opalrt/v11.0.7.582/RT-LAB/include    -I_sharedutils  /usr/matlab/v8.4/rtw/c/src/rt_printf.c
+opicc -c  -O2 -xHost -falign-functions=2 -diag-disable remark,warn,cpu-dispatch    -DUSE_RTMODEL -DMODEL=my_pv_system_1_sm_master -DRT=RT -DNUMST=2 -DTID01EQ=1 -DNCSTATES=2 -DMT=0 -DTERMFCN=1 -DMULTITASKING=0 -D_SIMULINK -DRTLAB -DOP_MATLABR2014B	 -DMAT_FILE=1 -DCLASSIC_INTERFACE=1 -DONESTEPFCN=0 -DMULTI_INSTANCE_CODE=0 -DUNIX -I/usr/opalrt/externals/include  -I. -I/usr/matlab/v8.4/simulink/include -I/usr/matlab/v8.4/extern/include -I/usr/matlab/v8.4/rtw/c/src -I/usr/matlab/v8.4/rtw/c/src/matrixmath -I/usr/matlab/v8.4/rtw/c/libsrc  -I/usr/matlab/v8.4/toolbox/simscape/include/drive -I/usr/matlab/v8.4/toolbox/simscape/include/mech -I/usr/matlab/v8.4/toolbox/simscape/include/foundation -I/usr/matlab/v8.4/toolbox/simscape/include/network_engine -I/usr/matlab/v8.4/toolbox/simscape/include/ne_sli -I/usr/matlab/v8.4/toolbox/dspblks/include -I/usr/matlab/v8.4/toolbox/simscape/include/compiler/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/sli/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/utils  -I/usr/opalrt/v11.0.7.582/common/include -I/usr/opalrt/v11.0.7.582/common/include_target -I/usr/opalrt/v11.0.7.582/RT-LAB/include    -I_sharedutils  /usr/matlab/v8.4/rtw/c/src/rt_sim.c
 ### Linking ...
 opicpc  -Wl,-rpath='/usr/opalrt/v11.0.7.582/common/bin' -Wl,'-rpath=/usr/opalrt/v11.0.7.582/common/bin/x32' -Wl,-rpath='/opt/intel/Compiler/11.1/072/lib/ia32' -Wl,-rpath='/opt/intel/Compiler/11.1/056/lib/ia32' -diag-disable remark -L. -L/usr/opalrt/v11.0.7.582/RT-LAB/lib -L/usr/opalrt/v11.0.7.582/common/lib -L/usr/opalrt/v11.0.7.582/common/lib/redhawk -L/usr/opalrt/v11.0.7.582/common/bin -L/usr/opalrt/v11.0.7.582/common/bin/x32 -L/usr/opalrt/externals/lib   -L/usr/matlab/v8.4/toolbox/dspblks/lib/redhawk	 -L/usr/matlab/v8.4/toolbox/simscape/lib/redhawk   -o my_pv_system_1_sm_master model_main.o my_pv_system_1_sm_master.o my_pv_system_1_sm_master_data.o rtGetInf.o rtGetNaN.o rt_logging.o rt_nonfinite.o rt_printf.o rt_sim.o      -lOpalSimCore -lSimCoreLib -lSyncExchangerLib -lConnectionLib -lConnectionFactoryLib -lOpalSfunR2014b -lOpalR2014b -lBlocksRT-2014b -lOpalCore -lOpalOhci -lOpalCore -llicenseRH32 -lSimulink -lInfrastructure  -lNetwork -lKLU -lNumeric -lFramework -lSystem -lMatio -luuid -lpthread -lOpalSimCore -lSimCoreLib -lSyncExchangerLib -lConnectionLib -lConnectionFactoryLib -lOpalUtils -ldspblks -lsimscape -lpthread -lm -ldl -lutil -lrt     /usr/matlab/v8.4/rtw/c/libsrc/rtwlibr_redhawk.a 
 chmod a+x my_pv_system_1_sm_master
 ### Created executable: my_pv_system_1_sm_master
 
-my_pv_system_1_sm_master : Building subsystem duration : 00h:00m:09s
+my_pv_system_1_sm_master : Building subsystem duration : 00h:00m:02s
 
 Executing script /usr/opalrt/v11.0.7.582/common/python/rtlab/global/target_subsys_precompile.py ... done
 
@@ -286,7 +331,7 @@ chmod a+x my_pv_system_3_ss_controller
 
 my_pv_system_3_ss_controller : Building subsystem duration : 00h:00m:03s
 
-Building model total duration : 00h:00m:12s
+Building model total duration : 00h:00m:05s
 -------------------- Completed successfully --------------------
 
 -------------------- Transferring the built model --------------------
@@ -295,11 +340,11 @@ Transferring in binary mode /home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_
 Transferring in ascii mode /home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_workspace/pv_inverter/models/my_pv_system/compilation_target_report.xml ... OK.
 Transferring in binary mode /home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_workspace/pv_inverter/models/my_pv_system/my_pv_system_ss_controller/my_pv_system_3_ss_controller ... OK.
 
-File transfer duration : 00h:00m:12s
+File transfer duration : 00h:00m:01s
 -------------------- Completed successfully --------------------
 
-End at : Tuesday, September 06, 2016, 11:32:55
+End at : Wednesday, September 07, 2016, 16:46:45
 
-Compilation duration : 00h:01m:58s
+Compilation duration : 00h:01m:20s
 
 Updating status for next build...OK

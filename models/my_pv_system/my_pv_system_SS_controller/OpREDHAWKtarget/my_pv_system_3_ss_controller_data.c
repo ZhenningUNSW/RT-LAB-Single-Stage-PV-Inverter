@@ -3,9 +3,9 @@
  *
  * Code generation for model "my_pv_system_3_ss_controller".
  *
- * Model version              : 1.189
+ * Model version              : 1.207
  * Simulink Coder version : 8.7 (R2014b) 08-Sep-2014
- * C source code generated on : Tue Sep 06 11:32:06 2016
+ * C source code generated on : Wed Sep 07 16:46:24 2016
  *
  * Target selection: rtlab_rtmodel.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -263,7 +263,7 @@ P_my_pv_system_3_ss_controller_T my_pv_system_3_ss_controller_P = {
    */
   { 0.0, 0.0 },
 
-  /*  Computed Parameter: SFunction_P1_Size_aw
+  /*  Computed Parameter: SFunction_P1_Size_e
    * Referenced by: '<S90>/S-Function'
    */
   { 1.0, 1.0 },
@@ -279,7 +279,7 @@ P_my_pv_system_3_ss_controller_T my_pv_system_3_ss_controller_P = {
                                         * Referenced by: '<S90>/S-Function'
                                         */
 
-  /*  Computed Parameter: SFunction_P3_Size_b
+  /*  Computed Parameter: SFunction_P3_Size_e
    * Referenced by: '<S90>/S-Function'
    */
   { 1.0, 1.0 },
@@ -354,7 +354,7 @@ P_my_pv_system_3_ss_controller_T my_pv_system_3_ss_controller_P = {
     109.0, 101.0, 44.0, 97.0, 110.0, 111.0, 116.0, 104.0, 101.0, 114.0, 95.0,
     101.0, 118.0, 101.0, 110.0, 116.0, 95.0, 110.0, 97.0, 109.0, 101.0 },
 
-  /*  Computed Parameter: SFunction_P1_Size_m
+  /*  Computed Parameter: SFunction_P1_Size_h
    * Referenced by: '<S89>/S-Function'
    */
   { 1.0, 1.0 },
@@ -386,11 +386,11 @@ P_my_pv_system_3_ss_controller_T my_pv_system_3_ss_controller_P = {
    * Referenced by: '<S91>/S-Function'
    */
   { 1.0, 1.0 },
-  11.0,                                /* Expression: Data_width
+  12.0,                                /* Expression: Data_width
                                         * Referenced by: '<S91>/S-Function'
                                         */
 
-  /*  Computed Parameter: SFunction_P3_Size_a
+  /*  Computed Parameter: SFunction_P3_Size_b
    * Referenced by: '<S91>/S-Function'
    */
   { 1.0, 1.0 },
@@ -658,7 +658,7 @@ P_my_pv_system_3_ss_controller_T my_pv_system_3_ss_controller_P = {
                                         * Referenced by: '<S30>/S-Function'
                                         */
 
-  /*  Computed Parameter: SFunction_P3_Size_e
+  /*  Computed Parameter: SFunction_P3_Size_ep
    * Referenced by: '<S30>/S-Function'
    */
   { 1.0, 1.0 },

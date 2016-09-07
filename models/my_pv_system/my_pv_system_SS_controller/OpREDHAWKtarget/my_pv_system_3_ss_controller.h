@@ -3,9 +3,9 @@
  *
  * Code generation for model "my_pv_system_3_ss_controller".
  *
- * Model version              : 1.189
+ * Model version              : 1.207
  * Simulink Coder version : 8.7 (R2014b) 08-Sep-2014
- * C source code generated on : Tue Sep 06 11:32:06 2016
+ * C source code generated on : Wed Sep 07 16:46:24 2016
  *
  * Target selection: rtlab_rtmodel.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -799,11 +799,11 @@ typedef struct {
   real_T Gate[4];                      /* '<S2>/Memory' */
   real_T Iph;                          /* '<S2>/Memory' */
   real_T Io;                           /* '<S2>/Memory' */
-  real_T OpMonitor_o1;                 /* '<S2>/OpMonitor' */
-  real_T OpMonitor_o2;                 /* '<S2>/OpMonitor' */
-  real_T OpMonitor_o3;                 /* '<S2>/OpMonitor' */
-  real_T OpMonitor_o4;                 /* '<S2>/OpMonitor' */
-  real_T SFunction_h[11];              /* '<S91>/S-Function' */
+  real_T Computationtime;              /* '<S2>/OpMonitor' */
+  real_T Realstepsize;                 /* '<S2>/OpMonitor' */
+  real_T Idletime;                     /* '<S2>/OpMonitor' */
+  real_T Overruntimes;                 /* '<S2>/OpMonitor' */
+  real_T SFunction_g[12];              /* '<S91>/S-Function' */
   real_T RateTransition1;              /* '<S2>/Rate Transition1' */
   real_T Apu;                          /* '<S11>/A->pu' */
   real_T UnitDelay;                    /* '<S31>/Unit Delay' */
@@ -1382,22 +1382,22 @@ struct P_my_pv_system_3_ss_controller_T_ {
   real_T dq_Y0_p[2];                   /* Expression: [0,0]
                                         * Referenced by: '<S61>/dq'
                                         */
-  real_T SFunction_P1_Size_aw[2];      /* Computed Parameter: SFunction_P1_Size_aw
+  real_T SFunction_P1_Size_e[2];       /* Computed Parameter: SFunction_P1_Size_e
                                         * Referenced by: '<S90>/S-Function'
                                         */
-  real_T SFunction_P1_p;               /* Expression: dest
+  real_T SFunction_P1_az;              /* Expression: dest
                                         * Referenced by: '<S90>/S-Function'
                                         */
   real_T SFunction_P2_Size_p[2];       /* Computed Parameter: SFunction_P2_Size_p
                                         * Referenced by: '<S90>/S-Function'
                                         */
-  real_T SFunction_P2_b;               /* Expression: priority2
+  real_T SFunction_P2_i;               /* Expression: priority2
                                         * Referenced by: '<S90>/S-Function'
                                         */
-  real_T SFunction_P3_Size_b[2];       /* Computed Parameter: SFunction_P3_Size_b
+  real_T SFunction_P3_Size_e[2];       /* Computed Parameter: SFunction_P3_Size_e
                                         * Referenced by: '<S90>/S-Function'
                                         */
-  real_T SFunction_P3_n;               /* Expression: st
+  real_T SFunction_P3_l;               /* Expression: st
                                         * Referenced by: '<S90>/S-Function'
                                         */
   real_T SFunction1_Value;             /* Expression: 0
@@ -1451,10 +1451,10 @@ struct P_my_pv_system_3_ss_controller_T_ {
   real_T OpMonitor_P6[32];             /* Computed Parameter: OpMonitor_P6
                                         * Referenced by: '<S2>/OpMonitor'
                                         */
-  real_T SFunction_P1_Size_m[2];       /* Computed Parameter: SFunction_P1_Size_m
+  real_T SFunction_P1_Size_h[2];       /* Computed Parameter: SFunction_P1_Size_h
                                         * Referenced by: '<S89>/S-Function'
                                         */
-  real_T SFunction_P1_m;               /* Expression: Acqu_group
+  real_T SFunction_P1_h;               /* Expression: Acqu_group
                                         * Referenced by: '<S89>/S-Function'
                                         */
   real_T Constant1_Value;              /* Expression: 8.55
@@ -1472,19 +1472,19 @@ struct P_my_pv_system_3_ss_controller_T_ {
   real_T SFunction_P1_Size_o[2];       /* Computed Parameter: SFunction_P1_Size_o
                                         * Referenced by: '<S91>/S-Function'
                                         */
-  real_T SFunction_P1_g;               /* Expression: src
+  real_T SFunction_P1_d;               /* Expression: src
                                         * Referenced by: '<S91>/S-Function'
                                         */
   real_T SFunction_P2_Size_m[2];       /* Computed Parameter: SFunction_P2_Size_m
                                         * Referenced by: '<S91>/S-Function'
                                         */
-  real_T SFunction_P2_k;               /* Expression: Data_width
+  real_T SFunction_P2_d;               /* Expression: Data_width
                                         * Referenced by: '<S91>/S-Function'
                                         */
-  real_T SFunction_P3_Size_a[2];       /* Computed Parameter: SFunction_P3_Size_a
+  real_T SFunction_P3_Size_b[2];       /* Computed Parameter: SFunction_P3_Size_b
                                         * Referenced by: '<S91>/S-Function'
                                         */
-  real_T SFunction_P3_l;               /* Expression: st
+  real_T SFunction_P3_a;               /* Expression: st
                                         * Referenced by: '<S91>/S-Function'
                                         */
   real_T UnitDelay_InitialCondition_a; /* Expression: sps.Finit
@@ -1637,7 +1637,7 @@ struct P_my_pv_system_3_ss_controller_T_ {
   real_T SFunction_P2_Size_f[2];       /* Computed Parameter: SFunction_P2_Size_f
                                         * Referenced by: '<S28>/S-Function'
                                         */
-  real_T SFunction_P2_d;               /* Expression: Ts
+  real_T SFunction_P2_dc;              /* Expression: Ts
                                         * Referenced by: '<S28>/S-Function'
                                         */
   real_T SFunction_P3_Size_f[2];       /* Computed Parameter: SFunction_P3_Size_f
@@ -1715,7 +1715,7 @@ struct P_my_pv_system_3_ss_controller_T_ {
   real_T SFunction_P2_ge;              /* Expression: Ts
                                         * Referenced by: '<S30>/S-Function'
                                         */
-  real_T SFunction_P3_Size_e[2];       /* Computed Parameter: SFunction_P3_Size_e
+  real_T SFunction_P3_Size_ep[2];      /* Computed Parameter: SFunction_P3_Size_ep
                                         * Referenced by: '<S30>/S-Function'
                                         */
   real_T SFunction_P3_p;               /* Expression: InitialValue
@@ -1751,7 +1751,7 @@ struct P_my_pv_system_3_ss_controller_T_ {
   real_T SFunction_P1_Size_ol[2];      /* Computed Parameter: SFunction_P1_Size_ol
                                         * Referenced by: '<S47>/S-Function'
                                         */
-  real_T SFunction_P1_h;               /* Expression: MaxDelay
+  real_T SFunction_P1_hg;              /* Expression: MaxDelay
                                         * Referenced by: '<S47>/S-Function'
                                         */
   real_T SFunction_P2_Size_h[2];       /* Computed Parameter: SFunction_P2_Size_h
@@ -1763,7 +1763,7 @@ struct P_my_pv_system_3_ss_controller_T_ {
   real_T SFunction_P3_Size_j[2];       /* Computed Parameter: SFunction_P3_Size_j
                                         * Referenced by: '<S47>/S-Function'
                                         */
-  real_T SFunction_P3_nb;              /* Expression: InitialValue
+  real_T SFunction_P3_n;               /* Expression: InitialValue
                                         * Referenced by: '<S47>/S-Function'
                                         */
   real_T SFunction_P4_Size_d[2];       /* Computed Parameter: SFunction_P4_Size_d
