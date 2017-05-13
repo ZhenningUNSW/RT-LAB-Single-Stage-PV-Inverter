@@ -30,17 +30,13 @@
                 <tr>
                     <td>
                         <div class="bOut" onmouseover="swapClass(this, 'bOver')" onmouseout="swapClass(this, 'bOut')">
-                            <xsl:attribute name="onclick">
-                                expandAllFromString('<xsl:value-of select="@name"/>')
-                            </xsl:attribute>
+                            <xsl:attribute name="onclick">expandAllFromString('<xsl:value-of select="@name"/>')</xsl:attribute>
                             Expand
                         </div>
                     </td>
                     <td>
                         <div class="bOut" onmouseover="swapClass(this, 'bOver')" onmouseout="swapClass(this, 'bOut')">
-                            <xsl:attribute name="onclick">
-                                collapseAllFromString('<xsl:value-of select="@name"/>')
-                            </xsl:attribute>                                                    
+                            <xsl:attribute name="onclick">collapseAllFromString('<xsl:value-of select="@name"/>')</xsl:attribute>                                                    
                         Minimize
                         </div>
                     </td>
@@ -52,9 +48,9 @@
         </table>
         <div style="padding-top: 8px;">
         <xsl:attribute name="id"><xsl:value-of select="@name"/></xsl:attribute>
+        <xsl:apply-templates select="item"/>
         <xsl:apply-templates select="property"/>
         <xsl:apply-templates select="textlog"/>
-        <xsl:apply-templates select="item"/>
         </div>
     </xsl:if>
 
@@ -85,14 +81,10 @@
             </xsl:attribute>
 
             <!-- Add openImage attribute to DIV -->
-            <xsl:attribute name="openImage">
-                images/openitem.gif
-            </xsl:attribute>
+            <xsl:attribute name="openImage">images/openitem.gif</xsl:attribute>
             
             <!-- Add closeImage attribute to DIV -->
-            <xsl:attribute name="closeImage">
-                images/closeitem.gif
-            </xsl:attribute>
+            <xsl:attribute name="closeImage">images/closeitem.gif</xsl:attribute>
 
             <!-- Add table -->  
             <table border="0" cellspacing="0" cellpadding="0">
@@ -130,9 +122,9 @@
             </table>
             
             <!-- Display sub element -->
+            <xsl:apply-templates select="item"/>
             <xsl:apply-templates select="property"/>
             <xsl:apply-templates select="textlog"/>
-            <xsl:apply-templates select="item"/>
 
         </DIV>
     </xsl:if>
@@ -196,7 +188,7 @@
 
 <!-- TEXTLOG -->
 <xsl:template match="textlog">
-  <DIV CLASS="textlog" onclick="cancelBuble(event);" onselectstart="return false" ondragstart="return false">
+  <DIV CLASS="textlog" onclick="cancelBuble(event);" onselectstart="cancelBuble(event);" ondragstart="return false">
     <!-- Add open attribute to DIV -->
     <xsl:choose>
         <xsl:when test="$DefaultTreeMode='minimize'">
@@ -211,7 +203,7 @@
     <!-- Add style attribute to DIV -->
     <xsl:attribute name="STYLE">
       padding-left: 20px;
-      cursor: pointer;
+      cursor: text;
       <xsl:if test="(count(ancestor::item)&gt;2) and ($DefaultTreeMode='minimize')">
         display: none;
       </xsl:if>
@@ -220,30 +212,70 @@
     <!-- Add section -->
 
     <table>
-    <div style="padding-top: 4px; padding-right: 10px;">
-        <!-- Display log file -->
-        <xsl:call-template name="replaceBackSlashN">
-            <xsl:with-param name="string" select="."/>
-        </xsl:call-template>            
+    <div style="padding-top: 4px; padding-right: 10px;" onselectstart="return true;">
+		<!-- Display log file -->
+		<pre><xsl:call-template name="string-trim">
+			<xsl:with-param name="string" select="."/>
+		</xsl:call-template></pre>
     </div>
     </table>
   </DIV>
 </xsl:template>
 
-<xsl:template name="replaceBackSlashN">
-    <xsl:param name="string"/>
-    <xsl:choose>
-        <xsl:when test="contains($string,'&#10;')">
-            <xsl:value-of select="substring-before($string,'&#10;')"/>
-            <br/>
-            <xsl:call-template name="replaceBackSlashN">
-                <xsl:with-param name="string" select="substring-after($string,'&#10;')"/>
+<xsl:variable name="whitespace" select="'&#09;&#10;&#13; '" />
+<!-- Strips trailing whitespace characters from 'string' -->
+<xsl:template name="string-rtrim">
+    <xsl:param name="string" />
+    <xsl:param name="trim" select="$whitespace" />
+
+    <xsl:variable name="length" select="string-length($string)" />
+
+    <xsl:if test="$length &gt; 0">
+        <xsl:choose>
+            <xsl:when test="contains($trim, substring($string, $length, 1))">
+                <xsl:call-template name="string-rtrim">
+                    <xsl:with-param name="string" select="substring($string, 1, $length - 1)" />
+                    <xsl:with-param name="trim"   select="$trim" />
+                </xsl:call-template>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="$string" />
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:if>
+</xsl:template>
+<!-- Strips leading whitespace characters from 'string' -->
+<xsl:template name="string-ltrim">
+    <xsl:param name="string" />
+    <xsl:param name="trim" select="$whitespace" />
+
+    <xsl:if test="string-length($string) &gt; 0">
+        <xsl:choose>
+            <xsl:when test="contains($trim, substring($string, 1, 1))">
+                <xsl:call-template name="string-ltrim">
+                    <xsl:with-param name="string" select="substring($string, 2)" />
+                    <xsl:with-param name="trim"   select="$trim" />
+                </xsl:call-template>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="$string" />
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:if>
+</xsl:template>
+<!-- Strips leading and trailing whitespace characters from 'string' -->
+<xsl:template name="string-trim">
+    <xsl:param name="string" />
+    <xsl:param name="trim" select="$whitespace" />
+    <xsl:call-template name="string-rtrim">
+        <xsl:with-param name="string">
+            <xsl:call-template name="string-ltrim">
+                <xsl:with-param name="string" select="$string" />
+                <xsl:with-param name="trim"   select="$trim" />
             </xsl:call-template>
-        </xsl:when>
-        <xsl:otherwise>
-            <xsl:value-of select="$string"/>
-        </xsl:otherwise>
-    </xsl:choose>
+        </xsl:with-param>
+        <xsl:with-param name="trim"   select="$trim" />
+    </xsl:call-template>
 </xsl:template>
 
 </xsl:stylesheet>

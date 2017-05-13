@@ -1,0 +1,81 @@
+
+ ----------------------------------------------------------------------
+                         OPAL-RT TECHNOLOGIES                           
+
+  eHSx64 Gen3 solver netlist information: 
+ ----------------------------------------------------------------------
+
+ Netlist Name:  my_pv_sys_fpga.mdl 
+
+ FPGA clock period:  5e-09 
+ Solver desired time step:  2.50e-07 
+ Solver achievable minimum time step:  2.05e-07 
+ Solver achievable minimum number of FPGA clock cycle:      41 
+ 
+ 
+ Number of States (Inductor Current, Capacitor Voltages):  12 
+ Number of Switches:   4 
+ Number of Inputs:   3 
+ Number of Outputs:   7 
+
+
+ ----------------------------------------------------------------------
+  Further details about inputs:  
+ -------------------------------------------------
+  Index           Label                Type
+ -------------------------------------------------
+     1    U01
+14,400 V            Voltage source 
+     2        U02 IPH
+            Current source 
+     3         U03 ID
+            Current source 
+ ----------------------------------------------------------------------
+
+
+ ----------------------------------------------------------------------
+  Details about outputs:  
+ -------------------------------------------------
+  Index          Label                 Type
+ -------------------------------------------------
+     1    Y01 IPANEL I            Current measurement 
+     2    Y02 VPANEL U            Voltage measurement 
+     3       Y03 VPH U            Voltage measurement 
+     4      Y04 VINV U            Voltage measurement 
+     5     Y05 IGRID I            Current measurement 
+     6     Y06 VGRID U            Voltage measurement 
+     7        Y07 IG I            Current measurement 
+ ----------------------------------------------------------------------
+
+
+ ----------------------------------------------------------------------
+  Details about switches:  
+ ------------------------------------------------------------
+  Index         Label                 Type              Gs
+ ------------------------------------------------------------
+     1    SW01-04_01               IGBT//Diode        0.5000  
+     2    SW01-04_02               IGBT//Diode        0.5000  
+     3    SW01-04_03               IGBT//Diode        0.5000  
+     4    SW01-04_04               IGBT//Diode        0.5000  
+ ----------------------------------------------------------------------
+
+
+ ----------------------------------------------------------------------
+  Details about states:  
+ ---------------------------------------------------------------------
+  Index                              State name               Type      
+ ---------------------------------------------------------------------
+     1                               Uc_DC Link            Capacitor        
+     2                                   Il_RL1           Inductance        
+     3                                   Il_RL2           Inductance        
+     4                                   Il_RL3           Inductance        
+     5                                   Il_RL4           Inductance        
+     6                    Uc_Stray Capacitance1            Capacitor        
+     7                    Uc_Stray Capacitance2            Capacitor        
+     8                                     Uc_C            Capacitor        
+     9                                Il_Load 1           Inductance        
+    10                                Il_Load 2           Inductance        
+    11 Il_winding_1: 75-kVA Transformer (120V//120V//14.4 kV)           Inductance        
+    12 Il_Lm: 75-kVA Transformer (120V//120V//14.4 kV)           Inductance        
+ ----------------------------------------------------------------------
+

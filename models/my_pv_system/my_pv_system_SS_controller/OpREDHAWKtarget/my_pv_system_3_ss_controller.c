@@ -3,9 +3,9 @@
  *
  * Code generation for model "my_pv_system_3_ss_controller".
  *
- * Model version              : 1.207
+ * Model version              : 1.225
  * Simulink Coder version : 8.7 (R2014b) 08-Sep-2014
- * C source code generated on : Wed Sep 07 16:46:24 2016
+ * C source code generated on : Mon Feb 27 11:22:43 2017
  *
  * Target selection: rtlab_rtmodel.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -284,25 +284,25 @@ static void my_pv_system_3_ss_controller_output(void)
   real_T u0;
   real_T u2;
 
-  /* Memory: '<S1>/S-Function' */
+  /* Memory: '<S2>/S-Function' */
   my_pv_system_3_ss_controller_B.SFunction =
     my_pv_system_3_ss_controller_DW.SFunction_PreviousInput;
 
-  /* Sum: '<S1>/Sum' incorporates:
-   *  Constant: '<S1>/S-Function1'
+  /* Sum: '<S2>/Sum' incorporates:
+   *  Constant: '<S2>/S-Function1'
    */
   my_pv_system_3_ss_controller_B.Sum =
     my_pv_system_3_ss_controller_P.SFunction1_Value +
     my_pv_system_3_ss_controller_B.SFunction;
 
-  /* Stop: '<S1>/Stop Simulation' */
+  /* Stop: '<S2>/Stop Simulation' */
   if (my_pv_system_3_ss_controller_B.Sum != 0.0) {
     rtmSetStopRequested(my_pv_system_3_ss_controller_M, 1);
   }
 
-  /* End of Stop: '<S1>/Stop Simulation' */
+  /* End of Stop: '<S2>/Stop Simulation' */
 
-  /* Memory: '<S2>/Memory' */
+  /* Memory: '<S3>/Memory' */
   my_pv_system_3_ss_controller_B.Gate[0] =
     my_pv_system_3_ss_controller_DW.Memory_1_PreviousInput[0];
   my_pv_system_3_ss_controller_B.Gate[1] =
@@ -312,47 +312,47 @@ static void my_pv_system_3_ss_controller_output(void)
   my_pv_system_3_ss_controller_B.Gate[3] =
     my_pv_system_3_ss_controller_DW.Memory_1_PreviousInput[3];
 
-  /* Memory: '<S2>/Memory' */
+  /* Memory: '<S3>/Memory' */
   my_pv_system_3_ss_controller_B.Iph =
     my_pv_system_3_ss_controller_DW.Memory_2_PreviousInput;
 
-  /* Memory: '<S2>/Memory' */
+  /* Memory: '<S3>/Memory' */
   my_pv_system_3_ss_controller_B.Io =
     my_pv_system_3_ss_controller_DW.Memory_3_PreviousInput;
 
-  /* Outputs for Atomic SubSystem: '<S6>/Subsystem4' */
+  /* Outputs for Atomic SubSystem: '<S7>/Subsystem4' */
 
-  /* Level2 S-Function Block: '<S90>/S-Function' (send_rt) */
+  /* Level2 S-Function Block: '<S91>/S-Function' (send_rt) */
   {
     SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[2];
     sfcnOutputs(rts, 0);
   }
 
-  /* End of Outputs for SubSystem: '<S6>/Subsystem4' */
+  /* End of Outputs for SubSystem: '<S7>/Subsystem4' */
 
-  /* Level2 S-Function Block: '<S2>/OpMonitor' (opmonitor) */
+  /* Level2 S-Function Block: '<S3>/OpMonitor' (opmonitor) */
   {
     SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[3];
     sfcnOutputs(rts, 0);
   }
 
-  /* Level2 S-Function Block: '<S89>/S-Function' (OP_SEND) */
+  /* Level2 S-Function Block: '<S90>/S-Function' (OP_SEND) */
   {
     SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[4];
     sfcnOutputs(rts, 0);
   }
 
-  /* Level2 S-Function Block: '<S91>/S-Function' (recv_rt) */
+  /* Level2 S-Function Block: '<S92>/S-Function' (recv_rt) */
   {
     SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[5];
     sfcnOutputs(rts, 0);
   }
 
-  /* RateTransition: '<S2>/Rate Transition1' */
+  /* RateTransition: '<S3>/Rate Transition1' */
   my_pv_system_3_ss_controller_B.RateTransition1 =
     my_pv_system_3_ss_controller_B.SFunction_g[8];
 
-  /* Gain: '<S11>/A->pu' */
+  /* Gain: '<S12>/A->pu' */
   P = my_pv_system_3_ss_controller_P.InverterControl_Vnom_prim;
   dP = my_pv_system_3_ss_controller_P.InverterControl_Pnom;
   dV = P / dP;
@@ -360,11 +360,11 @@ static void my_pv_system_3_ss_controller_output(void)
   my_pv_system_3_ss_controller_B.Apu = dV *
     my_pv_system_3_ss_controller_B.RateTransition1;
 
-  /* UnitDelay: '<S31>/Unit Delay' */
+  /* UnitDelay: '<S32>/Unit Delay' */
   my_pv_system_3_ss_controller_B.UnitDelay =
     my_pv_system_3_ss_controller_DW.UnitDelay_DSTATE;
 
-  /* Saturate: '<S20>/avoid division by zero' */
+  /* Saturate: '<S21>/avoid division by zero' */
   u0 = my_pv_system_3_ss_controller_B.UnitDelay;
   dP = my_pv_system_3_ss_controller_P.avoiddivisionbyzero_LowerSat;
   u2 = my_pv_system_3_ss_controller_P.avoiddivisionbyzero_UpperSat;
@@ -376,93 +376,93 @@ static void my_pv_system_3_ss_controller_output(void)
     my_pv_system_3_ss_controller_B.avoiddivisionbyzero = u0;
   }
 
-  /* End of Saturate: '<S20>/avoid division by zero' */
+  /* End of Saturate: '<S21>/avoid division by zero' */
 
-  /* Math: '<S20>/Math Function'
+  /* Math: '<S21>/Math Function'
    *
-   * About '<S20>/Math Function':
+   * About '<S21>/Math Function':
    *  Operator: reciprocal
    */
   P = my_pv_system_3_ss_controller_B.avoiddivisionbyzero;
   my_pv_system_3_ss_controller_B.MathFunction = 1.0 / P;
 
-  /* Gain: '<S20>/Gain' */
+  /* Gain: '<S21>/Gain' */
   my_pv_system_3_ss_controller_B.Gain =
     my_pv_system_3_ss_controller_P.Gain_Gain_c *
     my_pv_system_3_ss_controller_B.MathFunction;
 
-  /* Level2 S-Function Block: '<S57>/S-Function' (sfun_discreteVariableDelay) */
+  /* Level2 S-Function Block: '<S58>/S-Function' (sfun_discreteVariableDelay) */
   {
     SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[6];
     sfcnOutputs(rts, 0);
   }
 
-  /* DiscreteIntegrator: '<S31>/Discrete-Time Integrator' */
+  /* DiscreteIntegrator: '<S32>/Discrete-Time Integrator' */
   my_pv_system_3_ss_controller_B.DiscreteTimeIntegrator =
     my_pv_system_3_ss_controller_DW.DiscreteTimeIntegrator_DSTATE;
 
-  /* Math: '<S31>/Math Function' incorporates:
-   *  Constant: '<S31>/Constant4'
+  /* Math: '<S32>/Math Function' incorporates:
+   *  Constant: '<S32>/Constant4'
    */
   my_pv_system_3_ss_controller_B.MathFunction_i = rt_modd_snf
     (my_pv_system_3_ss_controller_B.DiscreteTimeIntegrator,
      my_pv_system_3_ss_controller_P.Constant4_Value_i);
 
-  /* RelationalOperator: '<S58>/Compare' incorporates:
-   *  Constant: '<S56>/Constant'
-   *  Constant: '<S58>/Constant'
+  /* RelationalOperator: '<S59>/Compare' incorporates:
+   *  Constant: '<S57>/Constant'
+   *  Constant: '<S59>/Constant'
    */
   my_pv_system_3_ss_controller_B.Compare = (uint8_T)
     (my_pv_system_3_ss_controller_P.AlphaBetaZerotodq0_Alignment ==
      my_pv_system_3_ss_controller_P.CompareToConstant_const);
 
-  /* Outputs for Enabled SubSystem: '<S56>/Subsystem1' incorporates:
-   *  EnablePort: '<S61>/Enable'
+  /* Outputs for Enabled SubSystem: '<S57>/Subsystem1' incorporates:
+   *  EnablePort: '<S62>/Enable'
    */
   if (my_pv_system_3_ss_controller_B.Compare > 0) {
-    /* Fcn: '<S61>/Fcn' */
+    /* Fcn: '<S62>/Fcn' */
     my_pv_system_3_ss_controller_B.Fcn = my_pv_system_3_ss_controller_B.Apu *
       cos(my_pv_system_3_ss_controller_B.MathFunction_i) +
       my_pv_system_3_ss_controller_B.SFunction_o * sin
       (my_pv_system_3_ss_controller_B.MathFunction_i);
 
-    /* Fcn: '<S61>/Fcn1' */
+    /* Fcn: '<S62>/Fcn1' */
     my_pv_system_3_ss_controller_B.Fcn1 = -my_pv_system_3_ss_controller_B.Apu *
       sin(my_pv_system_3_ss_controller_B.MathFunction_i) +
       my_pv_system_3_ss_controller_B.SFunction_o * cos
       (my_pv_system_3_ss_controller_B.MathFunction_i);
   }
 
-  /* End of Outputs for SubSystem: '<S56>/Subsystem1' */
+  /* End of Outputs for SubSystem: '<S57>/Subsystem1' */
 
-  /* RelationalOperator: '<S59>/Compare' incorporates:
-   *  Constant: '<S56>/Constant'
-   *  Constant: '<S59>/Constant'
+  /* RelationalOperator: '<S60>/Compare' incorporates:
+   *  Constant: '<S57>/Constant'
+   *  Constant: '<S60>/Constant'
    */
   my_pv_system_3_ss_controller_B.Compare_e = (uint8_T)
     (my_pv_system_3_ss_controller_P.AlphaBetaZerotodq0_Alignment ==
      my_pv_system_3_ss_controller_P.CompareToConstant1_const);
 
-  /* Outputs for Enabled SubSystem: '<S56>/Subsystem - pi//2 delay' incorporates:
-   *  EnablePort: '<S60>/Enable'
+  /* Outputs for Enabled SubSystem: '<S57>/Subsystem - pi//2 delay' incorporates:
+   *  EnablePort: '<S61>/Enable'
    */
   if (my_pv_system_3_ss_controller_B.Compare_e > 0) {
-    /* Fcn: '<S60>/Fcn' */
+    /* Fcn: '<S61>/Fcn' */
     my_pv_system_3_ss_controller_B.Fcn_l = my_pv_system_3_ss_controller_B.Apu *
       sin(my_pv_system_3_ss_controller_B.MathFunction_i) -
       my_pv_system_3_ss_controller_B.SFunction_o * cos
       (my_pv_system_3_ss_controller_B.MathFunction_i);
 
-    /* Fcn: '<S60>/Fcn1' */
+    /* Fcn: '<S61>/Fcn1' */
     my_pv_system_3_ss_controller_B.Fcn1_f = my_pv_system_3_ss_controller_B.Apu *
       cos(my_pv_system_3_ss_controller_B.MathFunction_i) +
       my_pv_system_3_ss_controller_B.SFunction_o * sin
       (my_pv_system_3_ss_controller_B.MathFunction_i);
   }
 
-  /* End of Outputs for SubSystem: '<S56>/Subsystem - pi//2 delay' */
+  /* End of Outputs for SubSystem: '<S57>/Subsystem - pi//2 delay' */
 
-  /* Step: '<S20>/First cycle of simulation Id=0.92, Iq=0' */
+  /* Step: '<S21>/First cycle of simulation Id=0.92, Iq=0' */
   u0 = my_pv_system_3_ss_controller_M->Timing.t[0];
   dP = my_pv_system_3_ss_controller_P.InverterControl_Fnom;
   dV = 1.0 / dP;
@@ -474,13 +474,13 @@ static void my_pv_system_3_ss_controller_output(void)
       my_pv_system_3_ss_controller_P.FirstcycleofsimulationId092Iq_o;
   }
 
-  /* End of Step: '<S20>/First cycle of simulation Id=0.92, Iq=0' */
+  /* End of Step: '<S21>/First cycle of simulation Id=0.92, Iq=0' */
 
-  /* Switch: '<S20>/Switch' incorporates:
-   *  Constant: '<S20>/Constant'
+  /* Switch: '<S21>/Switch' incorporates:
+   *  Constant: '<S21>/Constant'
    */
   if (my_pv_system_3_ss_controller_B.FirstcycleofsimulationId092Iq0 != 0.0) {
-    /* Switch: '<S56>/Switch' */
+    /* Switch: '<S57>/Switch' */
     if (my_pv_system_3_ss_controller_B.Compare != 0) {
       my_pv_system_3_ss_controller_B.Switch_p[0] =
         my_pv_system_3_ss_controller_B.Fcn;
@@ -497,7 +497,7 @@ static void my_pv_system_3_ss_controller_output(void)
         my_pv_system_3_ss_controller_B.Fcn1_f;
     }
 
-    /* End of Switch: '<S56>/Switch' */
+    /* End of Switch: '<S57>/Switch' */
     my_pv_system_3_ss_controller_B.Switch[0] =
       my_pv_system_3_ss_controller_B.Switch_p[0];
     my_pv_system_3_ss_controller_B.Switch[1] =
@@ -509,9 +509,9 @@ static void my_pv_system_3_ss_controller_output(void)
       my_pv_system_3_ss_controller_P.Constant_Value_a[1];
   }
 
-  /* End of Switch: '<S20>/Switch' */
+  /* End of Switch: '<S21>/Switch' */
 
-  /* Gain: '<S52>/D*u(k)' */
+  /* Gain: '<S53>/D*u(k)' */
   my_pv_system_3_ss_controller_B.Duk[0] =
     my_pv_system_3_ss_controller_P.Duk_Gain *
     my_pv_system_3_ss_controller_B.Switch[0];
@@ -519,13 +519,13 @@ static void my_pv_system_3_ss_controller_output(void)
     my_pv_system_3_ss_controller_P.Duk_Gain *
     my_pv_system_3_ss_controller_B.Switch[1];
 
-  /* UnitDelay: '<S52>/Delay_x1' */
+  /* UnitDelay: '<S53>/Delay_x1' */
   my_pv_system_3_ss_controller_B.x1k[0] =
     my_pv_system_3_ss_controller_DW.Delay_x1_DSTATE[0];
   my_pv_system_3_ss_controller_B.x1k[1] =
     my_pv_system_3_ss_controller_DW.Delay_x1_DSTATE[1];
 
-  /* Gain: '<S55>/C11' */
+  /* Gain: '<S56>/C11' */
   my_pv_system_3_ss_controller_B.C11[0] =
     my_pv_system_3_ss_controller_P.C11_Gain *
     my_pv_system_3_ss_controller_B.x1k[0];
@@ -533,13 +533,13 @@ static void my_pv_system_3_ss_controller_output(void)
     my_pv_system_3_ss_controller_P.C11_Gain *
     my_pv_system_3_ss_controller_B.x1k[1];
 
-  /* UnitDelay: '<S52>/Delay_x2' */
+  /* UnitDelay: '<S53>/Delay_x2' */
   my_pv_system_3_ss_controller_B.x2k[0] =
     my_pv_system_3_ss_controller_DW.Delay_x2_DSTATE[0];
   my_pv_system_3_ss_controller_B.x2k[1] =
     my_pv_system_3_ss_controller_DW.Delay_x2_DSTATE[1];
 
-  /* Gain: '<S55>/C12' */
+  /* Gain: '<S56>/C12' */
   my_pv_system_3_ss_controller_B.C12[0] =
     my_pv_system_3_ss_controller_P.C12_Gain *
     my_pv_system_3_ss_controller_B.x2k[0];
@@ -547,24 +547,24 @@ static void my_pv_system_3_ss_controller_output(void)
     my_pv_system_3_ss_controller_P.C12_Gain *
     my_pv_system_3_ss_controller_B.x2k[1];
 
-  /* Sum: '<S55>/sum2' */
+  /* Sum: '<S56>/sum2' */
   my_pv_system_3_ss_controller_B.sum2[0] = my_pv_system_3_ss_controller_B.C11[0]
     + my_pv_system_3_ss_controller_B.C12[0];
   my_pv_system_3_ss_controller_B.sum2[1] = my_pv_system_3_ss_controller_B.C11[1]
     + my_pv_system_3_ss_controller_B.C12[1];
 
-  /* Sum: '<S52>/C*X(k)+D*u(k)' */
+  /* Sum: '<S53>/C*X(k)+D*u(k)' */
   my_pv_system_3_ss_controller_B.yk[0] = my_pv_system_3_ss_controller_B.Duk[0] +
     my_pv_system_3_ss_controller_B.sum2[0];
   my_pv_system_3_ss_controller_B.yk[1] = my_pv_system_3_ss_controller_B.Duk[1] +
     my_pv_system_3_ss_controller_B.sum2[1];
 
-  /* UnitDelay: '<S4>/Unit Delay2' */
+  /* UnitDelay: '<S5>/Unit Delay2' */
   my_pv_system_3_ss_controller_B.UnitDelay2 =
     my_pv_system_3_ss_controller_DW.UnitDelay2_DSTATE;
 
-  /* Sum: '<S8>/Sum' incorporates:
-   *  Constant: '<S4>/Iq_ref'
+  /* Sum: '<S9>/Sum' incorporates:
+   *  Constant: '<S5>/Iq_ref'
    */
   my_pv_system_3_ss_controller_B.Sum_e[0] =
     my_pv_system_3_ss_controller_B.UnitDelay2 -
@@ -573,7 +573,7 @@ static void my_pv_system_3_ss_controller_output(void)
     my_pv_system_3_ss_controller_P.Iq_ref_Value -
     my_pv_system_3_ss_controller_B.yk[1];
 
-  /* Gain: '<S15>/Proportional Gain' */
+  /* Gain: '<S16>/Proportional Gain' */
   my_pv_system_3_ss_controller_B.ProportionalGain[0] =
     my_pv_system_3_ss_controller_P.InverterControl_Kp_Ireg *
     my_pv_system_3_ss_controller_B.Sum_e[0];
@@ -581,13 +581,13 @@ static void my_pv_system_3_ss_controller_output(void)
     my_pv_system_3_ss_controller_P.InverterControl_Kp_Ireg *
     my_pv_system_3_ss_controller_B.Sum_e[1];
 
-  /* DiscreteIntegrator: '<S15>/Integrator' */
+  /* DiscreteIntegrator: '<S16>/Integrator' */
   my_pv_system_3_ss_controller_B.Integrator[0] =
     my_pv_system_3_ss_controller_DW.Integrator_DSTATE[0];
   my_pv_system_3_ss_controller_B.Integrator[1] =
     my_pv_system_3_ss_controller_DW.Integrator_DSTATE[1];
 
-  /* Sum: '<S15>/Sum' */
+  /* Sum: '<S16>/Sum' */
   my_pv_system_3_ss_controller_B.Sum_g[0] =
     my_pv_system_3_ss_controller_B.ProportionalGain[0] +
     my_pv_system_3_ss_controller_B.Integrator[0];
@@ -595,7 +595,7 @@ static void my_pv_system_3_ss_controller_output(void)
     my_pv_system_3_ss_controller_B.ProportionalGain[1] +
     my_pv_system_3_ss_controller_B.Integrator[1];
 
-  /* Saturate: '<S15>/Saturate' */
+  /* Saturate: '<S16>/Saturate' */
   u0 = my_pv_system_3_ss_controller_B.Sum_g[0];
   dP = my_pv_system_3_ss_controller_P.PI_LowerSaturationLimit;
   u2 = my_pv_system_3_ss_controller_P.PI_UpperSaturationLimit;
@@ -621,33 +621,33 @@ static void my_pv_system_3_ss_controller_output(void)
 
   my_pv_system_3_ss_controller_B.Saturate[1] = u0;
 
-  /* End of Saturate: '<S15>/Saturate' */
+  /* End of Saturate: '<S16>/Saturate' */
 
-  /* RateTransition: '<S2>/Rate Transition' */
+  /* RateTransition: '<S3>/Rate Transition' */
   my_pv_system_3_ss_controller_B.RateTransition =
     my_pv_system_3_ss_controller_B.SFunction_g[9];
 
-  /* Gain: '<S11>/V->pu' */
+  /* Gain: '<S12>/V->pu' */
   dP = my_pv_system_3_ss_controller_P.InverterControl_Vnom_prim *
     1.4142135623730951;
   dV = 1.0 / dP;
   my_pv_system_3_ss_controller_B.Vpu = dV *
     my_pv_system_3_ss_controller_B.RateTransition;
 
-  /* Trigonometry: '<S16>/Trigonometric Function' */
+  /* Trigonometry: '<S17>/Trigonometric Function' */
   my_pv_system_3_ss_controller_B.TrigonometricFunction = sin
     (my_pv_system_3_ss_controller_B.MathFunction_i);
 
-  /* Gain: '<S16>/Gain1' */
+  /* Gain: '<S17>/Gain1' */
   my_pv_system_3_ss_controller_B.Gain1 =
     my_pv_system_3_ss_controller_P.Gain1_Gain_l *
     my_pv_system_3_ss_controller_B.TrigonometricFunction;
 
-  /* Product: '<S16>/Product1' */
+  /* Product: '<S17>/Product1' */
   my_pv_system_3_ss_controller_B.Product1 = my_pv_system_3_ss_controller_B.Vpu *
     my_pv_system_3_ss_controller_B.Gain1;
 
-  /* DiscreteIntegrator: '<S23>/Integ4' */
+  /* DiscreteIntegrator: '<S24>/Integ4' */
   if (my_pv_system_3_ss_controller_DW.Integ4_SYSTEM_ENABLE != 0) {
     my_pv_system_3_ss_controller_B.Integ4 =
       my_pv_system_3_ss_controller_DW.Integ4_DSTATE;
@@ -658,9 +658,9 @@ static void my_pv_system_3_ss_controller_output(void)
       my_pv_system_3_ss_controller_DW.Integ4_DSTATE;
   }
 
-  /* End of DiscreteIntegrator: '<S23>/Integ4' */
+  /* End of DiscreteIntegrator: '<S24>/Integ4' */
 
-  /* Saturate: '<S23>/To avoid division  by zero' */
+  /* Saturate: '<S24>/To avoid division  by zero' */
   u0 = my_pv_system_3_ss_controller_B.UnitDelay;
   dP = my_pv_system_3_ss_controller_P.Toavoiddivisionbyzero_LowerSa_l;
   u2 = my_pv_system_3_ss_controller_P.Toavoiddivisionbyzero_UpperSa_j;
@@ -672,94 +672,94 @@ static void my_pv_system_3_ss_controller_output(void)
     my_pv_system_3_ss_controller_B.Freq = u0;
   }
 
-  /* End of Saturate: '<S23>/To avoid division  by zero' */
+  /* End of Saturate: '<S24>/To avoid division  by zero' */
 
-  /* Fcn: '<S23>/Number of samples per cycle' */
+  /* Fcn: '<S24>/Number of samples per cycle' */
   my_pv_system_3_ss_controller_B.Numberofsamplespercycle = 1.0 /
     my_pv_system_3_ss_controller_B.Freq / 5.0e-5;
 
-  /* Rounding: '<S23>/Rounding Function' */
+  /* Rounding: '<S24>/Rounding Function' */
   my_pv_system_3_ss_controller_B.RoundingFunction = ceil
     (my_pv_system_3_ss_controller_B.Numberofsamplespercycle);
 
-  /* Gain: '<S23>/Gain' */
+  /* Gain: '<S24>/Gain' */
   my_pv_system_3_ss_controller_B.Delay =
     my_pv_system_3_ss_controller_P.InverterControl_Ts_Control *
     my_pv_system_3_ss_controller_B.RoundingFunction;
 
-  /* Level2 S-Function Block: '<S25>/S-Function' (sfun_discreteVariableDelay) */
+  /* Level2 S-Function Block: '<S26>/S-Function' (sfun_discreteVariableDelay) */
   {
     SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[7];
     sfcnOutputs(rts, 0);
   }
 
-  /* UnitDelay: '<S24>/Unit Delay' */
+  /* UnitDelay: '<S25>/Unit Delay' */
   my_pv_system_3_ss_controller_B.UnitDelay_f =
     my_pv_system_3_ss_controller_DW.UnitDelay_DSTATE_g;
 
-  /* DigitalClock: '<S23>/Digital  Clock' */
+  /* DigitalClock: '<S24>/Digital  Clock' */
   my_pv_system_3_ss_controller_B.DigitalClock =
     my_pv_system_3_ss_controller_M->Timing.t[0];
 
-  /* RelationalOperator: '<S23>/Relational Operator' incorporates:
-   *  Constant: '<S23>/Constant'
+  /* RelationalOperator: '<S24>/Relational Operator' incorporates:
+   *  Constant: '<S24>/Constant'
    */
   my_pv_system_3_ss_controller_B.RelationalOperator =
     (my_pv_system_3_ss_controller_B.DigitalClock >=
      my_pv_system_3_ss_controller_P.Constant_Value_p);
 
-  /* UnitDelay: '<S23>/Unit Delay1' */
+  /* UnitDelay: '<S24>/Unit Delay1' */
   my_pv_system_3_ss_controller_B.UnitDelay1 =
     my_pv_system_3_ss_controller_DW.UnitDelay1_DSTATE;
 
-  /* Switch: '<S23>/Switch' */
+  /* Switch: '<S24>/Switch' */
   if (my_pv_system_3_ss_controller_B.RelationalOperator) {
-    /* Sum: '<S24>/Sum1' */
+    /* Sum: '<S25>/Sum1' */
     my_pv_system_3_ss_controller_B.Sum1_c3 =
       my_pv_system_3_ss_controller_B.Product1 -
       my_pv_system_3_ss_controller_B.UnitDelay_f;
 
-    /* Sum: '<S24>/Sum5' */
+    /* Sum: '<S25>/Sum5' */
     my_pv_system_3_ss_controller_B.Sum5_cr =
       my_pv_system_3_ss_controller_B.Numberofsamplespercycle -
       my_pv_system_3_ss_controller_B.RoundingFunction;
 
-    /* Product: '<S24>/Product5' */
+    /* Product: '<S25>/Product5' */
     my_pv_system_3_ss_controller_B.Product5_j =
       my_pv_system_3_ss_controller_B.Sum5_cr *
       my_pv_system_3_ss_controller_B.Sum1_c3;
 
-    /* Gain: '<S24>/Gain1' */
+    /* Gain: '<S25>/Gain1' */
     my_pv_system_3_ss_controller_B.Gain1_b =
       my_pv_system_3_ss_controller_P.Gain1_Gain *
       my_pv_system_3_ss_controller_B.Product5_j;
 
-    /* Sum: '<S24>/Sum4' */
+    /* Sum: '<S25>/Sum4' */
     my_pv_system_3_ss_controller_B.Sum4_e =
       my_pv_system_3_ss_controller_B.Gain1_b +
       my_pv_system_3_ss_controller_B.Product1;
 
-    /* Product: '<S24>/Product2' */
+    /* Product: '<S25>/Product2' */
     my_pv_system_3_ss_controller_B.Product2_f =
       my_pv_system_3_ss_controller_B.Sum5_cr /
       my_pv_system_3_ss_controller_B.Numberofsamplespercycle;
 
-    /* Product: '<S24>/Product4' */
+    /* Product: '<S25>/Product4' */
     my_pv_system_3_ss_controller_B.Product4_c =
       my_pv_system_3_ss_controller_B.Product2_f *
       my_pv_system_3_ss_controller_B.Sum4_e;
 
-    /* Sum: '<S23>/Sum7' */
+    /* Sum: '<S24>/Sum7' */
     my_pv_system_3_ss_controller_B.Sum7_eg =
       my_pv_system_3_ss_controller_B.Integ4 -
       my_pv_system_3_ss_controller_B.SFunction_p;
 
-    /* Product: '<S23>/Product' */
+    /* Product: '<S24>/Product' */
     my_pv_system_3_ss_controller_B.Meanvalue_c =
       my_pv_system_3_ss_controller_B.Sum7_eg *
       my_pv_system_3_ss_controller_B.UnitDelay;
 
-    /* Sum: '<S23>/Sum5' */
+    /* Sum: '<S24>/Sum5' */
     my_pv_system_3_ss_controller_B.Sum5_m =
       my_pv_system_3_ss_controller_B.Meanvalue_c +
       my_pv_system_3_ss_controller_B.Product4_c;
@@ -770,22 +770,22 @@ static void my_pv_system_3_ss_controller_output(void)
       my_pv_system_3_ss_controller_B.UnitDelay1;
   }
 
-  /* End of Switch: '<S23>/Switch' */
+  /* End of Switch: '<S24>/Switch' */
 
-  /* Trigonometry: '<S16>/Trigonometric Function3' */
+  /* Trigonometry: '<S17>/Trigonometric Function3' */
   my_pv_system_3_ss_controller_B.TrigonometricFunction3 = cos
     (my_pv_system_3_ss_controller_B.MathFunction_i);
 
-  /* Gain: '<S16>/Gain3' */
+  /* Gain: '<S17>/Gain3' */
   my_pv_system_3_ss_controller_B.Gain3 =
     my_pv_system_3_ss_controller_P.Gain3_Gain_i *
     my_pv_system_3_ss_controller_B.TrigonometricFunction3;
 
-  /* Product: '<S16>/Product2' */
+  /* Product: '<S17>/Product2' */
   my_pv_system_3_ss_controller_B.Product2 = my_pv_system_3_ss_controller_B.Vpu *
     my_pv_system_3_ss_controller_B.Gain3;
 
-  /* DiscreteIntegrator: '<S26>/Integ4' */
+  /* DiscreteIntegrator: '<S27>/Integ4' */
   if (my_pv_system_3_ss_controller_DW.Integ4_SYSTEM_ENABLE_e != 0) {
     my_pv_system_3_ss_controller_B.Integ4_h =
       my_pv_system_3_ss_controller_DW.Integ4_DSTATE_d;
@@ -796,9 +796,9 @@ static void my_pv_system_3_ss_controller_output(void)
       my_pv_system_3_ss_controller_DW.Integ4_DSTATE_d;
   }
 
-  /* End of DiscreteIntegrator: '<S26>/Integ4' */
+  /* End of DiscreteIntegrator: '<S27>/Integ4' */
 
-  /* Saturate: '<S26>/To avoid division  by zero' */
+  /* Saturate: '<S27>/To avoid division  by zero' */
   u0 = my_pv_system_3_ss_controller_B.UnitDelay;
   dP = my_pv_system_3_ss_controller_P.Toavoiddivisionbyzero_LowerSa_b;
   u2 = my_pv_system_3_ss_controller_P.Toavoiddivisionbyzero_UpperSa_c;
@@ -810,94 +810,94 @@ static void my_pv_system_3_ss_controller_output(void)
     my_pv_system_3_ss_controller_B.Freq_m = u0;
   }
 
-  /* End of Saturate: '<S26>/To avoid division  by zero' */
+  /* End of Saturate: '<S27>/To avoid division  by zero' */
 
-  /* Fcn: '<S26>/Number of samples per cycle' */
+  /* Fcn: '<S27>/Number of samples per cycle' */
   my_pv_system_3_ss_controller_B.Numberofsamplespercycle_m = 1.0 /
     my_pv_system_3_ss_controller_B.Freq_m / 5.0e-5;
 
-  /* Rounding: '<S26>/Rounding Function' */
+  /* Rounding: '<S27>/Rounding Function' */
   my_pv_system_3_ss_controller_B.RoundingFunction_p = ceil
     (my_pv_system_3_ss_controller_B.Numberofsamplespercycle_m);
 
-  /* Gain: '<S26>/Gain' */
+  /* Gain: '<S27>/Gain' */
   my_pv_system_3_ss_controller_B.Delay_d =
     my_pv_system_3_ss_controller_P.InverterControl_Ts_Control *
     my_pv_system_3_ss_controller_B.RoundingFunction_p;
 
-  /* Level2 S-Function Block: '<S28>/S-Function' (sfun_discreteVariableDelay) */
+  /* Level2 S-Function Block: '<S29>/S-Function' (sfun_discreteVariableDelay) */
   {
     SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[8];
     sfcnOutputs(rts, 0);
   }
 
-  /* UnitDelay: '<S27>/Unit Delay' */
+  /* UnitDelay: '<S28>/Unit Delay' */
   my_pv_system_3_ss_controller_B.UnitDelay_l =
     my_pv_system_3_ss_controller_DW.UnitDelay_DSTATE_i;
 
-  /* DigitalClock: '<S26>/Digital  Clock' */
+  /* DigitalClock: '<S27>/Digital  Clock' */
   my_pv_system_3_ss_controller_B.DigitalClock_m =
     my_pv_system_3_ss_controller_M->Timing.t[0];
 
-  /* RelationalOperator: '<S26>/Relational Operator' incorporates:
-   *  Constant: '<S26>/Constant'
+  /* RelationalOperator: '<S27>/Relational Operator' incorporates:
+   *  Constant: '<S27>/Constant'
    */
   my_pv_system_3_ss_controller_B.RelationalOperator_m =
     (my_pv_system_3_ss_controller_B.DigitalClock_m >=
      my_pv_system_3_ss_controller_P.Constant_Value_m);
 
-  /* UnitDelay: '<S26>/Unit Delay1' */
+  /* UnitDelay: '<S27>/Unit Delay1' */
   my_pv_system_3_ss_controller_B.UnitDelay1_e =
     my_pv_system_3_ss_controller_DW.UnitDelay1_DSTATE_b;
 
-  /* Switch: '<S26>/Switch' */
+  /* Switch: '<S27>/Switch' */
   if (my_pv_system_3_ss_controller_B.RelationalOperator_m) {
-    /* Sum: '<S27>/Sum1' */
+    /* Sum: '<S28>/Sum1' */
     my_pv_system_3_ss_controller_B.Sum1_cr =
       my_pv_system_3_ss_controller_B.Product2 -
       my_pv_system_3_ss_controller_B.UnitDelay_l;
 
-    /* Sum: '<S27>/Sum5' */
+    /* Sum: '<S28>/Sum5' */
     my_pv_system_3_ss_controller_B.Sum5_g =
       my_pv_system_3_ss_controller_B.Numberofsamplespercycle_m -
       my_pv_system_3_ss_controller_B.RoundingFunction_p;
 
-    /* Product: '<S27>/Product5' */
+    /* Product: '<S28>/Product5' */
     my_pv_system_3_ss_controller_B.Product5_a =
       my_pv_system_3_ss_controller_B.Sum5_g *
       my_pv_system_3_ss_controller_B.Sum1_cr;
 
-    /* Gain: '<S27>/Gain1' */
+    /* Gain: '<S28>/Gain1' */
     my_pv_system_3_ss_controller_B.Gain1_if =
       my_pv_system_3_ss_controller_P.Gain1_Gain_h *
       my_pv_system_3_ss_controller_B.Product5_a;
 
-    /* Sum: '<S27>/Sum4' */
+    /* Sum: '<S28>/Sum4' */
     my_pv_system_3_ss_controller_B.Sum4_b =
       my_pv_system_3_ss_controller_B.Gain1_if +
       my_pv_system_3_ss_controller_B.Product2;
 
-    /* Product: '<S27>/Product2' */
+    /* Product: '<S28>/Product2' */
     my_pv_system_3_ss_controller_B.Product2_dp =
       my_pv_system_3_ss_controller_B.Sum5_g /
       my_pv_system_3_ss_controller_B.Numberofsamplespercycle_m;
 
-    /* Product: '<S27>/Product4' */
+    /* Product: '<S28>/Product4' */
     my_pv_system_3_ss_controller_B.Product4_g =
       my_pv_system_3_ss_controller_B.Product2_dp *
       my_pv_system_3_ss_controller_B.Sum4_b;
 
-    /* Sum: '<S26>/Sum7' */
+    /* Sum: '<S27>/Sum7' */
     my_pv_system_3_ss_controller_B.Sum7_i1 =
       my_pv_system_3_ss_controller_B.Integ4_h -
       my_pv_system_3_ss_controller_B.SFunction_i;
 
-    /* Product: '<S26>/Product' */
+    /* Product: '<S27>/Product' */
     my_pv_system_3_ss_controller_B.Meanvalue_e =
       my_pv_system_3_ss_controller_B.Sum7_i1 *
       my_pv_system_3_ss_controller_B.UnitDelay;
 
-    /* Sum: '<S26>/Sum5' */
+    /* Sum: '<S27>/Sum5' */
     my_pv_system_3_ss_controller_B.Sum5_g2 =
       my_pv_system_3_ss_controller_B.Meanvalue_e +
       my_pv_system_3_ss_controller_B.Product4_g;
@@ -908,15 +908,15 @@ static void my_pv_system_3_ss_controller_output(void)
       my_pv_system_3_ss_controller_B.UnitDelay1_e;
   }
 
-  /* End of Switch: '<S26>/Switch' */
+  /* End of Switch: '<S27>/Switch' */
 
-  /* RealImagToComplex: '<S16>/Real-Imag to Complex' */
+  /* RealImagToComplex: '<S17>/Real-Imag to Complex' */
   my_pv_system_3_ss_controller_B.RealImagtoComplex.re =
     my_pv_system_3_ss_controller_B.Switch_g;
   my_pv_system_3_ss_controller_B.RealImagtoComplex.im =
     my_pv_system_3_ss_controller_B.Switch_k;
 
-  /* ComplexToMagnitudeAngle: '<S16>/Complex to Magnitude-Angle' */
+  /* ComplexToMagnitudeAngle: '<S17>/Complex to Magnitude-Angle' */
   my_pv_system_3_ss_controller_B.ComplextoMagnitudeAngle_o1 = rt_hypotd_snf
     (my_pv_system_3_ss_controller_B.RealImagtoComplex.re,
      my_pv_system_3_ss_controller_B.RealImagtoComplex.im);
@@ -924,17 +924,17 @@ static void my_pv_system_3_ss_controller_output(void)
     (my_pv_system_3_ss_controller_B.RealImagtoComplex.im,
      my_pv_system_3_ss_controller_B.RealImagtoComplex.re);
 
-  /* Gain: '<S16>/Rad->Deg.' */
+  /* Gain: '<S17>/Rad->Deg.' */
   my_pv_system_3_ss_controller_B.RadDeg =
     my_pv_system_3_ss_controller_P.RadDeg_Gain_f *
     my_pv_system_3_ss_controller_B.ComplextoMagnitudeAngle_o2;
 
-  /* Gain: '<S11>/to-rad' */
+  /* Gain: '<S12>/to-rad' */
   my_pv_system_3_ss_controller_B.torad =
     my_pv_system_3_ss_controller_P.torad_Gain *
     my_pv_system_3_ss_controller_B.RadDeg;
 
-  /* MagnitudeAngleToComplex: '<S11>/Magnitude-Angle to Complex' */
+  /* MagnitudeAngleToComplex: '<S12>/Magnitude-Angle to Complex' */
   P = my_pv_system_3_ss_controller_B.torad;
   dV = my_pv_system_3_ss_controller_B.ComplextoMagnitudeAngle_o1;
   u2 = cos(P);
@@ -942,46 +942,46 @@ static void my_pv_system_3_ss_controller_output(void)
   my_pv_system_3_ss_controller_B.MagnitudeAngletoComplex.re = dV * u2;
   my_pv_system_3_ss_controller_B.MagnitudeAngletoComplex.im = dV * u0;
 
-  /* ComplexToRealImag: '<S11>/Complex to Real-Imag' */
+  /* ComplexToRealImag: '<S12>/Complex to Real-Imag' */
   my_pv_system_3_ss_controller_B.ComplextoRealImag_o1 =
     my_pv_system_3_ss_controller_B.MagnitudeAngletoComplex.re;
   my_pv_system_3_ss_controller_B.ComplextoRealImag_o2 =
     my_pv_system_3_ss_controller_B.MagnitudeAngletoComplex.im;
 
-  /* Gain: '<S8>/Rff ' */
+  /* Gain: '<S9>/Rff ' */
   my_pv_system_3_ss_controller_B.Rff = my_pv_system_3_ss_controller_P.Rff_Gain *
     my_pv_system_3_ss_controller_B.UnitDelay2;
 
-  /* Gain: '<S8>/Lff  ' incorporates:
-   *  Constant: '<S4>/Iq_ref'
+  /* Gain: '<S9>/Lff  ' incorporates:
+   *  Constant: '<S5>/Iq_ref'
    */
   my_pv_system_3_ss_controller_B.Lff = my_pv_system_3_ss_controller_P.Lff_Gain *
     my_pv_system_3_ss_controller_P.Iq_ref_Value;
 
-  /* Sum: '<S8>/Add1' */
+  /* Sum: '<S9>/Add1' */
   my_pv_system_3_ss_controller_B.Feedforward =
     (my_pv_system_3_ss_controller_B.ComplextoRealImag_o1 +
      my_pv_system_3_ss_controller_B.Rff) - my_pv_system_3_ss_controller_B.Lff;
 
-  /* Gain: '<S8>/Rff' incorporates:
-   *  Constant: '<S4>/Iq_ref'
+  /* Gain: '<S9>/Rff' incorporates:
+   *  Constant: '<S5>/Iq_ref'
    */
   my_pv_system_3_ss_controller_B.Rff_e =
     my_pv_system_3_ss_controller_P.Rff_Gain_a *
     my_pv_system_3_ss_controller_P.Iq_ref_Value;
 
-  /* Gain: '<S8>/Lff' */
+  /* Gain: '<S9>/Lff' */
   my_pv_system_3_ss_controller_B.Lff_i =
     my_pv_system_3_ss_controller_P.Lff_Gain_c *
     my_pv_system_3_ss_controller_B.UnitDelay2;
 
-  /* Sum: '<S8>/Add3' */
+  /* Sum: '<S9>/Add3' */
   my_pv_system_3_ss_controller_B.Add3 =
     (my_pv_system_3_ss_controller_B.ComplextoRealImag_o2 +
      my_pv_system_3_ss_controller_B.Rff_e) +
     my_pv_system_3_ss_controller_B.Lff_i;
 
-  /* Sum: '<S8>/Add2' */
+  /* Sum: '<S9>/Add2' */
   my_pv_system_3_ss_controller_B.Add2[0] =
     my_pv_system_3_ss_controller_B.Saturate[0] +
     my_pv_system_3_ss_controller_B.Feedforward;
@@ -989,7 +989,7 @@ static void my_pv_system_3_ss_controller_output(void)
     my_pv_system_3_ss_controller_B.Saturate[1] +
     my_pv_system_3_ss_controller_B.Add3;
 
-  /* Gain: '<S15>/Integral Gain' */
+  /* Gain: '<S16>/Integral Gain' */
   my_pv_system_3_ss_controller_B.IntegralGain[0] =
     my_pv_system_3_ss_controller_P.InverterControl_Ki_Ireg *
     my_pv_system_3_ss_controller_B.Sum_e[0];
@@ -997,7 +997,7 @@ static void my_pv_system_3_ss_controller_output(void)
     my_pv_system_3_ss_controller_P.InverterControl_Ki_Ireg *
     my_pv_system_3_ss_controller_B.Sum_e[1];
 
-  /* Saturate: '<S8>/Saturation' */
+  /* Saturate: '<S9>/Saturation' */
   u0 = my_pv_system_3_ss_controller_B.Add2[0];
   dP = my_pv_system_3_ss_controller_P.Saturation_LowerSat_k;
   u2 = my_pv_system_3_ss_controller_P.Saturation_UpperSat_c;
@@ -1023,22 +1023,22 @@ static void my_pv_system_3_ss_controller_output(void)
 
   my_pv_system_3_ss_controller_B.Saturation[1] = u0;
 
-  /* End of Saturate: '<S8>/Saturation' */
+  /* End of Saturate: '<S9>/Saturation' */
 
-  /* RateTransition: '<S2>/Rate Transition3' */
+  /* RateTransition: '<S3>/Rate Transition3' */
   my_pv_system_3_ss_controller_B.RateTransition3 =
     my_pv_system_3_ss_controller_B.SFunction_g[2];
 
-  /* RateTransition: '<S2>/Rate Transition4' */
+  /* RateTransition: '<S3>/Rate Transition4' */
   my_pv_system_3_ss_controller_B.RateTransition4 =
     my_pv_system_3_ss_controller_B.SFunction_g[1];
 
-  /* SignalConversion: '<S10>/TmpSignal ConversionAt SFunction Inport1' incorporates:
-   *  Constant: '<S9>/Iph_'
-   *  Constant: '<S9>/Iph_1'
-   *  Constant: '<S9>/Iph_2'
-   *  Constant: '<S9>/Iph_3'
-   *  MATLAB Function: '<S4>/MPPT Controller using Perturbe  & Observe technique  '
+  /* SignalConversion: '<S11>/TmpSignal ConversionAt SFunction Inport1' incorporates:
+   *  Constant: '<S10>/Iph_'
+   *  Constant: '<S10>/Iph_1'
+   *  Constant: '<S10>/Iph_2'
+   *  Constant: '<S10>/Iph_3'
+   *  MATLAB Function: '<S5>/MPPT Controller using Perturbe  & Observe technique  '
    */
   my_pv_system_3_ss_controller_B.TmpSignalConversionAtSFunctionI[0] =
     my_pv_system_3_ss_controller_P.InverterControl_Vdc_ref_Init;
@@ -1049,10 +1049,10 @@ static void my_pv_system_3_ss_controller_output(void)
   my_pv_system_3_ss_controller_B.TmpSignalConversionAtSFunctionI[3] =
     my_pv_system_3_ss_controller_P.InverterControl_Increment_MPPT;
 
-  /* MATLAB Function: '<S4>/MPPT Controller using Perturbe  & Observe technique  ' incorporates:
-   *  Constant: '<S2>/MPPT_On'
+  /* MATLAB Function: '<S5>/MPPT Controller using Perturbe  & Observe technique  ' incorporates:
+   *  Constant: '<S3>/MPPT_On'
    */
-  /* MATLAB Function 'SS_controller/Inverter Control/MPPT Controller using Perturbe  & Observe technique  ': '<S10>:1' */
+  /* MATLAB Function 'SS_controller/Inverter Control/MPPT Controller using Perturbe  & Observe technique  ': '<S11>:1' */
   /*  MPPT controller based on the Perturb & Observe algorithm. */
   /*  D output = Reference for DC link voltage (Vdc_ref)  */
   /*  */
@@ -1062,58 +1062,58 @@ static void my_pv_system_3_ss_controller_output(void)
   /*  */
   /*  Param input: */
   /* Initial value for Vdc_ref */
-  /* '<S10>:1:13' */
+  /* '<S11>:1:13' */
   /* Maximum value for Vdc_ref */
-  /* '<S10>:1:14' */
+  /* '<S11>:1:14' */
   /* Minimum value for Vdc_ref */
-  /* '<S10>:1:15' */
+  /* '<S11>:1:15' */
   /* Increment value used to increase/decrease Vdc_ref */
   /*    */
   if (!my_pv_system_3_ss_controller_DW.Vold_not_empty) {
-    /* '<S10>:1:22' */
+    /* '<S11>:1:22' */
     my_pv_system_3_ss_controller_DW.Vold_not_empty = true;
 
-    /* '<S10>:1:25' */
+    /* '<S11>:1:25' */
     my_pv_system_3_ss_controller_DW.Dold =
       my_pv_system_3_ss_controller_B.TmpSignalConversionAtSFunctionI[0];
   }
 
-  /* '<S10>:1:27' */
+  /* '<S11>:1:27' */
   P = my_pv_system_3_ss_controller_B.RateTransition3 *
     my_pv_system_3_ss_controller_B.RateTransition4;
 
-  /* '<S10>:1:28' */
+  /* '<S11>:1:28' */
   dV = my_pv_system_3_ss_controller_B.RateTransition3 -
     my_pv_system_3_ss_controller_DW.Vold;
 
-  /* '<S10>:1:29' */
+  /* '<S11>:1:29' */
   dP = P - my_pv_system_3_ss_controller_DW.Pold;
   if ((dP != 0.0) && (my_pv_system_3_ss_controller_P.MPPT_On_Value != 0.0)) {
-    /* '<S10>:1:31' */
+    /* '<S11>:1:31' */
     if (dP < 0.0) {
-      /* '<S10>:1:32' */
+      /* '<S11>:1:32' */
       if (dV < 0.0) {
-        /* '<S10>:1:33' */
-        /* '<S10>:1:34' */
+        /* '<S11>:1:33' */
+        /* '<S11>:1:34' */
         my_pv_system_3_ss_controller_B.D = my_pv_system_3_ss_controller_DW.Dold
           + my_pv_system_3_ss_controller_B.TmpSignalConversionAtSFunctionI[3];
       } else {
-        /* '<S10>:1:36' */
+        /* '<S11>:1:36' */
         my_pv_system_3_ss_controller_B.D = my_pv_system_3_ss_controller_DW.Dold
           - my_pv_system_3_ss_controller_B.TmpSignalConversionAtSFunctionI[3];
       }
     } else if (dV < 0.0) {
-      /* '<S10>:1:39' */
-      /* '<S10>:1:40' */
+      /* '<S11>:1:39' */
+      /* '<S11>:1:40' */
       my_pv_system_3_ss_controller_B.D = my_pv_system_3_ss_controller_DW.Dold -
         my_pv_system_3_ss_controller_B.TmpSignalConversionAtSFunctionI[3];
     } else {
-      /* '<S10>:1:42' */
+      /* '<S11>:1:42' */
       my_pv_system_3_ss_controller_B.D = my_pv_system_3_ss_controller_DW.Dold +
         my_pv_system_3_ss_controller_B.TmpSignalConversionAtSFunctionI[3];
     }
   } else {
-    /* '<S10>:1:45' */
+    /* '<S11>:1:45' */
     my_pv_system_3_ss_controller_B.D = my_pv_system_3_ss_controller_DW.Dold;
   }
 
@@ -1121,30 +1121,30 @@ static void my_pv_system_3_ss_controller_output(void)
        my_pv_system_3_ss_controller_B.TmpSignalConversionAtSFunctionI[1]) ||
       (my_pv_system_3_ss_controller_B.D <=
        my_pv_system_3_ss_controller_B.TmpSignalConversionAtSFunctionI[2])) {
-    /* '<S10>:1:48' */
-    /* '<S10>:1:49' */
+    /* '<S11>:1:48' */
+    /* '<S11>:1:49' */
     my_pv_system_3_ss_controller_B.D = my_pv_system_3_ss_controller_DW.Dold;
   }
 
-  /* '<S10>:1:52' */
+  /* '<S11>:1:52' */
   my_pv_system_3_ss_controller_DW.Dold = my_pv_system_3_ss_controller_B.D;
 
-  /* '<S10>:1:53' */
+  /* '<S11>:1:53' */
   my_pv_system_3_ss_controller_DW.Vold =
     my_pv_system_3_ss_controller_B.RateTransition3;
 
-  /* '<S10>:1:54' */
+  /* '<S11>:1:54' */
   my_pv_system_3_ss_controller_DW.Pold = P;
 
-  /* DigitalClock: '<S29>/Digital  Clock' */
+  /* DigitalClock: '<S30>/Digital  Clock' */
   my_pv_system_3_ss_controller_B.DigitalClock_a =
     my_pv_system_3_ss_controller_M->Timing.t[0];
 
-  /* RateTransition: '<S2>/Rate Transition2' */
+  /* RateTransition: '<S3>/Rate Transition2' */
   my_pv_system_3_ss_controller_B.RateTransition2 =
     my_pv_system_3_ss_controller_B.SFunction_g[7];
 
-  /* DiscreteIntegrator: '<S29>/Integ4' */
+  /* DiscreteIntegrator: '<S30>/Integ4' */
   if (my_pv_system_3_ss_controller_DW.Integ4_SYSTEM_ENABLE_d != 0) {
     my_pv_system_3_ss_controller_B.Integ4_c =
       my_pv_system_3_ss_controller_DW.Integ4_DSTATE_d5;
@@ -1155,59 +1155,59 @@ static void my_pv_system_3_ss_controller_output(void)
       my_pv_system_3_ss_controller_DW.Integ4_DSTATE_d5;
   }
 
-  /* End of DiscreteIntegrator: '<S29>/Integ4' */
+  /* End of DiscreteIntegrator: '<S30>/Integ4' */
 
-  /* Constant: '<S29>/K1' */
+  /* Constant: '<S30>/K1' */
   my_pv_system_3_ss_controller_B.K1 = my_pv_system_3_ss_controller_P.K1_Value;
 
-  /* Level2 S-Function Block: '<S30>/S-Function' (sfun_discreteVariableDelay) */
+  /* Level2 S-Function Block: '<S31>/S-Function' (sfun_discreteVariableDelay) */
   {
     SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[9];
     sfcnOutputs(rts, 0);
   }
 
-  /* UnitDelay: '<S29>/Unit Delay' */
+  /* UnitDelay: '<S30>/Unit Delay' */
   my_pv_system_3_ss_controller_B.UnitDelay_h =
     my_pv_system_3_ss_controller_DW.UnitDelay_DSTATE_iq;
 
-  /* RelationalOperator: '<S29>/Relational Operator' */
+  /* RelationalOperator: '<S30>/Relational Operator' */
   my_pv_system_3_ss_controller_B.RelationalOperator_j =
     (my_pv_system_3_ss_controller_B.DigitalClock_a >=
      my_pv_system_3_ss_controller_B.K1);
 
-  /* UnitDelay: '<S29>/Unit Delay1' */
+  /* UnitDelay: '<S30>/Unit Delay1' */
   my_pv_system_3_ss_controller_B.UnitDelay1_p =
     my_pv_system_3_ss_controller_DW.UnitDelay1_DSTATE_a;
 
-  /* Switch: '<S29>/Switch' */
+  /* Switch: '<S30>/Switch' */
   if (my_pv_system_3_ss_controller_B.RelationalOperator_j) {
-    /* Gain: '<S29>/Gain1' */
+    /* Gain: '<S30>/Gain1' */
     my_pv_system_3_ss_controller_B.Gain1_c =
       my_pv_system_3_ss_controller_P.Gain1_Gain_o *
       my_pv_system_3_ss_controller_B.RateTransition2;
 
-    /* Gain: '<S29>/Gain' */
+    /* Gain: '<S30>/Gain' */
     my_pv_system_3_ss_controller_B.Gain_f =
       my_pv_system_3_ss_controller_P.Gain_Gain *
       my_pv_system_3_ss_controller_B.UnitDelay_h;
 
-    /* Sum: '<S29>/Sum1' */
+    /* Sum: '<S30>/Sum1' */
     my_pv_system_3_ss_controller_B.Correction =
       my_pv_system_3_ss_controller_B.Gain1_c -
       my_pv_system_3_ss_controller_B.Gain_f;
 
-    /* Sum: '<S29>/Sum7' */
+    /* Sum: '<S30>/Sum7' */
     my_pv_system_3_ss_controller_B.Sum7_i =
       my_pv_system_3_ss_controller_B.Integ4_c -
       my_pv_system_3_ss_controller_B.SFunction_pd;
 
-    /* Product: '<S29>/Product' incorporates:
-     *  Constant: '<S29>/K2'
+    /* Product: '<S30>/Product' incorporates:
+     *  Constant: '<S30>/K2'
      */
     my_pv_system_3_ss_controller_B.Mean = my_pv_system_3_ss_controller_B.Sum7_i *
       my_pv_system_3_ss_controller_P.K2_Value;
 
-    /* Sum: '<S29>/Sum5' */
+    /* Sum: '<S30>/Sum5' */
     my_pv_system_3_ss_controller_B.Sum5_c = my_pv_system_3_ss_controller_B.Mean
       + my_pv_system_3_ss_controller_B.Correction;
     my_pv_system_3_ss_controller_B.Switch_c =
@@ -1217,37 +1217,37 @@ static void my_pv_system_3_ss_controller_output(void)
       my_pv_system_3_ss_controller_B.UnitDelay1_p;
   }
 
-  /* End of Switch: '<S29>/Switch' */
+  /* End of Switch: '<S30>/Switch' */
 
-  /* Outputs for Enabled SubSystem: '<S31>/Automatic Gain Control' incorporates:
-   *  EnablePort: '<S32>/Enable'
+  /* Outputs for Enabled SubSystem: '<S32>/Automatic Gain Control' incorporates:
+   *  EnablePort: '<S33>/Enable'
    */
-  /* Constant: '<S31>/Constant1' */
+  /* Constant: '<S32>/Constant1' */
   if (my_pv_system_3_ss_controller_P.PLL_AGC > 0.0) {
     if (!my_pv_system_3_ss_controller_DW.AutomaticGainControl_MODE) {
-      /* Enable for DiscreteIntegrator: '<S39>/Integ4' */
+      /* Enable for DiscreteIntegrator: '<S40>/Integ4' */
       my_pv_system_3_ss_controller_DW.Integ4_SYSTEM_ENABLE_g = 1U;
 
-      /* Enable for DiscreteIntegrator: '<S42>/Integ4' */
+      /* Enable for DiscreteIntegrator: '<S43>/Integ4' */
       my_pv_system_3_ss_controller_DW.Integ4_SYSTEM_ENABLE_gx = 1U;
       my_pv_system_3_ss_controller_DW.AutomaticGainControl_MODE = true;
     }
 
-    /* Trigonometry: '<S36>/Trigonometric Function' */
+    /* Trigonometry: '<S37>/Trigonometric Function' */
     my_pv_system_3_ss_controller_B.TrigonometricFunction_p = sin
       (my_pv_system_3_ss_controller_B.MathFunction_i);
 
-    /* Gain: '<S36>/Gain1' */
+    /* Gain: '<S37>/Gain1' */
     my_pv_system_3_ss_controller_B.Gain1_i =
       my_pv_system_3_ss_controller_P.Gain1_Gain_e *
       my_pv_system_3_ss_controller_B.TrigonometricFunction_p;
 
-    /* Product: '<S36>/Product1' */
+    /* Product: '<S37>/Product1' */
     my_pv_system_3_ss_controller_B.Product1_o =
       my_pv_system_3_ss_controller_B.Vpu *
       my_pv_system_3_ss_controller_B.Gain1_i;
 
-    /* DiscreteIntegrator: '<S39>/Integ4' */
+    /* DiscreteIntegrator: '<S40>/Integ4' */
     if (my_pv_system_3_ss_controller_DW.Integ4_SYSTEM_ENABLE_g != 0) {
       my_pv_system_3_ss_controller_B.Integ4_d =
         my_pv_system_3_ss_controller_DW.Integ4_DSTATE_ky;
@@ -1258,9 +1258,9 @@ static void my_pv_system_3_ss_controller_output(void)
         my_pv_system_3_ss_controller_DW.Integ4_DSTATE_ky;
     }
 
-    /* End of DiscreteIntegrator: '<S39>/Integ4' */
+    /* End of DiscreteIntegrator: '<S40>/Integ4' */
 
-    /* Saturate: '<S39>/To avoid division  by zero' */
+    /* Saturate: '<S40>/To avoid division  by zero' */
     u0 = my_pv_system_3_ss_controller_B.UnitDelay;
     dP = my_pv_system_3_ss_controller_P.Toavoiddivisionbyzero_LowerSat;
     u2 = my_pv_system_3_ss_controller_P.Toavoiddivisionbyzero_UpperSat;
@@ -1272,94 +1272,94 @@ static void my_pv_system_3_ss_controller_output(void)
       my_pv_system_3_ss_controller_B.Freq_h = u0;
     }
 
-    /* End of Saturate: '<S39>/To avoid division  by zero' */
+    /* End of Saturate: '<S40>/To avoid division  by zero' */
 
-    /* Fcn: '<S39>/Number of samples per cycle' */
+    /* Fcn: '<S40>/Number of samples per cycle' */
     my_pv_system_3_ss_controller_B.Numberofsamplespercycle_h = 1.0 /
       my_pv_system_3_ss_controller_B.Freq_h / 5.0e-5;
 
-    /* Rounding: '<S39>/Rounding Function' */
+    /* Rounding: '<S40>/Rounding Function' */
     my_pv_system_3_ss_controller_B.RoundingFunction_e = ceil
       (my_pv_system_3_ss_controller_B.Numberofsamplespercycle_h);
 
-    /* Gain: '<S39>/Gain' */
+    /* Gain: '<S40>/Gain' */
     my_pv_system_3_ss_controller_B.Delay_db =
       my_pv_system_3_ss_controller_P.InverterControl_Ts_Control *
       my_pv_system_3_ss_controller_B.RoundingFunction_e;
 
-    /* Level2 S-Function Block: '<S41>/S-Function' (sfun_discreteVariableDelay) */
+    /* Level2 S-Function Block: '<S42>/S-Function' (sfun_discreteVariableDelay) */
     {
       SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[0];
       sfcnOutputs(rts, 0);
     }
 
-    /* UnitDelay: '<S40>/Unit Delay' */
+    /* UnitDelay: '<S41>/Unit Delay' */
     my_pv_system_3_ss_controller_B.UnitDelay_b =
       my_pv_system_3_ss_controller_DW.UnitDelay_DSTATE_l;
 
-    /* DigitalClock: '<S39>/Digital  Clock' */
+    /* DigitalClock: '<S40>/Digital  Clock' */
     my_pv_system_3_ss_controller_B.DigitalClock_o =
       my_pv_system_3_ss_controller_M->Timing.t[0];
 
-    /* RelationalOperator: '<S39>/Relational Operator' incorporates:
-     *  Constant: '<S39>/Constant'
+    /* RelationalOperator: '<S40>/Relational Operator' incorporates:
+     *  Constant: '<S40>/Constant'
      */
     my_pv_system_3_ss_controller_B.RelationalOperator_d =
       (my_pv_system_3_ss_controller_B.DigitalClock_o >=
        my_pv_system_3_ss_controller_P.Constant_Value);
 
-    /* UnitDelay: '<S39>/Unit Delay1' */
+    /* UnitDelay: '<S40>/Unit Delay1' */
     my_pv_system_3_ss_controller_B.UnitDelay1_c2 =
       my_pv_system_3_ss_controller_DW.UnitDelay1_DSTATE_o;
 
-    /* Switch: '<S39>/Switch' */
+    /* Switch: '<S40>/Switch' */
     if (my_pv_system_3_ss_controller_B.RelationalOperator_d) {
-      /* Sum: '<S40>/Sum1' */
+      /* Sum: '<S41>/Sum1' */
       my_pv_system_3_ss_controller_B.Sum1_p =
         my_pv_system_3_ss_controller_B.Product1_o -
         my_pv_system_3_ss_controller_B.UnitDelay_b;
 
-      /* Sum: '<S40>/Sum5' */
+      /* Sum: '<S41>/Sum5' */
       my_pv_system_3_ss_controller_B.Sum5_k =
         my_pv_system_3_ss_controller_B.Numberofsamplespercycle_h -
         my_pv_system_3_ss_controller_B.RoundingFunction_e;
 
-      /* Product: '<S40>/Product5' */
+      /* Product: '<S41>/Product5' */
       my_pv_system_3_ss_controller_B.Product5_n =
         my_pv_system_3_ss_controller_B.Sum5_k *
         my_pv_system_3_ss_controller_B.Sum1_p;
 
-      /* Gain: '<S40>/Gain1' */
+      /* Gain: '<S41>/Gain1' */
       my_pv_system_3_ss_controller_B.Gain1_o =
         my_pv_system_3_ss_controller_P.Gain1_Gain_f *
         my_pv_system_3_ss_controller_B.Product5_n;
 
-      /* Sum: '<S40>/Sum4' */
+      /* Sum: '<S41>/Sum4' */
       my_pv_system_3_ss_controller_B.Sum4_n =
         my_pv_system_3_ss_controller_B.Gain1_o +
         my_pv_system_3_ss_controller_B.Product1_o;
 
-      /* Product: '<S40>/Product2' */
+      /* Product: '<S41>/Product2' */
       my_pv_system_3_ss_controller_B.Product2_d =
         my_pv_system_3_ss_controller_B.Sum5_k /
         my_pv_system_3_ss_controller_B.Numberofsamplespercycle_h;
 
-      /* Product: '<S40>/Product4' */
+      /* Product: '<S41>/Product4' */
       my_pv_system_3_ss_controller_B.Product4_o =
         my_pv_system_3_ss_controller_B.Product2_d *
         my_pv_system_3_ss_controller_B.Sum4_n;
 
-      /* Sum: '<S39>/Sum7' */
+      /* Sum: '<S40>/Sum7' */
       my_pv_system_3_ss_controller_B.Sum7_e =
         my_pv_system_3_ss_controller_B.Integ4_d -
         my_pv_system_3_ss_controller_B.SFunction_ij;
 
-      /* Product: '<S39>/Product' */
+      /* Product: '<S40>/Product' */
       my_pv_system_3_ss_controller_B.Meanvalue_h =
         my_pv_system_3_ss_controller_B.Sum7_e *
         my_pv_system_3_ss_controller_B.UnitDelay;
 
-      /* Sum: '<S39>/Sum5' */
+      /* Sum: '<S40>/Sum5' */
       my_pv_system_3_ss_controller_B.Sum5_f =
         my_pv_system_3_ss_controller_B.Meanvalue_h +
         my_pv_system_3_ss_controller_B.Product4_o;
@@ -1370,23 +1370,23 @@ static void my_pv_system_3_ss_controller_output(void)
         my_pv_system_3_ss_controller_B.UnitDelay1_c2;
     }
 
-    /* End of Switch: '<S39>/Switch' */
+    /* End of Switch: '<S40>/Switch' */
 
-    /* Trigonometry: '<S36>/Trigonometric Function3' */
+    /* Trigonometry: '<S37>/Trigonometric Function3' */
     my_pv_system_3_ss_controller_B.TrigonometricFunction3_p = cos
       (my_pv_system_3_ss_controller_B.MathFunction_i);
 
-    /* Gain: '<S36>/Gain3' */
+    /* Gain: '<S37>/Gain3' */
     my_pv_system_3_ss_controller_B.Gain3_c =
       my_pv_system_3_ss_controller_P.Gain3_Gain *
       my_pv_system_3_ss_controller_B.TrigonometricFunction3_p;
 
-    /* Product: '<S36>/Product2' */
+    /* Product: '<S37>/Product2' */
     my_pv_system_3_ss_controller_B.Product2_i =
       my_pv_system_3_ss_controller_B.Vpu *
       my_pv_system_3_ss_controller_B.Gain3_c;
 
-    /* DiscreteIntegrator: '<S42>/Integ4' */
+    /* DiscreteIntegrator: '<S43>/Integ4' */
     if (my_pv_system_3_ss_controller_DW.Integ4_SYSTEM_ENABLE_gx != 0) {
       my_pv_system_3_ss_controller_B.Integ4_dy =
         my_pv_system_3_ss_controller_DW.Integ4_DSTATE_j;
@@ -1397,9 +1397,9 @@ static void my_pv_system_3_ss_controller_output(void)
         my_pv_system_3_ss_controller_DW.Integ4_DSTATE_j;
     }
 
-    /* End of DiscreteIntegrator: '<S42>/Integ4' */
+    /* End of DiscreteIntegrator: '<S43>/Integ4' */
 
-    /* Saturate: '<S42>/To avoid division  by zero' */
+    /* Saturate: '<S43>/To avoid division  by zero' */
     u0 = my_pv_system_3_ss_controller_B.UnitDelay;
     dP = my_pv_system_3_ss_controller_P.Toavoiddivisionbyzero_LowerSa_m;
     u2 = my_pv_system_3_ss_controller_P.Toavoiddivisionbyzero_UpperSa_n;
@@ -1411,94 +1411,94 @@ static void my_pv_system_3_ss_controller_output(void)
       my_pv_system_3_ss_controller_B.Freq_mz = u0;
     }
 
-    /* End of Saturate: '<S42>/To avoid division  by zero' */
+    /* End of Saturate: '<S43>/To avoid division  by zero' */
 
-    /* Fcn: '<S42>/Number of samples per cycle' */
+    /* Fcn: '<S43>/Number of samples per cycle' */
     my_pv_system_3_ss_controller_B.Numberofsamplespercycle_d = 1.0 /
       my_pv_system_3_ss_controller_B.Freq_mz / 5.0e-5;
 
-    /* Rounding: '<S42>/Rounding Function' */
+    /* Rounding: '<S43>/Rounding Function' */
     my_pv_system_3_ss_controller_B.RoundingFunction_h = ceil
       (my_pv_system_3_ss_controller_B.Numberofsamplespercycle_d);
 
-    /* Gain: '<S42>/Gain' */
+    /* Gain: '<S43>/Gain' */
     my_pv_system_3_ss_controller_B.Delay_i =
       my_pv_system_3_ss_controller_P.InverterControl_Ts_Control *
       my_pv_system_3_ss_controller_B.RoundingFunction_h;
 
-    /* Level2 S-Function Block: '<S44>/S-Function' (sfun_discreteVariableDelay) */
+    /* Level2 S-Function Block: '<S45>/S-Function' (sfun_discreteVariableDelay) */
     {
       SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[1];
       sfcnOutputs(rts, 0);
     }
 
-    /* UnitDelay: '<S43>/Unit Delay' */
+    /* UnitDelay: '<S44>/Unit Delay' */
     my_pv_system_3_ss_controller_B.UnitDelay_fb =
       my_pv_system_3_ss_controller_DW.UnitDelay_DSTATE_d;
 
-    /* DigitalClock: '<S42>/Digital  Clock' */
+    /* DigitalClock: '<S43>/Digital  Clock' */
     my_pv_system_3_ss_controller_B.DigitalClock_l =
       my_pv_system_3_ss_controller_M->Timing.t[0];
 
-    /* RelationalOperator: '<S42>/Relational Operator' incorporates:
-     *  Constant: '<S42>/Constant'
+    /* RelationalOperator: '<S43>/Relational Operator' incorporates:
+     *  Constant: '<S43>/Constant'
      */
     my_pv_system_3_ss_controller_B.RelationalOperator_k =
       (my_pv_system_3_ss_controller_B.DigitalClock_l >=
        my_pv_system_3_ss_controller_P.Constant_Value_c);
 
-    /* UnitDelay: '<S42>/Unit Delay1' */
+    /* UnitDelay: '<S43>/Unit Delay1' */
     my_pv_system_3_ss_controller_B.UnitDelay1_j =
       my_pv_system_3_ss_controller_DW.UnitDelay1_DSTATE_k;
 
-    /* Switch: '<S42>/Switch' */
+    /* Switch: '<S43>/Switch' */
     if (my_pv_system_3_ss_controller_B.RelationalOperator_k) {
-      /* Sum: '<S43>/Sum1' */
+      /* Sum: '<S44>/Sum1' */
       my_pv_system_3_ss_controller_B.Sum1_c =
         my_pv_system_3_ss_controller_B.Product2_i -
         my_pv_system_3_ss_controller_B.UnitDelay_fb;
 
-      /* Sum: '<S43>/Sum5' */
+      /* Sum: '<S44>/Sum5' */
       my_pv_system_3_ss_controller_B.Sum5_o =
         my_pv_system_3_ss_controller_B.Numberofsamplespercycle_d -
         my_pv_system_3_ss_controller_B.RoundingFunction_h;
 
-      /* Product: '<S43>/Product5' */
+      /* Product: '<S44>/Product5' */
       my_pv_system_3_ss_controller_B.Product5_e =
         my_pv_system_3_ss_controller_B.Sum5_o *
         my_pv_system_3_ss_controller_B.Sum1_c;
 
-      /* Gain: '<S43>/Gain1' */
+      /* Gain: '<S44>/Gain1' */
       my_pv_system_3_ss_controller_B.Gain1_n =
         my_pv_system_3_ss_controller_P.Gain1_Gain_d *
         my_pv_system_3_ss_controller_B.Product5_e;
 
-      /* Sum: '<S43>/Sum4' */
+      /* Sum: '<S44>/Sum4' */
       my_pv_system_3_ss_controller_B.Sum4_g =
         my_pv_system_3_ss_controller_B.Gain1_n +
         my_pv_system_3_ss_controller_B.Product2_i;
 
-      /* Product: '<S43>/Product2' */
+      /* Product: '<S44>/Product2' */
       my_pv_system_3_ss_controller_B.Product2_m =
         my_pv_system_3_ss_controller_B.Sum5_o /
         my_pv_system_3_ss_controller_B.Numberofsamplespercycle_d;
 
-      /* Product: '<S43>/Product4' */
+      /* Product: '<S44>/Product4' */
       my_pv_system_3_ss_controller_B.Product4_d =
         my_pv_system_3_ss_controller_B.Product2_m *
         my_pv_system_3_ss_controller_B.Sum4_g;
 
-      /* Sum: '<S42>/Sum7' */
+      /* Sum: '<S43>/Sum7' */
       my_pv_system_3_ss_controller_B.Sum7_m =
         my_pv_system_3_ss_controller_B.Integ4_dy -
         my_pv_system_3_ss_controller_B.SFunction_ed;
 
-      /* Product: '<S42>/Product' */
+      /* Product: '<S43>/Product' */
       my_pv_system_3_ss_controller_B.Meanvalue_g =
         my_pv_system_3_ss_controller_B.Sum7_m *
         my_pv_system_3_ss_controller_B.UnitDelay;
 
-      /* Sum: '<S42>/Sum5' */
+      /* Sum: '<S43>/Sum5' */
       my_pv_system_3_ss_controller_B.Sum5_i =
         my_pv_system_3_ss_controller_B.Meanvalue_g +
         my_pv_system_3_ss_controller_B.Product4_d;
@@ -1509,15 +1509,15 @@ static void my_pv_system_3_ss_controller_output(void)
         my_pv_system_3_ss_controller_B.UnitDelay1_j;
     }
 
-    /* End of Switch: '<S42>/Switch' */
+    /* End of Switch: '<S43>/Switch' */
 
-    /* RealImagToComplex: '<S36>/Real-Imag to Complex' */
+    /* RealImagToComplex: '<S37>/Real-Imag to Complex' */
     my_pv_system_3_ss_controller_B.RealImagtoComplex_l.re =
       my_pv_system_3_ss_controller_B.Switch_j;
     my_pv_system_3_ss_controller_B.RealImagtoComplex_l.im =
       my_pv_system_3_ss_controller_B.Switch_m;
 
-    /* ComplexToMagnitudeAngle: '<S36>/Complex to Magnitude-Angle' */
+    /* ComplexToMagnitudeAngle: '<S37>/Complex to Magnitude-Angle' */
     my_pv_system_3_ss_controller_B.ComplextoMagnitudeAngle_o1_d = rt_hypotd_snf
       (my_pv_system_3_ss_controller_B.RealImagtoComplex_l.re,
        my_pv_system_3_ss_controller_B.RealImagtoComplex_l.im);
@@ -1525,12 +1525,12 @@ static void my_pv_system_3_ss_controller_output(void)
       (my_pv_system_3_ss_controller_B.RealImagtoComplex_l.im,
        my_pv_system_3_ss_controller_B.RealImagtoComplex_l.re);
 
-    /* Gain: '<S36>/Rad->Deg.' */
+    /* Gain: '<S37>/Rad->Deg.' */
     my_pv_system_3_ss_controller_B.RadDeg_h =
       my_pv_system_3_ss_controller_P.RadDeg_Gain *
       my_pv_system_3_ss_controller_B.ComplextoMagnitudeAngle_o2_i;
 
-    /* Saturate: '<S32>/Saturation' */
+    /* Saturate: '<S33>/Saturation' */
     u0 = my_pv_system_3_ss_controller_B.ComplextoMagnitudeAngle_o1_d;
     dP = my_pv_system_3_ss_controller_P.Saturation_LowerSat;
     u2 = my_pv_system_3_ss_controller_P.Saturation_UpperSat;
@@ -1542,11 +1542,11 @@ static void my_pv_system_3_ss_controller_output(void)
       my_pv_system_3_ss_controller_B.Saturation_n = u0;
     }
 
-    /* End of Saturate: '<S32>/Saturation' */
+    /* End of Saturate: '<S33>/Saturation' */
 
-    /* Math: '<S32>/Math Function'
+    /* Math: '<S33>/Math Function'
      *
-     * About '<S32>/Math Function':
+     * About '<S33>/Math Function':
      *  Operator: reciprocal
      */
     P = my_pv_system_3_ss_controller_B.Saturation_n;
@@ -1557,18 +1557,18 @@ static void my_pv_system_3_ss_controller_output(void)
     }
   }
 
-  /* End of Constant: '<S31>/Constant1' */
-  /* End of Outputs for SubSystem: '<S31>/Automatic Gain Control' */
+  /* End of Constant: '<S32>/Constant1' */
+  /* End of Outputs for SubSystem: '<S32>/Automatic Gain Control' */
 
-  /* Trigonometry: '<S31>/Trigonometric Function2' */
+  /* Trigonometry: '<S32>/Trigonometric Function2' */
   my_pv_system_3_ss_controller_B.TrigonometricFunction2 = cos
     (my_pv_system_3_ss_controller_B.MathFunction_i);
 
-  /* Product: '<S31>/Product1' */
+  /* Product: '<S32>/Product1' */
   my_pv_system_3_ss_controller_B.Product1_c = my_pv_system_3_ss_controller_B.Vpu
     * my_pv_system_3_ss_controller_B.TrigonometricFunction2;
 
-  /* DiscreteIntegrator: '<S45>/Integ4' */
+  /* DiscreteIntegrator: '<S46>/Integ4' */
   if (my_pv_system_3_ss_controller_DW.Integ4_SYSTEM_ENABLE_k != 0) {
     my_pv_system_3_ss_controller_B.Integ4_e =
       my_pv_system_3_ss_controller_DW.Integ4_DSTATE_k;
@@ -1579,9 +1579,9 @@ static void my_pv_system_3_ss_controller_output(void)
       my_pv_system_3_ss_controller_DW.Integ4_DSTATE_k;
   }
 
-  /* End of DiscreteIntegrator: '<S45>/Integ4' */
+  /* End of DiscreteIntegrator: '<S46>/Integ4' */
 
-  /* Saturate: '<S45>/To avoid division  by zero' */
+  /* Saturate: '<S46>/To avoid division  by zero' */
   u0 = my_pv_system_3_ss_controller_B.UnitDelay;
   dP = my_pv_system_3_ss_controller_P.Toavoiddivisionbyzero_LowerSa_a;
   u2 = my_pv_system_3_ss_controller_P.Toavoiddivisionbyzero_UpperSa_e;
@@ -1593,93 +1593,93 @@ static void my_pv_system_3_ss_controller_output(void)
     my_pv_system_3_ss_controller_B.Freq_c = u0;
   }
 
-  /* End of Saturate: '<S45>/To avoid division  by zero' */
+  /* End of Saturate: '<S46>/To avoid division  by zero' */
 
-  /* Fcn: '<S45>/Number of samples per cycle' */
+  /* Fcn: '<S46>/Number of samples per cycle' */
   my_pv_system_3_ss_controller_B.Numberofsamplespercycle_f = 1.0 /
     my_pv_system_3_ss_controller_B.Freq_c / 5.0e-5;
 
-  /* Rounding: '<S45>/Rounding Function' */
+  /* Rounding: '<S46>/Rounding Function' */
   my_pv_system_3_ss_controller_B.RoundingFunction_b = ceil
     (my_pv_system_3_ss_controller_B.Numberofsamplespercycle_f);
 
-  /* Gain: '<S45>/Gain' */
+  /* Gain: '<S46>/Gain' */
   my_pv_system_3_ss_controller_B.Delay_m =
     my_pv_system_3_ss_controller_P.InverterControl_Ts_Control *
     my_pv_system_3_ss_controller_B.RoundingFunction_b;
 
-  /* Level2 S-Function Block: '<S47>/S-Function' (sfun_discreteVariableDelay) */
+  /* Level2 S-Function Block: '<S48>/S-Function' (sfun_discreteVariableDelay) */
   {
     SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[10];
     sfcnOutputs(rts, 0);
   }
 
-  /* UnitDelay: '<S46>/Unit Delay' */
+  /* UnitDelay: '<S47>/Unit Delay' */
   my_pv_system_3_ss_controller_B.UnitDelay_o =
     my_pv_system_3_ss_controller_DW.UnitDelay_DSTATE_a;
 
-  /* DigitalClock: '<S45>/Digital  Clock' */
+  /* DigitalClock: '<S46>/Digital  Clock' */
   my_pv_system_3_ss_controller_B.DigitalClock_e =
     my_pv_system_3_ss_controller_M->Timing.t[0];
 
-  /* RelationalOperator: '<S45>/Relational Operator' incorporates:
-   *  Constant: '<S45>/Constant'
+  /* RelationalOperator: '<S46>/Relational Operator' incorporates:
+   *  Constant: '<S46>/Constant'
    */
   my_pv_system_3_ss_controller_B.RelationalOperator_l =
     (my_pv_system_3_ss_controller_B.DigitalClock_e >=
      my_pv_system_3_ss_controller_P.Constant_Value_f);
 
-  /* UnitDelay: '<S45>/Unit Delay1' */
+  /* UnitDelay: '<S46>/Unit Delay1' */
   my_pv_system_3_ss_controller_B.UnitDelay1_a =
     my_pv_system_3_ss_controller_DW.UnitDelay1_DSTATE_i;
 
-  /* Switch: '<S45>/Switch' */
+  /* Switch: '<S46>/Switch' */
   if (my_pv_system_3_ss_controller_B.RelationalOperator_l) {
-    /* Sum: '<S46>/Sum1' */
+    /* Sum: '<S47>/Sum1' */
     my_pv_system_3_ss_controller_B.Sum1 =
       my_pv_system_3_ss_controller_B.Product1_c -
       my_pv_system_3_ss_controller_B.UnitDelay_o;
 
-    /* Sum: '<S46>/Sum5' */
+    /* Sum: '<S47>/Sum5' */
     my_pv_system_3_ss_controller_B.Sum5 =
       my_pv_system_3_ss_controller_B.Numberofsamplespercycle_f -
       my_pv_system_3_ss_controller_B.RoundingFunction_b;
 
-    /* Product: '<S46>/Product5' */
+    /* Product: '<S47>/Product5' */
     my_pv_system_3_ss_controller_B.Product5 =
       my_pv_system_3_ss_controller_B.Sum5 * my_pv_system_3_ss_controller_B.Sum1;
 
-    /* Gain: '<S46>/Gain1' */
+    /* Gain: '<S47>/Gain1' */
     my_pv_system_3_ss_controller_B.Gain1_pw =
       my_pv_system_3_ss_controller_P.Gain1_Gain_hn *
       my_pv_system_3_ss_controller_B.Product5;
 
-    /* Sum: '<S46>/Sum4' */
+    /* Sum: '<S47>/Sum4' */
     my_pv_system_3_ss_controller_B.Sum4 =
       my_pv_system_3_ss_controller_B.Gain1_pw +
       my_pv_system_3_ss_controller_B.Product1_c;
 
-    /* Product: '<S46>/Product2' */
+    /* Product: '<S47>/Product2' */
     my_pv_system_3_ss_controller_B.Product2_b =
       my_pv_system_3_ss_controller_B.Sum5 /
       my_pv_system_3_ss_controller_B.Numberofsamplespercycle_f;
 
-    /* Product: '<S46>/Product4' */
+    /* Product: '<S47>/Product4' */
     my_pv_system_3_ss_controller_B.Product4 =
       my_pv_system_3_ss_controller_B.Product2_b *
       my_pv_system_3_ss_controller_B.Sum4;
 
-    /* Sum: '<S45>/Sum7' */
+    /* Sum: '<S46>/Sum7' */
     my_pv_system_3_ss_controller_B.Sum7 =
       my_pv_system_3_ss_controller_B.Integ4_e -
       my_pv_system_3_ss_controller_B.SFunction_e;
 
-    /* Product: '<S45>/Product' */
+    /* Product: '<S46>/Product' */
     my_pv_system_3_ss_controller_B.Meanvalue =
       my_pv_system_3_ss_controller_B.Sum7 *
       my_pv_system_3_ss_controller_B.UnitDelay;
 
-    /* Sum: '<S45>/Sum5' */
+    /* Sum: '<S46>/Sum5' */
     my_pv_system_3_ss_controller_B.Sum5_b =
       my_pv_system_3_ss_controller_B.Meanvalue +
       my_pv_system_3_ss_controller_B.Product4;
@@ -1690,14 +1690,14 @@ static void my_pv_system_3_ss_controller_output(void)
       my_pv_system_3_ss_controller_B.UnitDelay1_a;
   }
 
-  /* End of Switch: '<S45>/Switch' */
+  /* End of Switch: '<S46>/Switch' */
 
-  /* Product: '<S31>/Divide' */
+  /* Product: '<S32>/Divide' */
   my_pv_system_3_ss_controller_B.Divide =
     my_pv_system_3_ss_controller_B.Switch_d *
     my_pv_system_3_ss_controller_B.MathFunction_k;
 
-  /* DiscreteTransferFcn: '<S33>/Discrete Derivative ' */
+  /* DiscreteTransferFcn: '<S34>/Discrete Derivative ' */
   P = my_pv_system_3_ss_controller_B.Divide;
   P -= my_pv_system_3_ss_controller_P.DiscreteDerivative_DenCoef[1] *
     my_pv_system_3_ss_controller_DW.DiscreteDerivative_states;
@@ -1713,21 +1713,21 @@ static void my_pv_system_3_ss_controller_output(void)
   dV += u0 * my_pv_system_3_ss_controller_DW.DiscreteDerivative_states;
   my_pv_system_3_ss_controller_B.DiscreteDerivative = dV;
 
-  /* DiscreteIntegrator: '<S33>/Discrete-Time Integrator' */
+  /* DiscreteIntegrator: '<S34>/Discrete-Time Integrator' */
   my_pv_system_3_ss_controller_B.DiscreteTimeIntegrator_g =
     my_pv_system_3_ss_controller_DW.DiscreteTimeIntegrator_DSTATE_d;
 
-  /* Gain: '<S33>/Kp4' */
+  /* Gain: '<S34>/Kp4' */
   my_pv_system_3_ss_controller_B.Kp4 =
     my_pv_system_3_ss_controller_P.Discrete_Kp *
     my_pv_system_3_ss_controller_B.Divide;
 
-  /* Sum: '<S33>/Sum6' */
+  /* Sum: '<S34>/Sum6' */
   my_pv_system_3_ss_controller_B.Sum6 = (my_pv_system_3_ss_controller_B.Kp4 +
     my_pv_system_3_ss_controller_B.DiscreteTimeIntegrator_g) +
     my_pv_system_3_ss_controller_B.DiscreteDerivative;
 
-  /* Saturate: '<S33>/Saturation1' */
+  /* Saturate: '<S34>/Saturation1' */
   u0 = my_pv_system_3_ss_controller_B.Sum6;
   dP = my_pv_system_3_ss_controller_P.Saturation1_LowerSat;
   u2 = my_pv_system_3_ss_controller_P.Saturation1_UpperSat;
@@ -1739,14 +1739,14 @@ static void my_pv_system_3_ss_controller_output(void)
     my_pv_system_3_ss_controller_B.Saturation1 = u0;
   }
 
-  /* End of Saturate: '<S33>/Saturation1' */
+  /* End of Saturate: '<S34>/Saturation1' */
 
-  /* Gain: '<S31>/Gain10' */
+  /* Gain: '<S32>/Gain10' */
   my_pv_system_3_ss_controller_B.Gain10 =
     my_pv_system_3_ss_controller_P.Gain10_Gain *
     my_pv_system_3_ss_controller_B.Saturation1;
 
-  /* RateLimiter: '<S31>/Rate Limiter' */
+  /* RateLimiter: '<S32>/Rate Limiter' */
   P = my_pv_system_3_ss_controller_B.Gain10 -
     my_pv_system_3_ss_controller_DW.PrevY;
   if (P > my_pv_system_3_ss_controller_P.RateLimiter_RisingLim) {
@@ -1765,80 +1765,80 @@ static void my_pv_system_3_ss_controller_output(void)
   my_pv_system_3_ss_controller_DW.PrevY =
     my_pv_system_3_ss_controller_B.RateLimiter;
 
-  /* End of RateLimiter: '<S31>/Rate Limiter' */
+  /* End of RateLimiter: '<S32>/Rate Limiter' */
 
-  /* UnitDelay: '<S48>/Delay_x1' */
+  /* UnitDelay: '<S49>/Delay_x1' */
   my_pv_system_3_ss_controller_B.x1k_d =
     my_pv_system_3_ss_controller_DW.Delay_x1_DSTATE_d;
 
-  /* Gain: '<S49>/A11' */
+  /* Gain: '<S50>/A11' */
   my_pv_system_3_ss_controller_B.A11 = my_pv_system_3_ss_controller_P.A11_Gain *
     my_pv_system_3_ss_controller_B.x1k_d;
 
-  /* UnitDelay: '<S48>/Delay_x2' */
+  /* UnitDelay: '<S49>/Delay_x2' */
   my_pv_system_3_ss_controller_B.x2k_k =
     my_pv_system_3_ss_controller_DW.Delay_x2_DSTATE_m;
 
-  /* Gain: '<S49>/A12' */
+  /* Gain: '<S50>/A12' */
   my_pv_system_3_ss_controller_B.A12 = my_pv_system_3_ss_controller_P.A12_Gain *
     my_pv_system_3_ss_controller_B.x2k_k;
 
-  /* Gain: '<S49>/A21' */
+  /* Gain: '<S50>/A21' */
   my_pv_system_3_ss_controller_B.A21 = my_pv_system_3_ss_controller_P.A21_Gain *
     my_pv_system_3_ss_controller_B.x1k_d;
 
-  /* Gain: '<S49>/A22' */
+  /* Gain: '<S50>/A22' */
   my_pv_system_3_ss_controller_B.A22 = my_pv_system_3_ss_controller_P.A22_Gain *
     my_pv_system_3_ss_controller_B.x2k_k;
 
-  /* Sum: '<S49>/sum2' */
+  /* Sum: '<S50>/sum2' */
   my_pv_system_3_ss_controller_B.sum2_c = my_pv_system_3_ss_controller_B.A11 +
     my_pv_system_3_ss_controller_B.A12;
 
-  /* Sum: '<S49>/sum3' */
+  /* Sum: '<S50>/sum3' */
   my_pv_system_3_ss_controller_B.sum3 = my_pv_system_3_ss_controller_B.A21 +
     my_pv_system_3_ss_controller_B.A22;
 
-  /* Gain: '<S50>/B11' */
+  /* Gain: '<S51>/B11' */
   my_pv_system_3_ss_controller_B.B11 = my_pv_system_3_ss_controller_P.B11_Gain *
     my_pv_system_3_ss_controller_B.RateLimiter;
 
-  /* Sum: '<S48>/A*x1(k) + B*u1(k) ' */
+  /* Sum: '<S49>/A*x1(k) + B*u1(k) ' */
   my_pv_system_3_ss_controller_B.x1k1 = my_pv_system_3_ss_controller_B.sum2_c +
     my_pv_system_3_ss_controller_B.B11;
 
-  /* Gain: '<S50>/B21' */
+  /* Gain: '<S51>/B21' */
   my_pv_system_3_ss_controller_B.B21 = my_pv_system_3_ss_controller_P.B21_Gain *
     my_pv_system_3_ss_controller_B.RateLimiter;
 
-  /* Sum: '<S48>/A*x2(k) + B*u2(k)' */
+  /* Sum: '<S49>/A*x2(k) + B*u2(k)' */
   my_pv_system_3_ss_controller_B.x2k1 = my_pv_system_3_ss_controller_B.sum3 +
     my_pv_system_3_ss_controller_B.B21;
 
-  /* Gain: '<S48>/D*u(k)' */
+  /* Gain: '<S49>/D*u(k)' */
   my_pv_system_3_ss_controller_B.Duk_b =
     my_pv_system_3_ss_controller_P.Duk_Gain_p *
     my_pv_system_3_ss_controller_B.RateLimiter;
 
-  /* Gain: '<S51>/C11' */
+  /* Gain: '<S52>/C11' */
   my_pv_system_3_ss_controller_B.C11_d =
     my_pv_system_3_ss_controller_P.C11_Gain_l *
     my_pv_system_3_ss_controller_B.x1k_d;
 
-  /* Gain: '<S51>/C12' */
+  /* Gain: '<S52>/C12' */
   my_pv_system_3_ss_controller_B.C12_g =
     my_pv_system_3_ss_controller_P.C12_Gain_k *
     my_pv_system_3_ss_controller_B.x2k_k;
 
-  /* Sum: '<S51>/sum2' */
+  /* Sum: '<S52>/sum2' */
   my_pv_system_3_ss_controller_B.sum2_o = my_pv_system_3_ss_controller_B.C11_d +
     my_pv_system_3_ss_controller_B.C12_g;
 
-  /* Sum: '<S48>/C*X(k)+D*u(k)' */
+  /* Sum: '<S49>/C*X(k)+D*u(k)' */
   my_pv_system_3_ss_controller_B.yk_e = my_pv_system_3_ss_controller_B.Duk_b +
     my_pv_system_3_ss_controller_B.sum2_o;
 
-  /* Gain: '<S53>/A11' */
+  /* Gain: '<S54>/A11' */
   my_pv_system_3_ss_controller_B.A11_e[0] =
     my_pv_system_3_ss_controller_P.A11_Gain_g *
     my_pv_system_3_ss_controller_B.x1k[0];
@@ -1846,7 +1846,7 @@ static void my_pv_system_3_ss_controller_output(void)
     my_pv_system_3_ss_controller_P.A11_Gain_g *
     my_pv_system_3_ss_controller_B.x1k[1];
 
-  /* Gain: '<S53>/A12' */
+  /* Gain: '<S54>/A12' */
   my_pv_system_3_ss_controller_B.A12_i[0] =
     my_pv_system_3_ss_controller_P.A12_Gain_l *
     my_pv_system_3_ss_controller_B.x2k[0];
@@ -1854,7 +1854,7 @@ static void my_pv_system_3_ss_controller_output(void)
     my_pv_system_3_ss_controller_P.A12_Gain_l *
     my_pv_system_3_ss_controller_B.x2k[1];
 
-  /* Gain: '<S53>/A21' */
+  /* Gain: '<S54>/A21' */
   my_pv_system_3_ss_controller_B.A21_o[0] =
     my_pv_system_3_ss_controller_P.A21_Gain_k *
     my_pv_system_3_ss_controller_B.x1k[0];
@@ -1862,7 +1862,7 @@ static void my_pv_system_3_ss_controller_output(void)
     my_pv_system_3_ss_controller_P.A21_Gain_k *
     my_pv_system_3_ss_controller_B.x1k[1];
 
-  /* Gain: '<S53>/A22' */
+  /* Gain: '<S54>/A22' */
   my_pv_system_3_ss_controller_B.A22_p[0] =
     my_pv_system_3_ss_controller_P.A22_Gain_p *
     my_pv_system_3_ss_controller_B.x2k[0];
@@ -1870,7 +1870,7 @@ static void my_pv_system_3_ss_controller_output(void)
     my_pv_system_3_ss_controller_P.A22_Gain_p *
     my_pv_system_3_ss_controller_B.x2k[1];
 
-  /* Sum: '<S53>/sum2' */
+  /* Sum: '<S54>/sum2' */
   my_pv_system_3_ss_controller_B.sum2_e[0] =
     my_pv_system_3_ss_controller_B.A11_e[0] +
     my_pv_system_3_ss_controller_B.A12_i[0];
@@ -1878,7 +1878,7 @@ static void my_pv_system_3_ss_controller_output(void)
     my_pv_system_3_ss_controller_B.A11_e[1] +
     my_pv_system_3_ss_controller_B.A12_i[1];
 
-  /* Sum: '<S53>/sum3' */
+  /* Sum: '<S54>/sum3' */
   my_pv_system_3_ss_controller_B.sum3_g[0] =
     my_pv_system_3_ss_controller_B.A21_o[0] +
     my_pv_system_3_ss_controller_B.A22_p[0];
@@ -1886,7 +1886,7 @@ static void my_pv_system_3_ss_controller_output(void)
     my_pv_system_3_ss_controller_B.A21_o[1] +
     my_pv_system_3_ss_controller_B.A22_p[1];
 
-  /* Gain: '<S54>/B11' */
+  /* Gain: '<S55>/B11' */
   my_pv_system_3_ss_controller_B.B11_o[0] =
     my_pv_system_3_ss_controller_P.B11_Gain_n *
     my_pv_system_3_ss_controller_B.Switch[0];
@@ -1894,7 +1894,7 @@ static void my_pv_system_3_ss_controller_output(void)
     my_pv_system_3_ss_controller_P.B11_Gain_n *
     my_pv_system_3_ss_controller_B.Switch[1];
 
-  /* Sum: '<S52>/A*x1(k) + B*u1(k) ' */
+  /* Sum: '<S53>/A*x1(k) + B*u1(k) ' */
   my_pv_system_3_ss_controller_B.x1k1_l[0] =
     my_pv_system_3_ss_controller_B.sum2_e[0] +
     my_pv_system_3_ss_controller_B.B11_o[0];
@@ -1902,7 +1902,7 @@ static void my_pv_system_3_ss_controller_output(void)
     my_pv_system_3_ss_controller_B.sum2_e[1] +
     my_pv_system_3_ss_controller_B.B11_o[1];
 
-  /* Gain: '<S54>/B21' */
+  /* Gain: '<S55>/B21' */
   my_pv_system_3_ss_controller_B.B21_p[0] =
     my_pv_system_3_ss_controller_P.B21_Gain_m *
     my_pv_system_3_ss_controller_B.Switch[0];
@@ -1910,7 +1910,7 @@ static void my_pv_system_3_ss_controller_output(void)
     my_pv_system_3_ss_controller_P.B21_Gain_m *
     my_pv_system_3_ss_controller_B.Switch[1];
 
-  /* Sum: '<S52>/A*x2(k) + B*u2(k)' */
+  /* Sum: '<S53>/A*x2(k) + B*u2(k)' */
   my_pv_system_3_ss_controller_B.x2k1_k[0] =
     my_pv_system_3_ss_controller_B.sum3_g[0] +
     my_pv_system_3_ss_controller_B.B21_p[0];
@@ -1918,41 +1918,41 @@ static void my_pv_system_3_ss_controller_output(void)
     my_pv_system_3_ss_controller_B.sum3_g[1] +
     my_pv_system_3_ss_controller_B.B21_p[1];
 
-  /* Constant: '<S20>/Constant1' */
+  /* Constant: '<S21>/Constant1' */
   my_pv_system_3_ss_controller_B.Constant1 =
     my_pv_system_3_ss_controller_P.Constant1_Value_p;
 
-  /* Sum: '<S62>/Add3' incorporates:
-   *  Constant: '<S12>/Constant10'
+  /* Sum: '<S63>/Add3' incorporates:
+   *  Constant: '<S13>/Constant10'
    */
   my_pv_system_3_ss_controller_B.Add3_n =
     my_pv_system_3_ss_controller_P.PWM_Generator_MinMax[1] -
     my_pv_system_3_ss_controller_P.PWM_Generator_MinMax[0];
 
-  /* DigitalClock: '<S84>/Digital Clock' */
+  /* DigitalClock: '<S85>/Digital Clock' */
   my_pv_system_3_ss_controller_B.DigitalClock_mz =
     my_pv_system_3_ss_controller_M->Timing.t[0];
 
-  /* Sum: '<S84>/Add1' incorporates:
-   *  Constant: '<S84>/Constant3'
+  /* Sum: '<S85>/Add1' incorporates:
+   *  Constant: '<S85>/Constant3'
    */
   my_pv_system_3_ss_controller_B.Add1 =
     my_pv_system_3_ss_controller_B.DigitalClock_mz +
     my_pv_system_3_ss_controller_P.Constant3_Value_c;
 
-  /* Math: '<S84>/Math Function' incorporates:
-   *  Constant: '<S84>/Constant1'
+  /* Math: '<S85>/Math Function' incorporates:
+   *  Constant: '<S85>/Constant1'
    */
   my_pv_system_3_ss_controller_B.MathFunction_b = rt_remd_snf
     (my_pv_system_3_ss_controller_B.Add1,
      my_pv_system_3_ss_controller_P.Constant1_Value_h);
 
-  /* Gain: '<S84>/1\ib1' */
+  /* Gain: '<S85>/1\ib1' */
   my_pv_system_3_ss_controller_B.ib1 = my_pv_system_3_ss_controller_P.ib1_Gain *
     my_pv_system_3_ss_controller_B.MathFunction_b;
 
-  /* Lookup: '<S84>/Lookup Table'
-   * About '<S84>/Lookup Table':
+  /* Lookup: '<S85>/Lookup Table'
+   * About '<S85>/Lookup Table':
    * Input0  Data Type:  Floating Point real_T
    * Output0 Data Type:  Floating Point real_T
    * Lookup Method: Linear_Endpoint
@@ -1965,68 +1965,62 @@ static void my_pv_system_3_ss_controller_output(void)
                        my_pv_system_3_ss_controller_B.ib1,
                        my_pv_system_3_ss_controller_P.LookupTable_XData, 2U);
 
-  /* Sum: '<S84>/Add3' incorporates:
-   *  Constant: '<S84>/Constant2'
+  /* Sum: '<S85>/Add3' incorporates:
+   *  Constant: '<S85>/Constant2'
    */
   my_pv_system_3_ss_controller_B.Add3_o =
     my_pv_system_3_ss_controller_B.LookupTable -
     my_pv_system_3_ss_controller_P.Constant2_Value_a;
 
-  /* Gain: '<S62>/Gain1' */
+  /* Gain: '<S63>/Gain1' */
   my_pv_system_3_ss_controller_B.Gain1_p =
     my_pv_system_3_ss_controller_P.Gain1_Gain_du *
     my_pv_system_3_ss_controller_B.Add3_n;
 
-  /* Product: '<S62>/MUL1' */
+  /* Product: '<S63>/MUL1' */
   my_pv_system_3_ss_controller_B.MUL1 = my_pv_system_3_ss_controller_B.Add3_o *
     my_pv_system_3_ss_controller_B.Gain1_p;
 
-  /* Sum: '<S62>/Add4' incorporates:
-   *  Constant: '<S12>/Constant10'
+  /* Sum: '<S63>/Add4' incorporates:
+   *  Constant: '<S13>/Constant10'
    */
   my_pv_system_3_ss_controller_B.Add4 =
     (my_pv_system_3_ss_controller_P.PWM_Generator_MinMax[0] +
      my_pv_system_3_ss_controller_B.MUL1) +
     my_pv_system_3_ss_controller_B.Gain1_p;
 
-  /* UnitDelay: '<S4>/Unit Delay' */
+  /* UnitDelay: '<S5>/Unit Delay' */
   my_pv_system_3_ss_controller_B.UnitDelay_m =
     my_pv_system_3_ss_controller_DW.UnitDelay_DSTATE_il;
 
-  /* RelationalOperator: '<S67>/Relational Operator1' */
-  my_pv_system_3_ss_controller_B.RelationalOperator1 =
+  /* RelationalOperator: '<S67>/Relational Operator2' */
+  my_pv_system_3_ss_controller_B.RelationalOperator2 =
     (my_pv_system_3_ss_controller_B.UnitDelay_m >=
      my_pv_system_3_ss_controller_B.Add4);
 
-  /* Gain: '<S67>/Gain' */
-  my_pv_system_3_ss_controller_B.Gain_a =
-    my_pv_system_3_ss_controller_P.Gain_Gain_cv *
-    my_pv_system_3_ss_controller_B.UnitDelay_m;
+  /* Logic: '<S67>/Logical Operator' */
+  my_pv_system_3_ss_controller_B.LogicalOperator =
+    !my_pv_system_3_ss_controller_B.RelationalOperator2;
 
-  /* RelationalOperator: '<S67>/Relational Operator3' */
-  my_pv_system_3_ss_controller_B.RelationalOperator3 =
-    (my_pv_system_3_ss_controller_B.Gain_a >=
-     my_pv_system_3_ss_controller_B.Add4);
-
-  /* Logic: '<S12>/Logical Operator4' */
+  /* Logic: '<S13>/Logical Operator4' */
   my_pv_system_3_ss_controller_B.LogicalOperator4[0] =
-    !my_pv_system_3_ss_controller_B.RelationalOperator1;
+    !my_pv_system_3_ss_controller_B.RelationalOperator2;
   my_pv_system_3_ss_controller_B.LogicalOperator4[1] =
-    !my_pv_system_3_ss_controller_B.RelationalOperator3;
+    !my_pv_system_3_ss_controller_B.LogicalOperator;
 
-  /* DataTypeConversion: '<S12>/Data Type Conversion' */
+  /* DataTypeConversion: '<S13>/Data Type Conversion' */
   my_pv_system_3_ss_controller_B.DataTypeConversion[0] =
-    my_pv_system_3_ss_controller_B.RelationalOperator1;
+    my_pv_system_3_ss_controller_B.RelationalOperator2;
   my_pv_system_3_ss_controller_B.DataTypeConversion[1] =
     my_pv_system_3_ss_controller_B.LogicalOperator4[0];
   my_pv_system_3_ss_controller_B.DataTypeConversion[2] =
-    my_pv_system_3_ss_controller_B.RelationalOperator3;
+    my_pv_system_3_ss_controller_B.LogicalOperator;
   my_pv_system_3_ss_controller_B.DataTypeConversion[3] =
     my_pv_system_3_ss_controller_B.LogicalOperator4[1];
 
-  /* Switch: '<S4>/Switch' incorporates:
-   *  Constant: '<S2>/MPPT_On'
-   *  Constant: '<S4>/Vnom_dc1'
+  /* Switch: '<S5>/Switch' incorporates:
+   *  Constant: '<S3>/MPPT_On'
+   *  Constant: '<S5>/Vnom_dc1'
    */
   if (my_pv_system_3_ss_controller_P.MPPT_On_Value != 0.0) {
     my_pv_system_3_ss_controller_B.Switch_d2 = my_pv_system_3_ss_controller_B.D;
@@ -2035,11 +2029,11 @@ static void my_pv_system_3_ss_controller_output(void)
       my_pv_system_3_ss_controller_P.InverterControl_Vdc_ref_Init;
   }
 
-  /* End of Switch: '<S4>/Switch' */
+  /* End of Switch: '<S5>/Switch' */
 
-  /* Sum: '<S13>/Add1' incorporates:
-   *  Constant: '<S13>/Constant2'
-   *  Constant: '<S13>/Constant4'
+  /* Sum: '<S14>/Add1' incorporates:
+   *  Constant: '<S14>/Constant2'
+   *  Constant: '<S14>/Constant4'
    */
   dV = my_pv_system_3_ss_controller_P.InverterControl_Ts_Control *
     my_pv_system_3_ss_controller_P.InverterControl_Fnom * 6.2831853071795862;
@@ -2047,26 +2041,26 @@ static void my_pv_system_3_ss_controller_output(void)
     (my_pv_system_3_ss_controller_B.MathFunction_i +
      my_pv_system_3_ss_controller_P.Constant2_Value_b) + dV;
 
-  /* UnitDelay: '<S4>/Unit Delay3' */
+  /* UnitDelay: '<S5>/Unit Delay3' */
   my_pv_system_3_ss_controller_B.UnitDelay3[0] =
     my_pv_system_3_ss_controller_DW.UnitDelay3_DSTATE[0];
   my_pv_system_3_ss_controller_B.UnitDelay3[1] =
     my_pv_system_3_ss_controller_DW.UnitDelay3_DSTATE[1];
 
-  /* Gain: '<S13>/Gain1' */
+  /* Gain: '<S14>/Gain1' */
   my_pv_system_3_ss_controller_B.Gain1_g =
     my_pv_system_3_ss_controller_P.Gain1_Gain_p *
     my_pv_system_3_ss_controller_B.Switch_c;
 
-  /* Product: '<S13>/Product' incorporates:
-   *  Constant: '<S13>/Constant3'
+  /* Product: '<S14>/Product' incorporates:
+   *  Constant: '<S14>/Constant3'
    */
   dV = my_pv_system_3_ss_controller_P.InverterControl_Vnom_prim *
     1.4142135623730951;
   my_pv_system_3_ss_controller_B.Product =
     my_pv_system_3_ss_controller_B.Gain1_g / dV;
 
-  /* Product: '<S13>/Product1' */
+  /* Product: '<S14>/Product1' */
   my_pv_system_3_ss_controller_B.Product1_d[0] =
     my_pv_system_3_ss_controller_B.UnitDelay3[0] /
     my_pv_system_3_ss_controller_B.Product;
@@ -2074,13 +2068,13 @@ static void my_pv_system_3_ss_controller_output(void)
     my_pv_system_3_ss_controller_B.UnitDelay3[1] /
     my_pv_system_3_ss_controller_B.Product;
 
-  /* RealImagToComplex: '<S13>/Real-Imag to Complex' */
+  /* RealImagToComplex: '<S14>/Real-Imag to Complex' */
   my_pv_system_3_ss_controller_B.RealImagtoComplex_n.re =
     my_pv_system_3_ss_controller_B.Product1_d[0];
   my_pv_system_3_ss_controller_B.RealImagtoComplex_n.im =
     my_pv_system_3_ss_controller_B.Product1_d[1];
 
-  /* ComplexToMagnitudeAngle: '<S13>/Complex to Magnitude-Angle' */
+  /* ComplexToMagnitudeAngle: '<S14>/Complex to Magnitude-Angle' */
   my_pv_system_3_ss_controller_B.ComplextoMagnitudeAngle_o1_n = rt_hypotd_snf
     (my_pv_system_3_ss_controller_B.RealImagtoComplex_n.re,
      my_pv_system_3_ss_controller_B.RealImagtoComplex_n.im);
@@ -2088,56 +2082,56 @@ static void my_pv_system_3_ss_controller_output(void)
     (my_pv_system_3_ss_controller_B.RealImagtoComplex_n.im,
      my_pv_system_3_ss_controller_B.RealImagtoComplex_n.re);
 
-  /* Sum: '<S13>/Add2' */
+  /* Sum: '<S14>/Add2' */
   my_pv_system_3_ss_controller_B.Add2_f =
     my_pv_system_3_ss_controller_B.ComplextoMagnitudeAngle_o2_p +
     my_pv_system_3_ss_controller_B.Add1_a;
 
-  /* Trigonometry: '<S13>/Trigonometric Function' */
+  /* Trigonometry: '<S14>/Trigonometric Function' */
   my_pv_system_3_ss_controller_B.TrigonometricFunction_h = sin
     (my_pv_system_3_ss_controller_B.Add2_f);
 
-  /* Product: '<S13>/Product2' */
+  /* Product: '<S14>/Product2' */
   my_pv_system_3_ss_controller_B.Product2_n =
     my_pv_system_3_ss_controller_B.ComplextoMagnitudeAngle_o1_n *
     my_pv_system_3_ss_controller_B.TrigonometricFunction_h;
 
-  /* UnitDelay: '<S4>/Unit Delay1' */
+  /* UnitDelay: '<S5>/Unit Delay1' */
   my_pv_system_3_ss_controller_B.UnitDelay1_c =
     my_pv_system_3_ss_controller_DW.UnitDelay1_DSTATE_e;
 
-  /* Sum: '<S14>/Sum' */
+  /* Sum: '<S15>/Sum' */
   my_pv_system_3_ss_controller_B.Sum_k = my_pv_system_3_ss_controller_B.Switch_c
     - my_pv_system_3_ss_controller_B.UnitDelay1_c;
 
-  /* Gain: '<S14>/Rtot_pu2' */
+  /* Gain: '<S15>/Rtot_pu2' */
   dP = my_pv_system_3_ss_controller_P.InverterControl_Vnom_dc;
   dV = 1.0 / dP;
   my_pv_system_3_ss_controller_B.Rtot_pu2 = dV *
     my_pv_system_3_ss_controller_B.Sum_k;
 
-  /* Gain: '<S86>/Integral Gain' */
+  /* Gain: '<S87>/Integral Gain' */
   my_pv_system_3_ss_controller_B.IntegralGain_a =
     my_pv_system_3_ss_controller_P.InverterControl_Ki_VDCreg *
     my_pv_system_3_ss_controller_B.Rtot_pu2;
 
-  /* DiscreteIntegrator: '<S86>/Integrator' */
+  /* DiscreteIntegrator: '<S87>/Integrator' */
   my_pv_system_3_ss_controller_B.Integrator_e =
     my_pv_system_3_ss_controller_P.Integrator_gainval_i *
     my_pv_system_3_ss_controller_B.IntegralGain_a +
     my_pv_system_3_ss_controller_DW.Integrator_DSTATE_d;
 
-  /* Gain: '<S86>/Proportional Gain' */
+  /* Gain: '<S87>/Proportional Gain' */
   my_pv_system_3_ss_controller_B.ProportionalGain_b =
     my_pv_system_3_ss_controller_P.InverterControl_Kp_VDCreg *
     my_pv_system_3_ss_controller_B.Rtot_pu2;
 
-  /* Sum: '<S86>/Sum' */
+  /* Sum: '<S87>/Sum' */
   my_pv_system_3_ss_controller_B.Sum_i =
     my_pv_system_3_ss_controller_B.ProportionalGain_b +
     my_pv_system_3_ss_controller_B.Integrator_e;
 
-  /* Saturate: '<S86>/Saturate' */
+  /* Saturate: '<S87>/Saturate' */
   u0 = my_pv_system_3_ss_controller_B.Sum_i;
   dP = my_pv_system_3_ss_controller_P.PI_LowerSaturationLimit_p;
   u2 = my_pv_system_3_ss_controller_P.PI_UpperSaturationLimit_f;
@@ -2149,34 +2143,34 @@ static void my_pv_system_3_ss_controller_output(void)
     my_pv_system_3_ss_controller_B.Saturate_p = u0;
   }
 
-  /* End of Saturate: '<S86>/Saturate' */
+  /* End of Saturate: '<S87>/Saturate' */
 
-  /* MATLAB Function: '<S2>/MATLAB Function' incorporates:
-   *  Constant: '<S2>/Constant1'
-   *  Constant: '<S2>/Constant2'
-   *  Constant: '<S2>/Constant3'
-   *  Constant: '<S2>/Constant4'
+  /* MATLAB Function: '<S3>/MATLAB Function' incorporates:
+   *  Constant: '<S3>/Constant1'
+   *  Constant: '<S3>/Constant2'
+   *  Constant: '<S3>/Constant3'
+   *  Constant: '<S3>/Constant4'
    */
-  /* MATLAB Function 'SS_controller/MATLAB Function': '<S5>:1' */
-  /* '<S5>:1:3' */
-  /* '<S5>:1:4' */
-  /* '<S5>:1:6' */
-  /* '<S5>:1:7' */
-  /* '<S5>:1:8' */
+  /* MATLAB Function 'SS_controller/MATLAB Function': '<S6>:1' */
+  /* '<S6>:1:3' */
+  /* '<S6>:1:4' */
+  /* '<S6>:1:6' */
+  /* '<S6>:1:7' */
+  /* '<S6>:1:8' */
   /*  bandgap energy(1.12 eV) */
   /*  ideal factor */
-  /* '<S5>:1:13' */
-  /* '<S5>:1:14' */
-  /* '<S5>:1:17' */
+  /* '<S6>:1:13' */
+  /* '<S6>:1:14' */
+  /* '<S6>:1:17' */
   my_pv_system_3_ss_controller_B.Iph_p =
     (((my_pv_system_3_ss_controller_B.SFunction_g[4] + 273.0) - 298.0) *
      (my_pv_system_3_ss_controller_P.Constant3_Value / 100.0) + 1.0) *
     (my_pv_system_3_ss_controller_B.SFunction_g[0] / 1000.0 *
      my_pv_system_3_ss_controller_P.Constant1_Value);
 
-  /* '<S5>:1:18' */
-  /* '<S5>:1:19' */
-  /* '<S5>:1:21' */
+  /* '<S6>:1:18' */
+  /* '<S6>:1:19' */
+  /* '<S6>:1:21' */
   my_pv_system_3_ss_controller_B.Io_c =
     my_pv_system_3_ss_controller_P.Constant1_Value / (exp
     (my_pv_system_3_ss_controller_P.Constant2_Value /
@@ -2193,11 +2187,11 @@ static void my_pv_system_3_ss_controller_output(void)
 /* Model update function */
 static void my_pv_system_3_ss_controller_update(void)
 {
-  /* Update for Memory: '<S1>/S-Function' */
+  /* Update for Memory: '<S2>/S-Function' */
   my_pv_system_3_ss_controller_DW.SFunction_PreviousInput =
     my_pv_system_3_ss_controller_B.Sum;
 
-  /* Update for Memory: '<S2>/Memory' */
+  /* Update for Memory: '<S3>/Memory' */
   my_pv_system_3_ss_controller_DW.Memory_1_PreviousInput[0] =
     my_pv_system_3_ss_controller_B.DataTypeConversion[0];
   my_pv_system_3_ss_controller_DW.Memory_1_PreviousInput[1] =
@@ -2207,19 +2201,19 @@ static void my_pv_system_3_ss_controller_update(void)
   my_pv_system_3_ss_controller_DW.Memory_1_PreviousInput[3] =
     my_pv_system_3_ss_controller_B.DataTypeConversion[3];
 
-  /* Update for Memory: '<S2>/Memory' */
+  /* Update for Memory: '<S3>/Memory' */
   my_pv_system_3_ss_controller_DW.Memory_2_PreviousInput =
     my_pv_system_3_ss_controller_B.Iph_p;
 
-  /* Update for Memory: '<S2>/Memory' */
+  /* Update for Memory: '<S3>/Memory' */
   my_pv_system_3_ss_controller_DW.Memory_3_PreviousInput =
     my_pv_system_3_ss_controller_B.Io_c;
 
-  /* Update for UnitDelay: '<S31>/Unit Delay' */
+  /* Update for UnitDelay: '<S32>/Unit Delay' */
   my_pv_system_3_ss_controller_DW.UnitDelay_DSTATE =
     my_pv_system_3_ss_controller_B.yk_e;
 
-  /* Level2 S-Function Block: '<S57>/S-Function' (sfun_discreteVariableDelay) */
+  /* Level2 S-Function Block: '<S58>/S-Function' (sfun_discreteVariableDelay) */
   {
     SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[6];
     sfcnUpdate(rts, 0);
@@ -2227,28 +2221,28 @@ static void my_pv_system_3_ss_controller_update(void)
       return;
   }
 
-  /* Update for DiscreteIntegrator: '<S31>/Discrete-Time Integrator' */
+  /* Update for DiscreteIntegrator: '<S32>/Discrete-Time Integrator' */
   my_pv_system_3_ss_controller_DW.DiscreteTimeIntegrator_DSTATE +=
     my_pv_system_3_ss_controller_P.DiscreteTimeIntegrator_gainval *
     my_pv_system_3_ss_controller_B.Saturation1;
 
-  /* Update for UnitDelay: '<S52>/Delay_x1' */
+  /* Update for UnitDelay: '<S53>/Delay_x1' */
   my_pv_system_3_ss_controller_DW.Delay_x1_DSTATE[0] =
     my_pv_system_3_ss_controller_B.x1k1_l[0];
   my_pv_system_3_ss_controller_DW.Delay_x1_DSTATE[1] =
     my_pv_system_3_ss_controller_B.x1k1_l[1];
 
-  /* Update for UnitDelay: '<S52>/Delay_x2' */
+  /* Update for UnitDelay: '<S53>/Delay_x2' */
   my_pv_system_3_ss_controller_DW.Delay_x2_DSTATE[0] =
     my_pv_system_3_ss_controller_B.x2k1_k[0];
   my_pv_system_3_ss_controller_DW.Delay_x2_DSTATE[1] =
     my_pv_system_3_ss_controller_B.x2k1_k[1];
 
-  /* Update for UnitDelay: '<S4>/Unit Delay2' */
+  /* Update for UnitDelay: '<S5>/Unit Delay2' */
   my_pv_system_3_ss_controller_DW.UnitDelay2_DSTATE =
     my_pv_system_3_ss_controller_B.Saturate_p;
 
-  /* Update for DiscreteIntegrator: '<S15>/Integrator' */
+  /* Update for DiscreteIntegrator: '<S16>/Integrator' */
   my_pv_system_3_ss_controller_DW.Integrator_DSTATE[0] +=
     my_pv_system_3_ss_controller_P.Integrator_gainval *
     my_pv_system_3_ss_controller_B.IntegralGain[0];
@@ -2256,14 +2250,14 @@ static void my_pv_system_3_ss_controller_update(void)
     my_pv_system_3_ss_controller_P.Integrator_gainval *
     my_pv_system_3_ss_controller_B.IntegralGain[1];
 
-  /* Update for DiscreteIntegrator: '<S23>/Integ4' */
+  /* Update for DiscreteIntegrator: '<S24>/Integ4' */
   my_pv_system_3_ss_controller_DW.Integ4_SYSTEM_ENABLE = 0U;
   my_pv_system_3_ss_controller_DW.Integ4_DSTATE =
     my_pv_system_3_ss_controller_P.Integ4_gainval_o *
     my_pv_system_3_ss_controller_B.Product1 +
     my_pv_system_3_ss_controller_B.Integ4;
 
-  /* Level2 S-Function Block: '<S25>/S-Function' (sfun_discreteVariableDelay) */
+  /* Level2 S-Function Block: '<S26>/S-Function' (sfun_discreteVariableDelay) */
   {
     SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[7];
     sfcnUpdate(rts, 0);
@@ -2271,22 +2265,22 @@ static void my_pv_system_3_ss_controller_update(void)
       return;
   }
 
-  /* Update for UnitDelay: '<S24>/Unit Delay' */
+  /* Update for UnitDelay: '<S25>/Unit Delay' */
   my_pv_system_3_ss_controller_DW.UnitDelay_DSTATE_g =
     my_pv_system_3_ss_controller_B.Product1;
 
-  /* Update for UnitDelay: '<S23>/Unit Delay1' */
+  /* Update for UnitDelay: '<S24>/Unit Delay1' */
   my_pv_system_3_ss_controller_DW.UnitDelay1_DSTATE =
     my_pv_system_3_ss_controller_B.Switch_g;
 
-  /* Update for DiscreteIntegrator: '<S26>/Integ4' */
+  /* Update for DiscreteIntegrator: '<S27>/Integ4' */
   my_pv_system_3_ss_controller_DW.Integ4_SYSTEM_ENABLE_e = 0U;
   my_pv_system_3_ss_controller_DW.Integ4_DSTATE_d =
     my_pv_system_3_ss_controller_P.Integ4_gainval_f *
     my_pv_system_3_ss_controller_B.Product2 +
     my_pv_system_3_ss_controller_B.Integ4_h;
 
-  /* Level2 S-Function Block: '<S28>/S-Function' (sfun_discreteVariableDelay) */
+  /* Level2 S-Function Block: '<S29>/S-Function' (sfun_discreteVariableDelay) */
   {
     SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[8];
     sfcnUpdate(rts, 0);
@@ -2294,22 +2288,22 @@ static void my_pv_system_3_ss_controller_update(void)
       return;
   }
 
-  /* Update for UnitDelay: '<S27>/Unit Delay' */
+  /* Update for UnitDelay: '<S28>/Unit Delay' */
   my_pv_system_3_ss_controller_DW.UnitDelay_DSTATE_i =
     my_pv_system_3_ss_controller_B.Product2;
 
-  /* Update for UnitDelay: '<S26>/Unit Delay1' */
+  /* Update for UnitDelay: '<S27>/Unit Delay1' */
   my_pv_system_3_ss_controller_DW.UnitDelay1_DSTATE_b =
     my_pv_system_3_ss_controller_B.Switch_k;
 
-  /* Update for DiscreteIntegrator: '<S29>/Integ4' */
+  /* Update for DiscreteIntegrator: '<S30>/Integ4' */
   my_pv_system_3_ss_controller_DW.Integ4_SYSTEM_ENABLE_d = 0U;
   my_pv_system_3_ss_controller_DW.Integ4_DSTATE_d5 =
     my_pv_system_3_ss_controller_P.Integ4_gainval_j *
     my_pv_system_3_ss_controller_B.RateTransition2 +
     my_pv_system_3_ss_controller_B.Integ4_c;
 
-  /* Level2 S-Function Block: '<S30>/S-Function' (sfun_discreteVariableDelay) */
+  /* Level2 S-Function Block: '<S31>/S-Function' (sfun_discreteVariableDelay) */
   {
     SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[9];
     sfcnUpdate(rts, 0);
@@ -2317,26 +2311,26 @@ static void my_pv_system_3_ss_controller_update(void)
       return;
   }
 
-  /* Update for UnitDelay: '<S29>/Unit Delay' */
+  /* Update for UnitDelay: '<S30>/Unit Delay' */
   my_pv_system_3_ss_controller_DW.UnitDelay_DSTATE_iq =
     my_pv_system_3_ss_controller_B.RateTransition2;
 
-  /* Update for UnitDelay: '<S29>/Unit Delay1' */
+  /* Update for UnitDelay: '<S30>/Unit Delay1' */
   my_pv_system_3_ss_controller_DW.UnitDelay1_DSTATE_a =
     my_pv_system_3_ss_controller_B.Switch_c;
 
-  /* Update for Enabled SubSystem: '<S31>/Automatic Gain Control' incorporates:
-   *  Update for EnablePort: '<S32>/Enable'
+  /* Update for Enabled SubSystem: '<S32>/Automatic Gain Control' incorporates:
+   *  Update for EnablePort: '<S33>/Enable'
    */
   if (my_pv_system_3_ss_controller_DW.AutomaticGainControl_MODE) {
-    /* Update for DiscreteIntegrator: '<S39>/Integ4' */
+    /* Update for DiscreteIntegrator: '<S40>/Integ4' */
     my_pv_system_3_ss_controller_DW.Integ4_SYSTEM_ENABLE_g = 0U;
     my_pv_system_3_ss_controller_DW.Integ4_DSTATE_ky =
       my_pv_system_3_ss_controller_P.Integ4_gainval *
       my_pv_system_3_ss_controller_B.Product1_o +
       my_pv_system_3_ss_controller_B.Integ4_d;
 
-    /* Level2 S-Function Block: '<S41>/S-Function' (sfun_discreteVariableDelay) */
+    /* Level2 S-Function Block: '<S42>/S-Function' (sfun_discreteVariableDelay) */
     {
       SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[0];
       sfcnUpdate(rts, 0);
@@ -2344,22 +2338,22 @@ static void my_pv_system_3_ss_controller_update(void)
         return;
     }
 
-    /* Update for UnitDelay: '<S40>/Unit Delay' */
+    /* Update for UnitDelay: '<S41>/Unit Delay' */
     my_pv_system_3_ss_controller_DW.UnitDelay_DSTATE_l =
       my_pv_system_3_ss_controller_B.Product1_o;
 
-    /* Update for UnitDelay: '<S39>/Unit Delay1' */
+    /* Update for UnitDelay: '<S40>/Unit Delay1' */
     my_pv_system_3_ss_controller_DW.UnitDelay1_DSTATE_o =
       my_pv_system_3_ss_controller_B.Switch_j;
 
-    /* Update for DiscreteIntegrator: '<S42>/Integ4' */
+    /* Update for DiscreteIntegrator: '<S43>/Integ4' */
     my_pv_system_3_ss_controller_DW.Integ4_SYSTEM_ENABLE_gx = 0U;
     my_pv_system_3_ss_controller_DW.Integ4_DSTATE_j =
       my_pv_system_3_ss_controller_P.Integ4_gainval_h *
       my_pv_system_3_ss_controller_B.Product2_i +
       my_pv_system_3_ss_controller_B.Integ4_dy;
 
-    /* Level2 S-Function Block: '<S44>/S-Function' (sfun_discreteVariableDelay) */
+    /* Level2 S-Function Block: '<S45>/S-Function' (sfun_discreteVariableDelay) */
     {
       SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[1];
       sfcnUpdate(rts, 0);
@@ -2367,25 +2361,25 @@ static void my_pv_system_3_ss_controller_update(void)
         return;
     }
 
-    /* Update for UnitDelay: '<S43>/Unit Delay' */
+    /* Update for UnitDelay: '<S44>/Unit Delay' */
     my_pv_system_3_ss_controller_DW.UnitDelay_DSTATE_d =
       my_pv_system_3_ss_controller_B.Product2_i;
 
-    /* Update for UnitDelay: '<S42>/Unit Delay1' */
+    /* Update for UnitDelay: '<S43>/Unit Delay1' */
     my_pv_system_3_ss_controller_DW.UnitDelay1_DSTATE_k =
       my_pv_system_3_ss_controller_B.Switch_m;
   }
 
-  /* End of Update for SubSystem: '<S31>/Automatic Gain Control' */
+  /* End of Update for SubSystem: '<S32>/Automatic Gain Control' */
 
-  /* Update for DiscreteIntegrator: '<S45>/Integ4' */
+  /* Update for DiscreteIntegrator: '<S46>/Integ4' */
   my_pv_system_3_ss_controller_DW.Integ4_SYSTEM_ENABLE_k = 0U;
   my_pv_system_3_ss_controller_DW.Integ4_DSTATE_k =
     my_pv_system_3_ss_controller_P.Integ4_gainval_jy *
     my_pv_system_3_ss_controller_B.Product1_c +
     my_pv_system_3_ss_controller_B.Integ4_e;
 
-  /* Level2 S-Function Block: '<S47>/S-Function' (sfun_discreteVariableDelay) */
+  /* Level2 S-Function Block: '<S48>/S-Function' (sfun_discreteVariableDelay) */
   {
     SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[10];
     sfcnUpdate(rts, 0);
@@ -2393,19 +2387,19 @@ static void my_pv_system_3_ss_controller_update(void)
       return;
   }
 
-  /* Update for UnitDelay: '<S46>/Unit Delay' */
+  /* Update for UnitDelay: '<S47>/Unit Delay' */
   my_pv_system_3_ss_controller_DW.UnitDelay_DSTATE_a =
     my_pv_system_3_ss_controller_B.Product1_c;
 
-  /* Update for UnitDelay: '<S45>/Unit Delay1' */
+  /* Update for UnitDelay: '<S46>/Unit Delay1' */
   my_pv_system_3_ss_controller_DW.UnitDelay1_DSTATE_i =
     my_pv_system_3_ss_controller_B.Switch_d;
 
-  /* Update for DiscreteTransferFcn: '<S33>/Discrete Derivative ' */
+  /* Update for DiscreteTransferFcn: '<S34>/Discrete Derivative ' */
   my_pv_system_3_ss_controller_DW.DiscreteDerivative_states =
     my_pv_system_3_ss_controller_DW.DiscreteDerivative_tmp;
 
-  /* Update for DiscreteIntegrator: '<S33>/Discrete-Time Integrator' */
+  /* Update for DiscreteIntegrator: '<S34>/Discrete-Time Integrator' */
   my_pv_system_3_ss_controller_DW.DiscreteTimeIntegrator_DSTATE_d +=
     my_pv_system_3_ss_controller_P.DiscreteTimeIntegrator_gainva_j *
     my_pv_system_3_ss_controller_B.Divide;
@@ -2421,31 +2415,31 @@ static void my_pv_system_3_ss_controller_update(void)
     }
   }
 
-  /* End of Update for DiscreteIntegrator: '<S33>/Discrete-Time Integrator' */
+  /* End of Update for DiscreteIntegrator: '<S34>/Discrete-Time Integrator' */
 
-  /* Update for UnitDelay: '<S48>/Delay_x1' */
+  /* Update for UnitDelay: '<S49>/Delay_x1' */
   my_pv_system_3_ss_controller_DW.Delay_x1_DSTATE_d =
     my_pv_system_3_ss_controller_B.x1k1;
 
-  /* Update for UnitDelay: '<S48>/Delay_x2' */
+  /* Update for UnitDelay: '<S49>/Delay_x2' */
   my_pv_system_3_ss_controller_DW.Delay_x2_DSTATE_m =
     my_pv_system_3_ss_controller_B.x2k1;
 
-  /* Update for UnitDelay: '<S4>/Unit Delay' */
+  /* Update for UnitDelay: '<S5>/Unit Delay' */
   my_pv_system_3_ss_controller_DW.UnitDelay_DSTATE_il =
     my_pv_system_3_ss_controller_B.Product2_n;
 
-  /* Update for UnitDelay: '<S4>/Unit Delay3' */
+  /* Update for UnitDelay: '<S5>/Unit Delay3' */
   my_pv_system_3_ss_controller_DW.UnitDelay3_DSTATE[0] =
     my_pv_system_3_ss_controller_B.Saturation[0];
   my_pv_system_3_ss_controller_DW.UnitDelay3_DSTATE[1] =
     my_pv_system_3_ss_controller_B.Saturation[1];
 
-  /* Update for UnitDelay: '<S4>/Unit Delay1' */
+  /* Update for UnitDelay: '<S5>/Unit Delay1' */
   my_pv_system_3_ss_controller_DW.UnitDelay1_DSTATE_e =
     my_pv_system_3_ss_controller_B.Switch_d2;
 
-  /* Update for DiscreteIntegrator: '<S86>/Integrator' */
+  /* Update for DiscreteIntegrator: '<S87>/Integrator' */
   my_pv_system_3_ss_controller_DW.Integrator_DSTATE_d =
     my_pv_system_3_ss_controller_P.Integrator_gainval_i *
     my_pv_system_3_ss_controller_B.IntegralGain_a +
@@ -2474,7 +2468,7 @@ static void my_pv_system_3_ss_controller_update(void)
 /* Model initialize function */
 static void my_pv_system_3_ss_controller_initialize(void)
 {
-  /* Level2 S-Function Block: '<S57>/S-Function' (sfun_discreteVariableDelay) */
+  /* Level2 S-Function Block: '<S58>/S-Function' (sfun_discreteVariableDelay) */
   {
     SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[6];
     sfcnStart(rts);
@@ -2482,20 +2476,20 @@ static void my_pv_system_3_ss_controller_initialize(void)
       return;
   }
 
-  /* Start for Enabled SubSystem: '<S56>/Subsystem1' */
-  /* VirtualOutportStart for Outport: '<S61>/dq' */
+  /* Start for Enabled SubSystem: '<S57>/Subsystem1' */
+  /* VirtualOutportStart for Outport: '<S62>/dq' */
   my_pv_system_3_ss_controller_B.Fcn = my_pv_system_3_ss_controller_P.dq_Y0_p[0];
   my_pv_system_3_ss_controller_B.Fcn1 = my_pv_system_3_ss_controller_P.dq_Y0_p[1];
 
-  /* End of Start for SubSystem: '<S56>/Subsystem1' */
+  /* End of Start for SubSystem: '<S57>/Subsystem1' */
 
-  /* Start for Enabled SubSystem: '<S56>/Subsystem - pi//2 delay' */
-  /* VirtualOutportStart for Outport: '<S60>/dq' */
+  /* Start for Enabled SubSystem: '<S57>/Subsystem - pi//2 delay' */
+  /* VirtualOutportStart for Outport: '<S61>/dq' */
   my_pv_system_3_ss_controller_B.Fcn_l = my_pv_system_3_ss_controller_P.dq_Y0[0];
   my_pv_system_3_ss_controller_B.Fcn1_f = my_pv_system_3_ss_controller_P.dq_Y0[1];
 
-  /* End of Start for SubSystem: '<S56>/Subsystem - pi//2 delay' */
-  /* Level2 S-Function Block: '<S25>/S-Function' (sfun_discreteVariableDelay) */
+  /* End of Start for SubSystem: '<S57>/Subsystem - pi//2 delay' */
+  /* Level2 S-Function Block: '<S26>/S-Function' (sfun_discreteVariableDelay) */
   {
     SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[7];
     sfcnStart(rts);
@@ -2503,7 +2497,7 @@ static void my_pv_system_3_ss_controller_initialize(void)
       return;
   }
 
-  /* Level2 S-Function Block: '<S28>/S-Function' (sfun_discreteVariableDelay) */
+  /* Level2 S-Function Block: '<S29>/S-Function' (sfun_discreteVariableDelay) */
   {
     SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[8];
     sfcnStart(rts);
@@ -2511,10 +2505,10 @@ static void my_pv_system_3_ss_controller_initialize(void)
       return;
   }
 
-  /* Start for Constant: '<S29>/K1' */
+  /* Start for Constant: '<S30>/K1' */
   my_pv_system_3_ss_controller_B.K1 = my_pv_system_3_ss_controller_P.K1_Value;
 
-  /* Level2 S-Function Block: '<S30>/S-Function' (sfun_discreteVariableDelay) */
+  /* Level2 S-Function Block: '<S31>/S-Function' (sfun_discreteVariableDelay) */
   {
     SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[9];
     sfcnStart(rts);
@@ -2522,9 +2516,9 @@ static void my_pv_system_3_ss_controller_initialize(void)
       return;
   }
 
-  /* Start for Enabled SubSystem: '<S31>/Automatic Gain Control' */
+  /* Start for Enabled SubSystem: '<S32>/Automatic Gain Control' */
 
-  /* Level2 S-Function Block: '<S41>/S-Function' (sfun_discreteVariableDelay) */
+  /* Level2 S-Function Block: '<S42>/S-Function' (sfun_discreteVariableDelay) */
   {
     SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[0];
     sfcnStart(rts);
@@ -2532,7 +2526,7 @@ static void my_pv_system_3_ss_controller_initialize(void)
       return;
   }
 
-  /* Level2 S-Function Block: '<S44>/S-Function' (sfun_discreteVariableDelay) */
+  /* Level2 S-Function Block: '<S45>/S-Function' (sfun_discreteVariableDelay) */
   {
     SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[1];
     sfcnStart(rts);
@@ -2540,14 +2534,14 @@ static void my_pv_system_3_ss_controller_initialize(void)
       return;
   }
 
-  /* End of Start for SubSystem: '<S31>/Automatic Gain Control' */
+  /* End of Start for SubSystem: '<S32>/Automatic Gain Control' */
 
-  /* InitializeConditions for Enabled SubSystem: '<S31>/Automatic Gain Control' */
-  /* InitializeConditions for DiscreteIntegrator: '<S39>/Integ4' */
+  /* InitializeConditions for Enabled SubSystem: '<S32>/Automatic Gain Control' */
+  /* InitializeConditions for DiscreteIntegrator: '<S40>/Integ4' */
   my_pv_system_3_ss_controller_DW.Integ4_DSTATE_ky =
     my_pv_system_3_ss_controller_P.Integ4_IC;
 
-  /* Level2 S-Function Block: '<S41>/S-Function' (sfun_discreteVariableDelay) */
+  /* Level2 S-Function Block: '<S42>/S-Function' (sfun_discreteVariableDelay) */
   {
     SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[0];
     sfcnInitializeConditions(rts);
@@ -2555,19 +2549,19 @@ static void my_pv_system_3_ss_controller_initialize(void)
       return;
   }
 
-  /* InitializeConditions for UnitDelay: '<S40>/Unit Delay' */
+  /* InitializeConditions for UnitDelay: '<S41>/Unit Delay' */
   my_pv_system_3_ss_controller_DW.UnitDelay_DSTATE_l =
     my_pv_system_3_ss_controller_P.UnitDelay_InitialCondition;
 
-  /* InitializeConditions for UnitDelay: '<S39>/Unit Delay1' */
+  /* InitializeConditions for UnitDelay: '<S40>/Unit Delay1' */
   my_pv_system_3_ss_controller_DW.UnitDelay1_DSTATE_o =
     my_pv_system_3_ss_controller_P.UnitDelay1_InitialCondition;
 
-  /* InitializeConditions for DiscreteIntegrator: '<S42>/Integ4' */
+  /* InitializeConditions for DiscreteIntegrator: '<S43>/Integ4' */
   my_pv_system_3_ss_controller_DW.Integ4_DSTATE_j =
     my_pv_system_3_ss_controller_P.Integ4_IC_k;
 
-  /* Level2 S-Function Block: '<S44>/S-Function' (sfun_discreteVariableDelay) */
+  /* Level2 S-Function Block: '<S45>/S-Function' (sfun_discreteVariableDelay) */
   {
     SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[1];
     sfcnInitializeConditions(rts);
@@ -2575,23 +2569,23 @@ static void my_pv_system_3_ss_controller_initialize(void)
       return;
   }
 
-  /* InitializeConditions for UnitDelay: '<S43>/Unit Delay' */
+  /* InitializeConditions for UnitDelay: '<S44>/Unit Delay' */
   my_pv_system_3_ss_controller_DW.UnitDelay_DSTATE_d =
     my_pv_system_3_ss_controller_P.UnitDelay_InitialCondition_c;
 
-  /* InitializeConditions for UnitDelay: '<S42>/Unit Delay1' */
+  /* InitializeConditions for UnitDelay: '<S43>/Unit Delay1' */
   my_pv_system_3_ss_controller_DW.UnitDelay1_DSTATE_k =
     my_pv_system_3_ss_controller_P.UnitDelay1_InitialCondition_c;
 
-  /* End of InitializeConditions for SubSystem: '<S31>/Automatic Gain Control' */
+  /* End of InitializeConditions for SubSystem: '<S32>/Automatic Gain Control' */
 
-  /* Start for Enabled SubSystem: '<S31>/Automatic Gain Control' */
-  /* VirtualOutportStart for Outport: '<S32>/Gain' */
+  /* Start for Enabled SubSystem: '<S32>/Automatic Gain Control' */
+  /* VirtualOutportStart for Outport: '<S33>/Gain' */
   my_pv_system_3_ss_controller_B.MathFunction_k =
     my_pv_system_3_ss_controller_P.Gain_Y0;
 
-  /* End of Start for SubSystem: '<S31>/Automatic Gain Control' */
-  /* Level2 S-Function Block: '<S47>/S-Function' (sfun_discreteVariableDelay) */
+  /* End of Start for SubSystem: '<S32>/Automatic Gain Control' */
+  /* Level2 S-Function Block: '<S48>/S-Function' (sfun_discreteVariableDelay) */
   {
     SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[10];
     sfcnStart(rts);
@@ -2630,11 +2624,11 @@ static void my_pv_system_3_ss_controller_initialize(void)
 
 #endif
 
-  /* InitializeConditions for Memory: '<S1>/S-Function' */
+  /* InitializeConditions for Memory: '<S2>/S-Function' */
   my_pv_system_3_ss_controller_DW.SFunction_PreviousInput =
     my_pv_system_3_ss_controller_P.SFunction_X0;
 
-  /* InitializeConditions for Memory: '<S2>/Memory' */
+  /* InitializeConditions for Memory: '<S3>/Memory' */
   my_pv_system_3_ss_controller_DW.Memory_1_PreviousInput[0] =
     my_pv_system_3_ss_controller_P.Memory_1_X0;
   my_pv_system_3_ss_controller_DW.Memory_1_PreviousInput[1] =
@@ -2644,17 +2638,17 @@ static void my_pv_system_3_ss_controller_initialize(void)
   my_pv_system_3_ss_controller_DW.Memory_1_PreviousInput[3] =
     my_pv_system_3_ss_controller_P.Memory_1_X0;
 
-  /* InitializeConditions for Memory: '<S2>/Memory' */
+  /* InitializeConditions for Memory: '<S3>/Memory' */
   my_pv_system_3_ss_controller_DW.Memory_2_PreviousInput =
     my_pv_system_3_ss_controller_P.Memory_2_X0;
 
-  /* InitializeConditions for Memory: '<S2>/Memory' */
+  /* InitializeConditions for Memory: '<S3>/Memory' */
   my_pv_system_3_ss_controller_DW.Memory_3_PreviousInput =
     my_pv_system_3_ss_controller_P.Memory_3_X0;
 
-  /* InitializeConditions for Atomic SubSystem: '<S6>/Subsystem4' */
+  /* InitializeConditions for Atomic SubSystem: '<S7>/Subsystem4' */
 
-  /* Level2 S-Function Block: '<S90>/S-Function' (send_rt) */
+  /* Level2 S-Function Block: '<S91>/S-Function' (send_rt) */
   {
     SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[2];
     sfcnInitializeConditions(rts);
@@ -2662,9 +2656,9 @@ static void my_pv_system_3_ss_controller_initialize(void)
       return;
   }
 
-  /* End of InitializeConditions for SubSystem: '<S6>/Subsystem4' */
+  /* End of InitializeConditions for SubSystem: '<S7>/Subsystem4' */
 
-  /* Level2 S-Function Block: '<S2>/OpMonitor' (opmonitor) */
+  /* Level2 S-Function Block: '<S3>/OpMonitor' (opmonitor) */
   {
     SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[3];
     sfcnInitializeConditions(rts);
@@ -2672,7 +2666,7 @@ static void my_pv_system_3_ss_controller_initialize(void)
       return;
   }
 
-  /* Level2 S-Function Block: '<S89>/S-Function' (OP_SEND) */
+  /* Level2 S-Function Block: '<S90>/S-Function' (OP_SEND) */
   {
     SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[4];
     sfcnInitializeConditions(rts);
@@ -2680,7 +2674,7 @@ static void my_pv_system_3_ss_controller_initialize(void)
       return;
   }
 
-  /* Level2 S-Function Block: '<S91>/S-Function' (recv_rt) */
+  /* Level2 S-Function Block: '<S92>/S-Function' (recv_rt) */
   {
     SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[5];
     sfcnInitializeConditions(rts);
@@ -2688,11 +2682,11 @@ static void my_pv_system_3_ss_controller_initialize(void)
       return;
   }
 
-  /* InitializeConditions for UnitDelay: '<S31>/Unit Delay' */
+  /* InitializeConditions for UnitDelay: '<S32>/Unit Delay' */
   my_pv_system_3_ss_controller_DW.UnitDelay_DSTATE =
     my_pv_system_3_ss_controller_P.UnitDelay_InitialCondition_a;
 
-  /* Level2 S-Function Block: '<S57>/S-Function' (sfun_discreteVariableDelay) */
+  /* Level2 S-Function Block: '<S58>/S-Function' (sfun_discreteVariableDelay) */
   {
     SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[6];
     sfcnInitializeConditions(rts);
@@ -2700,37 +2694,37 @@ static void my_pv_system_3_ss_controller_initialize(void)
       return;
   }
 
-  /* InitializeConditions for DiscreteIntegrator: '<S31>/Discrete-Time Integrator' */
+  /* InitializeConditions for DiscreteIntegrator: '<S32>/Discrete-Time Integrator' */
   my_pv_system_3_ss_controller_DW.DiscreteTimeIntegrator_DSTATE =
     my_pv_system_3_ss_controller_P.DiscreteTimeIntegrator_IC;
 
-  /* InitializeConditions for UnitDelay: '<S52>/Delay_x1' */
+  /* InitializeConditions for UnitDelay: '<S53>/Delay_x1' */
   my_pv_system_3_ss_controller_DW.Delay_x1_DSTATE[0] =
     my_pv_system_3_ss_controller_P.Delay_x1_InitialCondition[0];
   my_pv_system_3_ss_controller_DW.Delay_x1_DSTATE[1] =
     my_pv_system_3_ss_controller_P.Delay_x1_InitialCondition[1];
 
-  /* InitializeConditions for UnitDelay: '<S52>/Delay_x2' */
+  /* InitializeConditions for UnitDelay: '<S53>/Delay_x2' */
   my_pv_system_3_ss_controller_DW.Delay_x2_DSTATE[0] =
     my_pv_system_3_ss_controller_P.Delay_x2_InitialCondition[0];
   my_pv_system_3_ss_controller_DW.Delay_x2_DSTATE[1] =
     my_pv_system_3_ss_controller_P.Delay_x2_InitialCondition[1];
 
-  /* InitializeConditions for UnitDelay: '<S4>/Unit Delay2' */
+  /* InitializeConditions for UnitDelay: '<S5>/Unit Delay2' */
   my_pv_system_3_ss_controller_DW.UnitDelay2_DSTATE =
     my_pv_system_3_ss_controller_P.UnitDelay2_InitialCondition;
 
-  /* InitializeConditions for DiscreteIntegrator: '<S15>/Integrator' */
+  /* InitializeConditions for DiscreteIntegrator: '<S16>/Integrator' */
   my_pv_system_3_ss_controller_DW.Integrator_DSTATE[0] =
     my_pv_system_3_ss_controller_P.Integrator_IC;
   my_pv_system_3_ss_controller_DW.Integrator_DSTATE[1] =
     my_pv_system_3_ss_controller_P.Integrator_IC;
 
-  /* InitializeConditions for DiscreteIntegrator: '<S23>/Integ4' */
+  /* InitializeConditions for DiscreteIntegrator: '<S24>/Integ4' */
   my_pv_system_3_ss_controller_DW.Integ4_DSTATE =
     my_pv_system_3_ss_controller_P.Integ4_IC_a;
 
-  /* Level2 S-Function Block: '<S25>/S-Function' (sfun_discreteVariableDelay) */
+  /* Level2 S-Function Block: '<S26>/S-Function' (sfun_discreteVariableDelay) */
   {
     SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[7];
     sfcnInitializeConditions(rts);
@@ -2738,19 +2732,19 @@ static void my_pv_system_3_ss_controller_initialize(void)
       return;
   }
 
-  /* InitializeConditions for UnitDelay: '<S24>/Unit Delay' */
+  /* InitializeConditions for UnitDelay: '<S25>/Unit Delay' */
   my_pv_system_3_ss_controller_DW.UnitDelay_DSTATE_g =
     my_pv_system_3_ss_controller_P.UnitDelay_InitialCondition_cj;
 
-  /* InitializeConditions for UnitDelay: '<S23>/Unit Delay1' */
+  /* InitializeConditions for UnitDelay: '<S24>/Unit Delay1' */
   my_pv_system_3_ss_controller_DW.UnitDelay1_DSTATE =
     my_pv_system_3_ss_controller_P.UnitDelay1_InitialCondition_p;
 
-  /* InitializeConditions for DiscreteIntegrator: '<S26>/Integ4' */
+  /* InitializeConditions for DiscreteIntegrator: '<S27>/Integ4' */
   my_pv_system_3_ss_controller_DW.Integ4_DSTATE_d =
     my_pv_system_3_ss_controller_P.Integ4_IC_l;
 
-  /* Level2 S-Function Block: '<S28>/S-Function' (sfun_discreteVariableDelay) */
+  /* Level2 S-Function Block: '<S29>/S-Function' (sfun_discreteVariableDelay) */
   {
     SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[8];
     sfcnInitializeConditions(rts);
@@ -2758,24 +2752,24 @@ static void my_pv_system_3_ss_controller_initialize(void)
       return;
   }
 
-  /* InitializeConditions for UnitDelay: '<S27>/Unit Delay' */
+  /* InitializeConditions for UnitDelay: '<S28>/Unit Delay' */
   my_pv_system_3_ss_controller_DW.UnitDelay_DSTATE_i =
     my_pv_system_3_ss_controller_P.UnitDelay_InitialCondition_l;
 
-  /* InitializeConditions for UnitDelay: '<S26>/Unit Delay1' */
+  /* InitializeConditions for UnitDelay: '<S27>/Unit Delay1' */
   my_pv_system_3_ss_controller_DW.UnitDelay1_DSTATE_b =
     my_pv_system_3_ss_controller_P.UnitDelay1_InitialCondition_k;
 
-  /* InitializeConditions for MATLAB Function: '<S4>/MPPT Controller using Perturbe  & Observe technique  ' */
+  /* InitializeConditions for MATLAB Function: '<S5>/MPPT Controller using Perturbe  & Observe technique  ' */
   my_pv_system_3_ss_controller_DW.Vold_not_empty = false;
   my_pv_system_3_ss_controller_DW.Vold = 0.0;
   my_pv_system_3_ss_controller_DW.Pold = 0.0;
 
-  /* InitializeConditions for DiscreteIntegrator: '<S29>/Integ4' */
+  /* InitializeConditions for DiscreteIntegrator: '<S30>/Integ4' */
   my_pv_system_3_ss_controller_DW.Integ4_DSTATE_d5 =
     my_pv_system_3_ss_controller_P.Integ4_IC_i;
 
-  /* Level2 S-Function Block: '<S30>/S-Function' (sfun_discreteVariableDelay) */
+  /* Level2 S-Function Block: '<S31>/S-Function' (sfun_discreteVariableDelay) */
   {
     SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[9];
     sfcnInitializeConditions(rts);
@@ -2783,19 +2777,19 @@ static void my_pv_system_3_ss_controller_initialize(void)
       return;
   }
 
-  /* InitializeConditions for UnitDelay: '<S29>/Unit Delay' */
+  /* InitializeConditions for UnitDelay: '<S30>/Unit Delay' */
   my_pv_system_3_ss_controller_DW.UnitDelay_DSTATE_iq =
     my_pv_system_3_ss_controller_P.UnitDelay_InitialCondition_b;
 
-  /* InitializeConditions for UnitDelay: '<S29>/Unit Delay1' */
+  /* InitializeConditions for UnitDelay: '<S30>/Unit Delay1' */
   my_pv_system_3_ss_controller_DW.UnitDelay1_DSTATE_a =
     my_pv_system_3_ss_controller_P.UnitDelay1_InitialCondition_kn;
 
-  /* InitializeConditions for DiscreteIntegrator: '<S45>/Integ4' */
+  /* InitializeConditions for DiscreteIntegrator: '<S46>/Integ4' */
   my_pv_system_3_ss_controller_DW.Integ4_DSTATE_k =
     my_pv_system_3_ss_controller_P.Integ4_IC_h;
 
-  /* Level2 S-Function Block: '<S47>/S-Function' (sfun_discreteVariableDelay) */
+  /* Level2 S-Function Block: '<S48>/S-Function' (sfun_discreteVariableDelay) */
   {
     SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[10];
     sfcnInitializeConditions(rts);
@@ -2803,137 +2797,137 @@ static void my_pv_system_3_ss_controller_initialize(void)
       return;
   }
 
-  /* InitializeConditions for UnitDelay: '<S46>/Unit Delay' */
+  /* InitializeConditions for UnitDelay: '<S47>/Unit Delay' */
   my_pv_system_3_ss_controller_DW.UnitDelay_DSTATE_a =
     my_pv_system_3_ss_controller_P.UnitDelay_InitialCondition_j;
 
-  /* InitializeConditions for UnitDelay: '<S45>/Unit Delay1' */
+  /* InitializeConditions for UnitDelay: '<S46>/Unit Delay1' */
   my_pv_system_3_ss_controller_DW.UnitDelay1_DSTATE_i =
     my_pv_system_3_ss_controller_P.UnitDelay1_InitialCondition_j;
 
-  /* InitializeConditions for DiscreteTransferFcn: '<S33>/Discrete Derivative ' */
+  /* InitializeConditions for DiscreteTransferFcn: '<S34>/Discrete Derivative ' */
   my_pv_system_3_ss_controller_DW.DiscreteDerivative_states =
     my_pv_system_3_ss_controller_P.DiscreteDerivative_InitialState;
 
-  /* InitializeConditions for DiscreteIntegrator: '<S33>/Discrete-Time Integrator' */
+  /* InitializeConditions for DiscreteIntegrator: '<S34>/Discrete-Time Integrator' */
   my_pv_system_3_ss_controller_DW.DiscreteTimeIntegrator_DSTATE_d =
     my_pv_system_3_ss_controller_P.Discrete_Init;
 
-  /* InitializeConditions for RateLimiter: '<S31>/Rate Limiter' */
+  /* InitializeConditions for RateLimiter: '<S32>/Rate Limiter' */
   my_pv_system_3_ss_controller_DW.PrevY =
     my_pv_system_3_ss_controller_P.RateLimiter_IC;
 
-  /* InitializeConditions for UnitDelay: '<S48>/Delay_x1' */
+  /* InitializeConditions for UnitDelay: '<S49>/Delay_x1' */
   my_pv_system_3_ss_controller_DW.Delay_x1_DSTATE_d =
     my_pv_system_3_ss_controller_P.Delay_x1_InitialCondition_i;
 
-  /* InitializeConditions for UnitDelay: '<S48>/Delay_x2' */
+  /* InitializeConditions for UnitDelay: '<S49>/Delay_x2' */
   my_pv_system_3_ss_controller_DW.Delay_x2_DSTATE_m =
     my_pv_system_3_ss_controller_P.Delay_x2_InitialCondition_g;
 
-  /* InitializeConditions for UnitDelay: '<S4>/Unit Delay' */
+  /* InitializeConditions for UnitDelay: '<S5>/Unit Delay' */
   my_pv_system_3_ss_controller_DW.UnitDelay_DSTATE_il =
     my_pv_system_3_ss_controller_P.UnitDelay_InitialCondition_i;
 
-  /* InitializeConditions for UnitDelay: '<S4>/Unit Delay3' */
+  /* InitializeConditions for UnitDelay: '<S5>/Unit Delay3' */
   my_pv_system_3_ss_controller_DW.UnitDelay3_DSTATE[0] =
     my_pv_system_3_ss_controller_P.UnitDelay3_InitialCondition;
   my_pv_system_3_ss_controller_DW.UnitDelay3_DSTATE[1] =
     my_pv_system_3_ss_controller_P.UnitDelay3_InitialCondition;
 
-  /* InitializeConditions for UnitDelay: '<S4>/Unit Delay1' */
+  /* InitializeConditions for UnitDelay: '<S5>/Unit Delay1' */
   my_pv_system_3_ss_controller_DW.UnitDelay1_DSTATE_e =
     my_pv_system_3_ss_controller_P.UnitDelay1_InitialCondition_n;
 
-  /* InitializeConditions for DiscreteIntegrator: '<S86>/Integrator' */
+  /* InitializeConditions for DiscreteIntegrator: '<S87>/Integrator' */
   my_pv_system_3_ss_controller_DW.Integrator_DSTATE_d =
     my_pv_system_3_ss_controller_P.Integrator_IC_i;
 
-  /* Enable for DiscreteIntegrator: '<S23>/Integ4' */
+  /* Enable for DiscreteIntegrator: '<S24>/Integ4' */
   my_pv_system_3_ss_controller_DW.Integ4_SYSTEM_ENABLE = 1U;
 
-  /* Enable for DiscreteIntegrator: '<S26>/Integ4' */
+  /* Enable for DiscreteIntegrator: '<S27>/Integ4' */
   my_pv_system_3_ss_controller_DW.Integ4_SYSTEM_ENABLE_e = 1U;
 
-  /* Enable for DiscreteIntegrator: '<S29>/Integ4' */
+  /* Enable for DiscreteIntegrator: '<S30>/Integ4' */
   my_pv_system_3_ss_controller_DW.Integ4_SYSTEM_ENABLE_d = 1U;
 
-  /* Enable for DiscreteIntegrator: '<S45>/Integ4' */
+  /* Enable for DiscreteIntegrator: '<S46>/Integ4' */
   my_pv_system_3_ss_controller_DW.Integ4_SYSTEM_ENABLE_k = 1U;
 }
 
 /* Model terminate function */
 static void my_pv_system_3_ss_controller_terminate(void)
 {
-  /* Terminate for Atomic SubSystem: '<S6>/Subsystem4' */
+  /* Terminate for Atomic SubSystem: '<S7>/Subsystem4' */
 
-  /* Level2 S-Function Block: '<S90>/S-Function' (send_rt) */
+  /* Level2 S-Function Block: '<S91>/S-Function' (send_rt) */
   {
     SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[2];
     sfcnTerminate(rts);
   }
 
-  /* End of Terminate for SubSystem: '<S6>/Subsystem4' */
+  /* End of Terminate for SubSystem: '<S7>/Subsystem4' */
 
-  /* Level2 S-Function Block: '<S2>/OpMonitor' (opmonitor) */
+  /* Level2 S-Function Block: '<S3>/OpMonitor' (opmonitor) */
   {
     SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[3];
     sfcnTerminate(rts);
   }
 
-  /* Level2 S-Function Block: '<S89>/S-Function' (OP_SEND) */
+  /* Level2 S-Function Block: '<S90>/S-Function' (OP_SEND) */
   {
     SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[4];
     sfcnTerminate(rts);
   }
 
-  /* Level2 S-Function Block: '<S91>/S-Function' (recv_rt) */
+  /* Level2 S-Function Block: '<S92>/S-Function' (recv_rt) */
   {
     SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[5];
     sfcnTerminate(rts);
   }
 
-  /* Level2 S-Function Block: '<S57>/S-Function' (sfun_discreteVariableDelay) */
+  /* Level2 S-Function Block: '<S58>/S-Function' (sfun_discreteVariableDelay) */
   {
     SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[6];
     sfcnTerminate(rts);
   }
 
-  /* Level2 S-Function Block: '<S25>/S-Function' (sfun_discreteVariableDelay) */
+  /* Level2 S-Function Block: '<S26>/S-Function' (sfun_discreteVariableDelay) */
   {
     SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[7];
     sfcnTerminate(rts);
   }
 
-  /* Level2 S-Function Block: '<S28>/S-Function' (sfun_discreteVariableDelay) */
+  /* Level2 S-Function Block: '<S29>/S-Function' (sfun_discreteVariableDelay) */
   {
     SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[8];
     sfcnTerminate(rts);
   }
 
-  /* Level2 S-Function Block: '<S30>/S-Function' (sfun_discreteVariableDelay) */
+  /* Level2 S-Function Block: '<S31>/S-Function' (sfun_discreteVariableDelay) */
   {
     SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[9];
     sfcnTerminate(rts);
   }
 
-  /* Terminate for Enabled SubSystem: '<S31>/Automatic Gain Control' */
+  /* Terminate for Enabled SubSystem: '<S32>/Automatic Gain Control' */
 
-  /* Level2 S-Function Block: '<S41>/S-Function' (sfun_discreteVariableDelay) */
+  /* Level2 S-Function Block: '<S42>/S-Function' (sfun_discreteVariableDelay) */
   {
     SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[0];
     sfcnTerminate(rts);
   }
 
-  /* Level2 S-Function Block: '<S44>/S-Function' (sfun_discreteVariableDelay) */
+  /* Level2 S-Function Block: '<S45>/S-Function' (sfun_discreteVariableDelay) */
   {
     SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[1];
     sfcnTerminate(rts);
   }
 
-  /* End of Terminate for SubSystem: '<S31>/Automatic Gain Control' */
+  /* End of Terminate for SubSystem: '<S32>/Automatic Gain Control' */
 
-  /* Level2 S-Function Block: '<S47>/S-Function' (sfun_discreteVariableDelay) */
+  /* Level2 S-Function Block: '<S48>/S-Function' (sfun_discreteVariableDelay) */
   {
     SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[10];
     sfcnTerminate(rts);
@@ -3025,7 +3019,7 @@ RT_MODEL_my_pv_system_3_ss_controller_T *my_pv_system_3_ss_controller(void)
     my_pv_system_3_ss_controller_M->Timing.sampleHits = (&mdlSampleHits[0]);
   }
 
-  rtmSetTFinal(my_pv_system_3_ss_controller_M, -1);
+  rtmSetTFinal(my_pv_system_3_ss_controller_M, 10.0);
   my_pv_system_3_ss_controller_M->Timing.stepSize0 = 5.0E-5;
 
   /* Setup for data logging */
@@ -3065,7 +3059,7 @@ RT_MODEL_my_pv_system_3_ss_controller_T *my_pv_system_3_ss_controller(void)
 
   {
     int_T i;
-    for (i = 0; i < 12; i++) {
+    for (i = 0; i < 17; i++) {
       my_pv_system_3_ss_controller_B.SFunction_g[i] = 0.0;
     }
 
@@ -3251,7 +3245,6 @@ RT_MODEL_my_pv_system_3_ss_controller_T *my_pv_system_3_ss_controller(void)
     my_pv_system_3_ss_controller_B.MUL1 = 0.0;
     my_pv_system_3_ss_controller_B.Add4 = 0.0;
     my_pv_system_3_ss_controller_B.UnitDelay_m = 0.0;
-    my_pv_system_3_ss_controller_B.Gain_a = 0.0;
     my_pv_system_3_ss_controller_B.DataTypeConversion[0] = 0.0;
     my_pv_system_3_ss_controller_B.DataTypeConversion[1] = 0.0;
     my_pv_system_3_ss_controller_B.DataTypeConversion[2] = 0.0;
@@ -3499,7 +3492,7 @@ RT_MODEL_my_pv_system_3_ss_controller_T *my_pv_system_3_ss_controller(void)
       }
     }
 
-    /* Level2 S-Function Block: my_pv_system_3_ss_controller/<S41>/S-Function (sfun_discreteVariableDelay) */
+    /* Level2 S-Function Block: my_pv_system_3_ss_controller/<S42>/S-Function (sfun_discreteVariableDelay) */
     {
       SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[0];
 
@@ -3690,7 +3683,7 @@ RT_MODEL_my_pv_system_3_ss_controller_T *my_pv_system_3_ss_controller(void)
       ssSetInputPortBufferDstPort(rts, 1, -1);
     }
 
-    /* Level2 S-Function Block: my_pv_system_3_ss_controller/<S44>/S-Function (sfun_discreteVariableDelay) */
+    /* Level2 S-Function Block: my_pv_system_3_ss_controller/<S45>/S-Function (sfun_discreteVariableDelay) */
     {
       SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[1];
 
@@ -3881,7 +3874,7 @@ RT_MODEL_my_pv_system_3_ss_controller_T *my_pv_system_3_ss_controller(void)
       ssSetInputPortBufferDstPort(rts, 1, -1);
     }
 
-    /* Level2 S-Function Block: my_pv_system_3_ss_controller/<S90>/S-Function (send_rt) */
+    /* Level2 S-Function Block: my_pv_system_3_ss_controller/<S91>/S-Function (send_rt) */
     {
       SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[2];
 
@@ -3968,11 +3961,11 @@ RT_MODEL_my_pv_system_3_ss_controller_T *my_pv_system_3_ss_controller(void)
         ssSetSFcnParamsCount(rts, 3);
         ssSetSFcnParamsPtr(rts, &sfcnParams[0]);
         ssSetSFcnParam(rts, 0, (mxArray*)
-                       my_pv_system_3_ss_controller_P.SFunction_P1_Size_e);
+                       my_pv_system_3_ss_controller_P.SFunction_P1_Size_g);
         ssSetSFcnParam(rts, 1, (mxArray*)
-                       my_pv_system_3_ss_controller_P.SFunction_P2_Size_p);
+                       my_pv_system_3_ss_controller_P.SFunction_P2_Size_h);
         ssSetSFcnParam(rts, 2, (mxArray*)
-                       my_pv_system_3_ss_controller_P.SFunction_P3_Size_e);
+                       my_pv_system_3_ss_controller_P.SFunction_P3_Size_f);
       }
 
       /* work vectors */
@@ -4019,7 +4012,7 @@ RT_MODEL_my_pv_system_3_ss_controller_T *my_pv_system_3_ss_controller(void)
       ssSetInputPortBufferDstPort(rts, 0, -1);
     }
 
-    /* Level2 S-Function Block: my_pv_system_3_ss_controller/<S2>/OpMonitor (opmonitor) */
+    /* Level2 S-Function Block: my_pv_system_3_ss_controller/<S3>/OpMonitor (opmonitor) */
     {
       SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[3];
 
@@ -4200,7 +4193,7 @@ RT_MODEL_my_pv_system_3_ss_controller_T *my_pv_system_3_ss_controller(void)
       ssSetInputPortBufferDstPort(rts, 0, -1);
     }
 
-    /* Level2 S-Function Block: my_pv_system_3_ss_controller/<S89>/S-Function (OP_SEND) */
+    /* Level2 S-Function Block: my_pv_system_3_ss_controller/<S90>/S-Function (OP_SEND) */
     {
       SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[4];
 
@@ -4285,7 +4278,7 @@ RT_MODEL_my_pv_system_3_ss_controller_T *my_pv_system_3_ss_controller(void)
         ssSetSFcnParamsCount(rts, 1);
         ssSetSFcnParamsPtr(rts, &sfcnParams[0]);
         ssSetSFcnParam(rts, 0, (mxArray*)
-                       my_pv_system_3_ss_controller_P.SFunction_P1_Size_h);
+                       my_pv_system_3_ss_controller_P.SFunction_P1_Size_p);
       }
 
       /* work vectors */
@@ -4332,7 +4325,7 @@ RT_MODEL_my_pv_system_3_ss_controller_T *my_pv_system_3_ss_controller(void)
       ssSetInputPortBufferDstPort(rts, 0, -1);
     }
 
-    /* Level2 S-Function Block: my_pv_system_3_ss_controller/<S91>/S-Function (recv_rt) */
+    /* Level2 S-Function Block: my_pv_system_3_ss_controller/<S92>/S-Function (recv_rt) */
     {
       SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[5];
 
@@ -4391,7 +4384,7 @@ RT_MODEL_my_pv_system_3_ss_controller_T *my_pv_system_3_ss_controller(void)
         /* port 0 */
         {
           _ssSetOutputPortNumDimensions(rts, 0, 1);
-          ssSetOutputPortWidth(rts, 0, 12);
+          ssSetOutputPortWidth(rts, 0, 17);
           ssSetOutputPortSignal(rts, 0, ((real_T *)
             my_pv_system_3_ss_controller_B.SFunction_g));
         }
@@ -4413,11 +4406,11 @@ RT_MODEL_my_pv_system_3_ss_controller_T *my_pv_system_3_ss_controller(void)
         ssSetSFcnParamsCount(rts, 3);
         ssSetSFcnParamsPtr(rts, &sfcnParams[0]);
         ssSetSFcnParam(rts, 0, (mxArray*)
-                       my_pv_system_3_ss_controller_P.SFunction_P1_Size_o);
+                       my_pv_system_3_ss_controller_P.SFunction_P1_Size_pd);
         ssSetSFcnParam(rts, 1, (mxArray*)
-                       my_pv_system_3_ss_controller_P.SFunction_P2_Size_m);
+                       my_pv_system_3_ss_controller_P.SFunction_P2_Size_p);
         ssSetSFcnParam(rts, 2, (mxArray*)
-                       my_pv_system_3_ss_controller_P.SFunction_P3_Size_b);
+                       my_pv_system_3_ss_controller_P.SFunction_P3_Size_m);
       }
 
       /* work vectors */
@@ -4459,7 +4452,7 @@ RT_MODEL_my_pv_system_3_ss_controller_T *my_pv_system_3_ss_controller(void)
       /* Update the BufferDstPort flags for each input port */
     }
 
-    /* Level2 S-Function Block: my_pv_system_3_ss_controller/<S57>/S-Function (sfun_discreteVariableDelay) */
+    /* Level2 S-Function Block: my_pv_system_3_ss_controller/<S58>/S-Function (sfun_discreteVariableDelay) */
     {
       SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[6];
 
@@ -4650,7 +4643,7 @@ RT_MODEL_my_pv_system_3_ss_controller_T *my_pv_system_3_ss_controller(void)
       ssSetInputPortBufferDstPort(rts, 1, -1);
     }
 
-    /* Level2 S-Function Block: my_pv_system_3_ss_controller/<S25>/S-Function (sfun_discreteVariableDelay) */
+    /* Level2 S-Function Block: my_pv_system_3_ss_controller/<S26>/S-Function (sfun_discreteVariableDelay) */
     {
       SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[7];
 
@@ -4841,7 +4834,7 @@ RT_MODEL_my_pv_system_3_ss_controller_T *my_pv_system_3_ss_controller(void)
       ssSetInputPortBufferDstPort(rts, 1, -1);
     }
 
-    /* Level2 S-Function Block: my_pv_system_3_ss_controller/<S28>/S-Function (sfun_discreteVariableDelay) */
+    /* Level2 S-Function Block: my_pv_system_3_ss_controller/<S29>/S-Function (sfun_discreteVariableDelay) */
     {
       SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[8];
 
@@ -4953,7 +4946,7 @@ RT_MODEL_my_pv_system_3_ss_controller_T *my_pv_system_3_ss_controller(void)
         ssSetSFcnParam(rts, 1, (mxArray*)
                        my_pv_system_3_ss_controller_P.SFunction_P2_Size_f);
         ssSetSFcnParam(rts, 2, (mxArray*)
-                       my_pv_system_3_ss_controller_P.SFunction_P3_Size_f);
+                       my_pv_system_3_ss_controller_P.SFunction_P3_Size_fo);
         ssSetSFcnParam(rts, 3, (mxArray*)
                        my_pv_system_3_ss_controller_P.SFunction_P4_Size_c);
       }
@@ -5032,7 +5025,7 @@ RT_MODEL_my_pv_system_3_ss_controller_T *my_pv_system_3_ss_controller(void)
       ssSetInputPortBufferDstPort(rts, 1, -1);
     }
 
-    /* Level2 S-Function Block: my_pv_system_3_ss_controller/<S30>/S-Function (sfun_discreteVariableDelay) */
+    /* Level2 S-Function Block: my_pv_system_3_ss_controller/<S31>/S-Function (sfun_discreteVariableDelay) */
     {
       SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[9];
 
@@ -5140,11 +5133,11 @@ RT_MODEL_my_pv_system_3_ss_controller_T *my_pv_system_3_ss_controller(void)
         ssSetSFcnParamsCount(rts, 4);
         ssSetSFcnParamsPtr(rts, &sfcnParams[0]);
         ssSetSFcnParam(rts, 0, (mxArray*)
-                       my_pv_system_3_ss_controller_P.SFunction_P1_Size_p);
+                       my_pv_system_3_ss_controller_P.SFunction_P1_Size_pj);
         ssSetSFcnParam(rts, 1, (mxArray*)
                        my_pv_system_3_ss_controller_P.SFunction_P2_Size_ar);
         ssSetSFcnParam(rts, 2, (mxArray*)
-                       my_pv_system_3_ss_controller_P.SFunction_P3_Size_ep);
+                       my_pv_system_3_ss_controller_P.SFunction_P3_Size_e);
         ssSetSFcnParam(rts, 3, (mxArray*)
                        my_pv_system_3_ss_controller_P.SFunction_P4_Size_c0);
       }
@@ -5223,7 +5216,7 @@ RT_MODEL_my_pv_system_3_ss_controller_T *my_pv_system_3_ss_controller(void)
       ssSetInputPortBufferDstPort(rts, 1, -1);
     }
 
-    /* Level2 S-Function Block: my_pv_system_3_ss_controller/<S47>/S-Function (sfun_discreteVariableDelay) */
+    /* Level2 S-Function Block: my_pv_system_3_ss_controller/<S48>/S-Function (sfun_discreteVariableDelay) */
     {
       SimStruct *rts = my_pv_system_3_ss_controller_M->childSfunctions[10];
 
@@ -5332,9 +5325,9 @@ RT_MODEL_my_pv_system_3_ss_controller_T *my_pv_system_3_ss_controller(void)
         ssSetSFcnParamsCount(rts, 4);
         ssSetSFcnParamsPtr(rts, &sfcnParams[0]);
         ssSetSFcnParam(rts, 0, (mxArray*)
-                       my_pv_system_3_ss_controller_P.SFunction_P1_Size_ol);
+                       my_pv_system_3_ss_controller_P.SFunction_P1_Size_o);
         ssSetSFcnParam(rts, 1, (mxArray*)
-                       my_pv_system_3_ss_controller_P.SFunction_P2_Size_h);
+                       my_pv_system_3_ss_controller_P.SFunction_P2_Size_hd);
         ssSetSFcnParam(rts, 2, (mxArray*)
                        my_pv_system_3_ss_controller_P.SFunction_P3_Size_j);
         ssSetSFcnParam(rts, 3, (mxArray*)
@@ -5422,9 +5415,9 @@ RT_MODEL_my_pv_system_3_ss_controller_T *my_pv_system_3_ss_controller(void)
   my_pv_system_3_ss_controller_M->Sizes.numU = (0);/* Number of model inputs */
   my_pv_system_3_ss_controller_M->Sizes.sysDirFeedThru = (0);/* The model is not direct feedthrough */
   my_pv_system_3_ss_controller_M->Sizes.numSampTimes = (1);/* Number of sample times */
-  my_pv_system_3_ss_controller_M->Sizes.numBlocks = (320);/* Number of blocks */
-  my_pv_system_3_ss_controller_M->Sizes.numBlockIO = (278);/* Number of block outputs */
-  my_pv_system_3_ss_controller_M->Sizes.numBlockPrms = (329);/* Sum of parameter "widths" */
+  my_pv_system_3_ss_controller_M->Sizes.numBlocks = (319);/* Number of blocks */
+  my_pv_system_3_ss_controller_M->Sizes.numBlockIO = (277);/* Number of block outputs */
+  my_pv_system_3_ss_controller_M->Sizes.numBlockPrms = (328);/* Sum of parameter "widths" */
   return my_pv_system_3_ss_controller_M;
 }
 

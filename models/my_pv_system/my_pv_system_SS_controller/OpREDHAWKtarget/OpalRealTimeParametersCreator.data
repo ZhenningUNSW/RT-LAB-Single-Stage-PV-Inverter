@@ -634,31 +634,27 @@ SS_controller/Inverter Control/Unit Delay/InitialCondition
 2568
 F64
 1
-SS_controller/Inverter Control/PWM_Generator/Modulator type/Full Bridge Unipolar/Gain/Gain
+SS_controller/Inverter Control/U_ref Generation /Constant2/Value
 2576
 F64
 1
-SS_controller/Inverter Control/U_ref Generation /Constant2/Value
+SS_controller/Inverter Control/Unit Delay3/InitialCondition
 2584
 F64
 1
-SS_controller/Inverter Control/Unit Delay3/InitialCondition
+SS_controller/Inverter Control/U_ref Generation /Gain1/Gain
 2592
 F64
 1
-SS_controller/Inverter Control/U_ref Generation /Gain1/Gain
+SS_controller/Inverter Control/Unit Delay1/InitialCondition
 2600
 F64
 1
-SS_controller/Inverter Control/Unit Delay1/InitialCondition
+SS_controller/Inverter Control/VDC Regulator/PI/Integrator/gainval
 2608
 F64
 1
-SS_controller/Inverter Control/VDC Regulator/PI/Integrator/gainval
-2616
-F64
-1
 SS_controller/Inverter Control/VDC Regulator/PI/Integrator/InitialCondition
-2624
+2616
 F64
 1

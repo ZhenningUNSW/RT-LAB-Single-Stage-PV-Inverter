@@ -46,3 +46,7 @@
     color: black;
     font-weight: 600;
 }
+
+.textlog {
+	font-family: monospace;
+}

@@ -7,7 +7,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.216"
+    ComputedModelVersion    "1.227"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -32,7 +32,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [-9.0, -9.0, 1938.0, 1048.0]
+      Location		      [952.0, 0.0, 976.0, 1038.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -51,24 +51,24 @@ Model {
       }
       Array {
 	Type			"Simulink.EditorInfo"
-	Dimension		5
+	Dimension		7
 	Object {
 	  $ObjectID		  5
-	  IsActive		  [1]
+	  IsActive		  [0]
 	  ViewObjType		  "SimulinkTopLevel"
 	  LoadSaveID		  "0"
-	  Extents		  [1886.0, 842.0]
+	  Extents		  [924.0, 832.0]
 	  ZoomFactor		  [2.0]
-	  Offset		  [0.0, 0.0]
+	  Offset		  [330.0, -7.0]
 	}
 	Object {
 	  $ObjectID		  6
-	  IsActive		  [0]
+	  IsActive		  [1]
 	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "187"
-	  Extents		  [1886.0, 842.0]
-	  ZoomFactor		  [1.5520517907486686]
-	  Offset		  [1.1046824542518827, 32.74616523143159]
+	  LoadSaveID		  "27"
+	  Extents		  [924.0, 832.0]
+	  ZoomFactor		  [0.4]
+	  Offset		  [-489.43394308943039, -344.80691056910564]
 	}
 	Object {
 	  $ObjectID		  7
@@ -84,18 +84,36 @@ Model {
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "2"
-	  Extents		  [1886.0, 842.0]
-	  ZoomFactor		  [0.97954271961492179]
-	  Offset		  [-366.81910319410326, -5.2923832923833061]
+	  Extents		  [924.0, 832.0]
+	  ZoomFactor		  [1.25]
+	  Offset		  [458.48319000819049, -71.903521703521676]
 	}
 	Object {
 	  $ObjectID		  9
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "104"
-	  Extents		  [1886.0, 841.0]
+	  Extents		  [1886.0, 842.0]
 	  ZoomFactor		  [1.0]
 	  Offset		  [0.0, 0.0]
+	}
+	Object {
+	  $ObjectID		  10
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "233"
+	  Extents		  [1886.0, 842.0]
+	  ZoomFactor		  [1.5]
+	  Offset		  [-22.632034632034561, -19.569264069264079]
+	}
+	Object {
+	  $ObjectID		  11
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "187"
+	  Extents		  [924.0, 832.0]
+	  ZoomFactor		  [1.5520517907486686]
+	  Offset		  [686.64881593110829, 32.746165231431576]
 	}
 	PropName		"EditorsInfo"
       }
@@ -111,9 +129,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "jiang"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Mon Oct 31 12:25:14 2016"
-  RTWModifiedTimeStamp	  399817486
-  ModelVersionFormat	  "1.%<AutoIncrement:216>"
+  LastModifiedDate	  "Thu Mar 09 19:13:15 2017"
+  RTWModifiedTimeStamp	  410987593
+  ModelVersionFormat	  "1.%<AutoIncrement:227>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -154,7 +172,7 @@ Model {
   TryForcingSFcnDF	  off
   Object {
     $PropName		    "DataLoggingOverride"
-    $ObjectID		    10
+    $ObjectID		    12
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
     model_		    "my_pv_system"
     Array {
@@ -219,13 +237,13 @@ Model {
     Type		    "Handle"
     Dimension		    1
     Simulink.ConfigSet {
-      $ObjectID		      11
+      $ObjectID		      13
       Version		      "1.14.3"
       Array {
 	Type			"Handle"
 	Dimension		9
 	Simulink.SolverCC {
-	  $ObjectID		  12
+	  $ObjectID		  14
 	  Version		  "1.14.3"
 	  StartTime		  "0.0"
 	  StopTime		  "10"
@@ -260,7 +278,7 @@ Model {
 	  InsertRTBMode		  "Whenever possible"
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  13
+	  $ObjectID		  15
 	  Version		  "1.14.3"
 	  Decimation		  "1"
 	  ExternalInput		  "[t, u]"
@@ -293,7 +311,7 @@ Model {
 	  Refine		  "1"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  14
+	  $ObjectID		  16
 	  Version		  "1.14.3"
 	  Array {
 	    Type		    "Cell"
@@ -349,7 +367,7 @@ Model {
 	  ParallelExecutionInRapidAccelerator on
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  15
+	  $ObjectID		  17
 	  Version		  "1.14.3"
 	  RTPrefix		  "error"
 	  ConsistencyChecking	  "none"
@@ -440,7 +458,7 @@ Model {
 	  IntegerSaturationMsg	  "warning"
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  16
+	  $ObjectID		  18
 	  Version		  "1.14.3"
 	  ProdBitPerChar	  8
 	  ProdBitPerShort	  16
@@ -481,7 +499,7 @@ Model {
 	  ProdEqTarget		  off
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  17
+	  $ObjectID		  19
 	  Version		  "1.14.3"
 	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
 	  CheckModelReferenceTargetMessage "error"
@@ -496,7 +514,7 @@ Model {
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  18
+	  $ObjectID		  20
 	  Version		  "1.14.3"
 	  SFSimEnableDebug	  on
 	  SFSimOverflowDetection  on
@@ -512,7 +530,7 @@ Model {
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  19
+	  $ObjectID		  21
 	  Version		  "1.14.3"
 	  Array {
 	    Type		    "Cell"
@@ -585,7 +603,7 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      20
+	      $ObjectID		      22
 	      Version		      "1.14.3"
 	      Array {
 		Type			"Cell"
@@ -642,7 +660,7 @@ Model {
 	    }
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      21
+	      $ObjectID		      23
 	      Version		      "1.14.3"
 	      Array {
 		Type			"Cell"
@@ -724,7 +742,7 @@ Model {
 	  }
 	}
 	SSC.SimscapeCC {
-	  $ObjectID		  22
+	  $ObjectID		  24
 	  Version		  "1.0"
 	  Array {
 	    Type		    "Cell"
@@ -755,11 +773,11 @@ Model {
   }
   Simulink.ConfigSet {
     $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    11
+    $ObjectID		    13
   }
   Object {
     $PropName		    "DataTransfer"
-    $ObjectID		    23
+    $ObjectID		    25
     $ClassName		    "Simulink.GlobalDataTransfer"
     DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
@@ -1160,7 +1178,7 @@ Model {
   }
   System {
     Name		    "my_pv_system"
-    Location		    [-9, -9, 1929, 1039]
+    Location		    [952, 0, 1928, 1038]
     Open		    on
     ModelBrowserVisibility  off
     ModelBrowserWidth	    212
@@ -1257,7 +1275,7 @@ Model {
       RequestExecContextInheritance off
       System {
 	Name			"SC_user_interface"
-	Location		[-9, -9, 1929, 1039]
+	Location		[952, 0, 1928, 1038]
 	Open			on
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	212
@@ -1269,12 +1287,12 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"98"
+	ZoomFactor		"125"
 	Block {
 	  BlockType		  Inport
 	  Name			  "sc_in1"
 	  SID			  "3"
-	  Position		  [85, 268, 115, 282]
+	  Position		  [85, 223, 115, 237]
 	  ZOrder		  -1
 	  BackgroundColor	  "lightBlue"
 	  IconDisplay		  "Port number"
@@ -1283,7 +1301,7 @@ Model {
 	  BlockType		  Inport
 	  Name			  "sc_in2"
 	  SID			  "4"
-	  Position		  [85, 328, 115, 342]
+	  Position		  [85, 283, 115, 297]
 	  ZOrder		  -2
 	  BackgroundColor	  "lightBlue"
 	  Port			  "2"
@@ -1293,7 +1311,7 @@ Model {
 	  BlockType		  Inport
 	  Name			  "sc_in4"
 	  SID			  "336"
-	  Position		  [85, 538, 115, 552]
+	  Position		  [65, 713, 95, 727]
 	  ZOrder		  4325
 	  BackgroundColor	  "lightBlue"
 	  Port			  "3"
@@ -1303,7 +1321,7 @@ Model {
 	  BlockType		  Inport
 	  Name			  "sc_in5"
 	  SID			  "337"
-	  Position		  [85, 598, 115, 612]
+	  Position		  [65, 773, 95, 787]
 	  ZOrder		  4324
 	  BackgroundColor	  "lightBlue"
 	  Port			  "4"
@@ -1352,11 +1370,11 @@ Model {
 	  BlockType		  BusSelector
 	  Name			  "Bus\nSelector1"
 	  SID			  "362"
-	  Ports			  [1, 7]
+	  Ports			  [1, 5]
 	  Position		  [320, 233, 325, 347]
 	  ZOrder		  4332
 	  ShowName		  off
-	  OutputSignals		  "Vgrid,Igrid,Vdc,P_PV,Gate,Ig,Vinv"
+	  OutputSignals		  "Vgrid,Igrid,Vdc,P_PV,Gate"
 	  Port {
 	    PortNumber		    1
 	    Name		    "<Vgrid>"
@@ -1387,25 +1405,13 @@ Model {
 	    RTWStorageClass	    "Auto"
 	    DataLoggingNameMode	    "SignalName"
 	  }
-	  Port {
-	    PortNumber		    6
-	    Name		    "<Ig>"
-	    RTWStorageClass	    "Auto"
-	    DataLoggingNameMode	    "SignalName"
-	  }
-	  Port {
-	    PortNumber		    7
-	    Name		    "<Vinv>"
-	    RTWStorageClass	    "Auto"
-	    DataLoggingNameMode	    "SignalName"
-	  }
 	}
 	Block {
 	  BlockType		  BusSelector
 	  Name			  "Bus\nSelector2"
 	  SID			  "382"
 	  Ports			  [1, 4]
-	  Position		  [300, 466, 305, 569]
+	  Position		  [280, 641, 285, 744]
 	  ZOrder		  4334
 	  ShowName		  off
 	  OutputSignals		  "Computation time,Real step size,Idle time,Overrun times"
@@ -1439,7 +1445,7 @@ Model {
 	  Name			  "Bus\nSelector3"
 	  SID			  "383"
 	  Ports			  [1, 4]
-	  Position		  [300, 591, 305, 694]
+	  Position		  [280, 766, 285, 869]
 	  ZOrder		  4335
 	  ShowName		  off
 	  OutputSignals		  "Computation time,Real step size,Idle time,Overrun times"
@@ -1487,7 +1493,7 @@ Model {
 	  Name			  "Monitoring"
 	  SID			  "339"
 	  Ports			  [4]
-	  Position		  [420, 471, 480, 564]
+	  Position		  [400, 646, 460, 739]
 	  ZOrder		  4328
 	  Floating		  off
 	  Location		  [1, 55, 1921, 1029]
@@ -1524,7 +1530,7 @@ Model {
 	  Name			  "Monitoring1"
 	  SID			  "384"
 	  Ports			  [4]
-	  Position		  [420, 596, 480, 689]
+	  Position		  [400, 771, 460, 864]
 	  ZOrder		  4336
 	  Floating		  off
 	  Location		  [1, 55, 1921, 1029]
@@ -1561,7 +1567,7 @@ Model {
 	  Name			  "OpComm"
 	  SID			  "8"
 	  Ports			  [2, 2]
-	  Position		  [145, 245, 205, 365]
+	  Position		  [140, 200, 200, 320]
 	  ZOrder		  -6
 	  LibraryVersion	  "1.471"
 	  FontSize		  10
@@ -1589,7 +1595,7 @@ Model {
 	  Name			  "OpComm1"
 	  SID			  "335"
 	  Ports			  [2, 2]
-	  Position		  [160, 515, 220, 635]
+	  Position		  [140, 690, 200, 810]
 	  ZOrder		  4323
 	  LibraryVersion	  "1.471"
 	  FontSize		  10
@@ -1653,18 +1659,19 @@ Model {
 	  BlockType		  Scope
 	  Name			  "Scope1"
 	  SID			  "170"
-	  Ports			  [3]
-	  Position		  [440, 183, 495, 277]
+	  Ports			  [4]
+	  Position		  [440, 205, 495, 300]
 	  ZOrder		  4317
 	  Floating		  off
 	  Location		  [10, 69, 1916, 1043]
 	  Open			  off
-	  NumInputPorts		  "3"
+	  NumInputPorts		  "4"
 	  List {
 	    ListType		    AxesTitles
 	    axes1		    "%<SignalLabel>"
 	    axes2		    "%<SignalLabel>"
 	    axes3		    "%<SignalLabel>"
+	    axes4		    "%<SignalLabel>"
 	  }
 	  List {
 	    ListType		    ScopeGraphics
@@ -1677,47 +1684,9 @@ Model {
 	    MarkerStyles	    "none|none|none|none|none|none"
 	  }
 	  ShowLegends		  off
-	  YMin			  "0~-5~-5"
-	  YMax			  "100~5~5"
+	  YMin			  "0~-5~-5~-5"
+	  YMax			  "100~5~5~5"
 	  SaveName		  "ScopeData1"
-	  DataFormat		  "StructureWithTime"
-	  LimitDataPoints	  off
-	  SampleTime		  "0"
-	  ScrollMode		  off
-	}
-	Block {
-	  BlockType		  Scope
-	  Name			  "Scope2"
-	  SID			  "402"
-	  Ports			  [3]
-	  Position		  [605, 183, 660, 277]
-	  ZOrder		  4337
-	  Floating		  off
-	  Location		  [1, 55, 1921, 1029]
-	  Open			  off
-	  NumInputPorts		  "3"
-	  ZoomMode		  "xonly"
-	  List {
-	    ListType		    AxesTitles
-	    axes1		    "%<SignalLabel>"
-	    axes2		    "%<SignalLabel>"
-	    axes3		    "%<SignalLabel>"
-	  }
-	  List {
-	    ListType		    ScopeGraphics
-	    FigureColor		    "[0.5 0.5 0.5]"
-	    AxesColor		    "[0 0 0]"
-	    AxesTickColor	    "[1 1 1]"
-	    LineColors		    "[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
-	    LineStyles		    "-|-|-|-|-|-"
-	    LineWidths		    "[0.5 0.5 0.5 0.5 0.5 0.5]"
-	    MarkerStyles	    "none|none|none|none|none|none"
-	  }
-	  ShowLegends		  off
-	  TimeRange		  "10"
-	  YMin			  "0~-5~-5"
-	  YMax			  "100~5~5"
-	  SaveName		  "ScopeData3"
 	  DataFormat		  "StructureWithTime"
 	  LimitDataPoints	  off
 	  SampleTime		  "0"
@@ -1730,7 +1699,7 @@ Model {
 	  Ports			  [1, 1]
 	  Position		  [770, 257, 860, 273]
 	  ZOrder		  -8
-	  BackgroundColor	  "lightBlue"
+	  BackgroundColor	  "[0.380392, 0.741176, 0.988235]"
 	  LibraryVersion	  "1.354"
 	  SourceBlock		  "simulink/Math\nOperations/Slider\nGain"
 	  SourceType		  "Slider Gain"
@@ -1752,7 +1721,7 @@ Model {
 	  Ports			  [1, 1]
 	  Position		  [770, 307, 860, 323]
 	  ZOrder		  2
-	  BackgroundColor	  "lightBlue"
+	  BackgroundColor	  "[0.380392, 0.741176, 0.988235]"
 	  LibraryVersion	  "1.354"
 	  SourceBlock		  "simulink/Math\nOperations/Slider\nGain"
 	  SourceType		  "Slider Gain"
@@ -1772,7 +1741,7 @@ Model {
 	  Name			  "monitoring"
 	  SID			  "340"
 	  Ports			  [1]
-	  Position		  [400, 344, 500, 426]
+	  Position		  [380, 519, 480, 601]
 	  ZOrder		  4327
 	  Decimation		  "1"
 	}
@@ -1781,7 +1750,7 @@ Model {
 	  Name			  "monitoring1"
 	  SID			  "343"
 	  Ports			  [1]
-	  Position		  [390, 739, 490, 821]
+	  Position		  [370, 914, 470, 996]
 	  ZOrder		  4329
 	  Decimation		  "1"
 	}
@@ -1791,7 +1760,7 @@ Model {
 	  SID			  "11"
 	  Position		  [710, 255, 730, 275]
 	  ZOrder		  -9
-	  BackgroundColor	  "lightBlue"
+	  BackgroundColor	  "[0.380392, 0.741176, 0.988235]"
 	}
 	Block {
 	  BlockType		  Constant
@@ -1799,7 +1768,7 @@ Model {
 	  SID			  "78"
 	  Position		  [710, 305, 730, 325]
 	  ZOrder		  1
-	  BackgroundColor	  "lightBlue"
+	  BackgroundColor	  "[0.380392, 0.741176, 0.988235]"
 	}
 	Block {
 	  BlockType		  Outport
@@ -1856,7 +1825,7 @@ Model {
 	  ZOrder		  84
 	  SrcBlock		  "OpComm"
 	  SrcPort		  1
-	  Points		  [68, 0; 0, -215]
+	  Points		  [73, 0; 0, -170]
 	  DstBlock		  "Bus\nSelector"
 	  DstPort		  1
 	}
@@ -1891,7 +1860,6 @@ Model {
 	  ZOrder		  91
 	  SrcBlock		  "OpComm"
 	  SrcPort		  2
-	  Points		  [84, 0; 0, -45]
 	  DstBlock		  "Bus\nSelector1"
 	  DstPort		  1
 	}
@@ -1911,7 +1879,7 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "Bus\nSelector1"
 	  SrcPort		  3
-	  Points		  [48, 0; 0, -15]
+	  Points		  [48, 0; 0, -25]
 	  DstBlock		  "Scope1"
 	  DstPort		  3
 	}
@@ -1921,18 +1889,9 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "Bus\nSelector1"
 	  SrcPort		  1
-	  Points		  [1, 0; 0, -45; 92, 0]
-	  Branch {
-	    ZOrder		    140
-	    Points		    [0, -28; 155, 0; 0, 58]
-	    DstBlock		    "Scope2"
-	    DstPort		    2
-	  }
-	  Branch {
-	    ZOrder		    139
-	    DstBlock		    "Scope1"
-	    DstPort		    1
-	  }
+	  Points		  [1, 0; 0, -35]
+	  DstBlock		  "Scope1"
+	  DstPort		  1
 	}
 	Line {
 	  ZOrder		  98
@@ -2071,29 +2030,19 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "Bus\nSelector1"
 	  SrcPort		  4
-	  Points		  [40, 0; 0, -160]
+	  Points		  [40, 0; 0, -180]
 	  DstBlock		  "Scope"
 	  DstPort		  4
 	}
 	Line {
 	  Name			  "<Gate>"
-	  ZOrder		  134
+	  ZOrder		  163
 	  Labels		  [0, 0]
 	  SrcBlock		  "Bus\nSelector1"
 	  SrcPort		  5
-	  Points		  [220, 0; 0, -105]
-	  DstBlock		  "Scope2"
-	  DstPort		  1
-	}
-	Line {
-	  Name			  "<Vinv>"
-	  ZOrder		  136
-	  Labels		  [0, 0]
-	  SrcBlock		  "Bus\nSelector1"
-	  SrcPort		  7
-	  Points		  [193, 0; 0, -75]
-	  DstBlock		  "Scope2"
-	  DstPort		  3
+	  Points		  [79, 0; 0, -40]
+	  DstBlock		  "Scope1"
+	  DstPort		  4
 	}
 	Annotation {
 	  SID			  "13"
@@ -2110,7 +2059,7 @@ Model {
 	Annotation {
 	  SID			  "341"
 	  Name			  "Computation time\nReal step size\nIdle time\nOverruns"
-	  Position		  [518, 384, 615, 454]
+	  Position		  [498, 559, 595, 629]
 	  InternalMargins	  [0, 0, 0, 0]
 	  FixedHeight		  off
 	  FixedWidth		  off
@@ -2124,7 +2073,7 @@ Model {
 	Annotation {
 	  SID			  "344"
 	  Name			  "Computation time\nReal step size\nIdle time\nOverruns"
-	  Position		  [508, 776, 605, 846]
+	  Position		  [488, 951, 585, 1021]
 	  InternalMargins	  [0, 0, 0, 0]
 	  FixedHeight		  off
 	  FixedWidth		  off
@@ -2148,7 +2097,7 @@ Model {
       RequestExecContextInheritance off
       System {
 	Name			"SM_master"
-	Location		[-9, -9, 1929, 1039]
+	Location		[952, 0, 1928, 1038]
 	Open			off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	212
@@ -2160,7 +2109,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"75"
+	ZoomFactor		"56"
 	Block {
 	  BlockType		  Inport
 	  Name			  "sm_in1_irradiance"
@@ -2505,7 +2454,7 @@ Model {
 	  RequestExecContextInheritance	off
 	  System {
 	    Name		    "GRID"
-	    Location		    [-9, 0, 1923, 1048]
+	    Location		    [-8, 0, 968, 1038]
 	    Open		    off
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
@@ -2517,7 +2466,7 @@ Model {
 	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
-	    ZoomFactor		    "449"
+	    ZoomFactor		    "345"
 	    Block {
 	      BlockType		      Reference
 	      Name		      "CM2"
@@ -3244,7 +3193,7 @@ Model {
 	  RequestExecContextInheritance	off
 	  System {
 	    Name		    "Subsystem"
-	    Location		    [-9, 0, 1923, 1048]
+	    Location		    [-8, 0, 968, 1038]
 	    Open		    off
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
@@ -3256,7 +3205,7 @@ Model {
 	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
-	    ZoomFactor		    "161"
+	    ZoomFactor		    "60"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "console"
@@ -3547,7 +3496,7 @@ Model {
 	      BlockType		      Outport
 	      Name		      "PVmeasure"
 	      SID		      "137"
-	      Position		      [1395, 153, 1425, 167]
+	      Position		      [1385, 158, 1415, 172]
 	      ZOrder		      4228
 	      IconDisplay	      "Port number"
 	    }
@@ -3688,7 +3637,6 @@ Model {
 	      ZOrder		      84
 	      SrcBlock		      "Bus\nCreator"
 	      SrcPort		      1
-	      Points		      [0, -5]
 	      DstBlock		      "PVmeasure"
 	      DstPort		      1
 	    }
@@ -4330,7 +4278,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "From4"
 	  SrcPort		  1
-	  Points		  [80, 0]
 	  DstBlock		  "Bus\nCreator"
 	  DstPort		  2
 	}
@@ -4340,7 +4287,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "From5"
 	  SrcPort		  1
-	  Points		  [80, 0]
 	  DstBlock		  "Bus\nCreator"
 	  DstPort		  3
 	}
@@ -4350,7 +4296,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "From6"
 	  SrcPort		  1
-	  Points		  [80, 0]
 	  DstBlock		  "Bus\nCreator"
 	  DstPort		  4
 	}
@@ -4360,7 +4305,6 @@ Model {
 	  Labels		  [1, 1]
 	  SrcBlock		  "From2"
 	  SrcPort		  1
-	  Points		  [80, 0]
 	  DstBlock		  "Bus\nCreator"
 	  DstPort		  5
 	}
@@ -4538,7 +4482,6 @@ Model {
 	  Labels		  [1, 1]
 	  SrcBlock		  "From7"
 	  SrcPort		  1
-	  Points		  [80, 0]
 	  DstBlock		  "Bus\nCreator"
 	  DstPort		  6
 	}
@@ -4555,7 +4498,6 @@ Model {
 	  Labels		  [1, 1]
 	  SrcBlock		  "From9"
 	  SrcPort		  1
-	  Points		  [80, 0]
 	  DstBlock		  "Bus\nCreator"
 	  DstPort		  7
 	}
@@ -4601,8 +4543,8 @@ Model {
       RequestExecContextInheritance off
       System {
 	Name			"SS_controller"
-	Location		[-9, -9, 1929, 1039]
-	Open			off
+	Location		[952, 0, 1928, 1038]
+	Open			on
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -4613,7 +4555,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"82"
+	ZoomFactor		"40"
 	Block {
 	  BlockType		  Inport
 	  Name			  "ss1_in1"
@@ -4774,7 +4716,7 @@ Model {
 	  RequestExecContextInheritance	off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    24
+	    $ObjectID		    26
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "Inverter Control"
 	    Description		    "The main components of the Inverter Control are:\n1. PLL & Measurements\n2. Maximum Power Point"
@@ -4787,98 +4729,98 @@ Model {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      16
 	      Object {
-		$ObjectID		25
+		$ObjectID		27
 		Type			"edit"
 		Name			"Pnom"
 		Prompt			"Power (VA)"
 		Value			"3500"
 	      }
 	      Object {
-		$ObjectID		26
+		$ObjectID		28
 		Type			"edit"
 		Name			"Fnom"
 		Prompt			"Frequency (Hz)"
 		Value			"50"
 	      }
 	      Object {
-		$ObjectID		27
+		$ObjectID		29
 		Type			"edit"
 		Name			"Vnom_prim"
 		Prompt			"Primary voltage (Vrms LL)"
 		Value			"240"
 	      }
 	      Object {
-		$ObjectID		28
+		$ObjectID		30
 		Type			"edit"
 		Name			"Vnom_dc"
 		Prompt			"DC voltage (V)"
 		Value			"400"
 	      }
 	      Object {
-		$ObjectID		29
+		$ObjectID		31
 		Type			"edit"
 		Name			"Increment_MPPT"
 		Prompt			"Output increment (V)"
 		Value			"0.003"
 	      }
 	      Object {
-		$ObjectID		30
+		$ObjectID		32
 		Type			"edit"
 		Name			"Limits_MPPT"
 		Prompt			"Output limits [ Upper  Lower ]"
 		Value			"[ 450 375 ]"
 	      }
 	      Object {
-		$ObjectID		31
+		$ObjectID		33
 		Type			"edit"
 		Name			"Vdc_ref_Init"
 		Prompt			"Output initial value (V)"
 		Value			"425"
 	      }
 	      Object {
-		$ObjectID		32
+		$ObjectID		34
 		Type			"edit"
 		Name			"Kp_VDCreg"
 		Prompt			"Proportional gain"
 		Value			"12"
 	      }
 	      Object {
-		$ObjectID		33
+		$ObjectID		35
 		Type			"edit"
 		Name			"Ki_VDCreg"
 		Prompt			"Integral gain"
 		Value			"200"
 	      }
 	      Object {
-		$ObjectID		34
+		$ObjectID		36
 		Type			"edit"
 		Name			"Kp_Ireg"
 		Prompt			"Proportional gain"
 		Value			"0.15"
 	      }
 	      Object {
-		$ObjectID		35
+		$ObjectID		37
 		Type			"edit"
 		Name			"Ki_Ireg"
 		Prompt			"Integral gain"
 		Value			"6.6"
 	      }
 	      Object {
-		$ObjectID		36
+		$ObjectID		38
 		Type			"edit"
 		Name			"RLff"
 		Prompt			"Feedforward Values [Rff Lff] (pu)"
 		Value			"[ 0.002 0.20 ]"
 	      }
 	      Object {
-		$ObjectID		37
+		$ObjectID		39
 		Type			"edit"
 		Name			"Fc"
 		Prompt			"Carrier frequency (Hz)"
-		Value			"20000"
+		Value			"8000"
 	      }
 	      Object {
-		$ObjectID		38
+		$ObjectID		40
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -4889,17 +4831,17 @@ Model {
 		}
 		Name			"PWMmode12"
 		Prompt			"PWM method                                               "
-		Value			"Unipolar"
+		Value			"Bipolar"
 	      }
 	      Object {
-		$ObjectID		39
+		$ObjectID		41
 		Type			"edit"
 		Name			"Ts_Control"
 		Prompt			"Control systems"
 		Value			"50e-6"
 	      }
 	      Object {
-		$ObjectID		40
+		$ObjectID		42
 		Type			"edit"
 		Name			"Ts_PWMgenerator"
 		Prompt			"PWM generator"
@@ -4911,11 +4853,11 @@ Model {
 	      Type		      "Simulink.dialog.Group"
 	      Dimension		      2
 	      Object {
-		$ObjectID		41
+		$ObjectID		43
 		Prompt			"%<MaskType>"
 		Object {
 		  $PropName		  "DialogControls"
-		  $ObjectID		  42
+		  $ObjectID		  44
 		  $ClassName		  "Simulink.dialog.Text"
 		  Prompt		  "%<MaskDescription>"
 		  Name			  "DescTextVar"
@@ -4923,32 +4865,32 @@ Model {
 		Name			"DescGroupVar"
 	      }
 	      Object {
-		$ObjectID		43
+		$ObjectID		45
 		Prompt			"Simulink:studio:ToolBarParametersMenu"
 		Array {
 		  Type			  "Simulink.dialog.Group"
 		  Dimension		  6
 		  Object {
-		    $ObjectID		    44
+		    $ObjectID		    46
 		    Prompt		    "Nominal Values:"
 		    Array {
 		    Type		    "Simulink.dialog.parameter.Edit"
 		    Dimension		    4
 		    Object {
-		    $ObjectID		    45
+		    $ObjectID		    47
 		    Name		    "Pnom"
 		    }
 		    Object {
-		    $ObjectID		    46
+		    $ObjectID		    48
 		    Row			    "current"
 		    Name		    "Fnom"
 		    }
 		    Object {
-		    $ObjectID		    47
+		    $ObjectID		    49
 		    Name		    "Vnom_prim"
 		    }
 		    Object {
-		    $ObjectID		    48
+		    $ObjectID		    50
 		    Row			    "current"
 		    Name		    "Vnom_dc"
 		    }
@@ -4957,22 +4899,22 @@ Model {
 		    Name		    "Container4"
 		  }
 		  Object {
-		    $ObjectID		    49
+		    $ObjectID		    51
 		    Prompt		    "MPPT Controller:"
 		    Array {
 		    Type		    "Simulink.dialog.parameter.Edit"
 		    Dimension		    3
 		    Object {
-		    $ObjectID		    50
+		    $ObjectID		    52
 		    Name		    "Increment_MPPT"
 		    }
 		    Object {
-		    $ObjectID		    51
+		    $ObjectID		    53
 		    Row			    "current"
 		    Name		    "Limits_MPPT"
 		    }
 		    Object {
-		    $ObjectID		    52
+		    $ObjectID		    54
 		    Row			    "current"
 		    Name		    "Vdc_ref_Init"
 		    }
@@ -4981,17 +4923,17 @@ Model {
 		    Name		    "Container3"
 		  }
 		  Object {
-		    $ObjectID		    53
+		    $ObjectID		    55
 		    Prompt		    "Dc Voltage Regulator:"
 		    Array {
 		    Type		    "Simulink.dialog.parameter.Edit"
 		    Dimension		    2
 		    Object {
-		    $ObjectID		    54
+		    $ObjectID		    56
 		    Name		    "Kp_VDCreg"
 		    }
 		    Object {
-		    $ObjectID		    55
+		    $ObjectID		    57
 		    Row			    "current"
 		    Name		    "Ki_VDCreg"
 		    }
@@ -5000,22 +4942,22 @@ Model {
 		    Name		    "Container8"
 		  }
 		  Object {
-		    $ObjectID		    56
+		    $ObjectID		    58
 		    Prompt		    "Current Regulator:"
 		    Array {
 		    Type		    "Simulink.dialog.parameter.Edit"
 		    Dimension		    3
 		    Object {
-		    $ObjectID		    57
+		    $ObjectID		    59
 		    Name		    "Kp_Ireg"
 		    }
 		    Object {
-		    $ObjectID		    58
+		    $ObjectID		    60
 		    Row			    "current"
 		    Name		    "Ki_Ireg"
 		    }
 		    Object {
-		    $ObjectID		    59
+		    $ObjectID		    61
 		    Row			    "current"
 		    Name		    "RLff"
 		    }
@@ -5024,18 +4966,18 @@ Model {
 		    Name		    "Container6"
 		  }
 		  Object {
-		    $ObjectID		    60
+		    $ObjectID		    62
 		    Prompt		    "PWM Modulator:"
 		    Array {
 		    Type		    "Simulink.dialog.parameter.Control"
 		    Dimension		    2
 		    Object {
-		    $ObjectID		    61
+		    $ObjectID		    63
 		    $ClassName		    "Simulink.dialog.parameter.Edit"
 		    Name		    "Fc"
 		    }
 		    Object {
-		    $ObjectID		    62
+		    $ObjectID		    64
 		    $ClassName		    "Simulink.dialog.parameter.Popup"
 		    PromptLocation	    "top"
 		    Row			    "current"
@@ -5046,17 +4988,17 @@ Model {
 		    Name		    "Container9"
 		  }
 		  Object {
-		    $ObjectID		    63
+		    $ObjectID		    65
 		    Prompt		    "Sample Times:"
 		    Array {
 		    Type		    "Simulink.dialog.parameter.Edit"
 		    Dimension		    2
 		    Object {
-		    $ObjectID		    64
+		    $ObjectID		    66
 		    Name		    "Ts_Control"
 		    }
 		    Object {
-		    $ObjectID		    65
+		    $ObjectID		    67
 		    Row			    "current"
 		    Name		    "Ts_PWMgenerator"
 		    }
@@ -5079,7 +5021,7 @@ Model {
 	  }
 	  System {
 	    Name		    "Inverter Control"
-	    Location		    [-9, -9, 1929, 1039]
+	    Location		    [952, 0, 1928, 1038]
 	    Open		    on
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
@@ -6078,8 +6020,8 @@ Model {
 	      RequestExecContextInheritance off
 	      System {
 		Name			"PLL & Measurements"
-		Location		[-9, -9, 1929, 1039]
-		Open			off
+		Location		[952, 0, 1928, 1038]
+		Open			on
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -6090,7 +6032,7 @@ Model {
 		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
 		TiledPageScale		1
 		ShowPageBoundaries	off
-		ZoomFactor		"176"
+		ZoomFactor		"150"
 		Block {
 		  BlockType		  Inport
 		  Name			  "Vhome"
@@ -6789,7 +6731,7 @@ Model {
 	      SourceBlock	      "powerlib_meascontrol/Pulse & Signal\nGenerators/PWM Generator\n(2-Level)"
 	      SourceType	      "PWM Generator (2-Level)"
 	      ContentPreviewEnabled   off
-	      ModulatorType	      "Single-phase full-bridge (4 pulses)"
+	      ModulatorType	      "Single-phase full-bridge - Bipolar modulation (4 pulses)"
 	      ModulatorMode	      "Unsynchronized"
 	      Fc		      "Fc"
 	      Pc		      "90"
@@ -8409,7 +8351,7 @@ Model {
       Position		      [455, 10, 521, 49]
       ZOrder		      4349
       Priority		      "1"
-      LibraryVersion	      "*1.2446"
+      LibraryVersion	      "1.2446"
       UserDataPersistent      on
       UserData		      "DataTag0"
       SourceBlock	      "powerlib/powergui"

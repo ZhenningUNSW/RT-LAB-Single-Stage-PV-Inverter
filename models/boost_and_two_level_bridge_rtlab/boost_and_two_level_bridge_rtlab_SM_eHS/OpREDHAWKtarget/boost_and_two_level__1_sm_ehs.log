@@ -1,0 +1,34 @@
+
+--------------- Transferring files ... ------------------------------
+
+Transferring in binary: C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\MMPK7_1-EX-0001-2_3_2_19-300Series_eHSgen3_with_IOs-303-03.bin (SM_eHS) ... OK.
+Transferring in binary: C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\eHS_Config\ehs_config_eHSx64v3_SID4894.mat (SM_eHS) ... OK.
+Transferring in binary: C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\Opal*Creator.data (SM_eHS) ... OK.
+
+--------------- Done transferring files -----------------------------
+
+
+Executing script /usr/opalrt/v11.0.8.13/common/python/rtlab/global/target_preload.py ... done
+Executing script /usr/opalrt/v11.0.8.13/common/python/rtlab/global/target_subsys_preload.py ... done
+
+Flashing FPGA #0 bitstream. This can take some time. Do not reset your target until flash_update completes.
+
+
+Flashing FPGA #0 bitstream : '/home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_workspace/pv_inverter/models/boost_and_two_level_bridge_rtlab/boost_and_two_level_bridge_rtlab_sm_ehs/MMPK7_1-EX-0001-2_3_2_19-300Series_eHSgen3_with_IOs-303-03.bin' ...
+WARNING: Flash programming was skipped because the same bitstream was already programmed in the FPGA.
+Note that you can set the User Variable FPGA_BITSTREAM_FORCE_OPTION to ON for forcing the reprogramming of the board.
+ 
+Unable to connect to the remote log system at 192.168.5.113:25254. Display will be disabled.
+Starting transfer of /home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_workspace/pv_inverter/models/boost_and_two_level_bridge_rtlab/boost_and_two_level_bridge_rtlab_sm_ehs/opboost_and_two_level__sm_ehs_0.snap...
+Transfer of /home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_workspace/pv_inverter/models/boost_and_two_level_bridge_rtlab/boost_and_two_level_bridge_rtlab_sm_ehs/opboost_and_two_level__sm_ehs_0.snap OK
+Executing script /usr/opalrt/v11.0.8.13/common/python/rtlab/global/target_postreset.py ... done
+Executing script /usr/opalrt/v11.0.8.13/common/python/rtlab/global/target_subsys_postreset.py ... done
+
+
+--------------- Retrieving files ... ---------------------------------
+
+Setting local directory to C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_sm_ehs\OpREDHAWKtarget\... OK.
+Transferring in binary mode /myPV_inverter.mat ... OK.
+Transferring in ascii mode /home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_workspace/pv_inverter/models/boost_and_two_level_bridge_rtlab/target_report.xml ... OK.
+
+--------------- Done retrieving files --------------------------------

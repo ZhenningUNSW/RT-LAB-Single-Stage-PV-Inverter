@@ -17,38 +17,6 @@ int OpalSnapshot_Copy_DWork(void * src, void * dst) {
    memcpy(&pDst->StateSpace_DSTATE, &pSrc->StateSpace_DSTATE, eltSize);
    size += eltSize;
 
-   eltSize = sizeof(pSrc->DiscreteTimeIntegrator_DSTATE);
-   memcpy(&pDst->DiscreteTimeIntegrator_DSTATE, &pSrc->DiscreteTimeIntegrator_DSTATE, eltSize);
-   size += eltSize;
-
-   eltSize = sizeof(pSrc->UnitDelay_DSTATE_e);
-   memcpy(&pDst->UnitDelay_DSTATE_e, &pSrc->UnitDelay_DSTATE_e, eltSize);
-   size += eltSize;
-
-   eltSize = sizeof(pSrc->SFunction_PreviousInput);
-   memcpy(&pDst->SFunction_PreviousInput, &pSrc->SFunction_PreviousInput, eltSize);
-   size += eltSize;
-
-   eltSize = sizeof(pSrc->Memory_1_PreviousInput);
-   memcpy(&pDst->Memory_1_PreviousInput, &pSrc->Memory_1_PreviousInput, eltSize);
-   size += eltSize;
-
-   eltSize = sizeof(pSrc->Memory_2_PreviousInput);
-   memcpy(&pDst->Memory_2_PreviousInput, &pSrc->Memory_2_PreviousInput, eltSize);
-   size += eltSize;
-
-   eltSize = sizeof(pSrc->Memory_3_PreviousInput);
-   memcpy(&pDst->Memory_3_PreviousInput, &pSrc->Memory_3_PreviousInput, eltSize);
-   size += eltSize;
-
-   eltSize = sizeof(pSrc->Memory_4_PreviousInput);
-   memcpy(&pDst->Memory_4_PreviousInput, &pSrc->Memory_4_PreviousInput, eltSize);
-   size += eltSize;
-
-   eltSize = sizeof(pSrc->Memory_5_PreviousInput);
-   memcpy(&pDst->Memory_5_PreviousInput, &pSrc->Memory_5_PreviousInput, eltSize);
-   size += eltSize;
-
    eltSize = sizeof(pSrc->Memory_6_PreviousInput);
    memcpy(&pDst->Memory_6_PreviousInput, &pSrc->Memory_6_PreviousInput, eltSize);
    size += eltSize;
@@ -77,8 +45,20 @@ int OpalSnapshot_Copy_DWork(void * src, void * dst) {
    memcpy(&pDst->Memory1_6_PreviousInput, &pSrc->Memory1_6_PreviousInput, eltSize);
    size += eltSize;
 
+   eltSize = sizeof(pSrc->Memory1_7_PreviousInput);
+   memcpy(&pDst->Memory1_7_PreviousInput, &pSrc->Memory1_7_PreviousInput, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->Memory1_8_PreviousInput);
+   memcpy(&pDst->Memory1_8_PreviousInput, &pSrc->Memory1_8_PreviousInput, eltSize);
+   size += eltSize;
+
    eltSize = sizeof(pSrc->Memory_PreviousInput);
    memcpy(&pDst->Memory_PreviousInput, &pSrc->Memory_PreviousInput, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->DiscreteTimeIntegrator_DSTATE);
+   memcpy(&pDst->DiscreteTimeIntegrator_DSTATE, &pSrc->DiscreteTimeIntegrator_DSTATE, eltSize);
    size += eltSize;
 
    eltSize = sizeof(pSrc->Memory_PreviousInput_h);
@@ -89,6 +69,10 @@ int OpalSnapshot_Copy_DWork(void * src, void * dst) {
    memcpy(&pDst->PrevY, &pSrc->PrevY, eltSize);
    size += eltSize;
 
+   eltSize = sizeof(pSrc->StateSpace_RWORK);
+   memcpy(&pDst->StateSpace_RWORK, &pSrc->StateSpace_RWORK, eltSize);
+   size += eltSize;
+
    eltSize = sizeof(pSrc->TransportDelay_RWORK);
    memcpy(&pDst->TransportDelay_RWORK, &pSrc->TransportDelay_RWORK, eltSize);
    size += eltSize;
@@ -97,12 +81,16 @@ int OpalSnapshot_Copy_DWork(void * src, void * dst) {
    memcpy(&pDst->TransportDelay_RWORK_o, &pSrc->TransportDelay_RWORK_o, eltSize);
    size += eltSize;
 
+   eltSize = sizeof(pSrc->UnitDelay_DSTATE_e);
+   memcpy(&pDst->UnitDelay_DSTATE_e, &pSrc->UnitDelay_DSTATE_e, eltSize);
+   size += eltSize;
+
    eltSize = sizeof(pSrc->SFunction_IWORK);
    memcpy(&pDst->SFunction_IWORK, &pSrc->SFunction_IWORK, eltSize);
    size += eltSize;
 
-   eltSize = sizeof(pSrc->SFunction_IWORK_f);
-   memcpy(&pDst->SFunction_IWORK_f, &pSrc->SFunction_IWORK_f, eltSize);
+   eltSize = sizeof(pSrc->SFunction_IWORK_b);
+   memcpy(&pDst->SFunction_IWORK_b, &pSrc->SFunction_IWORK_b, eltSize);
    size += eltSize;
 
    eltSize = sizeof(pSrc->StateSpace_IWORK);
@@ -117,8 +105,8 @@ int OpalSnapshot_Copy_DWork(void * src, void * dst) {
    memcpy(&pDst->TransportDelay_IWORK_i, &pSrc->TransportDelay_IWORK_i, eltSize);
    size += eltSize;
 
-   eltSize = sizeof(pSrc->SFunction_IWORK_j);
-   memcpy(&pDst->SFunction_IWORK_j, &pSrc->SFunction_IWORK_j, eltSize);
+   eltSize = sizeof(pSrc->SFunction_IWORK_n);
+   memcpy(&pDst->SFunction_IWORK_n, &pSrc->SFunction_IWORK_n, eltSize);
    size += eltSize;
 
    eltSize = sizeof(pSrc->DiscreteTimeIntegrator_PrevRese);
@@ -127,6 +115,30 @@ int OpalSnapshot_Copy_DWork(void * src, void * dst) {
 
    eltSize = sizeof(pSrc->Tail_MODE);
    memcpy(&pDst->Tail_MODE, &pSrc->Tail_MODE, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->SFunction_PreviousInput);
+   memcpy(&pDst->SFunction_PreviousInput, &pSrc->SFunction_PreviousInput, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->Memory_1_PreviousInput);
+   memcpy(&pDst->Memory_1_PreviousInput, &pSrc->Memory_1_PreviousInput, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->Memory_2_PreviousInput);
+   memcpy(&pDst->Memory_2_PreviousInput, &pSrc->Memory_2_PreviousInput, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->Memory_3_PreviousInput);
+   memcpy(&pDst->Memory_3_PreviousInput, &pSrc->Memory_3_PreviousInput, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->Memory_4_PreviousInput);
+   memcpy(&pDst->Memory_4_PreviousInput, &pSrc->Memory_4_PreviousInput, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->Memory_5_PreviousInput);
+   memcpy(&pDst->Memory_5_PreviousInput, &pSrc->Memory_5_PreviousInput, eltSize);
    size += eltSize;
 
    return size;
@@ -146,38 +158,6 @@ int OpalSnapshot_Copy_TimingData(void * src, void * dst) {
    int size = 0, eltSize = 0;
 
    memcpy(&tmpBuffer.Timing, src, TimingSize);
-
-   eltSize = sizeof(pSrc->Timing.clockTick0);
-   memcpy(&pDst->Timing.clockTick0, &pSrc->Timing.clockTick0, eltSize);
-   size += eltSize;
-
-   eltSize = sizeof(pSrc->Timing.clockTick1);
-   memcpy(&pDst->Timing.clockTick1, &pSrc->Timing.clockTick1, eltSize);
-   size += eltSize;
-
-   eltSize = sizeof(pSrc->Timing.clockTickH0);
-   memcpy(&pDst->Timing.clockTickH0, &pSrc->Timing.clockTickH0, eltSize);
-   size += eltSize;
-
-   eltSize = sizeof(pSrc->Timing.clockTickH1);
-   memcpy(&pDst->Timing.clockTickH1, &pSrc->Timing.clockTickH1, eltSize);
-   size += eltSize;
-
-   eltSize = sizeof(pSrc->Timing.tFinal);
-   memcpy(&pDst->Timing.tFinal, &pSrc->Timing.tFinal, eltSize);
-   size += eltSize;
-
-   eltSize = sizeof(pSrc->Timing.offsetTimesArray);
-   memcpy(&pDst->Timing.offsetTimesArray, &pSrc->Timing.offsetTimesArray, eltSize);
-   size += eltSize;
-
-   eltSize = sizeof(pSrc->Timing.perTaskSampleHitsArray);
-   memcpy(&pDst->Timing.perTaskSampleHitsArray, &pSrc->Timing.perTaskSampleHitsArray, eltSize);
-   size += eltSize;
-
-   eltSize = sizeof(pSrc->Timing.sampleHitArray);
-   memcpy(&pDst->Timing.sampleHitArray, &pSrc->Timing.sampleHitArray, eltSize);
-   size += eltSize;
 
    eltSize = sizeof(pSrc->Timing.sampleTimesArray);
    memcpy(&pDst->Timing.sampleTimesArray, &pSrc->Timing.sampleTimesArray, eltSize);
@@ -219,6 +199,38 @@ int OpalSnapshot_Copy_TimingData(void * src, void * dst) {
    memcpy(&pDst->Timing.timeOfLastOutput, &pSrc->Timing.timeOfLastOutput, eltSize);
    size += eltSize;
 
+   eltSize = sizeof(pSrc->Timing.tFinal);
+   memcpy(&pDst->Timing.tFinal, &pSrc->Timing.tFinal, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->Timing.clockTick0);
+   memcpy(&pDst->Timing.clockTick0, &pSrc->Timing.clockTick0, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->Timing.clockTick1);
+   memcpy(&pDst->Timing.clockTick1, &pSrc->Timing.clockTick1, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->Timing.clockTickH0);
+   memcpy(&pDst->Timing.clockTickH0, &pSrc->Timing.clockTickH0, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->Timing.clockTickH1);
+   memcpy(&pDst->Timing.clockTickH1, &pSrc->Timing.clockTickH1, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->Timing.offsetTimesArray);
+   memcpy(&pDst->Timing.offsetTimesArray, &pSrc->Timing.offsetTimesArray, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->Timing.perTaskSampleHitsArray);
+   memcpy(&pDst->Timing.perTaskSampleHitsArray, &pSrc->Timing.perTaskSampleHitsArray, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->Timing.sampleHitArray);
+   memcpy(&pDst->Timing.sampleHitArray, &pSrc->Timing.sampleHitArray, eltSize);
+   size += eltSize;
+
    return size;
 }
 
@@ -241,6 +253,10 @@ int OpalSnapshot_Copy_ModelData(void * src, void * dst) {
    memcpy(&pDst->ModelData.blkStateChange, &pSrc->ModelData.blkStateChange, eltSize);
    size += eltSize;
 
+   eltSize = sizeof(pSrc->ModelData.zCCacheNeedsReset);
+   memcpy(&pDst->ModelData.zCCacheNeedsReset, &pSrc->ModelData.zCCacheNeedsReset, eltSize);
+   size += eltSize;
+
    eltSize = sizeof(pSrc->ModelData.derivCacheNeedsReset);
    memcpy(&pDst->ModelData.derivCacheNeedsReset, &pSrc->ModelData.derivCacheNeedsReset, eltSize);
    size += eltSize;
@@ -251,10 +267,6 @@ int OpalSnapshot_Copy_ModelData(void * src, void * dst) {
 
    eltSize = sizeof(pSrc->ModelData.odeY);
    memcpy(&pDst->ModelData.odeY, &pSrc->ModelData.odeY, eltSize);
-   size += eltSize;
-
-   eltSize = sizeof(pSrc->ModelData.zCCacheNeedsReset);
-   memcpy(&pDst->ModelData.zCCacheNeedsReset, &pSrc->ModelData.zCCacheNeedsReset, eltSize);
    size += eltSize;
 
    return size;

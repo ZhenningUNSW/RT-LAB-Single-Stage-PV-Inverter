@@ -17,38 +17,6 @@ int OpalSnapshot_Copy_DWork(void * src, void * dst) {
    memcpy(&pDst->DiscreteTimeIntegrator_DSTATE, &pSrc->DiscreteTimeIntegrator_DSTATE, eltSize);
    size += eltSize;
 
-   eltSize = sizeof(pSrc->Delay_x1_DSTATE);
-   memcpy(&pDst->Delay_x1_DSTATE, &pSrc->Delay_x1_DSTATE, eltSize);
-   size += eltSize;
-
-   eltSize = sizeof(pSrc->Delay_x2_DSTATE);
-   memcpy(&pDst->Delay_x2_DSTATE, &pSrc->Delay_x2_DSTATE, eltSize);
-   size += eltSize;
-
-   eltSize = sizeof(pSrc->UnitDelay2_DSTATE);
-   memcpy(&pDst->UnitDelay2_DSTATE, &pSrc->UnitDelay2_DSTATE, eltSize);
-   size += eltSize;
-
-   eltSize = sizeof(pSrc->Integrator_DSTATE);
-   memcpy(&pDst->Integrator_DSTATE, &pSrc->Integrator_DSTATE, eltSize);
-   size += eltSize;
-
-   eltSize = sizeof(pSrc->Integ4_DSTATE);
-   memcpy(&pDst->Integ4_DSTATE, &pSrc->Integ4_DSTATE, eltSize);
-   size += eltSize;
-
-   eltSize = sizeof(pSrc->UnitDelay_DSTATE_g);
-   memcpy(&pDst->UnitDelay_DSTATE_g, &pSrc->UnitDelay_DSTATE_g, eltSize);
-   size += eltSize;
-
-   eltSize = sizeof(pSrc->UnitDelay1_DSTATE);
-   memcpy(&pDst->UnitDelay1_DSTATE, &pSrc->UnitDelay1_DSTATE, eltSize);
-   size += eltSize;
-
-   eltSize = sizeof(pSrc->Integ4_DSTATE_d);
-   memcpy(&pDst->Integ4_DSTATE_d, &pSrc->Integ4_DSTATE_d, eltSize);
-   size += eltSize;
-
    eltSize = sizeof(pSrc->UnitDelay_DSTATE_i);
    memcpy(&pDst->UnitDelay_DSTATE_i, &pSrc->UnitDelay_DSTATE_i, eltSize);
    size += eltSize;
@@ -87,6 +55,10 @@ int OpalSnapshot_Copy_DWork(void * src, void * dst) {
 
    eltSize = sizeof(pSrc->DiscreteTimeIntegrator_DSTATE_d);
    memcpy(&pDst->DiscreteTimeIntegrator_DSTATE_d, &pSrc->DiscreteTimeIntegrator_DSTATE_d, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->Delay_x1_DSTATE);
+   memcpy(&pDst->Delay_x1_DSTATE, &pSrc->Delay_x1_DSTATE, eltSize);
    size += eltSize;
 
    eltSize = sizeof(pSrc->Delay_x1_DSTATE_d);
@@ -129,6 +101,10 @@ int OpalSnapshot_Copy_DWork(void * src, void * dst) {
    memcpy(&pDst->Integ4_DSTATE_j, &pSrc->Integ4_DSTATE_j, eltSize);
    size += eltSize;
 
+   eltSize = sizeof(pSrc->Delay_x2_DSTATE);
+   memcpy(&pDst->Delay_x2_DSTATE, &pSrc->Delay_x2_DSTATE, eltSize);
+   size += eltSize;
+
    eltSize = sizeof(pSrc->UnitDelay_DSTATE_d);
    memcpy(&pDst->UnitDelay_DSTATE_d, &pSrc->UnitDelay_DSTATE_d, eltSize);
    size += eltSize;
@@ -169,6 +145,10 @@ int OpalSnapshot_Copy_DWork(void * src, void * dst) {
    memcpy(&pDst->Pold, &pSrc->Pold, eltSize);
    size += eltSize;
 
+   eltSize = sizeof(pSrc->UnitDelay2_DSTATE);
+   memcpy(&pDst->UnitDelay2_DSTATE, &pSrc->UnitDelay2_DSTATE, eltSize);
+   size += eltSize;
+
    eltSize = sizeof(pSrc->Dold);
    memcpy(&pDst->Dold, &pSrc->Dold, eltSize);
    size += eltSize;
@@ -201,12 +181,20 @@ int OpalSnapshot_Copy_DWork(void * src, void * dst) {
    memcpy(&pDst->SFunction_RWORK_m, &pSrc->SFunction_RWORK_m, eltSize);
    size += eltSize;
 
+   eltSize = sizeof(pSrc->Integrator_DSTATE);
+   memcpy(&pDst->Integrator_DSTATE, &pSrc->Integrator_DSTATE, eltSize);
+   size += eltSize;
+
    eltSize = sizeof(pSrc->SFunction_IWORK);
    memcpy(&pDst->SFunction_IWORK, &pSrc->SFunction_IWORK, eltSize);
    size += eltSize;
 
    eltSize = sizeof(pSrc->SFunction_IWORK_p);
    memcpy(&pDst->SFunction_IWORK_p, &pSrc->SFunction_IWORK_p, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->Integ4_DSTATE);
+   memcpy(&pDst->Integ4_DSTATE, &pSrc->Integ4_DSTATE, eltSize);
    size += eltSize;
 
    eltSize = sizeof(pSrc->SFunction_IWORK_f);
@@ -249,6 +237,10 @@ int OpalSnapshot_Copy_DWork(void * src, void * dst) {
    memcpy(&pDst->Integ4_SYSTEM_ENABLE_d, &pSrc->Integ4_SYSTEM_ENABLE_d, eltSize);
    size += eltSize;
 
+   eltSize = sizeof(pSrc->UnitDelay_DSTATE_g);
+   memcpy(&pDst->UnitDelay_DSTATE_g, &pSrc->UnitDelay_DSTATE_g, eltSize);
+   size += eltSize;
+
    eltSize = sizeof(pSrc->Integ4_SYSTEM_ENABLE_k);
    memcpy(&pDst->Integ4_SYSTEM_ENABLE_k, &pSrc->Integ4_SYSTEM_ENABLE_k, eltSize);
    size += eltSize;
@@ -269,6 +261,14 @@ int OpalSnapshot_Copy_DWork(void * src, void * dst) {
    memcpy(&pDst->AutomaticGainControl_MODE, &pSrc->AutomaticGainControl_MODE, eltSize);
    size += eltSize;
 
+   eltSize = sizeof(pSrc->UnitDelay1_DSTATE);
+   memcpy(&pDst->UnitDelay1_DSTATE, &pSrc->UnitDelay1_DSTATE, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->Integ4_DSTATE_d);
+   memcpy(&pDst->Integ4_DSTATE_d, &pSrc->Integ4_DSTATE_d, eltSize);
+   size += eltSize;
+
    return size;
 }
 
@@ -287,16 +287,24 @@ int OpalSnapshot_Copy_TimingData(void * src, void * dst) {
 
    memcpy(&tmpBuffer.Timing, src, TimingSize);
 
+   eltSize = sizeof(pSrc->Timing.tArray);
+   memcpy(&pDst->Timing.tArray, &pSrc->Timing.tArray, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->Timing.timeOfLastOutput);
+   memcpy(&pDst->Timing.timeOfLastOutput, &pSrc->Timing.timeOfLastOutput, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->Timing.tFinal);
+   memcpy(&pDst->Timing.tFinal, &pSrc->Timing.tFinal, eltSize);
+   size += eltSize;
+
    eltSize = sizeof(pSrc->Timing.clockTick0);
    memcpy(&pDst->Timing.clockTick0, &pSrc->Timing.clockTick0, eltSize);
    size += eltSize;
 
    eltSize = sizeof(pSrc->Timing.clockTickH0);
    memcpy(&pDst->Timing.clockTickH0, &pSrc->Timing.clockTickH0, eltSize);
-   size += eltSize;
-
-   eltSize = sizeof(pSrc->Timing.tFinal);
-   memcpy(&pDst->Timing.tFinal, &pSrc->Timing.tFinal, eltSize);
    size += eltSize;
 
    eltSize = sizeof(pSrc->Timing.offsetTimesArray);
@@ -339,14 +347,6 @@ int OpalSnapshot_Copy_TimingData(void * src, void * dst) {
    memcpy(&pDst->Timing.stopRequestedFlag, &pSrc->Timing.stopRequestedFlag, eltSize);
    size += eltSize;
 
-   eltSize = sizeof(pSrc->Timing.tArray);
-   memcpy(&pDst->Timing.tArray, &pSrc->Timing.tArray, eltSize);
-   size += eltSize;
-
-   eltSize = sizeof(pSrc->Timing.timeOfLastOutput);
-   memcpy(&pDst->Timing.timeOfLastOutput, &pSrc->Timing.timeOfLastOutput, eltSize);
-   size += eltSize;
-
    return size;
 }
 
@@ -369,12 +369,12 @@ int OpalSnapshot_Copy_ModelData(void * src, void * dst) {
    memcpy(&pDst->ModelData.blkStateChange, &pSrc->ModelData.blkStateChange, eltSize);
    size += eltSize;
 
-   eltSize = sizeof(pSrc->ModelData.derivCacheNeedsReset);
-   memcpy(&pDst->ModelData.derivCacheNeedsReset, &pSrc->ModelData.derivCacheNeedsReset, eltSize);
-   size += eltSize;
-
    eltSize = sizeof(pSrc->ModelData.zCCacheNeedsReset);
    memcpy(&pDst->ModelData.zCCacheNeedsReset, &pSrc->ModelData.zCCacheNeedsReset, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->ModelData.derivCacheNeedsReset);
+   memcpy(&pDst->ModelData.derivCacheNeedsReset, &pSrc->ModelData.derivCacheNeedsReset, eltSize);
    size += eltSize;
 
    return size;

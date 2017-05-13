@@ -45,1060 +45,1056 @@ F64
 SS_controller/zzzOpComm/Receive_1/S-Function/port1
 160
 F64
-12
+17
 SS_controller/Rate Transition1/port1
-256
-F64
-1
-SS_controller/Inverter Control/PLL & Measurements/A->pu/port1
-264
-F64
-1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Unit Delay/port1
-272
-F64
-1
-SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/avoid division by zero/port1
-280
-F64
-1
-SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Math Function/port1
-288
-F64
-1
-SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Gain/port1
 296
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Discrete Variable Time Delay/S-Function/port1
+SS_controller/Inverter Control/PLL & Measurements/A->pu/port1
 304
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Discrete-Time Integrator/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Unit Delay/port1
 312
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Math Function/port1
+SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/avoid division by zero/port1
 320
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/First cycle of simulation Id=0.92, Iq=0/port1
+SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Math Function/port1
 328
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Switch/port1
+SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Gain/port1
 336
+F64
+1
+SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Discrete Variable Time Delay/S-Function/port1
+344
+F64
+1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Discrete-Time Integrator/port1
+352
+F64
+1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Math Function/port1
+360
+F64
+1
+SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/First cycle of simulation Id=0.92, Iq=0/port1
+368
+F64
+1
+SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Switch/port1
+376
 F64
 2
 SS_controller/Inverter Control/PLL & Measurements/Second-Order Filter/Model/D*u(k)/port1
-352
+392
 F64
 2
 SS_controller/Inverter Control/PLL & Measurements/Second-Order Filter/Model/Delay_x1/port1
-368
+408
 F64
 2
 SS_controller/Inverter Control/PLL & Measurements/Second-Order Filter/Model/C*x(k)/C11/port1
-384
+424
 F64
 2
 SS_controller/Inverter Control/PLL & Measurements/Second-Order Filter/Model/Delay_x2/port1
-400
+440
 F64
 2
 SS_controller/Inverter Control/PLL & Measurements/Second-Order Filter/Model/C*x(k)/C12/port1
-416
+456
 F64
 2
 SS_controller/Inverter Control/PLL & Measurements/Second-Order Filter/Model/C*x(k)/sum2/port1
-432
-F64
-2
-SS_controller/Inverter Control/PLL & Measurements/Second-Order Filter/Model/C*X(k)+D*u(k)/port1
-448
-F64
-2
-SS_controller/Inverter Control/Unit Delay2/port1
-464
-F64
-1
-SS_controller/Inverter Control/Current Regulator/Sum/port1
 472
 F64
 2
-SS_controller/Inverter Control/Current Regulator/PI/Proportional Gain/port1
+SS_controller/Inverter Control/PLL & Measurements/Second-Order Filter/Model/C*X(k)+D*u(k)/port1
 488
 F64
 2
-SS_controller/Inverter Control/Current Regulator/PI/Integrator/port1
+SS_controller/Inverter Control/Unit Delay2/port1
 504
+F64
+1
+SS_controller/Inverter Control/Current Regulator/Sum/port1
+512
+F64
+2
+SS_controller/Inverter Control/Current Regulator/PI/Proportional Gain/port1
+528
+F64
+2
+SS_controller/Inverter Control/Current Regulator/PI/Integrator/port1
+544
 F64
 2
 SS_controller/Inverter Control/Current Regulator/PI/Sum/port1
-520
+560
 F64
 2
 SS_controller/Inverter Control/Current Regulator/PI/Saturate/port1
-536
+576
 F64
 2
 SS_controller/Rate Transition/port1
-552
-F64
-1
-SS_controller/Inverter Control/PLL & Measurements/V->pu/port1
-560
-F64
-1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Trigonometric Function/port1
-568
-F64
-1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Gain1/port1
-576
-F64
-1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Product1/port1
-584
-F64
-1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Integ4/port1
 592
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/To avoid division  by zero/port1
+SS_controller/Inverter Control/PLL & Measurements/V->pu/port1
 600
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Number of samples per cycle/port1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Trigonometric Function/port1
 608
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Rounding Function/port1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Gain1/port1
 616
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Gain/port1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Product1/port1
 624
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Discrete Variable Time Delay/S-Function/port1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Integ4/port1
 632
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Unit Delay/port1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/To avoid division  by zero/port1
 640
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Digital  Clock/port1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Number of samples per cycle/port1
 648
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Unit Delay1/port1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Rounding Function/port1
 656
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Switch/port1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Gain/port1
 664
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Trigonometric Function3/port1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Discrete Variable Time Delay/S-Function/port1
 672
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Gain3/port1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Unit Delay/port1
 680
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Product2/port1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Digital  Clock/port1
 688
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Integ4/port1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Unit Delay1/port1
 696
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/To avoid division  by zero/port1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Switch/port1
 704
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Number of samples per cycle/port1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Trigonometric Function3/port1
 712
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Rounding Function/port1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Gain3/port1
 720
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Gain/port1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Product2/port1
 728
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Discrete Variable Time Delay/S-Function/port1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Integ4/port1
 736
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Unit Delay/port1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/To avoid division  by zero/port1
 744
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Digital  Clock/port1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Number of samples per cycle/port1
 752
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Unit Delay1/port1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Rounding Function/port1
 760
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Switch/port1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Gain/port1
 768
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Complex to Magnitude-Angle/port1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Discrete Variable Time Delay/S-Function/port1
 776
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Complex to Magnitude-Angle/port2
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Unit Delay/port1
 784
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Rad->Deg./port1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Digital  Clock/port1
 792
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/to-rad/port1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Unit Delay1/port1
 800
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Complex to Real-Imag/port1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Switch/port1
 808
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Complex to Real-Imag/port2
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Complex to Magnitude-Angle/port1
 816
 F64
 1
-SS_controller/Inverter Control/Current Regulator/Rff /port1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Complex to Magnitude-Angle/port2
 824
 F64
 1
-SS_controller/Inverter Control/Current Regulator/Lff  /port1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Rad->Deg./port1
 832
 F64
 1
-SS_controller/Inverter Control/Current Regulator/Add1/port1
+SS_controller/Inverter Control/PLL & Measurements/to-rad/port1
 840
 F64
 1
-SS_controller/Inverter Control/Current Regulator/Rff/port1
+SS_controller/Inverter Control/PLL & Measurements/Complex to Real-Imag/port1
 848
 F64
 1
-SS_controller/Inverter Control/Current Regulator/Lff/port1
+SS_controller/Inverter Control/PLL & Measurements/Complex to Real-Imag/port2
 856
 F64
 1
-SS_controller/Inverter Control/Current Regulator/Add3/port1
+SS_controller/Inverter Control/Current Regulator/Rff /port1
 864
 F64
 1
-SS_controller/Inverter Control/Current Regulator/Add2/port1
+SS_controller/Inverter Control/Current Regulator/Lff  /port1
 872
+F64
+1
+SS_controller/Inverter Control/Current Regulator/Add1/port1
+880
+F64
+1
+SS_controller/Inverter Control/Current Regulator/Rff/port1
+888
+F64
+1
+SS_controller/Inverter Control/Current Regulator/Lff/port1
+896
+F64
+1
+SS_controller/Inverter Control/Current Regulator/Add3/port1
+904
+F64
+1
+SS_controller/Inverter Control/Current Regulator/Add2/port1
+912
 F64
 2
 SS_controller/Inverter Control/Current Regulator/PI/Integral Gain/port1
-888
+928
 F64
 2
 SS_controller/Inverter Control/Current Regulator/Saturation/port1
-904
+944
 F64
 2
 SS_controller/Rate Transition3/port1
-920
-F64
-1
-SS_controller/Rate Transition4/port1
-928
-F64
-1
-SS_controller/Inverter Control/PLL & Measurements/Mean/Model/Digital  Clock/port1
-936
-F64
-1
-SS_controller/Rate Transition2/port1
-944
-F64
-1
-SS_controller/Inverter Control/PLL & Measurements/Mean/Model/Integ4/port1
-952
-F64
-1
-SS_controller/Inverter Control/PLL & Measurements/Mean/Model/K1/port1
 960
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Mean/Model/Discrete Variable Time Delay/S-Function/port1
+SS_controller/Rate Transition4/port1
 968
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Mean/Model/Unit Delay/port1
+SS_controller/Inverter Control/PLL & Measurements/Mean/Model/Digital  Clock/port1
 976
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Mean/Model/Unit Delay1/port1
+SS_controller/Rate Transition2/port1
 984
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Mean/Model/Switch/port1
+SS_controller/Inverter Control/PLL & Measurements/Mean/Model/Integ4/port1
 992
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Trigonometric Function2/port1
+SS_controller/Inverter Control/PLL & Measurements/Mean/Model/K1/port1
 1000
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Product1/port1
+SS_controller/Inverter Control/PLL & Measurements/Mean/Model/Discrete Variable Time Delay/S-Function/port1
 1008
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Integ4/port1
+SS_controller/Inverter Control/PLL & Measurements/Mean/Model/Unit Delay/port1
 1016
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/To avoid division  by zero/port1
+SS_controller/Inverter Control/PLL & Measurements/Mean/Model/Unit Delay1/port1
 1024
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Number of samples per cycle/port1
+SS_controller/Inverter Control/PLL & Measurements/Mean/Model/Switch/port1
 1032
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Rounding Function/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Trigonometric Function2/port1
 1040
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Gain/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Product1/port1
 1048
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Discrete Variable Time Delay/S-Function/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Integ4/port1
 1056
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Correction subsystem/Unit Delay/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/To avoid division  by zero/port1
 1064
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Digital  Clock/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Number of samples per cycle/port1
 1072
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Unit Delay1/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Rounding Function/port1
 1080
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Switch/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Gain/port1
 1088
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Divide/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Discrete Variable Time Delay/S-Function/port1
 1096
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Discrete/Discrete Derivative /port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Correction subsystem/Unit Delay/port1
 1104
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Discrete/Discrete-Time Integrator/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Digital  Clock/port1
 1112
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Discrete/Kp4/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Unit Delay1/port1
 1120
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Discrete/Sum6/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Switch/port1
 1128
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Discrete/Saturation1/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Divide/port1
 1136
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Gain10/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Discrete/Discrete Derivative /port1
 1144
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Rate Limiter/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Discrete/Discrete-Time Integrator/port1
 1152
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/Delay_x1/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Discrete/Kp4/port1
 1160
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/A*k(k-1)/A11/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Discrete/Sum6/port1
 1168
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/Delay_x2/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Discrete/Saturation1/port1
 1176
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/A*k(k-1)/A12/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Gain10/port1
 1184
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/A*k(k-1)/A21/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Rate Limiter/port1
 1192
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/A*k(k-1)/A22/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/Delay_x1/port1
 1200
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/A*k(k-1)/sum2/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/A*k(k-1)/A11/port1
 1208
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/A*k(k-1)/sum3/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/Delay_x2/port1
 1216
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/B*(u(k)+u(k-1))/B11/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/A*k(k-1)/A12/port1
 1224
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/A*x1(k) + B*u1(k) /port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/A*k(k-1)/A21/port1
 1232
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/B*(u(k)+u(k-1))/B21/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/A*k(k-1)/A22/port1
 1240
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/A*x2(k) + B*u2(k)/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/A*k(k-1)/sum2/port1
 1248
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/D*u(k)/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/A*k(k-1)/sum3/port1
 1256
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/C*x(k)/C11/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/B*(u(k)+u(k-1))/B11/port1
 1264
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/C*x(k)/C12/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/A*x1(k) + B*u1(k) /port1
 1272
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/C*x(k)/sum2/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/B*(u(k)+u(k-1))/B21/port1
 1280
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/C*X(k)+D*u(k)/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/A*x2(k) + B*u2(k)/port1
 1288
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Second-Order Filter/Model/A*k(k-1)/A11/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/D*u(k)/port1
 1296
+F64
+1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/C*x(k)/C11/port1
+1304
+F64
+1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/C*x(k)/C12/port1
+1312
+F64
+1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/C*x(k)/sum2/port1
+1320
+F64
+1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/C*X(k)+D*u(k)/port1
+1328
+F64
+1
+SS_controller/Inverter Control/PLL & Measurements/Second-Order Filter/Model/A*k(k-1)/A11/port1
+1336
 F64
 2
 SS_controller/Inverter Control/PLL & Measurements/Second-Order Filter/Model/A*k(k-1)/A12/port1
-1312
+1352
 F64
 2
 SS_controller/Inverter Control/PLL & Measurements/Second-Order Filter/Model/A*k(k-1)/A21/port1
-1328
+1368
 F64
 2
 SS_controller/Inverter Control/PLL & Measurements/Second-Order Filter/Model/A*k(k-1)/A22/port1
-1344
+1384
 F64
 2
 SS_controller/Inverter Control/PLL & Measurements/Second-Order Filter/Model/A*k(k-1)/sum2/port1
-1360
+1400
 F64
 2
 SS_controller/Inverter Control/PLL & Measurements/Second-Order Filter/Model/A*k(k-1)/sum3/port1
-1376
+1416
 F64
 2
 SS_controller/Inverter Control/PLL & Measurements/Second-Order Filter/Model/B*(u(k)+u(k-1))/B11/port1
-1392
+1432
 F64
 2
 SS_controller/Inverter Control/PLL & Measurements/Second-Order Filter/Model/A*x1(k) + B*u1(k) /port1
-1408
+1448
 F64
 2
 SS_controller/Inverter Control/PLL & Measurements/Second-Order Filter/Model/B*(u(k)+u(k-1))/B21/port1
-1424
+1464
 F64
 2
 SS_controller/Inverter Control/PLL & Measurements/Second-Order Filter/Model/A*x2(k) + B*u2(k)/port1
-1440
+1480
 F64
 2
 SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Constant1/port1
-1456
-F64
-1
-SS_controller/Inverter Control/PWM_Generator/Cr_MinMax/Add3/port1
-1464
-F64
-1
-SS_controller/Inverter Control/PWM_Generator/Sampling/Unsync Natural/Unsync_NaturalSampling/Triangle Generator/Model/Digital Clock/port1
-1472
-F64
-1
-SS_controller/Inverter Control/PWM_Generator/Sampling/Unsync Natural/Unsync_NaturalSampling/Triangle Generator/Model/Add1/port1
-1480
-F64
-1
-SS_controller/Inverter Control/PWM_Generator/Sampling/Unsync Natural/Unsync_NaturalSampling/Triangle Generator/Model/Math Function/port1
-1488
-F64
-1
-SS_controller/Inverter Control/PWM_Generator/Sampling/Unsync Natural/Unsync_NaturalSampling/Triangle Generator/Model/1\ib1/port1
 1496
 F64
 1
-SS_controller/Inverter Control/PWM_Generator/Sampling/Unsync Natural/Unsync_NaturalSampling/Triangle Generator/Model/Lookup Table/port1
+SS_controller/Inverter Control/PWM_Generator/Cr_MinMax/Add3/port1
 1504
 F64
 1
-SS_controller/Inverter Control/PWM_Generator/Sampling/Unsync Natural/Unsync_NaturalSampling/Triangle Generator/Model/Add3/port1
+SS_controller/Inverter Control/PWM_Generator/Sampling/Unsync Natural/Unsync_NaturalSampling/Triangle Generator/Model/Digital Clock/port1
 1512
 F64
 1
-SS_controller/Inverter Control/PWM_Generator/Cr_MinMax/Gain1/port1
+SS_controller/Inverter Control/PWM_Generator/Sampling/Unsync Natural/Unsync_NaturalSampling/Triangle Generator/Model/Add1/port1
 1520
 F64
 1
-SS_controller/Inverter Control/PWM_Generator/Cr_MinMax/MUL1/port1
+SS_controller/Inverter Control/PWM_Generator/Sampling/Unsync Natural/Unsync_NaturalSampling/Triangle Generator/Model/Math Function/port1
 1528
 F64
 1
-SS_controller/Inverter Control/PWM_Generator/Cr_MinMax/Add4/port1
+SS_controller/Inverter Control/PWM_Generator/Sampling/Unsync Natural/Unsync_NaturalSampling/Triangle Generator/Model/1\ib1/port1
 1536
 F64
 1
-SS_controller/Inverter Control/Unit Delay/port1
+SS_controller/Inverter Control/PWM_Generator/Sampling/Unsync Natural/Unsync_NaturalSampling/Triangle Generator/Model/Lookup Table/port1
 1544
 F64
 1
-SS_controller/Inverter Control/PWM_Generator/Modulator type/Full Bridge Unipolar/Gain/port1
+SS_controller/Inverter Control/PWM_Generator/Sampling/Unsync Natural/Unsync_NaturalSampling/Triangle Generator/Model/Add3/port1
 1552
 F64
 1
-SS_controller/Inverter Control/PWM_Generator/Data Type Conversion/port1
+SS_controller/Inverter Control/PWM_Generator/Cr_MinMax/Gain1/port1
 1560
+F64
+1
+SS_controller/Inverter Control/PWM_Generator/Cr_MinMax/MUL1/port1
+1568
+F64
+1
+SS_controller/Inverter Control/PWM_Generator/Cr_MinMax/Add4/port1
+1576
+F64
+1
+SS_controller/Inverter Control/Unit Delay/port1
+1584
+F64
+1
+SS_controller/Inverter Control/PWM_Generator/Data Type Conversion/port1
+1592
 F64
 4
 SS_controller/Inverter Control/Switch/port1
-1592
-F64
-1
-SS_controller/Inverter Control/U_ref Generation /Add1/port1
-1600
-F64
-1
-SS_controller/Inverter Control/Unit Delay3/port1
-1608
-F64
-2
-SS_controller/Inverter Control/U_ref Generation /Gain1/port1
 1624
 F64
 1
-SS_controller/Inverter Control/U_ref Generation /Product/port1
+SS_controller/Inverter Control/U_ref Generation /Add1/port1
 1632
 F64
 1
-SS_controller/Inverter Control/U_ref Generation /Product1/port1
+SS_controller/Inverter Control/Unit Delay3/port1
 1640
 F64
 2
-SS_controller/Inverter Control/U_ref Generation /Complex to Magnitude-Angle/port1
+SS_controller/Inverter Control/U_ref Generation /Gain1/port1
 1656
 F64
 1
-SS_controller/Inverter Control/U_ref Generation /Complex to Magnitude-Angle/port2
+SS_controller/Inverter Control/U_ref Generation /Product/port1
 1664
 F64
 1
-SS_controller/Inverter Control/U_ref Generation /Add2/port1
+SS_controller/Inverter Control/U_ref Generation /Product1/port1
 1672
 F64
-1
-SS_controller/Inverter Control/U_ref Generation /Trigonometric Function/port1
-1680
-F64
-1
-SS_controller/Inverter Control/U_ref Generation /Product2/port1
+2
+SS_controller/Inverter Control/U_ref Generation /Complex to Magnitude-Angle/port1
 1688
 F64
 1
-SS_controller/Inverter Control/Unit Delay1/port1
+SS_controller/Inverter Control/U_ref Generation /Complex to Magnitude-Angle/port2
 1696
 F64
 1
-SS_controller/Inverter Control/VDC Regulator/Sum/port1
+SS_controller/Inverter Control/U_ref Generation /Add2/port1
 1704
 F64
 1
-SS_controller/Inverter Control/VDC Regulator/Rtot_pu2/port1
+SS_controller/Inverter Control/U_ref Generation /Trigonometric Function/port1
 1712
 F64
 1
-SS_controller/Inverter Control/VDC Regulator/PI/Integral Gain/port1
+SS_controller/Inverter Control/U_ref Generation /Product2/port1
 1720
 F64
 1
-SS_controller/Inverter Control/VDC Regulator/PI/Integrator/port1
+SS_controller/Inverter Control/Unit Delay1/port1
 1728
 F64
 1
-SS_controller/Inverter Control/VDC Regulator/PI/Proportional Gain/port1
+SS_controller/Inverter Control/VDC Regulator/Sum/port1
 1736
 F64
 1
-SS_controller/Inverter Control/VDC Regulator/PI/Sum/port1
+SS_controller/Inverter Control/VDC Regulator/Rtot_pu2/port1
 1744
 F64
 1
-SS_controller/Inverter Control/VDC Regulator/PI/Saturate/port1
+SS_controller/Inverter Control/VDC Regulator/PI/Integral Gain/port1
 1752
 F64
 1
-SS_controller/MATLAB Function/port1
+SS_controller/Inverter Control/VDC Regulator/PI/Integrator/port1
 1760
 F64
 1
-SS_controller/MATLAB Function/port2
+SS_controller/Inverter Control/VDC Regulator/PI/Proportional Gain/port1
 1768
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Alpha-Beta-Zero to dq0/Subsystem1/Fcn/port1
+SS_controller/Inverter Control/VDC Regulator/PI/Sum/port1
 1776
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Alpha-Beta-Zero to dq0/Subsystem1/Fcn1/port1
+SS_controller/Inverter Control/VDC Regulator/PI/Saturate/port1
 1784
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Alpha-Beta-Zero to dq0/Subsystem - pi__2 delay/Fcn/port1
+SS_controller/MATLAB Function/port1
 1792
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Alpha-Beta-Zero to dq0/Subsystem - pi__2 delay/Fcn1/port1
+SS_controller/MATLAB Function/port2
 1800
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Alpha-Beta-Zero to dq0/Switch/port1
+SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Alpha-Beta-Zero to dq0/Subsystem1/Fcn/port1
 1808
 F64
-2
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Correction subsystem/Sum1/port1
+1
+SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Alpha-Beta-Zero to dq0/Subsystem1/Fcn1/port1
+1816
+F64
+1
+SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Alpha-Beta-Zero to dq0/Subsystem - pi__2 delay/Fcn/port1
 1824
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Correction subsystem/Sum5/port1
+SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Alpha-Beta-Zero to dq0/Subsystem - pi__2 delay/Fcn1/port1
 1832
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Correction subsystem/Product5/port1
+SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Alpha-Beta-Zero to dq0/Switch/port1
 1840
 F64
-1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Correction subsystem/Gain1/port1
-1848
-F64
-1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Correction subsystem/Sum4/port1
+2
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Correction subsystem/Sum1/port1
 1856
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Correction subsystem/Product2/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Correction subsystem/Sum5/port1
 1864
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Correction subsystem/Product4/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Correction subsystem/Product5/port1
 1872
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Sum7/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Correction subsystem/Gain1/port1
 1880
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Product/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Correction subsystem/Sum4/port1
 1888
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Sum5/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Correction subsystem/Product2/port1
 1896
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Trigonometric Function/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Correction subsystem/Product4/port1
 1904
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Gain1/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Sum7/port1
 1912
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Product1/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Product/port1
 1920
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Integ4/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Sum5/port1
 1928
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/To avoid division  by zero/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Trigonometric Function/port1
 1936
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Number of samples per cycle/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Gain1/port1
 1944
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Rounding Function/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Product1/port1
 1952
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Gain/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Integ4/port1
 1960
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Discrete Variable Time Delay/S-Function/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/To avoid division  by zero/port1
 1968
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Unit Delay/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Number of samples per cycle/port1
 1976
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Digital  Clock/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Rounding Function/port1
 1984
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Unit Delay1/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Gain/port1
 1992
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Switch/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Discrete Variable Time Delay/S-Function/port1
 2000
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Trigonometric Function3/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Unit Delay/port1
 2008
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Gain3/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Digital  Clock/port1
 2016
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Product2/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Unit Delay1/port1
 2024
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Integ4/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Switch/port1
 2032
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/To avoid division  by zero/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Trigonometric Function3/port1
 2040
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Number of samples per cycle/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Gain3/port1
 2048
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Rounding Function/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Product2/port1
 2056
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Gain/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Integ4/port1
 2064
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Discrete Variable Time Delay/S-Function/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/To avoid division  by zero/port1
 2072
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Unit Delay/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Number of samples per cycle/port1
 2080
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Digital  Clock/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Rounding Function/port1
 2088
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Unit Delay1/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Gain/port1
 2096
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Switch/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Discrete Variable Time Delay/S-Function/port1
 2104
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Complex to Magnitude-Angle/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Unit Delay/port1
 2112
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Complex to Magnitude-Angle/port2
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Digital  Clock/port1
 2120
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Rad->Deg./port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Unit Delay1/port1
 2128
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Saturation/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Switch/port1
 2136
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Math Function/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Complex to Magnitude-Angle/port1
 2144
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Sum1/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Complex to Magnitude-Angle/port2
 2152
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Sum5/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Rad->Deg./port1
 2160
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Product5/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Saturation/port1
 2168
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Gain1/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Math Function/port1
 2176
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Sum4/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Sum1/port1
 2184
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Product2/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Sum5/port1
 2192
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Product4/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Product5/port1
 2200
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Sum7/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Gain1/port1
 2208
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Product/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Sum4/port1
 2216
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Sum5/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Product2/port1
 2224
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Sum1/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Product4/port1
 2232
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Sum5/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Sum7/port1
 2240
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Product5/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Product/port1
 2248
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Gain1/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Sum5/port1
 2256
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Sum4/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Sum1/port1
 2264
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Product2/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Sum5/port1
 2272
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Product4/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Product5/port1
 2280
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Sum7/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Gain1/port1
 2288
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Product/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Sum4/port1
 2296
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Sum5/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Product2/port1
 2304
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Mean/Model/Gain1/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Product4/port1
 2312
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Mean/Model/Gain/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Sum7/port1
 2320
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Mean/Model/Sum1/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Product/port1
 2328
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Mean/Model/Sum7/port1
+SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Sum5/port1
 2336
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Mean/Model/Product/port1
+SS_controller/Inverter Control/PLL & Measurements/Mean/Model/Gain1/port1
 2344
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Mean/Model/Sum5/port1
+SS_controller/Inverter Control/PLL & Measurements/Mean/Model/Gain/port1
 2352
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Sum1/port1
+SS_controller/Inverter Control/PLL & Measurements/Mean/Model/Sum1/port1
 2360
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Sum5/port1
+SS_controller/Inverter Control/PLL & Measurements/Mean/Model/Sum7/port1
 2368
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Product5/port1
+SS_controller/Inverter Control/PLL & Measurements/Mean/Model/Product/port1
 2376
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Gain1/port1
+SS_controller/Inverter Control/PLL & Measurements/Mean/Model/Sum5/port1
 2384
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Sum4/port1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Sum1/port1
 2392
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Product2/port1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Sum5/port1
 2400
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Product4/port1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Product5/port1
 2408
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Sum7/port1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Gain1/port1
 2416
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Product/port1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Sum4/port1
 2424
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Sum5/port1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Product2/port1
 2432
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Sum1/port1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Product4/port1
 2440
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Sum5/port1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Sum7/port1
 2448
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Product5/port1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Product/port1
 2456
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Gain1/port1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Sum5/port1
 2464
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Sum4/port1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Sum1/port1
 2472
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Product2/port1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Sum5/port1
 2480
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Product4/port1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Product5/port1
 2488
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Sum7/port1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Gain1/port1
 2496
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Product/port1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Sum4/port1
 2504
 F64
 1
-SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Sum5/port1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Product2/port1
 2512
 F64
 1
-SS_controller/Inverter Control/MPPT Controller using Perturbe  & Observe technique  /port1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Product4/port1
 2520
+F64
+1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Sum7/port1
+2528
+F64
+1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Product/port1
+2536
+F64
+1
+SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Sum5/port1
+2544
+F64
+1
+SS_controller/Inverter Control/MPPT Controller using Perturbe  & Observe technique  /port1
+2552
 F64
 4
 SS_controller/Inverter Control/MPPT Controller using Perturbe  & Observe technique  /port2
-2552
+2584
 F64
 1
 SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Alpha-Beta-Zero to dq0/Compare To Constant/Compare/port1
-2560
+2592
 U8
 1
 SS_controller/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Alpha-Beta-Zero to dq0/Compare To Constant1/Compare/port1
-2561
+2593
 U8
 1
 SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Relational Operator/port1
-2562
+2594
 Boolean
 1
 SS_controller/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Relational Operator/port1
-2563
+2595
 Boolean
 1
 SS_controller/Inverter Control/PLL & Measurements/Mean/Model/Relational Operator/port1
-2564
+2596
 Boolean
 1
 SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Relational Operator/port1
-2565
+2597
 Boolean
 1
-SS_controller/Inverter Control/PWM_Generator/Modulator type/Full Bridge Unipolar/Relational Operator1/port1
-2566
+SS_controller/Inverter Control/PWM_Generator/Modulator type/Full Bridge Bipolar/Relational Operator2/port1
+2598
 Boolean
 1
-SS_controller/Inverter Control/PWM_Generator/Modulator type/Full Bridge Unipolar/Relational Operator3/port1
-2567
+SS_controller/Inverter Control/PWM_Generator/Modulator type/Full Bridge Bipolar/Logical Operator/port1
+2599
 Boolean
 1
 SS_controller/Inverter Control/PWM_Generator/Logical Operator4/port1
-2568
+2600
 Boolean
 2
 SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Relational Operator/port1
-2570
+2602
 Boolean
 1
 SS_controller/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Relational Operator/port1
-2571
+2603
 Boolean
 1

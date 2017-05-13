@@ -3,28 +3,15 @@ var platformMoz = (document.implementation && document.implementation.createDocu
 var platformIE6 = (!platformMoz && document.getElementById && window.ActiveXObject);
 var noXSLT      = (!platformMoz && !platformIE6);
 
-var msxmlVersion = '3.0';
 var urlXML;
 var urlXSL;
-var docXML;
-var docXSL;
 var target;
-var cache;;
-var processor;
 var i;
 var DefaultTreeMode;
+var displayedChromeMessage = false;
 
-
-if (platformIE6)
-{
-    cache = new ActiveXObject('Msxml2.XSLTemplate.' + msxmlVersion);
-}
-
-
-function initializeTree(defTreeMode)
-{
-    if (noXSLT)
-    {
+function initializeTree(defTreeMode) {
+    if (noXSLT) {
         alert("Sorry, this doesn't work in your browser");
         return;
     }
@@ -37,8 +24,7 @@ function initializeTree(defTreeMode)
     Transform();
 }
 
-function get_report_filename()
-{
+function get_report_filename() {
     var filename;
     var i;
     var j;
@@ -48,81 +34,68 @@ function get_report_filename()
     filename = document.URL;
     j = filename.length;
     k = 0
-    for (i=filename.length-1; i>=0; i--)
-    {
-        
+    for (i=filename.length-1; i>=0; i--) {
         c = filename.charAt(i)
         
-        if ( (j == filename.length) && (c == '.') )
-        {
+        if ((j == filename.length) && (c == '.')) {
             j = i;
         }
-        if ( (c == '/') || (c == '\\') )
-        {
+        if ((c == '/') || (c == '\\')) {
             break;
         }
     }
-    if (i != -1)
-    {
+    if (i != -1) {
         return 'xml/' + filename.substring(i+1,j) + '.xml'
-    }
-    else
-    {
+    } else {
         return 'xml/report.xml'
     }
 }
 
-
-function CreateDocument()
-{
-    var doc = null;
-
-    if (platformMoz)
-    {
-        doc = document.implementation.createDocument('', '', null);
-    }
-    else if (platformIE6)
-    {
-        doc = new ActiveXObject('Msxml2.FreeThreadedDOMDocument.' + msxmlVersion);
-    }
-    return doc;
+function LoadDocument(file) {
+	try { //Internet Explorer
+		xmlDoc=new ActiveXObject("Msxml2.FreeThreadedDOMDocument.6.0");
+		xmlDoc.async=false;
+		xmlDoc.load(file);
+		return xmlDoc;
+	} catch(e) {
+		try { //Firefox, Mozilla, Opera, etc.
+			xmlDoc=document.implementation.createDocument("", "", null);
+			xmlDoc.async=false;
+			xmlDoc.load(file);
+			return xmlDoc;
+		} catch(e) {
+			try { //Google Chrome
+				var xmlhttp = new window.XMLHttpRequest();
+				xmlhttp.open("GET", file, false);
+				xmlhttp.send(null);
+				xmlDoc = xmlhttp.responseXML.documentElement;
+				return xmlDoc;
+			} catch(e) {
+				if (!displayedChromeMessage) {
+					alert('To use this page on Chrome, you need to launch Chrome using arguments "--allow-file-access-from-files". Or use another Internet browser.');
+					displayedChromeMessage = true;
+				}
+			}
+		}
+	}
 }
 
-function Transform() 
-{
-    
+function Transform() {
+    var docXML = LoadDocument(urlXML);
+    var docXSL = LoadDocument(urlXSL);
+	
+	if (window.ActiveXObject || "ActiveXObject" in window) {
+		var cache = new ActiveXObject('Msxml2.XSLTemplate.6.0');
+        cache.stylesheet = docXSL;
 
-    docXML = CreateDocument();
-    docXSL = CreateDocument();
-    if (platformMoz)
-    {
-        docXML.addEventListener('load', DoLoadXSL, false);
-        docXML.load(urlXML);
-    }
-    else if (platformIE6)
-    {
-        docXML.async = false;
-        docXML.load(urlXML);
-        docXSL.async = false;
-        docXSL.load(urlXSL);
-        DoTransform();
-    }
-}
-
-function DoLoadXSL()
-{
-  if (platformMoz)
-  {
-      docXSL.addEventListener('load', DoTransform, false);
-      docXSL.load(urlXSL);
-  }
-}
-
-function DoTransform() 
-{
-    if (platformMoz)
-    {
-        processor = new XSLTProcessor();
+        var processor = cache.createProcessor();
+        processor.input = docXML;
+        processor.addParameter("DefaultTreeMode", DefaultTreeMode);
+        
+        processor.transform();
+        target.innerHTML = processor.output;
+    } else {
+        var processor = new XSLTProcessor();
         processor.importStylesheet(docXSL);
 
         processor.setParameter(null, "DefaultTreeMode", DefaultTreeMode);
@@ -134,62 +107,38 @@ function DoTransform()
         }
         target.appendChild(fragment);
     }
-    else if (platformIE6)
-    {
-        cache.stylesheet = docXSL;
-
-        processor = cache.createProcessor();
-        processor.input = docXML;
-        processor.addParameter("DefaultTreeMode", DefaultTreeMode);
-        
-        processor.transform();
-        target.innerHTML = processor.output;
-    }
-    
 }
 
 //----------------------------------------------------
-function cancelBuble(event)
-{
-    if (window.event)
-    {
+function cancelBuble(event) {
+    if (window.event) {
         window.event.cancelBubble = true;
-        window.event.returnValue = false;
-    }
-    else if (event && event.preventDefault && event.stopPropagation)
-    {
+    } else if (event && event.preventDefault && event.stopPropagation) {
         event.preventDefault();
         event.stopPropagation();
     }    
 }
 
 //----------------------------------------------------
-function clickOnEntity(event, entity)
-{
+function clickOnEntity(event, entity) {
     // cancel buble    
     cancelBuble(event)
 
-    if(entity.getAttribute("open") == "false")
-    {
+    if(entity.getAttribute("open") == "false") {
         expand(entity)
-    }
-    else
-    {
+    } else {
         collapse(entity)
     }
     
     // cancel buble
     cancelBuble(event)
-    
 }
 
 //----------------------------------------------------
-function expand(entity)
-{
+function expand(entity) {
     // Variable declarations
     var oImage
     var i
-    
     
     // Get class name
     if (platformMoz)
@@ -198,17 +147,14 @@ function expand(entity)
         cl = entity.className
 
     // Get and change image
-    if (cl == "item")
-    {
-        oImage = entity.childNodes[0].childNodes[0].childNodes[0].childNodes[0].childNodes[0]        
+    if (cl == "item") {
+        oImage = entity.getElementsByTagName('img')[0]
         oImage.src = entity.getAttribute("openimage")
     }
     
-    for(i=0; i < entity.childNodes.length; i++)
-    {
+    for (i = 0 ; i < entity.childNodes.length ; i++) {
         node = entity.childNodes[i]
-        if((node.tagName == "DIV") || (node.tagName == "div"))
-        {
+        if((node.tagName == "DIV") || (node.tagName == "div")) {
             // Display child
             node.style.display = "block"
         }
@@ -217,9 +163,7 @@ function expand(entity)
 }
 
 //----------------------------------------------------
-function collapse(entity)
-{
-    
+function collapse(entity) {
     // Variable declarations
     var oImage
     var i
@@ -231,16 +175,13 @@ function collapse(entity)
         cl = entity.className
 
     // Get and change image
-    if (cl == "item")
-    {
-        oImage = entity.childNodes[0].childNodes[0].childNodes[0].childNodes[0].childNodes[0]
+    if (cl == "item") {
+        oImage = entity.getElementsByTagName('img')[0]
         oImage.src = entity.getAttribute("closeimage")
     }
-    for(i=0; i < entity.childNodes.length; i++)
-    {
+    for (i = 0 ; i < entity.childNodes.length ; i++) {
         node = entity.childNodes[i]
-        if((node.tagName == "DIV") || (node.tagName == "div"))
-        {
+        if((node.tagName == "DIV") || (node.tagName == "div")) {
             // Display child
             node.style.display = "none"
         }
@@ -250,51 +191,40 @@ function collapse(entity)
 }
 
 //----------------------------------------------------
-function expandAllFromString(entityString)
-{
+function expandAllFromString(entityString) {
     entity = document.getElementById(entityString);
     expandAll(entity, 1)
 }
 
-function expandAll(entity, isRoot)
-{
+function expandAll(entity, isRoot) {
     var i
     // expand current node
     expand(entity)
 
     // expand children
-    for(i=0; i < entity.childNodes.length; i++)
-    {
-        if ((entity.childNodes[i].tagName == "DIV") || (entity.childNodes[i].tagName == "div"))
-        {
+    for (i = 0 ; i < entity.childNodes.length ; i++) {
+        if ((entity.childNodes[i].tagName == "DIV") || (entity.childNodes[i].tagName == "div")) {
             expandAll(entity.childNodes[i], 0)
         }
     }
 }
 
 //----------------------------------------------------
-
-function collapseAllFromString(entityString)
-{
+function collapseAllFromString(entityString) {
     entity = document.getElementById(entityString);
     collapseAll(entity, 1)
 }
 
-function collapseAll(entity, isRoot)
-{
-
-    var i
+function collapseAll(entity, isRoot) {
+	var i
     // collapse current node
     idStr = entity.id
-    if ( isRoot == 0 )
-    {
+    if ( isRoot == 0 ) {
         collapse(entity)
     }
     // expand children
-    for(i=0; i < entity.childNodes.length; i++)
-    {
-        if((entity.childNodes[i].tagName == "DIV") || (entity.childNodes[i].tagName == "div"))
-        {
+    for (i = 0 ; i < entity.childNodes.length ; i++) {
+        if((entity.childNodes[i].tagName == "DIV") || (entity.childNodes[i].tagName == "div")) {
             collapseAll(entity.childNodes[i], 0)
         }
     }

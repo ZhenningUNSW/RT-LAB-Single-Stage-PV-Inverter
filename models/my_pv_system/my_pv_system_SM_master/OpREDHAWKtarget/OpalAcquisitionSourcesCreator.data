@@ -46,211 +46,219 @@ SM_master/Memory1/port6
 104
 F64
 1
-SM_master/OpMonitor/port1
+SM_master/Memory1/port7
 112
 F64
 1
-SM_master/OpMonitor/port2
+SM_master/Memory1/port8
 120
+F64
+4
+SM_master/OpMonitor/port1
+152
+F64
+1
+SM_master/OpMonitor/port2
+160
 F64
 1
 SM_master/OpMonitor/port3
-128
+168
 F64
 1
 SM_master/OpMonitor/port4
-136
+176
 F64
 1
 SM_master/H-Bridge /Model/Unit Delay/port1
-144
+184
 F64
 4
 SM_master/zzzOpComm1/Receive_1/S-Function/port1
-176
+216
 F64
 6
+SM_master/H-Bridge /Model/fts5conversion/Data Type Conversion/port1
+264
+F64
+4
 SM_master/Vs 14,400 V/Model/AC/port1
-224
+296
 F64
 1
 SM_master/H-Bridge /Model/1__Ron/port1
-360
-F64
-4
-SM_master/H-Bridge /Model/Data Type Conversion/port1
-392
+432
 F64
 4
 SM_master/H-Bridge /Model/Switch/port1
-424
+464
 F64
 4
 SM_master/H-Bridge /Model/Saturation/port1
-456
+496
 F64
 4
 SM_master/H-Bridge /Model/Vf 1/Switch/port1
-488
+528
 F64
 4
 SM_master/CM2/do not delete this gain/port1
-520
-F64
-1
-SM_master/Mean/Model/Clock/port1
-528
-F64
-1
-SM_master/Mean/Model/integrator/port1
-536
-F64
-1
-SM_master/Mean/Model/Transport Delay/port1
-544
-F64
-1
-SM_master/Mean/Model/Memory/port1
-552
-F64
-1
-SM_master/Mean/Model/Switch/port1
 560
 F64
 1
-SM_master/Mean1/Model/Clock/port1
+SM_master/Mean/Model/Clock/port1
 568
 F64
 1
-SM_master/Mean1/Model/integrator/port1
+SM_master/Mean/Model/integrator/port1
 576
 F64
 1
-SM_master/Mean1/Model/Transport Delay/port1
+SM_master/Mean/Model/Transport Delay/port1
 584
 F64
 1
-SM_master/Mean1/Model/Memory/port1
+SM_master/Mean/Model/Memory/port1
 592
 F64
 1
-SM_master/Mean1/Model/Switch/port1
+SM_master/Mean/Model/Switch/port1
 600
 F64
 1
-SM_master/OpComm/Receive/S-Function/port1
+SM_master/Mean1/Model/Clock/port1
 608
 F64
-2
-SM_master/Product/port1
+1
+SM_master/Mean1/Model/integrator/port1
+616
+F64
+1
+SM_master/Mean1/Model/Transport Delay/port1
 624
 F64
 1
-SM_master/Subsystem/Current Measurement/do not delete this gain/port1
+SM_master/Mean1/Model/Memory/port1
 632
 F64
 1
-SM_master/Subsystem/Rate Limiter/port1
+SM_master/Mean1/Model/Switch/port1
 640
 F64
 1
-SM_master/Subsystem/Saturation/port1
+SM_master/OpComm/Receive/S-Function/port1
 648
 F64
-1
-SM_master/Subsystem/Voltage Measurement/do not delete this gain/port1
-656
-F64
-1
-SM_master/Subsystem/Voltage Measurement1/do not delete this gain/port1
+2
+SM_master/Product/port1
 664
 F64
 1
-SM_master/Vdc /do not delete this gain/port1
+SM_master/Subsystem/Voltage Measurement/do not delete this gain/port1
 672
 F64
 1
-SM_master/Vdc 1/do not delete this gain/port1
+SM_master/Subsystem/Current Measurement/do not delete this gain/port1
 680
 F64
 1
-SM_master/GRID/CM2/do not delete this gain/port1
+SM_master/Product1/port1
 688
 F64
 1
-SM_master/GRID/Vm2/do not delete this gain/port1
+SM_master/Subsystem/Rate Limiter/port1
 696
 F64
 1
-SM_master/Mean1/Model/Sum/port1
+SM_master/Subsystem/Saturation/port1
 704
 F64
 1
-SM_master/Mean1/Model/Gain/port1
+SM_master/Subsystem/Voltage Measurement1/do not delete this gain/port1
 712
 F64
 1
-SM_master/Mean/Model/Sum/port1
+SM_master/Vdc /do not delete this gain/port1
 720
 F64
 1
-SM_master/Mean/Model/Gain/port1
+SM_master/Vdc 1/do not delete this gain/port1
 728
 F64
 1
-SM_master/H-Bridge /Model/Tail/2/port1
+SM_master/GRID/CM2/do not delete this gain/port1
 736
 F64
 1
-SM_master/H-Bridge /Model/Tail/Discrete-Time Integrator/port1
+SM_master/GRID/Vm2/do not delete this gain/port1
 744
+F64
+1
+SM_master/Mean1/Model/Sum/port1
+752
+F64
+1
+SM_master/Mean1/Model/Gain/port1
+760
+F64
+1
+SM_master/Mean/Model/Sum/port1
+768
+F64
+1
+SM_master/Mean/Model/Gain/port1
+776
+F64
+1
+SM_master/H-Bridge /Model/Tail/Discrete-Time Integrator/port1
+784
 F64
 4
 SM_master/H-Bridge /Model/Tail/y=f(t)/-0.9__Tf/port1
-776
+816
 F64
 4
 SM_master/H-Bridge /Model/Tail/y=f(t)/Add/port1
-808
+848
 F64
 4
 SM_master/H-Bridge /Model/Tail/y=f(t)/Saturation1/port1
-840
+880
 F64
 4
 SM_master/H-Bridge /Model/Tail/y=f(t)/Add1/port1
-872
+912
 F64
 4
 SM_master/H-Bridge /Model/Tail/y=f(t)/0.1__Tt/port1
-904
+944
 F64
 4
 SM_master/H-Bridge /Model/Tail/y=f(t)/Saturation2/port1
-936
+976
 F64
 4
 SM_master/H-Bridge /Model/Tail/y=f(t)/Add2/port1
-968
+1008
 F64
 4
 SM_master/H-Bridge /Model/Tail/Unit Delay/port1
-1000
+1040
 F64
 4
 SM_master/H-Bridge /Model/Tail/Switch/port1
-1032
+1072
 F64
 4
 SM_master/H-Bridge /Model/Tail/Product/port1
-1064
+1104
 F64
 4
 SM_master/Mean/Model/Relational Operator/port1
-1096
+1136
 Boolean
 1
 SM_master/Mean1/Model/Relational Operator/port1
-1097
+1137
 Boolean
 1

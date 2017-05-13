@@ -1,390 +1,1250 @@
 <?xml version="1.0" encoding="utf-8"?>
 <item name="report">
     <item name="diagnostic">
-        <item name="Development">
-            <item name="Target">
-                <item name="Rtserver_5_110 192:168:1:1">
-                    <item name="Hardware system">
-                        <item name="Memory">
-                            <property name="Active">
-                                <value>
-                                    244276 kB
-                                </value>
-                            </property>
-                            <property name="Active(anon)">
-                                <value>
-                                    87268 kB
-                                </value>
-                            </property>
-                            <property name="Active(file)">
-                                <value>
-                                    157008 kB
-                                </value>
-                            </property>
-                            <property name="AnonPages">
-                                <value>
-                                    86752 kB
-                                </value>
-                            </property>
-                            <property name="Bounce">
-                                <value>
-                                    0 kB
-                                </value>
-                            </property>
-                            <property name="Buffers">
-                                <value>
-                                    100952 kB
-                                </value>
-                            </property>
-                            <property name="Cached">
-                                <value>
-                                    633604 kB
-                                </value>
-                            </property>
-                            <property name="CommitLimit">
-                                <value>
-                                    13315828 kB
-                                </value>
-                            </property>
-                            <property name="Committed_AS">
-                                <value>
-                                    146676 kB
-                                </value>
-                            </property>
-                            <property name="DirectMap2M">
-                                <value>
-                                    907264 kB
-                                </value>
-                            </property>
-                            <property name="DirectMap4k">
-                                <value>
-                                    4088 kB
-                                </value>
-                            </property>
-                            <property name="Dirty">
-                                <value>
-                                    11140 kB
-                                </value>
-                            </property>
-                            <property name="HighFree">
-                                <value>
-                                    6646304 kB
-                                </value>
-                            </property>
-                            <property name="HighTotal">
-                                <value>
-                                    7375844 kB
-                                </value>
-                            </property>
-                            <property name="Inactive">
-                                <value>
-                                    576980 kB
-                                </value>
-                            </property>
-                            <property name="Inactive(anon)">
-                                <value>
-                                    0 kB
-                                </value>
-                            </property>
-                            <property name="Inactive(file)">
-                                <value>
-                                    576980 kB
-                                </value>
-                            </property>
-                            <property name="LowFree">
-                                <value>
-                                    662628 kB
-                                </value>
-                            </property>
-                            <property name="LowTotal">
-                                <value>
-                                    829280 kB
-                                </value>
-                            </property>
-                            <property name="Mapped">
-                                <value>
-                                    52024 kB
-                                </value>
-                            </property>
-                            <property name="MemFree">
-                                <value>
-                                    7308932 kB
-                                </value>
-                            </property>
-                            <property name="MemTotal">
-                                <value>
-                                    8205124 kB
-                                </value>
-                            </property>
-                            <property name="Mlocked">
-                                <value>
-                                    0 kB
-                                </value>
-                            </property>
-                            <property name="NFS_Unstable">
-                                <value>
-                                    0 kB
-                                </value>
-                            </property>
-                            <property name="PageTables">
-                                <value>
-                                    1232 kB
-                                </value>
-                            </property>
-                            <property name="SReclaimable">
-                                <value>
-                                    49140 kB
-                                </value>
-                            </property>
-                            <property name="SUnreclaim">
-                                <value>
-                                    5392 kB
-                                </value>
-                            </property>
-                            <property name="Slab">
-                                <value>
-                                    54532 kB
-                                </value>
-                            </property>
-                            <property name="SwapCached">
-                                <value>
-                                    0 kB
-                                </value>
-                            </property>
-                            <property name="SwapFree">
-                                <value>
-                                    9213268 kB
-                                </value>
-                            </property>
-                            <property name="SwapTotal">
-                                <value>
-                                    9213268 kB
-                                </value>
-                            </property>
-                            <property name="Unevictable">
-                                <value>
-                                    0 kB
-                                </value>
-                            </property>
-                            <property name="VmallocChunk">
-                                <value>
-                                    115660 kB
-                                </value>
-                            </property>
-                            <property name="VmallocTotal">
-                                <value>
-                                    122880 kB
-                                </value>
-                            </property>
-                            <property name="VmallocUsed">
-                                <value>
-                                    6204 kB
-                                </value>
-                            </property>
-                            <property name="Writeback">
-                                <value>
-                                    0 kB
-                                </value>
-                            </property>
-                            <property name="WritebackTmp">
-                                <value>
-                                    0 kB
-                                </value>
-                            </property>
-                        </item>
-                        <item name="Processors">
-                            <item name="Processor 0">
-                                <property name="Cache size">
-                                    <value>
-                                        8192 KB
-                                    </value>
-                                </property>
-                                <property name="Model name">
-                                    <value>
-                                        Intel(R) Xeon(R) CPU E3-1240 V2 @ 3.40GHz
-                                    </value>
-                                </property>
-                                <property name="Physical ID">
-                                    <value>
-                                        0
-                                    </value>
-                                </property>
-                                <property name="Processor ID">
-                                    <value>
-                                        0
-                                    </value>
-                                </property>
-                                <property name="Speed">
-                                    <value>
-                                        3400.228mhz
-                                    </value>
-                                </property>
-                                <property name="Vendor ID">
-                                    <value>
-                                        GenuineIntel
-                                    </value>
-                                </property>
-                            </item>
-                            <item name="Processor 1">
-                                <property name="Cache size">
-                                    <value>
-                                        8192 KB
-                                    </value>
-                                </property>
-                                <property name="Model name">
-                                    <value>
-                                        Intel(R) Xeon(R) CPU E3-1240 V2 @ 3.40GHz
-                                    </value>
-                                </property>
-                                <property name="Physical ID">
-                                    <value>
-                                        0
-                                    </value>
-                                </property>
-                                <property name="Processor ID">
-                                    <value>
-                                        1
-                                    </value>
-                                </property>
-                                <property name="Speed">
-                                    <value>
-                                        3400.228mhz
-                                    </value>
-                                </property>
-                                <property name="Vendor ID">
-                                    <value>
-                                        GenuineIntel
-                                    </value>
-                                </property>
-                            </item>
-                            <item name="Processor 2">
-                                <property name="Cache size">
-                                    <value>
-                                        8192 KB
-                                    </value>
-                                </property>
-                                <property name="Model name">
-                                    <value>
-                                        Intel(R) Xeon(R) CPU E3-1240 V2 @ 3.40GHz
-                                    </value>
-                                </property>
-                                <property name="Physical ID">
-                                    <value>
-                                        0
-                                    </value>
-                                </property>
-                                <property name="Processor ID">
-                                    <value>
-                                        2
-                                    </value>
-                                </property>
-                                <property name="Speed">
-                                    <value>
-                                        3400.228mhz
-                                    </value>
-                                </property>
-                                <property name="Vendor ID">
-                                    <value>
-                                        GenuineIntel
-                                    </value>
-                                </property>
-                            </item>
-                            <item name="Processor 3">
-                                <property name="Cache size">
-                                    <value>
-                                        8192 KB
-                                    </value>
-                                </property>
-                                <property name="Model name">
-                                    <value>
-                                        Intel(R) Xeon(R) CPU E3-1240 V2 @ 3.40GHz
-                                    </value>
-                                </property>
-                                <property name="Physical ID">
-                                    <value>
-                                        0
-                                    </value>
-                                </property>
-                                <property name="Processor ID">
-                                    <value>
-                                        3
-                                    </value>
-                                </property>
-                                <property name="Speed">
-                                    <value>
-                                        3400.228mhz
-                                    </value>
-                                </property>
-                                <property name="Vendor ID">
-                                    <value>
-                                        GenuineIntel
-                                    </value>
-                                </property>
-                            </item>
-                        </item>
-                    </item>
-                    <item name="Network and internet">
-                        <item name="Network">
-                            <item name="General information">
-                                <property name="Computer name">
-                                    <value>
-                                        RTServer_5_110
-                                    </value>
-                                </property>
-                                <property name="Local IP">
-                                    <value>
-                                        192.168.1.1
-                                    </value>
-                                </property>
-                            </item>
-                        </item>
-                    </item>
-                    <item name="Software system">
-                        <item name="Installed programs">
-                            <item name="ARTEMIS"/>
-                            <item name="Gcc">
-                                <property name="Current version">
-                                    <value>
-                                        4.1.2
-                                    </value>
-                                </property>
-                            </item>
-                            <item name="Python">
-                                <property name="Current version">
-                                    <value>
-                                        2.4.3
-                                    </value>
-                                </property>
-                            </item>
-                            <item name="RT-EVENTS"/>
-                            <item name="RT-LAB">
-                                <property name="Current version">
-                                    <value>
-                                        v11.0.7.582
-                                    </value>
-                                </property>
-                            </item>
-                        </item>
-                        <item name="Operating system">
-                            <property name="Release">
-                                <value>
-                                    2.6.29.6-opalrt-6.1
-                                </value>
-                            </property>
-                            <property name="Type">
-                                <value>
-                                    linux2
-                                </value>
-                            </property>
-                            <property name="Version">
-                                <value>
-                                    #8 SMP PREEMPT Thu Oct 3 11:56:23 EDT 2013
-                                </value>
-                            </property>
-                        </item>
-                    </item>
-                </item>
+        <item name="Compilation - Target (192:168:5:11)">
+            <item name="Applications">
+                <property name="gcc">
+                    <value>
+                        4.1.2
+                    </value>
+                </property>
+                <property name="opicc">
+                    <value>
+                        11.1
+                    </value>
+                </property>
+                <property name="python">
+                    <value>
+                        2.4.3
+                    </value>
+                </property>
             </item>
+            <property name="Computer name">
+                <value>
+                    RTServer_5_113
+                </value>
+            </property>
+            <item name="Disk space">
+                <textlog name="Disk space">
+                    <value>
+                        Filesystem            Size  Used Avail Use% Mounted on
+/dev/sda1             107G   20G   82G  20% /
+tmpfs                 4.0G  3.6M  4.0G   1% /dev/shm
+                    </value>
+                </textlog>
+            </item>
+            <item name="Environment variables">
+                <property name="_">
+                    <value>
+                        /bin/env
+                    </value>
+                </property>
+                <property name="ABORT_COMPILE_WHEN_NO_BITSTREAM">
+                    <value>
+                        0
+                    </value>
+                </property>
+                <property name="AcquisitionMemory">
+                    <value>
+                        0,2500,1,2500,24,100
+                    </value>
+                </property>
+                <property name="ACTION_AFTER_N_OVERRUNS">
+                    <value>
+                        10
+                    </value>
+                </property>
+                <property name="ACTION_ON_OVERRUNS">
+                    <value>
+                        0
+                    </value>
+                </property>
+                <property name="ActiveGroups">
+                    <value>
+                        8/0/1/24/25/26/27/28/29/
+                    </value>
+                </property>
+                <property name="CACHEABLE_DMA_MEMORY_ACCESS">
+                    <value>
+                        ON
+                    </value>
+                </property>
+                <property name="ClockPeriodMode">
+                    <value>
+                        Free-Clock
+                    </value>
+                </property>
+                <property name="ClockPeriodTime">
+                    <value>
+                        10
+                    </value>
+                </property>
+                <property name="COMM_RT">
+                    <value>
+                        UDP/IP
+                    </value>
+                </property>
+                <property name="CONSOLE">
+                    <value>
+                        /dev/pts/0
+                    </value>
+                </property>
+                <property name="DEBUG">
+                    <value>
+                        0
+                    </value>
+                </property>
+                <property name="DETECT_OVERRUNS">
+                    <value>
+                        ON
+                    </value>
+                </property>
+                <property name="ENABLE_WATCHDOG">
+                    <value>
+                        ON
+                    </value>
+                </property>
+                <property name="EXT_CC_OPTS">
+                    <value>
+                        
+                    </value>
+                </property>
+                <property name="EXT_LD_OPTS">
+                    <value>
+                        
+                    </value>
+                </property>
+                <property name="EXT_LIB">
+                    <value>
+                        
+                    </value>
+                </property>
+                <property name="EXT_LIBPATH">
+                    <value>
+                        
+                    </value>
+                </property>
+                <property name="INIT_VERSION">
+                    <value>
+                        sysvinit-2.86
+                    </value>
+                </property>
+                <property name="INTERNAL_ADD_SOURCE_FILE">
+                    <value>
+                        
+                    </value>
+                </property>
+                <property name="INTERNAL_IGN_SOURCE_FILE">
+                    <value>
+                        fts5abcd_dtc.c fts2flux.c fts2dla.c fts2hfun.c fts5conversion.c fts5stub.c fts5abcd_noncomp.c ftshysteresis.c ssn_sfun_v1.c marti_line.c wb_line.c art_mmc_1p_sf.c art_mmc_1p_condensator_sf.c art_mmc_1p_50_sf.c art_mmc_1p_condensator_50_sf.c art_mmc_2p_1_sf.c art_mmc_2p_2_sf.c art_mmc_2p_condensator_sf.c art_mmc_cap_sf.c art_mmc_d_sf.c art_VSCController_dqabc_sf.c art_VSCController_ctrl_sf.c tsb_sfun.c alt_sync_nl_reseau0_sf.c algo_princ0_sf.c consign_del_w0_sf.c consign_del_x0_sf.c consign_del_p0_sf.c model_load0_sf.c mod_turb_nl0_sf.c mod_lin_turb0_sf.c mod_lin_rv0_sf.c thermal_turbine_gov0_sf.c hydro_turb0_sf.c ext_hydro_reg0_sf.c gas_turbine0_sf.c stabilisateur0_sf.c tested_hydro_speed_gov0_sf.c algoberta0_sf.c algo_alerte0_sf.cmmc_2p_ctr0_sf.c
+                    </value>
+                </property>
+                <property name="INTERNAL_LIBRARY3">
+                    <value>
+                        artemis_RT705931r2014br.a -lOpalRTER2014B
+                    </value>
+                </property>
+                <property name="LANG">
+                    <value>
+                        en_US
+                    </value>
+                </property>
+                <property name="LC_ALL">
+                    <value>
+                        en_US
+                    </value>
+                </property>
+                <property name="LC_COLLATE">
+                    <value>
+                        en_US
+                    </value>
+                </property>
+                <property name="LC_MESSAGES">
+                    <value>
+                        en_US
+                    </value>
+                </property>
+                <property name="LC_MONETARY">
+                    <value>
+                        en_US
+                    </value>
+                </property>
+                <property name="LC_NUMERIC">
+                    <value>
+                        en_US
+                    </value>
+                </property>
+                <property name="LC_TIME">
+                    <value>
+                        en_US
+                    </value>
+                </property>
+                <property name="MaxDynamicSignals">
+                    <value>
+                        1/24/96/
+                    </value>
+                </property>
+                <property name="MODEL_PAUSE_TIME">
+                    <value>
+                        0.000000
+                    </value>
+                </property>
+                <property name="MODEL_STOP_TIME">
+                    <value>
+                        0.000000
+                    </value>
+                </property>
+                <property name="MONITORING">
+                    <value>
+                        ON
+                    </value>
+                </property>
+                <property name="MONITORING_BLOCK">
+                    <value>
+                        ON
+                    </value>
+                </property>
+                <property name="MONITORING_DISPLAY">
+                    <value>
+                        NEVER
+                    </value>
+                </property>
+                <property name="MSG_PRECISION_FACTOR">
+                    <value>
+                        0
+                    </value>
+                </property>
+                <property name="NB_STEP_WITHOUT_OVERRUNS">
+                    <value>
+                        10
+                    </value>
+                </property>
+                <property name="OP_MATLABR2014B">
+                    <value>
+                        1
+                    </value>
+                </property>
+                <property name="OPAL_DEBUG">
+                    <value>
+                        OFF
+                    </value>
+                </property>
+                <property name="OriginalModelName">
+                    <value>
+                        my_pv_system
+                    </value>
+                </property>
+                <property name="OriginalModelPath">
+                    <value>
+                        C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\my_pv_system\
+                    </value>
+                </property>
+                <property name="OriginalProjectPath">
+                    <value>
+                        C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\pv_inverter.llp
+                    </value>
+                </property>
+                <property name="OS_COMPILE_RELEASE">
+                    <value>
+                        2.6.29.6-opalrt-6.1
+                    </value>
+                </property>
+                <item name="PATH">
+                    <property name="0">
+                        <value>
+                            /sbin
+                        </value>
+                    </property>
+                    <property name="1">
+                        <value>
+                            /usr/sbin
+                        </value>
+                    </property>
+                    <property name="2">
+                        <value>
+                            /bin
+                        </value>
+                    </property>
+                    <property name="3">
+                        <value>
+                            /usr/bin
+                        </value>
+                    </property>
+                </item>
+                <property name="previous">
+                    <value>
+                        N
+                    </value>
+                </property>
+                <property name="PREVLEVEL">
+                    <value>
+                        N
+                    </value>
+                </property>
+                <property name="PRINT_LOG_LEVEL">
+                    <value>
+                        DEBUG_ALL
+                    </value>
+                </property>
+                <property name="PWD">
+                    <value>
+                        /usr/opalrt/v11.0.8.13/common/python/rtlab/global
+                    </value>
+                </property>
+                <property name="PYTHONPATH">
+                    <value>
+                        /usr/opalrt/v11.0.8.13/common/python/
+                    </value>
+                </property>
+                <property name="REDHAWK_MATLAB_ROOT">
+                    <value>
+                        /usr/matlab/v8.4
+                    </value>
+                </property>
+                <property name="REDHAWK_OPALRT_ROOT">
+                    <value>
+                        /usr/opalrt/v11.0.8.13
+                    </value>
+                </property>
+                <property name="REMOTE_HOST">
+                    <value>
+                        192.168.5.200
+                    </value>
+                </property>
+                <property name="RESET_IO_MISSING">
+                    <value>
+                        ON
+                    </value>
+                </property>
+                <property name="RTLAB_PLATFORM">
+                    <value>
+                        REDHAWK
+                    </value>
+                </property>
+                <property name="RTLAB_PRODUCT_VERSION">
+                    <value>
+                        v11.0.8.13
+                    </value>
+                </property>
+                <property name="RTLAB_SUBSYS_FILE">
+                    <value>
+                        my_pv_system_1_sm_master my_pv_system_3_ss_controller 
+                    </value>
+                </property>
+                <property name="RTLAB_SUBSYS_NAME">
+                    <value>
+                        SM_master SS_controller 
+                    </value>
+                </property>
+                <property name="runlevel">
+                    <value>
+                        5
+                    </value>
+                </property>
+                <property name="RUNLEVEL">
+                    <value>
+                        5
+                    </value>
+                </property>
+                <property name="SELINUX_INIT">
+                    <value>
+                        YES
+                    </value>
+                </property>
+                <property name="SHLVL">
+                    <value>
+                        4
+                    </value>
+                </property>
+                <property name="SYSNAME">
+                    <value>
+                        linux
+                    </value>
+                </property>
+                <property name="TargetWorkingPath">
+                    <value>
+                        /home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_workspace/pv_inverter/models/my_pv_system/my_pv_system_sm_master/
+                    </value>
+                </property>
+                <property name="TERM">
+                    <value>
+                        linux
+                    </value>
+                </property>
+                <property name="USER_INCS">
+                    <value>
+                        
+                    </value>
+                </property>
+                <property name="USER_SRCS">
+                    <value>
+                        
+                    </value>
+                </property>
+                <property name="WATCHDOG_TIMEOUT">
+                    <value>
+                        5000
+                    </value>
+                </property>
+            </item>
+            <property name="IP">
+                <value>
+                    192.168.5.11
+                </value>
+            </property>
+            <item name="Memory">
+                <property name="MemFree">
+                    <value>
+                        7330384 kB
+                    </value>
+                </property>
+                <property name="MemTotal">
+                    <value>
+                        8205124 kB
+                    </value>
+                </property>
+            </item>
+            <item name="Network">
+                <textlog name="Network">
+                    <value>
+                        eth0      Link encap:Ethernet  HWaddr 0C:C4:7A:0C:1F:5A  
+          inet addr:192.168.5.113  Bcast:192.168.5.255  Mask:255.255.255.0
+          inet6 addr: fe80::ec4:7aff:fe0c:1f5a/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:951749 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:907147 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:291081292 (277.5 MiB)  TX bytes:1152759070 (1.0 GiB)
+          Memory:df900000-df920000 
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:16436  Metric:1
+          RX packets:586 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:586 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:1011723 (988.0 KiB)  TX bytes:1011723 (988.0 KiB)
+
+                    </value>
+                </textlog>
+            </item>
+            <item name="OS= linux2">
+                <property name="Release">
+                    <value>
+                        2.6.29.6-opalrt-6.1
+                    </value>
+                </property>
+                <property name="Version">
+                    <value>
+                        #8 SMP PREEMPT Thu Oct 3 11:56:23 EDT 2013
+                    </value>
+                </property>
+            </item>
+            <item name="System log (dmesg)">
+                <textlog name="System log (dmesg)">
+                    <value>
+                        Initializing cgroup subsys cpuset
+Linux version 2.6.29.6-opalrt-6.1 (root@RTGen) (gcc version 4.1.2 20071124 (Red Hat 4.1.2-42)) #8 SMP PREEMPT Thu Oct 3 11:56:23 EDT 2013
+KERNEL supported cpus:
+  Intel GenuineIntel
+  AMD AuthenticAMD
+  NSC Geode by NSC
+  Cyrix CyrixInstead
+  Centaur CentaurHauls
+  Transmeta GenuineTMx86
+  Transmeta TransmetaCPU
+  UMC UMC UMC UMC
+BIOS-provided physical RAM map:
+ BIOS-e820: 0000000000000000 - 000000000009d800 (usable)
+ BIOS-e820: 000000000009d800 - 00000000000a0000 (reserved)
+ BIOS-e820: 00000000000e0000 - 0000000000100000 (reserved)
+ BIOS-e820: 0000000000100000 - 00000000beff3000 (usable)
+ BIOS-e820: 00000000beff3000 - 00000000bf036000 (ACPI NVS)
+ BIOS-e820: 00000000bf036000 - 00000000ce4ae000 (usable)
+ BIOS-e820: 00000000ce4ae000 - 00000000ce551000 (reserved)
+ BIOS-e820: 00000000ce551000 - 00000000ce5dc000 (usable)
+ BIOS-e820: 00000000ce5dc000 - 00000000ce679000 (ACPI NVS)
+ BIOS-e820: 00000000ce679000 - 00000000cf7ff000 (reserved)
+ BIOS-e820: 00000000cf7ff000 - 00000000cf800000 (usable)
+ BIOS-e820: 00000000e0000000 - 00000000f0000000 (reserved)
+ BIOS-e820: 00000000fec00000 - 00000000fec01000 (reserved)
+ BIOS-e820: 00000000fed00000 - 00000000fed04000 (reserved)
+ BIOS-e820: 00000000fed1c000 - 00000000fed20000 (reserved)
+ BIOS-e820: 00000000fee00000 - 00000000fee01000 (reserved)
+ BIOS-e820: 00000000ff000000 - 0000000100000000 (reserved)
+ BIOS-e820: 0000000100000000 - 0000000230000000 (usable)
+DMI 2.7 present.
+AMI BIOS detected: BIOS may corrupt low RAM, working around it.
+last_pfn = 0x230000 max_arch_pfn = 0x1000000
+x86 PAT enabled: cpu 0, old 0x7040600070406, new 0x7010600070106
+kernel direct mapping tables up to 379fe000 @ 10000-16000
+NX (Execute Disable) protection: active
+RAMDISK: 37d9d000 - 37fef264
+Allocated new RAMDISK: 007f9000 - 00a4b264
+Move RAMDISK from 0000000037d9d000 - 0000000037fef263 to 007f9000 - 00a4b263
+ACPI: RSDP 000F0490, 0024 (r2 SUPERM)
+ACPI: XSDT CE669080, 007C (r1 SUPERM SMCI--MB        1 AMI     10013)
+ACPI: FACP CE6741F8, 010C (r5 SUPERM SMCI--MB        1 AMI     10013)
+ACPI Warning (tbfadt-0257): FADT (revision 5) is longer than ACPI 2.0 version, truncating length 0x10C to 0xF4 [20081204]
+FADT: X_PM1a_EVT_BLK.bit_width (16) does not match PM1_EVT_LEN (4)
+ACPI: DSDT CE669190, B068 (r2 SUPERM SMCI--MB        0 INTL 20051117)
+ACPI: FACS CE677080, 0040
+ACPI: APIC CE674308, 0072 (r3 SUPERM SMCI--MB        1 AMI     10013)
+ACPI: FPDT CE674380, 0044 (r1 SUPERM SMCI--MB        1 AMI     10013)
+ACPI: MCFG CE6743C8, 003C (r1 SUPERM SMCI--MB        1 MSFT       97)
+ACPI: HPET CE674408, 0038 (r1 SUPERM SMCI--MB        1 AMI.        5)
+ACPI: SSDT CE674440, 0397 (r1 SataRe SataTabl     1000 INTL 20091112)
+ACPI: SSDT CE6747D8, 0B18 (r1  PmRef    CpuPm     3000 INTL 20051117)
+ACPI: EINJ CE6752F0, 0130 (r1    AMI AMI EINJ        0             0)
+ACPI: ERST CE675420, 0210 (r1  AMIER AMI ERST        0             0)
+ACPI: HEST CE675630, 00A8 (r1    AMI AMI HEST        0             0)
+ACPI: BERT CE6756D8, 0030 (r1    AMI AMI BERT        0             0)
+ACPI: Local APIC address 0xfee00000
+NUMA - single node, flat memory mode
+Node: 0, start_pfn: 0, end_pfn: 230000
+  Setting physnode_map array to node 0 for pfns:
+  0 4000 8000 c000 10000 14000 18000 1c000 20000 24000 28000 2c000 30000 34000 38000 3c000 40000 44000 48000 4c000 50000 54000 58000 5c000 60000 64000 68000 6c000 70000 74000 78000 7c000 80000 84000 88000 8c000 90000 94000 98000 9c000 a0000 a4000 a8000 ac000 b0000 b4000 b8000 bc000 c0000 c4000 c8000 cc000 d0000 d4000 d8000 dc000 e0000 e4000 e8000 ec000 f0000 f4000 f8000 fc000 100000 104000 108000 10c000 110000 114000 118000 11c000 120000 124000 128000 12c000 130000 134000 138000 13c000 140000 144000 148000 14c000 150000 154000 158000 15c000 160000 164000 168000 16c000 170000 174000 178000 17c000 180000 184000 188000 18c000 190000 194000 198000 19c000 1a0000 1a4000 1a8000 1ac000 1b0000 1b4000 1b8000 1bc000 1c0000 1c4000 1c8000 1cc000 1d0000 1d4000 1d8000 1dc000 1e0000 1e4000 1e8000 1ec000 1f0000 1f4000 1f8000 1fc000 200000 204000 208000 20c000 210000 214000 218000 21c000 220000 224000 228000 22c000 
+node 0 pfn: [0 - 230000]
+Reserving 18432 pages of KVA for lmem_map of node 0 at 22b800
+remove_active_range (0, 2275328, 2293760)
+Reserving total of 4800 pages for numa KVA remap
+kva_start_pfn ~ 33000 max_low_pfn ~ 379fe
+max_pfn = 230000
+8070MB HIGHMEM available.
+889MB LOWMEM available.
+max_low_pfn = 379fe, highstart_pfn = 379fe
+Low memory ends at vaddr f79fe000
+node 0 will remap to vaddr f3000000 - f7800000
+allocate_pgdat: node 0 NODE_DATA f3000000
+remap_numa_kva: node 0
+remap_numa_kva: f3000000 to pfn 0022b800
+remap_numa_kva: f3200000 to pfn 0022ba00
+remap_numa_kva: f3400000 to pfn 0022bc00
+remap_numa_kva: f3600000 to pfn 0022be00
+remap_numa_kva: f3800000 to pfn 0022c000
+remap_numa_kva: f3a00000 to pfn 0022c200
+remap_numa_kva: f3c00000 to pfn 0022c400
+remap_numa_kva: f3e00000 to pfn 0022c600
+remap_numa_kva: f4000000 to pfn 0022c800
+remap_numa_kva: f4200000 to pfn 0022ca00
+remap_numa_kva: f4400000 to pfn 0022cc00
+remap_numa_kva: f4600000 to pfn 0022ce00
+remap_numa_kva: f4800000 to pfn 0022d000
+remap_numa_kva: f4a00000 to pfn 0022d200
+remap_numa_kva: f4c00000 to pfn 0022d400
+remap_numa_kva: f4e00000 to pfn 0022d600
+remap_numa_kva: f5000000 to pfn 0022d800
+remap_numa_kva: f5200000 to pfn 0022da00
+remap_numa_kva: f5400000 to pfn 0022dc00
+remap_numa_kva: f5600000 to pfn 0022de00
+remap_numa_kva: f5800000 to pfn 0022e000
+remap_numa_kva: f5a00000 to pfn 0022e200
+remap_numa_kva: f5c00000 to pfn 0022e400
+remap_numa_kva: f5e00000 to pfn 0022e600
+remap_numa_kva: f6000000 to pfn 0022e800
+remap_numa_kva: f6200000 to pfn 0022ea00
+remap_numa_kva: f6400000 to pfn 0022ec00
+remap_numa_kva: f6600000 to pfn 0022ee00
+remap_numa_kva: f6800000 to pfn 0022f000
+remap_numa_kva: f6a00000 to pfn 0022f200
+remap_numa_kva: f6c00000 to pfn 0022f400
+remap_numa_kva: f6e00000 to pfn 0022f600
+remap_numa_kva: f7000000 to pfn 0022f800
+remap_numa_kva: f7200000 to pfn 0022fa00
+remap_numa_kva: f7400000 to pfn 0022fc00
+remap_numa_kva: f7600000 to pfn 0022fe00
+High memory starts at vaddr f79fe000
+  mapped low ram: 0 - 379fe000
+  low ram: 00000000 - 379fe000
+  bootmap 00011000 - 00017f40
+(11 early reservations) ==&gt; bootmem [0000000000 - 00379fe000]
+  #0 [0000000000 - 0000001000]   BIOS data page ==&gt; [0000000000 - 0000001000]
+  #1 [0000001000 - 0000002000]    EX TRAMPOLINE ==&gt; [0000001000 - 0000002000]
+  #2 [0000006000 - 0000007000]       TRAMPOLINE ==&gt; [0000006000 - 0000007000]
+  #3 [0000100000 - 00007ef264]    TEXT DATA BSS ==&gt; [0000100000 - 00007ef264]
+  #4 [00007f0000 - 00007f9000]    INIT_PG_TABLE ==&gt; [00007f0000 - 00007f9000]
+  #5 [000009d800 - 0000100000]    BIOS reserved ==&gt; [000009d800 - 0000100000]
+  #6 [0000010000 - 0000011000]          PGTABLE ==&gt; [0000010000 - 0000011000]
+  #7 [00007f9000 - 0000a4b264]      NEW RAMDISK ==&gt; [00007f9000 - 0000a4b264]
+  #8 [022b800000 - 0230000000]          KVA RAM
+  #9 [0033000000 - 0037800000]           KVA PG ==&gt; [0033000000 - 0037800000]
+  #10 [0000011000 - 0000018000]          BOOTMAP ==&gt; [0000011000 - 0000018000]
+found SMP MP-table at [c00fd740] 000fd740
+Zone PFN ranges:
+  DMA      0x00000010 -&gt; 0x00001000
+  Normal   0x00001000 -&gt; 0x000379fe
+  HighMem  0x000379fe -&gt; 0x00230000
+Movable zone start PFN for each node
+early_node_map[6] active PFN ranges
+    0: 0x00000010 -&gt; 0x0000009d
+    0: 0x00000100 -&gt; 0x000beff3
+    0: 0x000bf036 -&gt; 0x000ce4ae
+    0: 0x000ce551 -&gt; 0x000ce5dc
+    0: 0x000cf7ff -&gt; 0x000cf800
+    0: 0x00100000 -&gt; 0x0022b800
+On node 0 totalpages: 2071684
+free_area_init_node: node 0, pgdat f3000000, node_mem_map f3002200
+  DMA zone: 32 pages used for memmap
+  DMA zone: 0 pages reserved
+  DMA zone: 3949 pages, LIFO batch:0
+  Normal zone: 1748 pages used for memmap
+  Normal zone: 221994 pages, LIFO batch:31
+  HighMem zone: 15997 pages used for memmap
+  HighMem zone: 1827964 pages, LIFO batch:31
+Using APIC driver default
+ACPI: PM-Timer IO Port: 0x408
+ACPI: Local APIC address 0xfee00000
+ACPI: LAPIC (acpi_id[0x01] lapic_id[0x00] enabled)
+ACPI: LAPIC (acpi_id[0x02] lapic_id[0x02] enabled)
+ACPI: LAPIC (acpi_id[0x03] lapic_id[0x04] enabled)
+ACPI: LAPIC (acpi_id[0x04] lapic_id[0x06] enabled)
+ACPI: LAPIC_NMI (acpi_id[0xff] high edge lint[0x1])
+ACPI: IOAPIC (id[0x02] address[0xfec00000] gsi_base[0])
+IOAPIC[0]: apic_id 2, version 32, address 0xfec00000, GSI 0-23
+ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+ACPI: IRQ0 used by override.
+ACPI: IRQ2 used by override.
+ACPI: IRQ9 used by override.
+Enabling APIC mode:  Flat.  Using 1 I/O APICs
+Using ACPI (MADT) for SMP configuration information
+ACPI: HPET id: 0x8086a701 base: 0xfed00000
+SMP: Allowing 4 CPUs, 0 hotplug CPUs
+nr_irqs_gsi: 24
+Allocating PCI resources starting at d0000000 (gap: cf800000:10800000)
+NR_CPUS:32 nr_cpumask_bits:32 nr_cpu_ids:4 nr_node_ids:8
+PERCPU: Allocating 40960 bytes of per cpu data
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 2053907
+Policy zone: HighMem
+Kernel command line: ro root=LABEL=/ rhgb quiet
+Enabling fast FPU save and restore... done.
+Enabling unmasked SIMD FPU exception support... done.
+Initializing CPU#0
+xsave/xrstor: enabled xstate_bv 0x3, cntxt size 0x240
+Preemptible RCU implementation.
+CPU 0 irqstacks, hard=c075a000 soft=c073a000
+PID hash table entries: 4096 (order: 12, 16384 bytes)
+Extended CMOS year: 2000
+Fast TSC calibration using PIT
+Detected 3300.430 MHz processor.
+Console: colour VGA+ 80x25
+console [tty0] enabled
+Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
+Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)
+Initializing HighMem for node 0 (000379fe:0022b800)
+Memory: 8202396k/9175040k available (3579k kernel code, 84340k reserved, 2412k data, 348k init, 7375844k highmem)
+virtual kernel memory layout:
+    fixmap  : 0xffe18000 - 0xfffff000   (1948 kB)
+    pkmap   : 0xffa00000 - 0xffc00000   (2048 kB)
+    vmalloc : 0xf81fe000 - 0xff9fe000   ( 120 MB)
+    lowmem  : 0xc0000000 - 0xf79fe000   ( 889 MB)
+      .init : 0xc06e0000 - 0xc0737000   ( 348 kB)
+      .data : 0xc047ed52 - 0xc06d9d74   (2412 kB)
+      .text : 0xc0100000 - 0xc047ed52   (3579 kB)
+Checking if this processor honours the WP bit even in supervisor mode...Ok.
+SLUB: Genslabs=13, HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=8
+hpet clockevent registered
+HPET: 8 timers in total, 4 timers will be used for per-cpu timer
+Calibrating delay loop (skipped), value calculated using timer frequency.. 6600.86 BogoMIPS (lpj=13201720)
+Security Framework initialized
+SELinux:  Initializing.
+SELinux:  Starting in permissive mode
+Mount-cache hash table entries: 512
+CPU: Physical Processor ID: 0
+CPU: Processor Core ID: 0
+CPU: L1 I cache: 32K, L1 D cache: 32K
+CPU: L2 cache: 256K
+CPU: L3 cache: 8192K
+Intel machine check architecture supported.
+Intel machine check reporting enabled on CPU#0.
+using mwait in idle threads.
+Checking 'hlt' instruction... OK.
+ACPI: Core revision 20081204
+Mapping cpu 0 to node 0
+..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+CPU0: Intel(R) Xeon(R) CPU E3-1230 V2 @ 3.30GHz stepping 09
+CPU 1 irqstacks, hard=c075b000 soft=c073b000
+Booting processor 1 APIC 0x2 ip 0x6000
+Initializing CPU#1
+Mapping cpu 1 to node 0
+Calibrating delay using timer specific routine.. 6599.77 BogoMIPS (lpj=13199553)
+CPU: Physical Processor ID: 0
+CPU: Processor Core ID: 1
+CPU: L1 I cache: 32K, L1 D cache: 32K
+CPU: L2 cache: 256K
+CPU: L3 cache: 8192K
+Intel machine check architecture supported.
+Intel machine check reporting enabled on CPU#1.
+x86 PAT enabled: cpu 1, old 0x7040600070406, new 0x7010600070106
+CPU1: Intel(R) Xeon(R) CPU E3-1230 V2 @ 3.30GHz stepping 09
+checking TSC synchronization [CPU#0 -&gt; CPU#1]: passed.
+CPU 2 irqstacks, hard=c075c000 soft=c073c000
+Booting processor 2 APIC 0x4 ip 0x6000
+Initializing CPU#2
+Mapping cpu 2 to node 0
+Calibrating delay using timer specific routine.. 6599.77 BogoMIPS (lpj=13199550)
+CPU: Physical Processor ID: 0
+CPU: Processor Core ID: 2
+CPU: L1 I cache: 32K, L1 D cache: 32K
+CPU: L2 cache: 256K
+CPU: L3 cache: 8192K
+Intel machine check architecture supported.
+Intel machine check reporting enabled on CPU#2.
+x86 PAT enabled: cpu 2, old 0x7040600070406, new 0x7010600070106
+CPU2: Intel(R) Xeon(R) CPU E3-1230 V2 @ 3.30GHz stepping 09
+checking TSC synchronization [CPU#0 -&gt; CPU#2]: passed.
+CPU 3 irqstacks, hard=c075d000 soft=c073d000
+Booting processor 3 APIC 0x6 ip 0x6000
+Initializing CPU#3
+Mapping cpu 3 to node 0
+Calibrating delay using timer specific routine.. 6599.77 BogoMIPS (lpj=13199551)
+CPU: Physical Processor ID: 0
+CPU: Processor Core ID: 3
+CPU: L1 I cache: 32K, L1 D cache: 32K
+CPU: L2 cache: 256K
+CPU: L3 cache: 8192K
+Intel machine check architecture supported.
+Intel machine check reporting enabled on CPU#3.
+x86 PAT enabled: cpu 3, old 0x7040600070406, new 0x7010600070106
+CPU3: Intel(R) Xeon(R) CPU E3-1230 V2 @ 3.30GHz stepping 09
+checking TSC synchronization [CPU#0 -&gt; CPU#3]: passed.
+Brought up 4 CPUs
+Total of 4 processors activated (26400.18 BogoMIPS).
+net_namespace: 920 bytes
+NET: Registered protocol family 16
+ACPI FADT declares the system doesn't support PCIe ASPM, so disable it
+ACPI: bus type pci registered
+PCI: MCFG configuration 0: base e0000000 segment 0 buses 0 - 255
+PCI: MCFG area at e0000000 reserved in E820
+PCI: Using MMCONFIG for extended config space
+PCI: Using configuration type 1 for base access
+bio: create slab &lt;bio-0&gt; at 0
+ACPI: EC: Look up EC in DSDT
+ACPI: Interpreter enabled
+ACPI: (supports S0 S5)
+ACPI: Using IOAPIC for interrupt routing
+ACPI: No dock devices found.
+ACPI: PCI Root Bridge [PCI0] (0000:00)
+pci 0000:00:19.0: reg 10 32bit mmio: [0xdfb00000-0xdfb1ffff]
+pci 0000:00:19.0: reg 14 32bit mmio: [0xdfb25000-0xdfb25fff]
+pci 0000:00:19.0: reg 18 io port: [0xf020-0xf03f]
+pci 0000:00:19.0: PME# supported from D0 D3hot D3cold
+pci 0000:00:19.0: PME# disabled
+pci 0000:00:1a.0: reg 10 32bit mmio: [0xdfb24000-0xdfb243ff]
+pci 0000:00:1a.0: PME# supported from D0 D3hot D3cold
+pci 0000:00:1a.0: PME# disabled
+pci 0000:00:1c.0: PME# supported from D0 D3hot D3cold
+pci 0000:00:1c.0: PME# disabled
+pci 0000:00:1c.4: PME# supported from D0 D3hot D3cold
+pci 0000:00:1c.4: PME# disabled
+pci 0000:00:1d.0: reg 10 32bit mmio: [0xdfb23000-0xdfb233ff]
+pci 0000:00:1d.0: PME# supported from D0 D3hot D3cold
+pci 0000:00:1d.0: PME# disabled
+pci 0000:00:1f.2: reg 10 io port: [0xf070-0xf077]
+pci 0000:00:1f.2: reg 14 io port: [0xf060-0xf063]
+pci 0000:00:1f.2: reg 18 io port: [0xf050-0xf057]
+pci 0000:00:1f.2: reg 1c io port: [0xf040-0xf043]
+pci 0000:00:1f.2: reg 20 io port: [0xf000-0xf01f]
+pci 0000:00:1f.2: reg 24 32bit mmio: [0xdfb22000-0xdfb227ff]
+pci 0000:00:1f.2: PME# supported from D3hot
+pci 0000:00:1f.2: PME# disabled
+pci 0000:00:1f.3: reg 10 64bit mmio: [0xdfb21000-0xdfb210ff]
+pci 0000:00:1f.3: reg 20 io port: [0x580-0x59f]
+pci 0000:01:00.0: reg 10 32bit mmio: [0xdfa00000-0xdfafffff]
+pci 0000:01:00.0: PME# supported from D0 D1 D2 D3hot
+pci 0000:01:00.0: PME# disabled
+pci 0000:00:1c.0: bridge 32bit mmio: [0xdfa00000-0xdfafffff]
+pci 0000:02:00.0: reg 10 32bit mmio: [0xdf900000-0xdf91ffff]
+pci 0000:02:00.0: reg 18 io port: [0xe000-0xe01f]
+pci 0000:02:00.0: reg 1c 32bit mmio: [0xdf920000-0xdf923fff]
+pci 0000:02:00.0: PME# supported from D0 D3hot D3cold
+pci 0000:02:00.0: PME# disabled
+pci 0000:00:1c.4: bridge io port: [0xe000-0xefff]
+pci 0000:00:1c.4: bridge 32bit mmio: [0xdf900000-0xdf9fffff]
+pci 0000:03:03.0: reg 10 32bit mmio: [0xde000000-0xdeffffff]
+pci 0000:03:03.0: reg 14 32bit mmio: [0xdf800000-0xdf803fff]
+pci 0000:03:03.0: reg 18 32bit mmio: [0xdf000000-0xdf7fffff]
+pci 0000:00:1e.0: transparent bridge
+pci 0000:00:1e.0: bridge 32bit mmio: [0xdf000000-0xdf8fffff]
+pci 0000:00:1e.0: bridge 64bit mmio pref: [0xde000000-0xdeffffff]
+pci_bus 0000:00: on NUMA node 0
+ACPI: PCI Interrupt Routing Table [\_SB_.PCI0._PRT]
+ACPI: PCI Interrupt Routing Table [\_SB_.PCI0.P0P1._PRT]
+ACPI: PCI Interrupt Routing Table [\_SB_.PCI0.RP01._PRT]
+ACPI: PCI Interrupt Routing Table [\_SB_.PCI0.RP05._PRT]
+ACPI: PCI Interrupt Link [LNKA] (IRQs 3 4 5 6 10 *11 12 14 15)
+ACPI: PCI Interrupt Link [LNKB] (IRQs 3 4 5 6 10 11 12 14 15) *0, disabled.
+ACPI: PCI Interrupt Link [LNKC] (IRQs 3 4 5 6 10 *11 12 14 15)
+ACPI: PCI Interrupt Link [LNKD] (IRQs 3 4 *5 6 10 11 12 14 15)
+ACPI: PCI Interrupt Link [LNKE] (IRQs 3 4 *5 6 10 11 12 14 15)
+ACPI: PCI Interrupt Link [LNKF] (IRQs 3 4 5 6 10 11 12 14 15) *0, disabled.
+ACPI: PCI Interrupt Link [LNKG] (IRQs 3 4 5 6 10 11 12 14 15) *0, disabled.
+ACPI: PCI Interrupt Link [LNKH] (IRQs 3 4 5 6 10 *11 12 14 15)
+ACPI: Power Resource [FN00] (off)
+ACPI: Power Resource [FN01] (off)
+ACPI: Power Resource [FN02] (off)
+ACPI: Power Resource [FN03] (off)
+ACPI: Power Resource [FN04] (off)
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+PCI: Using ACPI for IRQ routing
+NetLabel: Initializing
+NetLabel:  domain hash size = 128
+NetLabel:  protocols = UNLABELED CIPSOv4
+NetLabel:  unlabeled traffic allowed by default
+hpet0: at MMIO 0xfed00000, IRQs 2, 8, 24, 25, 26, 27, 0, 0
+hpet0: 8 comparators, 64-bit 14.318180 MHz counter
+hpet: hpet2 irq 24 for MSI
+hpet: hpet3 irq 25 for MSI
+hpet: hpet4 irq 26 for MSI
+hpet: hpet5 irq 27 for MSI
+pnp: PnP ACPI init
+ACPI: bus type pnp registered
+pnp: PnP ACPI: found 15 devices
+ACPI: ACPI bus type pnp unregistered
+system 00:01: iomem range 0xfed40000-0xfed44fff has been reserved
+system 00:05: ioport range 0x680-0x69f has been reserved
+system 00:05: ioport range 0x1000-0x100f has been reserved
+system 00:05: ioport range 0xffff-0xffff has been reserved
+system 00:05: ioport range 0xffff-0xffff has been reserved
+system 00:05: ioport range 0x400-0x453 has been reserved
+system 00:05: ioport range 0x458-0x47f has been reserved
+system 00:05: ioport range 0x500-0x57f has been reserved
+system 00:05: ioport range 0x164e-0x164f has been reserved
+system 00:07: ioport range 0x454-0x457 has been reserved
+system 00:08: ioport range 0x4d0-0x4d1 has been reserved
+system 00:0a: ioport range 0xa00-0xa1f has been reserved
+system 00:0a: ioport range 0xa30-0xa3f has been reserved
+system 00:0d: ioport range 0xb00-0xb7f has been reserved
+system 00:0e: iomem range 0xfed1c000-0xfed1ffff has been reserved
+system 00:0e: iomem range 0xfed10000-0xfed17fff has been reserved
+system 00:0e: iomem range 0xfed18000-0xfed18fff has been reserved
+system 00:0e: iomem range 0xfed19000-0xfed19fff has been reserved
+system 00:0e: iomem range 0xe0000000-0xefffffff has been reserved
+system 00:0e: iomem range 0xfed20000-0xfed3ffff has been reserved
+system 00:0e: iomem range 0xfed90000-0xfed93fff has been reserved
+system 00:0e: iomem range 0xfed45000-0xfed8ffff has been reserved
+system 00:0e: iomem range 0xff000000-0xffffffff has been reserved
+system 00:0e: iomem range 0xfee00000-0xfeefffff could not be reserved
+system 00:0e: iomem range 0xd0000000-0xd0000fff has been reserved
+Switched to high resolution mode on CPU 1
+Switched to high resolution mode on CPU 3
+Switched to high resolution mode on CPU 2
+Switched to high resolution mode on CPU 0
+pci 0000:00:1c.0: PCI bridge, secondary bus 0000:01
+pci 0000:00:1c.0:   IO window: disabled
+pci 0000:00:1c.0:   MEM window: 0xdfa00000-0xdfafffff
+pci 0000:00:1c.0:   PREFETCH window: disabled
+pci 0000:00:1c.4: PCI bridge, secondary bus 0000:02
+pci 0000:00:1c.4:   IO window: 0xe000-0xefff
+pci 0000:00:1c.4:   MEM window: 0xdf900000-0xdf9fffff
+pci 0000:00:1c.4:   PREFETCH window: disabled
+pci 0000:00:1e.0: PCI bridge, secondary bus 0000:03
+pci 0000:00:1e.0:   IO window: disabled
+pci 0000:00:1e.0:   MEM window: 0xdf000000-0xdf8fffff
+pci 0000:00:1e.0:   PREFETCH window: 0x000000de000000-0x000000deffffff
+pci 0000:00:1c.0: PCI INT A -&gt; GSI 16 (level, low) -&gt; IRQ 16
+pci 0000:00:1c.0: setting latency timer to 64
+pci 0000:00:1c.4: PCI INT A -&gt; GSI 16 (level, low) -&gt; IRQ 16
+pci 0000:00:1c.4: setting latency timer to 64
+pci 0000:00:1e.0: setting latency timer to 64
+pci_bus 0000:00: resource 0 io:  [0x00-0xffff]
+pci_bus 0000:00: resource 1 mem: [0x000000-0xffffffffffffffff]
+pci_bus 0000:01: resource 0 mem: [0x0-0x0]
+pci_bus 0000:01: resource 1 mem: [0xdfa00000-0xdfafffff]
+pci_bus 0000:01: resource 2 mem: [0x0-0x0]
+pci_bus 0000:01: resource 3 mem: [0x0-0x0]
+pci_bus 0000:02: resource 0 io:  [0xe000-0xefff]
+pci_bus 0000:02: resource 1 mem: [0xdf900000-0xdf9fffff]
+pci_bus 0000:02: resource 2 mem: [0x0-0x0]
+pci_bus 0000:02: resource 3 mem: [0x0-0x0]
+pci_bus 0000:03: resource 0 mem: [0x0-0x0]
+pci_bus 0000:03: resource 1 mem: [0xdf000000-0xdf8fffff]
+pci_bus 0000:03: resource 2 mem: [0xde000000-0xdeffffff]
+pci_bus 0000:03: resource 3 io:  [0x00-0xffff]
+pci_bus 0000:03: resource 4 mem: [0x000000-0xffffffffffffffff]
+NET: Registered protocol family 2
+IP route cache hash table entries: 32768 (order: 5, 131072 bytes)
+TCP established hash table entries: 131072 (order: 8, 1048576 bytes)
+TCP bind hash table entries: 65536 (order: 7, 524288 bytes)
+TCP: Hash tables configured (established 131072 bind 65536)
+TCP reno registered
+NET: Registered protocol family 1
+checking if image is initramfs... it is
+Freeing initrd memory: 2376k freed
+Microcode Update Driver: v2.00 &lt;tigran@aivazian.fsnet.co.uk&gt;, Peter Oruba
+audit: initializing netlink socket (disabled)
+type=2000 audit(1488823952.772:1): initialized
+highmem bounce pool size: 64 pages
+VFS: Disk quotas dquot_6.5.2
+Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+msgmni has been set to 1619
+SELinux:  Registering netfilter hooks
+alg: No test for stdrng (krng)
+io scheduler noop registered
+io scheduler anticipatory registered (default)
+io scheduler deadline registered
+io scheduler cfq registered
+pci 0000:03:03.0: Boot video device
+pcieport-driver 0000:00:1c.0: setting latency timer to 64
+pcieport-driver 0000:00:1c.0: irq 28 for MSI/MSI-X
+pcieport-driver 0000:00:1c.4: setting latency timer to 64
+pcieport-driver 0000:00:1c.4: irq 29 for MSI/MSI-X
+pci_hotplug: PCI Hot Plug PCI Core version: 0.5
+fan PNP0C0B:00: registered as cooling_device0
+ACPI: Fan [FAN0] (off)
+fan PNP0C0B:01: registered as cooling_device1
+ACPI: Fan [FAN1] (off)
+fan PNP0C0B:02: registered as cooling_device2
+ACPI: Fan [FAN2] (off)
+fan PNP0C0B:03: registered as cooling_device3
+ACPI: Fan [FAN3] (off)
+fan PNP0C0B:04: registered as cooling_device4
+ACPI: Fan [FAN4] (off)
+ACPI: SSDT CE4E0018, 083B (r1  PmRef  Cpu0Cst     3001 INTL 20051117)
+Monitor-Mwait will be used to enter C-1 state
+processor ACPI_CPU:00: registered as cooling_device5
+ACPI: SSDT CE4FFC18, 0119 (r1  PmRef    ApCst     3000 INTL 20051117)
+processor ACPI_CPU:01: registered as cooling_device6
+processor ACPI_CPU:02: registered as cooling_device7
+processor ACPI_CPU:03: registered as cooling_device8
+thermal LNXTHERM:01: registered as thermal_zone0
+ACPI: Thermal Zone [TZ00] (28 C)
+thermal LNXTHERM:02: registered as thermal_zone1
+ACPI: Thermal Zone [TZ01] (30 C)
+Non-volatile memory driver v1.3
+Linux agpgart interface v0.103
+Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+serial8250: ttyS0 at I/O 0x3f8 (irq = 4) is a 16550A
+serial8250: ttyS1 at I/O 0x2f8 (irq = 3) is a 16550A
+00:0b: ttyS0 at I/O 0x3f8 (irq = 4) is a 16550A
+00:0c: ttyS1 at I/O 0x2f8 (irq = 3) is a 16550A
+brd: module loaded
+ixgbe: Intel(R) 10 Gigabit PCI Express Network Driver - version 1.3.30-k2
+ixgbe: Copyright (c) 1999-2007 Intel Corporation.
+Intel(R) PRO/10GbE Network Driver - version 1.0.135-k2-NAPI
+Copyright (c) 1999-2008 Intel Corporation.
+Atheros(R) L2 Ethernet Driver - version 2.2.3
+Copyright (c) 2007 Atheros Corporation.
+tehuti: Tehuti Networks(R) Network Driver, 7.29.3
+tehuti: Options: hw_csum 
+enic: Cisco 10G Ethernet Driver, ver 1.0.0.648
+jme: JMicron JMC250 gigabit ethernet driver version 1.0.3
+pcnet32.c:v1.35 21.Apr.2008 tsbogend@alpha.franken.de
+e100: Intel(R) PRO/100 Network Driver, 3.5.23-k6-NAPI
+e100: Copyright(c) 1999-2006 Intel Corporation
+ThunderLAN driver v1.15a
+TLAN: 0 devices installed, PCI: 0  EISA: 0
+ns83820.c: National Semiconductor DP83820 10/100/1000 driver.
+sky2 driver version 1.22
+Fixed MDIO Bus: probed
+cs89x0:cs89x0_probe(0x0)
+PP_addr at 300[a]: 0xffff
+eth0: incorrect signature at 300[c]: 0xffff!=0x630E
+PP_addr at 320[a]: 0xffff
+eth0: incorrect signature at 320[c]: 0xffff!=0x630E
+PP_addr at 340[a]: 0xffff
+eth0: incorrect signature at 340[c]: 0xffff!=0x630E
+PP_addr at 360[a]: 0xffff
+eth0: incorrect signature at 360[c]: 0xffff!=0x630E
+PP_addr at 200[a]: 0xffff
+eth0: incorrect signature at 200[c]: 0xffff!=0x630E
+PP_addr at 220[a]: 0xffff
+eth0: incorrect signature at 220[c]: 0xffff!=0x630E
+PP_addr at 240[a]: 0xffff
+eth0: incorrect signature at 240[c]: 0xffff!=0x630E
+PP_addr at 260[a]: 0xffff
+eth0: incorrect signature at 260[c]: 0xffff!=0x630E
+PP_addr at 280[a]: 0xffff
+eth0: incorrect signature at 280[c]: 0xffff!=0x630E
+PP_addr at 2a0[a]: 0xffff
+eth0: incorrect signature at 2a0[c]: 0xffff!=0x630E
+PP_addr at 2c0[a]: 0xffff
+eth0: incorrect signature at 2c0[c]: 0xffff!=0x630E
+PP_addr at 2e0[a]: 0xffff
+eth0: incorrect signature at 2e0[c]: 0xffff!=0x630E
+cs89x0: no cs8900 or cs8920 detected.  Be sure to disable PnP with SETUP
+Silan SC92031 PCI Fast Ethernet Adapter driver 2.0c
+myri10ge: Version 1.4.4-1.401
+Solarflare NET driver v2.3
+Uniform Multi-Platform E-IDE driver
+ide_generic: please use &quot;probe_mask=0x3f&quot; module parameter for probing all legacy ISA IDE ports
+Probing IDE interface ide0...
+ide0 at 0x1f0-0x1f7,0x3f6 on irq 14
+Probing IDE interface ide1...
+ide1 at 0x170-0x177,0x376 on irq 15
+ide-gd driver 1.18
+PNP: No PS/2 controller found. Probing ports directly.
+serio: i8042 KBD port at 0x60,0x64 irq 1
+serio: i8042 AUX port at 0x60,0x64 irq 12
+mice: PS/2 mouse device common for all mice
+cpuidle: using governor ladder
+cpuidle: using governor menu
+usbcore: registered new interface driver hiddev
+usbcore: registered new interface driver usbhid
+usbhid: v2.6:USB HID core driver
+TCP bic registered
+Initializing XFRM netlink socket
+NET: Registered protocol family 17
+Using IPI No-Shortcut mode
+registered taskstats version 1
+Freeing unused kernel memory: 348k freed
+ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+ehci_hcd 0000:00:1a.0: PCI INT A -&gt; GSI 16 (level, low) -&gt; IRQ 16
+ehci_hcd 0000:00:1a.0: setting latency timer to 64
+ehci_hcd 0000:00:1a.0: EHCI Host Controller
+ehci_hcd 0000:00:1a.0: new USB bus registered, assigned bus number 1
+ehci_hcd 0000:00:1a.0: debug port 2
+ehci_hcd 0000:00:1a.0: cache line size of 32 is not supported
+ehci_hcd 0000:00:1a.0: irq 16, io mem 0xdfb24000
+ehci_hcd 0000:00:1a.0: USB 2.0 started, EHCI 1.00
+usb usb1: configuration #1 chosen from 1 choice
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 2 ports detected
+ehci_hcd 0000:00:1d.0: PCI INT A -&gt; GSI 23 (level, low) -&gt; IRQ 23
+ehci_hcd 0000:00:1d.0: setting latency timer to 64
+ehci_hcd 0000:00:1d.0: EHCI Host Controller
+ehci_hcd 0000:00:1d.0: new USB bus registered, assigned bus number 2
+ehci_hcd 0000:00:1d.0: debug port 2
+ehci_hcd 0000:00:1d.0: cache line size of 32 is not supported
+ehci_hcd 0000:00:1d.0: irq 23, io mem 0xdfb23000
+ehci_hcd 0000:00:1d.0: USB 2.0 started, EHCI 1.00
+usb usb2: configuration #1 chosen from 1 choice
+hub 2-0:1.0: USB hub found
+hub 2-0:1.0: 2 ports detected
+ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+uhci_hcd: USB Universal Host Controller Interface driver
+SCSI subsystem initialized
+Driver 'sd' needs updating - please use bus_type methods
+libata version 3.00 loaded.
+ahci 0000:00:1f.2: version 3.0
+ahci 0000:00:1f.2: PCI INT B -&gt; GSI 19 (level, low) -&gt; IRQ 19
+ahci 0000:00:1f.2: irq 30 for MSI/MSI-X
+ahci 0000:00:1f.2: AHCI 0001.0300 32 slots 6 ports 6 Gbps 0x3f impl SATA mode
+ahci 0000:00:1f.2: flags: 64bit ncq pm led clo pio slum part ems 
+ahci 0000:00:1f.2: setting latency timer to 64
+scsi0 : ahci
+scsi1 : ahci
+scsi2 : ahci
+scsi3 : ahci
+scsi4 : ahci
+scsi5 : ahci
+ata1: SATA max UDMA/133 abar m2048@0xdfb22000 port 0xdfb22100 irq 30
+ata2: SATA max UDMA/133 abar m2048@0xdfb22000 port 0xdfb22180 irq 30
+ata3: SATA max UDMA/133 abar m2048@0xdfb22000 port 0xdfb22200 irq 30
+ata4: SATA max UDMA/133 abar m2048@0xdfb22000 port 0xdfb22280 irq 30
+ata5: SATA max UDMA/133 abar m2048@0xdfb22000 port 0xdfb22300 irq 30
+ata6: SATA max UDMA/133 abar m2048@0xdfb22000 port 0xdfb22380 irq 30
+usb 1-1: new high speed USB device using ehci_hcd and address 2
+ata1: SATA link up 6.0 Gbps (SStatus 133 SControl 300)
+ata1.00: ACPI cmd ef/10:06:00:00:00:00 succeeded
+ata1.00: ACPI cmd f5/00:00:00:00:00:00 filtered out
+ata1.00: ACPI cmd b1/c1:00:00:00:00:00 filtered out
+ata1.00: ATA-9: Samsung SSD 840 PRO Series, DXM05B0Q, max UDMA/133
+ata1.00: 250069680 sectors, multi 16: LBA48 NCQ (depth 31/32)
+ata1.00: ACPI cmd ef/10:06:00:00:00:00 succeeded
+ata1.00: ACPI cmd f5/00:00:00:00:00:00 filtered out
+ata1.00: ACPI cmd b1/c1:00:00:00:00:00 filtered out
+ata1.00: configured for UDMA/133
+scsi 0:0:0:0: Direct-Access     ATA      Samsung SSD 840  DXM0 PQ: 0 ANSI: 5
+sd 0:0:0:0: [sda] 250069680 512-byte hardware sectors: (128 GB/119 GiB)
+sd 0:0:0:0: [sda] Write Protect is off
+sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
+sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+sd 0:0:0:0: [sda] 250069680 512-byte hardware sectors: (128 GB/119 GiB)
+sd 0:0:0:0: [sda] Write Protect is off
+sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
+sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+ sda: sda1 sda2
+sd 0:0:0:0: [sda] Attached SCSI disk
+usb 1-1: configuration #1 chosen from 1 choice
+hub 1-1:1.0: USB hub found
+hub 1-1:1.0: 6 ports detected
+usb 2-1: new high speed USB device using ehci_hcd and address 2
+usb 2-1: configuration #1 chosen from 1 choice
+hub 2-1:1.0: USB hub found
+hub 2-1:1.0: 6 ports detected
+ata2: SATA link down (SStatus 0 SControl 300)
+ata3: SATA link down (SStatus 0 SControl 300)
+ata4: SATA link down (SStatus 0 SControl 300)
+ata5: SATA link down (SStatus 0 SControl 300)
+ata6: SATA link down (SStatus 0 SControl 300)
+kjournald starting.  Commit interval 5 seconds
+EXT3-fs: mounted filesystem with ordered data mode.
+SELinux:  Disabled at runtime.
+SELinux:  Unregistering netfilter hooks
+type=1404 audit(1488823959.585:2): selinux=0 auid=4294967295 ses=4294967295
+input: PC Speaker as /class/input/input0
+rtc_cmos 00:06: RTC can wake from S4
+rtc_cmos 00:06: rtc core: registered rtc_cmos as rtc0
+rtc0: alarms up to one month, y3k, 242 bytes nvram, hpet irqs
+e1000e: Intel(R) PRO/1000 Network Driver - 0.3.3.3-k6
+e1000e: Copyright (c) 1999-2008 Intel Corporation.
+e1000e 0000:02:00.0: PCI INT A -&gt; GSI 16 (level, low) -&gt; IRQ 16
+e1000e 0000:02:00.0: setting latency timer to 64
+e1000e 0000:02:00.0: irq 31 for MSI/MSI-X
+e1000e 0000:02:00.0: irq 32 for MSI/MSI-X
+e1000e 0000:02:00.0: irq 33 for MSI/MSI-X
+input: Power Button (FF) as /class/input/input1
+0000:02:00.0: eth0: (PCI Express:2.5GB/s:Width x1) 0c:c4:7a:0c:1f:5a
+0000:02:00.0: eth0: Intel(R) PRO/1000 Network Connection
+0000:02:00.0: eth0: MAC: 3, PHY: 8, PBA No: ffffff-0ff
+ACPI: Power Button (FF) [PWRF]
+input: Power Button (CM) as /class/input/input2
+ACPI: Power Button (CM) [PWRB]
+sd 0:0:0:0: Attached scsi generic sg0 type 0
+floppy0: no floppy controllers found
+lp: driver loaded but no devices found
+NET: Registered protocol family 10
+lo: Disabled Privacy Extensions
+mtrr: type mismatch for de000000,1000000 old: write-back new: write-combining
+md: Autodetecting RAID arrays.
+md: Scanned 0 and added 0 devices.
+md: autorun ...
+md: ... autorun DONE.
+device-mapper: uevent: version 1.0.3
+device-mapper: ioctl: 4.14.0-ioctl (2008-04-23) initialised: dm-devel@redhat.com
+device-mapper: multipath: version 1.0.5 loaded
+EXT3 FS on sda1, internal journal
+Adding 9213268k swap on /dev/sda2.  Priority:-1 extents:1 across:9213268k SS
+ADDRCONF(NETDEV_UP): eth0: link is not ready
+e1000e: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX/TX
+ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+warning: `dbus-daemon' uses 32-bit capabilities (legacy support in use)
+Unmapping cpu 1 from all nodes
+Breaking affinity for irq 25
+CPU 1 is now offline
+Unmapping cpu 2 from all nodes
+Breaking affinity for irq 26
+CPU 2 is now offline
+Unmapping cpu 3 from all nodes
+Breaking affinity for irq 27
+CPU 3 is now offline
+SMP alternatives: switching to UP code
+SMP alternatives: switching to SMP code
+CPU 1 irqstacks, hard=c075b000 soft=c073b000
+Booting processor 1 APIC 0x2 ip 0x6000
+Initializing CPU#1
+Mapping cpu 1 to node 0
+Calibrating delay using timer specific routine.. 6601.21 BogoMIPS (lpj=13202437)
+CPU: Physical Processor ID: 0
+CPU: Processor Core ID: 1
+CPU: L1 I cache: 32K, L1 D cache: 32K
+CPU: L2 cache: 256K
+CPU: L3 cache: 8192K
+Intel machine check architecture supported.
+Intel machine check reporting enabled on CPU#1.
+x86 PAT enabled: cpu 1, old 0x7040600070406, new 0x7010600070106
+CPU1: Intel(R) Xeon(R) CPU E3-1230 V2 @ 3.30GHz stepping 09
+checking TSC synchronization [CPU#0 -&gt; CPU#1]: passed.
+platform microcode: firmware: requesting intel-ucode/06-3a-09
+Switched to high resolution mode on CPU 1
+Warning: Processor Platform Limit event detected, but not handled.
+Consider compiling CPUfreq support into your kernel.
+hpet: hpet3 irq 25 for MSI
+CPU 2 irqstacks, hard=c075c000 soft=c073c000
+Booting processor 2 APIC 0x4 ip 0x6000
+Initializing CPU#2
+Mapping cpu 2 to node 0
+Calibrating delay using timer specific routine.. 6600.59 BogoMIPS (lpj=13201190)
+CPU: Physical Processor ID: 0
+CPU: Processor Core ID: 2
+CPU: L1 I cache: 32K, L1 D cache: 32K
+CPU: L2 cache: 256K
+CPU: L3 cache: 8192K
+Intel machine check architecture supported.
+Intel machine check reporting enabled on CPU#2.
+x86 PAT enabled: cpu 2, old 0x7040600070406, new 0x7010600070106
+CPU2: Intel(R) Xeon(R) CPU E3-1230 V2 @ 3.30GHz stepping 09
+checking TSC synchronization [CPU#1 -&gt; CPU#2]: passed.
+platform microcode: firmware: requesting intel-ucode/06-3a-09
+Switched to high resolution mode on CPU 2
+hpet: hpet4 irq 26 for MSI
+CPU 3 irqstacks, hard=c075d000 soft=c073d000
+Booting processor 3 APIC 0x6 ip 0x6000
+Initializing CPU#3
+Mapping cpu 3 to node 0
+Calibrating delay using timer specific routine.. 6600.91 BogoMIPS (lpj=13201832)
+CPU: Physical Processor ID: 0
+CPU: Processor Core ID: 3
+CPU: L1 I cache: 32K, L1 D cache: 32K
+CPU: L2 cache: 256K
+CPU: L3 cache: 8192K
+Intel machine check architecture supported.
+Intel machine check reporting enabled on CPU#3.
+x86 PAT enabled: cpu 3, old 0x7040600070406, new 0x7010600070106
+CPU3: Intel(R) Xeon(R) CPU E3-1230 V2 @ 3.30GHz stepping 09
+checking TSC synchronization [CPU#2 -&gt; CPU#3]: passed.
+platform microcode: firmware: requesting intel-ucode/06-3a-09
+Switched to high resolution mode on CPU 3
+hpet: hpet5 irq 27 for MSI
+mtrr: type mismatch for de000000,1000000 old: write-back new: write-combining
+eth0: no IPv6 routers present
+opalpci: driver loaded  (major 250)
+pci 0000:01:00.0: PCI INT A -&gt; GSI 16 (level, low) -&gt; IRQ 16
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+Clocksource tsc unstable (delta = 599846599122 ns)
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+e1000e: eth0 NIC Link is Down
+e1000e: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX/TX
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+                    </value>
+                </textlog>
+            </item>
+            <property name="User name">
+                <value>
+                    root
+                </value>
+            </property>
         </item>
     </item>
 </item>

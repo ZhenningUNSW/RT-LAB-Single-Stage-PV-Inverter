@@ -3,9 +3,9 @@
  *
  * Code generation for model "my_pv_system_1_sm_master".
  *
- * Model version              : 1.207
+ * Model version              : 1.225
  * Simulink Coder version : 8.7 (R2014b) 08-Sep-2014
- * C source code generated on : Wed Sep 07 16:46:13 2016
+ * C source code generated on : Mon Feb 27 11:22:27 2017
  *
  * Target selection: rtlab_rtmodel.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -798,181 +798,162 @@ int_T Opal_rtmGetNumBlockIO(void *ptr);
 
 /* Block signals (auto storage) */
 typedef struct {
-  real_T SFunction;                    /* '<S1>/S-Function' */
-  real_T Sum;                          /* '<S1>/Sum' */
-  real_T IrradianceWm2;                /* '<S2>/Memory' */
-  real_T I_PV;                         /* '<S2>/Memory' */
-  real_T V_PV;                         /* '<S2>/Memory' */
-  real_T I_Diode;                      /* '<S2>/Memory' */
-  real_T Temperature;                  /* '<S2>/Memory' */
-  real_T Vph;                          /* '<S2>/Memory' */
-  real_T Vinv;                         /* '<S2>/Memory1' */
-  real_T Vdc;                          /* '<S2>/Memory1' */
-  real_T Igrid;                        /* '<S2>/Memory1' */
-  real_T Vgrid;                        /* '<S2>/Memory1' */
-  real_T Ig;                           /* '<S2>/Memory1' */
-  real_T P_PV;                         /* '<S2>/Memory1' */
-  real_T Computationtime;              /* '<S2>/OpMonitor' */
-  real_T Realstepsize;                 /* '<S2>/OpMonitor' */
-  real_T Idletime;                     /* '<S2>/OpMonitor' */
-  real_T Overruntimes;                 /* '<S2>/OpMonitor' */
-  real_T UnitDelay[4];                 /* '<S23>/Unit Delay' */
-  real_T SFunction_c[6];               /* '<S49>/S-Function' */
-  real_T AC;                           /* '<S42>/AC' */
-  real_T StateSpace_o1[12];            /* '<S52>/State-Space' */
-  real_T StateSpace_o2[4];             /* '<S52>/State-Space' */
-  real_T Ron[4];                       /* '<S23>/1//Ron' */
-  real_T DataTypeConversion[4];        /* '<S23>/Data Type Conversion' */
-  real_T Switch[4];                    /* '<S23>/Switch' */
-  real_T Saturation[4];                /* '<S23>/Saturation' */
-  real_T Switch_e[4];                  /* '<S25>/Switch' */
-  real_T donotdeletethisgain;          /* '<S5>/do not delete this gain' */
-  real_T Clock;                        /* '<S27>/Clock' */
-  real_T integrator;                   /* '<S27>/integrator' */
-  real_T TransportDelay;               /* '<S27>/Transport Delay' */
-  real_T Memory;                       /* '<S27>/Memory' */
-  real_T Switch_d;                     /* '<S27>/Switch' */
-  real_T Clock_c;                      /* '<S28>/Clock' */
-  real_T integrator_i;                 /* '<S28>/integrator' */
-  real_T TransportDelay_j;             /* '<S28>/Transport Delay' */
-  real_T Memory_j;                     /* '<S28>/Memory' */
-  real_T Switch_p;                     /* '<S28>/Switch' */
-  real_T SFunction_b[2];               /* '<S29>/S-Function' */
-  real_T Product;                      /* '<S2>/Product' */
-  real_T donotdeletethisgain_a;        /* '<S32>/do not delete this gain' */
-  real_T IrradianceWm2_j;              /* '<S11>/Rate Limiter' */
-  real_T Temperature_l;                /* '<S11>/Saturation' */
-  real_T donotdeletethisgain_d;        /* '<S33>/do not delete this gain' */
-  real_T donotdeletethisgain_db;       /* '<S34>/do not delete this gain' */
-  real_T donotdeletethisgain_e;        /* '<S12>/do not delete this gain' */
-  real_T donotdeletethisgain_g;        /* '<S13>/do not delete this gain' */
-  real_T donotdeletethisgain_i;        /* '<S19>/do not delete this gain' */
-  real_T donotdeletethisgain_de;       /* '<S20>/do not delete this gain' */
-  real_T Sum_p;                        /* '<S28>/Sum' */
-  real_T Gain;                         /* '<S28>/Gain' */
-  real_T Sum_g;                        /* '<S27>/Sum' */
-  real_T Gain_f;                       /* '<S27>/Gain' */
-  real_T u;                            /* '<S24>/2' */
-  real_T DiscreteTimeIntegrator[4];    /* '<S24>/Discrete-Time Integrator' */
-  real_T u9Tf[4];                      /* '<S26>/-0.9//Tf' */
-  real_T Add[4];                       /* '<S26>/Add' */
-  real_T Saturation1[4];               /* '<S26>/Saturation1' */
-  real_T Add1[4];                      /* '<S26>/Add1' */
-  real_T uTt[4];                       /* '<S26>/0.1//Tt' */
-  real_T Saturation2[4];               /* '<S26>/Saturation2' */
-  real_T Add2[4];                      /* '<S26>/Add2' */
-  real_T UnitDelay_l[4];               /* '<S24>/Unit Delay' */
-  real_T Switch_j[4];                  /* '<S24>/Switch' */
-  real_T Product_d[4];                 /* '<S24>/Product' */
-  boolean_T RelationalOperator;        /* '<S27>/Relational Operator' */
-  boolean_T RelationalOperator_h;      /* '<S28>/Relational Operator' */
+  real_T SFunction;                    /* '<S2>/S-Function' */
+  real_T Sum;                          /* '<S2>/Sum' */
+  real_T IrradianceWm2;                /* '<S3>/Memory' */
+  real_T I_PV;                         /* '<S3>/Memory' */
+  real_T V_PV;                         /* '<S3>/Memory' */
+  real_T I_Diode;                      /* '<S3>/Memory' */
+  real_T Temperature;                  /* '<S3>/Memory' */
+  real_T Vph;                          /* '<S3>/Memory' */
+  real_T Vinv;                         /* '<S3>/Memory1' */
+  real_T Vdc;                          /* '<S3>/Memory1' */
+  real_T Igrid;                        /* '<S3>/Memory1' */
+  real_T Vgrid;                        /* '<S3>/Memory1' */
+  real_T Ig;                           /* '<S3>/Memory1' */
+  real_T P_PV;                         /* '<S3>/Memory1' */
+  real_T P_PV_MEAN;                    /* '<S3>/Memory1' */
+  real_T Gate[4];                      /* '<S3>/Memory1' */
+  real_T Computationtime;              /* '<S3>/OpMonitor' */
+  real_T Realstepsize;                 /* '<S3>/OpMonitor' */
+  real_T Idletime;                     /* '<S3>/OpMonitor' */
+  real_T Overruntimes;                 /* '<S3>/OpMonitor' */
+  real_T UnitDelay[4];                 /* '<S24>/Unit Delay' */
+  real_T SFunction_g[6];               /* '<S51>/S-Function' */
+  real_T DataTypeConversion[4];        /* '<S27>/Data Type Conversion' */
+  real_T AC;                           /* '<S44>/AC' */
+  real_T StateSpace_o1[12];            /* '<S54>/State-Space' */
+  real_T StateSpace_o2[4];             /* '<S54>/State-Space' */
+  real_T Ron[4];                       /* '<S24>/1//Ron' */
+  real_T Switch[4];                    /* '<S24>/Switch' */
+  real_T Saturation[4];                /* '<S24>/Saturation' */
+  real_T Switch_e[4];                  /* '<S26>/Switch' */
+  real_T donotdeletethisgain;          /* '<S6>/do not delete this gain' */
+  real_T Clock;                        /* '<S29>/Clock' */
+  real_T integrator;                   /* '<S29>/integrator' */
+  real_T TransportDelay;               /* '<S29>/Transport Delay' */
+  real_T Memory;                       /* '<S29>/Memory' */
+  real_T Switch_d;                     /* '<S29>/Switch' */
+  real_T Clock_c;                      /* '<S30>/Clock' */
+  real_T integrator_i;                 /* '<S30>/integrator' */
+  real_T TransportDelay_j;             /* '<S30>/Transport Delay' */
+  real_T Memory_j;                     /* '<S30>/Memory' */
+  real_T Switch_p;                     /* '<S30>/Switch' */
+  real_T SFunction_l[2];               /* '<S31>/S-Function' */
+  real_T Product;                      /* '<S3>/Product' */
+  real_T donotdeletethisgain_d;        /* '<S35>/do not delete this gain' */
+  real_T donotdeletethisgain_a;        /* '<S34>/do not delete this gain' */
+  real_T Product1;                     /* '<S3>/Product1' */
+  real_T IrradianceWm2_j;              /* '<S12>/Rate Limiter' */
+  real_T Temperature_l;                /* '<S12>/Saturation' */
+  real_T donotdeletethisgain_db;       /* '<S36>/do not delete this gain' */
+  real_T donotdeletethisgain_e;        /* '<S13>/do not delete this gain' */
+  real_T donotdeletethisgain_g;        /* '<S14>/do not delete this gain' */
+  real_T donotdeletethisgain_i;        /* '<S20>/do not delete this gain' */
+  real_T donotdeletethisgain_de;       /* '<S21>/do not delete this gain' */
+  real_T Sum_p;                        /* '<S30>/Sum' */
+  real_T Gain;                         /* '<S30>/Gain' */
+  real_T Sum_g;                        /* '<S29>/Sum' */
+  real_T Gain_f;                       /* '<S29>/Gain' */
+  real_T DiscreteTimeIntegrator[4];    /* '<S25>/Discrete-Time Integrator' */
+  real_T u9Tf[4];                      /* '<S28>/-0.9//Tf' */
+  real_T Add[4];                       /* '<S28>/Add' */
+  real_T Saturation1[4];               /* '<S28>/Saturation1' */
+  real_T Add1[4];                      /* '<S28>/Add1' */
+  real_T uTt[4];                       /* '<S28>/0.1//Tt' */
+  real_T Saturation2[4];               /* '<S28>/Saturation2' */
+  real_T Add2[4];                      /* '<S28>/Add2' */
+  real_T UnitDelay_l[4];               /* '<S25>/Unit Delay' */
+  real_T Switch_j[4];                  /* '<S25>/Switch' */
+  real_T Product_d[4];                 /* '<S25>/Product' */
+  boolean_T RelationalOperator;        /* '<S29>/Relational Operator' */
+  boolean_T RelationalOperator_h;      /* '<S30>/Relational Operator' */
 } B_my_pv_system_1_sm_master_T;
 
 /* Block states (auto storage) for system '<Root>' */
 typedef struct {
-  real_T UnitDelay_DSTATE[4];          /* '<S23>/Unit Delay' */
-  real_T StateSpace_DSTATE[10];        /* '<S52>/State-Space' */
-  real_T DiscreteTimeIntegrator_DSTATE[4];/* '<S24>/Discrete-Time Integrator' */
-  real_T UnitDelay_DSTATE_e[4];        /* '<S24>/Unit Delay' */
-  real_T SFunction_PreviousInput;      /* '<S1>/S-Function' */
-  real_T Memory_1_PreviousInput;       /* '<S2>/Memory' */
-  real_T Memory_2_PreviousInput;       /* '<S2>/Memory' */
-  real_T Memory_3_PreviousInput;       /* '<S2>/Memory' */
-  real_T Memory_4_PreviousInput;       /* '<S2>/Memory' */
-  real_T Memory_5_PreviousInput;       /* '<S2>/Memory' */
-  real_T Memory_6_PreviousInput;       /* '<S2>/Memory' */
-  real_T Memory1_1_PreviousInput;      /* '<S2>/Memory1' */
-  real_T Memory1_2_PreviousInput;      /* '<S2>/Memory1' */
-  real_T Memory1_3_PreviousInput;      /* '<S2>/Memory1' */
-  real_T Memory1_4_PreviousInput;      /* '<S2>/Memory1' */
-  real_T Memory1_5_PreviousInput;      /* '<S2>/Memory1' */
-  real_T Memory1_6_PreviousInput;      /* '<S2>/Memory1' */
-  real_T Memory_PreviousInput;         /* '<S27>/Memory' */
-  real_T Memory_PreviousInput_h;       /* '<S28>/Memory' */
-  real_T PrevY;                        /* '<S11>/Rate Limiter' */
+  real_T UnitDelay_DSTATE[4];          /* '<S24>/Unit Delay' */
+  real_T StateSpace_DSTATE[20];        /* '<S54>/State-Space' */
+  real_T DiscreteTimeIntegrator_DSTATE[4];/* '<S25>/Discrete-Time Integrator' */
+  real_T UnitDelay_DSTATE_e[4];        /* '<S25>/Unit Delay' */
+  real_T SFunction_PreviousInput;      /* '<S2>/S-Function' */
+  real_T Memory_1_PreviousInput;       /* '<S3>/Memory' */
+  real_T Memory_2_PreviousInput;       /* '<S3>/Memory' */
+  real_T Memory_3_PreviousInput;       /* '<S3>/Memory' */
+  real_T Memory_4_PreviousInput;       /* '<S3>/Memory' */
+  real_T Memory_5_PreviousInput;       /* '<S3>/Memory' */
+  real_T Memory_6_PreviousInput;       /* '<S3>/Memory' */
+  real_T Memory1_1_PreviousInput;      /* '<S3>/Memory1' */
+  real_T Memory1_2_PreviousInput;      /* '<S3>/Memory1' */
+  real_T Memory1_3_PreviousInput;      /* '<S3>/Memory1' */
+  real_T Memory1_4_PreviousInput;      /* '<S3>/Memory1' */
+  real_T Memory1_5_PreviousInput;      /* '<S3>/Memory1' */
+  real_T Memory1_6_PreviousInput;      /* '<S3>/Memory1' */
+  real_T Memory1_7_PreviousInput;      /* '<S3>/Memory1' */
+  real_T Memory1_8_PreviousInput[4];   /* '<S3>/Memory1' */
+  real_T Memory_PreviousInput;         /* '<S29>/Memory' */
+  real_T Memory_PreviousInput_h;       /* '<S30>/Memory' */
+  real_T PrevY;                        /* '<S12>/Rate Limiter' */
+  real_T StateSpace_RWORK[74];         /* '<S54>/State-Space' */
   struct {
     real_T modelTStart;
     real_T TUbufferArea[16384];
-  } TransportDelay_RWORK;              /* '<S27>/Transport Delay' */
+  } TransportDelay_RWORK;              /* '<S29>/Transport Delay' */
 
   struct {
     real_T modelTStart;
     real_T TUbufferArea[16384];
-  } TransportDelay_RWORK_o;            /* '<S28>/Transport Delay' */
+  } TransportDelay_RWORK_o;            /* '<S30>/Transport Delay' */
 
-  void *OpMonitor_PWORK;               /* '<S2>/OpMonitor' */
-  void *SFunction_PWORK;               /* '<S49>/S-Function' */
+  void *OpMonitor_PWORK;               /* '<S3>/OpMonitor' */
+  void *SFunction_PWORK;               /* '<S51>/S-Function' */
+  void *StateSpace_PWORK[27];          /* '<S54>/State-Space' */
   struct {
-    void *AS;
-    void *BS;
-    void *CS;
-    void *DS;
-    void *DX_COL;
-    void *BD_COL;
-    void *TMP1;
-    void *TMP2;
-    void *XTMP;
-    void *SWITCH_STATUS;
-    void *SWITCH_STATUS_INIT;
-    void *SW_CHG;
-    void *CHOPPER;
-    void *G_STATE;
-    void *XKM12;
-    void *XKP12;
-    void *XLAST;
-    void *ULAST;
-    void *IDX_SW_CHG;
-    void *Y_SWITCH;
-    void *SWITCH_TYPES;
-    void *IDX_OUT_SW;
-  } StateSpace_PWORK;                  /* '<S52>/State-Space' */
+    void *TUbufferPtrs[2];
+  } TransportDelay_PWORK;              /* '<S29>/Transport Delay' */
 
   struct {
     void *TUbufferPtrs[2];
-  } TransportDelay_PWORK;              /* '<S27>/Transport Delay' */
+  } TransportDelay_PWORK_a;            /* '<S30>/Transport Delay' */
 
-  struct {
-    void *TUbufferPtrs[2];
-  } TransportDelay_PWORK_a;            /* '<S28>/Transport Delay' */
-
-  int_T SFunction_IWORK[5];            /* '<S46>/S-Function' */
-  int_T SFunction_IWORK_f[5];          /* '<S47>/S-Function' */
-  int_T StateSpace_IWORK[5];           /* '<S52>/State-Space' */
+  int_T SFunction_IWORK[5];            /* '<S48>/S-Function' */
+  int_T SFunction_IWORK_b[5];          /* '<S49>/S-Function' */
+  int_T StateSpace_IWORK[317];         /* '<S54>/State-Space' */
   struct {
     int_T Tail;
     int_T Head;
     int_T Last;
     int_T CircularBufSize;
-  } TransportDelay_IWORK;              /* '<S27>/Transport Delay' */
+  } TransportDelay_IWORK;              /* '<S29>/Transport Delay' */
 
   struct {
     int_T Tail;
     int_T Head;
     int_T Last;
     int_T CircularBufSize;
-  } TransportDelay_IWORK_i;            /* '<S28>/Transport Delay' */
+  } TransportDelay_IWORK_i;            /* '<S30>/Transport Delay' */
 
-  int_T SFunction_IWORK_j[5];          /* '<S48>/S-Function' */
-  int8_T DiscreteTimeIntegrator_PrevRese[4];/* '<S24>/Discrete-Time Integrator' */
-  boolean_T Tail_MODE;                 /* '<S23>/Tail' */
+  int_T SFunction_IWORK_n[5];          /* '<S50>/S-Function' */
+  int8_T DiscreteTimeIntegrator_PrevRese[4];/* '<S25>/Discrete-Time Integrator' */
+  boolean_T Tail_MODE;                 /* '<S24>/Tail' */
 } DW_my_pv_system_1_sm_master_T;
 
 /* Continuous states (auto storage) */
 typedef struct {
-  real_T integrator_CSTATE;            /* '<S27>/integrator' */
-  real_T integrator_CSTATE_a;          /* '<S28>/integrator' */
+  real_T integrator_CSTATE;            /* '<S29>/integrator' */
+  real_T integrator_CSTATE_a;          /* '<S30>/integrator' */
 } X_my_pv_system_1_sm_master_T;
 
 /* State derivatives (auto storage) */
 typedef struct {
-  real_T integrator_CSTATE;            /* '<S27>/integrator' */
-  real_T integrator_CSTATE_a;          /* '<S28>/integrator' */
+  real_T integrator_CSTATE;            /* '<S29>/integrator' */
+  real_T integrator_CSTATE_a;          /* '<S30>/integrator' */
 } XDot_my_pv_system_1_sm_master_T;
 
 /* State disabled  */
 typedef struct {
-  boolean_T integrator_CSTATE;         /* '<S27>/integrator' */
-  boolean_T integrator_CSTATE_a;       /* '<S28>/integrator' */
+  boolean_T integrator_CSTATE;         /* '<S29>/integrator' */
+  boolean_T integrator_CSTATE_a;       /* '<S30>/integrator' */
 } XDis_my_pv_system_1_sm_master_T;
 
 #ifndef ODE3_INTG
@@ -1003,301 +984,446 @@ typedef struct {
 /* Parameters (auto storage) */
 struct P_my_pv_system_1_sm_master_T_ {
   real_T Vs14400V_Amplitude;           /* Mask Parameter: Vs14400V_Amplitude
-                                        * Referenced by: '<S42>/AC'
+                                        * Referenced by: '<S44>/AC'
                                         */
   real_T Vs14400V_Frequency;           /* Mask Parameter: Vs14400V_Frequency
-                                        * Referenced by: '<S42>/AC'
+                                        * Referenced by: '<S44>/AC'
                                         */
   real_T Vs14400V_Phase;               /* Mask Parameter: Vs14400V_Phase
-                                        * Referenced by: '<S42>/AC'
+                                        * Referenced by: '<S44>/AC'
                                         */
   real_T Tail_Tf;                      /* Mask Parameter: Tail_Tf
                                         * Referenced by:
-                                        *   '<S24>/2'
-                                        *   '<S26>/Constant2'
-                                        *   '<S26>/-0.9//Tf'
+                                        *   '<S28>/Constant2'
+                                        *   '<S28>/-0.9//Tf'
                                         */
   real_T Tail_Tt;                      /* Mask Parameter: Tail_Tt
                                         * Referenced by:
-                                        *   '<S24>/2'
-                                        *   '<S26>/Constant2'
-                                        *   '<S26>/0.1//Tt'
+                                        *   '<S28>/Constant2'
+                                        *   '<S28>/0.1//Tt'
                                         */
   real_T itail_Y0;                     /* Expression: 0
-                                        * Referenced by: '<S24>/itail'
+                                        * Referenced by: '<S25>/itail'
                                         */
   real_T _Value;                       /* Expression: 1
-                                        * Referenced by: '<S24>/1'
+                                        * Referenced by: '<S25>/1'
+                                        */
+  real_T _Value_a;                     /* Computed Parameter: _Value_a
+                                        * Referenced by: '<S25>/2'
                                         */
   real_T DiscreteTimeIntegrator_gainval;/* Computed Parameter: DiscreteTimeIntegrator_gainval
-                                         * Referenced by: '<S24>/Discrete-Time Integrator'
+                                         * Referenced by: '<S25>/Discrete-Time Integrator'
                                          */
   real_T DiscreteTimeIntegrator_IC;    /* Expression: 0
-                                        * Referenced by: '<S24>/Discrete-Time Integrator'
+                                        * Referenced by: '<S25>/Discrete-Time Integrator'
                                         */
   real_T Constant_Value;               /* Expression: 0.9
-                                        * Referenced by: '<S26>/Constant'
+                                        * Referenced by: '<S28>/Constant'
                                         */
   real_T Saturation1_UpperSat;         /* Expression: 0.9
-                                        * Referenced by: '<S26>/Saturation1'
+                                        * Referenced by: '<S28>/Saturation1'
                                         */
   real_T Saturation1_LowerSat;         /* Expression: 0
-                                        * Referenced by: '<S26>/Saturation1'
+                                        * Referenced by: '<S28>/Saturation1'
                                         */
   real_T Saturation2_UpperSat;         /* Expression: 0.1
-                                        * Referenced by: '<S26>/Saturation2'
+                                        * Referenced by: '<S28>/Saturation2'
                                         */
   real_T Saturation2_LowerSat;         /* Expression: 0
-                                        * Referenced by: '<S26>/Saturation2'
+                                        * Referenced by: '<S28>/Saturation2'
                                         */
   real_T UnitDelay_InitialCondition;   /* Expression: 0
-                                        * Referenced by: '<S24>/Unit Delay'
+                                        * Referenced by: '<S25>/Unit Delay'
                                         */
   real_T Switch_Threshold;             /* Expression: 0.5
-                                        * Referenced by: '<S24>/Switch'
+                                        * Referenced by: '<S25>/Switch'
                                         */
   real_T Gain_Gain;                    /* Expression: sps.Freq
-                                        * Referenced by: '<S27>/Gain'
+                                        * Referenced by: '<S29>/Gain'
                                         */
   real_T Gain_Gain_k;                  /* Expression: sps.Freq
-                                        * Referenced by: '<S28>/Gain'
+                                        * Referenced by: '<S30>/Gain'
                                         */
   real_T SFunction_P1_Size[2];         /* Computed Parameter: SFunction_P1_Size
-                                        * Referenced by: '<S48>/S-Function'
+                                        * Referenced by: '<S50>/S-Function'
                                         */
   real_T SFunction_P1;                 /* Expression: dest
-                                        * Referenced by: '<S48>/S-Function'
+                                        * Referenced by: '<S50>/S-Function'
                                         */
   real_T SFunction_P2_Size[2];         /* Computed Parameter: SFunction_P2_Size
-                                        * Referenced by: '<S48>/S-Function'
+                                        * Referenced by: '<S50>/S-Function'
                                         */
   real_T SFunction_P2;                 /* Expression: priority2
-                                        * Referenced by: '<S48>/S-Function'
+                                        * Referenced by: '<S50>/S-Function'
                                         */
   real_T SFunction_P3_Size[2];         /* Computed Parameter: SFunction_P3_Size
-                                        * Referenced by: '<S48>/S-Function'
+                                        * Referenced by: '<S50>/S-Function'
                                         */
   real_T SFunction_P3;                 /* Expression: st
-                                        * Referenced by: '<S48>/S-Function'
+                                        * Referenced by: '<S50>/S-Function'
                                         */
   real_T SFunction1_Value;             /* Expression: 0
-                                        * Referenced by: '<S1>/S-Function1'
+                                        * Referenced by: '<S2>/S-Function1'
                                         */
   real_T SFunction_X0;                 /* Expression: 0
-                                        * Referenced by: '<S1>/S-Function'
+                                        * Referenced by: '<S2>/S-Function'
                                         */
   real_T Memory_1_X0;                  /* Expression: 0
-                                        * Referenced by: '<S2>/Memory'
+                                        * Referenced by: '<S3>/Memory'
                                         */
   real_T Memory_2_X0;                  /* Expression: 0
-                                        * Referenced by: '<S2>/Memory'
+                                        * Referenced by: '<S3>/Memory'
                                         */
   real_T Memory_3_X0;                  /* Expression: 0
-                                        * Referenced by: '<S2>/Memory'
+                                        * Referenced by: '<S3>/Memory'
                                         */
   real_T Memory_4_X0;                  /* Expression: 0
-                                        * Referenced by: '<S2>/Memory'
+                                        * Referenced by: '<S3>/Memory'
                                         */
   real_T Memory_5_X0;                  /* Expression: 0
-                                        * Referenced by: '<S2>/Memory'
+                                        * Referenced by: '<S3>/Memory'
                                         */
   real_T Memory_6_X0;                  /* Expression: 0
-                                        * Referenced by: '<S2>/Memory'
+                                        * Referenced by: '<S3>/Memory'
                                         */
   real_T Memory1_1_X0;                 /* Expression: 0
-                                        * Referenced by: '<S2>/Memory1'
+                                        * Referenced by: '<S3>/Memory1'
                                         */
   real_T Memory1_2_X0;                 /* Expression: 0
-                                        * Referenced by: '<S2>/Memory1'
+                                        * Referenced by: '<S3>/Memory1'
                                         */
   real_T Memory1_3_X0;                 /* Expression: 0
-                                        * Referenced by: '<S2>/Memory1'
+                                        * Referenced by: '<S3>/Memory1'
                                         */
   real_T Memory1_4_X0;                 /* Expression: 0
-                                        * Referenced by: '<S2>/Memory1'
+                                        * Referenced by: '<S3>/Memory1'
                                         */
   real_T Memory1_5_X0;                 /* Expression: 0
-                                        * Referenced by: '<S2>/Memory1'
+                                        * Referenced by: '<S3>/Memory1'
                                         */
   real_T Memory1_6_X0;                 /* Expression: 0
-                                        * Referenced by: '<S2>/Memory1'
+                                        * Referenced by: '<S3>/Memory1'
                                         */
-  real_T SFunction_P1_Size_j[2];       /* Computed Parameter: SFunction_P1_Size_j
-                                        * Referenced by: '<S46>/S-Function'
+  real_T Memory1_7_X0;                 /* Expression: 0
+                                        * Referenced by: '<S3>/Memory1'
                                         */
-  real_T SFunction_P1_k;               /* Expression: Acqu_group
-                                        * Referenced by: '<S46>/S-Function'
+  real_T Memory1_8_X0;                 /* Expression: 0
+                                        * Referenced by: '<S3>/Memory1'
+                                        */
+  real_T SFunction_P1_Size_i[2];       /* Computed Parameter: SFunction_P1_Size_i
+                                        * Referenced by: '<S48>/S-Function'
+                                        */
+  real_T SFunction_P1_j;               /* Expression: Acqu_group
+                                        * Referenced by: '<S48>/S-Function'
                                         */
   real_T OpMonitor_P1_Size[2];         /* Computed Parameter: OpMonitor_P1_Size
-                                        * Referenced by: '<S2>/OpMonitor'
+                                        * Referenced by: '<S3>/OpMonitor'
                                         */
   real_T OpMonitor_P1;                 /* Expression: compute_time
-                                        * Referenced by: '<S2>/OpMonitor'
+                                        * Referenced by: '<S3>/OpMonitor'
                                         */
   real_T OpMonitor_P2_Size[2];         /* Computed Parameter: OpMonitor_P2_Size
-                                        * Referenced by: '<S2>/OpMonitor'
+                                        * Referenced by: '<S3>/OpMonitor'
                                         */
   real_T OpMonitor_P2;                 /* Expression: real_step
-                                        * Referenced by: '<S2>/OpMonitor'
+                                        * Referenced by: '<S3>/OpMonitor'
                                         */
   real_T OpMonitor_P3_Size[2];         /* Computed Parameter: OpMonitor_P3_Size
-                                        * Referenced by: '<S2>/OpMonitor'
+                                        * Referenced by: '<S3>/OpMonitor'
                                         */
   real_T OpMonitor_P3;                 /* Expression: idle_time
-                                        * Referenced by: '<S2>/OpMonitor'
+                                        * Referenced by: '<S3>/OpMonitor'
                                         */
   real_T OpMonitor_P4_Size[2];         /* Computed Parameter: OpMonitor_P4_Size
-                                        * Referenced by: '<S2>/OpMonitor'
+                                        * Referenced by: '<S3>/OpMonitor'
                                         */
   real_T OpMonitor_P4;                 /* Expression: nb_overruns
-                                        * Referenced by: '<S2>/OpMonitor'
+                                        * Referenced by: '<S3>/OpMonitor'
                                         */
   real_T OpMonitor_P5_Size[2];         /* Computed Parameter: OpMonitor_P5_Size
-                                        * Referenced by: '<S2>/OpMonitor'
+                                        * Referenced by: '<S3>/OpMonitor'
                                         */
   real_T OpMonitor_P5;                 /* Expression: user_time
-                                        * Referenced by: '<S2>/OpMonitor'
+                                        * Referenced by: '<S3>/OpMonitor'
                                         */
   real_T OpMonitor_P6_Size[2];         /* Computed Parameter: OpMonitor_P6_Size
-                                        * Referenced by: '<S2>/OpMonitor'
+                                        * Referenced by: '<S3>/OpMonitor'
                                         */
   real_T OpMonitor_P6[32];             /* Computed Parameter: OpMonitor_P6
-                                        * Referenced by: '<S2>/OpMonitor'
+                                        * Referenced by: '<S3>/OpMonitor'
                                         */
-  real_T SFunction_P1_Size_h[2];       /* Computed Parameter: SFunction_P1_Size_h
-                                        * Referenced by: '<S47>/S-Function'
+  real_T SFunction_P1_Size_p[2];       /* Computed Parameter: SFunction_P1_Size_p
+                                        * Referenced by: '<S49>/S-Function'
                                         */
-  real_T SFunction_P1_c;               /* Expression: Acqu_group
-                                        * Referenced by: '<S47>/S-Function'
+  real_T SFunction_P1_l;               /* Expression: Acqu_group
+                                        * Referenced by: '<S49>/S-Function'
                                         */
   real_T u_Value;                      /* Expression: 0
-                                        * Referenced by: '<S23>/0 4'
+                                        * Referenced by: '<S24>/0 4'
                                         */
   real_T UnitDelay_InitialCondition_p; /* Expression: 0
-                                        * Referenced by: '<S23>/Unit Delay'
+                                        * Referenced by: '<S24>/Unit Delay'
                                         */
-  real_T SFunction_P1_Size_o[2];       /* Computed Parameter: SFunction_P1_Size_o
-                                        * Referenced by: '<S49>/S-Function'
+  real_T SFunction_P1_Size_d[2];       /* Computed Parameter: SFunction_P1_Size_d
+                                        * Referenced by: '<S51>/S-Function'
                                         */
-  real_T SFunction_P1_cs;              /* Expression: src
-                                        * Referenced by: '<S49>/S-Function'
+  real_T SFunction_P1_d;               /* Expression: src
+                                        * Referenced by: '<S51>/S-Function'
                                         */
-  real_T SFunction_P2_Size_f[2];       /* Computed Parameter: SFunction_P2_Size_f
-                                        * Referenced by: '<S49>/S-Function'
+  real_T SFunction_P2_Size_b[2];       /* Computed Parameter: SFunction_P2_Size_b
+                                        * Referenced by: '<S51>/S-Function'
                                         */
-  real_T SFunction_P2_h;               /* Expression: Data_width
-                                        * Referenced by: '<S49>/S-Function'
+  real_T SFunction_P2_a;               /* Expression: Data_width
+                                        * Referenced by: '<S51>/S-Function'
                                         */
-  real_T SFunction_P3_Size_j[2];       /* Computed Parameter: SFunction_P3_Size_j
-                                        * Referenced by: '<S49>/S-Function'
+  real_T SFunction_P3_Size_d[2];       /* Computed Parameter: SFunction_P3_Size_d
+                                        * Referenced by: '<S51>/S-Function'
                                         */
-  real_T SFunction_P3_c;               /* Expression: st
-                                        * Referenced by: '<S49>/S-Function'
+  real_T SFunction_P3_d;               /* Expression: st
+                                        * Referenced by: '<S51>/S-Function'
+                                        */
+  real_T NotinARTEMIS_Value;           /* Expression: 0
+                                        * Referenced by: '<S24>/Not in ARTEMIS'
                                         */
   real_T AC_Bias;                      /* Expression: 0
-                                        * Referenced by: '<S42>/AC'
+                                        * Referenced by: '<S44>/AC'
+                                        */
+  real_T StateSpace_P1_Size[2];        /* Computed Parameter: StateSpace_P1_Size
+                                        * Referenced by: '<S54>/State-Space'
+                                        */
+  real_T StateSpace_P1[19];            /* Expression: sizeABCD
+                                        * Referenced by: '<S54>/State-Space'
+                                        */
+  real_T StateSpace_P2_Size[2];        /* Computed Parameter: StateSpace_P2_Size
+                                        * Referenced by: '<S54>/State-Space'
+                                        */
+  real_T StateSpace_P2[10];            /* Expression: x0
+                                        * Referenced by: '<S54>/State-Space'
+                                        */
+  real_T StateSpace_P3_Size[2];        /* Computed Parameter: StateSpace_P3_Size
+                                        * Referenced by: '<S54>/State-Space'
+                                        */
+  real_T StateSpace_P3;                /* Expression: sw_initcond_decimal
+                                        * Referenced by: '<S54>/State-Space'
+                                        */
+  real_T StateSpace_P4_Size[2];        /* Computed Parameter: StateSpace_P4_Size
+                                        * Referenced by: '<S54>/State-Space'
+                                        */
+  real_T StateSpace_P4[7];             /* Expression: u0
+                                        * Referenced by: '<S54>/State-Space'
+                                        */
+  real_T StateSpace_P5_Size[2];        /* Computed Parameter: StateSpace_P5_Size
+                                        * Referenced by: '<S54>/State-Space'
+                                        */
+  real_T StateSpace_P5;                /* Expression: Ts
+                                        * Referenced by: '<S54>/State-Space'
+                                        */
+  real_T StateSpace_P6_Size[2];        /* Computed Parameter: StateSpace_P6_Size
+                                        * Referenced by: '<S54>/State-Space'
+                                        */
+  real_T StateSpace_P6[11];            /* Expression: holdtype
+                                        * Referenced by: '<S54>/State-Space'
+                                        */
+  real_T StateSpace_P7_Size[2];        /* Computed Parameter: StateSpace_P7_Size
+                                        * Referenced by: '<S54>/State-Space'
+                                        */
+  real_T StateSpace_P7[42];            /* Expression: Cspa_param
+                                        * Referenced by: '<S54>/State-Space'
+                                        */
+  real_T StateSpace_P8_Size[2];        /* Computed Parameter: StateSpace_P8_Size
+                                        * Referenced by: '<S54>/State-Space'
+                                        */
+  real_T StateSpace_P8[17];            /* Expression: Dspa_param
+                                        * Referenced by: '<S54>/State-Space'
+                                        */
+  real_T StateSpace_P9_Size[2];        /* Computed Parameter: StateSpace_P9_Size
+                                        * Referenced by: '<S54>/State-Space'
+                                        */
+  real_T StateSpace_P9;                /* Expression: Bspa_param
+                                        * Referenced by: '<S54>/State-Space'
+                                        */
+  real_T StateSpace_P10_Size[2];       /* Computed Parameter: StateSpace_P10_Size
+                                        * Referenced by: '<S54>/State-Space'
+                                        */
+  real_T StateSpace_P10;               /* Expression: nb_sw
+                                        * Referenced by: '<S54>/State-Space'
+                                        */
+  real_T StateSpace_P11_Size[2];       /* Computed Parameter: StateSpace_P11_Size
+                                        * Referenced by: '<S54>/State-Space'
+                                        */
+  real_T StateSpace_P11;               /* Expression: matfile
+                                        * Referenced by: '<S54>/State-Space'
+                                        */
+  real_T StateSpace_P12_Size[2];       /* Computed Parameter: StateSpace_P12_Size
+                                        * Referenced by: '<S54>/State-Space'
+                                        */
+  real_T StateSpace_P12;               /* Expression: methode
+                                        * Referenced by: '<S54>/State-Space'
+                                        */
+  real_T StateSpace_P13_Size[2];       /* Computed Parameter: StateSpace_P13_Size
+                                        * Referenced by: '<S54>/State-Space'
+                                        */
+  real_T StateSpace_P13;               /* Expression: subnum
+                                        * Referenced by: '<S54>/State-Space'
+                                        */
+  real_T StateSpace_P14_Size[2];       /* Computed Parameter: StateSpace_P14_Size
+                                        * Referenced by: '<S54>/State-Space'
+                                        */
+  real_T StateSpace_P14[4];            /* Expression: Rswitch
+                                        * Referenced by: '<S54>/State-Space'
+                                        */
+  real_T StateSpace_P15_Size[2];       /* Computed Parameter: StateSpace_P15_Size
+                                        * Referenced by: '<S54>/State-Space'
+                                        */
+  real_T StateSpace_P15;               /* Expression: dyna
+                                        * Referenced by: '<S54>/State-Space'
+                                        */
+  real_T StateSpace_P16_Size[2];       /* Computed Parameter: StateSpace_P16_Size
+                                        * Referenced by: '<S54>/State-Space'
+                                        */
+  real_T StateSpace_P16[3];            /* Expression: FOHinput
+                                        * Referenced by: '<S54>/State-Space'
+                                        */
+  real_T StateSpace_P17_Size[2];       /* Computed Parameter: StateSpace_P17_Size
+                                        * Referenced by: '<S54>/State-Space'
+                                        */
+  real_T StateSpace_P17[4];            /* Expression: TypeSwitch
+                                        * Referenced by: '<S54>/State-Space'
+                                        */
+  real_T StateSpace_P18_Size[2];       /* Computed Parameter: StateSpace_P18_Size
+                                        * Referenced by: '<S54>/State-Space'
+                                        */
+  real_T StateSpace_P18[100];          /* Expression: Aart
+                                        * Referenced by: '<S54>/State-Space'
+                                        */
+  real_T StateSpace_P19_Size[2];       /* Computed Parameter: StateSpace_P19_Size
+                                        * Referenced by: '<S54>/State-Space'
+                                        */
+  real_T StateSpace_P19[70];           /* Expression: Bart
+                                        * Referenced by: '<S54>/State-Space'
+                                        */
+  real_T StateSpace_P20_Size[2];       /* Computed Parameter: StateSpace_P20_Size
+                                        * Referenced by: '<S54>/State-Space'
+                                        */
+  real_T StateSpace_P20[120];          /* Expression: Cart
+                                        * Referenced by: '<S54>/State-Space'
+                                        */
+  real_T StateSpace_P21_Size[2];       /* Computed Parameter: StateSpace_P21_Size
+                                        * Referenced by: '<S54>/State-Space'
+                                        */
+  real_T StateSpace_P21[84];           /* Expression: Dart
+                                        * Referenced by: '<S54>/State-Space'
+                                        */
+  real_T StateSpace_P22_Size[2];       /* Computed Parameter: StateSpace_P22_Size
+                                        * Referenced by: '<S54>/State-Space'
+                                        */
+  real_T StateSpace_P22;               /* Expression: Opaldtc
+                                        * Referenced by: '<S54>/State-Space'
+                                        */
+  real_T StateSpace_P23_Size[2];       /* Computed Parameter: StateSpace_P23_Size
+                                        * Referenced by: '<S54>/State-Space'
+                                        */
+  real_T StateSpace_P23[3];            /* Expression: Thy_ind_src
+                                        * Referenced by: '<S54>/State-Space'
                                         */
   real_T Ron_Gain;                     /* Expression: 1./Ron
-                                        * Referenced by: '<S23>/1//Ron'
+                                        * Referenced by: '<S24>/1//Ron'
                                         */
   real_T Switch_Threshold_l;           /* Expression: 0.5
-                                        * Referenced by: '<S23>/Switch'
+                                        * Referenced by: '<S24>/Switch'
                                         */
   real_T Saturation_UpperSat;          /* Expression: inf
-                                        * Referenced by: '<S23>/Saturation'
+                                        * Referenced by: '<S24>/Saturation'
                                         */
   real_T Saturation_LowerSat;          /* Expression: 0
-                                        * Referenced by: '<S23>/Saturation'
+                                        * Referenced by: '<S24>/Saturation'
                                         */
   real_T VfDevicesClampingDiodes_Value[4];/* Expression: Vf_SwitchOn
-                                           * Referenced by: '<S25>/Vf Devices & Clamping Diodes'
+                                           * Referenced by: '<S26>/Vf Devices & Clamping Diodes'
                                            */
   real_T VfDiodes_Value[4];            /* Expression: Vf_DiodeOn
-                                        * Referenced by: '<S25>/Vf Diodes'
+                                        * Referenced by: '<S26>/Vf Diodes'
                                         */
   real_T donotdeletethisgain_Gain;     /* Expression: 1
-                                        * Referenced by: '<S5>/do not delete this gain'
+                                        * Referenced by: '<S6>/do not delete this gain'
                                         */
   real_T integrator_IC;                /* Expression: 0
-                                        * Referenced by: '<S27>/integrator'
+                                        * Referenced by: '<S29>/integrator'
                                         */
   real_T TransportDelay_Delay;         /* Expression: 1./sps.Freq
-                                        * Referenced by: '<S27>/Transport Delay'
+                                        * Referenced by: '<S29>/Transport Delay'
                                         */
   real_T TransportDelay_InitOutput;    /* Expression: 0
-                                        * Referenced by: '<S27>/Transport Delay'
+                                        * Referenced by: '<S29>/Transport Delay'
                                         */
   real_T K1_Value;                     /* Expression: 1./sps.Freq
-                                        * Referenced by: '<S27>/K1'
+                                        * Referenced by: '<S29>/K1'
                                         */
   real_T Memory_X0;                    /* Expression: sps.Vinit
-                                        * Referenced by: '<S27>/Memory'
+                                        * Referenced by: '<S29>/Memory'
                                         */
   real_T integrator_IC_i;              /* Expression: 0
-                                        * Referenced by: '<S28>/integrator'
+                                        * Referenced by: '<S30>/integrator'
                                         */
   real_T TransportDelay_Delay_j;       /* Expression: 1./sps.Freq
-                                        * Referenced by: '<S28>/Transport Delay'
+                                        * Referenced by: '<S30>/Transport Delay'
                                         */
   real_T TransportDelay_InitOutput_i;  /* Expression: 0
-                                        * Referenced by: '<S28>/Transport Delay'
+                                        * Referenced by: '<S30>/Transport Delay'
                                         */
   real_T K1_Value_o;                   /* Expression: 1./sps.Freq
-                                        * Referenced by: '<S28>/K1'
+                                        * Referenced by: '<S30>/K1'
                                         */
   real_T Memory_X0_k;                  /* Expression: sps.Vinit
-                                        * Referenced by: '<S28>/Memory'
+                                        * Referenced by: '<S30>/Memory'
                                         */
-  real_T SFunction_P1_Size_e[2];       /* Computed Parameter: SFunction_P1_Size_e
-                                        * Referenced by: '<S29>/S-Function'
+  real_T SFunction_P1_Size_f[2];       /* Computed Parameter: SFunction_P1_Size_f
+                                        * Referenced by: '<S31>/S-Function'
                                         */
-  real_T SFunction_P1_l;               /* Expression: Data_width
-                                        * Referenced by: '<S29>/S-Function'
+  real_T SFunction_P1_o;               /* Expression: Data_width
+                                        * Referenced by: '<S31>/S-Function'
                                         */
   real_T SFunction_P2_Size_m[2];       /* Computed Parameter: SFunction_P2_Size_m
-                                        * Referenced by: '<S29>/S-Function'
+                                        * Referenced by: '<S31>/S-Function'
                                         */
-  real_T SFunction_P2_hy[2];           /* Expression: InitialConditions
-                                        * Referenced by: '<S29>/S-Function'
-                                        */
-  real_T donotdeletethisgain_Gain_j;   /* Expression: 1
-                                        * Referenced by: '<S32>/do not delete this gain'
-                                        */
-  real_T RateLimiter_RisingLim;        /* Computed Parameter: RateLimiter_RisingLim
-                                        * Referenced by: '<S11>/Rate Limiter'
-                                        */
-  real_T RateLimiter_FallingLim;       /* Computed Parameter: RateLimiter_FallingLim
-                                        * Referenced by: '<S11>/Rate Limiter'
-                                        */
-  real_T RateLimiter_IC;               /* Expression: 1000
-                                        * Referenced by: '<S11>/Rate Limiter'
-                                        */
-  real_T Saturation_UpperSat_e;        /* Expression: 55
-                                        * Referenced by: '<S11>/Saturation'
-                                        */
-  real_T Saturation_LowerSat_o;        /* Expression: 5
-                                        * Referenced by: '<S11>/Saturation'
+  real_T SFunction_P2_l[2];            /* Expression: InitialConditions
+                                        * Referenced by: '<S31>/S-Function'
                                         */
   real_T donotdeletethisgain_Gain_n;   /* Expression: 1
-                                        * Referenced by: '<S33>/do not delete this gain'
+                                        * Referenced by: '<S35>/do not delete this gain'
                                         */
-  real_T donotdeletethisgain_Gain_jy;  /* Expression: 1
+  real_T donotdeletethisgain_Gain_j;   /* Expression: 1
                                         * Referenced by: '<S34>/do not delete this gain'
                                         */
-  real_T donotdeletethisgain_Gain_g;   /* Expression: 1
-                                        * Referenced by: '<S12>/do not delete this gain'
+  real_T RateLimiter_RisingLim;        /* Computed Parameter: RateLimiter_RisingLim
+                                        * Referenced by: '<S12>/Rate Limiter'
                                         */
-  real_T donotdeletethisgain_Gain_h;   /* Expression: 1
+  real_T RateLimiter_FallingLim;       /* Computed Parameter: RateLimiter_FallingLim
+                                        * Referenced by: '<S12>/Rate Limiter'
+                                        */
+  real_T RateLimiter_IC;               /* Expression: 1000
+                                        * Referenced by: '<S12>/Rate Limiter'
+                                        */
+  real_T Saturation_UpperSat_e;        /* Expression: 55
+                                        * Referenced by: '<S12>/Saturation'
+                                        */
+  real_T Saturation_LowerSat_o;        /* Expression: 5
+                                        * Referenced by: '<S12>/Saturation'
+                                        */
+  real_T donotdeletethisgain_Gain_jy;  /* Expression: 1
+                                        * Referenced by: '<S36>/do not delete this gain'
+                                        */
+  real_T donotdeletethisgain_Gain_g;   /* Expression: 1
                                         * Referenced by: '<S13>/do not delete this gain'
                                         */
-  real_T donotdeletethisgain_Gain_c;   /* Expression: 1
-                                        * Referenced by: '<S19>/do not delete this gain'
+  real_T donotdeletethisgain_Gain_h;   /* Expression: 1
+                                        * Referenced by: '<S14>/do not delete this gain'
                                         */
-  real_T donotdeletethisgain_Gain_k;   /* Expression: 1
+  real_T donotdeletethisgain_Gain_c;   /* Expression: 1
                                         * Referenced by: '<S20>/do not delete this gain'
                                         */
-  boolean_T _Value_g;                  /* Expression: Tf_sps>0 | Tt_sps>0
-                                        * Referenced by: '<S23>/2'
+  real_T donotdeletethisgain_Gain_k;   /* Expression: 1
+                                        * Referenced by: '<S21>/do not delete this gain'
                                         */
 };
 
@@ -1322,18 +1448,18 @@ struct tag_RTM_my_pv_system_1_sm_master_T {
   struct {
     RTWSfcnInfo sfcnInfo;
     time_T *taskTimePtrs[2];
-    SimStruct childSFunctions[6];
-    SimStruct *childSFunctionPtrs[6];
-    struct _ssBlkInfo2 blkInfo2[6];
-    struct _ssSFcnModelMethods2 methods2[6];
-    struct _ssSFcnModelMethods3 methods3[6];
-    struct _ssStatesInfo2 statesInfo2[6];
+    SimStruct childSFunctions[7];
+    SimStruct *childSFunctionPtrs[7];
+    struct _ssBlkInfo2 blkInfo2[7];
+    struct _ssSFcnModelMethods2 methods2[7];
+    struct _ssSFcnModelMethods3 methods3[7];
+    struct _ssStatesInfo2 statesInfo2[7];
     struct {
       time_T sfcnPeriod[1];
       time_T sfcnOffset[1];
       int_T sfcnTsMap[1];
       struct _ssPortInputs inputPortInfo[1];
-      real_T const *UPtrs0[12];
+      real_T const *UPtrs0[17];
       uint_T attribs[3];
       mxArray *params[3];
       struct _ssDWorkRecord dWork[1];
@@ -1345,7 +1471,7 @@ struct tag_RTM_my_pv_system_1_sm_master_T {
       time_T sfcnOffset[1];
       int_T sfcnTsMap[1];
       struct _ssPortInputs inputPortInfo[1];
-      real_T const *UPtrs0[12];
+      real_T const *UPtrs0[17];
       uint_T attribs[1];
       mxArray *params[1];
       struct _ssDWorkRecord dWork[1];
@@ -1392,10 +1518,24 @@ struct tag_RTM_my_pv_system_1_sm_master_T {
       time_T sfcnPeriod[1];
       time_T sfcnOffset[1];
       int_T sfcnTsMap[1];
+      struct _ssPortInputs inputPortInfo[2];
+      real_T const *UPtrs0[7];
+      real_T const *UPtrs1[4];
+      struct _ssPortOutputs outputPortInfo[2];
+      uint_T attribs[23];
+      mxArray *params[23];
+      struct _ssDWorkRecord dWork[4];
+      struct _ssDWorkAuxRecord dWorkAux[4];
+    } Sfcn5;
+
+    struct {
+      time_T sfcnPeriod[1];
+      time_T sfcnOffset[1];
+      int_T sfcnTsMap[1];
       struct _ssPortOutputs outputPortInfo[1];
       uint_T attribs[2];
       mxArray *params[2];
-    } Sfcn5;
+    } Sfcn6;
   } NonInlinedSFcns;
 
   /*
@@ -1545,61 +1685,63 @@ extern RT_MODEL_my_pv_system_1_sm_master_T *const my_pv_system_1_sm_master_M;
  * Here is the system hierarchy for this model
  *
  * '<Root>' : 'my_pv_system_1_sm_master'
- * '<S1>'   : 'my_pv_system_1_sm_master/OpCCode_do_not_touch'
- * '<S2>'   : 'my_pv_system_1_sm_master/SM_master'
- * '<S3>'   : 'my_pv_system_1_sm_master/powergui'
- * '<S4>'   : 'my_pv_system_1_sm_master/SM_master/75-kVA Transformer (120V//120V//14.4 kV)'
- * '<S5>'   : 'my_pv_system_1_sm_master/SM_master/CM2'
- * '<S6>'   : 'my_pv_system_1_sm_master/SM_master/GRID'
- * '<S7>'   : 'my_pv_system_1_sm_master/SM_master/H-Bridge '
- * '<S8>'   : 'my_pv_system_1_sm_master/SM_master/Mean'
- * '<S9>'   : 'my_pv_system_1_sm_master/SM_master/Mean1'
- * '<S10>'  : 'my_pv_system_1_sm_master/SM_master/OpComm'
- * '<S11>'  : 'my_pv_system_1_sm_master/SM_master/Subsystem'
- * '<S12>'  : 'my_pv_system_1_sm_master/SM_master/Vdc '
- * '<S13>'  : 'my_pv_system_1_sm_master/SM_master/Vdc 1'
- * '<S14>'  : 'my_pv_system_1_sm_master/SM_master/Vs 14,400 V'
- * '<S15>'  : 'my_pv_system_1_sm_master/SM_master/rtlab_send_subsystem'
- * '<S16>'  : 'my_pv_system_1_sm_master/SM_master/zzzOpComm1'
- * '<S17>'  : 'my_pv_system_1_sm_master/SM_master/75-kVA Transformer (120V//120V//14.4 kV)/Model'
- * '<S18>'  : 'my_pv_system_1_sm_master/SM_master/CM2/Model'
- * '<S19>'  : 'my_pv_system_1_sm_master/SM_master/GRID/CM2'
- * '<S20>'  : 'my_pv_system_1_sm_master/SM_master/GRID/Vm2'
- * '<S21>'  : 'my_pv_system_1_sm_master/SM_master/GRID/CM2/Model'
- * '<S22>'  : 'my_pv_system_1_sm_master/SM_master/GRID/Vm2/Model'
- * '<S23>'  : 'my_pv_system_1_sm_master/SM_master/H-Bridge /Model'
- * '<S24>'  : 'my_pv_system_1_sm_master/SM_master/H-Bridge /Model/Tail'
- * '<S25>'  : 'my_pv_system_1_sm_master/SM_master/H-Bridge /Model/Vf 1'
- * '<S26>'  : 'my_pv_system_1_sm_master/SM_master/H-Bridge /Model/Tail/y=f(t)'
- * '<S27>'  : 'my_pv_system_1_sm_master/SM_master/Mean/Model'
- * '<S28>'  : 'my_pv_system_1_sm_master/SM_master/Mean1/Model'
- * '<S29>'  : 'my_pv_system_1_sm_master/SM_master/OpComm/Receive'
- * '<S30>'  : 'my_pv_system_1_sm_master/SM_master/OpComm/busStruct'
- * '<S31>'  : 'my_pv_system_1_sm_master/SM_master/OpComm/busStruct/Sub1'
- * '<S32>'  : 'my_pv_system_1_sm_master/SM_master/Subsystem/Current Measurement'
- * '<S33>'  : 'my_pv_system_1_sm_master/SM_master/Subsystem/Voltage Measurement'
- * '<S34>'  : 'my_pv_system_1_sm_master/SM_master/Subsystem/Voltage Measurement1'
- * '<S35>'  : 'my_pv_system_1_sm_master/SM_master/Subsystem/io '
- * '<S36>'  : 'my_pv_system_1_sm_master/SM_master/Subsystem/iph '
- * '<S37>'  : 'my_pv_system_1_sm_master/SM_master/Subsystem/Current Measurement/Model'
- * '<S38>'  : 'my_pv_system_1_sm_master/SM_master/Subsystem/Voltage Measurement/Model'
- * '<S39>'  : 'my_pv_system_1_sm_master/SM_master/Subsystem/Voltage Measurement1/Model'
- * '<S40>'  : 'my_pv_system_1_sm_master/SM_master/Vdc /Model'
- * '<S41>'  : 'my_pv_system_1_sm_master/SM_master/Vdc 1/Model'
- * '<S42>'  : 'my_pv_system_1_sm_master/SM_master/Vs 14,400 V/Model'
- * '<S43>'  : 'my_pv_system_1_sm_master/SM_master/rtlab_send_subsystem/Subsystem1'
- * '<S44>'  : 'my_pv_system_1_sm_master/SM_master/rtlab_send_subsystem/Subsystem2'
- * '<S45>'  : 'my_pv_system_1_sm_master/SM_master/rtlab_send_subsystem/Subsystem5'
- * '<S46>'  : 'my_pv_system_1_sm_master/SM_master/rtlab_send_subsystem/Subsystem1/Send1'
- * '<S47>'  : 'my_pv_system_1_sm_master/SM_master/rtlab_send_subsystem/Subsystem2/Send2'
- * '<S48>'  : 'my_pv_system_1_sm_master/SM_master/rtlab_send_subsystem/Subsystem5/Send5'
- * '<S49>'  : 'my_pv_system_1_sm_master/SM_master/zzzOpComm1/Receive_1'
- * '<S50>'  : 'my_pv_system_1_sm_master/SM_master/zzzOpComm1/busStruct'
- * '<S51>'  : 'my_pv_system_1_sm_master/SM_master/zzzOpComm1/busStruct/Sub1'
- * '<S52>'  : 'my_pv_system_1_sm_master/powergui/EquivalentModel1'
- * '<S53>'  : 'my_pv_system_1_sm_master/powergui/EquivalentModel1/Gates'
- * '<S54>'  : 'my_pv_system_1_sm_master/powergui/EquivalentModel1/Sources'
- * '<S55>'  : 'my_pv_system_1_sm_master/powergui/EquivalentModel1/Status'
- * '<S56>'  : 'my_pv_system_1_sm_master/powergui/EquivalentModel1/Yout'
+ * '<S1>'   : 'my_pv_system_1_sm_master/ARTEMIS Guide'
+ * '<S2>'   : 'my_pv_system_1_sm_master/OpCCode_do_not_touch'
+ * '<S3>'   : 'my_pv_system_1_sm_master/SM_master'
+ * '<S4>'   : 'my_pv_system_1_sm_master/powergui'
+ * '<S5>'   : 'my_pv_system_1_sm_master/SM_master/75-kVA Transformer (120V//120V//14.4 kV)'
+ * '<S6>'   : 'my_pv_system_1_sm_master/SM_master/CM2'
+ * '<S7>'   : 'my_pv_system_1_sm_master/SM_master/GRID'
+ * '<S8>'   : 'my_pv_system_1_sm_master/SM_master/H-Bridge '
+ * '<S9>'   : 'my_pv_system_1_sm_master/SM_master/Mean'
+ * '<S10>'  : 'my_pv_system_1_sm_master/SM_master/Mean1'
+ * '<S11>'  : 'my_pv_system_1_sm_master/SM_master/OpComm'
+ * '<S12>'  : 'my_pv_system_1_sm_master/SM_master/Subsystem'
+ * '<S13>'  : 'my_pv_system_1_sm_master/SM_master/Vdc '
+ * '<S14>'  : 'my_pv_system_1_sm_master/SM_master/Vdc 1'
+ * '<S15>'  : 'my_pv_system_1_sm_master/SM_master/Vs 14,400 V'
+ * '<S16>'  : 'my_pv_system_1_sm_master/SM_master/rtlab_send_subsystem'
+ * '<S17>'  : 'my_pv_system_1_sm_master/SM_master/zzzOpComm1'
+ * '<S18>'  : 'my_pv_system_1_sm_master/SM_master/75-kVA Transformer (120V//120V//14.4 kV)/Model'
+ * '<S19>'  : 'my_pv_system_1_sm_master/SM_master/CM2/Model'
+ * '<S20>'  : 'my_pv_system_1_sm_master/SM_master/GRID/CM2'
+ * '<S21>'  : 'my_pv_system_1_sm_master/SM_master/GRID/Vm2'
+ * '<S22>'  : 'my_pv_system_1_sm_master/SM_master/GRID/CM2/Model'
+ * '<S23>'  : 'my_pv_system_1_sm_master/SM_master/GRID/Vm2/Model'
+ * '<S24>'  : 'my_pv_system_1_sm_master/SM_master/H-Bridge /Model'
+ * '<S25>'  : 'my_pv_system_1_sm_master/SM_master/H-Bridge /Model/Tail'
+ * '<S26>'  : 'my_pv_system_1_sm_master/SM_master/H-Bridge /Model/Vf 1'
+ * '<S27>'  : 'my_pv_system_1_sm_master/SM_master/H-Bridge /Model/fts5conversion'
+ * '<S28>'  : 'my_pv_system_1_sm_master/SM_master/H-Bridge /Model/Tail/y=f(t)'
+ * '<S29>'  : 'my_pv_system_1_sm_master/SM_master/Mean/Model'
+ * '<S30>'  : 'my_pv_system_1_sm_master/SM_master/Mean1/Model'
+ * '<S31>'  : 'my_pv_system_1_sm_master/SM_master/OpComm/Receive'
+ * '<S32>'  : 'my_pv_system_1_sm_master/SM_master/OpComm/busStruct'
+ * '<S33>'  : 'my_pv_system_1_sm_master/SM_master/OpComm/busStruct/Sub1'
+ * '<S34>'  : 'my_pv_system_1_sm_master/SM_master/Subsystem/Current Measurement'
+ * '<S35>'  : 'my_pv_system_1_sm_master/SM_master/Subsystem/Voltage Measurement'
+ * '<S36>'  : 'my_pv_system_1_sm_master/SM_master/Subsystem/Voltage Measurement1'
+ * '<S37>'  : 'my_pv_system_1_sm_master/SM_master/Subsystem/io '
+ * '<S38>'  : 'my_pv_system_1_sm_master/SM_master/Subsystem/iph '
+ * '<S39>'  : 'my_pv_system_1_sm_master/SM_master/Subsystem/Current Measurement/Model'
+ * '<S40>'  : 'my_pv_system_1_sm_master/SM_master/Subsystem/Voltage Measurement/Model'
+ * '<S41>'  : 'my_pv_system_1_sm_master/SM_master/Subsystem/Voltage Measurement1/Model'
+ * '<S42>'  : 'my_pv_system_1_sm_master/SM_master/Vdc /Model'
+ * '<S43>'  : 'my_pv_system_1_sm_master/SM_master/Vdc 1/Model'
+ * '<S44>'  : 'my_pv_system_1_sm_master/SM_master/Vs 14,400 V/Model'
+ * '<S45>'  : 'my_pv_system_1_sm_master/SM_master/rtlab_send_subsystem/Subsystem1'
+ * '<S46>'  : 'my_pv_system_1_sm_master/SM_master/rtlab_send_subsystem/Subsystem2'
+ * '<S47>'  : 'my_pv_system_1_sm_master/SM_master/rtlab_send_subsystem/Subsystem5'
+ * '<S48>'  : 'my_pv_system_1_sm_master/SM_master/rtlab_send_subsystem/Subsystem1/Send1'
+ * '<S49>'  : 'my_pv_system_1_sm_master/SM_master/rtlab_send_subsystem/Subsystem2/Send2'
+ * '<S50>'  : 'my_pv_system_1_sm_master/SM_master/rtlab_send_subsystem/Subsystem5/Send5'
+ * '<S51>'  : 'my_pv_system_1_sm_master/SM_master/zzzOpComm1/Receive_1'
+ * '<S52>'  : 'my_pv_system_1_sm_master/SM_master/zzzOpComm1/busStruct'
+ * '<S53>'  : 'my_pv_system_1_sm_master/SM_master/zzzOpComm1/busStruct/Sub1'
+ * '<S54>'  : 'my_pv_system_1_sm_master/powergui/EquivalentModel1'
+ * '<S55>'  : 'my_pv_system_1_sm_master/powergui/EquivalentModel1/Gates'
+ * '<S56>'  : 'my_pv_system_1_sm_master/powergui/EquivalentModel1/Sources'
+ * '<S57>'  : 'my_pv_system_1_sm_master/powergui/EquivalentModel1/Status'
+ * '<S58>'  : 'my_pv_system_1_sm_master/powergui/EquivalentModel1/Yout'
  */
 #endif                                 /* RTW_HEADER_my_pv_system_1_sm_master_h_ */

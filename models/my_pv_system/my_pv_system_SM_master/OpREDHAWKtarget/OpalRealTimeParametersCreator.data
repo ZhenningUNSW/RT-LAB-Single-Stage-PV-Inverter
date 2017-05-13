@@ -10,11 +10,11 @@ SM_master/Vs 14,400 V/Model/AC/Phase
 16
 F64
 1
-SM_master/H-Bridge /Model/Tail/2/Value
+SM_master/H-Bridge /Model/Tail/y=f(t)/Constant2/Value
 24
 F64
 1
-SM_master/H-Bridge /Model/Tail/2/Value
+SM_master/H-Bridge /Model/Tail/y=f(t)/Constant2/Value
 32
 F64
 1
@@ -26,52 +26,52 @@ SM_master/H-Bridge /Model/Tail/1/Value
 48
 F64
 1
-SM_master/H-Bridge /Model/Tail/Discrete-Time Integrator/gainval
+SM_master/H-Bridge /Model/Tail/2/Value
 56
 F64
 1
-SM_master/H-Bridge /Model/Tail/Discrete-Time Integrator/InitialCondition
+SM_master/H-Bridge /Model/Tail/Discrete-Time Integrator/gainval
 64
 F64
 1
-SM_master/H-Bridge /Model/Tail/y=f(t)/Constant/Value
+SM_master/H-Bridge /Model/Tail/Discrete-Time Integrator/InitialCondition
 72
 F64
 1
-SM_master/H-Bridge /Model/Tail/y=f(t)/Saturation1/UpperLimit
+SM_master/H-Bridge /Model/Tail/y=f(t)/Constant/Value
 80
 F64
 1
-SM_master/H-Bridge /Model/Tail/y=f(t)/Saturation1/LowerLimit
+SM_master/H-Bridge /Model/Tail/y=f(t)/Saturation1/UpperLimit
 88
 F64
 1
-SM_master/H-Bridge /Model/Tail/y=f(t)/Saturation2/UpperLimit
+SM_master/H-Bridge /Model/Tail/y=f(t)/Saturation1/LowerLimit
 96
 F64
 1
-SM_master/H-Bridge /Model/Tail/y=f(t)/Saturation2/LowerLimit
+SM_master/H-Bridge /Model/Tail/y=f(t)/Saturation2/UpperLimit
 104
 F64
 1
-SM_master/H-Bridge /Model/Tail/Unit Delay/InitialCondition
+SM_master/H-Bridge /Model/Tail/y=f(t)/Saturation2/LowerLimit
 112
 F64
 1
-SM_master/H-Bridge /Model/Tail/Switch/Threshold
+SM_master/H-Bridge /Model/Tail/Unit Delay/InitialCondition
 120
 F64
 1
-SM_master/Mean/Model/Gain/Gain
+SM_master/H-Bridge /Model/Tail/Switch/Threshold
 128
 F64
 1
-SM_master/Mean1/Model/Gain/Gain
+SM_master/Mean/Model/Gain/Gain
 136
 F64
 1
-SM_master/Memory/X0
-232
+SM_master/Mean1/Model/Gain/Gain
+144
 F64
 1
 SM_master/Memory/X0
@@ -94,7 +94,7 @@ SM_master/Memory/X0
 272
 F64
 1
-SM_master/Memory1/X0
+SM_master/Memory/X0
 280
 F64
 1
@@ -118,135 +118,147 @@ SM_master/Memory1/X0
 320
 F64
 1
+SM_master/Memory1/X0
+328
+F64
+1
+SM_master/Memory1/X0
+336
+F64
+1
+SM_master/Memory1/X0
+344
+F64
+1
 SM_master/H-Bridge /Model/0 4/Value
-768
+792
 F64
 1
 SM_master/H-Bridge /Model/Unit Delay/InitialCondition
-776
+800
 F64
 1
-SM_master/Vs 14,400 V/Model/AC/Bias
-856
-F64
-1
-SM_master/H-Bridge /Model/1__Ron/Gain
-864
-F64
-1
-SM_master/H-Bridge /Model/Switch/Threshold
-872
-F64
-1
-SM_master/H-Bridge /Model/Saturation/UpperLimit
+SM_master/H-Bridge /Model/Not in ARTEMIS/Value
 880
 F64
 1
-SM_master/H-Bridge /Model/Saturation/LowerLimit
+SM_master/Vs 14,400 V/Model/AC/Bias
 888
 F64
 1
+SM_master/H-Bridge /Model/1__Ron/Gain
+5288
+F64
+1
+SM_master/H-Bridge /Model/Switch/Threshold
+5296
+F64
+1
+SM_master/H-Bridge /Model/Saturation/UpperLimit
+5304
+F64
+1
+SM_master/H-Bridge /Model/Saturation/LowerLimit
+5312
+F64
+1
 SM_master/H-Bridge /Model/Vf 1/Vf Devices & Clamping Diodes/Value
-896
+5320
 F64
 4
 SM_master/H-Bridge /Model/Vf 1/Vf Diodes/Value
-928
+5352
 F64
 4
 SM_master/CM2/do not delete this gain/Gain
-960
+5384
 F64
 1
 SM_master/Mean/Model/integrator/InitialCondition
-968
+5392
 F64
 1
 SM_master/Mean/Model/Transport Delay/DelayTime
-976
+5400
 F64
 1
 SM_master/Mean/Model/Transport Delay/InitialOutput
-984
+5408
 F64
 1
 SM_master/Mean/Model/K1/Value
-992
+5416
 F64
 1
 SM_master/Mean/Model/Memory/X0
-1000
+5424
 F64
 1
 SM_master/Mean1/Model/integrator/InitialCondition
-1008
+5432
 F64
 1
 SM_master/Mean1/Model/Transport Delay/DelayTime
-1016
+5440
 F64
 1
 SM_master/Mean1/Model/Transport Delay/InitialOutput
-1024
+5448
 F64
 1
 SM_master/Mean1/Model/K1/Value
-1032
+5456
 F64
 1
 SM_master/Mean1/Model/Memory/X0
-1040
-F64
-1
-SM_master/Subsystem/Current Measurement/do not delete this gain/Gain
-1104
-F64
-1
-SM_master/Subsystem/Rate Limiter/RisingSlewLimit
-1112
-F64
-1
-SM_master/Subsystem/Rate Limiter/FallingSlewLimit
-1120
-F64
-1
-SM_master/Subsystem/Rate Limiter/InitialCondition
-1128
-F64
-1
-SM_master/Subsystem/Saturation/UpperLimit
-1136
-F64
-1
-SM_master/Subsystem/Saturation/LowerLimit
-1144
+5464
 F64
 1
 SM_master/Subsystem/Voltage Measurement/do not delete this gain/Gain
-1152
+5528
+F64
+1
+SM_master/Subsystem/Current Measurement/do not delete this gain/Gain
+5536
+F64
+1
+SM_master/Subsystem/Rate Limiter/RisingSlewLimit
+5544
+F64
+1
+SM_master/Subsystem/Rate Limiter/FallingSlewLimit
+5552
+F64
+1
+SM_master/Subsystem/Rate Limiter/InitialCondition
+5560
+F64
+1
+SM_master/Subsystem/Saturation/UpperLimit
+5568
+F64
+1
+SM_master/Subsystem/Saturation/LowerLimit
+5576
 F64
 1
 SM_master/Subsystem/Voltage Measurement1/do not delete this gain/Gain
-1160
+5584
 F64
 1
 SM_master/Vdc /do not delete this gain/Gain
-1168
+5592
 F64
 1
 SM_master/Vdc 1/do not delete this gain/Gain
-1176
+5600
 F64
 1
 SM_master/GRID/CM2/do not delete this gain/Gain
-1184
+5608
 F64
 1
 SM_master/GRID/Vm2/do not delete this gain/Gain
-1192
+5616
 F64
-1
-SM_master/H-Bridge /Model/2/Value
-1200
-Boolean
 1

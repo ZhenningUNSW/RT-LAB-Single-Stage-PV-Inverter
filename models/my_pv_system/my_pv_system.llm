@@ -26,27 +26,37 @@ NB_STEP_WITHOUT_OVERRUNS=10
 OPAL_DEBUG=OFF
 OP_MATLABR2014B=1
 OS_COMPILE_RELEASE=2.6.29.6-opalrt-6.1
-PRINT_LOG_LEVEL=ALWAYS
+PRINT_LOG_LEVEL=DEBUG_ALL
 RESET_IO_MISSING=ON
 SYSNAME=linux
 USER_INCS=
 USER_SRCS=
 WATCHDOG_TIMEOUT=5000
+[EnvVars_REDHAWK_DYN_1]
+INTERNAL_IGN_SOURCE_FILE=fts5abcd_dtc.c fts2flux.c fts2dla.c fts2hfun.c fts5conversion.c fts5stub.c fts5abcd_noncomp.c ftshysteresis.c ssn_sfun_v1.c marti_line.c wb_line.c art_mmc_1p_sf.c art_mmc_1p_condensator_sf.c art_mmc_1p_50_sf.c art_mmc_1p_condensator_50_sf.c art_mmc_2p_1_sf.c art_mmc_2p_2_sf.c art_mmc_2p_condensator_sf.c art_mmc_cap_sf.c art_mmc_d_sf.c art_VSCController_dqabc_sf.c art_VSCController_ctrl_sf.c tsb_sfun.c alt_sync_nl_reseau0_sf.c algo_princ0_sf.c consign_del_w0_sf.c consign_del_x0_sf.c consign_del_p0_sf.c model_load0_sf.c mod_turb_nl0_sf.c mod_lin_turb0_sf.c mod_lin_rv0_sf.c thermal_turbine_gov0_sf.c hydro_turb0_sf.c ext_hydro_reg0_sf.c gas_turbine0_sf.c stabilisateur0_sf.c tested_hydro_speed_gov0_sf.c algoberta0_sf.c algo_alerte0_sf.cmmc_2p_ctr0_sf.c
+INTERNAL_LIBRARY3=artemis_RT705931r2014br.a -lOpalRTER2014B
+[EnvVars_REDHAWK_DYN_3]
+INTERNAL_IGN_SOURCE_FILE=fts5abcd_dtc.c fts2flux.c fts2dla.c fts2hfun.c fts5conversion.c fts5stub.c fts5abcd_noncomp.c ftshysteresis.c ssn_sfun_v1.c marti_line.c wb_line.c art_mmc_1p_sf.c art_mmc_1p_condensator_sf.c art_mmc_1p_50_sf.c art_mmc_1p_condensator_50_sf.c art_mmc_2p_1_sf.c art_mmc_2p_2_sf.c art_mmc_2p_condensator_sf.c art_mmc_cap_sf.c art_mmc_d_sf.c art_VSCController_dqabc_sf.c art_VSCController_ctrl_sf.c tsb_sfun.c alt_sync_nl_reseau0_sf.c algo_princ0_sf.c consign_del_w0_sf.c consign_del_x0_sf.c consign_del_p0_sf.c model_load0_sf.c mod_turb_nl0_sf.c mod_lin_turb0_sf.c mod_lin_rv0_sf.c thermal_turbine_gov0_sf.c hydro_turb0_sf.c ext_hydro_reg0_sf.c gas_turbine0_sf.c stabilisateur0_sf.c tested_hydro_speed_gov0_sf.c algoberta0_sf.c algo_alerte0_sf.cmmc_2p_ctr0_sf.c
+INTERNAL_LIBRARY3=artemis_RT705931r2014br.a -lOpalRTER2014B
 [ExtraPutFilesComp]
 ..\..\..\..\..\..\..\Program Files (x86)\MATLAB\R2014b\toolbox\physmod\powersys\powersys\sfun_discreteVariableDelay.c=Ascii|Other
+[ExtraPutFilesComp_1_RT_LAB]
+D:\OPAL-RT\ARTEMIS\v7.0.5.931\art_r2014b\lib\redhawk\artemis_RT705931r2014br.a=Binary|Other
+[ExtraPutFilesComp_3_RT_LAB]
+D:\OPAL-RT\ARTEMIS\v7.0.5.931\art_r2014b\lib\redhawk\artemis_RT705931r2014br.a=Binary|Other
 [General]
-ATT_CHECKSUM1=976208611
-ATT_CHECKSUM2=2782565708
-ATT_CHECKSUM3=4289715884
-ATT_CHECKSUM4=3604941538
+ATT_CHECKSUM1=2526396858
+ATT_CHECKSUM2=731195662
+ATT_CHECKSUM3=2639449348
+ATT_CHECKSUM4=1048842503
 ATT_CREATED_BY=Paul Baracos
 ATT_CREATED_ON=Wed Nov 21 11:28:32 2001
 ATT_ENABLE_PTA=OFF
 ATT_HANDLE_CONSOLE=ON
 ATT_LAST_SAVED_BY=jiang
-ATT_LAST_SAVED_ON=Wed Sep 07 16:45:06 2016
+ATT_LAST_SAVED_ON=Tue Feb 28 16:43:46 2017
 ATT_REFERENCE_MDL_PATHS=
-ATT_REVISION=1.206
+ATT_REVISION=1.226
 AutoRetrieveFiles=ON
 AutoRetrieveRtlab=ON
 CompilerVersion=AUTOMATIC
@@ -55,7 +65,7 @@ DinamoFlag=OFF
 FILENAME=C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\my_pv_system\my_pv_system.mdl
 FORCE_RECOMPILE=0
 IMPORTED_GLOBAL_VARIABLES=1
-LastCompileRtlabVersion=v11.0.7.582
+LastCompileRtlabVersion=v11.0.8.13
 LastMatlabUsed=27
 LastMatlabUsedName=v8.4
 Name=my_pv_system
@@ -82,7 +92,7 @@ TargetPlatform=REDHAWK
 TimeFactor=1.000000000000000
 TimeStep=0.000050000000000
 [NodeMapping]
-SM_master=op4500
+SM_master=RTServer_5_113
 SM_master_CORE_ASSIGNATION=1
 SM_master_CPU=-1
 SM_master_DEBUG=OFF
@@ -92,7 +102,7 @@ SS_calculation_CORE_ASSIGNATION=1
 SS_calculation_CPU=-1
 SS_calculation_DEBUG=OFF
 SS_calculation_XHP_ENABLE=FALSE
-SS_controller=op4500
+SS_controller=RTServer_5_113
 SS_controller_CORE_ASSIGNATION=1
 SS_controller_CPU=-1
 SS_controller_DEBUG=OFF
