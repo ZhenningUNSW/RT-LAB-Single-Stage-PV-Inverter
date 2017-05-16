@@ -156,12 +156,12 @@ tmpfs                 4.0G     0  4.0G   0% /dev/shm
                 </property>
                 <property name="INTERNAL_IGN_SOURCE_FILE">
                     <value>
-                        sfun_ctrl_op7160ex1.c sfun_fct_op7160ex1_recv.c sfun_fct_op7160ex1_send.c sfun_fct_op7160ex1_load_in.c rte_conversion_ophsdio.c rte_conversion.c rte_ground.c rte_logical_operator.c sfun_ehs_cfg.c sfun_efs_solver_cfg.c sfun_op7160ex1_event_generator.c
+                        sfun_op7160ex1_digital_in.c sfun_op7160ex1_pwm_in.c sfun_fct_op7160ex1_load_in.c sfun_ctrl_op7160ex1.c sfun_fct_op7160ex1_recv.c sfun_fct_op7160ex1_send.c rte_conversion_ophsdio.c rte_conversion.c rte_ground.c rte_logical_operator.c rte_svpwm.c sfun_ehs_cfg.c sfun_efs_solver_cfg.c sfun_op7160ex1_event_generator.c
                     </value>
                 </property>
                 <property name="INTERNAL_LIBRARY1">
                     <value>
-                        -lOpalIoCtrlOP7160R2014b -lOpalIoFcnOP7160R2014b
+                        -lOpalIoFcnOP7160R2014b -lOpalIoCtrlOP7160R2014b
                     </value>
                 </property>
                 <property name="INTERNAL_LIBRARY2">
@@ -171,7 +171,7 @@ tmpfs                 4.0G     0  4.0G   0% /dev/shm
                 </property>
                 <property name="INTERNAL_LIBRARY3">
                     <value>
-                        -lOpalOP7160 -lOpalIoSysR2014b -lOpalOpSystem -lOpalRTER2014B -lEHS_cfgR2014b -lEfsSolver_cfgR2014b
+                        -lOpalOP7160 -lOpalOpSystem -lOpalRTER2014B -lOpalIoSysR2014b -lEHS_cfgR2014b -lEfsSolver_cfgR2014b
                     </value>
                 </property>
                 <property name="LANG">
@@ -451,20 +451,20 @@ tmpfs                 4.0G     0  4.0G   0% /dev/shm
           inet addr:192.168.5.113  Bcast:192.168.5.255  Mask:255.255.255.0
           inet6 addr: fe80::ec4:7aff:fe0c:1f5a/64 Scope:Link
           UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
-          RX packets:32359 errors:0 dropped:0 overruns:0 frame:0
-          TX packets:18190 errors:0 dropped:0 overruns:0 carrier:0
+          RX packets:16937231 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:16915926 errors:0 dropped:0 overruns:0 carrier:0
           collisions:0 txqueuelen:1000 
-          RX bytes:46550775 (44.3 MiB)  TX bytes:1458174 (1.3 MiB)
+          RX bytes:1171306120 (1.0 GiB)  TX bytes:3901217566 (3.6 GiB)
           Memory:df900000-df920000 
 
 lo        Link encap:Local Loopback  
           inet addr:127.0.0.1  Mask:255.0.0.0
           inet6 addr: ::1/128 Scope:Host
           UP LOOPBACK RUNNING  MTU:16436  Metric:1
-          RX packets:457 errors:0 dropped:0 overruns:0 frame:0
-          TX packets:457 errors:0 dropped:0 overruns:0 carrier:0
+          RX packets:523 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:523 errors:0 dropped:0 overruns:0 carrier:0
           collisions:0 txqueuelen:0 
-          RX bytes:995599 (972.2 KiB)  TX bytes:995599 (972.2 KiB)
+          RX bytes:1036872 (1012.5 KiB)  TX bytes:1036872 (1012.5 KiB)
 
                     </value>
                 </textlog>
@@ -667,7 +667,7 @@ CPU 0 irqstacks, hard=c075a000 soft=c073a000
 PID hash table entries: 4096 (order: 12, 16384 bytes)
 Extended CMOS year: 2000
 Fast TSC calibration using PIT
-Detected 3299.978 MHz processor.
+Detected 3299.996 MHz processor.
 Console: colour VGA+ 80x25
 console [tty0] enabled
 Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
@@ -686,7 +686,7 @@ Checking if this processor honours the WP bit even in supervisor mode...Ok.
 SLUB: Genslabs=13, HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=8
 hpet clockevent registered
 HPET: 8 timers in total, 4 timers will be used for per-cpu timer
-Calibrating delay loop (skipped), value calculated using timer frequency.. 6599.95 BogoMIPS (lpj=13199912)
+Calibrating delay loop (skipped), value calculated using timer frequency.. 6599.99 BogoMIPS (lpj=13199984)
 Security Framework initialized
 SELinux:  Initializing.
 SELinux:  Starting in permissive mode
@@ -708,7 +708,7 @@ CPU 1 irqstacks, hard=c075b000 soft=c073b000
 Booting processor 1 APIC 0x2 ip 0x6000
 Initializing CPU#1
 Mapping cpu 1 to node 0
-Calibrating delay using timer specific routine.. 6599.78 BogoMIPS (lpj=13199571)
+Calibrating delay using timer specific routine.. 6600.03 BogoMIPS (lpj=13200074)
 CPU: Physical Processor ID: 0
 CPU: Processor Core ID: 1
 CPU: L1 I cache: 32K, L1 D cache: 32K
@@ -723,7 +723,7 @@ CPU 2 irqstacks, hard=c075c000 soft=c073c000
 Booting processor 2 APIC 0x4 ip 0x6000
 Initializing CPU#2
 Mapping cpu 2 to node 0
-Calibrating delay using timer specific routine.. 6599.77 BogoMIPS (lpj=13199556)
+Calibrating delay using timer specific routine.. 6600.04 BogoMIPS (lpj=13200088)
 CPU: Physical Processor ID: 0
 CPU: Processor Core ID: 2
 CPU: L1 I cache: 32K, L1 D cache: 32K
@@ -738,7 +738,7 @@ CPU 3 irqstacks, hard=c075d000 soft=c073d000
 Booting processor 3 APIC 0x6 ip 0x6000
 Initializing CPU#3
 Mapping cpu 3 to node 0
-Calibrating delay using timer specific routine.. 6599.77 BogoMIPS (lpj=13199551)
+Calibrating delay using timer specific routine.. 6600.04 BogoMIPS (lpj=13200081)
 CPU: Physical Processor ID: 0
 CPU: Processor Core ID: 3
 CPU: L1 I cache: 32K, L1 D cache: 32K
@@ -750,7 +750,7 @@ x86 PAT enabled: cpu 3, old 0x7040600070406, new 0x7010600070106
 CPU3: Intel(R) Xeon(R) CPU E3-1230 V2 @ 3.30GHz stepping 09
 checking TSC synchronization [CPU#0 -&gt; CPU#3]: passed.
 Brought up 4 CPUs
-Total of 4 processors activated (26399.29 BogoMIPS).
+Total of 4 processors activated (26400.11 BogoMIPS).
 net_namespace: 920 bytes
 NET: Registered protocol family 16
 ACPI FADT declares the system doesn't support PCIe ASPM, so disable it
@@ -817,10 +817,10 @@ ACPI: PCI Interrupt Link [LNKA] (IRQs 3 4 5 6 10 *11 12 14 15)
 ACPI: PCI Interrupt Link [LNKB] (IRQs 3 4 5 6 10 11 12 14 15) *0, disabled.
 ACPI: PCI Interrupt Link [LNKC] (IRQs 3 4 5 6 10 *11 12 14 15)
 ACPI: PCI Interrupt Link [LNKD] (IRQs 3 4 *5 6 10 11 12 14 15)
-ACPI: PCI Interrupt Link [LNKE] (IRQs 3 4 5 6 10 *11 12 14 15)
+ACPI: PCI Interrupt Link [LNKE] (IRQs 3 4 *5 6 10 11 12 14 15)
 ACPI: PCI Interrupt Link [LNKF] (IRQs 3 4 5 6 10 11 12 14 15) *0, disabled.
 ACPI: PCI Interrupt Link [LNKG] (IRQs 3 4 5 6 10 11 12 14 15) *0, disabled.
-ACPI: PCI Interrupt Link [LNKH] (IRQs 3 4 *5 6 10 11 12 14 15)
+ACPI: PCI Interrupt Link [LNKH] (IRQs 3 4 5 6 10 *11 12 14 15)
 ACPI: Power Resource [FN00] (off)
 ACPI: Power Resource [FN01] (off)
 ACPI: Power Resource [FN02] (off)
@@ -903,8 +903,8 @@ pci_bus 0000:03: resource 3 io:  [0x00-0xffff]
 pci_bus 0000:03: resource 4 mem: [0x000000-0xffffffffffffffff]
 NET: Registered protocol family 2
 Switched to high resolution mode on CPU 3
-Switched to high resolution mode on CPU 2
 Switched to high resolution mode on CPU 1
+Switched to high resolution mode on CPU 2
 Switched to high resolution mode on CPU 0
 IP route cache hash table entries: 32768 (order: 5, 131072 bytes)
 TCP established hash table entries: 131072 (order: 8, 1048576 bytes)
@@ -916,7 +916,7 @@ checking if image is initramfs... it is
 Freeing initrd memory: 2376k freed
 Microcode Update Driver: v2.00 &lt;tigran@aivazian.fsnet.co.uk&gt;, Peter Oruba
 audit: initializing netlink socket (disabled)
-type=2000 audit(1494548535.760:1): initialized
+type=2000 audit(1494947167.756:1): initialized
 highmem bounce pool size: 64 pages
 VFS: Disk quotas dquot_6.5.2
 Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
@@ -1111,21 +1111,15 @@ ata3: SATA link down (SStatus 0 SControl 300)
 ata4: SATA link down (SStatus 0 SControl 300)
 ata5: SATA link down (SStatus 0 SControl 300)
 ata6: SATA link down (SStatus 0 SControl 300)
-EXT3-fs: INFO: recovery required on readonly filesystem.
-EXT3-fs: write access will be enabled during recovery.
 kjournald starting.  Commit interval 5 seconds
-EXT3-fs: recovery complete.
 EXT3-fs: mounted filesystem with ordered data mode.
 SELinux:  Disabled at runtime.
 SELinux:  Unregistering netfilter hooks
-type=1404 audit(1494548542.977:2): selinux=0 auid=4294967295 ses=4294967295
+type=1404 audit(1494947174.573:2): selinux=0 auid=4294967295 ses=4294967295
 input: PC Speaker as /class/input/input0
 rtc_cmos 00:06: RTC can wake from S4
 rtc_cmos 00:06: rtc core: registered rtc_cmos as rtc0
 rtc0: alarms up to one month, y3k, 242 bytes nvram, hpet irqs
-input: Power Button (FF) as /class/input/input1
-ACPI: Power Button (FF) [PWRF]
-input: Power Button (CM) as /class/input/input2
 e1000e: Intel(R) PRO/1000 Network Driver - 0.3.3.3-k6
 e1000e: Copyright (c) 1999-2008 Intel Corporation.
 e1000e 0000:02:00.0: PCI INT A -&gt; GSI 16 (level, low) -&gt; IRQ 16
@@ -1133,10 +1127,13 @@ e1000e 0000:02:00.0: setting latency timer to 64
 e1000e 0000:02:00.0: irq 31 for MSI/MSI-X
 e1000e 0000:02:00.0: irq 32 for MSI/MSI-X
 e1000e 0000:02:00.0: irq 33 for MSI/MSI-X
-ACPI: Power Button (CM) [PWRB]
 0000:02:00.0: eth0: (PCI Express:2.5GB/s:Width x1) 0c:c4:7a:0c:1f:5a
 0000:02:00.0: eth0: Intel(R) PRO/1000 Network Connection
 0000:02:00.0: eth0: MAC: 3, PHY: 8, PBA No: ffffff-0ff
+input: Power Button (FF) as /class/input/input1
+ACPI: Power Button (FF) [PWRF]
+input: Power Button (CM) as /class/input/input2
+ACPI: Power Button (CM) [PWRB]
 sd 0:0:0:0: Attached scsi generic sg0 type 0
 floppy0: no floppy controllers found
 lp: driver loaded but no devices found
@@ -1169,7 +1166,7 @@ CPU 1 irqstacks, hard=c075b000 soft=c073b000
 Booting processor 1 APIC 0x2 ip 0x6000
 Initializing CPU#1
 Mapping cpu 1 to node 0
-Calibrating delay using timer specific routine.. 6599.76 BogoMIPS (lpj=13199531)
+Calibrating delay using timer specific routine.. 6599.53 BogoMIPS (lpj=13199072)
 CPU: Physical Processor ID: 0
 CPU: Processor Core ID: 1
 CPU: L1 I cache: 32K, L1 D cache: 32K
@@ -1189,7 +1186,7 @@ CPU 2 irqstacks, hard=c075c000 soft=c073c000
 Booting processor 2 APIC 0x4 ip 0x6000
 Initializing CPU#2
 Mapping cpu 2 to node 0
-Calibrating delay using timer specific routine.. 6599.96 BogoMIPS (lpj=13199931)
+Calibrating delay using timer specific routine.. 6600.13 BogoMIPS (lpj=13200272)
 CPU: Physical Processor ID: 0
 CPU: Processor Core ID: 2
 CPU: L1 I cache: 32K, L1 D cache: 32K
@@ -1207,7 +1204,7 @@ CPU 3 irqstacks, hard=c075d000 soft=c073d000
 Booting processor 3 APIC 0x6 ip 0x6000
 Initializing CPU#3
 Mapping cpu 3 to node 0
-Calibrating delay using timer specific routine.. 6600.00 BogoMIPS (lpj=13200010)
+Calibrating delay using timer specific routine.. 6600.04 BogoMIPS (lpj=13200089)
 CPU: Physical Processor ID: 0
 CPU: Processor Core ID: 3
 CPU: L1 I cache: 32K, L1 D cache: 32K
@@ -1227,6 +1224,64 @@ ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
 eth0: no IPv6 routers present
 opalpci: driver loaded  (major 250)
 pci 0000:01:00.0: PCI INT A -&gt; GSI 16 (level, low) -&gt; IRQ 16
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+Clocksource tsc unstable (delta = 899907452946 ns)
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+e1000e: eth0 NIC Link is Down
+e1000e: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX/TX
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+e1000e: eth0 NIC Link is Down
+e1000e: eth0 NIC Link is Up 10 Mbps Full Duplex, Flow Control: None
+0000:02:00.0: eth0: 10/100 speed: disabling TSO
+e1000e: eth0 NIC Link is Down
+e1000e: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX/TX
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
 pci 0000:01:00.0: setting latency timer to 64
 pci 0000:01:00.0: setting latency timer to 64
 pci 0000:01:00.0: setting latency timer to 64

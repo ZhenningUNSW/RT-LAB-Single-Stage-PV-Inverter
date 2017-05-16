@@ -292,7 +292,7 @@ NetworkInterfacesManager on LAPTOP-5FBKHMJV: (5 interfaces)
   ` subnet boundaries: [192.168.44.0, 192.168.44.255]
   - found in subnet map: VMware Network Adapter VMnet8
 * Wi-Fi (index: 25)
-  - IP address: 10.248.71.247 [0x0af847f7]
+  - IP address: 10.248.71.209 [0x0af847d1]
   - MAC address: 48-e2-44-4e-21-dd
   - type: Wireless
   - state: Up

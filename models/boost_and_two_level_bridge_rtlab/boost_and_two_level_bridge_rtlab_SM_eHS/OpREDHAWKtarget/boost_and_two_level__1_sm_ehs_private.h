@@ -3,9 +3,9 @@
  *
  * Code generation for model "boost_and_two_level__1_sm_ehs".
  *
- * Model version              : 1.1045
+ * Model version              : 1.1057
  * Simulink Coder version : 8.7 (R2014b) 08-Sep-2014
- * C source code generated on : Thu May 11 18:35:05 2017
+ * C source code generated on : Tue May 16 17:33:54 2017
  *
  * Target selection: rtlab_rtmodel.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -102,9 +102,11 @@ extern void sfun_DBL2SFP(SimStruct *rts);
 extern void sfun_fct_op7160ex1_send(SimStruct *rts);
 extern void opmonitor(SimStruct *rts);
 extern void OP_SEND(SimStruct *rts);
+extern void sfun_op7160ex1_pwm_in(SimStruct *rts);
 extern void opwritefile(SimStruct *rts);
 extern void rte_conversion(SimStruct *rts);
 extern void rte_logical_operator(SimStruct *rts);
+extern void rte_svpwm(SimStruct *rts);
 extern void rte_ground(SimStruct *rts);
 extern void rte_conversion_ophsdio(SimStruct *rts);
 extern void sfun_op7160ex1_event_generator(SimStruct *rts);

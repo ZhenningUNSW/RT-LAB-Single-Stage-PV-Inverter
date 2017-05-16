@@ -1,6 +1,6 @@
 
 -------------------- Starting compilation --------------------
-Start at : Thursday, May 11, 2017, 18:33:43
+Start at : Tuesday, May 16, 2017, 17:32:21
 
 The current RT-LAB version is:  v11.0.8.13
 The current model is:           C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab.mdl
@@ -16,6 +16,18 @@ Warning: "boost_and_two_level_bridge_rtlab/SC_Console/Analog Output Mapping and 
   In opInitFunction>OpenSystem at 501
   In opInitFunction>GenerateModel at 155
   In opInitFunction at 71] 
+There must be at least one controller block with CtrlName = 'OP7160EX1 Ctrl' in the model!
+There must be at least one controller block with CtrlName = 'ML605EX1 Ctrl' in the model!
+There must be at least one controller block with CtrlName = 'OpCtrl' in the model!
+There must be at least one controller block with CtrlName = 'OP7160EX1 Ctrl' in the model!
+There must be at least one controller block with CtrlName = 'OP7160EX1 Ctrl' in the model!
+There must be at least one controller block with CtrlName = 'OP7160EX1 Ctrl' in the model!
+There must be at least one controller block with CtrlName = 'ML605EX1 Ctrl' in the model!
+There must be at least one controller block with CtrlName = 'ML605EX1 Ctrl' in the model!
+There must be at least one controller block with CtrlName = 'ML605EX1 Ctrl' in the model!
+There must be at least one controller block with CtrlName = 'OpCtrl' in the model!
+There must be at least one controller block with CtrlName = 'OpCtrl' in the model!
+There must be at least one controller block with CtrlName = 'OpCtrl' in the model!
  
 Diagnostics: 
  
@@ -36,7 +48,7 @@ Separating RT-LAB subsystem 'SC_Console'.
 WARNING: Saving subsystems with breaklinks option has been disabled. Subsystems real-time behavior may be different.
 WARNING: Saving subsystems with breaklinks option has been disabled. Subsystems real-time behavior may be different.
 A monitoring block (OpMonitor) has been found. The monitoring will be enabled.
-Model preparation and separation duration : 00h:00m:49s
+Model preparation and separation duration : 00h:00m:52s
 -------------------- Completed successfully --------------------
 
 Generating model because C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\Opcommon\boost_and_two_level__1_sm_ehs.mdl has changed.
@@ -102,6 +114,8 @@ found]
 [Warning: Matching "From" for "Goto" '<a href="matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/Inverter Control/VDC Regulator/Goto5','error')">boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/Inverter Control/VDC Regulator/Goto5</a>' not
 found] 
 [Warning: Output port 2 of '<a href="matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/Outputs_eHS1_Recv','error')">boost_and_two_level__1_sm_ehs/SM_eHS/Outputs_eHS1_Recv</a>' is not connected.] 
+[Warning: Input port 1 of '<a href="matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/Selector2','error')">boost_and_two_level__1_sm_ehs/SM_eHS/Selector2</a>' is not connected.] 
+[Warning: Output port 1 of '<a href="matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/Selector2','error')">boost_and_two_level__1_sm_ehs/SM_eHS/Selector2</a>' is not connected.] 
 [Warning: Output port 4 of '<a href="matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/Demux','error')">boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/Demux</a>' is not connected.] 
 [Warning: Output port 7 of '<a href="matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/Demux','error')">boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/Demux</a>' is not connected.] 
 [Warning: Use fixed buffer size in 'boost_and_two_level__1_sm_ehs/SM_eHS/Subsystem/Mean/Model/Transport Delay' is not selected. When
@@ -128,7 +142,7 @@ following three combinations: u2 ~= 0, u2 > Threshold with Threshold equal to 0,
 ### Loading TLC function libraries
 ......
 ### Initial pass through model to cache user defined code
-.........
+...........
 ### TLC Scope icon is not supported by RT-LAB.
 .............
 ### Caching model source code
@@ -137,7 +151,7 @@ following three combinations: u2 ~= 0, u2 > Threshold with Threshold equal to 0,
 ...............................................................................
 ...............................................................................
 ...............................................................................
-.....................
+.........................................................
 ### Writing source file boost_and_two_level__1_sm_ehs.c
 ### Writing header file boost_and_two_level__1_sm_ehs_private.h
 .
@@ -158,8 +172,8 @@ following three combinations: u2 ~= 0, u2 > Threshold with Threshold equal to 0,
 .
 ### Writing header file rt_nonfinite.h
 ### Writing source file rt_nonfinite.c
-.
 ### Writing header file rtmodel.h
+.
 ### Writing source file boost_and_two_level__1_sm_ehs_data.c
 ### TLC code generation complete.
 ....
@@ -167,7 +181,7 @@ Warning:  Version[0] 8 Version[1] . Version[2] 7
 ### Creating model mapping file boost_and_two_level__1_sm_ehs.map using map_r2014b.tlc
 ...............................................................................
 ...............................................................................
-.[Warning: Incorrect internal Simulink identifiers were detected. The following blocks have conflicting identifiers:
+.................[Warning: Incorrect internal Simulink identifiers were detected. The following blocks have conflicting identifiers:
   '<a href="matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/eHSx64 Gen3 CommBlk/Convert double to  Single floating-point (FPGA)','error')">boost_and_two_level__1_sm_ehs/SM_eHS/eHSx64 Gen3 CommBlk/Convert double to  Single floating-point (FPGA)</a>'
   '<a href="matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/eHSx64 Gen3 CommBlk/INPUTS','error')">boost_and_two_level__1_sm_ehs/SM_eHS/eHSx64 Gen3 CommBlk/INPUTS</a>'.
 The Simulink identifier of '<a href="matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/eHSx64 Gen3 CommBlk/Convert double to  Single floating-point (FPGA)','error')">boost_and_two_level__1_sm_ehs/SM_eHS/eHSx64 Gen3 CommBlk/Convert double to  Single floating-point (FPGA)</a>'
@@ -186,8 +200,8 @@ the original model, and then save and reopen the current model.]
 ### Successful completion of code generation for model: boost_and_two_level__1_sm_ehs
 
 
-boost_and_two_level__1_sm_ehs : Generating C code duration : 00h:00m:32s
-Generating C code total duration : 00h:00m:32s
+boost_and_two_level__1_sm_ehs : Generating C code duration : 00h:00m:39s
+Generating C code total duration : 00h:00m:39s
 
 -------------------- Completed successfully --------------------
 
@@ -201,14 +215,14 @@ Parameter database creation duration: 00h:00m:00s
 Signal(s) with more than 20 values will be disabled.
 Use SIGNALS_VECTOR_SIZE_LIMIT environment variable to modify this limit.
 
-Signal database creation duration: 00h:00m:00s
+Signal database creation duration: 00h:00m:01s
 -------------------- Signal database created successfully --------------------
 Generating simulation data...
 Data generated in 00h:00m:00s
 
 Closing Matlab... OK.
 Updating dependencies... OK.
-Compiling model because C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\boost_and_two_level__1_sm_ehs_data.c has changed.
+Compiling model because C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\OpalSnapshotUtil.c has changed.
 
 -------------------- Validating sources files --------------------------
 
@@ -255,13 +269,13 @@ Transferring user extra files:
 Transferring in ascii: C:\Program Files (x86)\MATLAB\R2014b\toolbox\physmod\powersys\powersys\sfun_discreteVariableDelay.c (SM_eHS) ... OK.
 Transferring in binary: D:\OPAL-RT\RT-LAB\v11.0.8.13\common\lib\redhawk\libOpalOP7160.a (SM_eHS) ... OK.
 Transferring in binary: D:\OPAL-RT\RT-LAB\v11.0.8.13\common\lib\redhawk\libOpalOpSystem.a (SM_eHS) ... OK.
-Transferring in binary: D:\OPAL-RT\RT-LAB\v11.0.8.13\simulink\libR2014b\redhawk\libOpalIoCtrlOP7160R2014b.a (SM_eHS) ... OK.
 Transferring in binary: D:\OPAL-RT\RT-LAB\v11.0.8.13\simulink\libR2014b\redhawk\libOpalIoFcnOP7160R2014b.a (SM_eHS) ... OK.
+Transferring in binary: D:\OPAL-RT\RT-LAB\v11.0.8.13\simulink\libR2014b\redhawk\libOpalIoCtrlOP7160R2014b.a (SM_eHS) ... OK.
 Transferring in binary: D:\OPAL-RT\RT-EVENTS\v4.0.2.520\rte_r2014b\lib\redhawk\libRtEvents_RT402520R2014Br.a (SM_eHS) ... OK.
 Transferring in binary: D:\OPAL-RT\eFPGAsim\v1.4.2.496\Simulink\efs_R2014b\redhawk\libEHS_cfgR2014b.a (SM_eHS) ... OK.
 Transferring in binary: D:\OPAL-RT\eFPGAsim\v1.4.2.496\Simulink\efs_R2014b\redhawk\libEfsSolver_cfgR2014b.a (SM_eHS) ... OK.
 
-File transfer duration : 00h:00m:05s
+File transfer duration : 00h:00m:06s
 -------------------- Completed successfully --------------------
 
 -------------------- Building the generated C code --------------------
@@ -284,7 +298,7 @@ opicc -c  -O2 -xHost -falign-functions=2 -diag-disable remark,warn,cpu-dispatch 
 opicc -c  -O2 -xHost -falign-functions=2 -diag-disable remark,warn,cpu-dispatch    -DUSE_RTMODEL -DMODEL=boost_and_two_level__1_sm_ehs -DRT=RT -DNUMST=2 -DTID01EQ=1 -DNCSTATES=2 -DMT=0 -DTERMFCN=1 -DMULTITASKING=0 -D_SIMULINK -DRTLAB -DOP_MATLABR2014B	 -DMAT_FILE=1 -DCLASSIC_INTERFACE=1 -DONESTEPFCN=0 -DMULTI_INSTANCE_CODE=0 -DUNIX -I/usr/opalrt/externals/include  -I. -I/usr/matlab/v8.4/simulink/include -I/usr/matlab/v8.4/extern/include -I/usr/matlab/v8.4/rtw/c/src -I/usr/matlab/v8.4/rtw/c/src/matrixmath -I/usr/matlab/v8.4/rtw/c/libsrc  -I/usr/matlab/v8.4/toolbox/simscape/include/drive -I/usr/matlab/v8.4/toolbox/simscape/include/mech -I/usr/matlab/v8.4/toolbox/simscape/include/foundation -I/usr/matlab/v8.4/toolbox/simscape/include/network_engine -I/usr/matlab/v8.4/toolbox/simscape/include/ne_sli -I/usr/matlab/v8.4/toolbox/dspblks/include -I/usr/matlab/v8.4/toolbox/simscape/include/compiler/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/sli/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/utils  -I/usr/opalrt/v11.0.8.13/common/include -I/usr/opalrt/v11.0.8.13/common/include_target -I/usr/opalrt/v11.0.8.13/RT-LAB/include    -I_sharedutils  /usr/matlab/v8.4/rtw/c/src/rt_sim.c
 opicc -c  -O2 -xHost -falign-functions=2 -diag-disable remark,warn,cpu-dispatch    -DUSE_RTMODEL -DMODEL=boost_and_two_level__1_sm_ehs -DRT=RT -DNUMST=2 -DTID01EQ=1 -DNCSTATES=2 -DMT=0 -DTERMFCN=1 -DMULTITASKING=0 -D_SIMULINK -DRTLAB -DOP_MATLABR2014B	 -DMAT_FILE=1 -DCLASSIC_INTERFACE=1 -DONESTEPFCN=0 -DMULTI_INSTANCE_CODE=0 -DUNIX -I/usr/opalrt/externals/include  -I. -I/usr/matlab/v8.4/simulink/include -I/usr/matlab/v8.4/extern/include -I/usr/matlab/v8.4/rtw/c/src -I/usr/matlab/v8.4/rtw/c/src/matrixmath -I/usr/matlab/v8.4/rtw/c/libsrc  -I/usr/matlab/v8.4/toolbox/simscape/include/drive -I/usr/matlab/v8.4/toolbox/simscape/include/mech -I/usr/matlab/v8.4/toolbox/simscape/include/foundation -I/usr/matlab/v8.4/toolbox/simscape/include/network_engine -I/usr/matlab/v8.4/toolbox/simscape/include/ne_sli -I/usr/matlab/v8.4/toolbox/dspblks/include -I/usr/matlab/v8.4/toolbox/simscape/include/compiler/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/sli/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/utils  -I/usr/opalrt/v11.0.8.13/common/include -I/usr/opalrt/v11.0.8.13/common/include_target -I/usr/opalrt/v11.0.8.13/RT-LAB/include    -I_sharedutils  sfun_discreteVariableDelay.c
 ### Linking ...
-opicpc  -Wl,-rpath='/usr/opalrt/v11.0.8.13/common/bin' -Wl,'-rpath=/usr/opalrt/v11.0.8.13/common/bin/x32' -Wl,-rpath='/opt/intel/Compiler/11.1/072/lib/ia32' -Wl,-rpath='/opt/intel/Compiler/11.1/056/lib/ia32' -diag-disable remark -L. -L/usr/opalrt/v11.0.8.13/RT-LAB/lib -L/usr/opalrt/v11.0.8.13/common/lib -L/usr/opalrt/v11.0.8.13/common/lib/redhawk -L/usr/opalrt/v11.0.8.13/common/bin -L/usr/opalrt/v11.0.8.13/common/bin/x32 -L/usr/opalrt/externals/lib   -L/usr/matlab/v8.4/toolbox/dspblks/lib/redhawk	 -L/usr/matlab/v8.4/toolbox/simscape/lib/redhawk   -o boost_and_two_level__1_sm_ehs boost_and_two_level__1_sm_ehs.o boost_and_two_level__1_sm_ehs_data.o model_main.o rtGetInf.o rtGetNaN.o rt_logging.o rt_nonfinite.o rt_printf.o rt_sim.o sfun_discreteVariableDelay.o   -lOpalIoCtrlOP7160R2014b -lOpalIoFcnOP7160R2014b -lOpalIoFcnOP7160R2014b -lRtEvents_RT402520R2014Br -lOpalRTER2014B -lOpalOP7160 -lOpalIoSysR2014b -lOpalOpSystem -lOpalRTER2014B -lEHS_cfgR2014b -lEfsSolver_cfgR2014b -lOpalSimCore -lSimCoreLib -lSyncExchangerLib -lConnectionLib -lConnectionFactoryLib -lOpalSfunR2014b -lOpalR2014b -lBlocksRT-2014b -lOpalCore -lOpalOhci -lOpalCore -llicenseRH32 -lSimulink -lInfrastructure  -lNetwork -lKLU -lNumeric -lFramework -lSystem -lMatio -luuid -lpthread -lOpalSimCore -lSimCoreLib -lSyncExchangerLib -lConnectionLib -lConnectionFactoryLib -lOpalUtils -ldspblks -lsimscape -lpthread -lm -ldl -lutil -lrt     /usr/matlab/v8.4/rtw/c/libsrc/rtwlibr_redhawk.a 
+opicpc  -Wl,-rpath='/usr/opalrt/v11.0.8.13/common/bin' -Wl,'-rpath=/usr/opalrt/v11.0.8.13/common/bin/x32' -Wl,-rpath='/opt/intel/Compiler/11.1/072/lib/ia32' -Wl,-rpath='/opt/intel/Compiler/11.1/056/lib/ia32' -diag-disable remark -L. -L/usr/opalrt/v11.0.8.13/RT-LAB/lib -L/usr/opalrt/v11.0.8.13/common/lib -L/usr/opalrt/v11.0.8.13/common/lib/redhawk -L/usr/opalrt/v11.0.8.13/common/bin -L/usr/opalrt/v11.0.8.13/common/bin/x32 -L/usr/opalrt/externals/lib   -L/usr/matlab/v8.4/toolbox/dspblks/lib/redhawk	 -L/usr/matlab/v8.4/toolbox/simscape/lib/redhawk   -o boost_and_two_level__1_sm_ehs boost_and_two_level__1_sm_ehs.o boost_and_two_level__1_sm_ehs_data.o model_main.o rtGetInf.o rtGetNaN.o rt_logging.o rt_nonfinite.o rt_printf.o rt_sim.o sfun_discreteVariableDelay.o   -lOpalIoFcnOP7160R2014b -lOpalIoCtrlOP7160R2014b -lOpalIoFcnOP7160R2014b -lRtEvents_RT402520R2014Br -lOpalRTER2014B -lOpalOP7160 -lOpalOpSystem -lOpalRTER2014B -lOpalIoSysR2014b -lEHS_cfgR2014b -lEfsSolver_cfgR2014b -lOpalSimCore -lSimCoreLib -lSyncExchangerLib -lConnectionLib -lConnectionFactoryLib -lOpalSfunR2014b -lOpalR2014b -lBlocksRT-2014b -lOpalCore -lOpalOhci -lOpalCore -llicenseRH32 -lSimulink -lInfrastructure  -lNetwork -lKLU -lNumeric -lFramework -lSystem -lMatio -luuid -lpthread -lOpalSimCore -lSimCoreLib -lSyncExchangerLib -lConnectionLib -lConnectionFactoryLib -lOpalUtils -ldspblks -lsimscape -lpthread -lm -ldl -lutil -lrt     /usr/matlab/v8.4/rtw/c/libsrc/rtwlibr_redhawk.a 
 chmod a+x boost_and_two_level__1_sm_ehs
 ### Created executable: boost_and_two_level__1_sm_ehs
 
@@ -298,11 +312,11 @@ Connecting to 192.168.5.113 ... OK.
 Transferring in binary mode /home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_workspace/pv_inverter/models/boost_and_two_level_bridge_rtlab/boost_and_two_level_bridge_rtlab_sm_ehs/boost_and_two_level__1_sm_ehs ... OK.
 Transferring in ascii mode /home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_workspace/pv_inverter/models/boost_and_two_level_bridge_rtlab/compilation_target_report.xml ... OK.
 
-File transfer duration : 00h:00m:01s
+File transfer duration : 00h:00m:02s
 -------------------- Completed successfully --------------------
 
-End at : Thursday, May 11, 2017, 18:35:31
+End at : Tuesday, May 16, 2017, 17:34:26
 
-Compilation duration : 00h:01m:48s
+Compilation duration : 00h:02m:05s
 
 Updating status for next build...OK

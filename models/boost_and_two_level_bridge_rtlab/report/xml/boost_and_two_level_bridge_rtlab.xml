@@ -3,7 +3,7 @@
     <item name="general">
         <property name="Date">
             <value>
-                Thu, 11 May 2017 23:51:51
+                Tue, 16 May 2017 18:05:24
             </value>
         </property>
         <property name="RTLAB version">
@@ -158,12 +158,12 @@ tmpfs                 4.0G     0  4.0G   0% /dev/shm
                 </property>
                 <property name="INTERNAL_IGN_SOURCE_FILE">
                     <value>
-                        sfun_ctrl_op7160ex1.c sfun_fct_op7160ex1_recv.c sfun_fct_op7160ex1_send.c sfun_fct_op7160ex1_load_in.c rte_conversion_ophsdio.c rte_conversion.c rte_ground.c rte_logical_operator.c sfun_ehs_cfg.c sfun_efs_solver_cfg.c sfun_op7160ex1_event_generator.c
+                        sfun_op7160ex1_digital_in.c sfun_op7160ex1_pwm_in.c sfun_fct_op7160ex1_load_in.c sfun_ctrl_op7160ex1.c sfun_fct_op7160ex1_recv.c sfun_fct_op7160ex1_send.c rte_conversion_ophsdio.c rte_conversion.c rte_ground.c rte_logical_operator.c rte_svpwm.c sfun_ehs_cfg.c sfun_efs_solver_cfg.c sfun_op7160ex1_event_generator.c
                     </value>
                 </property>
                 <property name="INTERNAL_LIBRARY1">
                     <value>
-                        -lOpalIoCtrlOP7160R2014b -lOpalIoFcnOP7160R2014b
+                        -lOpalIoFcnOP7160R2014b -lOpalIoCtrlOP7160R2014b
                     </value>
                 </property>
                 <property name="INTERNAL_LIBRARY2">
@@ -173,7 +173,7 @@ tmpfs                 4.0G     0  4.0G   0% /dev/shm
                 </property>
                 <property name="INTERNAL_LIBRARY3">
                     <value>
-                        -lOpalOP7160 -lOpalIoSysR2014b -lOpalOpSystem -lOpalRTER2014B -lEHS_cfgR2014b -lEfsSolver_cfgR2014b
+                        -lOpalOP7160 -lOpalOpSystem -lOpalRTER2014B -lOpalIoSysR2014b -lEHS_cfgR2014b -lEfsSolver_cfgR2014b
                     </value>
                 </property>
                 <property name="LANG">
@@ -447,20 +447,20 @@ tmpfs                 4.0G     0  4.0G   0% /dev/shm
           inet addr:192.168.5.113  Bcast:192.168.5.255  Mask:255.255.255.0
           inet6 addr: fe80::ec4:7aff:fe0c:1f5a/64 Scope:Link
           UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
-          RX packets:32359 errors:0 dropped:0 overruns:0 frame:0
-          TX packets:18190 errors:0 dropped:0 overruns:0 carrier:0
+          RX packets:16937231 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:16915926 errors:0 dropped:0 overruns:0 carrier:0
           collisions:0 txqueuelen:1000 
-          RX bytes:46550775 (44.3 MiB)  TX bytes:1458174 (1.3 MiB)
+          RX bytes:1171306120 (1.0 GiB)  TX bytes:3901217566 (3.6 GiB)
           Memory:df900000-df920000 
 
 lo        Link encap:Local Loopback  
           inet addr:127.0.0.1  Mask:255.0.0.0
           inet6 addr: ::1/128 Scope:Host
           UP LOOPBACK RUNNING  MTU:16436  Metric:1
-          RX packets:457 errors:0 dropped:0 overruns:0 frame:0
-          TX packets:457 errors:0 dropped:0 overruns:0 carrier:0
+          RX packets:523 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:523 errors:0 dropped:0 overruns:0 carrier:0
           collisions:0 txqueuelen:0 
-          RX bytes:995599 (972.2 KiB)  TX bytes:995599 (972.2 KiB)
+          RX bytes:1036872 (1012.5 KiB)  TX bytes:1036872 (1012.5 KiB)
                     </value>
                 </textlog>
             </item>
@@ -662,7 +662,7 @@ CPU 0 irqstacks, hard=c075a000 soft=c073a000
 PID hash table entries: 4096 (order: 12, 16384 bytes)
 Extended CMOS year: 2000
 Fast TSC calibration using PIT
-Detected 3299.978 MHz processor.
+Detected 3299.996 MHz processor.
 Console: colour VGA+ 80x25
 console [tty0] enabled
 Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
@@ -681,7 +681,7 @@ Checking if this processor honours the WP bit even in supervisor mode...Ok.
 SLUB: Genslabs=13, HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=8
 hpet clockevent registered
 HPET: 8 timers in total, 4 timers will be used for per-cpu timer
-Calibrating delay loop (skipped), value calculated using timer frequency.. 6599.95 BogoMIPS (lpj=13199912)
+Calibrating delay loop (skipped), value calculated using timer frequency.. 6599.99 BogoMIPS (lpj=13199984)
 Security Framework initialized
 SELinux:  Initializing.
 SELinux:  Starting in permissive mode
@@ -703,7 +703,7 @@ CPU 1 irqstacks, hard=c075b000 soft=c073b000
 Booting processor 1 APIC 0x2 ip 0x6000
 Initializing CPU#1
 Mapping cpu 1 to node 0
-Calibrating delay using timer specific routine.. 6599.78 BogoMIPS (lpj=13199571)
+Calibrating delay using timer specific routine.. 6600.03 BogoMIPS (lpj=13200074)
 CPU: Physical Processor ID: 0
 CPU: Processor Core ID: 1
 CPU: L1 I cache: 32K, L1 D cache: 32K
@@ -718,7 +718,7 @@ CPU 2 irqstacks, hard=c075c000 soft=c073c000
 Booting processor 2 APIC 0x4 ip 0x6000
 Initializing CPU#2
 Mapping cpu 2 to node 0
-Calibrating delay using timer specific routine.. 6599.77 BogoMIPS (lpj=13199556)
+Calibrating delay using timer specific routine.. 6600.04 BogoMIPS (lpj=13200088)
 CPU: Physical Processor ID: 0
 CPU: Processor Core ID: 2
 CPU: L1 I cache: 32K, L1 D cache: 32K
@@ -733,7 +733,7 @@ CPU 3 irqstacks, hard=c075d000 soft=c073d000
 Booting processor 3 APIC 0x6 ip 0x6000
 Initializing CPU#3
 Mapping cpu 3 to node 0
-Calibrating delay using timer specific routine.. 6599.77 BogoMIPS (lpj=13199551)
+Calibrating delay using timer specific routine.. 6600.04 BogoMIPS (lpj=13200081)
 CPU: Physical Processor ID: 0
 CPU: Processor Core ID: 3
 CPU: L1 I cache: 32K, L1 D cache: 32K
@@ -745,7 +745,7 @@ x86 PAT enabled: cpu 3, old 0x7040600070406, new 0x7010600070106
 CPU3: Intel(R) Xeon(R) CPU E3-1230 V2 @ 3.30GHz stepping 09
 checking TSC synchronization [CPU#0 -&gt; CPU#3]: passed.
 Brought up 4 CPUs
-Total of 4 processors activated (26399.29 BogoMIPS).
+Total of 4 processors activated (26400.11 BogoMIPS).
 net_namespace: 920 bytes
 NET: Registered protocol family 16
 ACPI FADT declares the system doesn't support PCIe ASPM, so disable it
@@ -812,10 +812,10 @@ ACPI: PCI Interrupt Link [LNKA] (IRQs 3 4 5 6 10 *11 12 14 15)
 ACPI: PCI Interrupt Link [LNKB] (IRQs 3 4 5 6 10 11 12 14 15) *0, disabled.
 ACPI: PCI Interrupt Link [LNKC] (IRQs 3 4 5 6 10 *11 12 14 15)
 ACPI: PCI Interrupt Link [LNKD] (IRQs 3 4 *5 6 10 11 12 14 15)
-ACPI: PCI Interrupt Link [LNKE] (IRQs 3 4 5 6 10 *11 12 14 15)
+ACPI: PCI Interrupt Link [LNKE] (IRQs 3 4 *5 6 10 11 12 14 15)
 ACPI: PCI Interrupt Link [LNKF] (IRQs 3 4 5 6 10 11 12 14 15) *0, disabled.
 ACPI: PCI Interrupt Link [LNKG] (IRQs 3 4 5 6 10 11 12 14 15) *0, disabled.
-ACPI: PCI Interrupt Link [LNKH] (IRQs 3 4 *5 6 10 11 12 14 15)
+ACPI: PCI Interrupt Link [LNKH] (IRQs 3 4 5 6 10 *11 12 14 15)
 ACPI: Power Resource [FN00] (off)
 ACPI: Power Resource [FN01] (off)
 ACPI: Power Resource [FN02] (off)
@@ -898,8 +898,8 @@ pci_bus 0000:03: resource 3 io:  [0x00-0xffff]
 pci_bus 0000:03: resource 4 mem: [0x000000-0xffffffffffffffff]
 NET: Registered protocol family 2
 Switched to high resolution mode on CPU 3
-Switched to high resolution mode on CPU 2
 Switched to high resolution mode on CPU 1
+Switched to high resolution mode on CPU 2
 Switched to high resolution mode on CPU 0
 IP route cache hash table entries: 32768 (order: 5, 131072 bytes)
 TCP established hash table entries: 131072 (order: 8, 1048576 bytes)
@@ -911,7 +911,7 @@ checking if image is initramfs... it is
 Freeing initrd memory: 2376k freed
 Microcode Update Driver: v2.00 &lt;tigran@aivazian.fsnet.co.uk&gt;, Peter Oruba
 audit: initializing netlink socket (disabled)
-type=2000 audit(1494548535.760:1): initialized
+type=2000 audit(1494947167.756:1): initialized
 highmem bounce pool size: 64 pages
 VFS: Disk quotas dquot_6.5.2
 Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
@@ -1106,21 +1106,15 @@ ata3: SATA link down (SStatus 0 SControl 300)
 ata4: SATA link down (SStatus 0 SControl 300)
 ata5: SATA link down (SStatus 0 SControl 300)
 ata6: SATA link down (SStatus 0 SControl 300)
-EXT3-fs: INFO: recovery required on readonly filesystem.
-EXT3-fs: write access will be enabled during recovery.
 kjournald starting.  Commit interval 5 seconds
-EXT3-fs: recovery complete.
 EXT3-fs: mounted filesystem with ordered data mode.
 SELinux:  Disabled at runtime.
 SELinux:  Unregistering netfilter hooks
-type=1404 audit(1494548542.977:2): selinux=0 auid=4294967295 ses=4294967295
+type=1404 audit(1494947174.573:2): selinux=0 auid=4294967295 ses=4294967295
 input: PC Speaker as /class/input/input0
 rtc_cmos 00:06: RTC can wake from S4
 rtc_cmos 00:06: rtc core: registered rtc_cmos as rtc0
 rtc0: alarms up to one month, y3k, 242 bytes nvram, hpet irqs
-input: Power Button (FF) as /class/input/input1
-ACPI: Power Button (FF) [PWRF]
-input: Power Button (CM) as /class/input/input2
 e1000e: Intel(R) PRO/1000 Network Driver - 0.3.3.3-k6
 e1000e: Copyright (c) 1999-2008 Intel Corporation.
 e1000e 0000:02:00.0: PCI INT A -&gt; GSI 16 (level, low) -&gt; IRQ 16
@@ -1128,10 +1122,13 @@ e1000e 0000:02:00.0: setting latency timer to 64
 e1000e 0000:02:00.0: irq 31 for MSI/MSI-X
 e1000e 0000:02:00.0: irq 32 for MSI/MSI-X
 e1000e 0000:02:00.0: irq 33 for MSI/MSI-X
-ACPI: Power Button (CM) [PWRB]
 0000:02:00.0: eth0: (PCI Express:2.5GB/s:Width x1) 0c:c4:7a:0c:1f:5a
 0000:02:00.0: eth0: Intel(R) PRO/1000 Network Connection
 0000:02:00.0: eth0: MAC: 3, PHY: 8, PBA No: ffffff-0ff
+input: Power Button (FF) as /class/input/input1
+ACPI: Power Button (FF) [PWRF]
+input: Power Button (CM) as /class/input/input2
+ACPI: Power Button (CM) [PWRB]
 sd 0:0:0:0: Attached scsi generic sg0 type 0
 floppy0: no floppy controllers found
 lp: driver loaded but no devices found
@@ -1164,7 +1161,7 @@ CPU 1 irqstacks, hard=c075b000 soft=c073b000
 Booting processor 1 APIC 0x2 ip 0x6000
 Initializing CPU#1
 Mapping cpu 1 to node 0
-Calibrating delay using timer specific routine.. 6599.76 BogoMIPS (lpj=13199531)
+Calibrating delay using timer specific routine.. 6599.53 BogoMIPS (lpj=13199072)
 CPU: Physical Processor ID: 0
 CPU: Processor Core ID: 1
 CPU: L1 I cache: 32K, L1 D cache: 32K
@@ -1184,7 +1181,7 @@ CPU 2 irqstacks, hard=c075c000 soft=c073c000
 Booting processor 2 APIC 0x4 ip 0x6000
 Initializing CPU#2
 Mapping cpu 2 to node 0
-Calibrating delay using timer specific routine.. 6599.96 BogoMIPS (lpj=13199931)
+Calibrating delay using timer specific routine.. 6600.13 BogoMIPS (lpj=13200272)
 CPU: Physical Processor ID: 0
 CPU: Processor Core ID: 2
 CPU: L1 I cache: 32K, L1 D cache: 32K
@@ -1202,7 +1199,7 @@ CPU 3 irqstacks, hard=c075d000 soft=c073d000
 Booting processor 3 APIC 0x6 ip 0x6000
 Initializing CPU#3
 Mapping cpu 3 to node 0
-Calibrating delay using timer specific routine.. 6600.00 BogoMIPS (lpj=13200010)
+Calibrating delay using timer specific routine.. 6600.04 BogoMIPS (lpj=13200089)
 CPU: Physical Processor ID: 0
 CPU: Processor Core ID: 3
 CPU: L1 I cache: 32K, L1 D cache: 32K
@@ -1222,6 +1219,64 @@ ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
 eth0: no IPv6 routers present
 opalpci: driver loaded  (major 250)
 pci 0000:01:00.0: PCI INT A -&gt; GSI 16 (level, low) -&gt; IRQ 16
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+Clocksource tsc unstable (delta = 899907452946 ns)
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+e1000e: eth0 NIC Link is Down
+e1000e: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX/TX
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+e1000e: eth0 NIC Link is Down
+e1000e: eth0 NIC Link is Up 10 Mbps Full Duplex, Flow Control: None
+0000:02:00.0: eth0: 10/100 speed: disabling TSO
+e1000e: eth0 NIC Link is Down
+e1000e: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX/TX
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
 pci 0000:01:00.0: setting latency timer to 64
 pci 0000:01:00.0: setting latency timer to 64
 pci 0000:01:00.0: setting latency timer to 64
@@ -1532,7 +1587,7 @@ NetworkInterfacesManager on LAPTOP-5FBKHMJV: (5 interfaces)
   ` subnet boundaries: [192.168.44.0, 192.168.44.255]
   - found in subnet map: VMware Network Adapter VMnet8
 * Wi-Fi (index: 25)
-  - IP address: 10.248.71.247 [0x0af847f7]
+  - IP address: 10.248.71.209 [0x0af847d1]
   - MAC address: 48-e2-44-4e-21-dd
   - type: Wireless
   - state: Up
@@ -5630,7 +5685,7 @@ NetworkInterfacesManager on LAPTOP-5FBKHMJV: (5 interfaces)
   ` subnet boundaries: [192.168.44.0, 192.168.44.255]
   - found in subnet map: VMware Network Adapter VMnet8
 * Wi-Fi (index: 25)
-  - IP address: 10.248.71.247 [0x0af847f7]
+  - IP address: 10.248.71.209 [0x0af847d1]
   - MAC address: 48-e2-44-4e-21-dd
   - type: Wireless
   - state: Up
@@ -5833,12 +5888,12 @@ tmpfs                 4.0G     0  4.0G   0% /dev/shm
                 </property>
                 <property name="INTERNAL_IGN_SOURCE_FILE">
                     <value>
-                        sfun_ctrl_op7160ex1.c sfun_fct_op7160ex1_recv.c sfun_fct_op7160ex1_send.c sfun_fct_op7160ex1_load_in.c rte_conversion_ophsdio.c rte_conversion.c rte_ground.c rte_logical_operator.c sfun_ehs_cfg.c sfun_efs_solver_cfg.c sfun_op7160ex1_event_generator.c
+                        sfun_op7160ex1_digital_in.c sfun_op7160ex1_pwm_in.c sfun_fct_op7160ex1_load_in.c sfun_ctrl_op7160ex1.c sfun_fct_op7160ex1_recv.c sfun_fct_op7160ex1_send.c rte_conversion_ophsdio.c rte_conversion.c rte_ground.c rte_logical_operator.c rte_svpwm.c sfun_ehs_cfg.c sfun_efs_solver_cfg.c sfun_op7160ex1_event_generator.c
                     </value>
                 </property>
                 <property name="INTERNAL_LIBRARY1">
                     <value>
-                        -lOpalIoCtrlOP7160R2014b -lOpalIoFcnOP7160R2014b
+                        -lOpalIoFcnOP7160R2014b -lOpalIoCtrlOP7160R2014b
                     </value>
                 </property>
                 <property name="INTERNAL_LIBRARY2">
@@ -5848,7 +5903,7 @@ tmpfs                 4.0G     0  4.0G   0% /dev/shm
                 </property>
                 <property name="INTERNAL_LIBRARY3">
                     <value>
-                        -lOpalOP7160 -lOpalIoSysR2014b -lOpalOpSystem -lOpalRTER2014B -lEHS_cfgR2014b -lEfsSolver_cfgR2014b
+                        -lOpalOP7160 -lOpalOpSystem -lOpalRTER2014B -lOpalIoSysR2014b -lEHS_cfgR2014b -lEfsSolver_cfgR2014b
                     </value>
                 </property>
                 <property name="LANG">
@@ -5898,7 +5953,7 @@ tmpfs                 4.0G     0  4.0G   0% /dev/shm
                 </property>
                 <property name="MaxDynamicSignals">
                     <value>
-                        2/0/100/24/48/
+                        2/0/100/24/52/
                     </value>
                 </property>
                 <property name="MODEL_PAUSE_TIME">
@@ -6142,20 +6197,20 @@ tmpfs                 4.0G     0  4.0G   0% /dev/shm
           inet addr:192.168.5.113  Bcast:192.168.5.255  Mask:255.255.255.0
           inet6 addr: fe80::ec4:7aff:fe0c:1f5a/64 Scope:Link
           UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
-          RX packets:15896962 errors:0 dropped:0 overruns:0 frame:0
-          TX packets:15898776 errors:0 dropped:0 overruns:0 carrier:0
+          RX packets:17201226 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:17191668 errors:0 dropped:0 overruns:0 carrier:0
           collisions:0 txqueuelen:1000 
-          RX bytes:1072419932 (1022.7 MiB)  TX bytes:2618270365 (2.4 GiB)
+          RX bytes:1247697540 (1.1 GiB)  TX bytes:4226448588 (3.9 GiB)
           Memory:df900000-df920000 
 
 lo        Link encap:Local Loopback  
           inet addr:127.0.0.1  Mask:255.0.0.0
           inet6 addr: ::1/128 Scope:Host
           UP LOOPBACK RUNNING  MTU:16436  Metric:1
-          RX packets:565 errors:0 dropped:0 overruns:0 frame:0
-          TX packets:565 errors:0 dropped:0 overruns:0 carrier:0
+          RX packets:551 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:551 errors:0 dropped:0 overruns:0 carrier:0
           collisions:0 txqueuelen:0 
-          RX bytes:1008301 (984.6 KiB)  TX bytes:1008301 (984.6 KiB)
+          RX bytes:1038392 (1014.0 KiB)  TX bytes:1038392 (1014.0 KiB)
                     </value>
                 </textlog>
             </item>
@@ -6357,7 +6412,7 @@ CPU 0 irqstacks, hard=c075a000 soft=c073a000
 PID hash table entries: 4096 (order: 12, 16384 bytes)
 Extended CMOS year: 2000
 Fast TSC calibration using PIT
-Detected 3299.978 MHz processor.
+Detected 3299.996 MHz processor.
 Console: colour VGA+ 80x25
 console [tty0] enabled
 Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
@@ -6376,7 +6431,7 @@ Checking if this processor honours the WP bit even in supervisor mode...Ok.
 SLUB: Genslabs=13, HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=8
 hpet clockevent registered
 HPET: 8 timers in total, 4 timers will be used for per-cpu timer
-Calibrating delay loop (skipped), value calculated using timer frequency.. 6599.95 BogoMIPS (lpj=13199912)
+Calibrating delay loop (skipped), value calculated using timer frequency.. 6599.99 BogoMIPS (lpj=13199984)
 Security Framework initialized
 SELinux:  Initializing.
 SELinux:  Starting in permissive mode
@@ -6398,7 +6453,7 @@ CPU 1 irqstacks, hard=c075b000 soft=c073b000
 Booting processor 1 APIC 0x2 ip 0x6000
 Initializing CPU#1
 Mapping cpu 1 to node 0
-Calibrating delay using timer specific routine.. 6599.78 BogoMIPS (lpj=13199571)
+Calibrating delay using timer specific routine.. 6600.03 BogoMIPS (lpj=13200074)
 CPU: Physical Processor ID: 0
 CPU: Processor Core ID: 1
 CPU: L1 I cache: 32K, L1 D cache: 32K
@@ -6413,7 +6468,7 @@ CPU 2 irqstacks, hard=c075c000 soft=c073c000
 Booting processor 2 APIC 0x4 ip 0x6000
 Initializing CPU#2
 Mapping cpu 2 to node 0
-Calibrating delay using timer specific routine.. 6599.77 BogoMIPS (lpj=13199556)
+Calibrating delay using timer specific routine.. 6600.04 BogoMIPS (lpj=13200088)
 CPU: Physical Processor ID: 0
 CPU: Processor Core ID: 2
 CPU: L1 I cache: 32K, L1 D cache: 32K
@@ -6428,7 +6483,7 @@ CPU 3 irqstacks, hard=c075d000 soft=c073d000
 Booting processor 3 APIC 0x6 ip 0x6000
 Initializing CPU#3
 Mapping cpu 3 to node 0
-Calibrating delay using timer specific routine.. 6599.77 BogoMIPS (lpj=13199551)
+Calibrating delay using timer specific routine.. 6600.04 BogoMIPS (lpj=13200081)
 CPU: Physical Processor ID: 0
 CPU: Processor Core ID: 3
 CPU: L1 I cache: 32K, L1 D cache: 32K
@@ -6440,7 +6495,7 @@ x86 PAT enabled: cpu 3, old 0x7040600070406, new 0x7010600070106
 CPU3: Intel(R) Xeon(R) CPU E3-1230 V2 @ 3.30GHz stepping 09
 checking TSC synchronization [CPU#0 -&gt; CPU#3]: passed.
 Brought up 4 CPUs
-Total of 4 processors activated (26399.29 BogoMIPS).
+Total of 4 processors activated (26400.11 BogoMIPS).
 net_namespace: 920 bytes
 NET: Registered protocol family 16
 ACPI FADT declares the system doesn't support PCIe ASPM, so disable it
@@ -6507,10 +6562,10 @@ ACPI: PCI Interrupt Link [LNKA] (IRQs 3 4 5 6 10 *11 12 14 15)
 ACPI: PCI Interrupt Link [LNKB] (IRQs 3 4 5 6 10 11 12 14 15) *0, disabled.
 ACPI: PCI Interrupt Link [LNKC] (IRQs 3 4 5 6 10 *11 12 14 15)
 ACPI: PCI Interrupt Link [LNKD] (IRQs 3 4 *5 6 10 11 12 14 15)
-ACPI: PCI Interrupt Link [LNKE] (IRQs 3 4 5 6 10 *11 12 14 15)
+ACPI: PCI Interrupt Link [LNKE] (IRQs 3 4 *5 6 10 11 12 14 15)
 ACPI: PCI Interrupt Link [LNKF] (IRQs 3 4 5 6 10 11 12 14 15) *0, disabled.
 ACPI: PCI Interrupt Link [LNKG] (IRQs 3 4 5 6 10 11 12 14 15) *0, disabled.
-ACPI: PCI Interrupt Link [LNKH] (IRQs 3 4 *5 6 10 11 12 14 15)
+ACPI: PCI Interrupt Link [LNKH] (IRQs 3 4 5 6 10 *11 12 14 15)
 ACPI: Power Resource [FN00] (off)
 ACPI: Power Resource [FN01] (off)
 ACPI: Power Resource [FN02] (off)
@@ -6593,8 +6648,8 @@ pci_bus 0000:03: resource 3 io:  [0x00-0xffff]
 pci_bus 0000:03: resource 4 mem: [0x000000-0xffffffffffffffff]
 NET: Registered protocol family 2
 Switched to high resolution mode on CPU 3
-Switched to high resolution mode on CPU 2
 Switched to high resolution mode on CPU 1
+Switched to high resolution mode on CPU 2
 Switched to high resolution mode on CPU 0
 IP route cache hash table entries: 32768 (order: 5, 131072 bytes)
 TCP established hash table entries: 131072 (order: 8, 1048576 bytes)
@@ -6606,7 +6661,7 @@ checking if image is initramfs... it is
 Freeing initrd memory: 2376k freed
 Microcode Update Driver: v2.00 &lt;tigran@aivazian.fsnet.co.uk&gt;, Peter Oruba
 audit: initializing netlink socket (disabled)
-type=2000 audit(1494548535.760:1): initialized
+type=2000 audit(1494947167.756:1): initialized
 highmem bounce pool size: 64 pages
 VFS: Disk quotas dquot_6.5.2
 Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
@@ -6801,21 +6856,15 @@ ata3: SATA link down (SStatus 0 SControl 300)
 ata4: SATA link down (SStatus 0 SControl 300)
 ata5: SATA link down (SStatus 0 SControl 300)
 ata6: SATA link down (SStatus 0 SControl 300)
-EXT3-fs: INFO: recovery required on readonly filesystem.
-EXT3-fs: write access will be enabled during recovery.
 kjournald starting.  Commit interval 5 seconds
-EXT3-fs: recovery complete.
 EXT3-fs: mounted filesystem with ordered data mode.
 SELinux:  Disabled at runtime.
 SELinux:  Unregistering netfilter hooks
-type=1404 audit(1494548542.977:2): selinux=0 auid=4294967295 ses=4294967295
+type=1404 audit(1494947174.573:2): selinux=0 auid=4294967295 ses=4294967295
 input: PC Speaker as /class/input/input0
 rtc_cmos 00:06: RTC can wake from S4
 rtc_cmos 00:06: rtc core: registered rtc_cmos as rtc0
 rtc0: alarms up to one month, y3k, 242 bytes nvram, hpet irqs
-input: Power Button (FF) as /class/input/input1
-ACPI: Power Button (FF) [PWRF]
-input: Power Button (CM) as /class/input/input2
 e1000e: Intel(R) PRO/1000 Network Driver - 0.3.3.3-k6
 e1000e: Copyright (c) 1999-2008 Intel Corporation.
 e1000e 0000:02:00.0: PCI INT A -&gt; GSI 16 (level, low) -&gt; IRQ 16
@@ -6823,10 +6872,13 @@ e1000e 0000:02:00.0: setting latency timer to 64
 e1000e 0000:02:00.0: irq 31 for MSI/MSI-X
 e1000e 0000:02:00.0: irq 32 for MSI/MSI-X
 e1000e 0000:02:00.0: irq 33 for MSI/MSI-X
-ACPI: Power Button (CM) [PWRB]
 0000:02:00.0: eth0: (PCI Express:2.5GB/s:Width x1) 0c:c4:7a:0c:1f:5a
 0000:02:00.0: eth0: Intel(R) PRO/1000 Network Connection
 0000:02:00.0: eth0: MAC: 3, PHY: 8, PBA No: ffffff-0ff
+input: Power Button (FF) as /class/input/input1
+ACPI: Power Button (FF) [PWRF]
+input: Power Button (CM) as /class/input/input2
+ACPI: Power Button (CM) [PWRB]
 sd 0:0:0:0: Attached scsi generic sg0 type 0
 floppy0: no floppy controllers found
 lp: driver loaded but no devices found
@@ -6859,7 +6911,7 @@ CPU 1 irqstacks, hard=c075b000 soft=c073b000
 Booting processor 1 APIC 0x2 ip 0x6000
 Initializing CPU#1
 Mapping cpu 1 to node 0
-Calibrating delay using timer specific routine.. 6599.76 BogoMIPS (lpj=13199531)
+Calibrating delay using timer specific routine.. 6599.53 BogoMIPS (lpj=13199072)
 CPU: Physical Processor ID: 0
 CPU: Processor Core ID: 1
 CPU: L1 I cache: 32K, L1 D cache: 32K
@@ -6879,7 +6931,7 @@ CPU 2 irqstacks, hard=c075c000 soft=c073c000
 Booting processor 2 APIC 0x4 ip 0x6000
 Initializing CPU#2
 Mapping cpu 2 to node 0
-Calibrating delay using timer specific routine.. 6599.96 BogoMIPS (lpj=13199931)
+Calibrating delay using timer specific routine.. 6600.13 BogoMIPS (lpj=13200272)
 CPU: Physical Processor ID: 0
 CPU: Processor Core ID: 2
 CPU: L1 I cache: 32K, L1 D cache: 32K
@@ -6897,7 +6949,7 @@ CPU 3 irqstacks, hard=c075d000 soft=c073d000
 Booting processor 3 APIC 0x6 ip 0x6000
 Initializing CPU#3
 Mapping cpu 3 to node 0
-Calibrating delay using timer specific routine.. 6600.00 BogoMIPS (lpj=13200010)
+Calibrating delay using timer specific routine.. 6600.04 BogoMIPS (lpj=13200089)
 CPU: Physical Processor ID: 0
 CPU: Processor Core ID: 3
 CPU: L1 I cache: 32K, L1 D cache: 32K
@@ -6927,6 +6979,19 @@ pci 0000:01:00.0: setting latency timer to 64
 pci 0000:01:00.0: setting latency timer to 64
 pci 0000:01:00.0: setting latency timer to 64
 pci 0000:01:00.0: setting latency timer to 64
+Clocksource tsc unstable (delta = 899907452946 ns)
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+e1000e: eth0 NIC Link is Down
+e1000e: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX/TX
 pci 0000:01:00.0: setting latency timer to 64
 pci 0000:01:00.0: setting latency timer to 64
 pci 0000:01:00.0: setting latency timer to 64
@@ -6947,7 +7012,41 @@ pci 0000:01:00.0: setting latency timer to 64
 pci 0000:01:00.0: setting latency timer to 64
 pci 0000:01:00.0: setting latency timer to 64
 pci 0000:01:00.0: setting latency timer to 64
-Clocksource tsc unstable (delta = 899914548306 ns)
+e1000e: eth0 NIC Link is Down
+e1000e: eth0 NIC Link is Up 10 Mbps Full Duplex, Flow Control: None
+0000:02:00.0: eth0: 10/100 speed: disabling TSO
+e1000e: eth0 NIC Link is Down
+e1000e: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX/TX
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
 pci 0000:01:00.0: setting latency timer to 64
 pci 0000:01:00.0: setting latency timer to 64
 pci 0000:01:00.0: setting latency timer to 64
@@ -6974,7 +7073,7 @@ pci 0000:01:00.0: setting latency timer to 64
                 <value>
                     
 -------------------- Starting compilation --------------------
-Start at : Thursday, May 11, 2017, 18:33:43
+Start at : Tuesday, May 16, 2017, 17:32:21
 
 The current RT-LAB version is:  v11.0.8.13
 The current model is:           C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab.mdl
@@ -6990,6 +7089,18 @@ Warning: &quot;boost_and_two_level_bridge_rtlab/SC_Console/Analog Output Mapping
   In opInitFunction&gt;OpenSystem at 501
   In opInitFunction&gt;GenerateModel at 155
   In opInitFunction at 71] 
+There must be at least one controller block with CtrlName = 'OP7160EX1 Ctrl' in the model!
+There must be at least one controller block with CtrlName = 'ML605EX1 Ctrl' in the model!
+There must be at least one controller block with CtrlName = 'OpCtrl' in the model!
+There must be at least one controller block with CtrlName = 'OP7160EX1 Ctrl' in the model!
+There must be at least one controller block with CtrlName = 'OP7160EX1 Ctrl' in the model!
+There must be at least one controller block with CtrlName = 'OP7160EX1 Ctrl' in the model!
+There must be at least one controller block with CtrlName = 'ML605EX1 Ctrl' in the model!
+There must be at least one controller block with CtrlName = 'ML605EX1 Ctrl' in the model!
+There must be at least one controller block with CtrlName = 'ML605EX1 Ctrl' in the model!
+There must be at least one controller block with CtrlName = 'OpCtrl' in the model!
+There must be at least one controller block with CtrlName = 'OpCtrl' in the model!
+There must be at least one controller block with CtrlName = 'OpCtrl' in the model!
  
 Diagnostics: 
  
@@ -7010,7 +7121,7 @@ Separating RT-LAB subsystem 'SC_Console'.
 WARNING: Saving subsystems with breaklinks option has been disabled. Subsystems real-time behavior may be different.
 WARNING: Saving subsystems with breaklinks option has been disabled. Subsystems real-time behavior may be different.
 A monitoring block (OpMonitor) has been found. The monitoring will be enabled.
-Model preparation and separation duration : 00h:00m:49s
+Model preparation and separation duration : 00h:00m:52s
 -------------------- Completed successfully --------------------
 
 Generating model because C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\Opcommon\boost_and_two_level__1_sm_ehs.mdl has changed.
@@ -7076,6 +7187,8 @@ found]
 [Warning: Matching &quot;From&quot; for &quot;Goto&quot; '&lt;a href=&quot;matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/Inverter Control/VDC Regulator/Goto5','error')&quot;&gt;boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/Inverter Control/VDC Regulator/Goto5&lt;/a&gt;' not
 found] 
 [Warning: Output port 2 of '&lt;a href=&quot;matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/Outputs_eHS1_Recv','error')&quot;&gt;boost_and_two_level__1_sm_ehs/SM_eHS/Outputs_eHS1_Recv&lt;/a&gt;' is not connected.] 
+[Warning: Input port 1 of '&lt;a href=&quot;matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/Selector2','error')&quot;&gt;boost_and_two_level__1_sm_ehs/SM_eHS/Selector2&lt;/a&gt;' is not connected.] 
+[Warning: Output port 1 of '&lt;a href=&quot;matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/Selector2','error')&quot;&gt;boost_and_two_level__1_sm_ehs/SM_eHS/Selector2&lt;/a&gt;' is not connected.] 
 [Warning: Output port 4 of '&lt;a href=&quot;matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/Demux','error')&quot;&gt;boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/Demux&lt;/a&gt;' is not connected.] 
 [Warning: Output port 7 of '&lt;a href=&quot;matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/Demux','error')&quot;&gt;boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/Demux&lt;/a&gt;' is not connected.] 
 [Warning: Use fixed buffer size in 'boost_and_two_level__1_sm_ehs/SM_eHS/Subsystem/Mean/Model/Transport Delay' is not selected. When
@@ -7102,7 +7215,7 @@ following three combinations: u2 ~= 0, u2 &gt; Threshold with Threshold equal to
 ### Loading TLC function libraries
 ......
 ### Initial pass through model to cache user defined code
-.........
+...........
 ### TLC Scope icon is not supported by RT-LAB.
 .............
 ### Caching model source code
@@ -7111,7 +7224,7 @@ following three combinations: u2 ~= 0, u2 &gt; Threshold with Threshold equal to
 ...............................................................................
 ...............................................................................
 ...............................................................................
-.....................
+.........................................................
 ### Writing source file boost_and_two_level__1_sm_ehs.c
 ### Writing header file boost_and_two_level__1_sm_ehs_private.h
 .
@@ -7132,8 +7245,8 @@ following three combinations: u2 ~= 0, u2 &gt; Threshold with Threshold equal to
 .
 ### Writing header file rt_nonfinite.h
 ### Writing source file rt_nonfinite.c
-.
 ### Writing header file rtmodel.h
+.
 ### Writing source file boost_and_two_level__1_sm_ehs_data.c
 ### TLC code generation complete.
 ....
@@ -7141,7 +7254,7 @@ Warning:  Version[0] 8 Version[1] . Version[2] 7
 ### Creating model mapping file boost_and_two_level__1_sm_ehs.map using map_r2014b.tlc
 ...............................................................................
 ...............................................................................
-.[Warning: Incorrect internal Simulink identifiers were detected. The following blocks have conflicting identifiers:
+.................[Warning: Incorrect internal Simulink identifiers were detected. The following blocks have conflicting identifiers:
   '&lt;a href=&quot;matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/eHSx64 Gen3 CommBlk/Convert double to  Single floating-point (FPGA)','error')&quot;&gt;boost_and_two_level__1_sm_ehs/SM_eHS/eHSx64 Gen3 CommBlk/Convert double to  Single floating-point (FPGA)&lt;/a&gt;'
   '&lt;a href=&quot;matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/eHSx64 Gen3 CommBlk/INPUTS','error')&quot;&gt;boost_and_two_level__1_sm_ehs/SM_eHS/eHSx64 Gen3 CommBlk/INPUTS&lt;/a&gt;'.
 The Simulink identifier of '&lt;a href=&quot;matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/eHSx64 Gen3 CommBlk/Convert double to  Single floating-point (FPGA)','error')&quot;&gt;boost_and_two_level__1_sm_ehs/SM_eHS/eHSx64 Gen3 CommBlk/Convert double to  Single floating-point (FPGA)&lt;/a&gt;'
@@ -7160,8 +7273,8 @@ the original model, and then save and reopen the current model.]
 ### Successful completion of code generation for model: boost_and_two_level__1_sm_ehs
 
 
-boost_and_two_level__1_sm_ehs : Generating C code duration : 00h:00m:32s
-Generating C code total duration : 00h:00m:32s
+boost_and_two_level__1_sm_ehs : Generating C code duration : 00h:00m:39s
+Generating C code total duration : 00h:00m:39s
 
 -------------------- Completed successfully --------------------
 
@@ -7175,14 +7288,14 @@ Parameter database creation duration: 00h:00m:00s
 Signal(s) with more than 20 values will be disabled.
 Use SIGNALS_VECTOR_SIZE_LIMIT environment variable to modify this limit.
 
-Signal database creation duration: 00h:00m:00s
+Signal database creation duration: 00h:00m:01s
 -------------------- Signal database created successfully --------------------
 Generating simulation data...
 Data generated in 00h:00m:00s
 
 Closing Matlab... OK.
 Updating dependencies... OK.
-Compiling model because C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\boost_and_two_level__1_sm_ehs_data.c has changed.
+Compiling model because C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\OpalSnapshotUtil.c has changed.
 
 -------------------- Validating sources files --------------------------
 
@@ -7229,13 +7342,13 @@ Transferring user extra files:
 Transferring in ascii: C:\Program Files (x86)\MATLAB\R2014b\toolbox\physmod\powersys\powersys\sfun_discreteVariableDelay.c (SM_eHS) ... OK.
 Transferring in binary: D:\OPAL-RT\RT-LAB\v11.0.8.13\common\lib\redhawk\libOpalOP7160.a (SM_eHS) ... OK.
 Transferring in binary: D:\OPAL-RT\RT-LAB\v11.0.8.13\common\lib\redhawk\libOpalOpSystem.a (SM_eHS) ... OK.
-Transferring in binary: D:\OPAL-RT\RT-LAB\v11.0.8.13\simulink\libR2014b\redhawk\libOpalIoCtrlOP7160R2014b.a (SM_eHS) ... OK.
 Transferring in binary: D:\OPAL-RT\RT-LAB\v11.0.8.13\simulink\libR2014b\redhawk\libOpalIoFcnOP7160R2014b.a (SM_eHS) ... OK.
+Transferring in binary: D:\OPAL-RT\RT-LAB\v11.0.8.13\simulink\libR2014b\redhawk\libOpalIoCtrlOP7160R2014b.a (SM_eHS) ... OK.
 Transferring in binary: D:\OPAL-RT\RT-EVENTS\v4.0.2.520\rte_r2014b\lib\redhawk\libRtEvents_RT402520R2014Br.a (SM_eHS) ... OK.
 Transferring in binary: D:\OPAL-RT\eFPGAsim\v1.4.2.496\Simulink\efs_R2014b\redhawk\libEHS_cfgR2014b.a (SM_eHS) ... OK.
 Transferring in binary: D:\OPAL-RT\eFPGAsim\v1.4.2.496\Simulink\efs_R2014b\redhawk\libEfsSolver_cfgR2014b.a (SM_eHS) ... OK.
 
-File transfer duration : 00h:00m:05s
+File transfer duration : 00h:00m:06s
 -------------------- Completed successfully --------------------
 
 -------------------- Building the generated C code --------------------
@@ -7258,7 +7371,7 @@ opicc -c  -O2 -xHost -falign-functions=2 -diag-disable remark,warn,cpu-dispatch 
 opicc -c  -O2 -xHost -falign-functions=2 -diag-disable remark,warn,cpu-dispatch    -DUSE_RTMODEL -DMODEL=boost_and_two_level__1_sm_ehs -DRT=RT -DNUMST=2 -DTID01EQ=1 -DNCSTATES=2 -DMT=0 -DTERMFCN=1 -DMULTITASKING=0 -D_SIMULINK -DRTLAB -DOP_MATLABR2014B	 -DMAT_FILE=1 -DCLASSIC_INTERFACE=1 -DONESTEPFCN=0 -DMULTI_INSTANCE_CODE=0 -DUNIX -I/usr/opalrt/externals/include  -I. -I/usr/matlab/v8.4/simulink/include -I/usr/matlab/v8.4/extern/include -I/usr/matlab/v8.4/rtw/c/src -I/usr/matlab/v8.4/rtw/c/src/matrixmath -I/usr/matlab/v8.4/rtw/c/libsrc  -I/usr/matlab/v8.4/toolbox/simscape/include/drive -I/usr/matlab/v8.4/toolbox/simscape/include/mech -I/usr/matlab/v8.4/toolbox/simscape/include/foundation -I/usr/matlab/v8.4/toolbox/simscape/include/network_engine -I/usr/matlab/v8.4/toolbox/simscape/include/ne_sli -I/usr/matlab/v8.4/toolbox/dspblks/include -I/usr/matlab/v8.4/toolbox/simscape/include/compiler/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/sli/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/utils  -I/usr/opalrt/v11.0.8.13/common/include -I/usr/opalrt/v11.0.8.13/common/include_target -I/usr/opalrt/v11.0.8.13/RT-LAB/include    -I_sharedutils  /usr/matlab/v8.4/rtw/c/src/rt_sim.c
 opicc -c  -O2 -xHost -falign-functions=2 -diag-disable remark,warn,cpu-dispatch    -DUSE_RTMODEL -DMODEL=boost_and_two_level__1_sm_ehs -DRT=RT -DNUMST=2 -DTID01EQ=1 -DNCSTATES=2 -DMT=0 -DTERMFCN=1 -DMULTITASKING=0 -D_SIMULINK -DRTLAB -DOP_MATLABR2014B	 -DMAT_FILE=1 -DCLASSIC_INTERFACE=1 -DONESTEPFCN=0 -DMULTI_INSTANCE_CODE=0 -DUNIX -I/usr/opalrt/externals/include  -I. -I/usr/matlab/v8.4/simulink/include -I/usr/matlab/v8.4/extern/include -I/usr/matlab/v8.4/rtw/c/src -I/usr/matlab/v8.4/rtw/c/src/matrixmath -I/usr/matlab/v8.4/rtw/c/libsrc  -I/usr/matlab/v8.4/toolbox/simscape/include/drive -I/usr/matlab/v8.4/toolbox/simscape/include/mech -I/usr/matlab/v8.4/toolbox/simscape/include/foundation -I/usr/matlab/v8.4/toolbox/simscape/include/network_engine -I/usr/matlab/v8.4/toolbox/simscape/include/ne_sli -I/usr/matlab/v8.4/toolbox/dspblks/include -I/usr/matlab/v8.4/toolbox/simscape/include/compiler/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/sli/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/utils  -I/usr/opalrt/v11.0.8.13/common/include -I/usr/opalrt/v11.0.8.13/common/include_target -I/usr/opalrt/v11.0.8.13/RT-LAB/include    -I_sharedutils  sfun_discreteVariableDelay.c
 ### Linking ...
-opicpc  -Wl,-rpath='/usr/opalrt/v11.0.8.13/common/bin' -Wl,'-rpath=/usr/opalrt/v11.0.8.13/common/bin/x32' -Wl,-rpath='/opt/intel/Compiler/11.1/072/lib/ia32' -Wl,-rpath='/opt/intel/Compiler/11.1/056/lib/ia32' -diag-disable remark -L. -L/usr/opalrt/v11.0.8.13/RT-LAB/lib -L/usr/opalrt/v11.0.8.13/common/lib -L/usr/opalrt/v11.0.8.13/common/lib/redhawk -L/usr/opalrt/v11.0.8.13/common/bin -L/usr/opalrt/v11.0.8.13/common/bin/x32 -L/usr/opalrt/externals/lib   -L/usr/matlab/v8.4/toolbox/dspblks/lib/redhawk	 -L/usr/matlab/v8.4/toolbox/simscape/lib/redhawk   -o boost_and_two_level__1_sm_ehs boost_and_two_level__1_sm_ehs.o boost_and_two_level__1_sm_ehs_data.o model_main.o rtGetInf.o rtGetNaN.o rt_logging.o rt_nonfinite.o rt_printf.o rt_sim.o sfun_discreteVariableDelay.o   -lOpalIoCtrlOP7160R2014b -lOpalIoFcnOP7160R2014b -lOpalIoFcnOP7160R2014b -lRtEvents_RT402520R2014Br -lOpalRTER2014B -lOpalOP7160 -lOpalIoSysR2014b -lOpalOpSystem -lOpalRTER2014B -lEHS_cfgR2014b -lEfsSolver_cfgR2014b -lOpalSimCore -lSimCoreLib -lSyncExchangerLib -lConnectionLib -lConnectionFactoryLib -lOpalSfunR2014b -lOpalR2014b -lBlocksRT-2014b -lOpalCore -lOpalOhci -lOpalCore -llicenseRH32 -lSimulink -lInfrastructure  -lNetwork -lKLU -lNumeric -lFramework -lSystem -lMatio -luuid -lpthread -lOpalSimCore -lSimCoreLib -lSyncExchangerLib -lConnectionLib -lConnectionFactoryLib -lOpalUtils -ldspblks -lsimscape -lpthread -lm -ldl -lutil -lrt     /usr/matlab/v8.4/rtw/c/libsrc/rtwlibr_redhawk.a 
+opicpc  -Wl,-rpath='/usr/opalrt/v11.0.8.13/common/bin' -Wl,'-rpath=/usr/opalrt/v11.0.8.13/common/bin/x32' -Wl,-rpath='/opt/intel/Compiler/11.1/072/lib/ia32' -Wl,-rpath='/opt/intel/Compiler/11.1/056/lib/ia32' -diag-disable remark -L. -L/usr/opalrt/v11.0.8.13/RT-LAB/lib -L/usr/opalrt/v11.0.8.13/common/lib -L/usr/opalrt/v11.0.8.13/common/lib/redhawk -L/usr/opalrt/v11.0.8.13/common/bin -L/usr/opalrt/v11.0.8.13/common/bin/x32 -L/usr/opalrt/externals/lib   -L/usr/matlab/v8.4/toolbox/dspblks/lib/redhawk	 -L/usr/matlab/v8.4/toolbox/simscape/lib/redhawk   -o boost_and_two_level__1_sm_ehs boost_and_two_level__1_sm_ehs.o boost_and_two_level__1_sm_ehs_data.o model_main.o rtGetInf.o rtGetNaN.o rt_logging.o rt_nonfinite.o rt_printf.o rt_sim.o sfun_discreteVariableDelay.o   -lOpalIoFcnOP7160R2014b -lOpalIoCtrlOP7160R2014b -lOpalIoFcnOP7160R2014b -lRtEvents_RT402520R2014Br -lOpalRTER2014B -lOpalOP7160 -lOpalOpSystem -lOpalRTER2014B -lOpalIoSysR2014b -lEHS_cfgR2014b -lEfsSolver_cfgR2014b -lOpalSimCore -lSimCoreLib -lSyncExchangerLib -lConnectionLib -lConnectionFactoryLib -lOpalSfunR2014b -lOpalR2014b -lBlocksRT-2014b -lOpalCore -lOpalOhci -lOpalCore -llicenseRH32 -lSimulink -lInfrastructure  -lNetwork -lKLU -lNumeric -lFramework -lSystem -lMatio -luuid -lpthread -lOpalSimCore -lSimCoreLib -lSyncExchangerLib -lConnectionLib -lConnectionFactoryLib -lOpalUtils -ldspblks -lsimscape -lpthread -lm -ldl -lutil -lrt     /usr/matlab/v8.4/rtw/c/libsrc/rtwlibr_redhawk.a 
 chmod a+x boost_and_two_level__1_sm_ehs
 ### Created executable: boost_and_two_level__1_sm_ehs
 
@@ -7272,12 +7385,12 @@ Connecting to 192.168.5.113 ... OK.
 Transferring in binary mode /home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_workspace/pv_inverter/models/boost_and_two_level_bridge_rtlab/boost_and_two_level_bridge_rtlab_sm_ehs/boost_and_two_level__1_sm_ehs ... OK.
 Transferring in ascii mode /home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_workspace/pv_inverter/models/boost_and_two_level_bridge_rtlab/compilation_target_report.xml ... OK.
 
-File transfer duration : 00h:00m:01s
+File transfer duration : 00h:00m:02s
 -------------------- Completed successfully --------------------
 
-End at : Thursday, May 11, 2017, 18:35:31
+End at : Tuesday, May 16, 2017, 17:34:26
 
-Compilation duration : 00h:01m:48s
+Compilation duration : 00h:02m:05s
 
 Updating status for next build...OK
 
@@ -7310,7 +7423,7 @@ MONITORING=ON
 MONITORING_BLOCK=ON
 MONITORING_DISPLAY=NEVER
 MSG_PRECISION_FACTOR=0
-MaxDynamicSignals=2/0/100/24/48/
+MaxDynamicSignals=2/0/100/24/52/
 NB_STEP_WITHOUT_OVERRUNS=10
 OPAL_DEBUG=OFF
 OP_MATLABR2014B=1
@@ -7324,10 +7437,10 @@ WATCHDOG_TIMEOUT=5000
 [EnvVars_REDHAWK_DYN_1]
 FLASH_UPDATE_OPTIONS= -pci 0 0 -1
 FPGA_BITSTREAM_INFO=MMPK7_1-EX-0001-2_3_2_19-300Series_eHSgen3_with_IOs-303-03.bin
-INTERNAL_IGN_SOURCE_FILE=sfun_ctrl_op7160ex1.c sfun_fct_op7160ex1_recv.c sfun_fct_op7160ex1_send.c sfun_fct_op7160ex1_load_in.c rte_conversion_ophsdio.c rte_conversion.c rte_ground.c rte_logical_operator.c sfun_ehs_cfg.c sfun_efs_solver_cfg.c sfun_op7160ex1_event_generator.c
-INTERNAL_LIBRARY1=-lOpalIoCtrlOP7160R2014b -lOpalIoFcnOP7160R2014b
+INTERNAL_IGN_SOURCE_FILE=sfun_op7160ex1_digital_in.c sfun_op7160ex1_pwm_in.c sfun_fct_op7160ex1_load_in.c sfun_ctrl_op7160ex1.c sfun_fct_op7160ex1_recv.c sfun_fct_op7160ex1_send.c rte_conversion_ophsdio.c rte_conversion.c rte_ground.c rte_logical_operator.c rte_svpwm.c sfun_ehs_cfg.c sfun_efs_solver_cfg.c sfun_op7160ex1_event_generator.c
+INTERNAL_LIBRARY1=-lOpalIoFcnOP7160R2014b -lOpalIoCtrlOP7160R2014b
 INTERNAL_LIBRARY2=-lOpalIoFcnOP7160R2014b -lRtEvents_RT402520R2014Br -lOpalRTER2014B
-INTERNAL_LIBRARY3=-lOpalOP7160 -lOpalIoSysR2014b -lOpalOpSystem -lOpalRTER2014B -lEHS_cfgR2014b -lEfsSolver_cfgR2014b
+INTERNAL_LIBRARY3=-lOpalOP7160 -lOpalOpSystem -lOpalRTER2014B -lOpalIoSysR2014b -lEHS_cfgR2014b -lEfsSolver_cfgR2014b
 [ExtraPutFilesComp]
 ..\..\..\..\..\..\..\Program Files (x86)\MATLAB\R2014b\toolbox\physmod\powersys\powersys\sfun_discreteVariableDelay.c=Ascii|Other
 [ExtraPutFilesComp_1_RT_LAB]
@@ -7342,18 +7455,18 @@ D:\OPAL-RT\eFPGAsim\v1.4.2.496\Simulink\efs_R2014b\redhawk\libEfsSolver_cfgR2014
 .\eHS_Config\ehs_config_eHSx64v3_SID4894.mat=Binary|Other
 C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\MMPK7_1-EX-0001-2_3_2_19-300Series_eHSgen3_with_IOs-303-03.bin=Binary|Other
 [General]
-ATT_CHECKSUM1=3556728659
-ATT_CHECKSUM2=3591558024
-ATT_CHECKSUM3=1232476929
-ATT_CHECKSUM4=3497909815
+ATT_CHECKSUM1=505640382
+ATT_CHECKSUM2=2516343155
+ATT_CHECKSUM3=2104929490
+ATT_CHECKSUM4=2330320567
 ATT_CREATED_BY=PYRobert
 ATT_CREATED_ON=Tue Jul 19 09:11:11 2005
 ATT_ENABLE_PTA=OFF
 ATT_HANDLE_CONSOLE=ON
 ATT_LAST_SAVED_BY=jiang
-ATT_LAST_SAVED_ON=Thu May 11 18:33:31 2017
+ATT_LAST_SAVED_ON=Tue May 16 17:31:35 2017
 ATT_REFERENCE_MDL_PATHS=
-ATT_REVISION=1.1044
+ATT_REVISION=1.1056
 AutoRetrieveFiles=ON
 AutoRetrieveRtlab=ON
 CompilerVersion=AUTOMATIC
@@ -7422,9 +7535,44 @@ Flashing FPGA #0 bitstream : '/home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv1
 WARNING: Flash programming was skipped because the same bitstream was already programmed in the FPGA.
 Note that you can set the User Variable FPGA_BITSTREAM_FORCE_OPTION to ON for forcing the reprogramming of the board.
  
-Unable to connect to the remote log system at 192.168.5.113:25254. Display will be disabled.
+WatchDogServer service - server socket created, available on address: 192.168.5.113:47733
+Root initialized: 192.168.5.113:2525/resources/root
+Model 'boost_and_two_level__1_sm_ehs' compiled in RELEASE mode.
+4 CPUs active on this Computer
+libOpalR2014B.a : v11.0.8.13 (build = undefined)
+Subsystem SM_eHS allocates 1 cores.
+model boost_and_two_level__1_sm_ehs assigned to logical cpu 1
+Monitoring is enabled
+RECV: connection to host established
+SEND: connection to host established
+Display of standard output will be disabled
+efs solver config: ehs_config_eHSx64v3_SID4894.mat was opened successfully
+Number of signals (including time ): 12
+Number of samples: 1457
+Variable name = ehs_config 
+efs solver config: successfully transferred ehs_config_eHSx64v3_SID4894.mat to the memory buffer.
+OpWriteFile group 26: the specified buffer size (1000000 bytes) is not large enough
+for 400000 sample(s) of 4 signal(s). The buffer size has been set to 16000026.
+Setting synchronization type to LVDS (audio)
+SubSystem step size = 0.000020 sec. Status updated at every 1 local step.
+XHP mode enabled on this CPU.
+Synchronized with hardware timer.
+Some of the model parameters are not double. Parameter modification may not work properly.
+Real-time SingleTasking mode.
+RT-LAB license ok. Unlimited time license.
+Snapshot taken (opboost_and_two_level__sm_ehs_0.snap).
+ [0]: PAUSE mode, IO set to pause value.
+		Total of 0 Overrun detected.
+		Tue May 16 18:04:27 2017
+
 Starting transfer of /home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_workspace/pv_inverter/models/boost_and_two_level_bridge_rtlab/boost_and_two_level_bridge_rtlab_sm_ehs/opboost_and_two_level__sm_ehs_0.snap...
 Transfer of /home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_workspace/pv_inverter/models/boost_and_two_level_bridge_rtlab/boost_and_two_level_bridge_rtlab_sm_ehs/opboost_and_two_level__sm_ehs_0.snap OK
+           [0]: Reset
+          		Total of 0 Overrun detected.
+          		Tue May 16 18:04:32 2017
+
+          Reset done
+          SEND: connection to host closed
 Executing script /usr/opalrt/v11.0.8.13/common/python/rtlab/global/target_postreset.py ... done
 Executing script /usr/opalrt/v11.0.8.13/common/python/rtlab/global/target_subsys_postreset.py ... done
 
@@ -7432,7 +7580,6 @@ Executing script /usr/opalrt/v11.0.8.13/common/python/rtlab/global/target_subsys
 --------------- Retrieving files ... ---------------------------------
 
 Setting local directory to C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_sm_ehs\OpREDHAWKtarget\... OK.
-Transferring in binary mode /myPV_inverter.mat ... OK.
 Transferring in ascii mode /home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_workspace/pv_inverter/models/boost_and_two_level_bridge_rtlab/target_report.xml ... OK.
 
 --------------- Done retrieving files --------------------------------

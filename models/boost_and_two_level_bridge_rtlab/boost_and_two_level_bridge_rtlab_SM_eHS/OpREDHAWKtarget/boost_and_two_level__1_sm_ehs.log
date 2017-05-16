@@ -18,9 +18,44 @@ Flashing FPGA #0 bitstream : '/home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv1
 WARNING: Flash programming was skipped because the same bitstream was already programmed in the FPGA.
 Note that you can set the User Variable FPGA_BITSTREAM_FORCE_OPTION to ON for forcing the reprogramming of the board.
  
-Unable to connect to the remote log system at 192.168.5.113:25254. Display will be disabled.
+WatchDogServer service - server socket created, available on address: 192.168.5.113:47733
+Root initialized: 192.168.5.113:2525/resources/root
+Model 'boost_and_two_level__1_sm_ehs' compiled in RELEASE mode.
+4 CPUs active on this Computer
+libOpalR2014B.a : v11.0.8.13 (build = undefined)
+Subsystem SM_eHS allocates 1 cores.
+model boost_and_two_level__1_sm_ehs assigned to logical cpu 1
+Monitoring is enabled
+RECV: connection to host established
+SEND: connection to host established
+Display of standard output will be disabled
+efs solver config: ehs_config_eHSx64v3_SID4894.mat was opened successfully
+Number of signals (including time ): 12
+Number of samples: 1457
+Variable name = ehs_config 
+efs solver config: successfully transferred ehs_config_eHSx64v3_SID4894.mat to the memory buffer.
+OpWriteFile group 26: the specified buffer size (1000000 bytes) is not large enough
+for 400000 sample(s) of 4 signal(s). The buffer size has been set to 16000026.
+Setting synchronization type to LVDS (audio)
+SubSystem step size = 0.000020 sec. Status updated at every 1 local step.
+XHP mode enabled on this CPU.
+Synchronized with hardware timer.
+Some of the model parameters are not double. Parameter modification may not work properly.
+Real-time SingleTasking mode.
+RT-LAB license ok. Unlimited time license.
+Snapshot taken (opboost_and_two_level__sm_ehs_0.snap).
+ [0]: PAUSE mode, IO set to pause value.
+		Total of 0 Overrun detected.
+		Tue May 16 18:04:27 2017
+
 Starting transfer of /home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_workspace/pv_inverter/models/boost_and_two_level_bridge_rtlab/boost_and_two_level_bridge_rtlab_sm_ehs/opboost_and_two_level__sm_ehs_0.snap...
 Transfer of /home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_workspace/pv_inverter/models/boost_and_two_level_bridge_rtlab/boost_and_two_level_bridge_rtlab_sm_ehs/opboost_and_two_level__sm_ehs_0.snap OK
+           [0]: Reset
+          		Total of 0 Overrun detected.
+          		Tue May 16 18:04:32 2017
+
+          Reset done
+          SEND: connection to host closed
 Executing script /usr/opalrt/v11.0.8.13/common/python/rtlab/global/target_postreset.py ... done
 Executing script /usr/opalrt/v11.0.8.13/common/python/rtlab/global/target_subsys_postreset.py ... done
 
@@ -28,7 +63,6 @@ Executing script /usr/opalrt/v11.0.8.13/common/python/rtlab/global/target_subsys
 --------------- Retrieving files ... ---------------------------------
 
 Setting local directory to C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_sm_ehs\OpREDHAWKtarget\... OK.
-Transferring in binary mode /myPV_inverter.mat ... OK.
 Transferring in ascii mode /home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_workspace/pv_inverter/models/boost_and_two_level_bridge_rtlab/target_report.xml ... OK.
 
 --------------- Done retrieving files --------------------------------

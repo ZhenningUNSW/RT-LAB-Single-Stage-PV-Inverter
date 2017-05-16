@@ -165,6 +165,22 @@ int OpalSnapshot_Copy_DWork(void * src, void * dst) {
    memcpy(&pDst->Memory2_PreviousInput, &pSrc->Memory2_PreviousInput, eltSize);
    size += eltSize;
 
+   eltSize = sizeof(pSrc->Memory1_PreviousInput_n);
+   memcpy(&pDst->Memory1_PreviousInput_n, &pSrc->Memory1_PreviousInput_n, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->Memory_PreviousInput_l);
+   memcpy(&pDst->Memory_PreviousInput_l, &pSrc->Memory_PreviousInput_l, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->Memory1_PreviousInput_o);
+   memcpy(&pDst->Memory1_PreviousInput_o, &pSrc->Memory1_PreviousInput_o, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->Memory_PreviousInput_h);
+   memcpy(&pDst->Memory_PreviousInput_h, &pSrc->Memory_PreviousInput_h, eltSize);
+   size += eltSize;
+
    eltSize = sizeof(pSrc->DiscreteDerivative_tmp);
    memcpy(&pDst->DiscreteDerivative_tmp, &pSrc->DiscreteDerivative_tmp, eltSize);
    size += eltSize;
@@ -193,12 +209,12 @@ int OpalSnapshot_Copy_DWork(void * src, void * dst) {
    memcpy(&pDst->TransportDelay_RWORK_o, &pSrc->TransportDelay_RWORK_o, eltSize);
    size += eltSize;
 
-   eltSize = sizeof(pSrc->RTEConversion1_RWORK);
-   memcpy(&pDst->RTEConversion1_RWORK, &pSrc->RTEConversion1_RWORK, eltSize);
-   size += eltSize;
-
    eltSize = sizeof(pSrc->RTEConversion_RWORK);
    memcpy(&pDst->RTEConversion_RWORK, &pSrc->RTEConversion_RWORK, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->RTEConversion1_RWORK);
+   memcpy(&pDst->RTEConversion1_RWORK, &pSrc->RTEConversion1_RWORK, eltSize);
    size += eltSize;
 
    eltSize = sizeof(pSrc->SFunction_RWORK);

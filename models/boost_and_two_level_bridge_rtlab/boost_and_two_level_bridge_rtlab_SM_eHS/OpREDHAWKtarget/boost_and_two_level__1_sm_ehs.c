@@ -3,9 +3,9 @@
  *
  * Code generation for model "boost_and_two_level__1_sm_ehs".
  *
- * Model version              : 1.1045
+ * Model version              : 1.1057
  * Simulink Coder version : 8.7 (R2014b) 08-Sep-2014
- * C source code generated on : Thu May 11 18:35:05 2017
+ * C source code generated on : Tue May 16 17:33:54 2017
  *
  * Target selection: rtlab_rtmodel.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -637,19 +637,19 @@ void boost_and_two_level__1_sm_ehs_output(void)
 
     /* End of Stop: '<S1>/Stop Simulation' */
 
-    /* Level2 S-Function Block: '<S7>/Outputs_eHS1_Recv' (sfun_fct_op7160ex1_recv) */
+    /* Level2 S-Function Block: '<S8>/Outputs_eHS1_Recv' (sfun_fct_op7160ex1_recv) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[2];
       sfcnOutputs(rts, 1);
     }
 
-    /* Level2 S-Function Block: '<S7>/Convert  Single floating-point (FPGA)  to double' (sfun_SFP2DBL) */
+    /* Level2 S-Function Block: '<S8>/Convert  Single floating-point (FPGA)  to double' (sfun_SFP2DBL) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[3];
       sfcnOutputs(rts, 1);
     }
 
-    /* Saturate: '<S7>/Saturation' */
+    /* Saturate: '<S8>/Saturation' */
     u0 = boost_and_two_level__1_sm_ehs_B.Outputs_eHS1_Recv_o1[7];
     u1 = boost_and_two_level__1_sm_ehs_P.Saturation_LowerSat_f;
     u2_0 = boost_and_two_level__1_sm_ehs_P.Saturation_UpperSat_k;
@@ -661,46 +661,46 @@ void boost_and_two_level__1_sm_ehs_output(void)
       boost_and_two_level__1_sm_ehs_B.Saturation_k = u0;
     }
 
-    /* End of Saturate: '<S7>/Saturation' */
+    /* End of Saturate: '<S8>/Saturation' */
 
-    /* Product: '<S7>/Divide' */
+    /* Product: '<S8>/Divide' */
     for (i = 0; i < 7; i++) {
       boost_and_two_level__1_sm_ehs_B.Divide[i] =
         boost_and_two_level__1_sm_ehs_B.ConvertSinglefloatingpointFPGAt[i] /
         (real_T)boost_and_two_level__1_sm_ehs_B.Saturation_k;
     }
 
-    /* End of Product: '<S7>/Divide' */
+    /* End of Product: '<S8>/Divide' */
 
-    /* UnitDelay: '<S31>/Unit Delay' */
+    /* UnitDelay: '<S34>/Unit Delay' */
     boost_and_two_level__1_sm_ehs_B.UnitDelay =
       boost_and_two_level__1_sm_ehs_DW.UnitDelay_DSTATE;
 
-    /* DigitalClock: '<S109>/Digital Clock' */
+    /* DigitalClock: '<S112>/Digital Clock' */
     boost_and_two_level__1_sm_ehs_B.DigitalClock =
       boost_and_two_level__1_sm_ehs_M->Timing.t[1];
 
-    /* Sum: '<S109>/Add1' incorporates:
-     *  Constant: '<S109>/Constant3'
+    /* Sum: '<S112>/Add1' incorporates:
+     *  Constant: '<S112>/Constant3'
      */
     boost_and_two_level__1_sm_ehs_B.Add1 =
       boost_and_two_level__1_sm_ehs_B.DigitalClock +
       boost_and_two_level__1_sm_ehs_P.Constant3_Value;
 
-    /* Math: '<S109>/Math Function' incorporates:
-     *  Constant: '<S109>/Constant1'
+    /* Math: '<S112>/Math Function' incorporates:
+     *  Constant: '<S112>/Constant1'
      */
     boost_and_two_level__1_sm_ehs_B.MathFunction = rt_remd_snf
       (boost_and_two_level__1_sm_ehs_B.Add1,
        boost_and_two_level__1_sm_ehs_P.Constant1_Value_l);
 
-    /* Gain: '<S109>/1\ib1' */
+    /* Gain: '<S112>/1\ib1' */
     boost_and_two_level__1_sm_ehs_B.ib1 =
       boost_and_two_level__1_sm_ehs_P.ib1_Gain *
       boost_and_two_level__1_sm_ehs_B.MathFunction;
 
-    /* Lookup: '<S109>/Lookup Table'
-     * About '<S109>/Lookup Table':
+    /* Lookup: '<S112>/Lookup Table'
+     * About '<S112>/Lookup Table':
      * Input0  Data Type:  Floating Point real_T
      * Output0 Data Type:  Floating Point real_T
      * Lookup Method: Linear_Endpoint
@@ -713,53 +713,53 @@ void boost_and_two_level__1_sm_ehs_output(void)
                          boost_and_two_level__1_sm_ehs_B.ib1,
                          boost_and_two_level__1_sm_ehs_P.LookupTable_XData, 2U);
 
-    /* Sum: '<S109>/Add3' incorporates:
-     *  Constant: '<S109>/Constant2'
+    /* Sum: '<S112>/Add3' incorporates:
+     *  Constant: '<S112>/Constant2'
      */
     boost_and_two_level__1_sm_ehs_B.Add3 =
       boost_and_two_level__1_sm_ehs_B.LookupTable -
       boost_and_two_level__1_sm_ehs_P.Constant2_Value_f;
 
-    /* Sum: '<S87>/Add3' incorporates:
-     *  Constant: '<S37>/Constant10'
+    /* Sum: '<S90>/Add3' incorporates:
+     *  Constant: '<S40>/Constant10'
      */
     boost_and_two_level__1_sm_ehs_B.Add3_g =
       boost_and_two_level__1_sm_ehs_P.PWM_Generator_MinMax[1] -
       boost_and_two_level__1_sm_ehs_P.PWM_Generator_MinMax[0];
 
-    /* Gain: '<S87>/Gain1' */
+    /* Gain: '<S90>/Gain1' */
     boost_and_two_level__1_sm_ehs_B.Gain1 =
       boost_and_two_level__1_sm_ehs_P.Gain1_Gain_a *
       boost_and_two_level__1_sm_ehs_B.Add3_g;
 
-    /* Product: '<S87>/MUL1' */
+    /* Product: '<S90>/MUL1' */
     boost_and_two_level__1_sm_ehs_B.MUL1 = boost_and_two_level__1_sm_ehs_B.Add3 *
       boost_and_two_level__1_sm_ehs_B.Gain1;
 
-    /* Sum: '<S87>/Add4' incorporates:
-     *  Constant: '<S37>/Constant10'
+    /* Sum: '<S90>/Add4' incorporates:
+     *  Constant: '<S40>/Constant10'
      */
     boost_and_two_level__1_sm_ehs_B.Add4 =
       (boost_and_two_level__1_sm_ehs_P.PWM_Generator_MinMax[0] +
        boost_and_two_level__1_sm_ehs_B.MUL1) +
       boost_and_two_level__1_sm_ehs_B.Gain1;
 
-    /* RelationalOperator: '<S91>/Relational Operator2' */
+    /* RelationalOperator: '<S94>/Relational Operator2' */
     boost_and_two_level__1_sm_ehs_B.RelationalOperator2 =
       (boost_and_two_level__1_sm_ehs_B.UnitDelay >=
        boost_and_two_level__1_sm_ehs_B.Add4);
 
-    /* Logic: '<S91>/Logical Operator' */
+    /* Logic: '<S94>/Logical Operator' */
     boost_and_two_level__1_sm_ehs_B.LogicalOperator =
       !boost_and_two_level__1_sm_ehs_B.RelationalOperator2;
 
-    /* Logic: '<S37>/Logical Operator4' */
+    /* Logic: '<S40>/Logical Operator4' */
     boost_and_two_level__1_sm_ehs_B.LogicalOperator4[0] =
       !boost_and_two_level__1_sm_ehs_B.RelationalOperator2;
     boost_and_two_level__1_sm_ehs_B.LogicalOperator4[1] =
       !boost_and_two_level__1_sm_ehs_B.LogicalOperator;
 
-    /* DataTypeConversion: '<S37>/Data Type Conversion' */
+    /* DataTypeConversion: '<S40>/Data Type Conversion' */
     boost_and_two_level__1_sm_ehs_B.DataTypeConversion[0] =
       boost_and_two_level__1_sm_ehs_B.RelationalOperator2;
     boost_and_two_level__1_sm_ehs_B.DataTypeConversion[1] =
@@ -769,18 +769,18 @@ void boost_and_two_level__1_sm_ehs_output(void)
     boost_and_two_level__1_sm_ehs_B.DataTypeConversion[3] =
       boost_and_two_level__1_sm_ehs_B.LogicalOperator4[1];
 
-    /* Level2 S-Function Block: '<S10>/S-Function' (RECV_Param) */
+    /* Level2 S-Function Block: '<S13>/S-Function' (RECV_Param) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[4];
       sfcnOutputs(rts, 1);
     }
 
-    /* Relay: '<S7>/Relay1' */
-    if (boost_and_two_level__1_sm_ehs_B.SFunction_l[3] >=
+    /* Relay: '<S8>/Relay1' */
+    if (boost_and_two_level__1_sm_ehs_B.SFunction_n[3] >=
         boost_and_two_level__1_sm_ehs_P.Relay1_OnVal) {
       boost_and_two_level__1_sm_ehs_DW.Relay1_Mode = true;
     } else {
-      if (boost_and_two_level__1_sm_ehs_B.SFunction_l[3] <=
+      if (boost_and_two_level__1_sm_ehs_B.SFunction_n[3] <=
           boost_and_two_level__1_sm_ehs_P.Relay1_OffVal) {
         boost_and_two_level__1_sm_ehs_DW.Relay1_Mode = false;
       }
@@ -794,9 +794,9 @@ void boost_and_two_level__1_sm_ehs_output(void)
         boost_and_two_level__1_sm_ehs_P.Relay1_YOff;
     }
 
-    /* End of Relay: '<S7>/Relay1' */
+    /* End of Relay: '<S8>/Relay1' */
 
-    /* DataTypeConversion: '<S7>/Data Type Conversion1' */
+    /* DataTypeConversion: '<S8>/Data Type Conversion1' */
     B = floor(boost_and_two_level__1_sm_ehs_B.Relay1);
     if (rtIsNaN(B) || rtIsInf(B)) {
       B = 0.0;
@@ -807,9 +807,9 @@ void boost_and_two_level__1_sm_ehs_output(void)
     boost_and_two_level__1_sm_ehs_B.DataTypeConversion1_h = B < 0.0 ? (uint32_T)
       -(int32_T)(uint32_T)-B : (uint32_T)B;
 
-    /* End of DataTypeConversion: '<S7>/Data Type Conversion1' */
+    /* End of DataTypeConversion: '<S8>/Data Type Conversion1' */
 
-    /* Saturate: '<S7>/sat_scn' */
+    /* Saturate: '<S8>/sat_scn' */
     u1 = boost_and_two_level__1_sm_ehs_P.sat_scn_LowerSat;
     if (0U < u1) {
       boost_and_two_level__1_sm_ehs_B.sat_scn = u1;
@@ -817,49 +817,49 @@ void boost_and_two_level__1_sm_ehs_output(void)
       boost_and_two_level__1_sm_ehs_B.sat_scn = 0U;
     }
 
-    /* End of Saturate: '<S7>/sat_scn' */
+    /* End of Saturate: '<S8>/sat_scn' */
 
-    /* Gain: '<S7>/shift_2bits' */
+    /* Gain: '<S8>/shift_2bits' */
     boost_and_two_level__1_sm_ehs_B.shift_2bits = mul_u32_u32_u32_sr29
       (boost_and_two_level__1_sm_ehs_P.shift_2bits_Gain,
        boost_and_two_level__1_sm_ehs_B.sat_scn);
 
-    /* Sum: '<S7>/Add' */
+    /* Sum: '<S8>/Add' */
     boost_and_two_level__1_sm_ehs_B.Add_l =
       boost_and_two_level__1_sm_ehs_B.DataTypeConversion1_h +
       boost_and_two_level__1_sm_ehs_B.shift_2bits;
 
-    /* UnitDelay: '<S25>/Delay Input1' */
+    /* UnitDelay: '<S28>/Delay Input1' */
     boost_and_two_level__1_sm_ehs_B.Uk1 =
       boost_and_two_level__1_sm_ehs_DW.DelayInput1_DSTATE;
 
-    /* RelationalOperator: '<S25>/FixPt Relational Operator' */
+    /* RelationalOperator: '<S28>/FixPt Relational Operator' */
     boost_and_two_level__1_sm_ehs_B.FixPtRelationalOperator = (uint8_T)
       (boost_and_two_level__1_sm_ehs_B.Add_l !=
        boost_and_two_level__1_sm_ehs_B.Uk1);
 
-    /* Logic: '<S7>/Logical Operator' */
+    /* Logic: '<S8>/Logical Operator' */
     boost_and_two_level__1_sm_ehs_B.LogicalOperator_c =
       (boost_and_two_level__1_sm_ehs_B.FixPtRelationalOperator != 0);
 
-    /* DataTypeConversion: '<S7>/Data Type Conversion8' */
+    /* DataTypeConversion: '<S8>/Data Type Conversion8' */
     boost_and_two_level__1_sm_ehs_B.DataTypeConversion8 =
       boost_and_two_level__1_sm_ehs_B.LogicalOperator_c;
 
-    /* Level2 S-Function Block: '<S7>/eHS_rst_loadin' (sfun_fct_op7160ex1_load_in) */
+    /* Level2 S-Function Block: '<S8>/eHS_rst_loadin' (sfun_fct_op7160ex1_load_in) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[5];
       sfcnOutputs(rts, 1);
     }
 
-    /* Level2 S-Function Block: '<S7>/Automated_Solver_Mat_Initialisation_1' (sfun_efs_solver_cfg) */
+    /* Level2 S-Function Block: '<S8>/Automated_Solver_Mat_Initialisation_1' (sfun_efs_solver_cfg) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[6];
       sfcnOutputs(rts, 1);
     }
   }
 
-  /* Sin: '<S9>/Sine Wave Function' */
+  /* Sin: '<S10>/Sine Wave Function' */
   boost_and_two_level__1_sm_ehs_B.SineWaveFunction = sin
     (boost_and_two_level__1_sm_ehs_P.SineWaveFunction_Freq *
      boost_and_two_level__1_sm_ehs_M->Timing.t[0] +
@@ -867,34 +867,34 @@ void boost_and_two_level__1_sm_ehs_output(void)
     boost_and_two_level__1_sm_ehs_P.SineWaveFunction_Amp +
     boost_and_two_level__1_sm_ehs_P.SineWaveFunction_Bias;
   if (rtmIsMajorTimeStep(boost_and_two_level__1_sm_ehs_M)) {
-    /* Memory: '<S9>/Memory1' */
+    /* Memory: '<S10>/Memory1' */
     boost_and_two_level__1_sm_ehs_B.Memory1 =
       boost_and_two_level__1_sm_ehs_DW.Memory1_PreviousInput;
 
-    /* Memory: '<S9>/Memory' */
+    /* Memory: '<S10>/Memory' */
     boost_and_two_level__1_sm_ehs_B.Memory =
       boost_and_two_level__1_sm_ehs_DW.Memory_PreviousInput;
   }
 
-  /* Level2 S-Function Block: '<S7>/Convert double to  Single floating-point (FPGA)' (sfun_DBL2SFP) */
+  /* Level2 S-Function Block: '<S8>/Convert double to  Single floating-point (FPGA)' (sfun_DBL2SFP) */
   {
     SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[7];
     sfcnOutputs(rts, 0);
   }
 
   if (rtmIsMajorTimeStep(boost_and_two_level__1_sm_ehs_M)) {
-    /* Level2 S-Function Block: '<S7>/Inputs_eHS1_Send' (sfun_fct_op7160ex1_send) */
+    /* Level2 S-Function Block: '<S8>/Inputs_eHS1_Send' (sfun_fct_op7160ex1_send) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[8];
       sfcnOutputs(rts, 1);
     }
   }
 
-  /* Integrator: '<S15>/integrator' */
+  /* Integrator: '<S18>/integrator' */
   boost_and_two_level__1_sm_ehs_B.integrator =
     boost_and_two_level__1_sm_ehs_X.integrator_CSTATE;
 
-  /* TransportDelay: '<S15>/Transport Delay' */
+  /* TransportDelay: '<S18>/Transport Delay' */
   {
     real_T **uBuffer = (real_T**)
       &boost_and_two_level__1_sm_ehs_DW.TransportDelay_PWORK.TUbufferPtrs[0];
@@ -917,30 +917,30 @@ void boost_and_two_level__1_sm_ehs_output(void)
       0);
   }
 
-  /* Clock: '<S15>/Clock' */
+  /* Clock: '<S18>/Clock' */
   boost_and_two_level__1_sm_ehs_B.Clock =
     boost_and_two_level__1_sm_ehs_M->Timing.t[0];
 
-  /* RelationalOperator: '<S15>/Relational Operator' incorporates:
-   *  Constant: '<S15>/K1'
+  /* RelationalOperator: '<S18>/Relational Operator' incorporates:
+   *  Constant: '<S18>/K1'
    */
   boost_and_two_level__1_sm_ehs_B.RelationalOperator =
     (boost_and_two_level__1_sm_ehs_B.Clock >=
      boost_and_two_level__1_sm_ehs_P.K1_Value);
   if (rtmIsMajorTimeStep(boost_and_two_level__1_sm_ehs_M)) {
-    /* Memory: '<S15>/Memory' */
+    /* Memory: '<S18>/Memory' */
     boost_and_two_level__1_sm_ehs_B.Memory_g =
       boost_and_two_level__1_sm_ehs_DW.Memory_PreviousInput_n;
   }
 
-  /* Switch: '<S15>/Switch' */
+  /* Switch: '<S18>/Switch' */
   if (boost_and_two_level__1_sm_ehs_B.RelationalOperator) {
-    /* Sum: '<S15>/Sum' */
+    /* Sum: '<S18>/Sum' */
     boost_and_two_level__1_sm_ehs_B.Sum_h =
       boost_and_two_level__1_sm_ehs_B.integrator -
       boost_and_two_level__1_sm_ehs_B.TransportDelay;
 
-    /* Gain: '<S15>/Gain' */
+    /* Gain: '<S18>/Gain' */
     boost_and_two_level__1_sm_ehs_B.Gain_a =
       boost_and_two_level__1_sm_ehs_P.Gain_Gain *
       boost_and_two_level__1_sm_ehs_B.Sum_h;
@@ -951,13 +951,13 @@ void boost_and_two_level__1_sm_ehs_output(void)
       boost_and_two_level__1_sm_ehs_B.Memory_g;
   }
 
-  /* End of Switch: '<S15>/Switch' */
+  /* End of Switch: '<S18>/Switch' */
 
-  /* Integrator: '<S16>/integrator' */
+  /* Integrator: '<S19>/integrator' */
   boost_and_two_level__1_sm_ehs_B.integrator_p =
     boost_and_two_level__1_sm_ehs_X.integrator_CSTATE_b;
 
-  /* TransportDelay: '<S16>/Transport Delay' */
+  /* TransportDelay: '<S19>/Transport Delay' */
   {
     real_T **uBuffer = (real_T**)
       &boost_and_two_level__1_sm_ehs_DW.TransportDelay_PWORK_d.TUbufferPtrs[0];
@@ -980,30 +980,30 @@ void boost_and_two_level__1_sm_ehs_output(void)
       0);
   }
 
-  /* Clock: '<S16>/Clock' */
+  /* Clock: '<S19>/Clock' */
   boost_and_two_level__1_sm_ehs_B.Clock_m =
     boost_and_two_level__1_sm_ehs_M->Timing.t[0];
 
-  /* RelationalOperator: '<S16>/Relational Operator' incorporates:
-   *  Constant: '<S16>/K1'
+  /* RelationalOperator: '<S19>/Relational Operator' incorporates:
+   *  Constant: '<S19>/K1'
    */
   boost_and_two_level__1_sm_ehs_B.RelationalOperator_b =
     (boost_and_two_level__1_sm_ehs_B.Clock_m >=
      boost_and_two_level__1_sm_ehs_P.K1_Value_k);
   if (rtmIsMajorTimeStep(boost_and_two_level__1_sm_ehs_M)) {
-    /* Memory: '<S16>/Memory' */
+    /* Memory: '<S19>/Memory' */
     boost_and_two_level__1_sm_ehs_B.Memory_e =
       boost_and_two_level__1_sm_ehs_DW.Memory_PreviousInput_e;
   }
 
-  /* Switch: '<S16>/Switch' */
+  /* Switch: '<S19>/Switch' */
   if (boost_and_two_level__1_sm_ehs_B.RelationalOperator_b) {
-    /* Sum: '<S16>/Sum' */
+    /* Sum: '<S19>/Sum' */
     boost_and_two_level__1_sm_ehs_B.Sum_ns =
       boost_and_two_level__1_sm_ehs_B.integrator_p -
       boost_and_two_level__1_sm_ehs_B.TransportDelay_p;
 
-    /* Gain: '<S16>/Gain' */
+    /* Gain: '<S19>/Gain' */
     boost_and_two_level__1_sm_ehs_B.Gain_k =
       boost_and_two_level__1_sm_ehs_P.Gain_Gain_l *
       boost_and_two_level__1_sm_ehs_B.Sum_ns;
@@ -1014,9 +1014,9 @@ void boost_and_two_level__1_sm_ehs_output(void)
       boost_and_two_level__1_sm_ehs_B.Memory_e;
   }
 
-  /* End of Switch: '<S16>/Switch' */
+  /* End of Switch: '<S19>/Switch' */
 
-  /* Product: '<S5>/Divide' */
+  /* Product: '<S6>/Divide' */
   boost_and_two_level__1_sm_ehs_B.P_PV =
     boost_and_two_level__1_sm_ehs_B.Switch_e *
     boost_and_two_level__1_sm_ehs_B.Switch;
@@ -1039,34 +1039,34 @@ void boost_and_two_level__1_sm_ehs_output(void)
       sfcnOutputs(rts, 1);
     }
 
-    /* Level2 S-Function Block: '<S30>/S-Function' (OP_SEND) */
+    /* Level2 S-Function Block: '<S33>/S-Function' (OP_SEND) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[12];
       sfcnOutputs(rts, 1);
     }
 
-    /* Level2 S-Function Block: '<S17>/Convert double to  Single floating-point (FPGA)' (sfun_DBL2SFP) */
+    /* Level2 S-Function Block: '<S20>/Convert double to  Single floating-point (FPGA)' (sfun_DBL2SFP) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[13];
       sfcnOutputs(rts, 1);
     }
 
-    /* Level2 S-Function Block: '<S17>/Convert double to  Single floating-point (FPGA)1' (sfun_DBL2SFP) */
+    /* Level2 S-Function Block: '<S20>/Convert double to  Single floating-point (FPGA)1' (sfun_DBL2SFP) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[14];
       sfcnOutputs(rts, 1);
     }
 
-    /* Memory: '<S19>/Memory1' */
+    /* Memory: '<S22>/Memory1' */
     boost_and_two_level__1_sm_ehs_B.Memory1_o =
       boost_and_two_level__1_sm_ehs_DW.Memory1_PreviousInput_h;
     for (i = 0; i < 16; i++) {
-      /* Switch: '<S22>/Switch' incorporates:
-       *  Constant: '<S22>/Constant'
+      /* Switch: '<S25>/Switch' incorporates:
+       *  Constant: '<S25>/Constant'
        */
       if (boost_and_two_level__1_sm_ehs_P.Constant_Value_gg) {
-        /* Saturate: '<S22>/Saturation' */
-        B = boost_and_two_level__1_sm_ehs_B.SFunction_l[i + 4];
+        /* Saturate: '<S25>/Saturation' */
+        B = boost_and_two_level__1_sm_ehs_B.SFunction_n[i + 4];
         dP = boost_and_two_level__1_sm_ehs_P.Saturation_LowerSat_g;
         u2 = boost_and_two_level__1_sm_ehs_P.Saturation_UpperSat_d;
         if (B > u2) {
@@ -1079,14 +1079,14 @@ void boost_and_two_level__1_sm_ehs_output(void)
 
         boost_and_two_level__1_sm_ehs_B.Saturation_f[i] = B;
 
-        /* End of Saturate: '<S22>/Saturation' */
+        /* End of Saturate: '<S25>/Saturation' */
 
-        /* Gain: '<S22>/Gain1' */
+        /* Gain: '<S25>/Gain1' */
         boost_and_two_level__1_sm_ehs_B.Gain1_l[i] =
           boost_and_two_level__1_sm_ehs_P.Gain1_Gain_p *
           boost_and_two_level__1_sm_ehs_B.Saturation_f[i];
 
-        /* DataTypeConversion: '<S22>/Data Type Conversion2' */
+        /* DataTypeConversion: '<S25>/Data Type Conversion2' */
         B = boost_and_two_level__1_sm_ehs_B.Gain1_l[i];
         if (B < 0.0) {
           B = ceil(B);
@@ -1103,12 +1103,12 @@ void boost_and_two_level__1_sm_ehs_output(void)
         boost_and_two_level__1_sm_ehs_B.DataTypeConversion2[i] = B < 0.0 ?
           -(int32_T)(uint32_T)-B : (int32_T)(uint32_T)B;
 
-        /* End of DataTypeConversion: '<S22>/Data Type Conversion2' */
+        /* End of DataTypeConversion: '<S25>/Data Type Conversion2' */
         boost_and_two_level__1_sm_ehs_B.Switch_n[i] = (uint32_T)
           boost_and_two_level__1_sm_ehs_B.DataTypeConversion2[i];
       } else {
-        /* Saturate: '<S22>/Saturation1' */
-        B = boost_and_two_level__1_sm_ehs_B.SFunction_l[i + 4];
+        /* Saturate: '<S25>/Saturation1' */
+        B = boost_and_two_level__1_sm_ehs_B.SFunction_n[i + 4];
         dP = boost_and_two_level__1_sm_ehs_P.Saturation1_LowerSat_a;
         u2 = boost_and_two_level__1_sm_ehs_P.Saturation1_UpperSat_f;
         if (B > u2) {
@@ -1121,14 +1121,14 @@ void boost_and_two_level__1_sm_ehs_output(void)
 
         boost_and_two_level__1_sm_ehs_B.Saturation1_p[i] = B;
 
-        /* End of Saturate: '<S22>/Saturation1' */
+        /* End of Saturate: '<S25>/Saturation1' */
 
-        /* Gain: '<S22>/Gain2' */
+        /* Gain: '<S25>/Gain2' */
         boost_and_two_level__1_sm_ehs_B.Gain2[i] =
           boost_and_two_level__1_sm_ehs_P.Gain2_Gain_p *
           boost_and_two_level__1_sm_ehs_B.Saturation1_p[i];
 
-        /* DataTypeConversion: '<S22>/Data Type Conversion1' */
+        /* DataTypeConversion: '<S25>/Data Type Conversion1' */
         B = boost_and_two_level__1_sm_ehs_B.Gain2[i];
         if (B < 0.0) {
           B = ceil(B);
@@ -1145,28 +1145,28 @@ void boost_and_two_level__1_sm_ehs_output(void)
         boost_and_two_level__1_sm_ehs_B.DataTypeConversion1_l[i] = B < 0.0 ?
           (uint32_T)-(int32_T)(uint32_T)-B : (uint32_T)B;
 
-        /* End of DataTypeConversion: '<S22>/Data Type Conversion1' */
+        /* End of DataTypeConversion: '<S25>/Data Type Conversion1' */
         boost_and_two_level__1_sm_ehs_B.Switch_n[i] =
           boost_and_two_level__1_sm_ehs_B.DataTypeConversion1_l[i];
       }
 
-      /* End of Switch: '<S22>/Switch' */
+      /* End of Switch: '<S25>/Switch' */
 
-      /* S-Function (sfix_bitop): '<S22>/Bitwise Operator' */
+      /* S-Function (sfix_bitop): '<S25>/Bitwise Operator' */
       boost_and_two_level__1_sm_ehs_B.BitwiseOperator[i] =
         boost_and_two_level__1_sm_ehs_B.Switch_n[i] &
         boost_and_two_level__1_sm_ehs_P.BitwiseOperator_BitMask;
 
-      /* DataTypeConversion: '<S22>/Data Type Conversion5' */
+      /* DataTypeConversion: '<S25>/Data Type Conversion5' */
       boost_and_two_level__1_sm_ehs_B.DataTypeConversion5[i] =
         boost_and_two_level__1_sm_ehs_B.BitwiseOperator[i];
 
-      /* Switch: '<S20>/Switch' incorporates:
-       *  Constant: '<S20>/Constant'
+      /* Switch: '<S23>/Switch' incorporates:
+       *  Constant: '<S23>/Constant'
        */
       if (boost_and_two_level__1_sm_ehs_P.Constant_Value_n) {
-        /* Saturate: '<S20>/Saturation' */
-        B = boost_and_two_level__1_sm_ehs_B.SFunction_l[i + 100];
+        /* Saturate: '<S23>/Saturation' */
+        B = boost_and_two_level__1_sm_ehs_B.SFunction_n[i + 100];
         dP = boost_and_two_level__1_sm_ehs_P.Saturation_LowerSat;
         u2 = boost_and_two_level__1_sm_ehs_P.Saturation_UpperSat;
         if (B > u2) {
@@ -1179,14 +1179,14 @@ void boost_and_two_level__1_sm_ehs_output(void)
 
         boost_and_two_level__1_sm_ehs_B.Saturation_h[i] = B;
 
-        /* End of Saturate: '<S20>/Saturation' */
+        /* End of Saturate: '<S23>/Saturation' */
 
-        /* Gain: '<S20>/Gain1' */
+        /* Gain: '<S23>/Gain1' */
         boost_and_two_level__1_sm_ehs_B.Gain1_g[i] =
           boost_and_two_level__1_sm_ehs_P.Gain1_Gain *
           boost_and_two_level__1_sm_ehs_B.Saturation_h[i];
 
-        /* DataTypeConversion: '<S20>/Data Type Conversion2' */
+        /* DataTypeConversion: '<S23>/Data Type Conversion2' */
         B = boost_and_two_level__1_sm_ehs_B.Gain1_g[i];
         if (B < 0.0) {
           B = ceil(B);
@@ -1203,12 +1203,12 @@ void boost_and_two_level__1_sm_ehs_output(void)
         boost_and_two_level__1_sm_ehs_B.DataTypeConversion2_n[i] = B < 0.0 ?
           -(int32_T)(uint32_T)-B : (int32_T)(uint32_T)B;
 
-        /* End of DataTypeConversion: '<S20>/Data Type Conversion2' */
+        /* End of DataTypeConversion: '<S23>/Data Type Conversion2' */
         boost_and_two_level__1_sm_ehs_B.Switch_g[i] = (uint32_T)
           boost_and_two_level__1_sm_ehs_B.DataTypeConversion2_n[i];
       } else {
-        /* Saturate: '<S20>/Saturation1' */
-        B = boost_and_two_level__1_sm_ehs_B.SFunction_l[i + 100];
+        /* Saturate: '<S23>/Saturation1' */
+        B = boost_and_two_level__1_sm_ehs_B.SFunction_n[i + 100];
         dP = boost_and_two_level__1_sm_ehs_P.Saturation1_LowerSat;
         u2 = boost_and_two_level__1_sm_ehs_P.Saturation1_UpperSat;
         if (B > u2) {
@@ -1221,14 +1221,14 @@ void boost_and_two_level__1_sm_ehs_output(void)
 
         boost_and_two_level__1_sm_ehs_B.Saturation1_cu[i] = B;
 
-        /* End of Saturate: '<S20>/Saturation1' */
+        /* End of Saturate: '<S23>/Saturation1' */
 
-        /* Gain: '<S20>/Gain2' */
+        /* Gain: '<S23>/Gain2' */
         boost_and_two_level__1_sm_ehs_B.Gain2_a[i] =
           boost_and_two_level__1_sm_ehs_P.Gain2_Gain *
           boost_and_two_level__1_sm_ehs_B.Saturation1_cu[i];
 
-        /* DataTypeConversion: '<S20>/Data Type Conversion1' */
+        /* DataTypeConversion: '<S23>/Data Type Conversion1' */
         B = boost_and_two_level__1_sm_ehs_B.Gain2_a[i];
         if (B < 0.0) {
           B = ceil(B);
@@ -1245,28 +1245,28 @@ void boost_and_two_level__1_sm_ehs_output(void)
         boost_and_two_level__1_sm_ehs_B.DataTypeConversion1_hm[i] = B < 0.0 ?
           (uint32_T)-(int32_T)(uint32_T)-B : (uint32_T)B;
 
-        /* End of DataTypeConversion: '<S20>/Data Type Conversion1' */
+        /* End of DataTypeConversion: '<S23>/Data Type Conversion1' */
         boost_and_two_level__1_sm_ehs_B.Switch_g[i] =
           boost_and_two_level__1_sm_ehs_B.DataTypeConversion1_hm[i];
       }
 
-      /* End of Switch: '<S20>/Switch' */
+      /* End of Switch: '<S23>/Switch' */
 
-      /* S-Function (sfix_bitop): '<S20>/Bitwise Operator' */
+      /* S-Function (sfix_bitop): '<S23>/Bitwise Operator' */
       boost_and_two_level__1_sm_ehs_B.BitwiseOperator_p[i] =
         boost_and_two_level__1_sm_ehs_B.Switch_g[i] &
         boost_and_two_level__1_sm_ehs_P.BitwiseOperator_BitMask_j;
 
-      /* DataTypeConversion: '<S20>/Data Type Conversion5' */
+      /* DataTypeConversion: '<S23>/Data Type Conversion5' */
       boost_and_two_level__1_sm_ehs_B.DataTypeConversion5_m[i] =
         boost_and_two_level__1_sm_ehs_B.BitwiseOperator_p[i];
 
-      /* Switch: '<S21>/Switch' incorporates:
-       *  Constant: '<S21>/Constant'
+      /* Switch: '<S24>/Switch' incorporates:
+       *  Constant: '<S24>/Constant'
        */
       if (boost_and_two_level__1_sm_ehs_P.Constant_Value_kj) {
-        /* Saturate: '<S21>/Saturation' */
-        B = boost_and_two_level__1_sm_ehs_B.SFunction_l[i + 132];
+        /* Saturate: '<S24>/Saturation' */
+        B = boost_and_two_level__1_sm_ehs_B.SFunction_n[i + 132];
         dP = boost_and_two_level__1_sm_ehs_P.Saturation_LowerSat_h;
         u2 = boost_and_two_level__1_sm_ehs_P.Saturation_UpperSat_i;
         if (B > u2) {
@@ -1279,14 +1279,14 @@ void boost_and_two_level__1_sm_ehs_output(void)
 
         boost_and_two_level__1_sm_ehs_B.Saturation_g[i] = B;
 
-        /* End of Saturate: '<S21>/Saturation' */
+        /* End of Saturate: '<S24>/Saturation' */
 
-        /* Gain: '<S21>/Gain1' */
+        /* Gain: '<S24>/Gain1' */
         boost_and_two_level__1_sm_ehs_B.Gain1_j[i] =
           boost_and_two_level__1_sm_ehs_P.Gain1_Gain_j *
           boost_and_two_level__1_sm_ehs_B.Saturation_g[i];
 
-        /* DataTypeConversion: '<S21>/Data Type Conversion2' */
+        /* DataTypeConversion: '<S24>/Data Type Conversion2' */
         B = boost_and_two_level__1_sm_ehs_B.Gain1_j[i];
         if (B < 0.0) {
           B = ceil(B);
@@ -1303,12 +1303,12 @@ void boost_and_two_level__1_sm_ehs_output(void)
         boost_and_two_level__1_sm_ehs_B.DataTypeConversion2_c[i] = B < 0.0 ?
           -(int32_T)(uint32_T)-B : (int32_T)(uint32_T)B;
 
-        /* End of DataTypeConversion: '<S21>/Data Type Conversion2' */
+        /* End of DataTypeConversion: '<S24>/Data Type Conversion2' */
         boost_and_two_level__1_sm_ehs_B.Switch_d[i] = (uint32_T)
           boost_and_two_level__1_sm_ehs_B.DataTypeConversion2_c[i];
       } else {
-        /* Saturate: '<S21>/Saturation1' */
-        B = boost_and_two_level__1_sm_ehs_B.SFunction_l[i + 132];
+        /* Saturate: '<S24>/Saturation1' */
+        B = boost_and_two_level__1_sm_ehs_B.SFunction_n[i + 132];
         dP = boost_and_two_level__1_sm_ehs_P.Saturation1_LowerSat_n;
         u2 = boost_and_two_level__1_sm_ehs_P.Saturation1_UpperSat_k;
         if (B > u2) {
@@ -1321,14 +1321,14 @@ void boost_and_two_level__1_sm_ehs_output(void)
 
         boost_and_two_level__1_sm_ehs_B.Saturation1_c[i] = B;
 
-        /* End of Saturate: '<S21>/Saturation1' */
+        /* End of Saturate: '<S24>/Saturation1' */
 
-        /* Gain: '<S21>/Gain2' */
+        /* Gain: '<S24>/Gain2' */
         boost_and_two_level__1_sm_ehs_B.Gain2_d[i] =
           boost_and_two_level__1_sm_ehs_P.Gain2_Gain_d *
           boost_and_two_level__1_sm_ehs_B.Saturation1_c[i];
 
-        /* DataTypeConversion: '<S21>/Data Type Conversion1' */
+        /* DataTypeConversion: '<S24>/Data Type Conversion1' */
         B = boost_and_two_level__1_sm_ehs_B.Gain2_d[i];
         if (B < 0.0) {
           B = ceil(B);
@@ -1345,29 +1345,29 @@ void boost_and_two_level__1_sm_ehs_output(void)
         boost_and_two_level__1_sm_ehs_B.DataTypeConversion1_d[i] = B < 0.0 ?
           (uint32_T)-(int32_T)(uint32_T)-B : (uint32_T)B;
 
-        /* End of DataTypeConversion: '<S21>/Data Type Conversion1' */
+        /* End of DataTypeConversion: '<S24>/Data Type Conversion1' */
         boost_and_two_level__1_sm_ehs_B.Switch_d[i] =
           boost_and_two_level__1_sm_ehs_B.DataTypeConversion1_d[i];
       }
 
-      /* End of Switch: '<S21>/Switch' */
+      /* End of Switch: '<S24>/Switch' */
 
-      /* S-Function (sfix_bitop): '<S21>/Bitwise Operator' */
+      /* S-Function (sfix_bitop): '<S24>/Bitwise Operator' */
       boost_and_two_level__1_sm_ehs_B.BitwiseOperator_pi[i] =
         boost_and_two_level__1_sm_ehs_B.Switch_d[i] &
         boost_and_two_level__1_sm_ehs_P.BitwiseOperator_BitMask_h;
 
-      /* DataTypeConversion: '<S21>/Data Type Conversion5' */
+      /* DataTypeConversion: '<S24>/Data Type Conversion5' */
       boost_and_two_level__1_sm_ehs_B.DataTypeConversion5_n[i] =
         boost_and_two_level__1_sm_ehs_B.BitwiseOperator_pi[i];
     }
 
-    /* UnitDelay: '<S24>/Delay Input1' */
+    /* UnitDelay: '<S27>/Delay Input1' */
     memcpy(&boost_and_two_level__1_sm_ehs_B.Uk1_g[0],
            &boost_and_two_level__1_sm_ehs_DW.DelayInput1_DSTATE_m[0], 80U *
            sizeof(uint32_T));
 
-    /* RelationalOperator: '<S24>/FixPt Relational Operator' */
+    /* RelationalOperator: '<S27>/FixPt Relational Operator' */
     for (i = 0; i < 16; i++) {
       boost_and_two_level__1_sm_ehs_B.FixPtRelationalOperator_i[i] = (uint8_T)
         (boost_and_two_level__1_sm_ehs_B.DataTypeConversion5[i] !=
@@ -1400,9 +1400,9 @@ void boost_and_two_level__1_sm_ehs_output(void)
                   boost_and_two_level__1_sm_ehs_B.DataTypeConversion5_n[i]);
     }
 
-    /* End of RelationalOperator: '<S24>/FixPt Relational Operator' */
+    /* End of RelationalOperator: '<S27>/FixPt Relational Operator' */
 
-    /* Logic: '<S23>/Logical Operator' */
+    /* Logic: '<S26>/Logical Operator' */
     tmp = (boost_and_two_level__1_sm_ehs_B.FixPtRelationalOperator_i[0] != 0);
     for (i = 0; i < 79; i++) {
       tmp = (tmp || (boost_and_two_level__1_sm_ehs_B.FixPtRelationalOperator_i[i
@@ -1411,32 +1411,32 @@ void boost_and_two_level__1_sm_ehs_output(void)
 
     boost_and_two_level__1_sm_ehs_B.LogicalOperator_i = tmp;
 
-    /* End of Logic: '<S23>/Logical Operator' */
+    /* End of Logic: '<S26>/Logical Operator' */
 
-    /* DataTypeConversion: '<S23>/Data Type Conversion1' */
+    /* DataTypeConversion: '<S26>/Data Type Conversion1' */
     boost_and_two_level__1_sm_ehs_B.DataTypeConversion1 =
       boost_and_two_level__1_sm_ehs_B.LogicalOperator_i;
 
-    /* Logic: '<S19>/Logical Operator1' */
+    /* Logic: '<S22>/Logical Operator1' */
     boost_and_two_level__1_sm_ehs_B.LogicalOperator1 =
       ((boost_and_two_level__1_sm_ehs_B.Memory1_o != 0.0) ||
        (boost_and_two_level__1_sm_ehs_B.DataTypeConversion1 != 0.0));
 
-    /* DataTypeConversion: '<S19>/Data Type Conversion' */
+    /* DataTypeConversion: '<S22>/Data Type Conversion' */
     boost_and_two_level__1_sm_ehs_B.DataTypeConversion_d =
       boost_and_two_level__1_sm_ehs_B.LogicalOperator1;
 
-    /* Memory: '<S19>/Memory2' */
+    /* Memory: '<S22>/Memory2' */
     boost_and_two_level__1_sm_ehs_B.Memory2 =
       boost_and_two_level__1_sm_ehs_DW.Memory2_PreviousInput;
 
-    /* Sum: '<S19>/Add' */
+    /* Sum: '<S22>/Add' */
     boost_and_two_level__1_sm_ehs_B.Add =
       boost_and_two_level__1_sm_ehs_B.DataTypeConversion_d +
       boost_and_two_level__1_sm_ehs_B.Memory2;
 
-    /* Switch: '<S19>/Switch' incorporates:
-     *  Constant: '<S19>/Constant'
+    /* Switch: '<S22>/Switch' incorporates:
+     *  Constant: '<S22>/Constant'
      */
     if (boost_and_two_level__1_sm_ehs_B.Add >=
         boost_and_two_level__1_sm_ehs_P.Counter_max_count) {
@@ -1447,11 +1447,11 @@ void boost_and_two_level__1_sm_ehs_output(void)
         boost_and_two_level__1_sm_ehs_B.Add;
     }
 
-    /* End of Switch: '<S19>/Switch' */
+    /* End of Switch: '<S22>/Switch' */
 
-    /* Switch: '<S19>/Switch1' incorporates:
-     *  Constant: '<S19>/Constant1'
-     *  Constant: '<S19>/Constant2'
+    /* Switch: '<S22>/Switch1' incorporates:
+     *  Constant: '<S22>/Constant1'
+     *  Constant: '<S22>/Constant2'
      */
     if (boost_and_two_level__1_sm_ehs_B.Switch_i != 0.0) {
       boost_and_two_level__1_sm_ehs_B.Switch1 =
@@ -1461,15 +1461,15 @@ void boost_and_two_level__1_sm_ehs_output(void)
         boost_and_two_level__1_sm_ehs_P.Constant1_Value;
     }
 
-    /* End of Switch: '<S19>/Switch1' */
+    /* End of Switch: '<S22>/Switch1' */
 
-    /* MultiPortSwitch: '<S17>/Multiport Switch' incorporates:
-     *  Constant: '<S17>/addr'
-     *  Constant: '<S17>/addr1'
-     *  Constant: '<S17>/addr2'
-     *  Constant: '<S17>/addr3'
-     *  Constant: '<S17>/addr4'
-     *  Constant: '<S17>/default'
+    /* MultiPortSwitch: '<S20>/Multiport Switch' incorporates:
+     *  Constant: '<S20>/addr'
+     *  Constant: '<S20>/addr1'
+     *  Constant: '<S20>/addr2'
+     *  Constant: '<S20>/addr3'
+     *  Constant: '<S20>/addr4'
+     *  Constant: '<S20>/default'
      */
     switch ((int32_T)boost_and_two_level__1_sm_ehs_B.Add) {
      case 1:
@@ -1519,10 +1519,10 @@ void boost_and_two_level__1_sm_ehs_output(void)
       break;
     }
 
-    /* End of MultiPortSwitch: '<S17>/Multiport Switch' */
+    /* End of MultiPortSwitch: '<S20>/Multiport Switch' */
 
-    /* SignalConversion: '<S17>/TmpSignal ConversionAtLoadInInport2' incorporates:
-     *  Constant: '<S17>/blockID'
+    /* SignalConversion: '<S20>/TmpSignal ConversionAtLoadInInport2' incorporates:
+     *  Constant: '<S20>/blockID'
      */
     boost_and_two_level__1_sm_ehs_B.TmpSignalConversionAtLoadInInpo[0] =
       boost_and_two_level__1_sm_ehs_P.blockID_Value;
@@ -1530,45 +1530,93 @@ void boost_and_two_level__1_sm_ehs_output(void)
            &boost_and_two_level__1_sm_ehs_B.MultiportSwitch[0], 17U * sizeof
            (uint32_T));
 
-    /* Level2 S-Function Block: '<S17>/LoadIn' (sfun_fct_op7160ex1_load_in) */
+    /* Level2 S-Function Block: '<S20>/LoadIn' (sfun_fct_op7160ex1_load_in) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[15];
       sfcnOutputs(rts, 1);
     }
 
-    /* Constant: '<S18>/Constant' */
+    /* Constant: '<S21>/Constant' */
     memcpy(&boost_and_two_level__1_sm_ehs_B.Constant[0],
            &boost_and_two_level__1_sm_ehs_P.Constant_Value_g[0], 9U * sizeof
            (real_T));
 
-    /* Level2 S-Function Block: '<S17>/Convert double to  Single floating-point (FPGA)2' (sfun_DBL2SFP) */
+    /* Level2 S-Function Block: '<S20>/Convert double to  Single floating-point (FPGA)2' (sfun_DBL2SFP) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[16];
       sfcnOutputs(rts, 1);
     }
 
-    /* Level2 S-Function Block: '<S17>/DataIn Send' (sfun_fct_op7160ex1_send) */
+    /* Level2 S-Function Block: '<S20>/DataIn Send' (sfun_fct_op7160ex1_send) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[17];
       sfcnOutputs(rts, 1);
     }
 
-    /* Level2 S-Function Block: '<S2>/OpWriteFile' (opwritefile) */
+    /* Level2 S-Function Block: '<S11>/rtlab_io_block' (sfun_op7160ex1_pwm_in) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[18];
       sfcnOutputs(rts, 1);
     }
 
+    /* Constant: '<S11>/IOTypeSel' */
+    boost_and_two_level__1_sm_ehs_B.IOTypeSel =
+      boost_and_two_level__1_sm_ehs_P.IOTypeSel_Value;
+
+    /* Memory: '<S11>/Memory1' */
+    boost_and_two_level__1_sm_ehs_B.Memory1_n =
+      boost_and_two_level__1_sm_ehs_DW.Memory1_PreviousInput_n;
+
+    /* Level2 S-Function Block: '<S11>/IOTypeSel_LoadIn' (sfun_fct_op7160ex1_load_in) */
+    {
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[19];
+      sfcnOutputs(rts, 1);
+    }
+
+    /* Memory: '<S11>/Memory' */
+    boost_and_two_level__1_sm_ehs_B.Memory_o =
+      boost_and_two_level__1_sm_ehs_DW.Memory_PreviousInput_l;
+
+    /* Level2 S-Function Block: '<S12>/rtlab_io_block' (sfun_op7160ex1_pwm_in) */
+    {
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[20];
+      sfcnOutputs(rts, 1);
+    }
+
+    /* Constant: '<S12>/IOTypeSel' */
+    boost_and_two_level__1_sm_ehs_B.IOTypeSel_p =
+      boost_and_two_level__1_sm_ehs_P.IOTypeSel_Value_n;
+
+    /* Memory: '<S12>/Memory1' */
+    boost_and_two_level__1_sm_ehs_B.Memory1_h =
+      boost_and_two_level__1_sm_ehs_DW.Memory1_PreviousInput_o;
+
+    /* Level2 S-Function Block: '<S12>/IOTypeSel_LoadIn' (sfun_fct_op7160ex1_load_in) */
+    {
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[21];
+      sfcnOutputs(rts, 1);
+    }
+
+    /* Memory: '<S12>/Memory' */
+    boost_and_two_level__1_sm_ehs_B.Memory_k =
+      boost_and_two_level__1_sm_ehs_DW.Memory_PreviousInput_h;
+
+    /* Level2 S-Function Block: '<S2>/OpWriteFile' (opwritefile) */
+    {
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[22];
+      sfcnOutputs(rts, 1);
+    }
+
     for (i = 0; i < 10; i++) {
-      /* Constant: '<S7>/load_config1' */
+      /* Constant: '<S8>/load_config1' */
       boost_and_two_level__1_sm_ehs_B.load_config1[i] =
         boost_and_two_level__1_sm_ehs_P.load_config1_Value[i];
 
-      /* UnitDelay: '<S28>/Delay Input1' */
+      /* UnitDelay: '<S31>/Delay Input1' */
       boost_and_two_level__1_sm_ehs_B.Uk1_gd[i] =
         boost_and_two_level__1_sm_ehs_DW.DelayInput1_DSTATE_k[i];
 
-      /* RelationalOperator: '<S28>/FixPt Relational Operator' */
+      /* RelationalOperator: '<S31>/FixPt Relational Operator' */
       boost_and_two_level__1_sm_ehs_B.FixPtRelationalOperator_h[i] = (uint8_T)
         (boost_and_two_level__1_sm_ehs_B.load_config1[i] !=
          boost_and_two_level__1_sm_ehs_B.Uk1_gd[i]);
@@ -1582,17 +1630,11 @@ void boost_and_two_level__1_sm_ehs_output(void)
 
     boost_and_two_level__1_sm_ehs_B.LogicalOperator_g = tmp;
 
-    /* DataTypeConversion: '<S27>/Data Type Conversion1' */
+    /* DataTypeConversion: '<S30>/Data Type Conversion1' */
     boost_and_two_level__1_sm_ehs_B.DataTypeConversion1_o =
       boost_and_two_level__1_sm_ehs_B.LogicalOperator_g;
 
-    /* Level2 S-Function Block: '<S9>/RTE Conversion1' (rte_conversion) */
-    {
-      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[19];
-      sfcnOutputs(rts, 1);
-    }
-
-    /* Step: '<S9>/Step' */
+    /* Step: '<S10>/Step' */
     dP = boost_and_two_level__1_sm_ehs_M->Timing.t[1];
     if (dP < boost_and_two_level__1_sm_ehs_P.Step_Time) {
       boost_and_two_level__1_sm_ehs_B.Step =
@@ -1602,14 +1644,14 @@ void boost_and_two_level__1_sm_ehs_output(void)
         boost_and_two_level__1_sm_ehs_P.Step_YFinal;
     }
 
-    /* End of Step: '<S9>/Step' */
+    /* End of Step: '<S10>/Step' */
 
-    /* Product: '<S9>/Product1' */
+    /* Product: '<S10>/Product1' */
     boost_and_two_level__1_sm_ehs_B.Product1 =
-      boost_and_two_level__1_sm_ehs_B.SFunction_l[2] *
+      boost_and_two_level__1_sm_ehs_B.SFunction_n[2] *
       boost_and_two_level__1_sm_ehs_B.Step;
 
-    /* SignalConversion: '<S9>/TmpSignal ConversionAtRTE ConversionInport1' */
+    /* SignalConversion: '<S10>/TmpSignal ConversionAtRTE ConversionInport1' */
     boost_and_two_level__1_sm_ehs_B.TmpSignalConversionAtRTEConvers[0] =
       boost_and_two_level__1_sm_ehs_B.Product1;
     boost_and_two_level__1_sm_ehs_B.TmpSignalConversionAtRTEConvers[1] =
@@ -1619,45 +1661,96 @@ void boost_and_two_level__1_sm_ehs_output(void)
     boost_and_two_level__1_sm_ehs_B.TmpSignalConversionAtRTEConvers[3] =
       boost_and_two_level__1_sm_ehs_B.Product1;
 
-    /* Level2 S-Function Block: '<S9>/RTE Conversion' (rte_conversion) */
-    {
-      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[20];
-      sfcnOutputs(rts, 1);
-    }
-
-    /* Level2 S-Function Block: '<S9>/RTE Logical Operator1' (rte_logical_operator) */
-    {
-      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[21];
-      sfcnOutputs(rts, 1);
-    }
-
-    /* Level2 S-Function Block: '<S9>/RTE Ground' (rte_ground) */
-    {
-      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[22];
-      sfcnOutputs(rts, 1);
-    }
-
-    /* Level2 S-Function Block: '<S26>/RTE_Conversion_1' (rte_conversion_ophsdio) */
+    /* Level2 S-Function Block: '<S10>/RTE Conversion' (rte_conversion) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[23];
       sfcnOutputs(rts, 1);
     }
 
-    /* Level2 S-Function Block: '<S26>/EventGen_eHS_1' (sfun_op7160ex1_event_generator) */
+    /* Level2 S-Function Block: '<S10>/RTE Conversion1' (rte_conversion) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[24];
       sfcnOutputs(rts, 1);
     }
 
-    /* RateTransition: '<S9>/Rate Transition5' */
+    /* Level2 S-Function Block: '<S10>/RTE Logical Operator1' (rte_logical_operator) */
+    {
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[25];
+      sfcnOutputs(rts, 1);
+    }
+
+    /* Level2 S-Function Block: '<S10>/RTE SPWM' (rte_svpwm) */
+    {
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[26];
+      sfcnOutputs(rts, 1);
+    }
+
+    /* Switch: '<S10>/Switch' */
+    if (boost_and_two_level__1_sm_ehs_B.SFunction_n[164] >
+        boost_and_two_level__1_sm_ehs_P.Switch_Threshold) {
+      boost_and_two_level__1_sm_ehs_B.Switch_f[0] =
+        boost_and_two_level__1_sm_ehs_B.RTELogicalOperator1[0];
+    } else {
+      boost_and_two_level__1_sm_ehs_B.Switch_f[0] =
+        boost_and_two_level__1_sm_ehs_B.RTESPWM_o1;
+    }
+
+    if (boost_and_two_level__1_sm_ehs_B.SFunction_n[164] >
+        boost_and_two_level__1_sm_ehs_P.Switch_Threshold) {
+      boost_and_two_level__1_sm_ehs_B.Switch_f[1] =
+        boost_and_two_level__1_sm_ehs_B.RTELogicalOperator1[1];
+    } else {
+      boost_and_two_level__1_sm_ehs_B.Switch_f[1] =
+        boost_and_two_level__1_sm_ehs_B.RTESPWM_o2;
+    }
+
+    if (boost_and_two_level__1_sm_ehs_B.SFunction_n[164] >
+        boost_and_two_level__1_sm_ehs_P.Switch_Threshold) {
+      boost_and_two_level__1_sm_ehs_B.Switch_f[2] =
+        boost_and_two_level__1_sm_ehs_B.RTELogicalOperator1[2];
+    } else {
+      boost_and_two_level__1_sm_ehs_B.Switch_f[2] =
+        boost_and_two_level__1_sm_ehs_B.RTESPWM_o2;
+    }
+
+    if (boost_and_two_level__1_sm_ehs_B.SFunction_n[164] >
+        boost_and_two_level__1_sm_ehs_P.Switch_Threshold) {
+      boost_and_two_level__1_sm_ehs_B.Switch_f[3] =
+        boost_and_two_level__1_sm_ehs_B.RTELogicalOperator1[3];
+    } else {
+      boost_and_two_level__1_sm_ehs_B.Switch_f[3] =
+        boost_and_two_level__1_sm_ehs_B.RTESPWM_o1;
+    }
+
+    /* End of Switch: '<S10>/Switch' */
+
+    /* Level2 S-Function Block: '<S10>/RTE Ground' (rte_ground) */
+    {
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[27];
+      sfcnOutputs(rts, 1);
+    }
+
+    /* Level2 S-Function Block: '<S29>/RTE_Conversion_1' (rte_conversion_ophsdio) */
+    {
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[28];
+      sfcnOutputs(rts, 1);
+    }
+
+    /* Level2 S-Function Block: '<S29>/EventGen_eHS_1' (sfun_op7160ex1_event_generator) */
+    {
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[29];
+      sfcnOutputs(rts, 1);
+    }
+
+    /* RateTransition: '<S10>/Rate Transition5' */
     if (rtmIsMajorTimeStep(boost_and_two_level__1_sm_ehs_M)) {
       boost_and_two_level__1_sm_ehs_B.RateTransition5 =
         boost_and_two_level__1_sm_ehs_B.Divide[4];
     }
 
-    /* End of RateTransition: '<S9>/Rate Transition5' */
+    /* End of RateTransition: '<S10>/Rate Transition5' */
 
-    /* Gain: '<S36>/A->pu' */
+    /* Gain: '<S39>/A->pu' */
     P = boost_and_two_level__1_sm_ehs_P.InverterControl_Vnom_prim;
     B = boost_and_two_level__1_sm_ehs_P.InverterControl_Pnom;
     dV = P / B;
@@ -1665,11 +1758,11 @@ void boost_and_two_level__1_sm_ehs_output(void)
     boost_and_two_level__1_sm_ehs_B.Apu = dV *
       boost_and_two_level__1_sm_ehs_B.RateTransition5;
 
-    /* UnitDelay: '<S56>/Unit Delay' */
+    /* UnitDelay: '<S59>/Unit Delay' */
     boost_and_two_level__1_sm_ehs_B.UnitDelay_l =
       boost_and_two_level__1_sm_ehs_DW.UnitDelay_DSTATE_b;
 
-    /* Saturate: '<S45>/avoid division by zero' */
+    /* Saturate: '<S48>/avoid division by zero' */
     B = boost_and_two_level__1_sm_ehs_B.UnitDelay_l;
     dP = boost_and_two_level__1_sm_ehs_P.avoiddivisionbyzero_LowerSat;
     u2 = boost_and_two_level__1_sm_ehs_P.avoiddivisionbyzero_UpperSat;
@@ -1681,57 +1774,57 @@ void boost_and_two_level__1_sm_ehs_output(void)
       boost_and_two_level__1_sm_ehs_B.avoiddivisionbyzero = B;
     }
 
-    /* End of Saturate: '<S45>/avoid division by zero' */
+    /* End of Saturate: '<S48>/avoid division by zero' */
 
-    /* Math: '<S45>/Math Function'
+    /* Math: '<S48>/Math Function'
      *
-     * About '<S45>/Math Function':
+     * About '<S48>/Math Function':
      *  Operator: reciprocal
      */
     P = boost_and_two_level__1_sm_ehs_B.avoiddivisionbyzero;
     boost_and_two_level__1_sm_ehs_B.MathFunction_i = 1.0 / P;
 
-    /* Gain: '<S45>/Gain' */
+    /* Gain: '<S48>/Gain' */
     boost_and_two_level__1_sm_ehs_B.Gain =
       boost_and_two_level__1_sm_ehs_P.Gain_Gain_e *
       boost_and_two_level__1_sm_ehs_B.MathFunction_i;
 
-    /* Level2 S-Function Block: '<S82>/S-Function' (sfun_discreteVariableDelay) */
+    /* Level2 S-Function Block: '<S85>/S-Function' (sfun_discreteVariableDelay) */
     {
-      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[25];
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[30];
       sfcnOutputs(rts, 1);
     }
 
-    /* DiscreteIntegrator: '<S56>/Discrete-Time Integrator' */
+    /* DiscreteIntegrator: '<S59>/Discrete-Time Integrator' */
     boost_and_two_level__1_sm_ehs_B.DiscreteTimeIntegrator =
       boost_and_two_level__1_sm_ehs_DW.DiscreteTimeIntegrator_DSTATE;
 
-    /* Math: '<S56>/Math Function' incorporates:
-     *  Constant: '<S56>/Constant4'
+    /* Math: '<S59>/Math Function' incorporates:
+     *  Constant: '<S59>/Constant4'
      */
     boost_and_two_level__1_sm_ehs_B.MathFunction_m = rt_modd_snf
       (boost_and_two_level__1_sm_ehs_B.DiscreteTimeIntegrator,
        boost_and_two_level__1_sm_ehs_P.Constant4_Value_o);
 
-    /* RelationalOperator: '<S83>/Compare' incorporates:
-     *  Constant: '<S81>/Constant'
-     *  Constant: '<S83>/Constant'
+    /* RelationalOperator: '<S86>/Compare' incorporates:
+     *  Constant: '<S84>/Constant'
+     *  Constant: '<S86>/Constant'
      */
     boost_and_two_level__1_sm_ehs_B.Compare = (uint8_T)
       (boost_and_two_level__1_sm_ehs_P.AlphaBetaZerotodq0_Alignment ==
        boost_and_two_level__1_sm_ehs_P.CompareToConstant_const);
 
-    /* Outputs for Enabled SubSystem: '<S81>/Subsystem1' incorporates:
-     *  EnablePort: '<S86>/Enable'
+    /* Outputs for Enabled SubSystem: '<S84>/Subsystem1' incorporates:
+     *  EnablePort: '<S89>/Enable'
      */
     if (boost_and_two_level__1_sm_ehs_B.Compare > 0) {
-      /* Fcn: '<S86>/Fcn' */
+      /* Fcn: '<S89>/Fcn' */
       boost_and_two_level__1_sm_ehs_B.Fcn = boost_and_two_level__1_sm_ehs_B.Apu *
         cos(boost_and_two_level__1_sm_ehs_B.MathFunction_m) +
         boost_and_two_level__1_sm_ehs_B.SFunction_h * sin
         (boost_and_two_level__1_sm_ehs_B.MathFunction_m);
 
-      /* Fcn: '<S86>/Fcn1' */
+      /* Fcn: '<S89>/Fcn1' */
       boost_and_two_level__1_sm_ehs_B.Fcn1 =
         -boost_and_two_level__1_sm_ehs_B.Apu * sin
         (boost_and_two_level__1_sm_ehs_B.MathFunction_m) +
@@ -1739,28 +1832,28 @@ void boost_and_two_level__1_sm_ehs_output(void)
         (boost_and_two_level__1_sm_ehs_B.MathFunction_m);
     }
 
-    /* End of Outputs for SubSystem: '<S81>/Subsystem1' */
+    /* End of Outputs for SubSystem: '<S84>/Subsystem1' */
 
-    /* RelationalOperator: '<S84>/Compare' incorporates:
-     *  Constant: '<S81>/Constant'
+    /* RelationalOperator: '<S87>/Compare' incorporates:
      *  Constant: '<S84>/Constant'
+     *  Constant: '<S87>/Constant'
      */
     boost_and_two_level__1_sm_ehs_B.Compare_m = (uint8_T)
       (boost_and_two_level__1_sm_ehs_P.AlphaBetaZerotodq0_Alignment ==
        boost_and_two_level__1_sm_ehs_P.CompareToConstant1_const);
 
-    /* Outputs for Enabled SubSystem: '<S81>/Subsystem - pi//2 delay' incorporates:
-     *  EnablePort: '<S85>/Enable'
+    /* Outputs for Enabled SubSystem: '<S84>/Subsystem - pi//2 delay' incorporates:
+     *  EnablePort: '<S88>/Enable'
      */
     if (boost_and_two_level__1_sm_ehs_B.Compare_m > 0) {
-      /* Fcn: '<S85>/Fcn' */
+      /* Fcn: '<S88>/Fcn' */
       boost_and_two_level__1_sm_ehs_B.Fcn_i =
         boost_and_two_level__1_sm_ehs_B.Apu * sin
         (boost_and_two_level__1_sm_ehs_B.MathFunction_m) -
         boost_and_two_level__1_sm_ehs_B.SFunction_h * cos
         (boost_and_two_level__1_sm_ehs_B.MathFunction_m);
 
-      /* Fcn: '<S85>/Fcn1' */
+      /* Fcn: '<S88>/Fcn1' */
       boost_and_two_level__1_sm_ehs_B.Fcn1_k =
         boost_and_two_level__1_sm_ehs_B.Apu * cos
         (boost_and_two_level__1_sm_ehs_B.MathFunction_m) +
@@ -1768,9 +1861,9 @@ void boost_and_two_level__1_sm_ehs_output(void)
         (boost_and_two_level__1_sm_ehs_B.MathFunction_m);
     }
 
-    /* End of Outputs for SubSystem: '<S81>/Subsystem - pi//2 delay' */
+    /* End of Outputs for SubSystem: '<S84>/Subsystem - pi//2 delay' */
 
-    /* Step: '<S45>/First cycle of simulation Id=0.92, Iq=0' */
+    /* Step: '<S48>/First cycle of simulation Id=0.92, Iq=0' */
     dP = boost_and_two_level__1_sm_ehs_M->Timing.t[1];
     B = boost_and_two_level__1_sm_ehs_P.InverterControl_Fnom;
     dV = 1.0 / B;
@@ -1782,13 +1875,13 @@ void boost_and_two_level__1_sm_ehs_output(void)
         boost_and_two_level__1_sm_ehs_P.FirstcycleofsimulationId092Iq_k;
     }
 
-    /* End of Step: '<S45>/First cycle of simulation Id=0.92, Iq=0' */
+    /* End of Step: '<S48>/First cycle of simulation Id=0.92, Iq=0' */
 
-    /* Switch: '<S45>/Switch' incorporates:
-     *  Constant: '<S45>/Constant'
+    /* Switch: '<S48>/Switch' incorporates:
+     *  Constant: '<S48>/Constant'
      */
     if (boost_and_two_level__1_sm_ehs_B.FirstcycleofsimulationId092Iq0 != 0.0) {
-      /* Switch: '<S81>/Switch' */
+      /* Switch: '<S84>/Switch' */
       if (boost_and_two_level__1_sm_ehs_B.Compare != 0) {
         boost_and_two_level__1_sm_ehs_B.Switch_cq[0] =
           boost_and_two_level__1_sm_ehs_B.Fcn;
@@ -1805,7 +1898,7 @@ void boost_and_two_level__1_sm_ehs_output(void)
           boost_and_two_level__1_sm_ehs_B.Fcn1_k;
       }
 
-      /* End of Switch: '<S81>/Switch' */
+      /* End of Switch: '<S84>/Switch' */
       boost_and_two_level__1_sm_ehs_B.Switch_b[0] =
         boost_and_two_level__1_sm_ehs_B.Switch_cq[0];
       boost_and_two_level__1_sm_ehs_B.Switch_b[1] =
@@ -1817,9 +1910,9 @@ void boost_and_two_level__1_sm_ehs_output(void)
         boost_and_two_level__1_sm_ehs_P.Constant_Value_k[1];
     }
 
-    /* End of Switch: '<S45>/Switch' */
+    /* End of Switch: '<S48>/Switch' */
 
-    /* Gain: '<S77>/D*u(k)' */
+    /* Gain: '<S80>/D*u(k)' */
     boost_and_two_level__1_sm_ehs_B.Duk[0] =
       boost_and_two_level__1_sm_ehs_P.Duk_Gain *
       boost_and_two_level__1_sm_ehs_B.Switch_b[0];
@@ -1827,13 +1920,13 @@ void boost_and_two_level__1_sm_ehs_output(void)
       boost_and_two_level__1_sm_ehs_P.Duk_Gain *
       boost_and_two_level__1_sm_ehs_B.Switch_b[1];
 
-    /* UnitDelay: '<S77>/Delay_x1' */
+    /* UnitDelay: '<S80>/Delay_x1' */
     boost_and_two_level__1_sm_ehs_B.x1k[0] =
       boost_and_two_level__1_sm_ehs_DW.Delay_x1_DSTATE[0];
     boost_and_two_level__1_sm_ehs_B.x1k[1] =
       boost_and_two_level__1_sm_ehs_DW.Delay_x1_DSTATE[1];
 
-    /* Gain: '<S80>/C11' */
+    /* Gain: '<S83>/C11' */
     boost_and_two_level__1_sm_ehs_B.C11[0] =
       boost_and_two_level__1_sm_ehs_P.C11_Gain *
       boost_and_two_level__1_sm_ehs_B.x1k[0];
@@ -1841,13 +1934,13 @@ void boost_and_two_level__1_sm_ehs_output(void)
       boost_and_two_level__1_sm_ehs_P.C11_Gain *
       boost_and_two_level__1_sm_ehs_B.x1k[1];
 
-    /* UnitDelay: '<S77>/Delay_x2' */
+    /* UnitDelay: '<S80>/Delay_x2' */
     boost_and_two_level__1_sm_ehs_B.x2k[0] =
       boost_and_two_level__1_sm_ehs_DW.Delay_x2_DSTATE[0];
     boost_and_two_level__1_sm_ehs_B.x2k[1] =
       boost_and_two_level__1_sm_ehs_DW.Delay_x2_DSTATE[1];
 
-    /* Gain: '<S80>/C12' */
+    /* Gain: '<S83>/C12' */
     boost_and_two_level__1_sm_ehs_B.C12[0] =
       boost_and_two_level__1_sm_ehs_P.C12_Gain *
       boost_and_two_level__1_sm_ehs_B.x2k[0];
@@ -1855,7 +1948,7 @@ void boost_and_two_level__1_sm_ehs_output(void)
       boost_and_two_level__1_sm_ehs_P.C12_Gain *
       boost_and_two_level__1_sm_ehs_B.x2k[1];
 
-    /* Sum: '<S80>/sum2' */
+    /* Sum: '<S83>/sum2' */
     boost_and_two_level__1_sm_ehs_B.sum2[0] =
       boost_and_two_level__1_sm_ehs_B.C11[0] +
       boost_and_two_level__1_sm_ehs_B.C12[0];
@@ -1863,18 +1956,18 @@ void boost_and_two_level__1_sm_ehs_output(void)
       boost_and_two_level__1_sm_ehs_B.C11[1] +
       boost_and_two_level__1_sm_ehs_B.C12[1];
 
-    /* Sum: '<S77>/C*X(k)+D*u(k)' */
+    /* Sum: '<S80>/C*X(k)+D*u(k)' */
     boost_and_two_level__1_sm_ehs_B.yk[0] = boost_and_two_level__1_sm_ehs_B.Duk
       [0] + boost_and_two_level__1_sm_ehs_B.sum2[0];
     boost_and_two_level__1_sm_ehs_B.yk[1] = boost_and_two_level__1_sm_ehs_B.Duk
       [1] + boost_and_two_level__1_sm_ehs_B.sum2[1];
 
-    /* UnitDelay: '<S31>/Unit Delay2' */
+    /* UnitDelay: '<S34>/Unit Delay2' */
     boost_and_two_level__1_sm_ehs_B.UnitDelay2 =
       boost_and_two_level__1_sm_ehs_DW.UnitDelay2_DSTATE;
 
-    /* Sum: '<S33>/Sum' incorporates:
-     *  Constant: '<S31>/Iq_ref'
+    /* Sum: '<S36>/Sum' incorporates:
+     *  Constant: '<S34>/Iq_ref'
      */
     boost_and_two_level__1_sm_ehs_B.Sum_n[0] =
       boost_and_two_level__1_sm_ehs_B.UnitDelay2 -
@@ -1883,7 +1976,7 @@ void boost_and_two_level__1_sm_ehs_output(void)
       boost_and_two_level__1_sm_ehs_P.Iq_ref_Value -
       boost_and_two_level__1_sm_ehs_B.yk[1];
 
-    /* Gain: '<S40>/Proportional Gain' */
+    /* Gain: '<S43>/Proportional Gain' */
     boost_and_two_level__1_sm_ehs_B.ProportionalGain[0] =
       boost_and_two_level__1_sm_ehs_P.InverterControl_Kp_Ireg *
       boost_and_two_level__1_sm_ehs_B.Sum_n[0];
@@ -1891,13 +1984,13 @@ void boost_and_two_level__1_sm_ehs_output(void)
       boost_and_two_level__1_sm_ehs_P.InverterControl_Kp_Ireg *
       boost_and_two_level__1_sm_ehs_B.Sum_n[1];
 
-    /* DiscreteIntegrator: '<S40>/Integrator' */
+    /* DiscreteIntegrator: '<S43>/Integrator' */
     boost_and_two_level__1_sm_ehs_B.Integrator[0] =
       boost_and_two_level__1_sm_ehs_DW.Integrator_DSTATE[0];
     boost_and_two_level__1_sm_ehs_B.Integrator[1] =
       boost_and_two_level__1_sm_ehs_DW.Integrator_DSTATE[1];
 
-    /* Sum: '<S40>/Sum' */
+    /* Sum: '<S43>/Sum' */
     boost_and_two_level__1_sm_ehs_B.Sum_j[0] =
       boost_and_two_level__1_sm_ehs_B.ProportionalGain[0] +
       boost_and_two_level__1_sm_ehs_B.Integrator[0];
@@ -1905,7 +1998,7 @@ void boost_and_two_level__1_sm_ehs_output(void)
       boost_and_two_level__1_sm_ehs_B.ProportionalGain[1] +
       boost_and_two_level__1_sm_ehs_B.Integrator[1];
 
-    /* Saturate: '<S40>/Saturate' */
+    /* Saturate: '<S43>/Saturate' */
     B = boost_and_two_level__1_sm_ehs_B.Sum_j[0];
     dP = boost_and_two_level__1_sm_ehs_P.PI_LowerSaturationLimit;
     u2 = boost_and_two_level__1_sm_ehs_P.PI_UpperSaturationLimit;
@@ -1931,38 +2024,38 @@ void boost_and_two_level__1_sm_ehs_output(void)
 
     boost_and_two_level__1_sm_ehs_B.Saturate[1] = B;
 
-    /* End of Saturate: '<S40>/Saturate' */
+    /* End of Saturate: '<S43>/Saturate' */
 
-    /* RateTransition: '<S9>/Rate Transition4' */
+    /* RateTransition: '<S10>/Rate Transition4' */
     if (rtmIsMajorTimeStep(boost_and_two_level__1_sm_ehs_M)) {
       boost_and_two_level__1_sm_ehs_B.RateTransition4 =
         boost_and_two_level__1_sm_ehs_B.Divide[5];
     }
 
-    /* End of RateTransition: '<S9>/Rate Transition4' */
+    /* End of RateTransition: '<S10>/Rate Transition4' */
 
-    /* Gain: '<S36>/V->pu' */
+    /* Gain: '<S39>/V->pu' */
     B = boost_and_two_level__1_sm_ehs_P.InverterControl_Vnom_prim *
       1.4142135623730951;
     dV = 1.0 / B;
     boost_and_two_level__1_sm_ehs_B.Vpu = dV *
       boost_and_two_level__1_sm_ehs_B.RateTransition4;
 
-    /* Trigonometry: '<S41>/Trigonometric Function' */
+    /* Trigonometry: '<S44>/Trigonometric Function' */
     boost_and_two_level__1_sm_ehs_B.TrigonometricFunction = sin
       (boost_and_two_level__1_sm_ehs_B.MathFunction_m);
 
-    /* Gain: '<S41>/Gain1' */
+    /* Gain: '<S44>/Gain1' */
     boost_and_two_level__1_sm_ehs_B.Gain1_f =
       boost_and_two_level__1_sm_ehs_P.Gain1_Gain_b2 *
       boost_and_two_level__1_sm_ehs_B.TrigonometricFunction;
 
-    /* Product: '<S41>/Product1' */
+    /* Product: '<S44>/Product1' */
     boost_and_two_level__1_sm_ehs_B.Product1_k =
       boost_and_two_level__1_sm_ehs_B.Vpu *
       boost_and_two_level__1_sm_ehs_B.Gain1_f;
 
-    /* DiscreteIntegrator: '<S48>/Integ4' */
+    /* DiscreteIntegrator: '<S51>/Integ4' */
     if (boost_and_two_level__1_sm_ehs_DW.Integ4_SYSTEM_ENABLE != 0) {
       boost_and_two_level__1_sm_ehs_B.Integ4 =
         boost_and_two_level__1_sm_ehs_DW.Integ4_DSTATE;
@@ -1973,9 +2066,9 @@ void boost_and_two_level__1_sm_ehs_output(void)
         boost_and_two_level__1_sm_ehs_DW.Integ4_DSTATE;
     }
 
-    /* End of DiscreteIntegrator: '<S48>/Integ4' */
+    /* End of DiscreteIntegrator: '<S51>/Integ4' */
 
-    /* Saturate: '<S48>/To avoid division  by zero' */
+    /* Saturate: '<S51>/To avoid division  by zero' */
     B = boost_and_two_level__1_sm_ehs_B.UnitDelay_l;
     dP = boost_and_two_level__1_sm_ehs_P.Toavoiddivisionbyzero_LowerSa_o;
     u2 = boost_and_two_level__1_sm_ehs_P.Toavoiddivisionbyzero_UpperSa_d;
@@ -1987,93 +2080,93 @@ void boost_and_two_level__1_sm_ehs_output(void)
       boost_and_two_level__1_sm_ehs_B.Freq = B;
     }
 
-    /* End of Saturate: '<S48>/To avoid division  by zero' */
+    /* End of Saturate: '<S51>/To avoid division  by zero' */
 
-    /* Fcn: '<S48>/Number of samples per cycle' */
+    /* Fcn: '<S51>/Number of samples per cycle' */
     boost_and_two_level__1_sm_ehs_B.Numberofsamplespercycle = 1.0 /
       boost_and_two_level__1_sm_ehs_B.Freq / 2.0e-5;
 
-    /* Rounding: '<S48>/Rounding Function' */
+    /* Rounding: '<S51>/Rounding Function' */
     boost_and_two_level__1_sm_ehs_B.RoundingFunction = ceil
       (boost_and_two_level__1_sm_ehs_B.Numberofsamplespercycle);
 
-    /* Gain: '<S48>/Gain' */
+    /* Gain: '<S51>/Gain' */
     boost_and_two_level__1_sm_ehs_B.Delay = boost_and_two_level__1_sm_ehs_P.Ts *
       boost_and_two_level__1_sm_ehs_B.RoundingFunction;
 
-    /* Level2 S-Function Block: '<S50>/S-Function' (sfun_discreteVariableDelay) */
+    /* Level2 S-Function Block: '<S53>/S-Function' (sfun_discreteVariableDelay) */
     {
-      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[26];
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[31];
       sfcnOutputs(rts, 1);
     }
 
-    /* UnitDelay: '<S49>/Unit Delay' */
+    /* UnitDelay: '<S52>/Unit Delay' */
     boost_and_two_level__1_sm_ehs_B.UnitDelay_k =
       boost_and_two_level__1_sm_ehs_DW.UnitDelay_DSTATE_d;
 
-    /* DigitalClock: '<S48>/Digital  Clock' */
+    /* DigitalClock: '<S51>/Digital  Clock' */
     boost_and_two_level__1_sm_ehs_B.DigitalClock_e =
       boost_and_two_level__1_sm_ehs_M->Timing.t[1];
 
-    /* RelationalOperator: '<S48>/Relational Operator' incorporates:
-     *  Constant: '<S48>/Constant'
+    /* RelationalOperator: '<S51>/Relational Operator' incorporates:
+     *  Constant: '<S51>/Constant'
      */
     boost_and_two_level__1_sm_ehs_B.RelationalOperator_m =
       (boost_and_two_level__1_sm_ehs_B.DigitalClock_e >=
        boost_and_two_level__1_sm_ehs_P.Constant_Value_p);
 
-    /* UnitDelay: '<S48>/Unit Delay1' */
+    /* UnitDelay: '<S51>/Unit Delay1' */
     boost_and_two_level__1_sm_ehs_B.UnitDelay1 =
       boost_and_two_level__1_sm_ehs_DW.UnitDelay1_DSTATE;
 
-    /* Switch: '<S48>/Switch' */
+    /* Switch: '<S51>/Switch' */
     if (boost_and_two_level__1_sm_ehs_B.RelationalOperator_m) {
-      /* Sum: '<S49>/Sum1' */
+      /* Sum: '<S52>/Sum1' */
       boost_and_two_level__1_sm_ehs_B.Sum1_g =
         boost_and_two_level__1_sm_ehs_B.Product1_k -
         boost_and_two_level__1_sm_ehs_B.UnitDelay_k;
 
-      /* Sum: '<S49>/Sum5' */
+      /* Sum: '<S52>/Sum5' */
       boost_and_two_level__1_sm_ehs_B.Sum5_f =
         boost_and_two_level__1_sm_ehs_B.Numberofsamplespercycle -
         boost_and_two_level__1_sm_ehs_B.RoundingFunction;
 
-      /* Product: '<S49>/Product5' */
+      /* Product: '<S52>/Product5' */
       boost_and_two_level__1_sm_ehs_B.Product5_l =
         boost_and_two_level__1_sm_ehs_B.Sum5_f *
         boost_and_two_level__1_sm_ehs_B.Sum1_g;
 
-      /* Gain: '<S49>/Gain1' */
+      /* Gain: '<S52>/Gain1' */
       boost_and_two_level__1_sm_ehs_B.Gain1_pu =
         boost_and_two_level__1_sm_ehs_P.Gain1_Gain_jj *
         boost_and_two_level__1_sm_ehs_B.Product5_l;
 
-      /* Sum: '<S49>/Sum4' */
+      /* Sum: '<S52>/Sum4' */
       boost_and_two_level__1_sm_ehs_B.Sum4_f =
         boost_and_two_level__1_sm_ehs_B.Gain1_pu +
         boost_and_two_level__1_sm_ehs_B.Product1_k;
 
-      /* Product: '<S49>/Product2' */
+      /* Product: '<S52>/Product2' */
       boost_and_two_level__1_sm_ehs_B.Product2_f1 =
         boost_and_two_level__1_sm_ehs_B.Sum5_f /
         boost_and_two_level__1_sm_ehs_B.Numberofsamplespercycle;
 
-      /* Product: '<S49>/Product4' */
+      /* Product: '<S52>/Product4' */
       boost_and_two_level__1_sm_ehs_B.Product4_k =
         boost_and_two_level__1_sm_ehs_B.Product2_f1 *
         boost_and_two_level__1_sm_ehs_B.Sum4_f;
 
-      /* Sum: '<S48>/Sum7' */
+      /* Sum: '<S51>/Sum7' */
       boost_and_two_level__1_sm_ehs_B.Sum7_p =
         boost_and_two_level__1_sm_ehs_B.Integ4 -
         boost_and_two_level__1_sm_ehs_B.SFunction_f;
 
-      /* Product: '<S48>/Product' */
+      /* Product: '<S51>/Product' */
       boost_and_two_level__1_sm_ehs_B.Meanvalue_o =
         boost_and_two_level__1_sm_ehs_B.Sum7_p *
         boost_and_two_level__1_sm_ehs_B.UnitDelay_l;
 
-      /* Sum: '<S48>/Sum5' */
+      /* Sum: '<S51>/Sum5' */
       boost_and_two_level__1_sm_ehs_B.Sum5_n4 =
         boost_and_two_level__1_sm_ehs_B.Meanvalue_o +
         boost_and_two_level__1_sm_ehs_B.Product4_k;
@@ -2084,23 +2177,23 @@ void boost_and_two_level__1_sm_ehs_output(void)
         boost_and_two_level__1_sm_ehs_B.UnitDelay1;
     }
 
-    /* End of Switch: '<S48>/Switch' */
+    /* End of Switch: '<S51>/Switch' */
 
-    /* Trigonometry: '<S41>/Trigonometric Function3' */
+    /* Trigonometry: '<S44>/Trigonometric Function3' */
     boost_and_two_level__1_sm_ehs_B.TrigonometricFunction3 = cos
       (boost_and_two_level__1_sm_ehs_B.MathFunction_m);
 
-    /* Gain: '<S41>/Gain3' */
+    /* Gain: '<S44>/Gain3' */
     boost_and_two_level__1_sm_ehs_B.Gain3 =
       boost_and_two_level__1_sm_ehs_P.Gain3_Gain_k *
       boost_and_two_level__1_sm_ehs_B.TrigonometricFunction3;
 
-    /* Product: '<S41>/Product2' */
+    /* Product: '<S44>/Product2' */
     boost_and_two_level__1_sm_ehs_B.Product2 =
       boost_and_two_level__1_sm_ehs_B.Vpu *
       boost_and_two_level__1_sm_ehs_B.Gain3;
 
-    /* DiscreteIntegrator: '<S51>/Integ4' */
+    /* DiscreteIntegrator: '<S54>/Integ4' */
     if (boost_and_two_level__1_sm_ehs_DW.Integ4_SYSTEM_ENABLE_n != 0) {
       boost_and_two_level__1_sm_ehs_B.Integ4_b =
         boost_and_two_level__1_sm_ehs_DW.Integ4_DSTATE_f;
@@ -2111,9 +2204,9 @@ void boost_and_two_level__1_sm_ehs_output(void)
         boost_and_two_level__1_sm_ehs_DW.Integ4_DSTATE_f;
     }
 
-    /* End of DiscreteIntegrator: '<S51>/Integ4' */
+    /* End of DiscreteIntegrator: '<S54>/Integ4' */
 
-    /* Saturate: '<S51>/To avoid division  by zero' */
+    /* Saturate: '<S54>/To avoid division  by zero' */
     B = boost_and_two_level__1_sm_ehs_B.UnitDelay_l;
     dP = boost_and_two_level__1_sm_ehs_P.Toavoiddivisionbyzero_LowerS_h5;
     u2 = boost_and_two_level__1_sm_ehs_P.Toavoiddivisionbyzero_UpperSa_e;
@@ -2125,93 +2218,93 @@ void boost_and_two_level__1_sm_ehs_output(void)
       boost_and_two_level__1_sm_ehs_B.Freq_g = B;
     }
 
-    /* End of Saturate: '<S51>/To avoid division  by zero' */
+    /* End of Saturate: '<S54>/To avoid division  by zero' */
 
-    /* Fcn: '<S51>/Number of samples per cycle' */
+    /* Fcn: '<S54>/Number of samples per cycle' */
     boost_and_two_level__1_sm_ehs_B.Numberofsamplespercycle_h = 1.0 /
       boost_and_two_level__1_sm_ehs_B.Freq_g / 2.0e-5;
 
-    /* Rounding: '<S51>/Rounding Function' */
+    /* Rounding: '<S54>/Rounding Function' */
     boost_and_two_level__1_sm_ehs_B.RoundingFunction_e = ceil
       (boost_and_two_level__1_sm_ehs_B.Numberofsamplespercycle_h);
 
-    /* Gain: '<S51>/Gain' */
+    /* Gain: '<S54>/Gain' */
     boost_and_two_level__1_sm_ehs_B.Delay_p = boost_and_two_level__1_sm_ehs_P.Ts
       * boost_and_two_level__1_sm_ehs_B.RoundingFunction_e;
 
-    /* Level2 S-Function Block: '<S53>/S-Function' (sfun_discreteVariableDelay) */
+    /* Level2 S-Function Block: '<S56>/S-Function' (sfun_discreteVariableDelay) */
     {
-      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[27];
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[32];
       sfcnOutputs(rts, 1);
     }
 
-    /* UnitDelay: '<S52>/Unit Delay' */
+    /* UnitDelay: '<S55>/Unit Delay' */
     boost_and_two_level__1_sm_ehs_B.UnitDelay_h =
       boost_and_two_level__1_sm_ehs_DW.UnitDelay_DSTATE_i;
 
-    /* DigitalClock: '<S51>/Digital  Clock' */
+    /* DigitalClock: '<S54>/Digital  Clock' */
     boost_and_two_level__1_sm_ehs_B.DigitalClock_i =
       boost_and_two_level__1_sm_ehs_M->Timing.t[1];
 
-    /* RelationalOperator: '<S51>/Relational Operator' incorporates:
-     *  Constant: '<S51>/Constant'
+    /* RelationalOperator: '<S54>/Relational Operator' incorporates:
+     *  Constant: '<S54>/Constant'
      */
     boost_and_two_level__1_sm_ehs_B.RelationalOperator_a =
       (boost_and_two_level__1_sm_ehs_B.DigitalClock_i >=
        boost_and_two_level__1_sm_ehs_P.Constant_Value_d);
 
-    /* UnitDelay: '<S51>/Unit Delay1' */
+    /* UnitDelay: '<S54>/Unit Delay1' */
     boost_and_two_level__1_sm_ehs_B.UnitDelay1_c =
       boost_and_two_level__1_sm_ehs_DW.UnitDelay1_DSTATE_i;
 
-    /* Switch: '<S51>/Switch' */
+    /* Switch: '<S54>/Switch' */
     if (boost_and_two_level__1_sm_ehs_B.RelationalOperator_a) {
-      /* Sum: '<S52>/Sum1' */
+      /* Sum: '<S55>/Sum1' */
       boost_and_two_level__1_sm_ehs_B.Sum1_e =
         boost_and_two_level__1_sm_ehs_B.Product2 -
         boost_and_two_level__1_sm_ehs_B.UnitDelay_h;
 
-      /* Sum: '<S52>/Sum5' */
+      /* Sum: '<S55>/Sum5' */
       boost_and_two_level__1_sm_ehs_B.Sum5_p =
         boost_and_two_level__1_sm_ehs_B.Numberofsamplespercycle_h -
         boost_and_two_level__1_sm_ehs_B.RoundingFunction_e;
 
-      /* Product: '<S52>/Product5' */
+      /* Product: '<S55>/Product5' */
       boost_and_two_level__1_sm_ehs_B.Product5_i4 =
         boost_and_two_level__1_sm_ehs_B.Sum5_p *
         boost_and_two_level__1_sm_ehs_B.Sum1_e;
 
-      /* Gain: '<S52>/Gain1' */
+      /* Gain: '<S55>/Gain1' */
       boost_and_two_level__1_sm_ehs_B.Gain1_i =
         boost_and_two_level__1_sm_ehs_P.Gain1_Gain_jb *
         boost_and_two_level__1_sm_ehs_B.Product5_i4;
 
-      /* Sum: '<S52>/Sum4' */
+      /* Sum: '<S55>/Sum4' */
       boost_and_two_level__1_sm_ehs_B.Sum4_l =
         boost_and_two_level__1_sm_ehs_B.Gain1_i +
         boost_and_two_level__1_sm_ehs_B.Product2;
 
-      /* Product: '<S52>/Product2' */
+      /* Product: '<S55>/Product2' */
       boost_and_two_level__1_sm_ehs_B.Product2_gq =
         boost_and_two_level__1_sm_ehs_B.Sum5_p /
         boost_and_two_level__1_sm_ehs_B.Numberofsamplespercycle_h;
 
-      /* Product: '<S52>/Product4' */
+      /* Product: '<S55>/Product4' */
       boost_and_two_level__1_sm_ehs_B.Product4_n =
         boost_and_two_level__1_sm_ehs_B.Product2_gq *
         boost_and_two_level__1_sm_ehs_B.Sum4_l;
 
-      /* Sum: '<S51>/Sum7' */
+      /* Sum: '<S54>/Sum7' */
       boost_and_two_level__1_sm_ehs_B.Sum7_m =
         boost_and_two_level__1_sm_ehs_B.Integ4_b -
         boost_and_two_level__1_sm_ehs_B.SFunction_fz;
 
-      /* Product: '<S51>/Product' */
+      /* Product: '<S54>/Product' */
       boost_and_two_level__1_sm_ehs_B.Meanvalue_a =
         boost_and_two_level__1_sm_ehs_B.Sum7_m *
         boost_and_two_level__1_sm_ehs_B.UnitDelay_l;
 
-      /* Sum: '<S51>/Sum5' */
+      /* Sum: '<S54>/Sum5' */
       boost_and_two_level__1_sm_ehs_B.Sum5_an =
         boost_and_two_level__1_sm_ehs_B.Meanvalue_a +
         boost_and_two_level__1_sm_ehs_B.Product4_n;
@@ -2222,15 +2315,15 @@ void boost_and_two_level__1_sm_ehs_output(void)
         boost_and_two_level__1_sm_ehs_B.UnitDelay1_c;
     }
 
-    /* End of Switch: '<S51>/Switch' */
+    /* End of Switch: '<S54>/Switch' */
 
-    /* RealImagToComplex: '<S41>/Real-Imag to Complex' */
+    /* RealImagToComplex: '<S44>/Real-Imag to Complex' */
     boost_and_two_level__1_sm_ehs_B.RealImagtoComplex.re =
       boost_and_two_level__1_sm_ehs_B.Switch_ie;
     boost_and_two_level__1_sm_ehs_B.RealImagtoComplex.im =
       boost_and_two_level__1_sm_ehs_B.Switch_c;
 
-    /* ComplexToMagnitudeAngle: '<S41>/Complex to Magnitude-Angle' */
+    /* ComplexToMagnitudeAngle: '<S44>/Complex to Magnitude-Angle' */
     boost_and_two_level__1_sm_ehs_B.ComplextoMagnitudeAngle_o1 = rt_hypotd_snf
       (boost_and_two_level__1_sm_ehs_B.RealImagtoComplex.re,
        boost_and_two_level__1_sm_ehs_B.RealImagtoComplex.im);
@@ -2238,17 +2331,17 @@ void boost_and_two_level__1_sm_ehs_output(void)
       (boost_and_two_level__1_sm_ehs_B.RealImagtoComplex.im,
        boost_and_two_level__1_sm_ehs_B.RealImagtoComplex.re);
 
-    /* Gain: '<S41>/Rad->Deg.' */
+    /* Gain: '<S44>/Rad->Deg.' */
     boost_and_two_level__1_sm_ehs_B.RadDeg =
       boost_and_two_level__1_sm_ehs_P.RadDeg_Gain_n *
       boost_and_two_level__1_sm_ehs_B.ComplextoMagnitudeAngle_o2;
 
-    /* Gain: '<S36>/to-rad' */
+    /* Gain: '<S39>/to-rad' */
     boost_and_two_level__1_sm_ehs_B.torad =
       boost_and_two_level__1_sm_ehs_P.torad_Gain *
       boost_and_two_level__1_sm_ehs_B.RadDeg;
 
-    /* MagnitudeAngleToComplex: '<S36>/Magnitude-Angle to Complex' */
+    /* MagnitudeAngleToComplex: '<S39>/Magnitude-Angle to Complex' */
     P = boost_and_two_level__1_sm_ehs_B.torad;
     dV = boost_and_two_level__1_sm_ehs_B.ComplextoMagnitudeAngle_o1;
     u2 = cos(P);
@@ -2256,49 +2349,49 @@ void boost_and_two_level__1_sm_ehs_output(void)
     boost_and_two_level__1_sm_ehs_B.MagnitudeAngletoComplex.re = dV * u2;
     boost_and_two_level__1_sm_ehs_B.MagnitudeAngletoComplex.im = dV * B;
 
-    /* ComplexToRealImag: '<S36>/Complex to Real-Imag' */
+    /* ComplexToRealImag: '<S39>/Complex to Real-Imag' */
     boost_and_two_level__1_sm_ehs_B.ComplextoRealImag_o1 =
       boost_and_two_level__1_sm_ehs_B.MagnitudeAngletoComplex.re;
     boost_and_two_level__1_sm_ehs_B.ComplextoRealImag_o2 =
       boost_and_two_level__1_sm_ehs_B.MagnitudeAngletoComplex.im;
 
-    /* Gain: '<S33>/Rff ' */
+    /* Gain: '<S36>/Rff ' */
     boost_and_two_level__1_sm_ehs_B.Rff =
       boost_and_two_level__1_sm_ehs_P.Rff_Gain *
       boost_and_two_level__1_sm_ehs_B.UnitDelay2;
 
-    /* Gain: '<S33>/Lff  ' incorporates:
-     *  Constant: '<S31>/Iq_ref'
+    /* Gain: '<S36>/Lff  ' incorporates:
+     *  Constant: '<S34>/Iq_ref'
      */
     boost_and_two_level__1_sm_ehs_B.Lff =
       boost_and_two_level__1_sm_ehs_P.Lff_Gain *
       boost_and_two_level__1_sm_ehs_P.Iq_ref_Value;
 
-    /* Sum: '<S33>/Add1' */
+    /* Sum: '<S36>/Add1' */
     boost_and_two_level__1_sm_ehs_B.Feedforward =
       (boost_and_two_level__1_sm_ehs_B.ComplextoRealImag_o1 +
        boost_and_two_level__1_sm_ehs_B.Rff) -
       boost_and_two_level__1_sm_ehs_B.Lff;
 
-    /* Gain: '<S33>/Rff' incorporates:
-     *  Constant: '<S31>/Iq_ref'
+    /* Gain: '<S36>/Rff' incorporates:
+     *  Constant: '<S34>/Iq_ref'
      */
     boost_and_two_level__1_sm_ehs_B.Rff_d =
       boost_and_two_level__1_sm_ehs_P.Rff_Gain_o *
       boost_and_two_level__1_sm_ehs_P.Iq_ref_Value;
 
-    /* Gain: '<S33>/Lff' */
+    /* Gain: '<S36>/Lff' */
     boost_and_two_level__1_sm_ehs_B.Lff_o =
       boost_and_two_level__1_sm_ehs_P.Lff_Gain_b *
       boost_and_two_level__1_sm_ehs_B.UnitDelay2;
 
-    /* Sum: '<S33>/Add3' */
+    /* Sum: '<S36>/Add3' */
     boost_and_two_level__1_sm_ehs_B.Add3_i =
       (boost_and_two_level__1_sm_ehs_B.ComplextoRealImag_o2 +
        boost_and_two_level__1_sm_ehs_B.Rff_d) +
       boost_and_two_level__1_sm_ehs_B.Lff_o;
 
-    /* Sum: '<S33>/Add2' */
+    /* Sum: '<S36>/Add2' */
     boost_and_two_level__1_sm_ehs_B.Add2[0] =
       boost_and_two_level__1_sm_ehs_B.Saturate[0] +
       boost_and_two_level__1_sm_ehs_B.Feedforward;
@@ -2306,7 +2399,7 @@ void boost_and_two_level__1_sm_ehs_output(void)
       boost_and_two_level__1_sm_ehs_B.Saturate[1] +
       boost_and_two_level__1_sm_ehs_B.Add3_i;
 
-    /* Gain: '<S40>/Integral Gain' */
+    /* Gain: '<S43>/Integral Gain' */
     boost_and_two_level__1_sm_ehs_B.IntegralGain[0] =
       boost_and_two_level__1_sm_ehs_P.InverterControl_Ki_Ireg *
       boost_and_two_level__1_sm_ehs_B.Sum_n[0];
@@ -2314,7 +2407,7 @@ void boost_and_two_level__1_sm_ehs_output(void)
       boost_and_two_level__1_sm_ehs_P.InverterControl_Ki_Ireg *
       boost_and_two_level__1_sm_ehs_B.Sum_n[1];
 
-    /* Saturate: '<S33>/Saturation' */
+    /* Saturate: '<S36>/Saturation' */
     B = boost_and_two_level__1_sm_ehs_B.Add2[0];
     dP = boost_and_two_level__1_sm_ehs_P.Saturation_LowerSat_e;
     u2 = boost_and_two_level__1_sm_ehs_P.Saturation_UpperSat_c;
@@ -2340,10 +2433,10 @@ void boost_and_two_level__1_sm_ehs_output(void)
 
     boost_and_two_level__1_sm_ehs_B.Saturation[1] = B;
 
-    /* End of Saturate: '<S33>/Saturation' */
+    /* End of Saturate: '<S36>/Saturation' */
 
-    /* RateTransition: '<S9>/Rate Transition7' incorporates:
-     *  RateTransition: '<S9>/Rate Transition8'
+    /* RateTransition: '<S10>/Rate Transition7' incorporates:
+     *  RateTransition: '<S10>/Rate Transition8'
      */
     if (rtmIsMajorTimeStep(boost_and_two_level__1_sm_ehs_M)) {
       boost_and_two_level__1_sm_ehs_B.RateTransition7 =
@@ -2352,14 +2445,14 @@ void boost_and_two_level__1_sm_ehs_output(void)
         boost_and_two_level__1_sm_ehs_B.Divide[0];
     }
 
-    /* End of RateTransition: '<S9>/Rate Transition7' */
+    /* End of RateTransition: '<S10>/Rate Transition7' */
 
-    /* SignalConversion: '<S35>/TmpSignal ConversionAt SFunction Inport1' incorporates:
-     *  Constant: '<S34>/Iph_'
-     *  Constant: '<S34>/Iph_1'
-     *  Constant: '<S34>/Iph_2'
-     *  Constant: '<S34>/Iph_3'
-     *  MATLAB Function: '<S31>/MPPT Controller using Perturbe  & Observe technique  '
+    /* SignalConversion: '<S38>/TmpSignal ConversionAt SFunction Inport1' incorporates:
+     *  Constant: '<S37>/Iph_'
+     *  Constant: '<S37>/Iph_1'
+     *  Constant: '<S37>/Iph_2'
+     *  Constant: '<S37>/Iph_3'
+     *  MATLAB Function: '<S34>/MPPT Controller using Perturbe  & Observe technique  '
      */
     boost_and_two_level__1_sm_ehs_B.TmpSignalConversionAtSFunctionI[0] =
       boost_and_two_level__1_sm_ehs_P.InverterControl_Vdc_ref_Init;
@@ -2370,10 +2463,10 @@ void boost_and_two_level__1_sm_ehs_output(void)
     boost_and_two_level__1_sm_ehs_B.TmpSignalConversionAtSFunctionI[3] =
       boost_and_two_level__1_sm_ehs_P.InverterControl_Increment_MPPT;
 
-    /* MATLAB Function: '<S31>/MPPT Controller using Perturbe  & Observe technique  ' incorporates:
-     *  Constant: '<S9>/MPPT_On'
+    /* MATLAB Function: '<S34>/MPPT Controller using Perturbe  & Observe technique  ' incorporates:
+     *  Constant: '<S10>/MPPT_On'
      */
-    /* MATLAB Function 'SM_eHS/source_and_gates/Inverter Control/MPPT Controller using Perturbe  & Observe technique  ': '<S35>:1' */
+    /* MATLAB Function 'SM_eHS/source_and_gates/Inverter Control/MPPT Controller using Perturbe  & Observe technique  ': '<S38>:1' */
     /*  MPPT controller based on the Perturb & Observe algorithm. */
     /*  D output = Reference for DC link voltage (Vdc_ref)  */
     /*  */
@@ -2383,62 +2476,62 @@ void boost_and_two_level__1_sm_ehs_output(void)
     /*  */
     /*  Param input: */
     /* Initial value for Vdc_ref */
-    /* '<S35>:1:13' */
+    /* '<S38>:1:13' */
     /* Maximum value for Vdc_ref */
-    /* '<S35>:1:14' */
+    /* '<S38>:1:14' */
     /* Minimum value for Vdc_ref */
-    /* '<S35>:1:15' */
+    /* '<S38>:1:15' */
     /* Increment value used to increase/decrease Vdc_ref */
     /*    */
     if (!boost_and_two_level__1_sm_ehs_DW.Vold_not_empty) {
-      /* '<S35>:1:22' */
+      /* '<S38>:1:22' */
       boost_and_two_level__1_sm_ehs_DW.Vold_not_empty = true;
 
-      /* '<S35>:1:25' */
+      /* '<S38>:1:25' */
       boost_and_two_level__1_sm_ehs_DW.Dold =
         boost_and_two_level__1_sm_ehs_B.TmpSignalConversionAtSFunctionI[0];
     }
 
-    /* '<S35>:1:27' */
+    /* '<S38>:1:27' */
     P = boost_and_two_level__1_sm_ehs_B.RateTransition7 *
       boost_and_two_level__1_sm_ehs_B.RateTransition8;
 
-    /* '<S35>:1:28' */
+    /* '<S38>:1:28' */
     dV = boost_and_two_level__1_sm_ehs_B.RateTransition7 -
       boost_and_two_level__1_sm_ehs_DW.Vold;
 
-    /* '<S35>:1:29' */
+    /* '<S38>:1:29' */
     dP = P - boost_and_two_level__1_sm_ehs_DW.Pold;
     if ((dP != 0.0) && (boost_and_two_level__1_sm_ehs_P.MPPT_On_Value != 0.0)) {
-      /* '<S35>:1:31' */
+      /* '<S38>:1:31' */
       if (dP < 0.0) {
-        /* '<S35>:1:32' */
+        /* '<S38>:1:32' */
         if (dV < 0.0) {
-          /* '<S35>:1:33' */
-          /* '<S35>:1:34' */
+          /* '<S38>:1:33' */
+          /* '<S38>:1:34' */
           boost_and_two_level__1_sm_ehs_B.D =
             boost_and_two_level__1_sm_ehs_DW.Dold +
             boost_and_two_level__1_sm_ehs_B.TmpSignalConversionAtSFunctionI[3];
         } else {
-          /* '<S35>:1:36' */
+          /* '<S38>:1:36' */
           boost_and_two_level__1_sm_ehs_B.D =
             boost_and_two_level__1_sm_ehs_DW.Dold -
             boost_and_two_level__1_sm_ehs_B.TmpSignalConversionAtSFunctionI[3];
         }
       } else if (dV < 0.0) {
-        /* '<S35>:1:39' */
-        /* '<S35>:1:40' */
+        /* '<S38>:1:39' */
+        /* '<S38>:1:40' */
         boost_and_two_level__1_sm_ehs_B.D =
           boost_and_two_level__1_sm_ehs_DW.Dold -
           boost_and_two_level__1_sm_ehs_B.TmpSignalConversionAtSFunctionI[3];
       } else {
-        /* '<S35>:1:42' */
+        /* '<S38>:1:42' */
         boost_and_two_level__1_sm_ehs_B.D =
           boost_and_two_level__1_sm_ehs_DW.Dold +
           boost_and_two_level__1_sm_ehs_B.TmpSignalConversionAtSFunctionI[3];
       }
     } else {
-      /* '<S35>:1:45' */
+      /* '<S38>:1:45' */
       boost_and_two_level__1_sm_ehs_B.D = boost_and_two_level__1_sm_ehs_DW.Dold;
     }
 
@@ -2446,34 +2539,34 @@ void boost_and_two_level__1_sm_ehs_output(void)
          boost_and_two_level__1_sm_ehs_B.TmpSignalConversionAtSFunctionI[1]) ||
         (boost_and_two_level__1_sm_ehs_B.D <=
          boost_and_two_level__1_sm_ehs_B.TmpSignalConversionAtSFunctionI[2])) {
-      /* '<S35>:1:48' */
-      /* '<S35>:1:49' */
+      /* '<S38>:1:48' */
+      /* '<S38>:1:49' */
       boost_and_two_level__1_sm_ehs_B.D = boost_and_two_level__1_sm_ehs_DW.Dold;
     }
 
-    /* '<S35>:1:52' */
+    /* '<S38>:1:52' */
     boost_and_two_level__1_sm_ehs_DW.Dold = boost_and_two_level__1_sm_ehs_B.D;
 
-    /* '<S35>:1:53' */
+    /* '<S38>:1:53' */
     boost_and_two_level__1_sm_ehs_DW.Vold =
       boost_and_two_level__1_sm_ehs_B.RateTransition7;
 
-    /* '<S35>:1:54' */
+    /* '<S38>:1:54' */
     boost_and_two_level__1_sm_ehs_DW.Pold = P;
 
-    /* DigitalClock: '<S54>/Digital  Clock' */
+    /* DigitalClock: '<S57>/Digital  Clock' */
     boost_and_two_level__1_sm_ehs_B.DigitalClock_j =
       boost_and_two_level__1_sm_ehs_M->Timing.t[1];
 
-    /* RateTransition: '<S9>/Rate Transition6' */
+    /* RateTransition: '<S10>/Rate Transition6' */
     if (rtmIsMajorTimeStep(boost_and_two_level__1_sm_ehs_M)) {
       boost_and_two_level__1_sm_ehs_B.RateTransition6 =
         boost_and_two_level__1_sm_ehs_B.Divide[1];
     }
 
-    /* End of RateTransition: '<S9>/Rate Transition6' */
+    /* End of RateTransition: '<S10>/Rate Transition6' */
 
-    /* DiscreteIntegrator: '<S54>/Integ4' */
+    /* DiscreteIntegrator: '<S57>/Integ4' */
     if (boost_and_two_level__1_sm_ehs_DW.Integ4_SYSTEM_ENABLE_i != 0) {
       boost_and_two_level__1_sm_ehs_B.Integ4_m =
         boost_and_two_level__1_sm_ehs_DW.Integ4_DSTATE_g;
@@ -2484,61 +2577,61 @@ void boost_and_two_level__1_sm_ehs_output(void)
         boost_and_two_level__1_sm_ehs_DW.Integ4_DSTATE_g;
     }
 
-    /* End of DiscreteIntegrator: '<S54>/Integ4' */
+    /* End of DiscreteIntegrator: '<S57>/Integ4' */
 
-    /* Constant: '<S54>/K1' */
+    /* Constant: '<S57>/K1' */
     boost_and_two_level__1_sm_ehs_B.K1 =
       boost_and_two_level__1_sm_ehs_P.K1_Value_f;
 
-    /* Level2 S-Function Block: '<S55>/S-Function' (sfun_discreteVariableDelay) */
+    /* Level2 S-Function Block: '<S58>/S-Function' (sfun_discreteVariableDelay) */
     {
-      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[28];
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[33];
       sfcnOutputs(rts, 1);
     }
 
-    /* UnitDelay: '<S54>/Unit Delay' */
+    /* UnitDelay: '<S57>/Unit Delay' */
     boost_and_two_level__1_sm_ehs_B.UnitDelay_b =
       boost_and_two_level__1_sm_ehs_DW.UnitDelay_DSTATE_h;
 
-    /* RelationalOperator: '<S54>/Relational Operator' */
+    /* RelationalOperator: '<S57>/Relational Operator' */
     boost_and_two_level__1_sm_ehs_B.RelationalOperator_h =
       (boost_and_two_level__1_sm_ehs_B.DigitalClock_j >=
        boost_and_two_level__1_sm_ehs_B.K1);
 
-    /* UnitDelay: '<S54>/Unit Delay1' */
+    /* UnitDelay: '<S57>/Unit Delay1' */
     boost_and_two_level__1_sm_ehs_B.UnitDelay1_cm =
       boost_and_two_level__1_sm_ehs_DW.UnitDelay1_DSTATE_im;
 
-    /* Switch: '<S54>/Switch' */
+    /* Switch: '<S57>/Switch' */
     if (boost_and_two_level__1_sm_ehs_B.RelationalOperator_h) {
-      /* Gain: '<S54>/Gain1' */
+      /* Gain: '<S57>/Gain1' */
       boost_and_two_level__1_sm_ehs_B.Gain1_a =
         boost_and_two_level__1_sm_ehs_P.Gain1_Gain_e *
         boost_and_two_level__1_sm_ehs_B.RateTransition6;
 
-      /* Gain: '<S54>/Gain' */
+      /* Gain: '<S57>/Gain' */
       boost_and_two_level__1_sm_ehs_B.Gain_o =
         boost_and_two_level__1_sm_ehs_P.Gain_Gain_j *
         boost_and_two_level__1_sm_ehs_B.UnitDelay_b;
 
-      /* Sum: '<S54>/Sum1' */
+      /* Sum: '<S57>/Sum1' */
       boost_and_two_level__1_sm_ehs_B.Correction =
         boost_and_two_level__1_sm_ehs_B.Gain1_a -
         boost_and_two_level__1_sm_ehs_B.Gain_o;
 
-      /* Sum: '<S54>/Sum7' */
+      /* Sum: '<S57>/Sum7' */
       boost_and_two_level__1_sm_ehs_B.Sum7_js =
         boost_and_two_level__1_sm_ehs_B.Integ4_m -
         boost_and_two_level__1_sm_ehs_B.SFunction_c;
 
-      /* Product: '<S54>/Product' incorporates:
-       *  Constant: '<S54>/K2'
+      /* Product: '<S57>/Product' incorporates:
+       *  Constant: '<S57>/K2'
        */
       boost_and_two_level__1_sm_ehs_B.Mean =
         boost_and_two_level__1_sm_ehs_B.Sum7_js *
         boost_and_two_level__1_sm_ehs_P.K2_Value;
 
-      /* Sum: '<S54>/Sum5' */
+      /* Sum: '<S57>/Sum5' */
       boost_and_two_level__1_sm_ehs_B.Sum5_c =
         boost_and_two_level__1_sm_ehs_B.Mean +
         boost_and_two_level__1_sm_ehs_B.Correction;
@@ -2549,19 +2642,19 @@ void boost_and_two_level__1_sm_ehs_output(void)
         boost_and_two_level__1_sm_ehs_B.UnitDelay1_cm;
     }
 
-    /* End of Switch: '<S54>/Switch' */
+    /* End of Switch: '<S57>/Switch' */
 
-    /* Outputs for Enabled SubSystem: '<S56>/Automatic Gain Control' incorporates:
-     *  EnablePort: '<S57>/Enable'
+    /* Outputs for Enabled SubSystem: '<S59>/Automatic Gain Control' incorporates:
+     *  EnablePort: '<S60>/Enable'
      */
     if (rtmIsMajorTimeStep(boost_and_two_level__1_sm_ehs_M)) {
-      /* Constant: '<S56>/Constant1' */
+      /* Constant: '<S59>/Constant1' */
       if (boost_and_two_level__1_sm_ehs_P.PLL_AGC > 0.0) {
         if (!boost_and_two_level__1_sm_ehs_DW.AutomaticGainControl_MODE) {
-          /* Enable for DiscreteIntegrator: '<S64>/Integ4' */
+          /* Enable for DiscreteIntegrator: '<S67>/Integ4' */
           boost_and_two_level__1_sm_ehs_DW.Integ4_SYSTEM_ENABLE_nz = 1U;
 
-          /* Enable for DiscreteIntegrator: '<S67>/Integ4' */
+          /* Enable for DiscreteIntegrator: '<S70>/Integ4' */
           boost_and_two_level__1_sm_ehs_DW.Integ4_SYSTEM_ENABLE_d = 1U;
           boost_and_two_level__1_sm_ehs_DW.AutomaticGainControl_MODE = true;
         }
@@ -2571,25 +2664,25 @@ void boost_and_two_level__1_sm_ehs_output(void)
         }
       }
 
-      /* End of Constant: '<S56>/Constant1' */
+      /* End of Constant: '<S59>/Constant1' */
     }
 
     if (boost_and_two_level__1_sm_ehs_DW.AutomaticGainControl_MODE) {
-      /* Trigonometry: '<S61>/Trigonometric Function' */
+      /* Trigonometry: '<S64>/Trigonometric Function' */
       boost_and_two_level__1_sm_ehs_B.TrigonometricFunction_e = sin
         (boost_and_two_level__1_sm_ehs_B.MathFunction_m);
 
-      /* Gain: '<S61>/Gain1' */
+      /* Gain: '<S64>/Gain1' */
       boost_and_two_level__1_sm_ehs_B.Gain1_fj =
         boost_and_two_level__1_sm_ehs_P.Gain1_Gain_o *
         boost_and_two_level__1_sm_ehs_B.TrigonometricFunction_e;
 
-      /* Product: '<S61>/Product1' */
+      /* Product: '<S64>/Product1' */
       boost_and_two_level__1_sm_ehs_B.Product1_a =
         boost_and_two_level__1_sm_ehs_B.Vpu *
         boost_and_two_level__1_sm_ehs_B.Gain1_fj;
 
-      /* DiscreteIntegrator: '<S64>/Integ4' */
+      /* DiscreteIntegrator: '<S67>/Integ4' */
       if (boost_and_two_level__1_sm_ehs_DW.Integ4_SYSTEM_ENABLE_nz != 0) {
         boost_and_two_level__1_sm_ehs_B.Integ4_ee =
           boost_and_two_level__1_sm_ehs_DW.Integ4_DSTATE_i;
@@ -2600,9 +2693,9 @@ void boost_and_two_level__1_sm_ehs_output(void)
           boost_and_two_level__1_sm_ehs_DW.Integ4_DSTATE_i;
       }
 
-      /* End of DiscreteIntegrator: '<S64>/Integ4' */
+      /* End of DiscreteIntegrator: '<S67>/Integ4' */
 
-      /* Saturate: '<S64>/To avoid division  by zero' */
+      /* Saturate: '<S67>/To avoid division  by zero' */
       B = boost_and_two_level__1_sm_ehs_B.UnitDelay_l;
       dP = boost_and_two_level__1_sm_ehs_P.Toavoiddivisionbyzero_LowerSat;
       u2 = boost_and_two_level__1_sm_ehs_P.Toavoiddivisionbyzero_UpperSat;
@@ -2614,94 +2707,94 @@ void boost_and_two_level__1_sm_ehs_output(void)
         boost_and_two_level__1_sm_ehs_B.Freq_h = B;
       }
 
-      /* End of Saturate: '<S64>/To avoid division  by zero' */
+      /* End of Saturate: '<S67>/To avoid division  by zero' */
 
-      /* Fcn: '<S64>/Number of samples per cycle' */
+      /* Fcn: '<S67>/Number of samples per cycle' */
       boost_and_two_level__1_sm_ehs_B.Numberofsamplespercycle_o = 1.0 /
         boost_and_two_level__1_sm_ehs_B.Freq_h / 2.0e-5;
 
-      /* Rounding: '<S64>/Rounding Function' */
+      /* Rounding: '<S67>/Rounding Function' */
       boost_and_two_level__1_sm_ehs_B.RoundingFunction_j = ceil
         (boost_and_two_level__1_sm_ehs_B.Numberofsamplespercycle_o);
 
-      /* Gain: '<S64>/Gain' */
+      /* Gain: '<S67>/Gain' */
       boost_and_two_level__1_sm_ehs_B.Delay_o =
         boost_and_two_level__1_sm_ehs_P.Ts *
         boost_and_two_level__1_sm_ehs_B.RoundingFunction_j;
 
-      /* Level2 S-Function Block: '<S66>/S-Function' (sfun_discreteVariableDelay) */
+      /* Level2 S-Function Block: '<S69>/S-Function' (sfun_discreteVariableDelay) */
       {
         SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[0];
         sfcnOutputs(rts, 1);
       }
 
-      /* UnitDelay: '<S65>/Unit Delay' */
+      /* UnitDelay: '<S68>/Unit Delay' */
       boost_and_two_level__1_sm_ehs_B.UnitDelay_e =
         boost_and_two_level__1_sm_ehs_DW.UnitDelay_DSTATE_c;
 
-      /* DigitalClock: '<S64>/Digital  Clock' */
+      /* DigitalClock: '<S67>/Digital  Clock' */
       boost_and_two_level__1_sm_ehs_B.DigitalClock_g =
         boost_and_two_level__1_sm_ehs_M->Timing.t[1];
 
-      /* RelationalOperator: '<S64>/Relational Operator' incorporates:
-       *  Constant: '<S64>/Constant'
+      /* RelationalOperator: '<S67>/Relational Operator' incorporates:
+       *  Constant: '<S67>/Constant'
        */
       boost_and_two_level__1_sm_ehs_B.RelationalOperator_mw =
         (boost_and_two_level__1_sm_ehs_B.DigitalClock_g >=
          boost_and_two_level__1_sm_ehs_P.Constant_Value_l);
 
-      /* UnitDelay: '<S64>/Unit Delay1' */
+      /* UnitDelay: '<S67>/Unit Delay1' */
       boost_and_two_level__1_sm_ehs_B.UnitDelay1_a =
         boost_and_two_level__1_sm_ehs_DW.UnitDelay1_DSTATE_eb;
 
-      /* Switch: '<S64>/Switch' */
+      /* Switch: '<S67>/Switch' */
       if (boost_and_two_level__1_sm_ehs_B.RelationalOperator_mw) {
-        /* Sum: '<S65>/Sum1' */
+        /* Sum: '<S68>/Sum1' */
         boost_and_two_level__1_sm_ehs_B.Sum1_i =
           boost_and_two_level__1_sm_ehs_B.Product1_a -
           boost_and_two_level__1_sm_ehs_B.UnitDelay_e;
 
-        /* Sum: '<S65>/Sum5' */
+        /* Sum: '<S68>/Sum5' */
         boost_and_two_level__1_sm_ehs_B.Sum5_a =
           boost_and_two_level__1_sm_ehs_B.Numberofsamplespercycle_o -
           boost_and_two_level__1_sm_ehs_B.RoundingFunction_j;
 
-        /* Product: '<S65>/Product5' */
+        /* Product: '<S68>/Product5' */
         boost_and_two_level__1_sm_ehs_B.Product5_i =
           boost_and_two_level__1_sm_ehs_B.Sum5_a *
           boost_and_two_level__1_sm_ehs_B.Sum1_i;
 
-        /* Gain: '<S65>/Gain1' */
+        /* Gain: '<S68>/Gain1' */
         boost_and_two_level__1_sm_ehs_B.Gain1_p5 =
           boost_and_two_level__1_sm_ehs_P.Gain1_Gain_b *
           boost_and_two_level__1_sm_ehs_B.Product5_i;
 
-        /* Sum: '<S65>/Sum4' */
+        /* Sum: '<S68>/Sum4' */
         boost_and_two_level__1_sm_ehs_B.Sum4_n =
           boost_and_two_level__1_sm_ehs_B.Gain1_p5 +
           boost_and_two_level__1_sm_ehs_B.Product1_a;
 
-        /* Product: '<S65>/Product2' */
+        /* Product: '<S68>/Product2' */
         boost_and_two_level__1_sm_ehs_B.Product2_c =
           boost_and_two_level__1_sm_ehs_B.Sum5_a /
           boost_and_two_level__1_sm_ehs_B.Numberofsamplespercycle_o;
 
-        /* Product: '<S65>/Product4' */
+        /* Product: '<S68>/Product4' */
         boost_and_two_level__1_sm_ehs_B.Product4_p =
           boost_and_two_level__1_sm_ehs_B.Product2_c *
           boost_and_two_level__1_sm_ehs_B.Sum4_n;
 
-        /* Sum: '<S64>/Sum7' */
+        /* Sum: '<S67>/Sum7' */
         boost_and_two_level__1_sm_ehs_B.Sum7_j =
           boost_and_two_level__1_sm_ehs_B.Integ4_ee -
           boost_and_two_level__1_sm_ehs_B.SFunction_b;
 
-        /* Product: '<S64>/Product' */
+        /* Product: '<S67>/Product' */
         boost_and_two_level__1_sm_ehs_B.Meanvalue_h =
           boost_and_two_level__1_sm_ehs_B.Sum7_j *
           boost_and_two_level__1_sm_ehs_B.UnitDelay_l;
 
-        /* Sum: '<S64>/Sum5' */
+        /* Sum: '<S67>/Sum5' */
         boost_and_two_level__1_sm_ehs_B.Sum5_d =
           boost_and_two_level__1_sm_ehs_B.Meanvalue_h +
           boost_and_two_level__1_sm_ehs_B.Product4_p;
@@ -2712,23 +2805,23 @@ void boost_and_two_level__1_sm_ehs_output(void)
           boost_and_two_level__1_sm_ehs_B.UnitDelay1_a;
       }
 
-      /* End of Switch: '<S64>/Switch' */
+      /* End of Switch: '<S67>/Switch' */
 
-      /* Trigonometry: '<S61>/Trigonometric Function3' */
+      /* Trigonometry: '<S64>/Trigonometric Function3' */
       boost_and_two_level__1_sm_ehs_B.TrigonometricFunction3_k = cos
         (boost_and_two_level__1_sm_ehs_B.MathFunction_m);
 
-      /* Gain: '<S61>/Gain3' */
+      /* Gain: '<S64>/Gain3' */
       boost_and_two_level__1_sm_ehs_B.Gain3_b =
         boost_and_two_level__1_sm_ehs_P.Gain3_Gain *
         boost_and_two_level__1_sm_ehs_B.TrigonometricFunction3_k;
 
-      /* Product: '<S61>/Product2' */
+      /* Product: '<S64>/Product2' */
       boost_and_two_level__1_sm_ehs_B.Product2_b =
         boost_and_two_level__1_sm_ehs_B.Vpu *
         boost_and_two_level__1_sm_ehs_B.Gain3_b;
 
-      /* DiscreteIntegrator: '<S67>/Integ4' */
+      /* DiscreteIntegrator: '<S70>/Integ4' */
       if (boost_and_two_level__1_sm_ehs_DW.Integ4_SYSTEM_ENABLE_d != 0) {
         boost_and_two_level__1_sm_ehs_B.Integ4_i =
           boost_and_two_level__1_sm_ehs_DW.Integ4_DSTATE_c;
@@ -2739,9 +2832,9 @@ void boost_and_two_level__1_sm_ehs_output(void)
           boost_and_two_level__1_sm_ehs_DW.Integ4_DSTATE_c;
       }
 
-      /* End of DiscreteIntegrator: '<S67>/Integ4' */
+      /* End of DiscreteIntegrator: '<S70>/Integ4' */
 
-      /* Saturate: '<S67>/To avoid division  by zero' */
+      /* Saturate: '<S70>/To avoid division  by zero' */
       B = boost_and_two_level__1_sm_ehs_B.UnitDelay_l;
       dP = boost_and_two_level__1_sm_ehs_P.Toavoiddivisionbyzero_LowerSa_h;
       u2 = boost_and_two_level__1_sm_ehs_P.Toavoiddivisionbyzero_UpperSa_i;
@@ -2753,94 +2846,94 @@ void boost_and_two_level__1_sm_ehs_output(void)
         boost_and_two_level__1_sm_ehs_B.Freq_c = B;
       }
 
-      /* End of Saturate: '<S67>/To avoid division  by zero' */
+      /* End of Saturate: '<S70>/To avoid division  by zero' */
 
-      /* Fcn: '<S67>/Number of samples per cycle' */
+      /* Fcn: '<S70>/Number of samples per cycle' */
       boost_and_two_level__1_sm_ehs_B.Numberofsamplespercycle_e = 1.0 /
         boost_and_two_level__1_sm_ehs_B.Freq_c / 2.0e-5;
 
-      /* Rounding: '<S67>/Rounding Function' */
+      /* Rounding: '<S70>/Rounding Function' */
       boost_and_two_level__1_sm_ehs_B.RoundingFunction_n = ceil
         (boost_and_two_level__1_sm_ehs_B.Numberofsamplespercycle_e);
 
-      /* Gain: '<S67>/Gain' */
+      /* Gain: '<S70>/Gain' */
       boost_and_two_level__1_sm_ehs_B.Delay_e =
         boost_and_two_level__1_sm_ehs_P.Ts *
         boost_and_two_level__1_sm_ehs_B.RoundingFunction_n;
 
-      /* Level2 S-Function Block: '<S69>/S-Function' (sfun_discreteVariableDelay) */
+      /* Level2 S-Function Block: '<S72>/S-Function' (sfun_discreteVariableDelay) */
       {
         SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[1];
         sfcnOutputs(rts, 1);
       }
 
-      /* UnitDelay: '<S68>/Unit Delay' */
+      /* UnitDelay: '<S71>/Unit Delay' */
       boost_and_two_level__1_sm_ehs_B.UnitDelay_m =
         boost_and_two_level__1_sm_ehs_DW.UnitDelay_DSTATE_fv;
 
-      /* DigitalClock: '<S67>/Digital  Clock' */
+      /* DigitalClock: '<S70>/Digital  Clock' */
       boost_and_two_level__1_sm_ehs_B.DigitalClock_d =
         boost_and_two_level__1_sm_ehs_M->Timing.t[1];
 
-      /* RelationalOperator: '<S67>/Relational Operator' incorporates:
-       *  Constant: '<S67>/Constant'
+      /* RelationalOperator: '<S70>/Relational Operator' incorporates:
+       *  Constant: '<S70>/Constant'
        */
       boost_and_two_level__1_sm_ehs_B.RelationalOperator_am =
         (boost_and_two_level__1_sm_ehs_B.DigitalClock_d >=
          boost_and_two_level__1_sm_ehs_P.Constant_Value_o);
 
-      /* UnitDelay: '<S67>/Unit Delay1' */
+      /* UnitDelay: '<S70>/Unit Delay1' */
       boost_and_two_level__1_sm_ehs_B.UnitDelay1_n =
         boost_and_two_level__1_sm_ehs_DW.UnitDelay1_DSTATE_k;
 
-      /* Switch: '<S67>/Switch' */
+      /* Switch: '<S70>/Switch' */
       if (boost_and_two_level__1_sm_ehs_B.RelationalOperator_am) {
-        /* Sum: '<S68>/Sum1' */
+        /* Sum: '<S71>/Sum1' */
         boost_and_two_level__1_sm_ehs_B.Sum1_h =
           boost_and_two_level__1_sm_ehs_B.Product2_b -
           boost_and_two_level__1_sm_ehs_B.UnitDelay_m;
 
-        /* Sum: '<S68>/Sum5' */
+        /* Sum: '<S71>/Sum5' */
         boost_and_two_level__1_sm_ehs_B.Sum5_n =
           boost_and_two_level__1_sm_ehs_B.Numberofsamplespercycle_e -
           boost_and_two_level__1_sm_ehs_B.RoundingFunction_n;
 
-        /* Product: '<S68>/Product5' */
+        /* Product: '<S71>/Product5' */
         boost_and_two_level__1_sm_ehs_B.Product5_j =
           boost_and_two_level__1_sm_ehs_B.Sum5_n *
           boost_and_two_level__1_sm_ehs_B.Sum1_h;
 
-        /* Gain: '<S68>/Gain1' */
+        /* Gain: '<S71>/Gain1' */
         boost_and_two_level__1_sm_ehs_B.Gain1_b =
           boost_and_two_level__1_sm_ehs_P.Gain1_Gain_e3 *
           boost_and_two_level__1_sm_ehs_B.Product5_j;
 
-        /* Sum: '<S68>/Sum4' */
+        /* Sum: '<S71>/Sum4' */
         boost_and_two_level__1_sm_ehs_B.Sum4_j =
           boost_and_two_level__1_sm_ehs_B.Gain1_b +
           boost_and_two_level__1_sm_ehs_B.Product2_b;
 
-        /* Product: '<S68>/Product2' */
+        /* Product: '<S71>/Product2' */
         boost_and_two_level__1_sm_ehs_B.Product2_m =
           boost_and_two_level__1_sm_ehs_B.Sum5_n /
           boost_and_two_level__1_sm_ehs_B.Numberofsamplespercycle_e;
 
-        /* Product: '<S68>/Product4' */
+        /* Product: '<S71>/Product4' */
         boost_and_two_level__1_sm_ehs_B.Product4_h =
           boost_and_two_level__1_sm_ehs_B.Product2_m *
           boost_and_two_level__1_sm_ehs_B.Sum4_j;
 
-        /* Sum: '<S67>/Sum7' */
+        /* Sum: '<S70>/Sum7' */
         boost_and_two_level__1_sm_ehs_B.Sum7_g =
           boost_and_two_level__1_sm_ehs_B.Integ4_i -
           boost_and_two_level__1_sm_ehs_B.SFunction_j;
 
-        /* Product: '<S67>/Product' */
+        /* Product: '<S70>/Product' */
         boost_and_two_level__1_sm_ehs_B.Meanvalue_b =
           boost_and_two_level__1_sm_ehs_B.Sum7_g *
           boost_and_two_level__1_sm_ehs_B.UnitDelay_l;
 
-        /* Sum: '<S67>/Sum5' */
+        /* Sum: '<S70>/Sum5' */
         boost_and_two_level__1_sm_ehs_B.Sum5_nt =
           boost_and_two_level__1_sm_ehs_B.Meanvalue_b +
           boost_and_two_level__1_sm_ehs_B.Product4_h;
@@ -2851,15 +2944,15 @@ void boost_and_two_level__1_sm_ehs_output(void)
           boost_and_two_level__1_sm_ehs_B.UnitDelay1_n;
       }
 
-      /* End of Switch: '<S67>/Switch' */
+      /* End of Switch: '<S70>/Switch' */
 
-      /* RealImagToComplex: '<S61>/Real-Imag to Complex' */
+      /* RealImagToComplex: '<S64>/Real-Imag to Complex' */
       boost_and_two_level__1_sm_ehs_B.RealImagtoComplex_f.re =
         boost_and_two_level__1_sm_ehs_B.Switch_h;
       boost_and_two_level__1_sm_ehs_B.RealImagtoComplex_f.im =
         boost_and_two_level__1_sm_ehs_B.Switch_cf;
 
-      /* ComplexToMagnitudeAngle: '<S61>/Complex to Magnitude-Angle' */
+      /* ComplexToMagnitudeAngle: '<S64>/Complex to Magnitude-Angle' */
       boost_and_two_level__1_sm_ehs_B.ComplextoMagnitudeAngle_o1_c =
         rt_hypotd_snf(boost_and_two_level__1_sm_ehs_B.RealImagtoComplex_f.re,
                       boost_and_two_level__1_sm_ehs_B.RealImagtoComplex_f.im);
@@ -2867,12 +2960,12 @@ void boost_and_two_level__1_sm_ehs_output(void)
         rt_atan2d_snf(boost_and_two_level__1_sm_ehs_B.RealImagtoComplex_f.im,
                       boost_and_two_level__1_sm_ehs_B.RealImagtoComplex_f.re);
 
-      /* Gain: '<S61>/Rad->Deg.' */
+      /* Gain: '<S64>/Rad->Deg.' */
       boost_and_two_level__1_sm_ehs_B.RadDeg_l =
         boost_and_two_level__1_sm_ehs_P.RadDeg_Gain *
         boost_and_two_level__1_sm_ehs_B.ComplextoMagnitudeAngle_o2_k;
 
-      /* Saturate: '<S57>/Saturation' */
+      /* Saturate: '<S60>/Saturation' */
       B = boost_and_two_level__1_sm_ehs_B.ComplextoMagnitudeAngle_o1_c;
       dP = boost_and_two_level__1_sm_ehs_P.Saturation_LowerSat_n;
       u2 = boost_and_two_level__1_sm_ehs_P.Saturation_UpperSat_b;
@@ -2884,29 +2977,29 @@ void boost_and_two_level__1_sm_ehs_output(void)
         boost_and_two_level__1_sm_ehs_B.Saturation_o = B;
       }
 
-      /* End of Saturate: '<S57>/Saturation' */
+      /* End of Saturate: '<S60>/Saturation' */
 
-      /* Math: '<S57>/Math Function'
+      /* Math: '<S60>/Math Function'
        *
-       * About '<S57>/Math Function':
+       * About '<S60>/Math Function':
        *  Operator: reciprocal
        */
       P = boost_and_two_level__1_sm_ehs_B.Saturation_o;
       boost_and_two_level__1_sm_ehs_B.MathFunction_c = 1.0 / P;
     }
 
-    /* End of Outputs for SubSystem: '<S56>/Automatic Gain Control' */
+    /* End of Outputs for SubSystem: '<S59>/Automatic Gain Control' */
 
-    /* Trigonometry: '<S56>/Trigonometric Function2' */
+    /* Trigonometry: '<S59>/Trigonometric Function2' */
     boost_and_two_level__1_sm_ehs_B.TrigonometricFunction2 = cos
       (boost_and_two_level__1_sm_ehs_B.MathFunction_m);
 
-    /* Product: '<S56>/Product1' */
+    /* Product: '<S59>/Product1' */
     boost_and_two_level__1_sm_ehs_B.Product1_g =
       boost_and_two_level__1_sm_ehs_B.Vpu *
       boost_and_two_level__1_sm_ehs_B.TrigonometricFunction2;
 
-    /* DiscreteIntegrator: '<S70>/Integ4' */
+    /* DiscreteIntegrator: '<S73>/Integ4' */
     if (boost_and_two_level__1_sm_ehs_DW.Integ4_SYSTEM_ENABLE_e != 0) {
       boost_and_two_level__1_sm_ehs_B.Integ4_e =
         boost_and_two_level__1_sm_ehs_DW.Integ4_DSTATE_k;
@@ -2917,9 +3010,9 @@ void boost_and_two_level__1_sm_ehs_output(void)
         boost_and_two_level__1_sm_ehs_DW.Integ4_DSTATE_k;
     }
 
-    /* End of DiscreteIntegrator: '<S70>/Integ4' */
+    /* End of DiscreteIntegrator: '<S73>/Integ4' */
 
-    /* Saturate: '<S70>/To avoid division  by zero' */
+    /* Saturate: '<S73>/To avoid division  by zero' */
     B = boost_and_two_level__1_sm_ehs_B.UnitDelay_l;
     dP = boost_and_two_level__1_sm_ehs_P.Toavoiddivisionbyzero_LowerSa_e;
     u2 = boost_and_two_level__1_sm_ehs_P.Toavoiddivisionbyzero_UpperS_ix;
@@ -2931,94 +3024,94 @@ void boost_and_two_level__1_sm_ehs_output(void)
       boost_and_two_level__1_sm_ehs_B.Freq_a = B;
     }
 
-    /* End of Saturate: '<S70>/To avoid division  by zero' */
+    /* End of Saturate: '<S73>/To avoid division  by zero' */
 
-    /* Fcn: '<S70>/Number of samples per cycle' */
+    /* Fcn: '<S73>/Number of samples per cycle' */
     boost_and_two_level__1_sm_ehs_B.Numberofsamplespercycle_g = 1.0 /
       boost_and_two_level__1_sm_ehs_B.Freq_a / 2.0e-5;
 
-    /* Rounding: '<S70>/Rounding Function' */
+    /* Rounding: '<S73>/Rounding Function' */
     boost_and_two_level__1_sm_ehs_B.RoundingFunction_l = ceil
       (boost_and_two_level__1_sm_ehs_B.Numberofsamplespercycle_g);
 
-    /* Gain: '<S70>/Gain' */
+    /* Gain: '<S73>/Gain' */
     boost_and_two_level__1_sm_ehs_B.Delay_pz =
       boost_and_two_level__1_sm_ehs_P.Ts *
       boost_and_two_level__1_sm_ehs_B.RoundingFunction_l;
 
-    /* Level2 S-Function Block: '<S72>/S-Function' (sfun_discreteVariableDelay) */
+    /* Level2 S-Function Block: '<S75>/S-Function' (sfun_discreteVariableDelay) */
     {
-      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[29];
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[34];
       sfcnOutputs(rts, 1);
     }
 
-    /* UnitDelay: '<S71>/Unit Delay' */
+    /* UnitDelay: '<S74>/Unit Delay' */
     boost_and_two_level__1_sm_ehs_B.UnitDelay_lg =
       boost_and_two_level__1_sm_ehs_DW.UnitDelay_DSTATE_f;
 
-    /* DigitalClock: '<S70>/Digital  Clock' */
+    /* DigitalClock: '<S73>/Digital  Clock' */
     boost_and_two_level__1_sm_ehs_B.DigitalClock_a =
       boost_and_two_level__1_sm_ehs_M->Timing.t[1];
 
-    /* RelationalOperator: '<S70>/Relational Operator' incorporates:
-     *  Constant: '<S70>/Constant'
+    /* RelationalOperator: '<S73>/Relational Operator' incorporates:
+     *  Constant: '<S73>/Constant'
      */
     boost_and_two_level__1_sm_ehs_B.RelationalOperator_k =
       (boost_and_two_level__1_sm_ehs_B.DigitalClock_a >=
        boost_and_two_level__1_sm_ehs_P.Constant_Value_c);
 
-    /* UnitDelay: '<S70>/Unit Delay1' */
+    /* UnitDelay: '<S73>/Unit Delay1' */
     boost_and_two_level__1_sm_ehs_B.UnitDelay1_i =
       boost_and_two_level__1_sm_ehs_DW.UnitDelay1_DSTATE_e;
 
-    /* Switch: '<S70>/Switch' */
+    /* Switch: '<S73>/Switch' */
     if (boost_and_two_level__1_sm_ehs_B.RelationalOperator_k) {
-      /* Sum: '<S71>/Sum1' */
+      /* Sum: '<S74>/Sum1' */
       boost_and_two_level__1_sm_ehs_B.Sum1 =
         boost_and_two_level__1_sm_ehs_B.Product1_g -
         boost_and_two_level__1_sm_ehs_B.UnitDelay_lg;
 
-      /* Sum: '<S71>/Sum5' */
+      /* Sum: '<S74>/Sum5' */
       boost_and_two_level__1_sm_ehs_B.Sum5 =
         boost_and_two_level__1_sm_ehs_B.Numberofsamplespercycle_g -
         boost_and_two_level__1_sm_ehs_B.RoundingFunction_l;
 
-      /* Product: '<S71>/Product5' */
+      /* Product: '<S74>/Product5' */
       boost_and_two_level__1_sm_ehs_B.Product5 =
         boost_and_two_level__1_sm_ehs_B.Sum5 *
         boost_and_two_level__1_sm_ehs_B.Sum1;
 
-      /* Gain: '<S71>/Gain1' */
+      /* Gain: '<S74>/Gain1' */
       boost_and_two_level__1_sm_ehs_B.Gain1_e =
         boost_and_two_level__1_sm_ehs_P.Gain1_Gain_n *
         boost_and_two_level__1_sm_ehs_B.Product5;
 
-      /* Sum: '<S71>/Sum4' */
+      /* Sum: '<S74>/Sum4' */
       boost_and_two_level__1_sm_ehs_B.Sum4 =
         boost_and_two_level__1_sm_ehs_B.Gain1_e +
         boost_and_two_level__1_sm_ehs_B.Product1_g;
 
-      /* Product: '<S71>/Product2' */
+      /* Product: '<S74>/Product2' */
       boost_and_two_level__1_sm_ehs_B.Product2_f =
         boost_and_two_level__1_sm_ehs_B.Sum5 /
         boost_and_two_level__1_sm_ehs_B.Numberofsamplespercycle_g;
 
-      /* Product: '<S71>/Product4' */
+      /* Product: '<S74>/Product4' */
       boost_and_two_level__1_sm_ehs_B.Product4 =
         boost_and_two_level__1_sm_ehs_B.Product2_f *
         boost_and_two_level__1_sm_ehs_B.Sum4;
 
-      /* Sum: '<S70>/Sum7' */
+      /* Sum: '<S73>/Sum7' */
       boost_and_two_level__1_sm_ehs_B.Sum7 =
         boost_and_two_level__1_sm_ehs_B.Integ4_e -
         boost_and_two_level__1_sm_ehs_B.SFunction_i;
 
-      /* Product: '<S70>/Product' */
+      /* Product: '<S73>/Product' */
       boost_and_two_level__1_sm_ehs_B.Meanvalue =
         boost_and_two_level__1_sm_ehs_B.Sum7 *
         boost_and_two_level__1_sm_ehs_B.UnitDelay_l;
 
-      /* Sum: '<S70>/Sum5' */
+      /* Sum: '<S73>/Sum5' */
       boost_and_two_level__1_sm_ehs_B.Sum5_h =
         boost_and_two_level__1_sm_ehs_B.Meanvalue +
         boost_and_two_level__1_sm_ehs_B.Product4;
@@ -3029,14 +3122,14 @@ void boost_and_two_level__1_sm_ehs_output(void)
         boost_and_two_level__1_sm_ehs_B.UnitDelay1_i;
     }
 
-    /* End of Switch: '<S70>/Switch' */
+    /* End of Switch: '<S73>/Switch' */
 
-    /* Product: '<S56>/Divide' */
+    /* Product: '<S59>/Divide' */
     boost_and_two_level__1_sm_ehs_B.Divide_f =
       boost_and_two_level__1_sm_ehs_B.Switch_cd *
       boost_and_two_level__1_sm_ehs_B.MathFunction_c;
 
-    /* DiscreteTransferFcn: '<S58>/Discrete Derivative ' */
+    /* DiscreteTransferFcn: '<S61>/Discrete Derivative ' */
     P = boost_and_two_level__1_sm_ehs_B.Divide_f;
     P -= boost_and_two_level__1_sm_ehs_P.DiscreteDerivative_DenCoef[1] *
       boost_and_two_level__1_sm_ehs_DW.DiscreteDerivative_states;
@@ -3052,21 +3145,21 @@ void boost_and_two_level__1_sm_ehs_output(void)
     dV += B * boost_and_two_level__1_sm_ehs_DW.DiscreteDerivative_states;
     boost_and_two_level__1_sm_ehs_B.DiscreteDerivative = dV;
 
-    /* DiscreteIntegrator: '<S58>/Discrete-Time Integrator' */
+    /* DiscreteIntegrator: '<S61>/Discrete-Time Integrator' */
     boost_and_two_level__1_sm_ehs_B.DiscreteTimeIntegrator_i =
       boost_and_two_level__1_sm_ehs_DW.DiscreteTimeIntegrator_DSTATE_o;
 
-    /* Gain: '<S58>/Kp4' */
+    /* Gain: '<S61>/Kp4' */
     boost_and_two_level__1_sm_ehs_B.Kp4 =
       boost_and_two_level__1_sm_ehs_P.Discrete_Kp *
       boost_and_two_level__1_sm_ehs_B.Divide_f;
 
-    /* Sum: '<S58>/Sum6' */
+    /* Sum: '<S61>/Sum6' */
     boost_and_two_level__1_sm_ehs_B.Sum6 = (boost_and_two_level__1_sm_ehs_B.Kp4
       + boost_and_two_level__1_sm_ehs_B.DiscreteTimeIntegrator_i) +
       boost_and_two_level__1_sm_ehs_B.DiscreteDerivative;
 
-    /* Saturate: '<S58>/Saturation1' */
+    /* Saturate: '<S61>/Saturation1' */
     B = boost_and_two_level__1_sm_ehs_B.Sum6;
     dP = boost_and_two_level__1_sm_ehs_P.Saturation1_LowerSat_j;
     u2 = boost_and_two_level__1_sm_ehs_P.Saturation1_UpperSat_c;
@@ -3078,14 +3171,14 @@ void boost_and_two_level__1_sm_ehs_output(void)
       boost_and_two_level__1_sm_ehs_B.Saturation1 = B;
     }
 
-    /* End of Saturate: '<S58>/Saturation1' */
+    /* End of Saturate: '<S61>/Saturation1' */
 
-    /* Gain: '<S56>/Gain10' */
+    /* Gain: '<S59>/Gain10' */
     boost_and_two_level__1_sm_ehs_B.Gain10 =
       boost_and_two_level__1_sm_ehs_P.Gain10_Gain *
       boost_and_two_level__1_sm_ehs_B.Saturation1;
 
-    /* RateLimiter: '<S56>/Rate Limiter' */
+    /* RateLimiter: '<S59>/Rate Limiter' */
     P = boost_and_two_level__1_sm_ehs_B.Gain10 -
       boost_and_two_level__1_sm_ehs_DW.PrevY;
     if (P > boost_and_two_level__1_sm_ehs_P.RateLimiter_RisingLim) {
@@ -3104,88 +3197,88 @@ void boost_and_two_level__1_sm_ehs_output(void)
     boost_and_two_level__1_sm_ehs_DW.PrevY =
       boost_and_two_level__1_sm_ehs_B.RateLimiter;
 
-    /* End of RateLimiter: '<S56>/Rate Limiter' */
+    /* End of RateLimiter: '<S59>/Rate Limiter' */
 
-    /* UnitDelay: '<S73>/Delay_x1' */
+    /* UnitDelay: '<S76>/Delay_x1' */
     boost_and_two_level__1_sm_ehs_B.x1k_e =
       boost_and_two_level__1_sm_ehs_DW.Delay_x1_DSTATE_p;
 
-    /* Gain: '<S74>/A11' */
+    /* Gain: '<S77>/A11' */
     boost_and_two_level__1_sm_ehs_B.A11 =
       boost_and_two_level__1_sm_ehs_P.A11_Gain *
       boost_and_two_level__1_sm_ehs_B.x1k_e;
 
-    /* UnitDelay: '<S73>/Delay_x2' */
+    /* UnitDelay: '<S76>/Delay_x2' */
     boost_and_two_level__1_sm_ehs_B.x2k_h =
       boost_and_two_level__1_sm_ehs_DW.Delay_x2_DSTATE_l;
 
-    /* Gain: '<S74>/A12' */
+    /* Gain: '<S77>/A12' */
     boost_and_two_level__1_sm_ehs_B.A12 =
       boost_and_two_level__1_sm_ehs_P.A12_Gain *
       boost_and_two_level__1_sm_ehs_B.x2k_h;
 
-    /* Gain: '<S74>/A21' */
+    /* Gain: '<S77>/A21' */
     boost_and_two_level__1_sm_ehs_B.A21 =
       boost_and_two_level__1_sm_ehs_P.A21_Gain *
       boost_and_two_level__1_sm_ehs_B.x1k_e;
 
-    /* Gain: '<S74>/A22' */
+    /* Gain: '<S77>/A22' */
     boost_and_two_level__1_sm_ehs_B.A22 =
       boost_and_two_level__1_sm_ehs_P.A22_Gain *
       boost_and_two_level__1_sm_ehs_B.x2k_h;
 
-    /* Sum: '<S74>/sum2' */
+    /* Sum: '<S77>/sum2' */
     boost_and_two_level__1_sm_ehs_B.sum2_c = boost_and_two_level__1_sm_ehs_B.A11
       + boost_and_two_level__1_sm_ehs_B.A12;
 
-    /* Sum: '<S74>/sum3' */
+    /* Sum: '<S77>/sum3' */
     boost_and_two_level__1_sm_ehs_B.sum3 = boost_and_two_level__1_sm_ehs_B.A21 +
       boost_and_two_level__1_sm_ehs_B.A22;
 
-    /* Gain: '<S75>/B11' */
+    /* Gain: '<S78>/B11' */
     boost_and_two_level__1_sm_ehs_B.B11 =
       boost_and_two_level__1_sm_ehs_P.B11_Gain *
       boost_and_two_level__1_sm_ehs_B.RateLimiter;
 
-    /* Sum: '<S73>/A*x1(k) + B*u1(k) ' */
+    /* Sum: '<S76>/A*x1(k) + B*u1(k) ' */
     boost_and_two_level__1_sm_ehs_B.x1k1 =
       boost_and_two_level__1_sm_ehs_B.sum2_c +
       boost_and_two_level__1_sm_ehs_B.B11;
 
-    /* Gain: '<S75>/B21' */
+    /* Gain: '<S78>/B21' */
     boost_and_two_level__1_sm_ehs_B.B21 =
       boost_and_two_level__1_sm_ehs_P.B21_Gain *
       boost_and_two_level__1_sm_ehs_B.RateLimiter;
 
-    /* Sum: '<S73>/A*x2(k) + B*u2(k)' */
+    /* Sum: '<S76>/A*x2(k) + B*u2(k)' */
     boost_and_two_level__1_sm_ehs_B.x2k1 = boost_and_two_level__1_sm_ehs_B.sum3
       + boost_and_two_level__1_sm_ehs_B.B21;
 
-    /* Gain: '<S73>/D*u(k)' */
+    /* Gain: '<S76>/D*u(k)' */
     boost_and_two_level__1_sm_ehs_B.Duk_c =
       boost_and_two_level__1_sm_ehs_P.Duk_Gain_b *
       boost_and_two_level__1_sm_ehs_B.RateLimiter;
 
-    /* Gain: '<S76>/C11' */
+    /* Gain: '<S79>/C11' */
     boost_and_two_level__1_sm_ehs_B.C11_f =
       boost_and_two_level__1_sm_ehs_P.C11_Gain_b *
       boost_and_two_level__1_sm_ehs_B.x1k_e;
 
-    /* Gain: '<S76>/C12' */
+    /* Gain: '<S79>/C12' */
     boost_and_two_level__1_sm_ehs_B.C12_o =
       boost_and_two_level__1_sm_ehs_P.C12_Gain_f *
       boost_and_two_level__1_sm_ehs_B.x2k_h;
 
-    /* Sum: '<S76>/sum2' */
+    /* Sum: '<S79>/sum2' */
     boost_and_two_level__1_sm_ehs_B.sum2_n =
       boost_and_two_level__1_sm_ehs_B.C11_f +
       boost_and_two_level__1_sm_ehs_B.C12_o;
 
-    /* Sum: '<S73>/C*X(k)+D*u(k)' */
+    /* Sum: '<S76>/C*X(k)+D*u(k)' */
     boost_and_two_level__1_sm_ehs_B.yk_c = boost_and_two_level__1_sm_ehs_B.Duk_c
       + boost_and_two_level__1_sm_ehs_B.sum2_n;
 
-    /* Gain: '<S78>/A11' */
+    /* Gain: '<S81>/A11' */
     boost_and_two_level__1_sm_ehs_B.A11_n[0] =
       boost_and_two_level__1_sm_ehs_P.A11_Gain_k *
       boost_and_two_level__1_sm_ehs_B.x1k[0];
@@ -3193,7 +3286,7 @@ void boost_and_two_level__1_sm_ehs_output(void)
       boost_and_two_level__1_sm_ehs_P.A11_Gain_k *
       boost_and_two_level__1_sm_ehs_B.x1k[1];
 
-    /* Gain: '<S78>/A12' */
+    /* Gain: '<S81>/A12' */
     boost_and_two_level__1_sm_ehs_B.A12_e[0] =
       boost_and_two_level__1_sm_ehs_P.A12_Gain_k *
       boost_and_two_level__1_sm_ehs_B.x2k[0];
@@ -3201,7 +3294,7 @@ void boost_and_two_level__1_sm_ehs_output(void)
       boost_and_two_level__1_sm_ehs_P.A12_Gain_k *
       boost_and_two_level__1_sm_ehs_B.x2k[1];
 
-    /* Gain: '<S78>/A21' */
+    /* Gain: '<S81>/A21' */
     boost_and_two_level__1_sm_ehs_B.A21_b[0] =
       boost_and_two_level__1_sm_ehs_P.A21_Gain_d *
       boost_and_two_level__1_sm_ehs_B.x1k[0];
@@ -3209,7 +3302,7 @@ void boost_and_two_level__1_sm_ehs_output(void)
       boost_and_two_level__1_sm_ehs_P.A21_Gain_d *
       boost_and_two_level__1_sm_ehs_B.x1k[1];
 
-    /* Gain: '<S78>/A22' */
+    /* Gain: '<S81>/A22' */
     boost_and_two_level__1_sm_ehs_B.A22_o[0] =
       boost_and_two_level__1_sm_ehs_P.A22_Gain_k *
       boost_and_two_level__1_sm_ehs_B.x2k[0];
@@ -3217,7 +3310,7 @@ void boost_and_two_level__1_sm_ehs_output(void)
       boost_and_two_level__1_sm_ehs_P.A22_Gain_k *
       boost_and_two_level__1_sm_ehs_B.x2k[1];
 
-    /* Sum: '<S78>/sum2' */
+    /* Sum: '<S81>/sum2' */
     boost_and_two_level__1_sm_ehs_B.sum2_a[0] =
       boost_and_two_level__1_sm_ehs_B.A11_n[0] +
       boost_and_two_level__1_sm_ehs_B.A12_e[0];
@@ -3225,7 +3318,7 @@ void boost_and_two_level__1_sm_ehs_output(void)
       boost_and_two_level__1_sm_ehs_B.A11_n[1] +
       boost_and_two_level__1_sm_ehs_B.A12_e[1];
 
-    /* Sum: '<S78>/sum3' */
+    /* Sum: '<S81>/sum3' */
     boost_and_two_level__1_sm_ehs_B.sum3_f[0] =
       boost_and_two_level__1_sm_ehs_B.A21_b[0] +
       boost_and_two_level__1_sm_ehs_B.A22_o[0];
@@ -3233,7 +3326,7 @@ void boost_and_two_level__1_sm_ehs_output(void)
       boost_and_two_level__1_sm_ehs_B.A21_b[1] +
       boost_and_two_level__1_sm_ehs_B.A22_o[1];
 
-    /* Gain: '<S79>/B11' */
+    /* Gain: '<S82>/B11' */
     boost_and_two_level__1_sm_ehs_B.B11_a[0] =
       boost_and_two_level__1_sm_ehs_P.B11_Gain_f *
       boost_and_two_level__1_sm_ehs_B.Switch_b[0];
@@ -3241,7 +3334,7 @@ void boost_and_two_level__1_sm_ehs_output(void)
       boost_and_two_level__1_sm_ehs_P.B11_Gain_f *
       boost_and_two_level__1_sm_ehs_B.Switch_b[1];
 
-    /* Sum: '<S77>/A*x1(k) + B*u1(k) ' */
+    /* Sum: '<S80>/A*x1(k) + B*u1(k) ' */
     boost_and_two_level__1_sm_ehs_B.x1k1_l[0] =
       boost_and_two_level__1_sm_ehs_B.sum2_a[0] +
       boost_and_two_level__1_sm_ehs_B.B11_a[0];
@@ -3249,7 +3342,7 @@ void boost_and_two_level__1_sm_ehs_output(void)
       boost_and_two_level__1_sm_ehs_B.sum2_a[1] +
       boost_and_two_level__1_sm_ehs_B.B11_a[1];
 
-    /* Gain: '<S79>/B21' */
+    /* Gain: '<S82>/B21' */
     boost_and_two_level__1_sm_ehs_B.B21_a[0] =
       boost_and_two_level__1_sm_ehs_P.B21_Gain_j *
       boost_and_two_level__1_sm_ehs_B.Switch_b[0];
@@ -3257,7 +3350,7 @@ void boost_and_two_level__1_sm_ehs_output(void)
       boost_and_two_level__1_sm_ehs_P.B21_Gain_j *
       boost_and_two_level__1_sm_ehs_B.Switch_b[1];
 
-    /* Sum: '<S77>/A*x2(k) + B*u2(k)' */
+    /* Sum: '<S80>/A*x2(k) + B*u2(k)' */
     boost_and_two_level__1_sm_ehs_B.x2k1_j[0] =
       boost_and_two_level__1_sm_ehs_B.sum3_f[0] +
       boost_and_two_level__1_sm_ehs_B.B21_a[0];
@@ -3265,13 +3358,13 @@ void boost_and_two_level__1_sm_ehs_output(void)
       boost_and_two_level__1_sm_ehs_B.sum3_f[1] +
       boost_and_two_level__1_sm_ehs_B.B21_a[1];
 
-    /* Constant: '<S45>/Constant1' */
+    /* Constant: '<S48>/Constant1' */
     boost_and_two_level__1_sm_ehs_B.Constant1 =
       boost_and_two_level__1_sm_ehs_P.Constant1_Value_a;
 
-    /* Switch: '<S31>/Switch' incorporates:
-     *  Constant: '<S31>/Vnom_dc1'
-     *  Constant: '<S9>/MPPT_On'
+    /* Switch: '<S34>/Switch' incorporates:
+     *  Constant: '<S10>/MPPT_On'
+     *  Constant: '<S34>/Vnom_dc1'
      */
     if (boost_and_two_level__1_sm_ehs_P.MPPT_On_Value != 0.0) {
       boost_and_two_level__1_sm_ehs_B.Switch_ex =
@@ -3281,11 +3374,11 @@ void boost_and_two_level__1_sm_ehs_output(void)
         boost_and_two_level__1_sm_ehs_P.InverterControl_Vdc_ref_Init;
     }
 
-    /* End of Switch: '<S31>/Switch' */
+    /* End of Switch: '<S34>/Switch' */
 
-    /* Sum: '<S38>/Add1' incorporates:
-     *  Constant: '<S38>/Constant2'
-     *  Constant: '<S38>/Constant4'
+    /* Sum: '<S41>/Add1' incorporates:
+     *  Constant: '<S41>/Constant2'
+     *  Constant: '<S41>/Constant4'
      */
     dV = boost_and_two_level__1_sm_ehs_P.Ts *
       boost_and_two_level__1_sm_ehs_P.InverterControl_Fnom * 6.2831853071795862;
@@ -3293,26 +3386,26 @@ void boost_and_two_level__1_sm_ehs_output(void)
       (boost_and_two_level__1_sm_ehs_B.MathFunction_m +
        boost_and_two_level__1_sm_ehs_P.Constant2_Value_i) + dV;
 
-    /* UnitDelay: '<S31>/Unit Delay3' */
+    /* UnitDelay: '<S34>/Unit Delay3' */
     boost_and_two_level__1_sm_ehs_B.UnitDelay3[0] =
       boost_and_two_level__1_sm_ehs_DW.UnitDelay3_DSTATE[0];
     boost_and_two_level__1_sm_ehs_B.UnitDelay3[1] =
       boost_and_two_level__1_sm_ehs_DW.UnitDelay3_DSTATE[1];
 
-    /* Gain: '<S38>/Gain1' */
+    /* Gain: '<S41>/Gain1' */
     boost_and_two_level__1_sm_ehs_B.Gain1_p =
       boost_and_two_level__1_sm_ehs_P.Gain1_Gain_ne *
       boost_and_two_level__1_sm_ehs_B.Switch_ej;
 
-    /* Product: '<S38>/Product' incorporates:
-     *  Constant: '<S38>/Constant3'
+    /* Product: '<S41>/Product' incorporates:
+     *  Constant: '<S41>/Constant3'
      */
     dV = boost_and_two_level__1_sm_ehs_P.InverterControl_Vnom_prim *
       1.4142135623730951;
     boost_and_two_level__1_sm_ehs_B.Product =
       boost_and_two_level__1_sm_ehs_B.Gain1_p / dV;
 
-    /* Product: '<S38>/Product1' */
+    /* Product: '<S41>/Product1' */
     boost_and_two_level__1_sm_ehs_B.Product1_m[0] =
       boost_and_two_level__1_sm_ehs_B.UnitDelay3[0] /
       boost_and_two_level__1_sm_ehs_B.Product;
@@ -3320,13 +3413,13 @@ void boost_and_two_level__1_sm_ehs_output(void)
       boost_and_two_level__1_sm_ehs_B.UnitDelay3[1] /
       boost_and_two_level__1_sm_ehs_B.Product;
 
-    /* RealImagToComplex: '<S38>/Real-Imag to Complex' */
+    /* RealImagToComplex: '<S41>/Real-Imag to Complex' */
     boost_and_two_level__1_sm_ehs_B.RealImagtoComplex_j.re =
       boost_and_two_level__1_sm_ehs_B.Product1_m[0];
     boost_and_two_level__1_sm_ehs_B.RealImagtoComplex_j.im =
       boost_and_two_level__1_sm_ehs_B.Product1_m[1];
 
-    /* ComplexToMagnitudeAngle: '<S38>/Complex to Magnitude-Angle' */
+    /* ComplexToMagnitudeAngle: '<S41>/Complex to Magnitude-Angle' */
     boost_and_two_level__1_sm_ehs_B.ComplextoMagnitudeAngle_o1_k = rt_hypotd_snf
       (boost_and_two_level__1_sm_ehs_B.RealImagtoComplex_j.re,
        boost_and_two_level__1_sm_ehs_B.RealImagtoComplex_j.im);
@@ -3334,57 +3427,57 @@ void boost_and_two_level__1_sm_ehs_output(void)
       (boost_and_two_level__1_sm_ehs_B.RealImagtoComplex_j.im,
        boost_and_two_level__1_sm_ehs_B.RealImagtoComplex_j.re);
 
-    /* Sum: '<S38>/Add2' */
+    /* Sum: '<S41>/Add2' */
     boost_and_two_level__1_sm_ehs_B.Add2_l =
       boost_and_two_level__1_sm_ehs_B.ComplextoMagnitudeAngle_o2_g +
       boost_and_two_level__1_sm_ehs_B.Add1_j;
 
-    /* Trigonometry: '<S38>/Trigonometric Function' */
+    /* Trigonometry: '<S41>/Trigonometric Function' */
     boost_and_two_level__1_sm_ehs_B.TrigonometricFunction_c = sin
       (boost_and_two_level__1_sm_ehs_B.Add2_l);
 
-    /* Product: '<S38>/Product2' */
+    /* Product: '<S41>/Product2' */
     boost_and_two_level__1_sm_ehs_B.Product2_g =
       boost_and_two_level__1_sm_ehs_B.ComplextoMagnitudeAngle_o1_k *
       boost_and_two_level__1_sm_ehs_B.TrigonometricFunction_c;
 
-    /* UnitDelay: '<S31>/Unit Delay1' */
+    /* UnitDelay: '<S34>/Unit Delay1' */
     boost_and_two_level__1_sm_ehs_B.UnitDelay1_k =
       boost_and_two_level__1_sm_ehs_DW.UnitDelay1_DSTATE_n;
 
-    /* Sum: '<S39>/Sum' */
+    /* Sum: '<S42>/Sum' */
     boost_and_two_level__1_sm_ehs_B.Sum_p =
       boost_and_two_level__1_sm_ehs_B.Switch_ej -
       boost_and_two_level__1_sm_ehs_B.UnitDelay1_k;
 
-    /* Gain: '<S39>/Rtot_pu2' */
+    /* Gain: '<S42>/Rtot_pu2' */
     B = boost_and_two_level__1_sm_ehs_P.InverterControl_Vnom_dc;
     dV = 1.0 / B;
     boost_and_two_level__1_sm_ehs_B.Rtot_pu2 = dV *
       boost_and_two_level__1_sm_ehs_B.Sum_p;
 
-    /* Gain: '<S111>/Integral Gain' */
+    /* Gain: '<S114>/Integral Gain' */
     boost_and_two_level__1_sm_ehs_B.IntegralGain_m =
       boost_and_two_level__1_sm_ehs_P.InverterControl_Ki_VDCreg *
       boost_and_two_level__1_sm_ehs_B.Rtot_pu2;
 
-    /* DiscreteIntegrator: '<S111>/Integrator' */
+    /* DiscreteIntegrator: '<S114>/Integrator' */
     boost_and_two_level__1_sm_ehs_B.Integrator_j =
       boost_and_two_level__1_sm_ehs_P.Integrator_gainval_e *
       boost_and_two_level__1_sm_ehs_B.IntegralGain_m +
       boost_and_two_level__1_sm_ehs_DW.Integrator_DSTATE_h;
 
-    /* Gain: '<S111>/Proportional Gain' */
+    /* Gain: '<S114>/Proportional Gain' */
     boost_and_two_level__1_sm_ehs_B.ProportionalGain_e =
       boost_and_two_level__1_sm_ehs_P.InverterControl_Kp_VDCreg *
       boost_and_two_level__1_sm_ehs_B.Rtot_pu2;
 
-    /* Sum: '<S111>/Sum' */
+    /* Sum: '<S114>/Sum' */
     boost_and_two_level__1_sm_ehs_B.Sum_e =
       boost_and_two_level__1_sm_ehs_B.ProportionalGain_e +
       boost_and_two_level__1_sm_ehs_B.Integrator_j;
 
-    /* Saturate: '<S111>/Saturate' */
+    /* Saturate: '<S114>/Saturate' */
     B = boost_and_two_level__1_sm_ehs_B.Sum_e;
     dP = boost_and_two_level__1_sm_ehs_P.PI_LowerSaturationLimit_j;
     u2 = boost_and_two_level__1_sm_ehs_P.PI_UpperSaturationLimit_a;
@@ -3396,49 +3489,49 @@ void boost_and_two_level__1_sm_ehs_output(void)
       boost_and_two_level__1_sm_ehs_B.Saturate_d = B;
     }
 
-    /* End of Saturate: '<S111>/Saturate' */
+    /* End of Saturate: '<S114>/Saturate' */
 
-    /* RateTransition: '<S9>/Rate Transition3' incorporates:
-     *  RateTransition: '<S9>/Rate Transition1'
-     *  RateTransition: '<S9>/Rate Transition2'
+    /* RateTransition: '<S10>/Rate Transition3' incorporates:
+     *  RateTransition: '<S10>/Rate Transition1'
+     *  RateTransition: '<S10>/Rate Transition2'
      */
     if (rtmIsMajorTimeStep(boost_and_two_level__1_sm_ehs_M)) {
       boost_and_two_level__1_sm_ehs_B.RateTransition3 =
         boost_and_two_level__1_sm_ehs_B.Divide[2];
       boost_and_two_level__1_sm_ehs_B.RateTransition1 =
-        boost_and_two_level__1_sm_ehs_B.SFunction_l[0];
+        boost_and_two_level__1_sm_ehs_B.SFunction_n[0];
       boost_and_two_level__1_sm_ehs_B.RateTransition2 =
-        boost_and_two_level__1_sm_ehs_B.SFunction_l[1];
+        boost_and_two_level__1_sm_ehs_B.SFunction_n[1];
     }
 
-    /* End of RateTransition: '<S9>/Rate Transition3' */
+    /* End of RateTransition: '<S10>/Rate Transition3' */
 
-    /* MATLAB Function: '<S9>/MATLAB Function' incorporates:
-     *  Constant: '<S9>/Constant1'
-     *  Constant: '<S9>/Constant2'
-     *  Constant: '<S9>/Constant3'
-     *  Constant: '<S9>/Constant4'
+    /* MATLAB Function: '<S10>/MATLAB Function' incorporates:
+     *  Constant: '<S10>/Constant1'
+     *  Constant: '<S10>/Constant2'
+     *  Constant: '<S10>/Constant3'
+     *  Constant: '<S10>/Constant4'
      */
-    /* MATLAB Function 'SM_eHS/source_and_gates/MATLAB Function': '<S32>:1' */
-    /* '<S32>:1:3' */
-    /* '<S32>:1:4' */
-    /* '<S32>:1:6' */
-    /* '<S32>:1:7' */
-    /* '<S32>:1:8' */
+    /* MATLAB Function 'SM_eHS/source_and_gates/MATLAB Function': '<S35>:1' */
+    /* '<S35>:1:3' */
+    /* '<S35>:1:4' */
+    /* '<S35>:1:6' */
+    /* '<S35>:1:7' */
+    /* '<S35>:1:8' */
     /*  bandgap energy(1.12 eV) */
     /*  ideal factor */
-    /* '<S32>:1:13' */
-    /* '<S32>:1:14' */
-    /* '<S32>:1:17' */
+    /* '<S35>:1:13' */
+    /* '<S35>:1:14' */
+    /* '<S35>:1:17' */
     boost_and_two_level__1_sm_ehs_B.Iph =
       (((boost_and_two_level__1_sm_ehs_B.RateTransition2 + 273.0) - 298.0) *
        (boost_and_two_level__1_sm_ehs_P.Constant3_Value_b / 100.0) + 1.0) *
       (boost_and_two_level__1_sm_ehs_B.RateTransition1 / 1000.0 *
        boost_and_two_level__1_sm_ehs_P.Constant1_Value_p);
 
-    /* '<S32>:1:18' */
-    /* '<S32>:1:19' */
-    /* '<S32>:1:21' */
+    /* '<S35>:1:18' */
+    /* '<S35>:1:19' */
+    /* '<S35>:1:21' */
     boost_and_two_level__1_sm_ehs_B.Io =
       boost_and_two_level__1_sm_ehs_P.Constant1_Value_p / (exp
       (boost_and_two_level__1_sm_ehs_P.Constant2_Value_c /
@@ -3453,7 +3546,7 @@ void boost_and_two_level__1_sm_ehs_output(void)
         (boost_and_two_level__1_sm_ehs_B.RateTransition2 + 273.0) / 1.6E-19)) -
       1.0);
 
-    /* Saturate: '<S9>/Saturation' */
+    /* Saturate: '<S10>/Saturation' */
     B = boost_and_two_level__1_sm_ehs_B.Iph;
     dP = boost_and_two_level__1_sm_ehs_P.Saturation_LowerSat_c;
     u2 = boost_and_two_level__1_sm_ehs_P.Saturation_UpperSat_b1;
@@ -3465,7 +3558,7 @@ void boost_and_two_level__1_sm_ehs_output(void)
       boost_and_two_level__1_sm_ehs_B.Saturation_p = B;
     }
 
-    /* End of Saturate: '<S9>/Saturation' */
+    /* End of Saturate: '<S10>/Saturation' */
   }
 
   /* Clock: '<S2>/Clock' */
@@ -3490,13 +3583,13 @@ void boost_and_two_level__1_sm_ehs_output(void)
   if (rtmIsMajorTimeStep(boost_and_two_level__1_sm_ehs_M)) {
     /* Level2 S-Function Block: '<S2>/OpTrigger' (optrigger) */
     {
-      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[30];
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[35];
       sfcnOutputs(rts, 1);
     }
 
     /* Level2 S-Function Block: '<S2>/OpCtrl' (sfun_ctrl_op7160ex1) */
     {
-      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[31];
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[36];
       sfcnOutputs(rts, 1);
     }
   }
@@ -3511,24 +3604,24 @@ void boost_and_two_level__1_sm_ehs_update(void)
     boost_and_two_level__1_sm_ehs_DW.SFunction_PreviousInput =
       boost_and_two_level__1_sm_ehs_B.Sum;
 
-    /* Update for UnitDelay: '<S31>/Unit Delay' */
+    /* Update for UnitDelay: '<S34>/Unit Delay' */
     boost_and_two_level__1_sm_ehs_DW.UnitDelay_DSTATE =
       boost_and_two_level__1_sm_ehs_B.Product2_g;
 
-    /* Update for UnitDelay: '<S25>/Delay Input1' */
+    /* Update for UnitDelay: '<S28>/Delay Input1' */
     boost_and_two_level__1_sm_ehs_DW.DelayInput1_DSTATE =
       boost_and_two_level__1_sm_ehs_B.Add_l;
 
-    /* Update for Memory: '<S9>/Memory1' */
+    /* Update for Memory: '<S10>/Memory1' */
     boost_and_two_level__1_sm_ehs_DW.Memory1_PreviousInput =
       boost_and_two_level__1_sm_ehs_B.Saturation_p;
 
-    /* Update for Memory: '<S9>/Memory' */
+    /* Update for Memory: '<S10>/Memory' */
     boost_and_two_level__1_sm_ehs_DW.Memory_PreviousInput =
       boost_and_two_level__1_sm_ehs_B.Io;
   }
 
-  /* Update for TransportDelay: '<S15>/Transport Delay' */
+  /* Update for TransportDelay: '<S18>/Transport Delay' */
   {
     real_T **uBuffer = (real_T**)
       &boost_and_two_level__1_sm_ehs_DW.TransportDelay_PWORK.TUbufferPtrs[0];
@@ -3555,12 +3648,12 @@ void boost_and_two_level__1_sm_ehs_update(void)
   }
 
   if (rtmIsMajorTimeStep(boost_and_two_level__1_sm_ehs_M)) {
-    /* Update for Memory: '<S15>/Memory' */
+    /* Update for Memory: '<S18>/Memory' */
     boost_and_two_level__1_sm_ehs_DW.Memory_PreviousInput_n =
       boost_and_two_level__1_sm_ehs_B.Switch;
   }
 
-  /* Update for TransportDelay: '<S16>/Transport Delay' */
+  /* Update for TransportDelay: '<S19>/Transport Delay' */
   {
     real_T **uBuffer = (real_T**)
       &boost_and_two_level__1_sm_ehs_DW.TransportDelay_PWORK_d.TUbufferPtrs[0];
@@ -3588,15 +3681,15 @@ void boost_and_two_level__1_sm_ehs_update(void)
   }
 
   if (rtmIsMajorTimeStep(boost_and_two_level__1_sm_ehs_M)) {
-    /* Update for Memory: '<S16>/Memory' */
+    /* Update for Memory: '<S19>/Memory' */
     boost_and_two_level__1_sm_ehs_DW.Memory_PreviousInput_e =
       boost_and_two_level__1_sm_ehs_B.Switch_e;
 
-    /* Update for Memory: '<S19>/Memory1' */
+    /* Update for Memory: '<S22>/Memory1' */
     boost_and_two_level__1_sm_ehs_DW.Memory1_PreviousInput_h =
       boost_and_two_level__1_sm_ehs_B.Switch1;
 
-    /* Update for UnitDelay: '<S24>/Delay Input1' */
+    /* Update for UnitDelay: '<S27>/Delay Input1' */
     memcpy(&boost_and_two_level__1_sm_ehs_DW.DelayInput1_DSTATE_m[0],
            &boost_and_two_level__1_sm_ehs_B.DataTypeConversion5[0], sizeof
            (uint32_T) << 4U);
@@ -3613,52 +3706,72 @@ void boost_and_two_level__1_sm_ehs_update(void)
            &boost_and_two_level__1_sm_ehs_B.DataTypeConversion5_n[0], sizeof
            (uint32_T) << 4U);
 
-    /* Update for Memory: '<S19>/Memory2' */
+    /* Update for Memory: '<S22>/Memory2' */
     boost_and_two_level__1_sm_ehs_DW.Memory2_PreviousInput =
       boost_and_two_level__1_sm_ehs_B.Switch_i;
 
-    /* Update for UnitDelay: '<S28>/Delay Input1' */
+    /* Update for Memory: '<S11>/Memory1' */
+    boost_and_two_level__1_sm_ehs_DW.Memory1_PreviousInput_n =
+      boost_and_two_level__1_sm_ehs_B.Memory_o;
+
+    /* Update for Memory: '<S11>/Memory' incorporates:
+     *  Constant: '<S11>/IOTypeSel1'
+     */
+    boost_and_two_level__1_sm_ehs_DW.Memory_PreviousInput_l =
+      boost_and_two_level__1_sm_ehs_P.IOTypeSel1_Value;
+
+    /* Update for Memory: '<S12>/Memory1' */
+    boost_and_two_level__1_sm_ehs_DW.Memory1_PreviousInput_o =
+      boost_and_two_level__1_sm_ehs_B.Memory_k;
+
+    /* Update for Memory: '<S12>/Memory' incorporates:
+     *  Constant: '<S12>/IOTypeSel1'
+     */
+    boost_and_two_level__1_sm_ehs_DW.Memory_PreviousInput_h =
+      boost_and_two_level__1_sm_ehs_P.IOTypeSel1_Value_d;
+
+    /* Update for UnitDelay: '<S31>/Delay Input1' */
     for (i = 0; i < 10; i++) {
       boost_and_two_level__1_sm_ehs_DW.DelayInput1_DSTATE_k[i] =
         boost_and_two_level__1_sm_ehs_B.load_config1[i];
     }
 
-    /* End of Update for UnitDelay: '<S28>/Delay Input1' */
+    /* End of Update for UnitDelay: '<S31>/Delay Input1' */
 
-    /* Update for UnitDelay: '<S56>/Unit Delay' */
+    /* Update for UnitDelay: '<S59>/Unit Delay' */
     boost_and_two_level__1_sm_ehs_DW.UnitDelay_DSTATE_b =
       boost_and_two_level__1_sm_ehs_B.yk_c;
 
-    /* Level2 S-Function Block: '<S82>/S-Function' (sfun_discreteVariableDelay) */
+    /* Level2 S-Function Block: '<S85>/S-Function' (sfun_discreteVariableDelay) */
     {
-      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[25];
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[30];
       sfcnUpdate(rts, 1);
       if (ssGetErrorStatus(rts) != (NULL))
         return;
     }
 
-    /* Update for DiscreteIntegrator: '<S56>/Discrete-Time Integrator' */
+    /* Update for DiscreteIntegrator: '<S59>/Discrete-Time Integrator' */
     boost_and_two_level__1_sm_ehs_DW.DiscreteTimeIntegrator_DSTATE +=
       boost_and_two_level__1_sm_ehs_P.DiscreteTimeIntegrator_gainval *
       boost_and_two_level__1_sm_ehs_B.Saturation1;
 
-    /* Update for UnitDelay: '<S77>/Delay_x1' */
+    /* Update for UnitDelay: '<S80>/Delay_x1' */
     boost_and_two_level__1_sm_ehs_DW.Delay_x1_DSTATE[0] =
       boost_and_two_level__1_sm_ehs_B.x1k1_l[0];
     boost_and_two_level__1_sm_ehs_DW.Delay_x1_DSTATE[1] =
       boost_and_two_level__1_sm_ehs_B.x1k1_l[1];
 
-    /* Update for UnitDelay: '<S77>/Delay_x2' */
+    /* Update for UnitDelay: '<S80>/Delay_x2' */
     boost_and_two_level__1_sm_ehs_DW.Delay_x2_DSTATE[0] =
       boost_and_two_level__1_sm_ehs_B.x2k1_j[0];
     boost_and_two_level__1_sm_ehs_DW.Delay_x2_DSTATE[1] =
       boost_and_two_level__1_sm_ehs_B.x2k1_j[1];
 
-    /* Update for UnitDelay: '<S31>/Unit Delay2' */
+    /* Update for UnitDelay: '<S34>/Unit Delay2' */
     boost_and_two_level__1_sm_ehs_DW.UnitDelay2_DSTATE =
       boost_and_two_level__1_sm_ehs_B.Saturate_d;
 
-    /* Update for DiscreteIntegrator: '<S40>/Integrator' */
+    /* Update for DiscreteIntegrator: '<S43>/Integrator' */
     boost_and_two_level__1_sm_ehs_DW.Integrator_DSTATE[0] +=
       boost_and_two_level__1_sm_ehs_P.Integrator_gainval *
       boost_and_two_level__1_sm_ehs_B.IntegralGain[0];
@@ -3666,87 +3779,87 @@ void boost_and_two_level__1_sm_ehs_update(void)
       boost_and_two_level__1_sm_ehs_P.Integrator_gainval *
       boost_and_two_level__1_sm_ehs_B.IntegralGain[1];
 
-    /* Update for DiscreteIntegrator: '<S48>/Integ4' */
+    /* Update for DiscreteIntegrator: '<S51>/Integ4' */
     boost_and_two_level__1_sm_ehs_DW.Integ4_SYSTEM_ENABLE = 0U;
     boost_and_two_level__1_sm_ehs_DW.Integ4_DSTATE =
       boost_and_two_level__1_sm_ehs_P.Integ4_gainval_l *
       boost_and_two_level__1_sm_ehs_B.Product1_k +
       boost_and_two_level__1_sm_ehs_B.Integ4;
 
-    /* Level2 S-Function Block: '<S50>/S-Function' (sfun_discreteVariableDelay) */
-    {
-      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[26];
-      sfcnUpdate(rts, 1);
-      if (ssGetErrorStatus(rts) != (NULL))
-        return;
-    }
-
-    /* Update for UnitDelay: '<S49>/Unit Delay' */
-    boost_and_two_level__1_sm_ehs_DW.UnitDelay_DSTATE_d =
-      boost_and_two_level__1_sm_ehs_B.Product1_k;
-
-    /* Update for UnitDelay: '<S48>/Unit Delay1' */
-    boost_and_two_level__1_sm_ehs_DW.UnitDelay1_DSTATE =
-      boost_and_two_level__1_sm_ehs_B.Switch_ie;
-
-    /* Update for DiscreteIntegrator: '<S51>/Integ4' */
-    boost_and_two_level__1_sm_ehs_DW.Integ4_SYSTEM_ENABLE_n = 0U;
-    boost_and_two_level__1_sm_ehs_DW.Integ4_DSTATE_f =
-      boost_and_two_level__1_sm_ehs_P.Integ4_gainval_g *
-      boost_and_two_level__1_sm_ehs_B.Product2 +
-      boost_and_two_level__1_sm_ehs_B.Integ4_b;
-
     /* Level2 S-Function Block: '<S53>/S-Function' (sfun_discreteVariableDelay) */
     {
-      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[27];
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[31];
       sfcnUpdate(rts, 1);
       if (ssGetErrorStatus(rts) != (NULL))
         return;
     }
 
     /* Update for UnitDelay: '<S52>/Unit Delay' */
+    boost_and_two_level__1_sm_ehs_DW.UnitDelay_DSTATE_d =
+      boost_and_two_level__1_sm_ehs_B.Product1_k;
+
+    /* Update for UnitDelay: '<S51>/Unit Delay1' */
+    boost_and_two_level__1_sm_ehs_DW.UnitDelay1_DSTATE =
+      boost_and_two_level__1_sm_ehs_B.Switch_ie;
+
+    /* Update for DiscreteIntegrator: '<S54>/Integ4' */
+    boost_and_two_level__1_sm_ehs_DW.Integ4_SYSTEM_ENABLE_n = 0U;
+    boost_and_two_level__1_sm_ehs_DW.Integ4_DSTATE_f =
+      boost_and_two_level__1_sm_ehs_P.Integ4_gainval_g *
+      boost_and_two_level__1_sm_ehs_B.Product2 +
+      boost_and_two_level__1_sm_ehs_B.Integ4_b;
+
+    /* Level2 S-Function Block: '<S56>/S-Function' (sfun_discreteVariableDelay) */
+    {
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[32];
+      sfcnUpdate(rts, 1);
+      if (ssGetErrorStatus(rts) != (NULL))
+        return;
+    }
+
+    /* Update for UnitDelay: '<S55>/Unit Delay' */
     boost_and_two_level__1_sm_ehs_DW.UnitDelay_DSTATE_i =
       boost_and_two_level__1_sm_ehs_B.Product2;
 
-    /* Update for UnitDelay: '<S51>/Unit Delay1' */
+    /* Update for UnitDelay: '<S54>/Unit Delay1' */
     boost_and_two_level__1_sm_ehs_DW.UnitDelay1_DSTATE_i =
       boost_and_two_level__1_sm_ehs_B.Switch_c;
 
-    /* Update for DiscreteIntegrator: '<S54>/Integ4' */
+    /* Update for DiscreteIntegrator: '<S57>/Integ4' */
     boost_and_two_level__1_sm_ehs_DW.Integ4_SYSTEM_ENABLE_i = 0U;
     boost_and_two_level__1_sm_ehs_DW.Integ4_DSTATE_g =
       boost_and_two_level__1_sm_ehs_P.Integ4_gainval_o *
       boost_and_two_level__1_sm_ehs_B.RateTransition6 +
       boost_and_two_level__1_sm_ehs_B.Integ4_m;
 
-    /* Level2 S-Function Block: '<S55>/S-Function' (sfun_discreteVariableDelay) */
+    /* Level2 S-Function Block: '<S58>/S-Function' (sfun_discreteVariableDelay) */
     {
-      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[28];
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[33];
       sfcnUpdate(rts, 1);
       if (ssGetErrorStatus(rts) != (NULL))
         return;
     }
 
-    /* Update for UnitDelay: '<S54>/Unit Delay' */
+    /* Update for UnitDelay: '<S57>/Unit Delay' */
     boost_and_two_level__1_sm_ehs_DW.UnitDelay_DSTATE_h =
       boost_and_two_level__1_sm_ehs_B.RateTransition6;
 
-    /* Update for UnitDelay: '<S54>/Unit Delay1' */
+    /* Update for UnitDelay: '<S57>/Unit Delay1' */
     boost_and_two_level__1_sm_ehs_DW.UnitDelay1_DSTATE_im =
       boost_and_two_level__1_sm_ehs_B.Switch_ej;
 
-    /* Update for Enabled SubSystem: '<S56>/Automatic Gain Control' incorporates:
-     *  Update for EnablePort: '<S57>/Enable'
+    /* Update for Enabled SubSystem: '<S59>/Automatic Gain Control' incorporates:
+     *  Update for EnablePort: '<S60>/Enable'
      */
     if (boost_and_two_level__1_sm_ehs_DW.AutomaticGainControl_MODE) {
-      /* Update for DiscreteIntegrator: '<S64>/Integ4' */
+      /* Update for DiscreteIntegrator: '<S67>/Integ4' */
       boost_and_two_level__1_sm_ehs_DW.Integ4_SYSTEM_ENABLE_nz = 0U;
       boost_and_two_level__1_sm_ehs_DW.Integ4_DSTATE_i =
         boost_and_two_level__1_sm_ehs_P.Integ4_gainval *
         boost_and_two_level__1_sm_ehs_B.Product1_a +
         boost_and_two_level__1_sm_ehs_B.Integ4_ee;
 
-      /* Level2 S-Function Block: '<S66>/S-Function' (sfun_discreteVariableDelay) */
+      /* Level2 S-Function Block: '<S69>/S-Function' (sfun_discreteVariableDelay) */
       {
         SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[0];
         sfcnUpdate(rts, 1);
@@ -3754,22 +3867,22 @@ void boost_and_two_level__1_sm_ehs_update(void)
           return;
       }
 
-      /* Update for UnitDelay: '<S65>/Unit Delay' */
+      /* Update for UnitDelay: '<S68>/Unit Delay' */
       boost_and_two_level__1_sm_ehs_DW.UnitDelay_DSTATE_c =
         boost_and_two_level__1_sm_ehs_B.Product1_a;
 
-      /* Update for UnitDelay: '<S64>/Unit Delay1' */
+      /* Update for UnitDelay: '<S67>/Unit Delay1' */
       boost_and_two_level__1_sm_ehs_DW.UnitDelay1_DSTATE_eb =
         boost_and_two_level__1_sm_ehs_B.Switch_h;
 
-      /* Update for DiscreteIntegrator: '<S67>/Integ4' */
+      /* Update for DiscreteIntegrator: '<S70>/Integ4' */
       boost_and_two_level__1_sm_ehs_DW.Integ4_SYSTEM_ENABLE_d = 0U;
       boost_and_two_level__1_sm_ehs_DW.Integ4_DSTATE_c =
         boost_and_two_level__1_sm_ehs_P.Integ4_gainval_c *
         boost_and_two_level__1_sm_ehs_B.Product2_b +
         boost_and_two_level__1_sm_ehs_B.Integ4_i;
 
-      /* Level2 S-Function Block: '<S69>/S-Function' (sfun_discreteVariableDelay) */
+      /* Level2 S-Function Block: '<S72>/S-Function' (sfun_discreteVariableDelay) */
       {
         SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[1];
         sfcnUpdate(rts, 1);
@@ -3777,45 +3890,45 @@ void boost_and_two_level__1_sm_ehs_update(void)
           return;
       }
 
-      /* Update for UnitDelay: '<S68>/Unit Delay' */
+      /* Update for UnitDelay: '<S71>/Unit Delay' */
       boost_and_two_level__1_sm_ehs_DW.UnitDelay_DSTATE_fv =
         boost_and_two_level__1_sm_ehs_B.Product2_b;
 
-      /* Update for UnitDelay: '<S67>/Unit Delay1' */
+      /* Update for UnitDelay: '<S70>/Unit Delay1' */
       boost_and_two_level__1_sm_ehs_DW.UnitDelay1_DSTATE_k =
         boost_and_two_level__1_sm_ehs_B.Switch_cf;
     }
 
-    /* End of Update for SubSystem: '<S56>/Automatic Gain Control' */
+    /* End of Update for SubSystem: '<S59>/Automatic Gain Control' */
 
-    /* Update for DiscreteIntegrator: '<S70>/Integ4' */
+    /* Update for DiscreteIntegrator: '<S73>/Integ4' */
     boost_and_two_level__1_sm_ehs_DW.Integ4_SYSTEM_ENABLE_e = 0U;
     boost_and_two_level__1_sm_ehs_DW.Integ4_DSTATE_k =
       boost_and_two_level__1_sm_ehs_P.Integ4_gainval_b *
       boost_and_two_level__1_sm_ehs_B.Product1_g +
       boost_and_two_level__1_sm_ehs_B.Integ4_e;
 
-    /* Level2 S-Function Block: '<S72>/S-Function' (sfun_discreteVariableDelay) */
+    /* Level2 S-Function Block: '<S75>/S-Function' (sfun_discreteVariableDelay) */
     {
-      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[29];
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[34];
       sfcnUpdate(rts, 1);
       if (ssGetErrorStatus(rts) != (NULL))
         return;
     }
 
-    /* Update for UnitDelay: '<S71>/Unit Delay' */
+    /* Update for UnitDelay: '<S74>/Unit Delay' */
     boost_and_two_level__1_sm_ehs_DW.UnitDelay_DSTATE_f =
       boost_and_two_level__1_sm_ehs_B.Product1_g;
 
-    /* Update for UnitDelay: '<S70>/Unit Delay1' */
+    /* Update for UnitDelay: '<S73>/Unit Delay1' */
     boost_and_two_level__1_sm_ehs_DW.UnitDelay1_DSTATE_e =
       boost_and_two_level__1_sm_ehs_B.Switch_cd;
 
-    /* Update for DiscreteTransferFcn: '<S58>/Discrete Derivative ' */
+    /* Update for DiscreteTransferFcn: '<S61>/Discrete Derivative ' */
     boost_and_two_level__1_sm_ehs_DW.DiscreteDerivative_states =
       boost_and_two_level__1_sm_ehs_DW.DiscreteDerivative_tmp;
 
-    /* Update for DiscreteIntegrator: '<S58>/Discrete-Time Integrator' */
+    /* Update for DiscreteIntegrator: '<S61>/Discrete-Time Integrator' */
     boost_and_two_level__1_sm_ehs_DW.DiscreteTimeIntegrator_DSTATE_o +=
       boost_and_two_level__1_sm_ehs_P.DiscreteTimeIntegrator_gainva_a *
       boost_and_two_level__1_sm_ehs_B.Divide_f;
@@ -3831,27 +3944,27 @@ void boost_and_two_level__1_sm_ehs_update(void)
       }
     }
 
-    /* End of Update for DiscreteIntegrator: '<S58>/Discrete-Time Integrator' */
+    /* End of Update for DiscreteIntegrator: '<S61>/Discrete-Time Integrator' */
 
-    /* Update for UnitDelay: '<S73>/Delay_x1' */
+    /* Update for UnitDelay: '<S76>/Delay_x1' */
     boost_and_two_level__1_sm_ehs_DW.Delay_x1_DSTATE_p =
       boost_and_two_level__1_sm_ehs_B.x1k1;
 
-    /* Update for UnitDelay: '<S73>/Delay_x2' */
+    /* Update for UnitDelay: '<S76>/Delay_x2' */
     boost_and_two_level__1_sm_ehs_DW.Delay_x2_DSTATE_l =
       boost_and_two_level__1_sm_ehs_B.x2k1;
 
-    /* Update for UnitDelay: '<S31>/Unit Delay3' */
+    /* Update for UnitDelay: '<S34>/Unit Delay3' */
     boost_and_two_level__1_sm_ehs_DW.UnitDelay3_DSTATE[0] =
       boost_and_two_level__1_sm_ehs_B.Saturation[0];
     boost_and_two_level__1_sm_ehs_DW.UnitDelay3_DSTATE[1] =
       boost_and_two_level__1_sm_ehs_B.Saturation[1];
 
-    /* Update for UnitDelay: '<S31>/Unit Delay1' */
+    /* Update for UnitDelay: '<S34>/Unit Delay1' */
     boost_and_two_level__1_sm_ehs_DW.UnitDelay1_DSTATE_n =
       boost_and_two_level__1_sm_ehs_B.Switch_ex;
 
-    /* Update for DiscreteIntegrator: '<S111>/Integrator' */
+    /* Update for DiscreteIntegrator: '<S114>/Integrator' */
     boost_and_two_level__1_sm_ehs_DW.Integrator_DSTATE_h =
       boost_and_two_level__1_sm_ehs_P.Integrator_gainval_e *
       boost_and_two_level__1_sm_ehs_B.IntegralGain_m +
@@ -3907,10 +4020,10 @@ void boost_and_two_level__1_sm_ehs_derivatives(void)
   _rtXdot = ((XDot_boost_and_two_level__1_sm_ehs_T *)
              boost_and_two_level__1_sm_ehs_M->ModelData.derivs);
 
-  /* Derivatives for Integrator: '<S15>/integrator' */
+  /* Derivatives for Integrator: '<S18>/integrator' */
   _rtXdot->integrator_CSTATE = boost_and_two_level__1_sm_ehs_B.Divide[0];
 
-  /* Derivatives for Integrator: '<S16>/integrator' */
+  /* Derivatives for Integrator: '<S19>/integrator' */
   _rtXdot->integrator_CSTATE_b = boost_and_two_level__1_sm_ehs_B.Divide[1];
 }
 
@@ -3920,7 +4033,7 @@ void boost_and_two_level__1_sm_ehs_initialize(void)
   {
     int32_T i;
 
-    /* Start for TransportDelay: '<S15>/Transport Delay' */
+    /* Start for TransportDelay: '<S18>/Transport Delay' */
     {
       real_T *pBuffer =
         &boost_and_two_level__1_sm_ehs_DW.TransportDelay_RWORK.TUbufferArea[0];
@@ -3937,7 +4050,7 @@ void boost_and_two_level__1_sm_ehs_initialize(void)
         (void *) &pBuffer[8192];
     }
 
-    /* Start for TransportDelay: '<S16>/Transport Delay' */
+    /* Start for TransportDelay: '<S19>/Transport Delay' */
     {
       real_T *pBuffer =
         &boost_and_two_level__1_sm_ehs_DW.TransportDelay_RWORK_o.TUbufferArea[0];
@@ -3954,46 +4067,22 @@ void boost_and_two_level__1_sm_ehs_initialize(void)
         (void *) &pBuffer[8192];
     }
 
-    /* Start for Constant: '<S7>/load_config1' */
+    /* Start for Constant: '<S11>/IOTypeSel' */
+    boost_and_two_level__1_sm_ehs_B.IOTypeSel =
+      boost_and_two_level__1_sm_ehs_P.IOTypeSel_Value;
+
+    /* Start for Constant: '<S12>/IOTypeSel' */
+    boost_and_two_level__1_sm_ehs_B.IOTypeSel_p =
+      boost_and_two_level__1_sm_ehs_P.IOTypeSel_Value_n;
+
+    /* Start for Constant: '<S8>/load_config1' */
     for (i = 0; i < 10; i++) {
       boost_and_two_level__1_sm_ehs_B.load_config1[i] =
         boost_and_two_level__1_sm_ehs_P.load_config1_Value[i];
     }
 
-    /* End of Start for Constant: '<S7>/load_config1' */
-    /* Level2 S-Function Block: '<S9>/RTE Conversion1' (rte_conversion) */
-    {
-      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[19];
-      sfcnStart(rts);
-      if (ssGetErrorStatus(rts) != (NULL))
-        return;
-    }
-
-    /* Level2 S-Function Block: '<S9>/RTE Conversion' (rte_conversion) */
-    {
-      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[20];
-      sfcnStart(rts);
-      if (ssGetErrorStatus(rts) != (NULL))
-        return;
-    }
-
-    /* Level2 S-Function Block: '<S9>/RTE Logical Operator1' (rte_logical_operator) */
-    {
-      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[21];
-      sfcnStart(rts);
-      if (ssGetErrorStatus(rts) != (NULL))
-        return;
-    }
-
-    /* Level2 S-Function Block: '<S9>/RTE Ground' (rte_ground) */
-    {
-      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[22];
-      sfcnStart(rts);
-      if (ssGetErrorStatus(rts) != (NULL))
-        return;
-    }
-
-    /* Level2 S-Function Block: '<S26>/RTE_Conversion_1' (rte_conversion_ophsdio) */
+    /* End of Start for Constant: '<S8>/load_config1' */
+    /* Level2 S-Function Block: '<S10>/RTE Conversion' (rte_conversion) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[23];
       sfcnStart(rts);
@@ -4001,7 +4090,15 @@ void boost_and_two_level__1_sm_ehs_initialize(void)
         return;
     }
 
-    /* Level2 S-Function Block: '<S82>/S-Function' (sfun_discreteVariableDelay) */
+    /* Level2 S-Function Block: '<S10>/RTE Conversion1' (rte_conversion) */
+    {
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[24];
+      sfcnStart(rts);
+      if (ssGetErrorStatus(rts) != (NULL))
+        return;
+    }
+
+    /* Level2 S-Function Block: '<S10>/RTE Logical Operator1' (rte_logical_operator) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[25];
       sfcnStart(rts);
@@ -4009,24 +4106,7 @@ void boost_and_two_level__1_sm_ehs_initialize(void)
         return;
     }
 
-    /* Start for Enabled SubSystem: '<S81>/Subsystem1' */
-    /* VirtualOutportStart for Outport: '<S86>/dq' */
-    boost_and_two_level__1_sm_ehs_B.Fcn =
-      boost_and_two_level__1_sm_ehs_P.dq_Y0_b[0];
-    boost_and_two_level__1_sm_ehs_B.Fcn1 =
-      boost_and_two_level__1_sm_ehs_P.dq_Y0_b[1];
-
-    /* End of Start for SubSystem: '<S81>/Subsystem1' */
-
-    /* Start for Enabled SubSystem: '<S81>/Subsystem - pi//2 delay' */
-    /* VirtualOutportStart for Outport: '<S85>/dq' */
-    boost_and_two_level__1_sm_ehs_B.Fcn_i =
-      boost_and_two_level__1_sm_ehs_P.dq_Y0[0];
-    boost_and_two_level__1_sm_ehs_B.Fcn1_k =
-      boost_and_two_level__1_sm_ehs_P.dq_Y0[1];
-
-    /* End of Start for SubSystem: '<S81>/Subsystem - pi//2 delay' */
-    /* Level2 S-Function Block: '<S50>/S-Function' (sfun_discreteVariableDelay) */
+    /* Level2 S-Function Block: '<S10>/RTE SPWM' (rte_svpwm) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[26];
       sfcnStart(rts);
@@ -4034,7 +4114,7 @@ void boost_and_two_level__1_sm_ehs_initialize(void)
         return;
     }
 
-    /* Level2 S-Function Block: '<S53>/S-Function' (sfun_discreteVariableDelay) */
+    /* Level2 S-Function Block: '<S10>/RTE Ground' (rte_ground) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[27];
       sfcnStart(rts);
@@ -4042,11 +4122,7 @@ void boost_and_two_level__1_sm_ehs_initialize(void)
         return;
     }
 
-    /* Start for Constant: '<S54>/K1' */
-    boost_and_two_level__1_sm_ehs_B.K1 =
-      boost_and_two_level__1_sm_ehs_P.K1_Value_f;
-
-    /* Level2 S-Function Block: '<S55>/S-Function' (sfun_discreteVariableDelay) */
+    /* Level2 S-Function Block: '<S29>/RTE_Conversion_1' (rte_conversion_ophsdio) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[28];
       sfcnStart(rts);
@@ -4054,9 +4130,62 @@ void boost_and_two_level__1_sm_ehs_initialize(void)
         return;
     }
 
-    /* Start for Enabled SubSystem: '<S56>/Automatic Gain Control' */
+    /* Level2 S-Function Block: '<S85>/S-Function' (sfun_discreteVariableDelay) */
+    {
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[30];
+      sfcnStart(rts);
+      if (ssGetErrorStatus(rts) != (NULL))
+        return;
+    }
 
-    /* Level2 S-Function Block: '<S66>/S-Function' (sfun_discreteVariableDelay) */
+    /* Start for Enabled SubSystem: '<S84>/Subsystem1' */
+    /* VirtualOutportStart for Outport: '<S89>/dq' */
+    boost_and_two_level__1_sm_ehs_B.Fcn =
+      boost_and_two_level__1_sm_ehs_P.dq_Y0_b[0];
+    boost_and_two_level__1_sm_ehs_B.Fcn1 =
+      boost_and_two_level__1_sm_ehs_P.dq_Y0_b[1];
+
+    /* End of Start for SubSystem: '<S84>/Subsystem1' */
+
+    /* Start for Enabled SubSystem: '<S84>/Subsystem - pi//2 delay' */
+    /* VirtualOutportStart for Outport: '<S88>/dq' */
+    boost_and_two_level__1_sm_ehs_B.Fcn_i =
+      boost_and_two_level__1_sm_ehs_P.dq_Y0[0];
+    boost_and_two_level__1_sm_ehs_B.Fcn1_k =
+      boost_and_two_level__1_sm_ehs_P.dq_Y0[1];
+
+    /* End of Start for SubSystem: '<S84>/Subsystem - pi//2 delay' */
+    /* Level2 S-Function Block: '<S53>/S-Function' (sfun_discreteVariableDelay) */
+    {
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[31];
+      sfcnStart(rts);
+      if (ssGetErrorStatus(rts) != (NULL))
+        return;
+    }
+
+    /* Level2 S-Function Block: '<S56>/S-Function' (sfun_discreteVariableDelay) */
+    {
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[32];
+      sfcnStart(rts);
+      if (ssGetErrorStatus(rts) != (NULL))
+        return;
+    }
+
+    /* Start for Constant: '<S57>/K1' */
+    boost_and_two_level__1_sm_ehs_B.K1 =
+      boost_and_two_level__1_sm_ehs_P.K1_Value_f;
+
+    /* Level2 S-Function Block: '<S58>/S-Function' (sfun_discreteVariableDelay) */
+    {
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[33];
+      sfcnStart(rts);
+      if (ssGetErrorStatus(rts) != (NULL))
+        return;
+    }
+
+    /* Start for Enabled SubSystem: '<S59>/Automatic Gain Control' */
+
+    /* Level2 S-Function Block: '<S69>/S-Function' (sfun_discreteVariableDelay) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[0];
       sfcnStart(rts);
@@ -4064,7 +4193,7 @@ void boost_and_two_level__1_sm_ehs_initialize(void)
         return;
     }
 
-    /* Level2 S-Function Block: '<S69>/S-Function' (sfun_discreteVariableDelay) */
+    /* Level2 S-Function Block: '<S72>/S-Function' (sfun_discreteVariableDelay) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[1];
       sfcnStart(rts);
@@ -4072,60 +4201,60 @@ void boost_and_two_level__1_sm_ehs_initialize(void)
         return;
     }
 
-    /* End of Start for SubSystem: '<S56>/Automatic Gain Control' */
+    /* End of Start for SubSystem: '<S59>/Automatic Gain Control' */
 
-    /* InitializeConditions for Enabled SubSystem: '<S56>/Automatic Gain Control' */
-    /* InitializeConditions for DiscreteIntegrator: '<S64>/Integ4' */
+    /* InitializeConditions for Enabled SubSystem: '<S59>/Automatic Gain Control' */
+    /* InitializeConditions for DiscreteIntegrator: '<S67>/Integ4' */
     boost_and_two_level__1_sm_ehs_DW.Integ4_DSTATE_i =
       boost_and_two_level__1_sm_ehs_P.Integ4_IC;
 
-    /* Level2 S-Function Block: '<S66>/S-Function' (sfun_discreteVariableDelay) */
-    {
-      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[0];
-      sfcnInitializeConditions(rts);
-      if (ssGetErrorStatus(rts) != (NULL))
-        return;
-    }
-
-    /* InitializeConditions for UnitDelay: '<S65>/Unit Delay' */
-    boost_and_two_level__1_sm_ehs_DW.UnitDelay_DSTATE_c =
-      boost_and_two_level__1_sm_ehs_P.UnitDelay_InitialCondition;
-
-    /* InitializeConditions for UnitDelay: '<S64>/Unit Delay1' */
-    boost_and_two_level__1_sm_ehs_DW.UnitDelay1_DSTATE_eb =
-      boost_and_two_level__1_sm_ehs_P.UnitDelay1_InitialCondition;
-
-    /* InitializeConditions for DiscreteIntegrator: '<S67>/Integ4' */
-    boost_and_two_level__1_sm_ehs_DW.Integ4_DSTATE_c =
-      boost_and_two_level__1_sm_ehs_P.Integ4_IC_b;
-
     /* Level2 S-Function Block: '<S69>/S-Function' (sfun_discreteVariableDelay) */
     {
-      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[1];
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[0];
       sfcnInitializeConditions(rts);
       if (ssGetErrorStatus(rts) != (NULL))
         return;
     }
 
     /* InitializeConditions for UnitDelay: '<S68>/Unit Delay' */
+    boost_and_two_level__1_sm_ehs_DW.UnitDelay_DSTATE_c =
+      boost_and_two_level__1_sm_ehs_P.UnitDelay_InitialCondition;
+
+    /* InitializeConditions for UnitDelay: '<S67>/Unit Delay1' */
+    boost_and_two_level__1_sm_ehs_DW.UnitDelay1_DSTATE_eb =
+      boost_and_two_level__1_sm_ehs_P.UnitDelay1_InitialCondition;
+
+    /* InitializeConditions for DiscreteIntegrator: '<S70>/Integ4' */
+    boost_and_two_level__1_sm_ehs_DW.Integ4_DSTATE_c =
+      boost_and_two_level__1_sm_ehs_P.Integ4_IC_b;
+
+    /* Level2 S-Function Block: '<S72>/S-Function' (sfun_discreteVariableDelay) */
+    {
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[1];
+      sfcnInitializeConditions(rts);
+      if (ssGetErrorStatus(rts) != (NULL))
+        return;
+    }
+
+    /* InitializeConditions for UnitDelay: '<S71>/Unit Delay' */
     boost_and_two_level__1_sm_ehs_DW.UnitDelay_DSTATE_fv =
       boost_and_two_level__1_sm_ehs_P.UnitDelay_InitialCondition_k;
 
-    /* InitializeConditions for UnitDelay: '<S67>/Unit Delay1' */
+    /* InitializeConditions for UnitDelay: '<S70>/Unit Delay1' */
     boost_and_two_level__1_sm_ehs_DW.UnitDelay1_DSTATE_k =
       boost_and_two_level__1_sm_ehs_P.UnitDelay1_InitialCondition_n;
 
-    /* End of InitializeConditions for SubSystem: '<S56>/Automatic Gain Control' */
+    /* End of InitializeConditions for SubSystem: '<S59>/Automatic Gain Control' */
 
-    /* Start for Enabled SubSystem: '<S56>/Automatic Gain Control' */
-    /* VirtualOutportStart for Outport: '<S57>/Gain' */
+    /* Start for Enabled SubSystem: '<S59>/Automatic Gain Control' */
+    /* VirtualOutportStart for Outport: '<S60>/Gain' */
     boost_and_two_level__1_sm_ehs_B.MathFunction_c =
       boost_and_two_level__1_sm_ehs_P.Gain_Y0;
 
-    /* End of Start for SubSystem: '<S56>/Automatic Gain Control' */
-    /* Level2 S-Function Block: '<S72>/S-Function' (sfun_discreteVariableDelay) */
+    /* End of Start for SubSystem: '<S59>/Automatic Gain Control' */
+    /* Level2 S-Function Block: '<S75>/S-Function' (sfun_discreteVariableDelay) */
     {
-      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[29];
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[34];
       sfcnStart(rts);
       if (ssGetErrorStatus(rts) != (NULL))
         return;
@@ -4174,7 +4303,7 @@ void boost_and_two_level__1_sm_ehs_initialize(void)
     boost_and_two_level__1_sm_ehs_DW.SFunction_PreviousInput =
       boost_and_two_level__1_sm_ehs_P.SFunction_X0;
 
-    /* Level2 S-Function Block: '<S7>/Outputs_eHS1_Recv' (sfun_fct_op7160ex1_recv) */
+    /* Level2 S-Function Block: '<S8>/Outputs_eHS1_Recv' (sfun_fct_op7160ex1_recv) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[2];
       sfcnInitializeConditions(rts);
@@ -4182,11 +4311,11 @@ void boost_and_two_level__1_sm_ehs_initialize(void)
         return;
     }
 
-    /* InitializeConditions for UnitDelay: '<S31>/Unit Delay' */
+    /* InitializeConditions for UnitDelay: '<S34>/Unit Delay' */
     boost_and_two_level__1_sm_ehs_DW.UnitDelay_DSTATE =
       boost_and_two_level__1_sm_ehs_P.UnitDelay_InitialCondition_i;
 
-    /* Level2 S-Function Block: '<S10>/S-Function' (RECV_Param) */
+    /* Level2 S-Function Block: '<S13>/S-Function' (RECV_Param) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[4];
       sfcnInitializeConditions(rts);
@@ -4194,11 +4323,11 @@ void boost_and_two_level__1_sm_ehs_initialize(void)
         return;
     }
 
-    /* InitializeConditions for UnitDelay: '<S25>/Delay Input1' */
+    /* InitializeConditions for UnitDelay: '<S28>/Delay Input1' */
     boost_and_two_level__1_sm_ehs_DW.DelayInput1_DSTATE =
       boost_and_two_level__1_sm_ehs_P.DetectChange_vinit;
 
-    /* Level2 S-Function Block: '<S7>/eHS_rst_loadin' (sfun_fct_op7160ex1_load_in) */
+    /* Level2 S-Function Block: '<S8>/eHS_rst_loadin' (sfun_fct_op7160ex1_load_in) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[5];
       sfcnInitializeConditions(rts);
@@ -4206,7 +4335,7 @@ void boost_and_two_level__1_sm_ehs_initialize(void)
         return;
     }
 
-    /* Level2 S-Function Block: '<S7>/Automated_Solver_Mat_Initialisation_1' (sfun_efs_solver_cfg) */
+    /* Level2 S-Function Block: '<S8>/Automated_Solver_Mat_Initialisation_1' (sfun_efs_solver_cfg) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[6];
       sfcnInitializeConditions(rts);
@@ -4214,15 +4343,15 @@ void boost_and_two_level__1_sm_ehs_initialize(void)
         return;
     }
 
-    /* InitializeConditions for Memory: '<S9>/Memory1' */
+    /* InitializeConditions for Memory: '<S10>/Memory1' */
     boost_and_two_level__1_sm_ehs_DW.Memory1_PreviousInput =
       boost_and_two_level__1_sm_ehs_P.Memory1_X0;
 
-    /* InitializeConditions for Memory: '<S9>/Memory' */
+    /* InitializeConditions for Memory: '<S10>/Memory' */
     boost_and_two_level__1_sm_ehs_DW.Memory_PreviousInput =
       boost_and_two_level__1_sm_ehs_P.Memory_X0;
 
-    /* Level2 S-Function Block: '<S7>/Inputs_eHS1_Send' (sfun_fct_op7160ex1_send) */
+    /* Level2 S-Function Block: '<S8>/Inputs_eHS1_Send' (sfun_fct_op7160ex1_send) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[8];
       sfcnInitializeConditions(rts);
@@ -4230,19 +4359,19 @@ void boost_and_two_level__1_sm_ehs_initialize(void)
         return;
     }
 
-    /* InitializeConditions for Integrator: '<S15>/integrator' */
+    /* InitializeConditions for Integrator: '<S18>/integrator' */
     boost_and_two_level__1_sm_ehs_X.integrator_CSTATE =
       boost_and_two_level__1_sm_ehs_P.integrator_IC;
 
-    /* InitializeConditions for Memory: '<S15>/Memory' */
+    /* InitializeConditions for Memory: '<S18>/Memory' */
     boost_and_two_level__1_sm_ehs_DW.Memory_PreviousInput_n =
       boost_and_two_level__1_sm_ehs_P.Memory_X0_a;
 
-    /* InitializeConditions for Integrator: '<S16>/integrator' */
+    /* InitializeConditions for Integrator: '<S19>/integrator' */
     boost_and_two_level__1_sm_ehs_X.integrator_CSTATE_b =
       boost_and_two_level__1_sm_ehs_P.integrator_IC_g;
 
-    /* InitializeConditions for Memory: '<S16>/Memory' */
+    /* InitializeConditions for Memory: '<S19>/Memory' */
     boost_and_two_level__1_sm_ehs_DW.Memory_PreviousInput_e =
       boost_and_two_level__1_sm_ehs_P.Memory_X0_c;
 
@@ -4262,7 +4391,7 @@ void boost_and_two_level__1_sm_ehs_initialize(void)
         return;
     }
 
-    /* Level2 S-Function Block: '<S30>/S-Function' (OP_SEND) */
+    /* Level2 S-Function Block: '<S33>/S-Function' (OP_SEND) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[12];
       sfcnInitializeConditions(rts);
@@ -4270,23 +4399,23 @@ void boost_and_two_level__1_sm_ehs_initialize(void)
         return;
     }
 
-    /* InitializeConditions for Memory: '<S19>/Memory1' */
+    /* InitializeConditions for Memory: '<S22>/Memory1' */
     boost_and_two_level__1_sm_ehs_DW.Memory1_PreviousInput_h =
       boost_and_two_level__1_sm_ehs_P.Memory1_X0_c;
 
-    /* InitializeConditions for UnitDelay: '<S24>/Delay Input1' */
+    /* InitializeConditions for UnitDelay: '<S27>/Delay Input1' */
     for (i = 0; i < 80; i++) {
       boost_and_two_level__1_sm_ehs_DW.DelayInput1_DSTATE_m[i] =
         boost_and_two_level__1_sm_ehs_P.DetectChange_vinit_i;
     }
 
-    /* End of InitializeConditions for UnitDelay: '<S24>/Delay Input1' */
+    /* End of InitializeConditions for UnitDelay: '<S27>/Delay Input1' */
 
-    /* InitializeConditions for Memory: '<S19>/Memory2' */
+    /* InitializeConditions for Memory: '<S22>/Memory2' */
     boost_and_two_level__1_sm_ehs_DW.Memory2_PreviousInput =
       boost_and_two_level__1_sm_ehs_P.Memory2_X0;
 
-    /* Level2 S-Function Block: '<S17>/LoadIn' (sfun_fct_op7160ex1_load_in) */
+    /* Level2 S-Function Block: '<S20>/LoadIn' (sfun_fct_op7160ex1_load_in) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[15];
       sfcnInitializeConditions(rts);
@@ -4294,7 +4423,7 @@ void boost_and_two_level__1_sm_ehs_initialize(void)
         return;
     }
 
-    /* Level2 S-Function Block: '<S17>/DataIn Send' (sfun_fct_op7160ex1_send) */
+    /* Level2 S-Function Block: '<S20>/DataIn Send' (sfun_fct_op7160ex1_send) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[17];
       sfcnInitializeConditions(rts);
@@ -4302,7 +4431,7 @@ void boost_and_two_level__1_sm_ehs_initialize(void)
         return;
     }
 
-    /* Level2 S-Function Block: '<S2>/OpWriteFile' (opwritefile) */
+    /* Level2 S-Function Block: '<S11>/rtlab_io_block' (sfun_op7160ex1_pwm_in) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[18];
       sfcnInitializeConditions(rts);
@@ -4310,14 +4439,11 @@ void boost_and_two_level__1_sm_ehs_initialize(void)
         return;
     }
 
-    /* InitializeConditions for UnitDelay: '<S28>/Delay Input1' */
-    for (i = 0; i < 10; i++) {
-      boost_and_two_level__1_sm_ehs_DW.DelayInput1_DSTATE_k[i] =
-        boost_and_two_level__1_sm_ehs_P.DetectChange_vinit_g;
-    }
+    /* InitializeConditions for Memory: '<S11>/Memory1' */
+    boost_and_two_level__1_sm_ehs_DW.Memory1_PreviousInput_n =
+      boost_and_two_level__1_sm_ehs_P.Memory1_X0_a;
 
-    /* End of InitializeConditions for UnitDelay: '<S28>/Delay Input1' */
-    /* Level2 S-Function Block: '<S9>/RTE Conversion1' (rte_conversion) */
+    /* Level2 S-Function Block: '<S11>/IOTypeSel_LoadIn' (sfun_fct_op7160ex1_load_in) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[19];
       sfcnInitializeConditions(rts);
@@ -4325,7 +4451,11 @@ void boost_and_two_level__1_sm_ehs_initialize(void)
         return;
     }
 
-    /* Level2 S-Function Block: '<S9>/RTE Conversion' (rte_conversion) */
+    /* InitializeConditions for Memory: '<S11>/Memory' */
+    boost_and_two_level__1_sm_ehs_DW.Memory_PreviousInput_l =
+      boost_and_two_level__1_sm_ehs_P.Memory_X0_k;
+
+    /* Level2 S-Function Block: '<S12>/rtlab_io_block' (sfun_op7160ex1_pwm_in) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[20];
       sfcnInitializeConditions(rts);
@@ -4333,7 +4463,11 @@ void boost_and_two_level__1_sm_ehs_initialize(void)
         return;
     }
 
-    /* Level2 S-Function Block: '<S9>/RTE Logical Operator1' (rte_logical_operator) */
+    /* InitializeConditions for Memory: '<S12>/Memory1' */
+    boost_and_two_level__1_sm_ehs_DW.Memory1_PreviousInput_o =
+      boost_and_two_level__1_sm_ehs_P.Memory1_X0_o;
+
+    /* Level2 S-Function Block: '<S12>/IOTypeSel_LoadIn' (sfun_fct_op7160ex1_load_in) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[21];
       sfcnInitializeConditions(rts);
@@ -4341,7 +4475,11 @@ void boost_and_two_level__1_sm_ehs_initialize(void)
         return;
     }
 
-    /* Level2 S-Function Block: '<S9>/RTE Ground' (rte_ground) */
+    /* InitializeConditions for Memory: '<S12>/Memory' */
+    boost_and_two_level__1_sm_ehs_DW.Memory_PreviousInput_h =
+      boost_and_two_level__1_sm_ehs_P.Memory_X0_ko;
+
+    /* Level2 S-Function Block: '<S2>/OpWriteFile' (opwritefile) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[22];
       sfcnInitializeConditions(rts);
@@ -4349,7 +4487,14 @@ void boost_and_two_level__1_sm_ehs_initialize(void)
         return;
     }
 
-    /* Level2 S-Function Block: '<S26>/RTE_Conversion_1' (rte_conversion_ophsdio) */
+    /* InitializeConditions for UnitDelay: '<S31>/Delay Input1' */
+    for (i = 0; i < 10; i++) {
+      boost_and_two_level__1_sm_ehs_DW.DelayInput1_DSTATE_k[i] =
+        boost_and_two_level__1_sm_ehs_P.DetectChange_vinit_g;
+    }
+
+    /* End of InitializeConditions for UnitDelay: '<S31>/Delay Input1' */
+    /* Level2 S-Function Block: '<S10>/RTE Conversion' (rte_conversion) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[23];
       sfcnInitializeConditions(rts);
@@ -4357,7 +4502,7 @@ void boost_and_two_level__1_sm_ehs_initialize(void)
         return;
     }
 
-    /* Level2 S-Function Block: '<S26>/EventGen_eHS_1' (sfun_op7160ex1_event_generator) */
+    /* Level2 S-Function Block: '<S10>/RTE Conversion1' (rte_conversion) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[24];
       sfcnInitializeConditions(rts);
@@ -4365,11 +4510,7 @@ void boost_and_two_level__1_sm_ehs_initialize(void)
         return;
     }
 
-    /* InitializeConditions for UnitDelay: '<S56>/Unit Delay' */
-    boost_and_two_level__1_sm_ehs_DW.UnitDelay_DSTATE_b =
-      boost_and_two_level__1_sm_ehs_P.UnitDelay_InitialCondition_a;
-
-    /* Level2 S-Function Block: '<S82>/S-Function' (sfun_discreteVariableDelay) */
+    /* Level2 S-Function Block: '<S10>/RTE Logical Operator1' (rte_logical_operator) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[25];
       sfcnInitializeConditions(rts);
@@ -4377,37 +4518,7 @@ void boost_and_two_level__1_sm_ehs_initialize(void)
         return;
     }
 
-    /* InitializeConditions for DiscreteIntegrator: '<S56>/Discrete-Time Integrator' */
-    boost_and_two_level__1_sm_ehs_DW.DiscreteTimeIntegrator_DSTATE =
-      boost_and_two_level__1_sm_ehs_P.DiscreteTimeIntegrator_IC;
-
-    /* InitializeConditions for UnitDelay: '<S77>/Delay_x1' */
-    boost_and_two_level__1_sm_ehs_DW.Delay_x1_DSTATE[0] =
-      boost_and_two_level__1_sm_ehs_P.Delay_x1_InitialCondition[0];
-    boost_and_two_level__1_sm_ehs_DW.Delay_x1_DSTATE[1] =
-      boost_and_two_level__1_sm_ehs_P.Delay_x1_InitialCondition[1];
-
-    /* InitializeConditions for UnitDelay: '<S77>/Delay_x2' */
-    boost_and_two_level__1_sm_ehs_DW.Delay_x2_DSTATE[0] =
-      boost_and_two_level__1_sm_ehs_P.Delay_x2_InitialCondition[0];
-    boost_and_two_level__1_sm_ehs_DW.Delay_x2_DSTATE[1] =
-      boost_and_two_level__1_sm_ehs_P.Delay_x2_InitialCondition[1];
-
-    /* InitializeConditions for UnitDelay: '<S31>/Unit Delay2' */
-    boost_and_two_level__1_sm_ehs_DW.UnitDelay2_DSTATE =
-      boost_and_two_level__1_sm_ehs_P.UnitDelay2_InitialCondition;
-
-    /* InitializeConditions for DiscreteIntegrator: '<S40>/Integrator' */
-    boost_and_two_level__1_sm_ehs_DW.Integrator_DSTATE[0] =
-      boost_and_two_level__1_sm_ehs_P.Integrator_IC;
-    boost_and_two_level__1_sm_ehs_DW.Integrator_DSTATE[1] =
-      boost_and_two_level__1_sm_ehs_P.Integrator_IC;
-
-    /* InitializeConditions for DiscreteIntegrator: '<S48>/Integ4' */
-    boost_and_two_level__1_sm_ehs_DW.Integ4_DSTATE =
-      boost_and_two_level__1_sm_ehs_P.Integ4_IC_e;
-
-    /* Level2 S-Function Block: '<S50>/S-Function' (sfun_discreteVariableDelay) */
+    /* Level2 S-Function Block: '<S10>/RTE SPWM' (rte_svpwm) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[26];
       sfcnInitializeConditions(rts);
@@ -4415,19 +4526,7 @@ void boost_and_two_level__1_sm_ehs_initialize(void)
         return;
     }
 
-    /* InitializeConditions for UnitDelay: '<S49>/Unit Delay' */
-    boost_and_two_level__1_sm_ehs_DW.UnitDelay_DSTATE_d =
-      boost_and_two_level__1_sm_ehs_P.UnitDelay_InitialCondition_f;
-
-    /* InitializeConditions for UnitDelay: '<S48>/Unit Delay1' */
-    boost_and_two_level__1_sm_ehs_DW.UnitDelay1_DSTATE =
-      boost_and_two_level__1_sm_ehs_P.UnitDelay1_InitialCondition_j;
-
-    /* InitializeConditions for DiscreteIntegrator: '<S51>/Integ4' */
-    boost_and_two_level__1_sm_ehs_DW.Integ4_DSTATE_f =
-      boost_and_two_level__1_sm_ehs_P.Integ4_IC_l;
-
-    /* Level2 S-Function Block: '<S53>/S-Function' (sfun_discreteVariableDelay) */
+    /* Level2 S-Function Block: '<S10>/RTE Ground' (rte_ground) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[27];
       sfcnInitializeConditions(rts);
@@ -4435,24 +4534,7 @@ void boost_and_two_level__1_sm_ehs_initialize(void)
         return;
     }
 
-    /* InitializeConditions for UnitDelay: '<S52>/Unit Delay' */
-    boost_and_two_level__1_sm_ehs_DW.UnitDelay_DSTATE_i =
-      boost_and_two_level__1_sm_ehs_P.UnitDelay_InitialCondition_d;
-
-    /* InitializeConditions for UnitDelay: '<S51>/Unit Delay1' */
-    boost_and_two_level__1_sm_ehs_DW.UnitDelay1_DSTATE_i =
-      boost_and_two_level__1_sm_ehs_P.UnitDelay1_InitialCondition_e;
-
-    /* InitializeConditions for MATLAB Function: '<S31>/MPPT Controller using Perturbe  & Observe technique  ' */
-    boost_and_two_level__1_sm_ehs_DW.Vold_not_empty = false;
-    boost_and_two_level__1_sm_ehs_DW.Vold = 0.0;
-    boost_and_two_level__1_sm_ehs_DW.Pold = 0.0;
-
-    /* InitializeConditions for DiscreteIntegrator: '<S54>/Integ4' */
-    boost_and_two_level__1_sm_ehs_DW.Integ4_DSTATE_g =
-      boost_and_two_level__1_sm_ehs_P.Integ4_IC_o;
-
-    /* Level2 S-Function Block: '<S55>/S-Function' (sfun_discreteVariableDelay) */
+    /* Level2 S-Function Block: '<S29>/RTE_Conversion_1' (rte_conversion_ophsdio) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[28];
       sfcnInitializeConditions(rts);
@@ -4460,19 +4542,7 @@ void boost_and_two_level__1_sm_ehs_initialize(void)
         return;
     }
 
-    /* InitializeConditions for UnitDelay: '<S54>/Unit Delay' */
-    boost_and_two_level__1_sm_ehs_DW.UnitDelay_DSTATE_h =
-      boost_and_two_level__1_sm_ehs_P.UnitDelay_InitialCondition_m;
-
-    /* InitializeConditions for UnitDelay: '<S54>/Unit Delay1' */
-    boost_and_two_level__1_sm_ehs_DW.UnitDelay1_DSTATE_im =
-      boost_and_two_level__1_sm_ehs_P.UnitDelay1_InitialCondition_m;
-
-    /* InitializeConditions for DiscreteIntegrator: '<S70>/Integ4' */
-    boost_and_two_level__1_sm_ehs_DW.Integ4_DSTATE_k =
-      boost_and_two_level__1_sm_ehs_P.Integ4_IC_m;
-
-    /* Level2 S-Function Block: '<S72>/S-Function' (sfun_discreteVariableDelay) */
+    /* Level2 S-Function Block: '<S29>/EventGen_eHS_1' (sfun_op7160ex1_event_generator) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[29];
       sfcnInitializeConditions(rts);
@@ -4480,49 +4550,11 @@ void boost_and_two_level__1_sm_ehs_initialize(void)
         return;
     }
 
-    /* InitializeConditions for UnitDelay: '<S71>/Unit Delay' */
-    boost_and_two_level__1_sm_ehs_DW.UnitDelay_DSTATE_f =
-      boost_and_two_level__1_sm_ehs_P.UnitDelay_InitialCondition_e;
+    /* InitializeConditions for UnitDelay: '<S59>/Unit Delay' */
+    boost_and_two_level__1_sm_ehs_DW.UnitDelay_DSTATE_b =
+      boost_and_two_level__1_sm_ehs_P.UnitDelay_InitialCondition_a;
 
-    /* InitializeConditions for UnitDelay: '<S70>/Unit Delay1' */
-    boost_and_two_level__1_sm_ehs_DW.UnitDelay1_DSTATE_e =
-      boost_and_two_level__1_sm_ehs_P.UnitDelay1_InitialCondition_m1;
-
-    /* InitializeConditions for DiscreteTransferFcn: '<S58>/Discrete Derivative ' */
-    boost_and_two_level__1_sm_ehs_DW.DiscreteDerivative_states =
-      boost_and_two_level__1_sm_ehs_P.DiscreteDerivative_InitialState;
-
-    /* InitializeConditions for DiscreteIntegrator: '<S58>/Discrete-Time Integrator' */
-    boost_and_two_level__1_sm_ehs_DW.DiscreteTimeIntegrator_DSTATE_o =
-      boost_and_two_level__1_sm_ehs_P.Discrete_Init;
-
-    /* InitializeConditions for RateLimiter: '<S56>/Rate Limiter' */
-    boost_and_two_level__1_sm_ehs_DW.PrevY =
-      boost_and_two_level__1_sm_ehs_P.RateLimiter_IC;
-
-    /* InitializeConditions for UnitDelay: '<S73>/Delay_x1' */
-    boost_and_two_level__1_sm_ehs_DW.Delay_x1_DSTATE_p =
-      boost_and_two_level__1_sm_ehs_P.Delay_x1_InitialCondition_b;
-
-    /* InitializeConditions for UnitDelay: '<S73>/Delay_x2' */
-    boost_and_two_level__1_sm_ehs_DW.Delay_x2_DSTATE_l =
-      boost_and_two_level__1_sm_ehs_P.Delay_x2_InitialCondition_h;
-
-    /* InitializeConditions for UnitDelay: '<S31>/Unit Delay3' */
-    boost_and_two_level__1_sm_ehs_DW.UnitDelay3_DSTATE[0] =
-      boost_and_two_level__1_sm_ehs_P.UnitDelay3_InitialCondition;
-    boost_and_two_level__1_sm_ehs_DW.UnitDelay3_DSTATE[1] =
-      boost_and_two_level__1_sm_ehs_P.UnitDelay3_InitialCondition;
-
-    /* InitializeConditions for UnitDelay: '<S31>/Unit Delay1' */
-    boost_and_two_level__1_sm_ehs_DW.UnitDelay1_DSTATE_n =
-      boost_and_two_level__1_sm_ehs_P.UnitDelay1_InitialCondition_eb;
-
-    /* InitializeConditions for DiscreteIntegrator: '<S111>/Integrator' */
-    boost_and_two_level__1_sm_ehs_DW.Integrator_DSTATE_h =
-      boost_and_two_level__1_sm_ehs_P.Integrator_IC_p;
-
-    /* Level2 S-Function Block: '<S2>/OpTrigger' (optrigger) */
+    /* Level2 S-Function Block: '<S85>/S-Function' (sfun_discreteVariableDelay) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[30];
       sfcnInitializeConditions(rts);
@@ -4530,68 +4562,221 @@ void boost_and_two_level__1_sm_ehs_initialize(void)
         return;
     }
 
-    /* Level2 S-Function Block: '<S2>/OpCtrl' (sfun_ctrl_op7160ex1) */
+    /* InitializeConditions for DiscreteIntegrator: '<S59>/Discrete-Time Integrator' */
+    boost_and_two_level__1_sm_ehs_DW.DiscreteTimeIntegrator_DSTATE =
+      boost_and_two_level__1_sm_ehs_P.DiscreteTimeIntegrator_IC;
+
+    /* InitializeConditions for UnitDelay: '<S80>/Delay_x1' */
+    boost_and_two_level__1_sm_ehs_DW.Delay_x1_DSTATE[0] =
+      boost_and_two_level__1_sm_ehs_P.Delay_x1_InitialCondition[0];
+    boost_and_two_level__1_sm_ehs_DW.Delay_x1_DSTATE[1] =
+      boost_and_two_level__1_sm_ehs_P.Delay_x1_InitialCondition[1];
+
+    /* InitializeConditions for UnitDelay: '<S80>/Delay_x2' */
+    boost_and_two_level__1_sm_ehs_DW.Delay_x2_DSTATE[0] =
+      boost_and_two_level__1_sm_ehs_P.Delay_x2_InitialCondition[0];
+    boost_and_two_level__1_sm_ehs_DW.Delay_x2_DSTATE[1] =
+      boost_and_two_level__1_sm_ehs_P.Delay_x2_InitialCondition[1];
+
+    /* InitializeConditions for UnitDelay: '<S34>/Unit Delay2' */
+    boost_and_two_level__1_sm_ehs_DW.UnitDelay2_DSTATE =
+      boost_and_two_level__1_sm_ehs_P.UnitDelay2_InitialCondition;
+
+    /* InitializeConditions for DiscreteIntegrator: '<S43>/Integrator' */
+    boost_and_two_level__1_sm_ehs_DW.Integrator_DSTATE[0] =
+      boost_and_two_level__1_sm_ehs_P.Integrator_IC;
+    boost_and_two_level__1_sm_ehs_DW.Integrator_DSTATE[1] =
+      boost_and_two_level__1_sm_ehs_P.Integrator_IC;
+
+    /* InitializeConditions for DiscreteIntegrator: '<S51>/Integ4' */
+    boost_and_two_level__1_sm_ehs_DW.Integ4_DSTATE =
+      boost_and_two_level__1_sm_ehs_P.Integ4_IC_e;
+
+    /* Level2 S-Function Block: '<S53>/S-Function' (sfun_discreteVariableDelay) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[31];
       sfcnInitializeConditions(rts);
       if (ssGetErrorStatus(rts) != (NULL))
         return;
     }
+
+    /* InitializeConditions for UnitDelay: '<S52>/Unit Delay' */
+    boost_and_two_level__1_sm_ehs_DW.UnitDelay_DSTATE_d =
+      boost_and_two_level__1_sm_ehs_P.UnitDelay_InitialCondition_f;
+
+    /* InitializeConditions for UnitDelay: '<S51>/Unit Delay1' */
+    boost_and_two_level__1_sm_ehs_DW.UnitDelay1_DSTATE =
+      boost_and_two_level__1_sm_ehs_P.UnitDelay1_InitialCondition_j;
+
+    /* InitializeConditions for DiscreteIntegrator: '<S54>/Integ4' */
+    boost_and_two_level__1_sm_ehs_DW.Integ4_DSTATE_f =
+      boost_and_two_level__1_sm_ehs_P.Integ4_IC_l;
+
+    /* Level2 S-Function Block: '<S56>/S-Function' (sfun_discreteVariableDelay) */
+    {
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[32];
+      sfcnInitializeConditions(rts);
+      if (ssGetErrorStatus(rts) != (NULL))
+        return;
+    }
+
+    /* InitializeConditions for UnitDelay: '<S55>/Unit Delay' */
+    boost_and_two_level__1_sm_ehs_DW.UnitDelay_DSTATE_i =
+      boost_and_two_level__1_sm_ehs_P.UnitDelay_InitialCondition_d;
+
+    /* InitializeConditions for UnitDelay: '<S54>/Unit Delay1' */
+    boost_and_two_level__1_sm_ehs_DW.UnitDelay1_DSTATE_i =
+      boost_and_two_level__1_sm_ehs_P.UnitDelay1_InitialCondition_e;
+
+    /* InitializeConditions for MATLAB Function: '<S34>/MPPT Controller using Perturbe  & Observe technique  ' */
+    boost_and_two_level__1_sm_ehs_DW.Vold_not_empty = false;
+    boost_and_two_level__1_sm_ehs_DW.Vold = 0.0;
+    boost_and_two_level__1_sm_ehs_DW.Pold = 0.0;
+
+    /* InitializeConditions for DiscreteIntegrator: '<S57>/Integ4' */
+    boost_and_two_level__1_sm_ehs_DW.Integ4_DSTATE_g =
+      boost_and_two_level__1_sm_ehs_P.Integ4_IC_o;
+
+    /* Level2 S-Function Block: '<S58>/S-Function' (sfun_discreteVariableDelay) */
+    {
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[33];
+      sfcnInitializeConditions(rts);
+      if (ssGetErrorStatus(rts) != (NULL))
+        return;
+    }
+
+    /* InitializeConditions for UnitDelay: '<S57>/Unit Delay' */
+    boost_and_two_level__1_sm_ehs_DW.UnitDelay_DSTATE_h =
+      boost_and_two_level__1_sm_ehs_P.UnitDelay_InitialCondition_m;
+
+    /* InitializeConditions for UnitDelay: '<S57>/Unit Delay1' */
+    boost_and_two_level__1_sm_ehs_DW.UnitDelay1_DSTATE_im =
+      boost_and_two_level__1_sm_ehs_P.UnitDelay1_InitialCondition_m;
+
+    /* InitializeConditions for DiscreteIntegrator: '<S73>/Integ4' */
+    boost_and_two_level__1_sm_ehs_DW.Integ4_DSTATE_k =
+      boost_and_two_level__1_sm_ehs_P.Integ4_IC_m;
+
+    /* Level2 S-Function Block: '<S75>/S-Function' (sfun_discreteVariableDelay) */
+    {
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[34];
+      sfcnInitializeConditions(rts);
+      if (ssGetErrorStatus(rts) != (NULL))
+        return;
+    }
+
+    /* InitializeConditions for UnitDelay: '<S74>/Unit Delay' */
+    boost_and_two_level__1_sm_ehs_DW.UnitDelay_DSTATE_f =
+      boost_and_two_level__1_sm_ehs_P.UnitDelay_InitialCondition_e;
+
+    /* InitializeConditions for UnitDelay: '<S73>/Unit Delay1' */
+    boost_and_two_level__1_sm_ehs_DW.UnitDelay1_DSTATE_e =
+      boost_and_two_level__1_sm_ehs_P.UnitDelay1_InitialCondition_m1;
+
+    /* InitializeConditions for DiscreteTransferFcn: '<S61>/Discrete Derivative ' */
+    boost_and_two_level__1_sm_ehs_DW.DiscreteDerivative_states =
+      boost_and_two_level__1_sm_ehs_P.DiscreteDerivative_InitialState;
+
+    /* InitializeConditions for DiscreteIntegrator: '<S61>/Discrete-Time Integrator' */
+    boost_and_two_level__1_sm_ehs_DW.DiscreteTimeIntegrator_DSTATE_o =
+      boost_and_two_level__1_sm_ehs_P.Discrete_Init;
+
+    /* InitializeConditions for RateLimiter: '<S59>/Rate Limiter' */
+    boost_and_two_level__1_sm_ehs_DW.PrevY =
+      boost_and_two_level__1_sm_ehs_P.RateLimiter_IC;
+
+    /* InitializeConditions for UnitDelay: '<S76>/Delay_x1' */
+    boost_and_two_level__1_sm_ehs_DW.Delay_x1_DSTATE_p =
+      boost_and_two_level__1_sm_ehs_P.Delay_x1_InitialCondition_b;
+
+    /* InitializeConditions for UnitDelay: '<S76>/Delay_x2' */
+    boost_and_two_level__1_sm_ehs_DW.Delay_x2_DSTATE_l =
+      boost_and_two_level__1_sm_ehs_P.Delay_x2_InitialCondition_h;
+
+    /* InitializeConditions for UnitDelay: '<S34>/Unit Delay3' */
+    boost_and_two_level__1_sm_ehs_DW.UnitDelay3_DSTATE[0] =
+      boost_and_two_level__1_sm_ehs_P.UnitDelay3_InitialCondition;
+    boost_and_two_level__1_sm_ehs_DW.UnitDelay3_DSTATE[1] =
+      boost_and_two_level__1_sm_ehs_P.UnitDelay3_InitialCondition;
+
+    /* InitializeConditions for UnitDelay: '<S34>/Unit Delay1' */
+    boost_and_two_level__1_sm_ehs_DW.UnitDelay1_DSTATE_n =
+      boost_and_two_level__1_sm_ehs_P.UnitDelay1_InitialCondition_eb;
+
+    /* InitializeConditions for DiscreteIntegrator: '<S114>/Integrator' */
+    boost_and_two_level__1_sm_ehs_DW.Integrator_DSTATE_h =
+      boost_and_two_level__1_sm_ehs_P.Integrator_IC_p;
+
+    /* Level2 S-Function Block: '<S2>/OpTrigger' (optrigger) */
+    {
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[35];
+      sfcnInitializeConditions(rts);
+      if (ssGetErrorStatus(rts) != (NULL))
+        return;
+    }
+
+    /* Level2 S-Function Block: '<S2>/OpCtrl' (sfun_ctrl_op7160ex1) */
+    {
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[36];
+      sfcnInitializeConditions(rts);
+      if (ssGetErrorStatus(rts) != (NULL))
+        return;
+    }
   }
 
-  /* Enable for DiscreteIntegrator: '<S48>/Integ4' */
+  /* Enable for DiscreteIntegrator: '<S51>/Integ4' */
   boost_and_two_level__1_sm_ehs_DW.Integ4_SYSTEM_ENABLE = 1U;
 
-  /* Enable for DiscreteIntegrator: '<S51>/Integ4' */
+  /* Enable for DiscreteIntegrator: '<S54>/Integ4' */
   boost_and_two_level__1_sm_ehs_DW.Integ4_SYSTEM_ENABLE_n = 1U;
 
-  /* Enable for DiscreteIntegrator: '<S54>/Integ4' */
+  /* Enable for DiscreteIntegrator: '<S57>/Integ4' */
   boost_and_two_level__1_sm_ehs_DW.Integ4_SYSTEM_ENABLE_i = 1U;
 
-  /* Enable for DiscreteIntegrator: '<S70>/Integ4' */
+  /* Enable for DiscreteIntegrator: '<S73>/Integ4' */
   boost_and_two_level__1_sm_ehs_DW.Integ4_SYSTEM_ENABLE_e = 1U;
 }
 
 /* Model terminate function */
 void boost_and_two_level__1_sm_ehs_terminate(void)
 {
-  /* Level2 S-Function Block: '<S7>/Outputs_eHS1_Recv' (sfun_fct_op7160ex1_recv) */
+  /* Level2 S-Function Block: '<S8>/Outputs_eHS1_Recv' (sfun_fct_op7160ex1_recv) */
   {
     SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[2];
     sfcnTerminate(rts);
   }
 
-  /* Level2 S-Function Block: '<S7>/Convert  Single floating-point (FPGA)  to double' (sfun_SFP2DBL) */
+  /* Level2 S-Function Block: '<S8>/Convert  Single floating-point (FPGA)  to double' (sfun_SFP2DBL) */
   {
     SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[3];
     sfcnTerminate(rts);
   }
 
-  /* Level2 S-Function Block: '<S10>/S-Function' (RECV_Param) */
+  /* Level2 S-Function Block: '<S13>/S-Function' (RECV_Param) */
   {
     SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[4];
     sfcnTerminate(rts);
   }
 
-  /* Level2 S-Function Block: '<S7>/eHS_rst_loadin' (sfun_fct_op7160ex1_load_in) */
+  /* Level2 S-Function Block: '<S8>/eHS_rst_loadin' (sfun_fct_op7160ex1_load_in) */
   {
     SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[5];
     sfcnTerminate(rts);
   }
 
-  /* Level2 S-Function Block: '<S7>/Automated_Solver_Mat_Initialisation_1' (sfun_efs_solver_cfg) */
+  /* Level2 S-Function Block: '<S8>/Automated_Solver_Mat_Initialisation_1' (sfun_efs_solver_cfg) */
   {
     SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[6];
     sfcnTerminate(rts);
   }
 
-  /* Level2 S-Function Block: '<S7>/Convert double to  Single floating-point (FPGA)' (sfun_DBL2SFP) */
+  /* Level2 S-Function Block: '<S8>/Convert double to  Single floating-point (FPGA)' (sfun_DBL2SFP) */
   {
     SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[7];
     sfcnTerminate(rts);
   }
 
-  /* Level2 S-Function Block: '<S7>/Inputs_eHS1_Send' (sfun_fct_op7160ex1_send) */
+  /* Level2 S-Function Block: '<S8>/Inputs_eHS1_Send' (sfun_fct_op7160ex1_send) */
   {
     SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[8];
     sfcnTerminate(rts);
@@ -4615,139 +4800,169 @@ void boost_and_two_level__1_sm_ehs_terminate(void)
     sfcnTerminate(rts);
   }
 
-  /* Level2 S-Function Block: '<S30>/S-Function' (OP_SEND) */
+  /* Level2 S-Function Block: '<S33>/S-Function' (OP_SEND) */
   {
     SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[12];
     sfcnTerminate(rts);
   }
 
-  /* Level2 S-Function Block: '<S17>/Convert double to  Single floating-point (FPGA)' (sfun_DBL2SFP) */
+  /* Level2 S-Function Block: '<S20>/Convert double to  Single floating-point (FPGA)' (sfun_DBL2SFP) */
   {
     SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[13];
     sfcnTerminate(rts);
   }
 
-  /* Level2 S-Function Block: '<S17>/Convert double to  Single floating-point (FPGA)1' (sfun_DBL2SFP) */
+  /* Level2 S-Function Block: '<S20>/Convert double to  Single floating-point (FPGA)1' (sfun_DBL2SFP) */
   {
     SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[14];
     sfcnTerminate(rts);
   }
 
-  /* Level2 S-Function Block: '<S17>/LoadIn' (sfun_fct_op7160ex1_load_in) */
+  /* Level2 S-Function Block: '<S20>/LoadIn' (sfun_fct_op7160ex1_load_in) */
   {
     SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[15];
     sfcnTerminate(rts);
   }
 
-  /* Level2 S-Function Block: '<S17>/Convert double to  Single floating-point (FPGA)2' (sfun_DBL2SFP) */
+  /* Level2 S-Function Block: '<S20>/Convert double to  Single floating-point (FPGA)2' (sfun_DBL2SFP) */
   {
     SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[16];
     sfcnTerminate(rts);
   }
 
-  /* Level2 S-Function Block: '<S17>/DataIn Send' (sfun_fct_op7160ex1_send) */
+  /* Level2 S-Function Block: '<S20>/DataIn Send' (sfun_fct_op7160ex1_send) */
   {
     SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[17];
     sfcnTerminate(rts);
   }
 
-  /* Level2 S-Function Block: '<S2>/OpWriteFile' (opwritefile) */
+  /* Level2 S-Function Block: '<S11>/rtlab_io_block' (sfun_op7160ex1_pwm_in) */
   {
     SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[18];
     sfcnTerminate(rts);
   }
 
-  /* Level2 S-Function Block: '<S9>/RTE Conversion1' (rte_conversion) */
+  /* Level2 S-Function Block: '<S11>/IOTypeSel_LoadIn' (sfun_fct_op7160ex1_load_in) */
   {
     SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[19];
     sfcnTerminate(rts);
   }
 
-  /* Level2 S-Function Block: '<S9>/RTE Conversion' (rte_conversion) */
+  /* Level2 S-Function Block: '<S12>/rtlab_io_block' (sfun_op7160ex1_pwm_in) */
   {
     SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[20];
     sfcnTerminate(rts);
   }
 
-  /* Level2 S-Function Block: '<S9>/RTE Logical Operator1' (rte_logical_operator) */
+  /* Level2 S-Function Block: '<S12>/IOTypeSel_LoadIn' (sfun_fct_op7160ex1_load_in) */
   {
     SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[21];
     sfcnTerminate(rts);
   }
 
-  /* Level2 S-Function Block: '<S9>/RTE Ground' (rte_ground) */
+  /* Level2 S-Function Block: '<S2>/OpWriteFile' (opwritefile) */
   {
     SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[22];
     sfcnTerminate(rts);
   }
 
-  /* Level2 S-Function Block: '<S26>/RTE_Conversion_1' (rte_conversion_ophsdio) */
+  /* Level2 S-Function Block: '<S10>/RTE Conversion' (rte_conversion) */
   {
     SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[23];
     sfcnTerminate(rts);
   }
 
-  /* Level2 S-Function Block: '<S26>/EventGen_eHS_1' (sfun_op7160ex1_event_generator) */
+  /* Level2 S-Function Block: '<S10>/RTE Conversion1' (rte_conversion) */
   {
     SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[24];
     sfcnTerminate(rts);
   }
 
-  /* Level2 S-Function Block: '<S82>/S-Function' (sfun_discreteVariableDelay) */
+  /* Level2 S-Function Block: '<S10>/RTE Logical Operator1' (rte_logical_operator) */
   {
     SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[25];
     sfcnTerminate(rts);
   }
 
-  /* Level2 S-Function Block: '<S50>/S-Function' (sfun_discreteVariableDelay) */
+  /* Level2 S-Function Block: '<S10>/RTE SPWM' (rte_svpwm) */
   {
     SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[26];
     sfcnTerminate(rts);
   }
 
-  /* Level2 S-Function Block: '<S53>/S-Function' (sfun_discreteVariableDelay) */
+  /* Level2 S-Function Block: '<S10>/RTE Ground' (rte_ground) */
   {
     SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[27];
     sfcnTerminate(rts);
   }
 
-  /* Level2 S-Function Block: '<S55>/S-Function' (sfun_discreteVariableDelay) */
+  /* Level2 S-Function Block: '<S29>/RTE_Conversion_1' (rte_conversion_ophsdio) */
   {
     SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[28];
     sfcnTerminate(rts);
   }
 
-  /* Terminate for Enabled SubSystem: '<S56>/Automatic Gain Control' */
-
-  /* Level2 S-Function Block: '<S66>/S-Function' (sfun_discreteVariableDelay) */
-  {
-    SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[0];
-    sfcnTerminate(rts);
-  }
-
-  /* Level2 S-Function Block: '<S69>/S-Function' (sfun_discreteVariableDelay) */
-  {
-    SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[1];
-    sfcnTerminate(rts);
-  }
-
-  /* End of Terminate for SubSystem: '<S56>/Automatic Gain Control' */
-
-  /* Level2 S-Function Block: '<S72>/S-Function' (sfun_discreteVariableDelay) */
+  /* Level2 S-Function Block: '<S29>/EventGen_eHS_1' (sfun_op7160ex1_event_generator) */
   {
     SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[29];
     sfcnTerminate(rts);
   }
 
-  /* Level2 S-Function Block: '<S2>/OpTrigger' (optrigger) */
+  /* Level2 S-Function Block: '<S85>/S-Function' (sfun_discreteVariableDelay) */
   {
     SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[30];
     sfcnTerminate(rts);
   }
 
-  /* Level2 S-Function Block: '<S2>/OpCtrl' (sfun_ctrl_op7160ex1) */
+  /* Level2 S-Function Block: '<S53>/S-Function' (sfun_discreteVariableDelay) */
   {
     SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[31];
+    sfcnTerminate(rts);
+  }
+
+  /* Level2 S-Function Block: '<S56>/S-Function' (sfun_discreteVariableDelay) */
+  {
+    SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[32];
+    sfcnTerminate(rts);
+  }
+
+  /* Level2 S-Function Block: '<S58>/S-Function' (sfun_discreteVariableDelay) */
+  {
+    SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[33];
+    sfcnTerminate(rts);
+  }
+
+  /* Terminate for Enabled SubSystem: '<S59>/Automatic Gain Control' */
+
+  /* Level2 S-Function Block: '<S69>/S-Function' (sfun_discreteVariableDelay) */
+  {
+    SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[0];
+    sfcnTerminate(rts);
+  }
+
+  /* Level2 S-Function Block: '<S72>/S-Function' (sfun_discreteVariableDelay) */
+  {
+    SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[1];
+    sfcnTerminate(rts);
+  }
+
+  /* End of Terminate for SubSystem: '<S59>/Automatic Gain Control' */
+
+  /* Level2 S-Function Block: '<S75>/S-Function' (sfun_discreteVariableDelay) */
+  {
+    SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[34];
+    sfcnTerminate(rts);
+  }
+
+  /* Level2 S-Function Block: '<S2>/OpTrigger' (optrigger) */
+  {
+    SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[35];
+    sfcnTerminate(rts);
+  }
+
+  /* Level2 S-Function Block: '<S2>/OpCtrl' (sfun_ctrl_op7160ex1) */
+  {
+    SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[36];
     sfcnTerminate(rts);
   }
 }
@@ -4949,8 +5164,8 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       boost_and_two_level__1_sm_ehs_B.Divide[i] = 0.0;
     }
 
-    for (i = 0; i < 164; i++) {
-      boost_and_two_level__1_sm_ehs_B.SFunction_l[i] = 0.0;
+    for (i = 0; i < 165; i++) {
+      boost_and_two_level__1_sm_ehs_B.SFunction_n[i] = 0.0;
     }
 
     for (i = 0; i < 7; i++) {
@@ -4959,6 +5174,22 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
 
     for (i = 0; i < 9; i++) {
       boost_and_two_level__1_sm_ehs_B.Constant[i] = 0.0;
+    }
+
+    for (i = 0; i < 8; i++) {
+      boost_and_two_level__1_sm_ehs_B.rtlab_io_block_o1[i] = 0.0;
+    }
+
+    for (i = 0; i < 8; i++) {
+      boost_and_two_level__1_sm_ehs_B.rtlab_io_block_o2[i] = 0.0;
+    }
+
+    for (i = 0; i < 8; i++) {
+      boost_and_two_level__1_sm_ehs_B.rtlab_io_block_o1_c[i] = 0.0;
+    }
+
+    for (i = 0; i < 8; i++) {
+      boost_and_two_level__1_sm_ehs_B.rtlab_io_block_o2_a[i] = 0.0;
     }
 
     for (i = 0; i < 16; i++) {
@@ -5068,13 +5299,17 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
     boost_and_two_level__1_sm_ehs_B.Switch1 = 0.0;
     boost_and_two_level__1_sm_ehs_B.LoadIn = 0.0;
     boost_and_two_level__1_sm_ehs_B.DataInSend = 0.0;
+    boost_and_two_level__1_sm_ehs_B.rtlab_io_block_o3 = 0.0;
+    boost_and_two_level__1_sm_ehs_B.Memory1_n = 0.0;
+    boost_and_two_level__1_sm_ehs_B.IOTypeSel_LoadIn = 0.0;
+    boost_and_two_level__1_sm_ehs_B.Memory_o = 0.0;
+    boost_and_two_level__1_sm_ehs_B.rtlab_io_block_o3_f = 0.0;
+    boost_and_two_level__1_sm_ehs_B.Memory1_h = 0.0;
+    boost_and_two_level__1_sm_ehs_B.IOTypeSel_LoadIn_j = 0.0;
+    boost_and_two_level__1_sm_ehs_B.Memory_k = 0.0;
     boost_and_two_level__1_sm_ehs_B.OpWriteFile_o1 = 0.0;
     boost_and_two_level__1_sm_ehs_B.OpWriteFile_o2 = 0.0;
     boost_and_two_level__1_sm_ehs_B.DataTypeConversion1_o = 0.0;
-    boost_and_two_level__1_sm_ehs_B.RTEConversion1[0] = 0.0;
-    boost_and_two_level__1_sm_ehs_B.RTEConversion1[1] = 0.0;
-    boost_and_two_level__1_sm_ehs_B.RTEConversion1[2] = 0.0;
-    boost_and_two_level__1_sm_ehs_B.RTEConversion1[3] = 0.0;
     boost_and_two_level__1_sm_ehs_B.Step = 0.0;
     boost_and_two_level__1_sm_ehs_B.Product1 = 0.0;
     boost_and_two_level__1_sm_ehs_B.TmpSignalConversionAtRTEConvers[0] = 0.0;
@@ -5085,10 +5320,20 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
     boost_and_two_level__1_sm_ehs_B.RTEConversion[1] = 0.0;
     boost_and_two_level__1_sm_ehs_B.RTEConversion[2] = 0.0;
     boost_and_two_level__1_sm_ehs_B.RTEConversion[3] = 0.0;
+    boost_and_two_level__1_sm_ehs_B.RTEConversion1[0] = 0.0;
+    boost_and_two_level__1_sm_ehs_B.RTEConversion1[1] = 0.0;
+    boost_and_two_level__1_sm_ehs_B.RTEConversion1[2] = 0.0;
+    boost_and_two_level__1_sm_ehs_B.RTEConversion1[3] = 0.0;
     boost_and_two_level__1_sm_ehs_B.RTELogicalOperator1[0] = 0.0;
     boost_and_two_level__1_sm_ehs_B.RTELogicalOperator1[1] = 0.0;
     boost_and_two_level__1_sm_ehs_B.RTELogicalOperator1[2] = 0.0;
     boost_and_two_level__1_sm_ehs_B.RTELogicalOperator1[3] = 0.0;
+    boost_and_two_level__1_sm_ehs_B.RTESPWM_o1 = 0.0;
+    boost_and_two_level__1_sm_ehs_B.RTESPWM_o2 = 0.0;
+    boost_and_two_level__1_sm_ehs_B.Switch_f[0] = 0.0;
+    boost_and_two_level__1_sm_ehs_B.Switch_f[1] = 0.0;
+    boost_and_two_level__1_sm_ehs_B.Switch_f[2] = 0.0;
+    boost_and_two_level__1_sm_ehs_B.Switch_f[3] = 0.0;
     boost_and_two_level__1_sm_ehs_B.RTEGround[0] = 0.0;
     boost_and_two_level__1_sm_ehs_B.RTEGround[1] = 0.0;
     boost_and_two_level__1_sm_ehs_B.RTEGround[2] = 0.0;
@@ -5509,6 +5754,10 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
   boost_and_two_level__1_sm_ehs_DW.Memory_PreviousInput_e = 0.0;
   boost_and_two_level__1_sm_ehs_DW.Memory1_PreviousInput_h = 0.0;
   boost_and_two_level__1_sm_ehs_DW.Memory2_PreviousInput = 0.0;
+  boost_and_two_level__1_sm_ehs_DW.Memory1_PreviousInput_n = 0.0;
+  boost_and_two_level__1_sm_ehs_DW.Memory_PreviousInput_l = 0.0;
+  boost_and_two_level__1_sm_ehs_DW.Memory1_PreviousInput_o = 0.0;
+  boost_and_two_level__1_sm_ehs_DW.Memory_PreviousInput_h = 0.0;
   boost_and_two_level__1_sm_ehs_DW.DiscreteDerivative_tmp = 0.0;
   boost_and_two_level__1_sm_ehs_DW.PrevY = 0.0;
   boost_and_two_level__1_sm_ehs_DW.Vold = 0.0;
@@ -5534,14 +5783,14 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
     }
   }
 
-  boost_and_two_level__1_sm_ehs_DW.RTEConversion1_RWORK[0] = 0.0;
-  boost_and_two_level__1_sm_ehs_DW.RTEConversion1_RWORK[1] = 0.0;
-  boost_and_two_level__1_sm_ehs_DW.RTEConversion1_RWORK[2] = 0.0;
-  boost_and_two_level__1_sm_ehs_DW.RTEConversion1_RWORK[3] = 0.0;
   boost_and_two_level__1_sm_ehs_DW.RTEConversion_RWORK[0] = 0.0;
   boost_and_two_level__1_sm_ehs_DW.RTEConversion_RWORK[1] = 0.0;
   boost_and_two_level__1_sm_ehs_DW.RTEConversion_RWORK[2] = 0.0;
   boost_and_two_level__1_sm_ehs_DW.RTEConversion_RWORK[3] = 0.0;
+  boost_and_two_level__1_sm_ehs_DW.RTEConversion1_RWORK[0] = 0.0;
+  boost_and_two_level__1_sm_ehs_DW.RTEConversion1_RWORK[1] = 0.0;
+  boost_and_two_level__1_sm_ehs_DW.RTEConversion1_RWORK[2] = 0.0;
+  boost_and_two_level__1_sm_ehs_DW.RTEConversion1_RWORK[3] = 0.0;
   boost_and_two_level__1_sm_ehs_DW.SFunction_RWORK = 0.0;
   boost_and_two_level__1_sm_ehs_DW.SFunction_RWORK_d = 0.0;
   boost_and_two_level__1_sm_ehs_DW.SFunction_RWORK_g = 0.0;
@@ -5588,26 +5837,26 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
                          &boost_and_two_level__1_sm_ehs_M->solverInfoPtr);
   }
 
-  boost_and_two_level__1_sm_ehs_M->Sizes.numSFcns = (32);
+  boost_and_two_level__1_sm_ehs_M->Sizes.numSFcns = (37);
 
   /* register each child */
   {
     (void) memset((void *)
                   &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.childSFunctions
                   [0], 0,
-                  32*sizeof(SimStruct));
+                  37*sizeof(SimStruct));
     boost_and_two_level__1_sm_ehs_M->childSfunctions =
       (&boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.childSFunctionPtrs[0]);
 
     {
       int_T i;
-      for (i = 0; i < 32; i++) {
+      for (i = 0; i < 37; i++) {
         boost_and_two_level__1_sm_ehs_M->childSfunctions[i] =
           (&boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.childSFunctions[i]);
       }
     }
 
-    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S66>/S-Function (sfun_discreteVariableDelay) */
+    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S69>/S-Function (sfun_discreteVariableDelay) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[0];
 
@@ -5799,7 +6048,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       ssSetInputPortBufferDstPort(rts, 1, -1);
     }
 
-    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S69>/S-Function (sfun_discreteVariableDelay) */
+    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S72>/S-Function (sfun_discreteVariableDelay) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[1];
 
@@ -5991,7 +6240,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       ssSetInputPortBufferDstPort(rts, 1, -1);
     }
 
-    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S7>/Outputs_eHS1_Recv (sfun_fct_op7160ex1_recv) */
+    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S8>/Outputs_eHS1_Recv (sfun_fct_op7160ex1_recv) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[2];
 
@@ -6142,7 +6391,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       /* Update the BufferDstPort flags for each input port */
     }
 
-    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S7>/Convert  Single floating-point (FPGA)  to double (sfun_SFP2DBL) */
+    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S8>/Convert  Single floating-point (FPGA)  to double (sfun_SFP2DBL) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[3];
 
@@ -6273,7 +6522,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       ssSetInputPortBufferDstPort(rts, 0, -1);
     }
 
-    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S10>/S-Function (RECV_Param) */
+    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S13>/S-Function (RECV_Param) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[4];
 
@@ -6332,9 +6581,9 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
         /* port 0 */
         {
           _ssSetOutputPortNumDimensions(rts, 0, 1);
-          ssSetOutputPortWidth(rts, 0, 164);
+          ssSetOutputPortWidth(rts, 0, 165);
           ssSetOutputPortSignal(rts, 0, ((real_T *)
-            boost_and_two_level__1_sm_ehs_B.SFunction_l));
+            boost_and_two_level__1_sm_ehs_B.SFunction_n));
         }
       }
 
@@ -6354,9 +6603,9 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
         ssSetSFcnParamsCount(rts, 2);
         ssSetSFcnParamsPtr(rts, &sfcnParams[0]);
         ssSetSFcnParam(rts, 0, (mxArray*)
-                       boost_and_two_level__1_sm_ehs_P.SFunction_P1_Size_f);
+                       boost_and_two_level__1_sm_ehs_P.SFunction_P1_Size_c);
         ssSetSFcnParam(rts, 1, (mxArray*)
-                       boost_and_two_level__1_sm_ehs_P.SFunction_P2_Size_k);
+                       boost_and_two_level__1_sm_ehs_P.SFunction_P2_Size_e);
       }
 
       /* registration */
@@ -6379,7 +6628,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       /* Update the BufferDstPort flags for each input port */
     }
 
-    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S7>/eHS_rst_loadin (sfun_fct_op7160ex1_load_in) */
+    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S8>/eHS_rst_loadin (sfun_fct_op7160ex1_load_in) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[5];
 
@@ -6539,7 +6788,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       ssSetInputPortBufferDstPort(rts, 1, -1);
     }
 
-    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S7>/Automated_Solver_Mat_Initialisation_1 (sfun_efs_solver_cfg) */
+    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S8>/Automated_Solver_Mat_Initialisation_1 (sfun_efs_solver_cfg) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[6];
 
@@ -6714,7 +6963,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       ssSetInputPortBufferDstPort(rts, 1, -1);
     }
 
-    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S7>/Convert double to  Single floating-point (FPGA) (sfun_DBL2SFP) */
+    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S8>/Convert double to  Single floating-point (FPGA) (sfun_DBL2SFP) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[7];
 
@@ -6838,7 +7087,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       ssSetInputPortBufferDstPort(rts, 0, -1);
     }
 
-    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S7>/Inputs_eHS1_Send (sfun_fct_op7160ex1_send) */
+    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S8>/Inputs_eHS1_Send (sfun_fct_op7160ex1_send) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[8];
 
@@ -7459,7 +7708,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       ssSetInputPortBufferDstPort(rts, 0, -1);
     }
 
-    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S30>/S-Function (OP_SEND) */
+    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S33>/S-Function (OP_SEND) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[12];
 
@@ -7528,8 +7777,8 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
             }
 
             sfcnUPtrs[7] = &boost_and_two_level__1_sm_ehs_B.DataTypeConversion[0];
-            sfcnUPtrs[8] = &boost_and_two_level__1_sm_ehs_B.SFunction_l[0];
-            sfcnUPtrs[9] = &boost_and_two_level__1_sm_ehs_B.SFunction_l[1];
+            sfcnUPtrs[8] = &boost_and_two_level__1_sm_ehs_B.SFunction_n[0];
+            sfcnUPtrs[9] = &boost_and_two_level__1_sm_ehs_B.SFunction_n[1];
             sfcnUPtrs[10] = &boost_and_two_level__1_sm_ehs_B.eHS_rst_loadin;
             sfcnUPtrs[11] =
               &boost_and_two_level__1_sm_ehs_B.Automated_Solver_Mat_Initialisa;
@@ -7539,7 +7788,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
             sfcnUPtrs[14] = &boost_and_two_level__1_sm_ehs_B.Switch;
             sfcnUPtrs[15] = &boost_and_two_level__1_sm_ehs_B.Switch_e;
             sfcnUPtrs[16] = &boost_and_two_level__1_sm_ehs_B.P_PV;
-            sfcnUPtrs[17] = &boost_and_two_level__1_sm_ehs_B.SFunction_l[0];
+            sfcnUPtrs[17] = &boost_and_two_level__1_sm_ehs_B.SFunction_n[0];
             u0 = &boost_and_two_level__1_sm_ehs_B.fpga_raw[0];
             for (i1=0; i1 < 7; i1++) {
               sfcnUPtrs[i1+ 18] = &u0[i1];
@@ -7573,7 +7822,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
         ssSetSFcnParamsCount(rts, 1);
         ssSetSFcnParamsPtr(rts, &sfcnParams[0]);
         ssSetSFcnParam(rts, 0, (mxArray*)
-                       boost_and_two_level__1_sm_ehs_P.SFunction_P1_Size_l);
+                       boost_and_two_level__1_sm_ehs_P.SFunction_P1_Size_ht);
       }
 
       /* work vectors */
@@ -7620,7 +7869,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       ssSetInputPortBufferDstPort(rts, 0, -1);
     }
 
-    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S17>/Convert double to  Single floating-point (FPGA) (sfun_DBL2SFP) */
+    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S20>/Convert double to  Single floating-point (FPGA) (sfun_DBL2SFP) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[13];
 
@@ -7683,7 +7932,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
 
           {
             int_T i1;
-            const real_T *u0 = &boost_and_two_level__1_sm_ehs_B.SFunction_l[36];
+            const real_T *u0 = &boost_and_two_level__1_sm_ehs_B.SFunction_n[36];
             for (i1=0; i1 < 16; i1++) {
               sfcnUPtrs[i1] = &u0[i1];
             }
@@ -7750,7 +7999,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       ssSetInputPortBufferDstPort(rts, 0, -1);
     }
 
-    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S17>/Convert double to  Single floating-point (FPGA)1 (sfun_DBL2SFP) */
+    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S20>/Convert double to  Single floating-point (FPGA)1 (sfun_DBL2SFP) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[14];
 
@@ -7813,7 +8062,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
 
           {
             int_T i1;
-            const real_T *u0 = &boost_and_two_level__1_sm_ehs_B.SFunction_l[68];
+            const real_T *u0 = &boost_and_two_level__1_sm_ehs_B.SFunction_n[68];
             for (i1=0; i1 < 16; i1++) {
               sfcnUPtrs[i1] = &u0[i1];
             }
@@ -7880,7 +8129,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       ssSetInputPortBufferDstPort(rts, 0, -1);
     }
 
-    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S17>/LoadIn (sfun_fct_op7160ex1_load_in) */
+    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S20>/LoadIn (sfun_fct_op7160ex1_load_in) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[15];
 
@@ -8039,7 +8288,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       ssSetInputPortBufferDstPort(rts, 1, -1);
     }
 
-    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S17>/Convert double to  Single floating-point (FPGA)2 (sfun_DBL2SFP) */
+    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S20>/Convert double to  Single floating-point (FPGA)2 (sfun_DBL2SFP) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[16];
 
@@ -8174,7 +8423,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       ssSetInputPortBufferDstPort(rts, 0, -1);
     }
 
-    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S17>/DataIn Send (sfun_fct_op7160ex1_send) */
+    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S20>/DataIn Send (sfun_fct_op7160ex1_send) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[17];
 
@@ -8331,7 +8580,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       ssSetInputPortBufferDstPort(rts, 0, -1);
     }
 
-    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S2>/OpWriteFile (opwritefile) */
+    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S11>/rtlab_io_block (sfun_op7160ex1_pwm_in) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[18];
 
@@ -8380,54 +8629,42 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
                          [18]);
       }
 
-      /* inputs */
-      {
-        _ssSetNumInputPorts(rts, 1);
-        ssSetPortInfoForInputs(rts,
-          &boost_and_two_level__1_sm_ehs_M->
-          NonInlinedSFcns.Sfcn18.inputPortInfo[0]);
-
-        /* port 0 */
-        {
-          real_T const **sfcnUPtrs = (real_T const **)
-            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn18.UPtrs0;
-          sfcnUPtrs[0] = &boost_and_two_level__1_sm_ehs_B.Switch;
-          sfcnUPtrs[1] = &boost_and_two_level__1_sm_ehs_B.Switch_e;
-          sfcnUPtrs[2] = &boost_and_two_level__1_sm_ehs_B.P_PV;
-          sfcnUPtrs[3] = &boost_and_two_level__1_sm_ehs_B.SFunction_l[0];
-          ssSetInputPortSignalPtrs(rts, 0, (InputPtrsType)&sfcnUPtrs[0]);
-          _ssSetInputPortNumDimensions(rts, 0, 1);
-          ssSetInputPortWidth(rts, 0, 4);
-        }
-      }
-
       /* outputs */
       {
         ssSetPortInfoForOutputs(rts,
           &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn18.outputPortInfo
           [0]);
-        _ssSetNumOutputPorts(rts, 2);
+        _ssSetNumOutputPorts(rts, 3);
 
         /* port 0 */
         {
           _ssSetOutputPortNumDimensions(rts, 0, 1);
-          ssSetOutputPortWidth(rts, 0, 1);
+          ssSetOutputPortWidth(rts, 0, 8);
           ssSetOutputPortSignal(rts, 0, ((real_T *)
-            &boost_and_two_level__1_sm_ehs_B.OpWriteFile_o1));
+            boost_and_two_level__1_sm_ehs_B.rtlab_io_block_o1));
         }
 
         /* port 1 */
         {
           _ssSetOutputPortNumDimensions(rts, 1, 1);
-          ssSetOutputPortWidth(rts, 1, 1);
+          ssSetOutputPortWidth(rts, 1, 8);
           ssSetOutputPortSignal(rts, 1, ((real_T *)
-            &boost_and_two_level__1_sm_ehs_B.OpWriteFile_o2));
+            boost_and_two_level__1_sm_ehs_B.rtlab_io_block_o2));
+        }
+
+        /* port 2 */
+        {
+          _ssSetOutputPortNumDimensions(rts, 2, 1);
+          ssSetOutputPortWidth(rts, 2, 1);
+          ssSetOutputPortSignal(rts, 2, ((real_T *)
+            &boost_and_two_level__1_sm_ehs_B.rtlab_io_block_o3));
         }
       }
 
       /* path info */
-      ssSetModelName(rts, "OpWriteFile");
-      ssSetPath(rts, "boost_and_two_level__1_sm_ehs/SM_eHS/OpWriteFile");
+      ssSetModelName(rts, "rtlab_io_block");
+      ssSetPath(rts,
+                "boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI/rtlab_io_block");
       ssSetRTModel(rts,boost_and_two_level__1_sm_ehs_M);
       ssSetParentSS(rts, (NULL));
       ssSetRootSS(rts, rts);
@@ -8437,37 +8674,25 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       {
         mxArray **sfcnParams = (mxArray **)
           &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn18.params;
-        ssSetSFcnParamsCount(rts, 12);
+        ssSetSFcnParamsCount(rts, 6);
         ssSetSFcnParamsPtr(rts, &sfcnParams[0]);
         ssSetSFcnParam(rts, 0, (mxArray*)
-                       boost_and_two_level__1_sm_ehs_P.OpWriteFile_P1_Size);
+                       boost_and_two_level__1_sm_ehs_P.rtlab_io_block_P1_Size);
         ssSetSFcnParam(rts, 1, (mxArray*)
-                       boost_and_two_level__1_sm_ehs_P.OpWriteFile_P2_Size);
+                       boost_and_two_level__1_sm_ehs_P.rtlab_io_block_P2_Size);
         ssSetSFcnParam(rts, 2, (mxArray*)
-                       boost_and_two_level__1_sm_ehs_P.OpWriteFile_P3_Size);
+                       boost_and_two_level__1_sm_ehs_P.rtlab_io_block_P3_Size);
         ssSetSFcnParam(rts, 3, (mxArray*)
-                       boost_and_two_level__1_sm_ehs_P.OpWriteFile_P4_Size);
+                       boost_and_two_level__1_sm_ehs_P.rtlab_io_block_P4_Size);
         ssSetSFcnParam(rts, 4, (mxArray*)
-                       boost_and_two_level__1_sm_ehs_P.OpWriteFile_P5_Size);
+                       boost_and_two_level__1_sm_ehs_P.rtlab_io_block_P5_Size);
         ssSetSFcnParam(rts, 5, (mxArray*)
-                       boost_and_two_level__1_sm_ehs_P.OpWriteFile_P6_Size);
-        ssSetSFcnParam(rts, 6, (mxArray*)
-                       boost_and_two_level__1_sm_ehs_P.OpWriteFile_P7_Size);
-        ssSetSFcnParam(rts, 7, (mxArray*)
-                       boost_and_two_level__1_sm_ehs_P.OpWriteFile_P8_Size);
-        ssSetSFcnParam(rts, 8, (mxArray*)
-                       boost_and_two_level__1_sm_ehs_P.OpWriteFile_P9_Size);
-        ssSetSFcnParam(rts, 9, (mxArray*)
-                       boost_and_two_level__1_sm_ehs_P.OpWriteFile_P10_Size);
-        ssSetSFcnParam(rts, 10, (mxArray*)
-                       boost_and_two_level__1_sm_ehs_P.OpWriteFile_P11_Size);
-        ssSetSFcnParam(rts, 11, (mxArray*)
-                       boost_and_two_level__1_sm_ehs_P.OpWriteFile_P12_Size);
+                       boost_and_two_level__1_sm_ehs_P.rtlab_io_block_P6_Size);
       }
 
       /* work vectors */
       ssSetPWork(rts, (void **)
-                 &boost_and_two_level__1_sm_ehs_DW.OpWriteFile_PWORK);
+                 &boost_and_two_level__1_sm_ehs_DW.rtlab_io_block_PWORK);
 
       {
         struct _ssDWorkRecord *dWorkRecord = (struct _ssDWorkRecord *)
@@ -8482,11 +8707,12 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
         ssSetDWorkWidth(rts, 0, 1);
         ssSetDWorkDataType(rts, 0,SS_POINTER);
         ssSetDWorkComplexSignal(rts, 0, 0);
-        ssSetDWork(rts, 0, &boost_and_two_level__1_sm_ehs_DW.OpWriteFile_PWORK);
+        ssSetDWork(rts, 0,
+                   &boost_and_two_level__1_sm_ehs_DW.rtlab_io_block_PWORK);
       }
 
       /* registration */
-      opwritefile(rts);
+      sfun_op7160ex1_pwm_in(rts);
       sfcnInitializeSizes(rts);
       sfcnInitializeSampleTimes(rts);
 
@@ -8496,24 +8722,20 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       sfcnTsMap[0] = 1;
 
       /* set compiled values of dynamic vector attributes */
-      ssSetInputPortWidth(rts, 0, 4);
-      ssSetInputPortDataType(rts, 0, SS_DOUBLE);
-      ssSetInputPortComplexSignal(rts, 0, 0);
-      ssSetInputPortFrameData(rts, 0, 0);
       ssSetNumNonsampledZCs(rts, 0);
 
       /* Update connectivity flags for each port */
-      _ssSetInputPortConnected(rts, 0, 1);
-      _ssSetOutputPortConnected(rts, 0, 0);
-      _ssSetOutputPortConnected(rts, 1, 0);
+      _ssSetOutputPortConnected(rts, 0, 1);
+      _ssSetOutputPortConnected(rts, 1, 1);
+      _ssSetOutputPortConnected(rts, 2, 1);
       _ssSetOutputPortBeingMerged(rts, 0, 0);
       _ssSetOutputPortBeingMerged(rts, 1, 0);
+      _ssSetOutputPortBeingMerged(rts, 2, 0);
 
       /* Update the BufferDstPort flags for each input port */
-      ssSetInputPortBufferDstPort(rts, 0, -1);
     }
 
-    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S9>/RTE Conversion1 (rte_conversion) */
+    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S11>/IOTypeSel_LoadIn (sfun_fct_op7160ex1_load_in) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[19];
 
@@ -8564,7 +8786,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
 
       /* inputs */
       {
-        _ssSetNumInputPorts(rts, 1);
+        _ssSetNumInputPorts(rts, 2);
         ssSetPortInfoForInputs(rts,
           &boost_and_two_level__1_sm_ehs_M->
           NonInlinedSFcns.Sfcn19.inputPortInfo[0]);
@@ -8573,9 +8795,18 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
         {
           ssSetInputPortRequiredContiguous(rts, 0, 1);
           ssSetInputPortSignal(rts, 0,
-                               boost_and_two_level__1_sm_ehs_B.DataTypeConversion);
+                               &boost_and_two_level__1_sm_ehs_B.Memory1_n);
           _ssSetInputPortNumDimensions(rts, 0, 1);
-          ssSetInputPortWidth(rts, 0, 4);
+          ssSetInputPortWidth(rts, 0, 1);
+        }
+
+        /* port 1 */
+        {
+          ssSetInputPortRequiredContiguous(rts, 1, 1);
+          ssSetInputPortSignal(rts, 1,
+                               &boost_and_two_level__1_sm_ehs_B.IOTypeSel);
+          _ssSetInputPortNumDimensions(rts, 1, 1);
+          ssSetInputPortWidth(rts, 1, 1);
         }
       }
 
@@ -8589,16 +8820,16 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
         /* port 0 */
         {
           _ssSetOutputPortNumDimensions(rts, 0, 1);
-          ssSetOutputPortWidth(rts, 0, 4);
+          ssSetOutputPortWidth(rts, 0, 1);
           ssSetOutputPortSignal(rts, 0, ((real_T *)
-            boost_and_two_level__1_sm_ehs_B.RTEConversion1));
+            &boost_and_two_level__1_sm_ehs_B.IOTypeSel_LoadIn));
         }
       }
 
       /* path info */
-      ssSetModelName(rts, "RTE Conversion1");
+      ssSetModelName(rts, "IOTypeSel_LoadIn");
       ssSetPath(rts,
-                "boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Conversion1");
+                "boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI/IOTypeSel_LoadIn");
       ssSetRTModel(rts,boost_and_two_level__1_sm_ehs_M);
       ssSetParentSS(rts, (NULL));
       ssSetRootSS(rts, rts);
@@ -8608,25 +8839,21 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       {
         mxArray **sfcnParams = (mxArray **)
           &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn19.params;
-        ssSetSFcnParamsCount(rts, 5);
+        ssSetSFcnParamsCount(rts, 4);
         ssSetSFcnParamsPtr(rts, &sfcnParams[0]);
         ssSetSFcnParam(rts, 0, (mxArray*)
-                       boost_and_two_level__1_sm_ehs_P.RTEConversion1_P1_Size);
+                       boost_and_two_level__1_sm_ehs_P.IOTypeSel_LoadIn_P1_Size);
         ssSetSFcnParam(rts, 1, (mxArray*)
-                       boost_and_two_level__1_sm_ehs_P.RTEConversion1_P2_Size);
+                       boost_and_two_level__1_sm_ehs_P.IOTypeSel_LoadIn_P2_Size);
         ssSetSFcnParam(rts, 2, (mxArray*)
-                       boost_and_two_level__1_sm_ehs_P.RTEConversion1_P3_Size);
+                       boost_and_two_level__1_sm_ehs_P.IOTypeSel_LoadIn_P3_Size);
         ssSetSFcnParam(rts, 3, (mxArray*)
-                       boost_and_two_level__1_sm_ehs_P.RTEConversion1_P4_Size);
-        ssSetSFcnParam(rts, 4, (mxArray*)
-                       boost_and_two_level__1_sm_ehs_P.RTEConversion1_P5_Size);
+                       boost_and_two_level__1_sm_ehs_P.IOTypeSel_LoadIn_P4_Size);
       }
 
       /* work vectors */
-      ssSetRWork(rts, (real_T *)
-                 &boost_and_two_level__1_sm_ehs_DW.RTEConversion1_RWORK[0]);
       ssSetPWork(rts, (void **)
-                 &boost_and_two_level__1_sm_ehs_DW.RTEConversion1_PWORK);
+                 &boost_and_two_level__1_sm_ehs_DW.IOTypeSel_LoadIn_PWORK);
 
       {
         struct _ssDWorkRecord *dWorkRecord = (struct _ssDWorkRecord *)
@@ -8635,25 +8862,18 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
           &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn19.dWorkAux;
         ssSetSFcnDWork(rts, dWorkRecord);
         ssSetSFcnDWorkAux(rts, dWorkAuxRecord);
-        _ssSetNumDWork(rts, 2);
-
-        /* RWORK */
-        ssSetDWorkWidth(rts, 0, 4);
-        ssSetDWorkDataType(rts, 0,SS_DOUBLE);
-        ssSetDWorkComplexSignal(rts, 0, 0);
-        ssSetDWork(rts, 0,
-                   &boost_and_two_level__1_sm_ehs_DW.RTEConversion1_RWORK[0]);
+        _ssSetNumDWork(rts, 1);
 
         /* PWORK */
-        ssSetDWorkWidth(rts, 1, 1);
-        ssSetDWorkDataType(rts, 1,SS_POINTER);
-        ssSetDWorkComplexSignal(rts, 1, 0);
-        ssSetDWork(rts, 1,
-                   &boost_and_two_level__1_sm_ehs_DW.RTEConversion1_PWORK);
+        ssSetDWorkWidth(rts, 0, 1);
+        ssSetDWorkDataType(rts, 0,SS_POINTER);
+        ssSetDWorkComplexSignal(rts, 0, 0);
+        ssSetDWork(rts, 0,
+                   &boost_and_two_level__1_sm_ehs_DW.IOTypeSel_LoadIn_PWORK);
       }
 
       /* registration */
-      rte_conversion(rts);
+      sfun_fct_op7160ex1_load_in(rts);
       sfcnInitializeSizes(rts);
       sfcnInitializeSampleTimes(rts);
 
@@ -8663,27 +8883,20 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       sfcnTsMap[0] = 1;
 
       /* set compiled values of dynamic vector attributes */
-      ssSetInputPortWidth(rts, 0, 4);
-      ssSetInputPortDataType(rts, 0, SS_DOUBLE);
-      ssSetInputPortComplexSignal(rts, 0, 0);
-      ssSetInputPortFrameData(rts, 0, 0);
-      ssSetOutputPortWidth(rts, 0, 4);
-      ssSetOutputPortDataType(rts, 0, SS_DOUBLE);
-      ssSetOutputPortComplexSignal(rts, 0, 0);
-      ssSetOutputPortFrameData(rts, 0, 0);
-      ssSetNumRWork(rts, 4);
       ssSetNumNonsampledZCs(rts, 0);
 
       /* Update connectivity flags for each port */
       _ssSetInputPortConnected(rts, 0, 1);
-      _ssSetOutputPortConnected(rts, 0, 1);
+      _ssSetInputPortConnected(rts, 1, 1);
+      _ssSetOutputPortConnected(rts, 0, 0);
       _ssSetOutputPortBeingMerged(rts, 0, 0);
 
       /* Update the BufferDstPort flags for each input port */
       ssSetInputPortBufferDstPort(rts, 0, -1);
+      ssSetInputPortBufferDstPort(rts, 1, -1);
     }
 
-    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S9>/RTE Conversion (rte_conversion) */
+    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S12>/rtlab_io_block (sfun_op7160ex1_pwm_in) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[20];
 
@@ -8732,43 +8945,42 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
                          [20]);
       }
 
-      /* inputs */
-      {
-        _ssSetNumInputPorts(rts, 1);
-        ssSetPortInfoForInputs(rts,
-          &boost_and_two_level__1_sm_ehs_M->
-          NonInlinedSFcns.Sfcn20.inputPortInfo[0]);
-
-        /* port 0 */
-        {
-          ssSetInputPortRequiredContiguous(rts, 0, 1);
-          ssSetInputPortSignal(rts, 0,
-                               boost_and_two_level__1_sm_ehs_B.TmpSignalConversionAtRTEConvers);
-          _ssSetInputPortNumDimensions(rts, 0, 1);
-          ssSetInputPortWidth(rts, 0, 4);
-        }
-      }
-
       /* outputs */
       {
         ssSetPortInfoForOutputs(rts,
           &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn20.outputPortInfo
           [0]);
-        _ssSetNumOutputPorts(rts, 1);
+        _ssSetNumOutputPorts(rts, 3);
 
         /* port 0 */
         {
           _ssSetOutputPortNumDimensions(rts, 0, 1);
-          ssSetOutputPortWidth(rts, 0, 4);
+          ssSetOutputPortWidth(rts, 0, 8);
           ssSetOutputPortSignal(rts, 0, ((real_T *)
-            boost_and_two_level__1_sm_ehs_B.RTEConversion));
+            boost_and_two_level__1_sm_ehs_B.rtlab_io_block_o1_c));
+        }
+
+        /* port 1 */
+        {
+          _ssSetOutputPortNumDimensions(rts, 1, 1);
+          ssSetOutputPortWidth(rts, 1, 8);
+          ssSetOutputPortSignal(rts, 1, ((real_T *)
+            boost_and_two_level__1_sm_ehs_B.rtlab_io_block_o2_a));
+        }
+
+        /* port 2 */
+        {
+          _ssSetOutputPortNumDimensions(rts, 2, 1);
+          ssSetOutputPortWidth(rts, 2, 1);
+          ssSetOutputPortSignal(rts, 2, ((real_T *)
+            &boost_and_two_level__1_sm_ehs_B.rtlab_io_block_o3_f));
         }
       }
 
       /* path info */
-      ssSetModelName(rts, "RTE Conversion");
+      ssSetModelName(rts, "rtlab_io_block");
       ssSetPath(rts,
-                "boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Conversion");
+                "boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1/rtlab_io_block");
       ssSetRTModel(rts,boost_and_two_level__1_sm_ehs_M);
       ssSetParentSS(rts, (NULL));
       ssSetRootSS(rts, rts);
@@ -8778,25 +8990,25 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       {
         mxArray **sfcnParams = (mxArray **)
           &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn20.params;
-        ssSetSFcnParamsCount(rts, 5);
+        ssSetSFcnParamsCount(rts, 6);
         ssSetSFcnParamsPtr(rts, &sfcnParams[0]);
         ssSetSFcnParam(rts, 0, (mxArray*)
-                       boost_and_two_level__1_sm_ehs_P.RTEConversion_P1_Size);
+                       boost_and_two_level__1_sm_ehs_P.rtlab_io_block_P1_Size_b);
         ssSetSFcnParam(rts, 1, (mxArray*)
-                       boost_and_two_level__1_sm_ehs_P.RTEConversion_P2_Size);
+                       boost_and_two_level__1_sm_ehs_P.rtlab_io_block_P2_Size_k);
         ssSetSFcnParam(rts, 2, (mxArray*)
-                       boost_and_two_level__1_sm_ehs_P.RTEConversion_P3_Size);
+                       boost_and_two_level__1_sm_ehs_P.rtlab_io_block_P3_Size_i);
         ssSetSFcnParam(rts, 3, (mxArray*)
-                       boost_and_two_level__1_sm_ehs_P.RTEConversion_P4_Size);
+                       boost_and_two_level__1_sm_ehs_P.rtlab_io_block_P4_Size_g);
         ssSetSFcnParam(rts, 4, (mxArray*)
-                       boost_and_two_level__1_sm_ehs_P.RTEConversion_P5_Size);
+                       boost_and_two_level__1_sm_ehs_P.rtlab_io_block_P5_Size_j);
+        ssSetSFcnParam(rts, 5, (mxArray*)
+                       boost_and_two_level__1_sm_ehs_P.rtlab_io_block_P6_Size_k);
       }
 
       /* work vectors */
-      ssSetRWork(rts, (real_T *)
-                 &boost_and_two_level__1_sm_ehs_DW.RTEConversion_RWORK[0]);
       ssSetPWork(rts, (void **)
-                 &boost_and_two_level__1_sm_ehs_DW.RTEConversion_PWORK);
+                 &boost_and_two_level__1_sm_ehs_DW.rtlab_io_block_PWORK_f);
 
       {
         struct _ssDWorkRecord *dWorkRecord = (struct _ssDWorkRecord *)
@@ -8805,24 +9017,18 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
           &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn20.dWorkAux;
         ssSetSFcnDWork(rts, dWorkRecord);
         ssSetSFcnDWorkAux(rts, dWorkAuxRecord);
-        _ssSetNumDWork(rts, 2);
-
-        /* RWORK */
-        ssSetDWorkWidth(rts, 0, 4);
-        ssSetDWorkDataType(rts, 0,SS_DOUBLE);
-        ssSetDWorkComplexSignal(rts, 0, 0);
-        ssSetDWork(rts, 0,
-                   &boost_and_two_level__1_sm_ehs_DW.RTEConversion_RWORK[0]);
+        _ssSetNumDWork(rts, 1);
 
         /* PWORK */
-        ssSetDWorkWidth(rts, 1, 1);
-        ssSetDWorkDataType(rts, 1,SS_POINTER);
-        ssSetDWorkComplexSignal(rts, 1, 0);
-        ssSetDWork(rts, 1, &boost_and_two_level__1_sm_ehs_DW.RTEConversion_PWORK);
+        ssSetDWorkWidth(rts, 0, 1);
+        ssSetDWorkDataType(rts, 0,SS_POINTER);
+        ssSetDWorkComplexSignal(rts, 0, 0);
+        ssSetDWork(rts, 0,
+                   &boost_and_two_level__1_sm_ehs_DW.rtlab_io_block_PWORK_f);
       }
 
       /* registration */
-      rte_conversion(rts);
+      sfun_op7160ex1_pwm_in(rts);
       sfcnInitializeSizes(rts);
       sfcnInitializeSampleTimes(rts);
 
@@ -8832,27 +9038,20 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       sfcnTsMap[0] = 1;
 
       /* set compiled values of dynamic vector attributes */
-      ssSetInputPortWidth(rts, 0, 4);
-      ssSetInputPortDataType(rts, 0, SS_DOUBLE);
-      ssSetInputPortComplexSignal(rts, 0, 0);
-      ssSetInputPortFrameData(rts, 0, 0);
-      ssSetOutputPortWidth(rts, 0, 4);
-      ssSetOutputPortDataType(rts, 0, SS_DOUBLE);
-      ssSetOutputPortComplexSignal(rts, 0, 0);
-      ssSetOutputPortFrameData(rts, 0, 0);
-      ssSetNumRWork(rts, 4);
       ssSetNumNonsampledZCs(rts, 0);
 
       /* Update connectivity flags for each port */
-      _ssSetInputPortConnected(rts, 0, 1);
       _ssSetOutputPortConnected(rts, 0, 1);
+      _ssSetOutputPortConnected(rts, 1, 1);
+      _ssSetOutputPortConnected(rts, 2, 1);
       _ssSetOutputPortBeingMerged(rts, 0, 0);
+      _ssSetOutputPortBeingMerged(rts, 1, 0);
+      _ssSetOutputPortBeingMerged(rts, 2, 0);
 
       /* Update the BufferDstPort flags for each input port */
-      ssSetInputPortBufferDstPort(rts, 0, -1);
     }
 
-    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S9>/RTE Logical Operator1 (rte_logical_operator) */
+    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S12>/IOTypeSel_LoadIn (sfun_fct_op7160ex1_load_in) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[21];
 
@@ -8910,28 +9109,20 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
 
         /* port 0 */
         {
-          real_T const **sfcnUPtrs = (real_T const **)
-            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn21.UPtrs0;
-          sfcnUPtrs[0] = boost_and_two_level__1_sm_ehs_B.RTEConversion1;
-          sfcnUPtrs[1] = &boost_and_two_level__1_sm_ehs_B.RTEConversion1[1];
-          sfcnUPtrs[2] = &boost_and_two_level__1_sm_ehs_B.RTEConversion1[2];
-          sfcnUPtrs[3] = &boost_and_two_level__1_sm_ehs_B.RTEConversion1[3];
-          ssSetInputPortSignalPtrs(rts, 0, (InputPtrsType)&sfcnUPtrs[0]);
+          ssSetInputPortRequiredContiguous(rts, 0, 1);
+          ssSetInputPortSignal(rts, 0,
+                               &boost_and_two_level__1_sm_ehs_B.Memory1_h);
           _ssSetInputPortNumDimensions(rts, 0, 1);
-          ssSetInputPortWidth(rts, 0, 4);
+          ssSetInputPortWidth(rts, 0, 1);
         }
 
         /* port 1 */
         {
-          real_T const **sfcnUPtrs = (real_T const **)
-            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn21.UPtrs1;
-          sfcnUPtrs[0] = boost_and_two_level__1_sm_ehs_B.RTEConversion;
-          sfcnUPtrs[1] = &boost_and_two_level__1_sm_ehs_B.RTEConversion[1];
-          sfcnUPtrs[2] = &boost_and_two_level__1_sm_ehs_B.RTEConversion[2];
-          sfcnUPtrs[3] = &boost_and_two_level__1_sm_ehs_B.RTEConversion[3];
-          ssSetInputPortSignalPtrs(rts, 1, (InputPtrsType)&sfcnUPtrs[0]);
+          ssSetInputPortRequiredContiguous(rts, 1, 1);
+          ssSetInputPortSignal(rts, 1,
+                               &boost_and_two_level__1_sm_ehs_B.IOTypeSel_p);
           _ssSetInputPortNumDimensions(rts, 1, 1);
-          ssSetInputPortWidth(rts, 1, 4);
+          ssSetInputPortWidth(rts, 1, 1);
         }
       }
 
@@ -8945,16 +9136,16 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
         /* port 0 */
         {
           _ssSetOutputPortNumDimensions(rts, 0, 1);
-          ssSetOutputPortWidth(rts, 0, 4);
+          ssSetOutputPortWidth(rts, 0, 1);
           ssSetOutputPortSignal(rts, 0, ((real_T *)
-            boost_and_two_level__1_sm_ehs_B.RTELogicalOperator1));
+            &boost_and_two_level__1_sm_ehs_B.IOTypeSel_LoadIn_j));
         }
       }
 
       /* path info */
-      ssSetModelName(rts, "RTE Logical Operator1");
+      ssSetModelName(rts, "IOTypeSel_LoadIn");
       ssSetPath(rts,
-                "boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Logical Operator1");
+                "boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1/IOTypeSel_LoadIn");
       ssSetRTModel(rts,boost_and_two_level__1_sm_ehs_M);
       ssSetParentSS(rts, (NULL));
       ssSetRootSS(rts, rts);
@@ -8964,19 +9155,21 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       {
         mxArray **sfcnParams = (mxArray **)
           &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn21.params;
-        ssSetSFcnParamsCount(rts, 3);
+        ssSetSFcnParamsCount(rts, 4);
         ssSetSFcnParamsPtr(rts, &sfcnParams[0]);
         ssSetSFcnParam(rts, 0, (mxArray*)
-                       boost_and_two_level__1_sm_ehs_P.RTELogicalOperator1_P1_Size);
+                       boost_and_two_level__1_sm_ehs_P.IOTypeSel_LoadIn_P1_Size_e);
         ssSetSFcnParam(rts, 1, (mxArray*)
-                       boost_and_two_level__1_sm_ehs_P.RTELogicalOperator1_P2_Size);
+                       boost_and_two_level__1_sm_ehs_P.IOTypeSel_LoadIn_P2_Size_o);
         ssSetSFcnParam(rts, 2, (mxArray*)
-                       boost_and_two_level__1_sm_ehs_P.RTELogicalOperator1_P3_Size);
+                       boost_and_two_level__1_sm_ehs_P.IOTypeSel_LoadIn_P3_Size_m);
+        ssSetSFcnParam(rts, 3, (mxArray*)
+                       boost_and_two_level__1_sm_ehs_P.IOTypeSel_LoadIn_P4_Size_e);
       }
 
       /* work vectors */
       ssSetPWork(rts, (void **)
-                 &boost_and_two_level__1_sm_ehs_DW.RTELogicalOperator1_PWORK);
+                 &boost_and_two_level__1_sm_ehs_DW.IOTypeSel_LoadIn_PWORK_j);
 
       {
         struct _ssDWorkRecord *dWorkRecord = (struct _ssDWorkRecord *)
@@ -8992,11 +9185,11 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
         ssSetDWorkDataType(rts, 0,SS_POINTER);
         ssSetDWorkComplexSignal(rts, 0, 0);
         ssSetDWork(rts, 0,
-                   &boost_and_two_level__1_sm_ehs_DW.RTELogicalOperator1_PWORK);
+                   &boost_and_two_level__1_sm_ehs_DW.IOTypeSel_LoadIn_PWORK_j);
       }
 
       /* registration */
-      rte_logical_operator(rts);
+      sfun_fct_op7160ex1_load_in(rts);
       sfcnInitializeSizes(rts);
       sfcnInitializeSampleTimes(rts);
 
@@ -9006,24 +9199,12 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       sfcnTsMap[0] = 1;
 
       /* set compiled values of dynamic vector attributes */
-      ssSetInputPortWidth(rts, 0, 4);
-      ssSetInputPortDataType(rts, 0, SS_DOUBLE);
-      ssSetInputPortComplexSignal(rts, 0, 0);
-      ssSetInputPortFrameData(rts, 0, 0);
-      ssSetInputPortWidth(rts, 1, 4);
-      ssSetInputPortDataType(rts, 1, SS_DOUBLE);
-      ssSetInputPortComplexSignal(rts, 1, 0);
-      ssSetInputPortFrameData(rts, 1, 0);
-      ssSetOutputPortWidth(rts, 0, 4);
-      ssSetOutputPortDataType(rts, 0, SS_DOUBLE);
-      ssSetOutputPortComplexSignal(rts, 0, 0);
-      ssSetOutputPortFrameData(rts, 0, 0);
       ssSetNumNonsampledZCs(rts, 0);
 
       /* Update connectivity flags for each port */
       _ssSetInputPortConnected(rts, 0, 1);
       _ssSetInputPortConnected(rts, 1, 1);
-      _ssSetOutputPortConnected(rts, 0, 1);
+      _ssSetOutputPortConnected(rts, 0, 0);
       _ssSetOutputPortBeingMerged(rts, 0, 0);
 
       /* Update the BufferDstPort flags for each input port */
@@ -9031,7 +9212,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       ssSetInputPortBufferDstPort(rts, 1, -1);
     }
 
-    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S9>/RTE Ground (rte_ground) */
+    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S2>/OpWriteFile (opwritefile) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[22];
 
@@ -9080,26 +9261,54 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
                          [22]);
       }
 
+      /* inputs */
+      {
+        _ssSetNumInputPorts(rts, 1);
+        ssSetPortInfoForInputs(rts,
+          &boost_and_two_level__1_sm_ehs_M->
+          NonInlinedSFcns.Sfcn22.inputPortInfo[0]);
+
+        /* port 0 */
+        {
+          real_T const **sfcnUPtrs = (real_T const **)
+            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn22.UPtrs0;
+          sfcnUPtrs[0] = &boost_and_two_level__1_sm_ehs_B.Switch;
+          sfcnUPtrs[1] = &boost_and_two_level__1_sm_ehs_B.Switch_e;
+          sfcnUPtrs[2] = &boost_and_two_level__1_sm_ehs_B.P_PV;
+          sfcnUPtrs[3] = &boost_and_two_level__1_sm_ehs_B.SFunction_n[0];
+          ssSetInputPortSignalPtrs(rts, 0, (InputPtrsType)&sfcnUPtrs[0]);
+          _ssSetInputPortNumDimensions(rts, 0, 1);
+          ssSetInputPortWidth(rts, 0, 4);
+        }
+      }
+
       /* outputs */
       {
         ssSetPortInfoForOutputs(rts,
           &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn22.outputPortInfo
           [0]);
-        _ssSetNumOutputPorts(rts, 1);
+        _ssSetNumOutputPorts(rts, 2);
 
         /* port 0 */
         {
           _ssSetOutputPortNumDimensions(rts, 0, 1);
-          ssSetOutputPortWidth(rts, 0, 4);
+          ssSetOutputPortWidth(rts, 0, 1);
           ssSetOutputPortSignal(rts, 0, ((real_T *)
-            boost_and_two_level__1_sm_ehs_B.RTEGround));
+            &boost_and_two_level__1_sm_ehs_B.OpWriteFile_o1));
+        }
+
+        /* port 1 */
+        {
+          _ssSetOutputPortNumDimensions(rts, 1, 1);
+          ssSetOutputPortWidth(rts, 1, 1);
+          ssSetOutputPortSignal(rts, 1, ((real_T *)
+            &boost_and_two_level__1_sm_ehs_B.OpWriteFile_o2));
         }
       }
 
       /* path info */
-      ssSetModelName(rts, "RTE Ground");
-      ssSetPath(rts,
-                "boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Ground");
+      ssSetModelName(rts, "OpWriteFile");
+      ssSetPath(rts, "boost_and_two_level__1_sm_ehs/SM_eHS/OpWriteFile");
       ssSetRTModel(rts,boost_and_two_level__1_sm_ehs_M);
       ssSetParentSS(rts, (NULL));
       ssSetRootSS(rts, rts);
@@ -9109,15 +9318,37 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       {
         mxArray **sfcnParams = (mxArray **)
           &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn22.params;
-        ssSetSFcnParamsCount(rts, 1);
+        ssSetSFcnParamsCount(rts, 12);
         ssSetSFcnParamsPtr(rts, &sfcnParams[0]);
         ssSetSFcnParam(rts, 0, (mxArray*)
-                       boost_and_two_level__1_sm_ehs_P.RTEGround_P1_Size);
+                       boost_and_two_level__1_sm_ehs_P.OpWriteFile_P1_Size);
+        ssSetSFcnParam(rts, 1, (mxArray*)
+                       boost_and_two_level__1_sm_ehs_P.OpWriteFile_P2_Size);
+        ssSetSFcnParam(rts, 2, (mxArray*)
+                       boost_and_two_level__1_sm_ehs_P.OpWriteFile_P3_Size);
+        ssSetSFcnParam(rts, 3, (mxArray*)
+                       boost_and_two_level__1_sm_ehs_P.OpWriteFile_P4_Size);
+        ssSetSFcnParam(rts, 4, (mxArray*)
+                       boost_and_two_level__1_sm_ehs_P.OpWriteFile_P5_Size);
+        ssSetSFcnParam(rts, 5, (mxArray*)
+                       boost_and_two_level__1_sm_ehs_P.OpWriteFile_P6_Size);
+        ssSetSFcnParam(rts, 6, (mxArray*)
+                       boost_and_two_level__1_sm_ehs_P.OpWriteFile_P7_Size);
+        ssSetSFcnParam(rts, 7, (mxArray*)
+                       boost_and_two_level__1_sm_ehs_P.OpWriteFile_P8_Size);
+        ssSetSFcnParam(rts, 8, (mxArray*)
+                       boost_and_two_level__1_sm_ehs_P.OpWriteFile_P9_Size);
+        ssSetSFcnParam(rts, 9, (mxArray*)
+                       boost_and_two_level__1_sm_ehs_P.OpWriteFile_P10_Size);
+        ssSetSFcnParam(rts, 10, (mxArray*)
+                       boost_and_two_level__1_sm_ehs_P.OpWriteFile_P11_Size);
+        ssSetSFcnParam(rts, 11, (mxArray*)
+                       boost_and_two_level__1_sm_ehs_P.OpWriteFile_P12_Size);
       }
 
       /* work vectors */
       ssSetPWork(rts, (void **)
-                 &boost_and_two_level__1_sm_ehs_DW.RTEGround_PWORK);
+                 &boost_and_two_level__1_sm_ehs_DW.OpWriteFile_PWORK);
 
       {
         struct _ssDWorkRecord *dWorkRecord = (struct _ssDWorkRecord *)
@@ -9132,11 +9363,11 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
         ssSetDWorkWidth(rts, 0, 1);
         ssSetDWorkDataType(rts, 0,SS_POINTER);
         ssSetDWorkComplexSignal(rts, 0, 0);
-        ssSetDWork(rts, 0, &boost_and_two_level__1_sm_ehs_DW.RTEGround_PWORK);
+        ssSetDWork(rts, 0, &boost_and_two_level__1_sm_ehs_DW.OpWriteFile_PWORK);
       }
 
       /* registration */
-      rte_ground(rts);
+      opwritefile(rts);
       sfcnInitializeSizes(rts);
       sfcnInitializeSampleTimes(rts);
 
@@ -9146,20 +9377,24 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       sfcnTsMap[0] = 1;
 
       /* set compiled values of dynamic vector attributes */
-      ssSetOutputPortWidth(rts, 0, 4);
-      ssSetOutputPortDataType(rts, 0, SS_DOUBLE);
-      ssSetOutputPortComplexSignal(rts, 0, 0);
-      ssSetOutputPortFrameData(rts, 0, 0);
+      ssSetInputPortWidth(rts, 0, 4);
+      ssSetInputPortDataType(rts, 0, SS_DOUBLE);
+      ssSetInputPortComplexSignal(rts, 0, 0);
+      ssSetInputPortFrameData(rts, 0, 0);
       ssSetNumNonsampledZCs(rts, 0);
 
       /* Update connectivity flags for each port */
-      _ssSetOutputPortConnected(rts, 0, 1);
+      _ssSetInputPortConnected(rts, 0, 1);
+      _ssSetOutputPortConnected(rts, 0, 0);
+      _ssSetOutputPortConnected(rts, 1, 0);
       _ssSetOutputPortBeingMerged(rts, 0, 0);
+      _ssSetOutputPortBeingMerged(rts, 1, 0);
 
       /* Update the BufferDstPort flags for each input port */
+      ssSetInputPortBufferDstPort(rts, 0, -1);
     }
 
-    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S26>/RTE_Conversion_1 (rte_conversion_ophsdio) */
+    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S10>/RTE Conversion (rte_conversion) */
     {
       SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[23];
 
@@ -9217,12 +9452,841 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
 
         /* port 0 */
         {
+          ssSetInputPortRequiredContiguous(rts, 0, 1);
+          ssSetInputPortSignal(rts, 0,
+                               boost_and_two_level__1_sm_ehs_B.TmpSignalConversionAtRTEConvers);
+          _ssSetInputPortNumDimensions(rts, 0, 1);
+          ssSetInputPortWidth(rts, 0, 4);
+        }
+      }
+
+      /* outputs */
+      {
+        ssSetPortInfoForOutputs(rts,
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn23.outputPortInfo
+          [0]);
+        _ssSetNumOutputPorts(rts, 1);
+
+        /* port 0 */
+        {
+          _ssSetOutputPortNumDimensions(rts, 0, 1);
+          ssSetOutputPortWidth(rts, 0, 4);
+          ssSetOutputPortSignal(rts, 0, ((real_T *)
+            boost_and_two_level__1_sm_ehs_B.RTEConversion));
+        }
+      }
+
+      /* path info */
+      ssSetModelName(rts, "RTE Conversion");
+      ssSetPath(rts,
+                "boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Conversion");
+      ssSetRTModel(rts,boost_and_two_level__1_sm_ehs_M);
+      ssSetParentSS(rts, (NULL));
+      ssSetRootSS(rts, rts);
+      ssSetVersion(rts, SIMSTRUCT_VERSION_LEVEL2);
+
+      /* parameters */
+      {
+        mxArray **sfcnParams = (mxArray **)
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn23.params;
+        ssSetSFcnParamsCount(rts, 5);
+        ssSetSFcnParamsPtr(rts, &sfcnParams[0]);
+        ssSetSFcnParam(rts, 0, (mxArray*)
+                       boost_and_two_level__1_sm_ehs_P.RTEConversion_P1_Size);
+        ssSetSFcnParam(rts, 1, (mxArray*)
+                       boost_and_two_level__1_sm_ehs_P.RTEConversion_P2_Size);
+        ssSetSFcnParam(rts, 2, (mxArray*)
+                       boost_and_two_level__1_sm_ehs_P.RTEConversion_P3_Size);
+        ssSetSFcnParam(rts, 3, (mxArray*)
+                       boost_and_two_level__1_sm_ehs_P.RTEConversion_P4_Size);
+        ssSetSFcnParam(rts, 4, (mxArray*)
+                       boost_and_two_level__1_sm_ehs_P.RTEConversion_P5_Size);
+      }
+
+      /* work vectors */
+      ssSetRWork(rts, (real_T *)
+                 &boost_and_two_level__1_sm_ehs_DW.RTEConversion_RWORK[0]);
+      ssSetPWork(rts, (void **)
+                 &boost_and_two_level__1_sm_ehs_DW.RTEConversion_PWORK);
+
+      {
+        struct _ssDWorkRecord *dWorkRecord = (struct _ssDWorkRecord *)
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn23.dWork;
+        struct _ssDWorkAuxRecord *dWorkAuxRecord = (struct _ssDWorkAuxRecord *)
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn23.dWorkAux;
+        ssSetSFcnDWork(rts, dWorkRecord);
+        ssSetSFcnDWorkAux(rts, dWorkAuxRecord);
+        _ssSetNumDWork(rts, 2);
+
+        /* RWORK */
+        ssSetDWorkWidth(rts, 0, 4);
+        ssSetDWorkDataType(rts, 0,SS_DOUBLE);
+        ssSetDWorkComplexSignal(rts, 0, 0);
+        ssSetDWork(rts, 0,
+                   &boost_and_two_level__1_sm_ehs_DW.RTEConversion_RWORK[0]);
+
+        /* PWORK */
+        ssSetDWorkWidth(rts, 1, 1);
+        ssSetDWorkDataType(rts, 1,SS_POINTER);
+        ssSetDWorkComplexSignal(rts, 1, 0);
+        ssSetDWork(rts, 1, &boost_and_two_level__1_sm_ehs_DW.RTEConversion_PWORK);
+      }
+
+      /* registration */
+      rte_conversion(rts);
+      sfcnInitializeSizes(rts);
+      sfcnInitializeSampleTimes(rts);
+
+      /* adjust sample time */
+      ssSetSampleTime(rts, 0, 2.0E-5);
+      ssSetOffsetTime(rts, 0, 0.0);
+      sfcnTsMap[0] = 1;
+
+      /* set compiled values of dynamic vector attributes */
+      ssSetInputPortWidth(rts, 0, 4);
+      ssSetInputPortDataType(rts, 0, SS_DOUBLE);
+      ssSetInputPortComplexSignal(rts, 0, 0);
+      ssSetInputPortFrameData(rts, 0, 0);
+      ssSetOutputPortWidth(rts, 0, 4);
+      ssSetOutputPortDataType(rts, 0, SS_DOUBLE);
+      ssSetOutputPortComplexSignal(rts, 0, 0);
+      ssSetOutputPortFrameData(rts, 0, 0);
+      ssSetNumRWork(rts, 4);
+      ssSetNumNonsampledZCs(rts, 0);
+
+      /* Update connectivity flags for each port */
+      _ssSetInputPortConnected(rts, 0, 1);
+      _ssSetOutputPortConnected(rts, 0, 1);
+      _ssSetOutputPortBeingMerged(rts, 0, 0);
+
+      /* Update the BufferDstPort flags for each input port */
+      ssSetInputPortBufferDstPort(rts, 0, -1);
+    }
+
+    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S10>/RTE Conversion1 (rte_conversion) */
+    {
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[24];
+
+      /* timing info */
+      time_T *sfcnPeriod =
+        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn24.sfcnPeriod;
+      time_T *sfcnOffset =
+        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn24.sfcnOffset;
+      int_T *sfcnTsMap =
+        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn24.sfcnTsMap;
+      (void) memset((void*)sfcnPeriod, 0,
+                    sizeof(time_T)*1);
+      (void) memset((void*)sfcnOffset, 0,
+                    sizeof(time_T)*1);
+      ssSetSampleTimePtr(rts, &sfcnPeriod[0]);
+      ssSetOffsetTimePtr(rts, &sfcnOffset[0]);
+      ssSetSampleTimeTaskIDPtr(rts, sfcnTsMap);
+
+      /* Set up the mdlInfo pointer */
+      {
+        ssSetBlkInfo2Ptr(rts,
+                         &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.blkInfo2
+                         [24]);
+      }
+
+      ssSetRTWSfcnInfo(rts, boost_and_two_level__1_sm_ehs_M->sfcnInfo);
+
+      /* Allocate memory of model methods 2 */
+      {
+        ssSetModelMethods2(rts,
+                           &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.methods2
+                           [24]);
+      }
+
+      /* Allocate memory of model methods 3 */
+      {
+        ssSetModelMethods3(rts,
+                           &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.methods3
+                           [24]);
+      }
+
+      /* Allocate memory for states auxilliary information */
+      {
+        ssSetStatesInfo2(rts,
+                         &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.statesInfo2
+                         [24]);
+      }
+
+      /* inputs */
+      {
+        _ssSetNumInputPorts(rts, 1);
+        ssSetPortInfoForInputs(rts,
+          &boost_and_two_level__1_sm_ehs_M->
+          NonInlinedSFcns.Sfcn24.inputPortInfo[0]);
+
+        /* port 0 */
+        {
+          ssSetInputPortRequiredContiguous(rts, 0, 1);
+          ssSetInputPortSignal(rts, 0,
+                               boost_and_two_level__1_sm_ehs_B.DataTypeConversion);
+          _ssSetInputPortNumDimensions(rts, 0, 1);
+          ssSetInputPortWidth(rts, 0, 4);
+        }
+      }
+
+      /* outputs */
+      {
+        ssSetPortInfoForOutputs(rts,
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn24.outputPortInfo
+          [0]);
+        _ssSetNumOutputPorts(rts, 1);
+
+        /* port 0 */
+        {
+          _ssSetOutputPortNumDimensions(rts, 0, 1);
+          ssSetOutputPortWidth(rts, 0, 4);
+          ssSetOutputPortSignal(rts, 0, ((real_T *)
+            boost_and_two_level__1_sm_ehs_B.RTEConversion1));
+        }
+      }
+
+      /* path info */
+      ssSetModelName(rts, "RTE Conversion1");
+      ssSetPath(rts,
+                "boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Conversion1");
+      ssSetRTModel(rts,boost_and_two_level__1_sm_ehs_M);
+      ssSetParentSS(rts, (NULL));
+      ssSetRootSS(rts, rts);
+      ssSetVersion(rts, SIMSTRUCT_VERSION_LEVEL2);
+
+      /* parameters */
+      {
+        mxArray **sfcnParams = (mxArray **)
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn24.params;
+        ssSetSFcnParamsCount(rts, 5);
+        ssSetSFcnParamsPtr(rts, &sfcnParams[0]);
+        ssSetSFcnParam(rts, 0, (mxArray*)
+                       boost_and_two_level__1_sm_ehs_P.RTEConversion1_P1_Size);
+        ssSetSFcnParam(rts, 1, (mxArray*)
+                       boost_and_two_level__1_sm_ehs_P.RTEConversion1_P2_Size);
+        ssSetSFcnParam(rts, 2, (mxArray*)
+                       boost_and_two_level__1_sm_ehs_P.RTEConversion1_P3_Size);
+        ssSetSFcnParam(rts, 3, (mxArray*)
+                       boost_and_two_level__1_sm_ehs_P.RTEConversion1_P4_Size);
+        ssSetSFcnParam(rts, 4, (mxArray*)
+                       boost_and_two_level__1_sm_ehs_P.RTEConversion1_P5_Size);
+      }
+
+      /* work vectors */
+      ssSetRWork(rts, (real_T *)
+                 &boost_and_two_level__1_sm_ehs_DW.RTEConversion1_RWORK[0]);
+      ssSetPWork(rts, (void **)
+                 &boost_and_two_level__1_sm_ehs_DW.RTEConversion1_PWORK);
+
+      {
+        struct _ssDWorkRecord *dWorkRecord = (struct _ssDWorkRecord *)
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn24.dWork;
+        struct _ssDWorkAuxRecord *dWorkAuxRecord = (struct _ssDWorkAuxRecord *)
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn24.dWorkAux;
+        ssSetSFcnDWork(rts, dWorkRecord);
+        ssSetSFcnDWorkAux(rts, dWorkAuxRecord);
+        _ssSetNumDWork(rts, 2);
+
+        /* RWORK */
+        ssSetDWorkWidth(rts, 0, 4);
+        ssSetDWorkDataType(rts, 0,SS_DOUBLE);
+        ssSetDWorkComplexSignal(rts, 0, 0);
+        ssSetDWork(rts, 0,
+                   &boost_and_two_level__1_sm_ehs_DW.RTEConversion1_RWORK[0]);
+
+        /* PWORK */
+        ssSetDWorkWidth(rts, 1, 1);
+        ssSetDWorkDataType(rts, 1,SS_POINTER);
+        ssSetDWorkComplexSignal(rts, 1, 0);
+        ssSetDWork(rts, 1,
+                   &boost_and_two_level__1_sm_ehs_DW.RTEConversion1_PWORK);
+      }
+
+      /* registration */
+      rte_conversion(rts);
+      sfcnInitializeSizes(rts);
+      sfcnInitializeSampleTimes(rts);
+
+      /* adjust sample time */
+      ssSetSampleTime(rts, 0, 2.0E-5);
+      ssSetOffsetTime(rts, 0, 0.0);
+      sfcnTsMap[0] = 1;
+
+      /* set compiled values of dynamic vector attributes */
+      ssSetInputPortWidth(rts, 0, 4);
+      ssSetInputPortDataType(rts, 0, SS_DOUBLE);
+      ssSetInputPortComplexSignal(rts, 0, 0);
+      ssSetInputPortFrameData(rts, 0, 0);
+      ssSetOutputPortWidth(rts, 0, 4);
+      ssSetOutputPortDataType(rts, 0, SS_DOUBLE);
+      ssSetOutputPortComplexSignal(rts, 0, 0);
+      ssSetOutputPortFrameData(rts, 0, 0);
+      ssSetNumRWork(rts, 4);
+      ssSetNumNonsampledZCs(rts, 0);
+
+      /* Update connectivity flags for each port */
+      _ssSetInputPortConnected(rts, 0, 1);
+      _ssSetOutputPortConnected(rts, 0, 1);
+      _ssSetOutputPortBeingMerged(rts, 0, 0);
+
+      /* Update the BufferDstPort flags for each input port */
+      ssSetInputPortBufferDstPort(rts, 0, -1);
+    }
+
+    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S10>/RTE Logical Operator1 (rte_logical_operator) */
+    {
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[25];
+
+      /* timing info */
+      time_T *sfcnPeriod =
+        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn25.sfcnPeriod;
+      time_T *sfcnOffset =
+        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn25.sfcnOffset;
+      int_T *sfcnTsMap =
+        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn25.sfcnTsMap;
+      (void) memset((void*)sfcnPeriod, 0,
+                    sizeof(time_T)*1);
+      (void) memset((void*)sfcnOffset, 0,
+                    sizeof(time_T)*1);
+      ssSetSampleTimePtr(rts, &sfcnPeriod[0]);
+      ssSetOffsetTimePtr(rts, &sfcnOffset[0]);
+      ssSetSampleTimeTaskIDPtr(rts, sfcnTsMap);
+
+      /* Set up the mdlInfo pointer */
+      {
+        ssSetBlkInfo2Ptr(rts,
+                         &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.blkInfo2
+                         [25]);
+      }
+
+      ssSetRTWSfcnInfo(rts, boost_and_two_level__1_sm_ehs_M->sfcnInfo);
+
+      /* Allocate memory of model methods 2 */
+      {
+        ssSetModelMethods2(rts,
+                           &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.methods2
+                           [25]);
+      }
+
+      /* Allocate memory of model methods 3 */
+      {
+        ssSetModelMethods3(rts,
+                           &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.methods3
+                           [25]);
+      }
+
+      /* Allocate memory for states auxilliary information */
+      {
+        ssSetStatesInfo2(rts,
+                         &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.statesInfo2
+                         [25]);
+      }
+
+      /* inputs */
+      {
+        _ssSetNumInputPorts(rts, 2);
+        ssSetPortInfoForInputs(rts,
+          &boost_and_two_level__1_sm_ehs_M->
+          NonInlinedSFcns.Sfcn25.inputPortInfo[0]);
+
+        /* port 0 */
+        {
           real_T const **sfcnUPtrs = (real_T const **)
-            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn23.UPtrs0;
-          sfcnUPtrs[0] = &boost_and_two_level__1_sm_ehs_B.RTELogicalOperator1[0];
-          sfcnUPtrs[1] = &boost_and_two_level__1_sm_ehs_B.RTELogicalOperator1[1];
-          sfcnUPtrs[2] = &boost_and_two_level__1_sm_ehs_B.RTELogicalOperator1[2];
-          sfcnUPtrs[3] = &boost_and_two_level__1_sm_ehs_B.RTELogicalOperator1[3];
+            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn25.UPtrs0;
+          sfcnUPtrs[0] = boost_and_two_level__1_sm_ehs_B.RTEConversion;
+          sfcnUPtrs[1] = &boost_and_two_level__1_sm_ehs_B.RTEConversion[1];
+          sfcnUPtrs[2] = &boost_and_two_level__1_sm_ehs_B.RTEConversion[2];
+          sfcnUPtrs[3] = &boost_and_two_level__1_sm_ehs_B.RTEConversion[3];
+          ssSetInputPortSignalPtrs(rts, 0, (InputPtrsType)&sfcnUPtrs[0]);
+          _ssSetInputPortNumDimensions(rts, 0, 1);
+          ssSetInputPortWidth(rts, 0, 4);
+        }
+
+        /* port 1 */
+        {
+          real_T const **sfcnUPtrs = (real_T const **)
+            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn25.UPtrs1;
+          sfcnUPtrs[0] = boost_and_two_level__1_sm_ehs_B.RTEConversion1;
+          sfcnUPtrs[1] = &boost_and_two_level__1_sm_ehs_B.RTEConversion1[1];
+          sfcnUPtrs[2] = &boost_and_two_level__1_sm_ehs_B.RTEConversion1[2];
+          sfcnUPtrs[3] = &boost_and_two_level__1_sm_ehs_B.RTEConversion1[3];
+          ssSetInputPortSignalPtrs(rts, 1, (InputPtrsType)&sfcnUPtrs[0]);
+          _ssSetInputPortNumDimensions(rts, 1, 1);
+          ssSetInputPortWidth(rts, 1, 4);
+        }
+      }
+
+      /* outputs */
+      {
+        ssSetPortInfoForOutputs(rts,
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn25.outputPortInfo
+          [0]);
+        _ssSetNumOutputPorts(rts, 1);
+
+        /* port 0 */
+        {
+          _ssSetOutputPortNumDimensions(rts, 0, 1);
+          ssSetOutputPortWidth(rts, 0, 4);
+          ssSetOutputPortSignal(rts, 0, ((real_T *)
+            boost_and_two_level__1_sm_ehs_B.RTELogicalOperator1));
+        }
+      }
+
+      /* path info */
+      ssSetModelName(rts, "RTE Logical Operator1");
+      ssSetPath(rts,
+                "boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Logical Operator1");
+      ssSetRTModel(rts,boost_and_two_level__1_sm_ehs_M);
+      ssSetParentSS(rts, (NULL));
+      ssSetRootSS(rts, rts);
+      ssSetVersion(rts, SIMSTRUCT_VERSION_LEVEL2);
+
+      /* parameters */
+      {
+        mxArray **sfcnParams = (mxArray **)
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn25.params;
+        ssSetSFcnParamsCount(rts, 3);
+        ssSetSFcnParamsPtr(rts, &sfcnParams[0]);
+        ssSetSFcnParam(rts, 0, (mxArray*)
+                       boost_and_two_level__1_sm_ehs_P.RTELogicalOperator1_P1_Size);
+        ssSetSFcnParam(rts, 1, (mxArray*)
+                       boost_and_two_level__1_sm_ehs_P.RTELogicalOperator1_P2_Size);
+        ssSetSFcnParam(rts, 2, (mxArray*)
+                       boost_and_two_level__1_sm_ehs_P.RTELogicalOperator1_P3_Size);
+      }
+
+      /* work vectors */
+      ssSetPWork(rts, (void **)
+                 &boost_and_two_level__1_sm_ehs_DW.RTELogicalOperator1_PWORK);
+
+      {
+        struct _ssDWorkRecord *dWorkRecord = (struct _ssDWorkRecord *)
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn25.dWork;
+        struct _ssDWorkAuxRecord *dWorkAuxRecord = (struct _ssDWorkAuxRecord *)
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn25.dWorkAux;
+        ssSetSFcnDWork(rts, dWorkRecord);
+        ssSetSFcnDWorkAux(rts, dWorkAuxRecord);
+        _ssSetNumDWork(rts, 1);
+
+        /* PWORK */
+        ssSetDWorkWidth(rts, 0, 1);
+        ssSetDWorkDataType(rts, 0,SS_POINTER);
+        ssSetDWorkComplexSignal(rts, 0, 0);
+        ssSetDWork(rts, 0,
+                   &boost_and_two_level__1_sm_ehs_DW.RTELogicalOperator1_PWORK);
+      }
+
+      /* registration */
+      rte_logical_operator(rts);
+      sfcnInitializeSizes(rts);
+      sfcnInitializeSampleTimes(rts);
+
+      /* adjust sample time */
+      ssSetSampleTime(rts, 0, 2.0E-5);
+      ssSetOffsetTime(rts, 0, 0.0);
+      sfcnTsMap[0] = 1;
+
+      /* set compiled values of dynamic vector attributes */
+      ssSetInputPortWidth(rts, 0, 4);
+      ssSetInputPortDataType(rts, 0, SS_DOUBLE);
+      ssSetInputPortComplexSignal(rts, 0, 0);
+      ssSetInputPortFrameData(rts, 0, 0);
+      ssSetInputPortWidth(rts, 1, 4);
+      ssSetInputPortDataType(rts, 1, SS_DOUBLE);
+      ssSetInputPortComplexSignal(rts, 1, 0);
+      ssSetInputPortFrameData(rts, 1, 0);
+      ssSetOutputPortWidth(rts, 0, 4);
+      ssSetOutputPortDataType(rts, 0, SS_DOUBLE);
+      ssSetOutputPortComplexSignal(rts, 0, 0);
+      ssSetOutputPortFrameData(rts, 0, 0);
+      ssSetNumNonsampledZCs(rts, 0);
+
+      /* Update connectivity flags for each port */
+      _ssSetInputPortConnected(rts, 0, 1);
+      _ssSetInputPortConnected(rts, 1, 1);
+      _ssSetOutputPortConnected(rts, 0, 1);
+      _ssSetOutputPortBeingMerged(rts, 0, 0);
+
+      /* Update the BufferDstPort flags for each input port */
+      ssSetInputPortBufferDstPort(rts, 0, -1);
+      ssSetInputPortBufferDstPort(rts, 1, -1);
+    }
+
+    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S10>/RTE SPWM (rte_svpwm) */
+    {
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[26];
+
+      /* timing info */
+      time_T *sfcnPeriod =
+        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn26.sfcnPeriod;
+      time_T *sfcnOffset =
+        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn26.sfcnOffset;
+      int_T *sfcnTsMap =
+        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn26.sfcnTsMap;
+      (void) memset((void*)sfcnPeriod, 0,
+                    sizeof(time_T)*1);
+      (void) memset((void*)sfcnOffset, 0,
+                    sizeof(time_T)*1);
+      ssSetSampleTimePtr(rts, &sfcnPeriod[0]);
+      ssSetOffsetTimePtr(rts, &sfcnOffset[0]);
+      ssSetSampleTimeTaskIDPtr(rts, sfcnTsMap);
+
+      /* Set up the mdlInfo pointer */
+      {
+        ssSetBlkInfo2Ptr(rts,
+                         &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.blkInfo2
+                         [26]);
+      }
+
+      ssSetRTWSfcnInfo(rts, boost_and_two_level__1_sm_ehs_M->sfcnInfo);
+
+      /* Allocate memory of model methods 2 */
+      {
+        ssSetModelMethods2(rts,
+                           &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.methods2
+                           [26]);
+      }
+
+      /* Allocate memory of model methods 3 */
+      {
+        ssSetModelMethods3(rts,
+                           &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.methods3
+                           [26]);
+      }
+
+      /* Allocate memory for states auxilliary information */
+      {
+        ssSetStatesInfo2(rts,
+                         &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.statesInfo2
+                         [26]);
+      }
+
+      /* inputs */
+      {
+        _ssSetNumInputPorts(rts, 2);
+        ssSetPortInfoForInputs(rts,
+          &boost_and_two_level__1_sm_ehs_M->
+          NonInlinedSFcns.Sfcn26.inputPortInfo[0]);
+
+        /* port 0 */
+        {
+          ssSetInputPortRequiredContiguous(rts, 0, 1);
+          ssSetInputPortSignal(rts, 0,
+                               &boost_and_two_level__1_sm_ehs_B.rtlab_io_block_o1
+                               [0]);
+          _ssSetInputPortNumDimensions(rts, 0, 1);
+          ssSetInputPortWidth(rts, 0, 1);
+        }
+
+        /* port 1 */
+        {
+          ssSetInputPortRequiredContiguous(rts, 1, 1);
+          ssSetInputPortSignal(rts, 1,
+                               &boost_and_two_level__1_sm_ehs_B.rtlab_io_block_o2
+                               [0]);
+          _ssSetInputPortNumDimensions(rts, 1, 1);
+          ssSetInputPortWidth(rts, 1, 1);
+        }
+      }
+
+      /* outputs */
+      {
+        ssSetPortInfoForOutputs(rts,
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn26.outputPortInfo
+          [0]);
+        _ssSetNumOutputPorts(rts, 2);
+
+        /* port 0 */
+        {
+          _ssSetOutputPortNumDimensions(rts, 0, 1);
+          ssSetOutputPortWidth(rts, 0, 1);
+          ssSetOutputPortSignal(rts, 0, ((real_T *)
+            &boost_and_two_level__1_sm_ehs_B.RTESPWM_o1));
+        }
+
+        /* port 1 */
+        {
+          _ssSetOutputPortNumDimensions(rts, 1, 1);
+          ssSetOutputPortWidth(rts, 1, 1);
+          ssSetOutputPortSignal(rts, 1, ((real_T *)
+            &boost_and_two_level__1_sm_ehs_B.RTESPWM_o2));
+        }
+      }
+
+      /* path info */
+      ssSetModelName(rts, "RTE SPWM");
+      ssSetPath(rts,
+                "boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE SPWM");
+      ssSetRTModel(rts,boost_and_two_level__1_sm_ehs_M);
+      ssSetParentSS(rts, (NULL));
+      ssSetRootSS(rts, rts);
+      ssSetVersion(rts, SIMSTRUCT_VERSION_LEVEL2);
+
+      /* parameters */
+      {
+        mxArray **sfcnParams = (mxArray **)
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn26.params;
+        ssSetSFcnParamsCount(rts, 10);
+        ssSetSFcnParamsPtr(rts, &sfcnParams[0]);
+        ssSetSFcnParam(rts, 0, (mxArray*)
+                       boost_and_two_level__1_sm_ehs_P.RTESPWM_P1_Size);
+        ssSetSFcnParam(rts, 1, (mxArray*)
+                       boost_and_two_level__1_sm_ehs_P.RTESPWM_P2_Size);
+        ssSetSFcnParam(rts, 2, (mxArray*)
+                       boost_and_two_level__1_sm_ehs_P.RTESPWM_P3_Size);
+        ssSetSFcnParam(rts, 3, (mxArray*)
+                       boost_and_two_level__1_sm_ehs_P.RTESPWM_P4_Size);
+        ssSetSFcnParam(rts, 4, (mxArray*)
+                       boost_and_two_level__1_sm_ehs_P.RTESPWM_P5_Size);
+        ssSetSFcnParam(rts, 5, (mxArray*)
+                       boost_and_two_level__1_sm_ehs_P.RTESPWM_P6_Size);
+        ssSetSFcnParam(rts, 6, (mxArray*)
+                       boost_and_two_level__1_sm_ehs_P.RTESPWM_P7_Size);
+        ssSetSFcnParam(rts, 7, (mxArray*)
+                       boost_and_two_level__1_sm_ehs_P.RTESPWM_P8_Size);
+        ssSetSFcnParam(rts, 8, (mxArray*)
+                       boost_and_two_level__1_sm_ehs_P.RTESPWM_P9_Size);
+        ssSetSFcnParam(rts, 9, (mxArray*)
+                       boost_and_two_level__1_sm_ehs_P.RTESPWM_P10_Size);
+      }
+
+      /* work vectors */
+      ssSetPWork(rts, (void **) &boost_and_two_level__1_sm_ehs_DW.RTESPWM_PWORK);
+
+      {
+        struct _ssDWorkRecord *dWorkRecord = (struct _ssDWorkRecord *)
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn26.dWork;
+        struct _ssDWorkAuxRecord *dWorkAuxRecord = (struct _ssDWorkAuxRecord *)
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn26.dWorkAux;
+        ssSetSFcnDWork(rts, dWorkRecord);
+        ssSetSFcnDWorkAux(rts, dWorkAuxRecord);
+        _ssSetNumDWork(rts, 1);
+
+        /* PWORK */
+        ssSetDWorkWidth(rts, 0, 1);
+        ssSetDWorkDataType(rts, 0,SS_POINTER);
+        ssSetDWorkComplexSignal(rts, 0, 0);
+        ssSetDWork(rts, 0, &boost_and_two_level__1_sm_ehs_DW.RTESPWM_PWORK);
+      }
+
+      /* registration */
+      rte_svpwm(rts);
+      sfcnInitializeSizes(rts);
+      sfcnInitializeSampleTimes(rts);
+
+      /* adjust sample time */
+      ssSetSampleTime(rts, 0, 2.0E-5);
+      ssSetOffsetTime(rts, 0, 0.0);
+      sfcnTsMap[0] = 1;
+
+      /* set compiled values of dynamic vector attributes */
+      ssSetNumNonsampledZCs(rts, 0);
+
+      /* Update connectivity flags for each port */
+      _ssSetInputPortConnected(rts, 0, 1);
+      _ssSetInputPortConnected(rts, 1, 1);
+      _ssSetOutputPortConnected(rts, 0, 1);
+      _ssSetOutputPortConnected(rts, 1, 1);
+      _ssSetOutputPortBeingMerged(rts, 0, 0);
+      _ssSetOutputPortBeingMerged(rts, 1, 0);
+
+      /* Update the BufferDstPort flags for each input port */
+      ssSetInputPortBufferDstPort(rts, 0, -1);
+      ssSetInputPortBufferDstPort(rts, 1, -1);
+    }
+
+    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S10>/RTE Ground (rte_ground) */
+    {
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[27];
+
+      /* timing info */
+      time_T *sfcnPeriod =
+        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn27.sfcnPeriod;
+      time_T *sfcnOffset =
+        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn27.sfcnOffset;
+      int_T *sfcnTsMap =
+        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn27.sfcnTsMap;
+      (void) memset((void*)sfcnPeriod, 0,
+                    sizeof(time_T)*1);
+      (void) memset((void*)sfcnOffset, 0,
+                    sizeof(time_T)*1);
+      ssSetSampleTimePtr(rts, &sfcnPeriod[0]);
+      ssSetOffsetTimePtr(rts, &sfcnOffset[0]);
+      ssSetSampleTimeTaskIDPtr(rts, sfcnTsMap);
+
+      /* Set up the mdlInfo pointer */
+      {
+        ssSetBlkInfo2Ptr(rts,
+                         &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.blkInfo2
+                         [27]);
+      }
+
+      ssSetRTWSfcnInfo(rts, boost_and_two_level__1_sm_ehs_M->sfcnInfo);
+
+      /* Allocate memory of model methods 2 */
+      {
+        ssSetModelMethods2(rts,
+                           &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.methods2
+                           [27]);
+      }
+
+      /* Allocate memory of model methods 3 */
+      {
+        ssSetModelMethods3(rts,
+                           &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.methods3
+                           [27]);
+      }
+
+      /* Allocate memory for states auxilliary information */
+      {
+        ssSetStatesInfo2(rts,
+                         &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.statesInfo2
+                         [27]);
+      }
+
+      /* outputs */
+      {
+        ssSetPortInfoForOutputs(rts,
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn27.outputPortInfo
+          [0]);
+        _ssSetNumOutputPorts(rts, 1);
+
+        /* port 0 */
+        {
+          _ssSetOutputPortNumDimensions(rts, 0, 1);
+          ssSetOutputPortWidth(rts, 0, 4);
+          ssSetOutputPortSignal(rts, 0, ((real_T *)
+            boost_and_two_level__1_sm_ehs_B.RTEGround));
+        }
+      }
+
+      /* path info */
+      ssSetModelName(rts, "RTE Ground");
+      ssSetPath(rts,
+                "boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Ground");
+      ssSetRTModel(rts,boost_and_two_level__1_sm_ehs_M);
+      ssSetParentSS(rts, (NULL));
+      ssSetRootSS(rts, rts);
+      ssSetVersion(rts, SIMSTRUCT_VERSION_LEVEL2);
+
+      /* parameters */
+      {
+        mxArray **sfcnParams = (mxArray **)
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn27.params;
+        ssSetSFcnParamsCount(rts, 1);
+        ssSetSFcnParamsPtr(rts, &sfcnParams[0]);
+        ssSetSFcnParam(rts, 0, (mxArray*)
+                       boost_and_two_level__1_sm_ehs_P.RTEGround_P1_Size);
+      }
+
+      /* work vectors */
+      ssSetPWork(rts, (void **)
+                 &boost_and_two_level__1_sm_ehs_DW.RTEGround_PWORK);
+
+      {
+        struct _ssDWorkRecord *dWorkRecord = (struct _ssDWorkRecord *)
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn27.dWork;
+        struct _ssDWorkAuxRecord *dWorkAuxRecord = (struct _ssDWorkAuxRecord *)
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn27.dWorkAux;
+        ssSetSFcnDWork(rts, dWorkRecord);
+        ssSetSFcnDWorkAux(rts, dWorkAuxRecord);
+        _ssSetNumDWork(rts, 1);
+
+        /* PWORK */
+        ssSetDWorkWidth(rts, 0, 1);
+        ssSetDWorkDataType(rts, 0,SS_POINTER);
+        ssSetDWorkComplexSignal(rts, 0, 0);
+        ssSetDWork(rts, 0, &boost_and_two_level__1_sm_ehs_DW.RTEGround_PWORK);
+      }
+
+      /* registration */
+      rte_ground(rts);
+      sfcnInitializeSizes(rts);
+      sfcnInitializeSampleTimes(rts);
+
+      /* adjust sample time */
+      ssSetSampleTime(rts, 0, 2.0E-5);
+      ssSetOffsetTime(rts, 0, 0.0);
+      sfcnTsMap[0] = 1;
+
+      /* set compiled values of dynamic vector attributes */
+      ssSetOutputPortWidth(rts, 0, 4);
+      ssSetOutputPortDataType(rts, 0, SS_DOUBLE);
+      ssSetOutputPortComplexSignal(rts, 0, 0);
+      ssSetOutputPortFrameData(rts, 0, 0);
+      ssSetNumNonsampledZCs(rts, 0);
+
+      /* Update connectivity flags for each port */
+      _ssSetOutputPortConnected(rts, 0, 1);
+      _ssSetOutputPortBeingMerged(rts, 0, 0);
+
+      /* Update the BufferDstPort flags for each input port */
+    }
+
+    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S29>/RTE_Conversion_1 (rte_conversion_ophsdio) */
+    {
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[28];
+
+      /* timing info */
+      time_T *sfcnPeriod =
+        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn28.sfcnPeriod;
+      time_T *sfcnOffset =
+        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn28.sfcnOffset;
+      int_T *sfcnTsMap =
+        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn28.sfcnTsMap;
+      (void) memset((void*)sfcnPeriod, 0,
+                    sizeof(time_T)*1);
+      (void) memset((void*)sfcnOffset, 0,
+                    sizeof(time_T)*1);
+      ssSetSampleTimePtr(rts, &sfcnPeriod[0]);
+      ssSetOffsetTimePtr(rts, &sfcnOffset[0]);
+      ssSetSampleTimeTaskIDPtr(rts, sfcnTsMap);
+
+      /* Set up the mdlInfo pointer */
+      {
+        ssSetBlkInfo2Ptr(rts,
+                         &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.blkInfo2
+                         [28]);
+      }
+
+      ssSetRTWSfcnInfo(rts, boost_and_two_level__1_sm_ehs_M->sfcnInfo);
+
+      /* Allocate memory of model methods 2 */
+      {
+        ssSetModelMethods2(rts,
+                           &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.methods2
+                           [28]);
+      }
+
+      /* Allocate memory of model methods 3 */
+      {
+        ssSetModelMethods3(rts,
+                           &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.methods3
+                           [28]);
+      }
+
+      /* Allocate memory for states auxilliary information */
+      {
+        ssSetStatesInfo2(rts,
+                         &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.statesInfo2
+                         [28]);
+      }
+
+      /* inputs */
+      {
+        _ssSetNumInputPorts(rts, 1);
+        ssSetPortInfoForInputs(rts,
+          &boost_and_two_level__1_sm_ehs_M->
+          NonInlinedSFcns.Sfcn28.inputPortInfo[0]);
+
+        /* port 0 */
+        {
+          real_T const **sfcnUPtrs = (real_T const **)
+            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn28.UPtrs0;
+          sfcnUPtrs[0] = &boost_and_two_level__1_sm_ehs_B.Switch_f[0];
+          sfcnUPtrs[1] = &boost_and_two_level__1_sm_ehs_B.Switch_f[1];
+          sfcnUPtrs[2] = &boost_and_two_level__1_sm_ehs_B.Switch_f[2];
+          sfcnUPtrs[3] = &boost_and_two_level__1_sm_ehs_B.Switch_f[3];
           sfcnUPtrs[4] = &boost_and_two_level__1_sm_ehs_B.RTEGround[0];
           sfcnUPtrs[5] = &boost_and_two_level__1_sm_ehs_B.RTEGround[1];
           sfcnUPtrs[6] = &boost_and_two_level__1_sm_ehs_B.RTEGround[2];
@@ -9236,7 +10300,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       /* outputs */
       {
         ssSetPortInfoForOutputs(rts,
-          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn23.outputPortInfo
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn28.outputPortInfo
           [0]);
         _ssSetNumOutputPorts(rts, 16);
 
@@ -9381,7 +10445,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       /* parameters */
       {
         mxArray **sfcnParams = (mxArray **)
-          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn23.params;
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn28.params;
         ssSetSFcnParamsCount(rts, 7);
         ssSetSFcnParamsPtr(rts, &sfcnParams[0]);
         ssSetSFcnParam(rts, 0, (mxArray*)
@@ -9406,9 +10470,9 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
 
       {
         struct _ssDWorkRecord *dWorkRecord = (struct _ssDWorkRecord *)
-          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn23.dWork;
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn28.dWork;
         struct _ssDWorkAuxRecord *dWorkAuxRecord = (struct _ssDWorkAuxRecord *)
-          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn23.dWorkAux;
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn28.dWorkAux;
         ssSetSFcnDWork(rts, dWorkRecord);
         ssSetSFcnDWorkAux(rts, dWorkAuxRecord);
         _ssSetNumDWork(rts, 1);
@@ -9473,17 +10537,17 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       ssSetInputPortBufferDstPort(rts, 0, -1);
     }
 
-    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S26>/EventGen_eHS_1 (sfun_op7160ex1_event_generator) */
+    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S29>/EventGen_eHS_1 (sfun_op7160ex1_event_generator) */
     {
-      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[24];
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[29];
 
       /* timing info */
       time_T *sfcnPeriod =
-        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn24.sfcnPeriod;
+        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn29.sfcnPeriod;
       time_T *sfcnOffset =
-        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn24.sfcnOffset;
+        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn29.sfcnOffset;
       int_T *sfcnTsMap =
-        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn24.sfcnTsMap;
+        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn29.sfcnTsMap;
       (void) memset((void*)sfcnPeriod, 0,
                     sizeof(time_T)*1);
       (void) memset((void*)sfcnOffset, 0,
@@ -9496,7 +10560,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       {
         ssSetBlkInfo2Ptr(rts,
                          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.blkInfo2
-                         [24]);
+                         [29]);
       }
 
       ssSetRTWSfcnInfo(rts, boost_and_two_level__1_sm_ehs_M->sfcnInfo);
@@ -9505,21 +10569,21 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       {
         ssSetModelMethods2(rts,
                            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.methods2
-                           [24]);
+                           [29]);
       }
 
       /* Allocate memory of model methods 3 */
       {
         ssSetModelMethods3(rts,
                            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.methods3
-                           [24]);
+                           [29]);
       }
 
       /* Allocate memory for states auxilliary information */
       {
         ssSetStatesInfo2(rts,
                          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.statesInfo2
-                         [24]);
+                         [29]);
       }
 
       /* inputs */
@@ -9527,12 +10591,12 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
         _ssSetNumInputPorts(rts, 16);
         ssSetPortInfoForInputs(rts,
           &boost_and_two_level__1_sm_ehs_M->
-          NonInlinedSFcns.Sfcn24.inputPortInfo[0]);
+          NonInlinedSFcns.Sfcn29.inputPortInfo[0]);
 
         /* port 0 */
         {
           real_T const **sfcnUPtrs = (real_T const **)
-            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn24.UPtrs0;
+            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn29.UPtrs0;
           sfcnUPtrs[0] = boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o1;
           sfcnUPtrs[1] = &boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o1[1];
           sfcnUPtrs[2] = &boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o1[2];
@@ -9545,7 +10609,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
         /* port 1 */
         {
           real_T const **sfcnUPtrs = (real_T const **)
-            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn24.UPtrs1;
+            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn29.UPtrs1;
           sfcnUPtrs[0] = boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o2;
           sfcnUPtrs[1] = &boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o2[1];
           sfcnUPtrs[2] = &boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o2[2];
@@ -9558,7 +10622,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
         /* port 2 */
         {
           real_T const **sfcnUPtrs = (real_T const **)
-            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn24.UPtrs2;
+            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn29.UPtrs2;
           sfcnUPtrs[0] = boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o3;
           sfcnUPtrs[1] = &boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o3[1];
           sfcnUPtrs[2] = &boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o3[2];
@@ -9571,7 +10635,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
         /* port 3 */
         {
           real_T const **sfcnUPtrs = (real_T const **)
-            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn24.UPtrs3;
+            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn29.UPtrs3;
           sfcnUPtrs[0] = boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o4;
           sfcnUPtrs[1] = &boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o4[1];
           sfcnUPtrs[2] = &boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o4[2];
@@ -9584,7 +10648,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
         /* port 4 */
         {
           real_T const **sfcnUPtrs = (real_T const **)
-            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn24.UPtrs4;
+            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn29.UPtrs4;
           sfcnUPtrs[0] = boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o5;
           sfcnUPtrs[1] = &boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o5[1];
           sfcnUPtrs[2] = &boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o5[2];
@@ -9597,7 +10661,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
         /* port 5 */
         {
           real_T const **sfcnUPtrs = (real_T const **)
-            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn24.UPtrs5;
+            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn29.UPtrs5;
           sfcnUPtrs[0] = boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o6;
           sfcnUPtrs[1] = &boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o6[1];
           sfcnUPtrs[2] = &boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o6[2];
@@ -9610,7 +10674,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
         /* port 6 */
         {
           real_T const **sfcnUPtrs = (real_T const **)
-            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn24.UPtrs6;
+            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn29.UPtrs6;
           sfcnUPtrs[0] = boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o7;
           sfcnUPtrs[1] = &boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o7[1];
           sfcnUPtrs[2] = &boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o7[2];
@@ -9623,7 +10687,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
         /* port 7 */
         {
           real_T const **sfcnUPtrs = (real_T const **)
-            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn24.UPtrs7;
+            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn29.UPtrs7;
           sfcnUPtrs[0] = boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o8;
           sfcnUPtrs[1] = &boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o8[1];
           sfcnUPtrs[2] = &boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o8[2];
@@ -9636,7 +10700,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
         /* port 8 */
         {
           real_T const **sfcnUPtrs = (real_T const **)
-            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn24.UPtrs8;
+            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn29.UPtrs8;
           sfcnUPtrs[0] = boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o9;
           sfcnUPtrs[1] = &boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o9[1];
           sfcnUPtrs[2] = &boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o9[2];
@@ -9649,7 +10713,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
         /* port 9 */
         {
           real_T const **sfcnUPtrs = (real_T const **)
-            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn24.UPtrs9;
+            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn29.UPtrs9;
           sfcnUPtrs[0] = boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o10;
           sfcnUPtrs[1] = &boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o10[1];
           sfcnUPtrs[2] = &boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o10[2];
@@ -9662,7 +10726,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
         /* port 10 */
         {
           real_T const **sfcnUPtrs = (real_T const **)
-            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn24.UPtrs10;
+            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn29.UPtrs10;
           sfcnUPtrs[0] = boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o11;
           sfcnUPtrs[1] = &boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o11[1];
           sfcnUPtrs[2] = &boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o11[2];
@@ -9675,7 +10739,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
         /* port 11 */
         {
           real_T const **sfcnUPtrs = (real_T const **)
-            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn24.UPtrs11;
+            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn29.UPtrs11;
           sfcnUPtrs[0] = boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o12;
           sfcnUPtrs[1] = &boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o12[1];
           sfcnUPtrs[2] = &boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o12[2];
@@ -9688,7 +10752,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
         /* port 12 */
         {
           real_T const **sfcnUPtrs = (real_T const **)
-            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn24.UPtrs12;
+            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn29.UPtrs12;
           sfcnUPtrs[0] = boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o13;
           sfcnUPtrs[1] = &boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o13[1];
           sfcnUPtrs[2] = &boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o13[2];
@@ -9701,7 +10765,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
         /* port 13 */
         {
           real_T const **sfcnUPtrs = (real_T const **)
-            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn24.UPtrs13;
+            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn29.UPtrs13;
           sfcnUPtrs[0] = boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o14;
           sfcnUPtrs[1] = &boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o14[1];
           sfcnUPtrs[2] = &boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o14[2];
@@ -9714,7 +10778,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
         /* port 14 */
         {
           real_T const **sfcnUPtrs = (real_T const **)
-            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn24.UPtrs14;
+            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn29.UPtrs14;
           sfcnUPtrs[0] = boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o15;
           sfcnUPtrs[1] = &boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o15[1];
           sfcnUPtrs[2] = &boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o15[2];
@@ -9727,7 +10791,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
         /* port 15 */
         {
           real_T const **sfcnUPtrs = (real_T const **)
-            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn24.UPtrs15;
+            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn29.UPtrs15;
           sfcnUPtrs[0] = boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o16;
           sfcnUPtrs[1] = &boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o16[1];
           sfcnUPtrs[2] = &boost_and_two_level__1_sm_ehs_B.RTE_Conversion_1_o16[2];
@@ -9741,7 +10805,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       /* outputs */
       {
         ssSetPortInfoForOutputs(rts,
-          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn24.outputPortInfo
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn29.outputPortInfo
           [0]);
         _ssSetNumOutputPorts(rts, 1);
 
@@ -9766,7 +10830,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       /* parameters */
       {
         mxArray **sfcnParams = (mxArray **)
-          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn24.params;
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn29.params;
         ssSetSFcnParamsCount(rts, 7);
         ssSetSFcnParamsPtr(rts, &sfcnParams[0]);
         ssSetSFcnParam(rts, 0, (mxArray*)
@@ -9791,9 +10855,9 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
 
       {
         struct _ssDWorkRecord *dWorkRecord = (struct _ssDWorkRecord *)
-          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn24.dWork;
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn29.dWork;
         struct _ssDWorkAuxRecord *dWorkAuxRecord = (struct _ssDWorkAuxRecord *)
-          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn24.dWorkAux;
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn29.dWorkAux;
         ssSetSFcnDWork(rts, dWorkRecord);
         ssSetSFcnDWorkAux(rts, dWorkAuxRecord);
         _ssSetNumDWork(rts, 1);
@@ -9858,17 +10922,17 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       ssSetInputPortBufferDstPort(rts, 15, -1);
     }
 
-    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S82>/S-Function (sfun_discreteVariableDelay) */
+    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S85>/S-Function (sfun_discreteVariableDelay) */
     {
-      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[25];
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[30];
 
       /* timing info */
       time_T *sfcnPeriod =
-        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn25.sfcnPeriod;
+        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn30.sfcnPeriod;
       time_T *sfcnOffset =
-        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn25.sfcnOffset;
+        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn30.sfcnOffset;
       int_T *sfcnTsMap =
-        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn25.sfcnTsMap;
+        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn30.sfcnTsMap;
       (void) memset((void*)sfcnPeriod, 0,
                     sizeof(time_T)*1);
       (void) memset((void*)sfcnOffset, 0,
@@ -9881,7 +10945,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       {
         ssSetBlkInfo2Ptr(rts,
                          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.blkInfo2
-                         [25]);
+                         [30]);
       }
 
       ssSetRTWSfcnInfo(rts, boost_and_two_level__1_sm_ehs_M->sfcnInfo);
@@ -9890,21 +10954,21 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       {
         ssSetModelMethods2(rts,
                            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.methods2
-                           [25]);
+                           [30]);
       }
 
       /* Allocate memory of model methods 3 */
       {
         ssSetModelMethods3(rts,
                            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.methods3
-                           [25]);
+                           [30]);
       }
 
       /* Allocate memory for states auxilliary information */
       {
         ssSetStatesInfo2(rts,
                          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.statesInfo2
-                         [25]);
+                         [30]);
       }
 
       /* inputs */
@@ -9912,12 +10976,12 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
         _ssSetNumInputPorts(rts, 2);
         ssSetPortInfoForInputs(rts,
           &boost_and_two_level__1_sm_ehs_M->
-          NonInlinedSFcns.Sfcn25.inputPortInfo[0]);
+          NonInlinedSFcns.Sfcn30.inputPortInfo[0]);
 
         /* port 0 */
         {
           real_T const **sfcnUPtrs = (real_T const **)
-            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn25.UPtrs0;
+            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn30.UPtrs0;
           sfcnUPtrs[0] = &boost_and_two_level__1_sm_ehs_B.Apu;
           ssSetInputPortSignalPtrs(rts, 0, (InputPtrsType)&sfcnUPtrs[0]);
           _ssSetInputPortNumDimensions(rts, 0, 1);
@@ -9927,7 +10991,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
         /* port 1 */
         {
           real_T const **sfcnUPtrs = (real_T const **)
-            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn25.UPtrs1;
+            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn30.UPtrs1;
           sfcnUPtrs[0] = &boost_and_two_level__1_sm_ehs_B.Gain;
           ssSetInputPortSignalPtrs(rts, 1, (InputPtrsType)&sfcnUPtrs[0]);
           _ssSetInputPortNumDimensions(rts, 1, 1);
@@ -9938,7 +11002,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       /* outputs */
       {
         ssSetPortInfoForOutputs(rts,
-          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn25.outputPortInfo
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn30.outputPortInfo
           [0]);
         _ssSetNumOutputPorts(rts, 1);
 
@@ -9963,7 +11027,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       /* parameters */
       {
         mxArray **sfcnParams = (mxArray **)
-          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn25.params;
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn30.params;
         ssSetSFcnParamsCount(rts, 4);
         ssSetSFcnParamsPtr(rts, &sfcnParams[0]);
         ssSetSFcnParam(rts, 0, (mxArray*)
@@ -9986,9 +11050,9 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
 
       {
         struct _ssDWorkRecord *dWorkRecord = (struct _ssDWorkRecord *)
-          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn25.dWork;
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn30.dWork;
         struct _ssDWorkAuxRecord *dWorkAuxRecord = (struct _ssDWorkAuxRecord *)
-          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn25.dWorkAux;
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn30.dWorkAux;
         ssSetSFcnDWork(rts, dWorkRecord);
         ssSetSFcnDWorkAux(rts, dWorkAuxRecord);
         _ssSetNumDWork(rts, 3);
@@ -10050,17 +11114,17 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       ssSetInputPortBufferDstPort(rts, 1, -1);
     }
 
-    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S50>/S-Function (sfun_discreteVariableDelay) */
+    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S53>/S-Function (sfun_discreteVariableDelay) */
     {
-      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[26];
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[31];
 
       /* timing info */
       time_T *sfcnPeriod =
-        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn26.sfcnPeriod;
+        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn31.sfcnPeriod;
       time_T *sfcnOffset =
-        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn26.sfcnOffset;
+        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn31.sfcnOffset;
       int_T *sfcnTsMap =
-        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn26.sfcnTsMap;
+        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn31.sfcnTsMap;
       (void) memset((void*)sfcnPeriod, 0,
                     sizeof(time_T)*1);
       (void) memset((void*)sfcnOffset, 0,
@@ -10073,7 +11137,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       {
         ssSetBlkInfo2Ptr(rts,
                          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.blkInfo2
-                         [26]);
+                         [31]);
       }
 
       ssSetRTWSfcnInfo(rts, boost_and_two_level__1_sm_ehs_M->sfcnInfo);
@@ -10082,21 +11146,21 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       {
         ssSetModelMethods2(rts,
                            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.methods2
-                           [26]);
+                           [31]);
       }
 
       /* Allocate memory of model methods 3 */
       {
         ssSetModelMethods3(rts,
                            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.methods3
-                           [26]);
+                           [31]);
       }
 
       /* Allocate memory for states auxilliary information */
       {
         ssSetStatesInfo2(rts,
                          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.statesInfo2
-                         [26]);
+                         [31]);
       }
 
       /* inputs */
@@ -10104,12 +11168,12 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
         _ssSetNumInputPorts(rts, 2);
         ssSetPortInfoForInputs(rts,
           &boost_and_two_level__1_sm_ehs_M->
-          NonInlinedSFcns.Sfcn26.inputPortInfo[0]);
+          NonInlinedSFcns.Sfcn31.inputPortInfo[0]);
 
         /* port 0 */
         {
           real_T const **sfcnUPtrs = (real_T const **)
-            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn26.UPtrs0;
+            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn31.UPtrs0;
           sfcnUPtrs[0] = &boost_and_two_level__1_sm_ehs_B.Integ4;
           ssSetInputPortSignalPtrs(rts, 0, (InputPtrsType)&sfcnUPtrs[0]);
           _ssSetInputPortNumDimensions(rts, 0, 1);
@@ -10119,7 +11183,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
         /* port 1 */
         {
           real_T const **sfcnUPtrs = (real_T const **)
-            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn26.UPtrs1;
+            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn31.UPtrs1;
           sfcnUPtrs[0] = &boost_and_two_level__1_sm_ehs_B.Delay;
           ssSetInputPortSignalPtrs(rts, 1, (InputPtrsType)&sfcnUPtrs[0]);
           _ssSetInputPortNumDimensions(rts, 1, 1);
@@ -10130,7 +11194,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       /* outputs */
       {
         ssSetPortInfoForOutputs(rts,
-          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn26.outputPortInfo
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn31.outputPortInfo
           [0]);
         _ssSetNumOutputPorts(rts, 1);
 
@@ -10155,11 +11219,11 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       /* parameters */
       {
         mxArray **sfcnParams = (mxArray **)
-          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn26.params;
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn31.params;
         ssSetSFcnParamsCount(rts, 4);
         ssSetSFcnParamsPtr(rts, &sfcnParams[0]);
         ssSetSFcnParam(rts, 0, (mxArray*)
-                       boost_and_two_level__1_sm_ehs_P.SFunction_P1_Size_ll);
+                       boost_and_two_level__1_sm_ehs_P.SFunction_P1_Size_l);
         ssSetSFcnParam(rts, 1, (mxArray*)
                        boost_and_two_level__1_sm_ehs_P.SFunction_P2_Size_c);
         ssSetSFcnParam(rts, 2, (mxArray*)
@@ -10178,9 +11242,9 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
 
       {
         struct _ssDWorkRecord *dWorkRecord = (struct _ssDWorkRecord *)
-          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn26.dWork;
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn31.dWork;
         struct _ssDWorkAuxRecord *dWorkAuxRecord = (struct _ssDWorkAuxRecord *)
-          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn26.dWorkAux;
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn31.dWorkAux;
         ssSetSFcnDWork(rts, dWorkRecord);
         ssSetSFcnDWorkAux(rts, dWorkAuxRecord);
         _ssSetNumDWork(rts, 3);
@@ -10242,17 +11306,17 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       ssSetInputPortBufferDstPort(rts, 1, -1);
     }
 
-    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S53>/S-Function (sfun_discreteVariableDelay) */
+    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S56>/S-Function (sfun_discreteVariableDelay) */
     {
-      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[27];
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[32];
 
       /* timing info */
       time_T *sfcnPeriod =
-        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn27.sfcnPeriod;
+        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn32.sfcnPeriod;
       time_T *sfcnOffset =
-        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn27.sfcnOffset;
+        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn32.sfcnOffset;
       int_T *sfcnTsMap =
-        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn27.sfcnTsMap;
+        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn32.sfcnTsMap;
       (void) memset((void*)sfcnPeriod, 0,
                     sizeof(time_T)*1);
       (void) memset((void*)sfcnOffset, 0,
@@ -10265,7 +11329,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       {
         ssSetBlkInfo2Ptr(rts,
                          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.blkInfo2
-                         [27]);
+                         [32]);
       }
 
       ssSetRTWSfcnInfo(rts, boost_and_two_level__1_sm_ehs_M->sfcnInfo);
@@ -10274,21 +11338,21 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       {
         ssSetModelMethods2(rts,
                            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.methods2
-                           [27]);
+                           [32]);
       }
 
       /* Allocate memory of model methods 3 */
       {
         ssSetModelMethods3(rts,
                            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.methods3
-                           [27]);
+                           [32]);
       }
 
       /* Allocate memory for states auxilliary information */
       {
         ssSetStatesInfo2(rts,
                          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.statesInfo2
-                         [27]);
+                         [32]);
       }
 
       /* inputs */
@@ -10296,12 +11360,12 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
         _ssSetNumInputPorts(rts, 2);
         ssSetPortInfoForInputs(rts,
           &boost_and_two_level__1_sm_ehs_M->
-          NonInlinedSFcns.Sfcn27.inputPortInfo[0]);
+          NonInlinedSFcns.Sfcn32.inputPortInfo[0]);
 
         /* port 0 */
         {
           real_T const **sfcnUPtrs = (real_T const **)
-            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn27.UPtrs0;
+            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn32.UPtrs0;
           sfcnUPtrs[0] = &boost_and_two_level__1_sm_ehs_B.Integ4_b;
           ssSetInputPortSignalPtrs(rts, 0, (InputPtrsType)&sfcnUPtrs[0]);
           _ssSetInputPortNumDimensions(rts, 0, 1);
@@ -10311,7 +11375,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
         /* port 1 */
         {
           real_T const **sfcnUPtrs = (real_T const **)
-            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn27.UPtrs1;
+            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn32.UPtrs1;
           sfcnUPtrs[0] = &boost_and_two_level__1_sm_ehs_B.Delay_p;
           ssSetInputPortSignalPtrs(rts, 1, (InputPtrsType)&sfcnUPtrs[0]);
           _ssSetInputPortNumDimensions(rts, 1, 1);
@@ -10322,7 +11386,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       /* outputs */
       {
         ssSetPortInfoForOutputs(rts,
-          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn27.outputPortInfo
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn32.outputPortInfo
           [0]);
         _ssSetNumOutputPorts(rts, 1);
 
@@ -10347,7 +11411,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       /* parameters */
       {
         mxArray **sfcnParams = (mxArray **)
-          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn27.params;
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn32.params;
         ssSetSFcnParamsCount(rts, 4);
         ssSetSFcnParamsPtr(rts, &sfcnParams[0]);
         ssSetSFcnParam(rts, 0, (mxArray*)
@@ -10370,9 +11434,9 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
 
       {
         struct _ssDWorkRecord *dWorkRecord = (struct _ssDWorkRecord *)
-          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn27.dWork;
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn32.dWork;
         struct _ssDWorkAuxRecord *dWorkAuxRecord = (struct _ssDWorkAuxRecord *)
-          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn27.dWorkAux;
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn32.dWorkAux;
         ssSetSFcnDWork(rts, dWorkRecord);
         ssSetSFcnDWorkAux(rts, dWorkAuxRecord);
         _ssSetNumDWork(rts, 3);
@@ -10434,17 +11498,17 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       ssSetInputPortBufferDstPort(rts, 1, -1);
     }
 
-    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S55>/S-Function (sfun_discreteVariableDelay) */
+    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S58>/S-Function (sfun_discreteVariableDelay) */
     {
-      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[28];
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[33];
 
       /* timing info */
       time_T *sfcnPeriod =
-        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn28.sfcnPeriod;
+        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn33.sfcnPeriod;
       time_T *sfcnOffset =
-        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn28.sfcnOffset;
+        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn33.sfcnOffset;
       int_T *sfcnTsMap =
-        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn28.sfcnTsMap;
+        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn33.sfcnTsMap;
       (void) memset((void*)sfcnPeriod, 0,
                     sizeof(time_T)*1);
       (void) memset((void*)sfcnOffset, 0,
@@ -10457,7 +11521,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       {
         ssSetBlkInfo2Ptr(rts,
                          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.blkInfo2
-                         [28]);
+                         [33]);
       }
 
       ssSetRTWSfcnInfo(rts, boost_and_two_level__1_sm_ehs_M->sfcnInfo);
@@ -10466,21 +11530,21 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       {
         ssSetModelMethods2(rts,
                            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.methods2
-                           [28]);
+                           [33]);
       }
 
       /* Allocate memory of model methods 3 */
       {
         ssSetModelMethods3(rts,
                            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.methods3
-                           [28]);
+                           [33]);
       }
 
       /* Allocate memory for states auxilliary information */
       {
         ssSetStatesInfo2(rts,
                          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.statesInfo2
-                         [28]);
+                         [33]);
       }
 
       /* inputs */
@@ -10488,12 +11552,12 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
         _ssSetNumInputPorts(rts, 2);
         ssSetPortInfoForInputs(rts,
           &boost_and_two_level__1_sm_ehs_M->
-          NonInlinedSFcns.Sfcn28.inputPortInfo[0]);
+          NonInlinedSFcns.Sfcn33.inputPortInfo[0]);
 
         /* port 0 */
         {
           real_T const **sfcnUPtrs = (real_T const **)
-            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn28.UPtrs0;
+            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn33.UPtrs0;
           sfcnUPtrs[0] = &boost_and_two_level__1_sm_ehs_B.Integ4_m;
           ssSetInputPortSignalPtrs(rts, 0, (InputPtrsType)&sfcnUPtrs[0]);
           _ssSetInputPortNumDimensions(rts, 0, 1);
@@ -10503,7 +11567,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
         /* port 1 */
         {
           real_T const **sfcnUPtrs = (real_T const **)
-            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn28.UPtrs1;
+            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn33.UPtrs1;
           sfcnUPtrs[0] = &boost_and_two_level__1_sm_ehs_B.K1;
           ssSetInputPortSignalPtrs(rts, 1, (InputPtrsType)&sfcnUPtrs[0]);
           _ssSetInputPortNumDimensions(rts, 1, 1);
@@ -10514,7 +11578,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       /* outputs */
       {
         ssSetPortInfoForOutputs(rts,
-          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn28.outputPortInfo
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn33.outputPortInfo
           [0]);
         _ssSetNumOutputPorts(rts, 1);
 
@@ -10539,7 +11603,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       /* parameters */
       {
         mxArray **sfcnParams = (mxArray **)
-          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn28.params;
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn33.params;
         ssSetSFcnParamsCount(rts, 4);
         ssSetSFcnParamsPtr(rts, &sfcnParams[0]);
         ssSetSFcnParam(rts, 0, (mxArray*)
@@ -10562,9 +11626,9 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
 
       {
         struct _ssDWorkRecord *dWorkRecord = (struct _ssDWorkRecord *)
-          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn28.dWork;
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn33.dWork;
         struct _ssDWorkAuxRecord *dWorkAuxRecord = (struct _ssDWorkAuxRecord *)
-          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn28.dWorkAux;
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn33.dWorkAux;
         ssSetSFcnDWork(rts, dWorkRecord);
         ssSetSFcnDWorkAux(rts, dWorkAuxRecord);
         _ssSetNumDWork(rts, 3);
@@ -10626,17 +11690,17 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       ssSetInputPortBufferDstPort(rts, 1, -1);
     }
 
-    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S72>/S-Function (sfun_discreteVariableDelay) */
+    /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S75>/S-Function (sfun_discreteVariableDelay) */
     {
-      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[29];
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[34];
 
       /* timing info */
       time_T *sfcnPeriod =
-        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn29.sfcnPeriod;
+        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn34.sfcnPeriod;
       time_T *sfcnOffset =
-        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn29.sfcnOffset;
+        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn34.sfcnOffset;
       int_T *sfcnTsMap =
-        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn29.sfcnTsMap;
+        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn34.sfcnTsMap;
       (void) memset((void*)sfcnPeriod, 0,
                     sizeof(time_T)*1);
       (void) memset((void*)sfcnOffset, 0,
@@ -10649,7 +11713,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       {
         ssSetBlkInfo2Ptr(rts,
                          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.blkInfo2
-                         [29]);
+                         [34]);
       }
 
       ssSetRTWSfcnInfo(rts, boost_and_two_level__1_sm_ehs_M->sfcnInfo);
@@ -10658,21 +11722,21 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       {
         ssSetModelMethods2(rts,
                            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.methods2
-                           [29]);
+                           [34]);
       }
 
       /* Allocate memory of model methods 3 */
       {
         ssSetModelMethods3(rts,
                            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.methods3
-                           [29]);
+                           [34]);
       }
 
       /* Allocate memory for states auxilliary information */
       {
         ssSetStatesInfo2(rts,
                          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.statesInfo2
-                         [29]);
+                         [34]);
       }
 
       /* inputs */
@@ -10680,12 +11744,12 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
         _ssSetNumInputPorts(rts, 2);
         ssSetPortInfoForInputs(rts,
           &boost_and_two_level__1_sm_ehs_M->
-          NonInlinedSFcns.Sfcn29.inputPortInfo[0]);
+          NonInlinedSFcns.Sfcn34.inputPortInfo[0]);
 
         /* port 0 */
         {
           real_T const **sfcnUPtrs = (real_T const **)
-            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn29.UPtrs0;
+            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn34.UPtrs0;
           sfcnUPtrs[0] = &boost_and_two_level__1_sm_ehs_B.Integ4_e;
           ssSetInputPortSignalPtrs(rts, 0, (InputPtrsType)&sfcnUPtrs[0]);
           _ssSetInputPortNumDimensions(rts, 0, 1);
@@ -10695,7 +11759,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
         /* port 1 */
         {
           real_T const **sfcnUPtrs = (real_T const **)
-            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn29.UPtrs1;
+            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn34.UPtrs1;
           sfcnUPtrs[0] = &boost_and_two_level__1_sm_ehs_B.Delay_pz;
           ssSetInputPortSignalPtrs(rts, 1, (InputPtrsType)&sfcnUPtrs[0]);
           _ssSetInputPortNumDimensions(rts, 1, 1);
@@ -10706,7 +11770,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       /* outputs */
       {
         ssSetPortInfoForOutputs(rts,
-          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn29.outputPortInfo
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn34.outputPortInfo
           [0]);
         _ssSetNumOutputPorts(rts, 1);
 
@@ -10731,7 +11795,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       /* parameters */
       {
         mxArray **sfcnParams = (mxArray **)
-          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn29.params;
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn34.params;
         ssSetSFcnParamsCount(rts, 4);
         ssSetSFcnParamsPtr(rts, &sfcnParams[0]);
         ssSetSFcnParam(rts, 0, (mxArray*)
@@ -10754,9 +11818,9 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
 
       {
         struct _ssDWorkRecord *dWorkRecord = (struct _ssDWorkRecord *)
-          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn29.dWork;
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn34.dWork;
         struct _ssDWorkAuxRecord *dWorkAuxRecord = (struct _ssDWorkAuxRecord *)
-          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn29.dWorkAux;
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn34.dWorkAux;
         ssSetSFcnDWork(rts, dWorkRecord);
         ssSetSFcnDWorkAux(rts, dWorkAuxRecord);
         _ssSetNumDWork(rts, 3);
@@ -10820,15 +11884,15 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
 
     /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S2>/OpTrigger (optrigger) */
     {
-      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[30];
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[35];
 
       /* timing info */
       time_T *sfcnPeriod =
-        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn30.sfcnPeriod;
+        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn35.sfcnPeriod;
       time_T *sfcnOffset =
-        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn30.sfcnOffset;
+        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn35.sfcnOffset;
       int_T *sfcnTsMap =
-        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn30.sfcnTsMap;
+        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn35.sfcnTsMap;
       (void) memset((void*)sfcnPeriod, 0,
                     sizeof(time_T)*1);
       (void) memset((void*)sfcnOffset, 0,
@@ -10841,7 +11905,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       {
         ssSetBlkInfo2Ptr(rts,
                          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.blkInfo2
-                         [30]);
+                         [35]);
       }
 
       ssSetRTWSfcnInfo(rts, boost_and_two_level__1_sm_ehs_M->sfcnInfo);
@@ -10850,21 +11914,21 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       {
         ssSetModelMethods2(rts,
                            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.methods2
-                           [30]);
+                           [35]);
       }
 
       /* Allocate memory of model methods 3 */
       {
         ssSetModelMethods3(rts,
                            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.methods3
-                           [30]);
+                           [35]);
       }
 
       /* Allocate memory for states auxilliary information */
       {
         ssSetStatesInfo2(rts,
                          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.statesInfo2
-                         [30]);
+                         [35]);
       }
 
       /* inputs */
@@ -10872,12 +11936,12 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
         _ssSetNumInputPorts(rts, 2);
         ssSetPortInfoForInputs(rts,
           &boost_and_two_level__1_sm_ehs_M->
-          NonInlinedSFcns.Sfcn30.inputPortInfo[0]);
+          NonInlinedSFcns.Sfcn35.inputPortInfo[0]);
 
         /* port 0 */
         {
           real_T const **sfcnUPtrs = (real_T const **)
-            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn30.UPtrs0;
+            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn35.UPtrs0;
           sfcnUPtrs[0] = &boost_and_two_level__1_sm_ehs_B.DataTypeConversion_c;
           ssSetInputPortSignalPtrs(rts, 0, (InputPtrsType)&sfcnUPtrs[0]);
           _ssSetInputPortNumDimensions(rts, 0, 1);
@@ -10887,7 +11951,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
         /* port 1 */
         {
           real_T const **sfcnUPtrs = (real_T const **)
-            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn30.UPtrs1;
+            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn35.UPtrs1;
           sfcnUPtrs[0] = &boost_and_two_level__1_sm_ehs_B.Constant1_f;
           ssSetInputPortSignalPtrs(rts, 1, (InputPtrsType)&sfcnUPtrs[0]);
           _ssSetInputPortNumDimensions(rts, 1, 1);
@@ -10898,7 +11962,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       /* outputs */
       {
         ssSetPortInfoForOutputs(rts,
-          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn30.outputPortInfo
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn35.outputPortInfo
           [0]);
         _ssSetNumOutputPorts(rts, 1);
 
@@ -10922,7 +11986,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       /* parameters */
       {
         mxArray **sfcnParams = (mxArray **)
-          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn30.params;
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn35.params;
         ssSetSFcnParamsCount(rts, 3);
         ssSetSFcnParamsPtr(rts, &sfcnParams[0]);
         ssSetSFcnParam(rts, 0, (mxArray*)
@@ -10939,9 +12003,9 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
 
       {
         struct _ssDWorkRecord *dWorkRecord = (struct _ssDWorkRecord *)
-          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn30.dWork;
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn35.dWork;
         struct _ssDWorkAuxRecord *dWorkAuxRecord = (struct _ssDWorkAuxRecord *)
-          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn30.dWorkAux;
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn35.dWorkAux;
         ssSetSFcnDWork(rts, dWorkRecord);
         ssSetSFcnDWorkAux(rts, dWorkAuxRecord);
         _ssSetNumDWork(rts, 1);
@@ -10979,15 +12043,15 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
 
     /* Level2 S-Function Block: boost_and_two_level__1_sm_ehs/<S2>/OpCtrl (sfun_ctrl_op7160ex1) */
     {
-      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[31];
+      SimStruct *rts = boost_and_two_level__1_sm_ehs_M->childSfunctions[36];
 
       /* timing info */
       time_T *sfcnPeriod =
-        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn31.sfcnPeriod;
+        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn36.sfcnPeriod;
       time_T *sfcnOffset =
-        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn31.sfcnOffset;
+        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn36.sfcnOffset;
       int_T *sfcnTsMap =
-        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn31.sfcnTsMap;
+        boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn36.sfcnTsMap;
       (void) memset((void*)sfcnPeriod, 0,
                     sizeof(time_T)*1);
       (void) memset((void*)sfcnOffset, 0,
@@ -11000,7 +12064,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       {
         ssSetBlkInfo2Ptr(rts,
                          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.blkInfo2
-                         [31]);
+                         [36]);
       }
 
       ssSetRTWSfcnInfo(rts, boost_and_two_level__1_sm_ehs_M->sfcnInfo);
@@ -11009,27 +12073,27 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       {
         ssSetModelMethods2(rts,
                            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.methods2
-                           [31]);
+                           [36]);
       }
 
       /* Allocate memory of model methods 3 */
       {
         ssSetModelMethods3(rts,
                            &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.methods3
-                           [31]);
+                           [36]);
       }
 
       /* Allocate memory for states auxilliary information */
       {
         ssSetStatesInfo2(rts,
                          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.statesInfo2
-                         [31]);
+                         [36]);
       }
 
       /* outputs */
       {
         ssSetPortInfoForOutputs(rts,
-          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn31.outputPortInfo
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn36.outputPortInfo
           [0]);
         _ssSetNumOutputPorts(rts, 2);
 
@@ -11061,7 +12125,7 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
       /* parameters */
       {
         mxArray **sfcnParams = (mxArray **)
-          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn31.params;
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn36.params;
         ssSetSFcnParamsCount(rts, 12);
         ssSetSFcnParamsPtr(rts, &sfcnParams[0]);
         ssSetSFcnParam(rts, 0, (mxArray*)
@@ -11096,9 +12160,9 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
 
       {
         struct _ssDWorkRecord *dWorkRecord = (struct _ssDWorkRecord *)
-          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn31.dWork;
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn36.dWork;
         struct _ssDWorkAuxRecord *dWorkAuxRecord = (struct _ssDWorkAuxRecord *)
-          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn31.dWorkAux;
+          &boost_and_two_level__1_sm_ehs_M->NonInlinedSFcns.Sfcn36.dWorkAux;
         ssSetSFcnDWork(rts, dWorkRecord);
         ssSetSFcnDWorkAux(rts, dWorkAuxRecord);
         _ssSetNumDWork(rts, 2);
@@ -11145,9 +12209,9 @@ RT_MODEL_boost_and_two_level__1_sm_ehs_T *boost_and_two_level__1_sm_ehs(void)
   boost_and_two_level__1_sm_ehs_M->Sizes.numU = (0);/* Number of model inputs */
   boost_and_two_level__1_sm_ehs_M->Sizes.sysDirFeedThru = (0);/* The model is not direct feedthrough */
   boost_and_two_level__1_sm_ehs_M->Sizes.numSampTimes = (2);/* Number of sample times */
-  boost_and_two_level__1_sm_ehs_M->Sizes.numBlocks = (457);/* Number of blocks */
-  boost_and_two_level__1_sm_ehs_M->Sizes.numBlockIO = (403);/* Number of block outputs */
-  boost_and_two_level__1_sm_ehs_M->Sizes.numBlockPrms = (981);/* Sum of parameter "widths" */
+  boost_and_two_level__1_sm_ehs_M->Sizes.numBlocks = (471);/* Number of blocks */
+  boost_and_two_level__1_sm_ehs_M->Sizes.numBlockIO = (420);/* Number of block outputs */
+  boost_and_two_level__1_sm_ehs_M->Sizes.numBlockPrms = (1099);/* Sum of parameter "widths" */
   return boost_and_two_level__1_sm_ehs_M;
 }
 
