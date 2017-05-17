@@ -480,7 +480,7 @@
 523=boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/Inverter Control/VDC Regulator/PI/Integrator|gainval| |Scalar|0|1|1|1.0E-5|DiscreteIntegrator|
 524=boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/Inverter Control/VDC Regulator/PI/Integrator|InitialCondition|InitialConditionForIntegrator|Scalar|0|1|1|0.9226|DiscreteIntegrator|
 525=boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/Saturation|UpperLimit|10|Scalar|0|1|1|10.0|Saturate|
-526=boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/Saturation|LowerLimit|-10|Scalar|0|1|1|-10.0|Saturate|
+526=boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/Saturation|LowerLimit|0|Scalar|0|1|1|0.0|Saturate|
 527=boost_and_two_level__1_sm_ehs/SM_eHS/Constant1|Value|0.5|Scalar|0|1|1|0.5|Constant|
 528=boost_and_two_level__1_sm_ehs/SM_eHS/OpTrigger|P1Size| |RVector|0|1|2|1.0|1.0|S-Function optrigger|
 529=boost_and_two_level__1_sm_ehs/SM_eHS/OpTrigger|P1|Acq_Group|Scalar|0|1|1|26.0|S-Function optrigger|

@@ -7,7 +7,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.1057"
+    ComputedModelVersion    "1.1059"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -50,55 +50,16 @@ Model {
 	$ClassName		"Simulink.ExplorerBarInfo"
 	Visible			[1]
       }
-      Array {
-	Type			"Simulink.EditorInfo"
-	Dimension		5
-	Object {
-	  $ObjectID		  5
-	  IsActive		  [0]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "4882"
-	  Extents		  [924.0, 832.0]
-	  ZoomFactor		  [2.0]
-	  Offset		  [361.50565476190445, 317.18125]
-	}
-	Object {
-	  $ObjectID		  6
-	  IsActive		  [1]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "4847"
-	  Extents		  [924.0, 832.0]
-	  ZoomFactor		  [2.5]
-	  Offset		  [13.024999999999139, 495.31068638392821]
-	}
-	Object {
-	  $ObjectID		  7
-	  IsActive		  [0]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "5292"
-	  Extents		  [924.0, 832.0]
-	  ZoomFactor		  [4.0]
-	  Offset		  [-38.7, -5.8499999999999943]
-	}
-	Object {
-	  $ObjectID		  8
-	  IsActive		  [0]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "5183"
-	  Extents		  [924.0, 832.0]
-	  ZoomFactor		  [1.5]
-	  Offset		  [349.47368421052528, -47.583959899749374]
-	}
-	Object {
-	  $ObjectID		  9
-	  IsActive		  [0]
-	  ViewObjType		  "SimulinkTopLevel"
-	  LoadSaveID		  "0"
-	  Extents		  [924.0, 832.0]
-	  ZoomFactor		  [0.8]
-	  Offset		  [0.0, 0.0]
-	}
-	PropName		"EditorsInfo"
+      Object {
+	$PropName		"EditorsInfo"
+	$ObjectID		5
+	$ClassName		"Simulink.EditorInfo"
+	IsActive		[1]
+	ViewObjType		"SimulinkSubsys"
+	LoadSaveID		"4896"
+	Extents			[924.0, 836.0]
+	ZoomFactor		[1.0]
+	Offset			[36.455353459289881, 362.05476190476224]
       }
     }
   }
@@ -112,9 +73,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "jiang"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Tue May 16 17:33:24 2017"
-  RTWModifiedTimeStamp	  416856804
-  ModelVersionFormat	  "1.%<AutoIncrement:1057>"
+  LastModifiedDate	  "Tue May 16 20:00:47 2017"
+  RTWModifiedTimeStamp	  416865647
+  ModelVersionFormat	  "1.%<AutoIncrement:1059>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -155,7 +116,7 @@ Model {
   TryForcingSFcnDF	  off
   Object {
     $PropName		    "DataLoggingOverride"
-    $ObjectID		    10
+    $ObjectID		    6
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
     model_		    "boost_and_two_level__1_sm_ehs"
     Array {
@@ -220,13 +181,13 @@ Model {
     Type		    "Handle"
     Dimension		    1
     Simulink.ConfigSet {
-      $ObjectID		      11
+      $ObjectID		      7
       Version		      "1.14.3"
       Array {
 	Type			"Handle"
 	Dimension		9
 	Simulink.SolverCC {
-	  $ObjectID		  12
+	  $ObjectID		  8
 	  Version		  "1.14.3"
 	  StartTime		  "0.0"
 	  StopTime		  "inf"
@@ -261,7 +222,7 @@ Model {
 	  InsertRTBMode		  "Whenever possible"
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  13
+	  $ObjectID		  9
 	  Version		  "1.14.3"
 	  Decimation		  "1"
 	  ExternalInput		  "[t, u]"
@@ -294,7 +255,7 @@ Model {
 	  Refine		  "1"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  14
+	  $ObjectID		  10
 	  Version		  "1.14.3"
 	  Array {
 	    Type		    "Cell"
@@ -353,7 +314,7 @@ Model {
 	  ParallelExecutionInRapidAccelerator on
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  15
+	  $ObjectID		  11
 	  Version		  "1.14.3"
 	  RTPrefix		  "error"
 	  ConsistencyChecking	  "none"
@@ -444,7 +405,7 @@ Model {
 	  IntegerSaturationMsg	  "warning"
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  16
+	  $ObjectID		  12
 	  Version		  "1.14.3"
 	  ProdBitPerChar	  8
 	  ProdBitPerShort	  16
@@ -485,7 +446,7 @@ Model {
 	  ProdEqTarget		  off
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  17
+	  $ObjectID		  13
 	  Version		  "1.14.3"
 	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
 	  CheckModelReferenceTargetMessage "error"
@@ -500,7 +461,7 @@ Model {
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  18
+	  $ObjectID		  14
 	  Version		  "1.14.3"
 	  SFSimEnableDebug	  on
 	  SFSimOverflowDetection  on
@@ -516,7 +477,7 @@ Model {
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  19
+	  $ObjectID		  15
 	  Version		  "1.14.3"
 	  Array {
 	    Type		    "Cell"
@@ -594,7 +555,7 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      20
+	      $ObjectID		      16
 	      Version		      "1.14.3"
 	      Array {
 		Type			"Cell"
@@ -661,7 +622,7 @@ Model {
 	    }
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      21
+	      $ObjectID		      17
 	      Version		      "1.14.3"
 	      Array {
 		Type			"Cell"
@@ -748,7 +709,7 @@ Model {
 	  }
 	}
 	SSC.SimscapeCC {
-	  $ObjectID		  22
+	  $ObjectID		  18
 	  Version		  "1.10.0"
 	  Array {
 	    Type		    "Cell"
@@ -760,7 +721,7 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    MECH.SimMechanicsCC {
-	      $ObjectID		      23
+	      $ObjectID		      19
 	      Version		      "1.14.3"
 	      Name		      "SimMechanics"
 	      WarnOnRedundantConstraints on
@@ -793,14 +754,14 @@ Model {
 	      OVRRIDBodyVisualizationType "NONE"
 	    }
 	    simmechanics.ConfigurationSet {
-	      $ObjectID		      24
+	      $ObjectID		      20
 	      Version		      "1.14.3"
 	      Description	      "SimMechanics 2G"
 	      Array {
 		Type			"Handle"
 		Dimension		2
 		simmechanics.DiagnosticsConfigSet {
-		  $ObjectID		  25
+		  $ObjectID		  21
 		  Version		  "1.14.3"
 		  Description		  "Diagnostics"
 		  Name			  "DiagnosticsConfigSet"
@@ -814,7 +775,7 @@ Model {
 		  SimMechanicsJointTargetOverSpecification "error"
 		}
 		simmechanics.ExplorerConfigSet {
-		  $ObjectID		  26
+		  $ObjectID		  22
 		  Version		  "1.14.3"
 		  Description		  "Explorer"
 		  Name			  "ExplorerConfigSet"
@@ -849,11 +810,11 @@ Model {
   }
   Simulink.ConfigSet {
     $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    11
+    $ObjectID		    7
   }
   Object {
     $PropName		    "DataTransfer"
-    $ObjectID		    27
+    $ObjectID		    23
     $ClassName		    "Simulink.GlobalDataTransfer"
     DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
@@ -1320,7 +1281,7 @@ Model {
 	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"200"
+	ZoomFactor		"125"
 	Block {
 	  BlockType		  BusCreator
 	  Name			  "Bus\nCreator"
@@ -1712,7 +1673,7 @@ Model {
 	  RequestExecContextInheritance	off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    28
+	    $ObjectID		    24
 	    $ClassName		    "Simulink.Mask"
 	    Initialization	    "opmaskdisplay('maskdisplay_block',gcb,'disp(''OpComm'')');"
 	    Display		    "patch([0 0.5 0.7 0],[1 1 0 0],[0.7 0.75 0.9]);\npatch([1 0.53 0.73 1],[1 1 0 0],[1 0.8 0.7]);\nplot"
@@ -2456,7 +2417,7 @@ Model {
 	  RequestExecContextInheritance	off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    29
+	    $ObjectID		    25
 	    $ClassName		    "Simulink.Mask"
 	    Display		    "opLogo = imread('efsOpLogo.tif','tif');\nimage(opLogo(:,:,1:3));"
 	  }
@@ -3225,7 +3186,7 @@ Model {
 	  SimeHS1		  off
 	  ShowAdv1		  on
 	  gs1			  "0.5"
-	  v_init1		  "zeros(1,24)"
+	  v_init1		  "400*ones(1,24)"
 	  i_init1		  "zeros(1,24)"
 	  netlist_name		  "my_pv_sys_fpga.mdl"
 	  ts_min		  "2.05e-07"
@@ -3281,7 +3242,7 @@ Model {
 	  RequestExecContextInheritance	off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    30
+	    $ObjectID		    26
 	    $ClassName		    "Simulink.Mask"
 	    Display		    "text(0,0,'');"
 	    IconFrame		    "off"
@@ -3458,7 +3419,7 @@ Model {
 	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
-	    ZoomFactor		    "125"
+	    ZoomFactor		    "100"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "from_sc_con"
@@ -3603,7 +3564,7 @@ Model {
 	      RequestExecContextInheritance off
 	      Object {
 		$PropName		"MaskObject"
-		$ObjectID		31
+		$ObjectID		27
 		$ClassName		"Simulink.Mask"
 		Type			"Inverter Control"
 		Description		"The main components of the Inverter Control are:\n1. PLL & Measurements\n2. Maximum Power Point Tracke"
@@ -3615,98 +3576,98 @@ Model {
 		  Type			  "Simulink.MaskParameter"
 		  Dimension		  16
 		  Object {
-		    $ObjectID		    32
+		    $ObjectID		    28
 		    Type		    "edit"
 		    Name		    "Pnom"
 		    Prompt		    "Power (VA)"
 		    Value		    "3500"
 		  }
 		  Object {
-		    $ObjectID		    33
+		    $ObjectID		    29
 		    Type		    "edit"
 		    Name		    "Fnom"
 		    Prompt		    "Frequency (Hz)"
 		    Value		    "50"
 		  }
 		  Object {
-		    $ObjectID		    34
+		    $ObjectID		    30
 		    Type		    "edit"
 		    Name		    "Vnom_prim"
 		    Prompt		    "Primary voltage (Vrms LL)"
 		    Value		    "240"
 		  }
 		  Object {
-		    $ObjectID		    35
+		    $ObjectID		    31
 		    Type		    "edit"
 		    Name		    "Vnom_dc"
 		    Prompt		    "DC voltage (V)"
 		    Value		    "400"
 		  }
 		  Object {
-		    $ObjectID		    36
+		    $ObjectID		    32
 		    Type		    "edit"
 		    Name		    "Increment_MPPT"
 		    Prompt		    "Output increment (V)"
 		    Value		    "0.003"
 		  }
 		  Object {
-		    $ObjectID		    37
+		    $ObjectID		    33
 		    Type		    "edit"
 		    Name		    "Limits_MPPT"
 		    Prompt		    "Output limits [ Upper  Lower ]"
 		    Value		    "[ 450 375 ]"
 		  }
 		  Object {
-		    $ObjectID		    38
+		    $ObjectID		    34
 		    Type		    "edit"
 		    Name		    "Vdc_ref_Init"
 		    Prompt		    "Output initial value (V)"
 		    Value		    "425"
 		  }
 		  Object {
-		    $ObjectID		    39
+		    $ObjectID		    35
 		    Type		    "edit"
 		    Name		    "Kp_VDCreg"
 		    Prompt		    "Proportional gain"
 		    Value		    "12"
 		  }
 		  Object {
-		    $ObjectID		    40
+		    $ObjectID		    36
 		    Type		    "edit"
 		    Name		    "Ki_VDCreg"
 		    Prompt		    "Integral gain"
 		    Value		    "200"
 		  }
 		  Object {
-		    $ObjectID		    41
+		    $ObjectID		    37
 		    Type		    "edit"
 		    Name		    "Kp_Ireg"
 		    Prompt		    "Proportional gain"
 		    Value		    "0.15"
 		  }
 		  Object {
-		    $ObjectID		    42
+		    $ObjectID		    38
 		    Type		    "edit"
 		    Name		    "Ki_Ireg"
 		    Prompt		    "Integral gain"
 		    Value		    "6.6"
 		  }
 		  Object {
-		    $ObjectID		    43
+		    $ObjectID		    39
 		    Type		    "edit"
 		    Name		    "RLff"
 		    Prompt		    "Feedforward Values [Rff Lff] (pu)"
 		    Value		    "[ 0.002 0.20 ]"
 		  }
 		  Object {
-		    $ObjectID		    44
+		    $ObjectID		    40
 		    Type		    "edit"
 		    Name		    "Fc"
 		    Prompt		    "Carrier frequency (Hz)"
 		    Value		    "8000"
 		  }
 		  Object {
-		    $ObjectID		    45
+		    $ObjectID		    41
 		    Type		    "popup"
 		    Array {
 		    Type		    "Cell"
@@ -3720,14 +3681,14 @@ Model {
 		    Value		    "Bipolar"
 		  }
 		  Object {
-		    $ObjectID		    46
+		    $ObjectID		    42
 		    Type		    "edit"
 		    Name		    "Ts_Control"
 		    Prompt		    "Control systems"
 		    Value		    "Ts"
 		  }
 		  Object {
-		    $ObjectID		    47
+		    $ObjectID		    43
 		    Type		    "edit"
 		    Name		    "Ts_PWMgenerator"
 		    Prompt		    "PWM generator"
@@ -3739,11 +3700,11 @@ Model {
 		  Type			  "Simulink.dialog.Group"
 		  Dimension		  2
 		  Object {
-		    $ObjectID		    48
+		    $ObjectID		    44
 		    Prompt		    "%<MaskType>"
 		    Object {
 		    $PropName		    "DialogControls"
-		    $ObjectID		    49
+		    $ObjectID		    45
 		    $ClassName		    "Simulink.dialog.Text"
 		    Prompt		    "%<MaskDescription>"
 		    Name		    "DescTextVar"
@@ -3751,32 +3712,32 @@ Model {
 		    Name		    "DescGroupVar"
 		  }
 		  Object {
-		    $ObjectID		    50
+		    $ObjectID		    46
 		    Prompt		    "Simulink:studio:ToolBarParametersMenu"
 		    Array {
 		    Type		    "Simulink.dialog.Group"
 		    Dimension		    6
 		    Object {
-		    $ObjectID		    51
+		    $ObjectID		    47
 		    Prompt		    "Nominal Values:"
 		    Array {
 		    Type		    "Simulink.dialog.parameter.Edit"
 		    Dimension		    4
 		    Object {
-		    $ObjectID		    52
+		    $ObjectID		    48
 		    Name		    "Pnom"
 		    }
 		    Object {
-		    $ObjectID		    53
+		    $ObjectID		    49
 		    Row			    "current"
 		    Name		    "Fnom"
 		    }
 		    Object {
-		    $ObjectID		    54
+		    $ObjectID		    50
 		    Name		    "Vnom_prim"
 		    }
 		    Object {
-		    $ObjectID		    55
+		    $ObjectID		    51
 		    Row			    "current"
 		    Name		    "Vnom_dc"
 		    }
@@ -3785,22 +3746,22 @@ Model {
 		    Name		    "Container4"
 		    }
 		    Object {
-		    $ObjectID		    56
+		    $ObjectID		    52
 		    Prompt		    "MPPT Controller:"
 		    Array {
 		    Type		    "Simulink.dialog.parameter.Edit"
 		    Dimension		    3
 		    Object {
-		    $ObjectID		    57
+		    $ObjectID		    53
 		    Name		    "Increment_MPPT"
 		    }
 		    Object {
-		    $ObjectID		    58
+		    $ObjectID		    54
 		    Row			    "current"
 		    Name		    "Limits_MPPT"
 		    }
 		    Object {
-		    $ObjectID		    59
+		    $ObjectID		    55
 		    Row			    "current"
 		    Name		    "Vdc_ref_Init"
 		    }
@@ -3809,17 +3770,17 @@ Model {
 		    Name		    "Container3"
 		    }
 		    Object {
-		    $ObjectID		    60
+		    $ObjectID		    56
 		    Prompt		    "Dc Voltage Regulator:"
 		    Array {
 		    Type		    "Simulink.dialog.parameter.Edit"
 		    Dimension		    2
 		    Object {
-		    $ObjectID		    61
+		    $ObjectID		    57
 		    Name		    "Kp_VDCreg"
 		    }
 		    Object {
-		    $ObjectID		    62
+		    $ObjectID		    58
 		    Row			    "current"
 		    Name		    "Ki_VDCreg"
 		    }
@@ -3828,22 +3789,22 @@ Model {
 		    Name		    "Container8"
 		    }
 		    Object {
-		    $ObjectID		    63
+		    $ObjectID		    59
 		    Prompt		    "Current Regulator:"
 		    Array {
 		    Type		    "Simulink.dialog.parameter.Edit"
 		    Dimension		    3
 		    Object {
-		    $ObjectID		    64
+		    $ObjectID		    60
 		    Name		    "Kp_Ireg"
 		    }
 		    Object {
-		    $ObjectID		    65
+		    $ObjectID		    61
 		    Row			    "current"
 		    Name		    "Ki_Ireg"
 		    }
 		    Object {
-		    $ObjectID		    66
+		    $ObjectID		    62
 		    Row			    "current"
 		    Name		    "RLff"
 		    }
@@ -3852,18 +3813,18 @@ Model {
 		    Name		    "Container6"
 		    }
 		    Object {
-		    $ObjectID		    67
+		    $ObjectID		    63
 		    Prompt		    "PWM Modulator:"
 		    Array {
 		    Type		    "Simulink.dialog.parameter.Control"
 		    Dimension		    2
 		    Object {
-		    $ObjectID		    68
+		    $ObjectID		    64
 		    $ClassName		    "Simulink.dialog.parameter.Edit"
 		    Name		    "Fc"
 		    }
 		    Object {
-		    $ObjectID		    69
+		    $ObjectID		    65
 		    $ClassName		    "Simulink.dialog.parameter.Popup"
 		    PromptLocation	    "top"
 		    Row			    "current"
@@ -3874,17 +3835,17 @@ Model {
 		    Name		    "Container9"
 		    }
 		    Object {
-		    $ObjectID		    70
+		    $ObjectID		    66
 		    Prompt		    "Sample Times:"
 		    Array {
 		    Type		    "Simulink.dialog.parameter.Edit"
 		    Dimension		    2
 		    Object {
-		    $ObjectID		    71
+		    $ObjectID		    67
 		    Name		    "Ts_Control"
 		    }
 		    Object {
-		    $ObjectID		    72
+		    $ObjectID		    68
 		    Row			    "current"
 		    Name		    "Ts_PWMgenerator"
 		    }
@@ -6797,6 +6758,8 @@ Model {
 	      SID		      "5090"
 	      Position		      [1140, 655, 1170, 685]
 	      ZOrder		      4312
+	      InheritSampleTime	      on
+	      LinearizeAsDelay	      on
 	    }
 	    Block {
 	      BlockType		      Memory
@@ -6804,6 +6767,8 @@ Model {
 	      SID		      "5091"
 	      Position		      [1085, 615, 1115, 645]
 	      ZOrder		      4313
+	      InheritSampleTime	      on
+	      LinearizeAsDelay	      on
 	    }
 	    Block {
 	      BlockType		      Mux
@@ -7012,7 +6977,7 @@ Model {
 	      ZOrder		      4319
 	      InputPortMap	      "u0"
 	      UpperLimit	      "10"
-	      LowerLimit	      "-10"
+	      LowerLimit	      "0"
 	    }
 	    Block {
 	      BlockType		      Selector

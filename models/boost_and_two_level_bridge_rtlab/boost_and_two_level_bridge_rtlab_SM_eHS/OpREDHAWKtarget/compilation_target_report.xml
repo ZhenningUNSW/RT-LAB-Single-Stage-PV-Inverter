@@ -221,7 +221,7 @@ tmpfs                 4.0G     0  4.0G   0% /dev/shm
                 </property>
                 <property name="MaxDynamicSignals">
                     <value>
-                        2/0/100/24/48/
+                        2/0/100/24/52/
                     </value>
                 </property>
                 <property name="MODEL_PAUSE_TIME">
@@ -451,20 +451,20 @@ tmpfs                 4.0G     0  4.0G   0% /dev/shm
           inet addr:192.168.5.113  Bcast:192.168.5.255  Mask:255.255.255.0
           inet6 addr: fe80::ec4:7aff:fe0c:1f5a/64 Scope:Link
           UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
-          RX packets:16937231 errors:0 dropped:0 overruns:0 frame:0
-          TX packets:16915926 errors:0 dropped:0 overruns:0 carrier:0
+          RX packets:17341667 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:17342743 errors:0 dropped:0 overruns:0 carrier:0
           collisions:0 txqueuelen:1000 
-          RX bytes:1171306120 (1.0 GiB)  TX bytes:3901217566 (3.6 GiB)
+          RX bytes:1322939305 (1.2 GiB)  TX bytes:97529214 (93.0 MiB)
           Memory:df900000-df920000 
 
 lo        Link encap:Local Loopback  
           inet addr:127.0.0.1  Mask:255.0.0.0
           inet6 addr: ::1/128 Scope:Host
           UP LOOPBACK RUNNING  MTU:16436  Metric:1
-          RX packets:523 errors:0 dropped:0 overruns:0 frame:0
-          TX packets:523 errors:0 dropped:0 overruns:0 carrier:0
+          RX packets:593 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:593 errors:0 dropped:0 overruns:0 carrier:0
           collisions:0 txqueuelen:0 
-          RX bytes:1036872 (1012.5 KiB)  TX bytes:1036872 (1012.5 KiB)
+          RX bytes:1040672 (1016.2 KiB)  TX bytes:1040672 (1016.2 KiB)
 
                     </value>
                 </textlog>
@@ -1270,6 +1270,58 @@ pci 0000:01:00.0: setting latency timer to 64
 e1000e: eth0 NIC Link is Down
 e1000e: eth0 NIC Link is Up 10 Mbps Full Duplex, Flow Control: None
 0000:02:00.0: eth0: 10/100 speed: disabling TSO
+e1000e: eth0 NIC Link is Down
+e1000e: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX/TX
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
 e1000e: eth0 NIC Link is Down
 e1000e: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX/TX
 pci 0000:01:00.0: setting latency timer to 64

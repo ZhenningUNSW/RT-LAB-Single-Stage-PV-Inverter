@@ -7,7 +7,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.1059"
+    ComputedModelVersion    "1.1066"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -55,11 +55,11 @@ Model {
 	$ObjectID		5
 	$ClassName		"Simulink.EditorInfo"
 	IsActive		[1]
-	ViewObjType		"SimulinkTopLevel"
-	LoadSaveID		"0"
+	ViewObjType		"SimulinkSubsys"
+	LoadSaveID		"5470"
 	Extents			[924.0, 836.0]
-	ZoomFactor		[0.8]
-	Offset			[831.25, -17.5]
+	ZoomFactor		[1.5]
+	Offset			[102.33333333333297, 107.93333333333358]
       }
     }
   }
@@ -73,9 +73,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "jiang"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Tue May 16 17:40:10 2017"
-  RTWModifiedTimeStamp	  416857157
-  ModelVersionFormat	  "1.%<AutoIncrement:1059>"
+  LastModifiedDate	  "Tue May 16 23:44:22 2017"
+  RTWModifiedTimeStamp	  416878675
+  ModelVersionFormat	  "1.%<AutoIncrement:1066>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1038,7 +1038,7 @@ Model {
   System {
     Name		    "boost_and_two_level_bridge_rtlab_2_sc_console"
     Location		    [952, 0, 1928, 1038]
-    Open		    on
+    Open		    off
     ModelBrowserVisibility  off
     ModelBrowserWidth	    356
     ScreenColor		    "white"
@@ -1049,7 +1049,7 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "80"
+    ZoomFactor		    "60"
     ReportName		    "simulink-default.rpt"
     SIDHighWatermark	    "5633"
     Block {
@@ -2661,7 +2661,6 @@ Model {
       Location		      [1, 55, 1921, 1029]
       Open		      off
       NumInputPorts	      "10"
-      ZoomMode		      "xonly"
       List {
 	ListType		AxesTitles
 	axes1			"%<SignalLabel>"
@@ -2686,9 +2685,8 @@ Model {
 	MarkerStyles		"none|none|none|none|none|none"
       }
       ShowLegends	      off
-      TimeRange		      "9.997999999999999"
-      YMin		      "8.535~-50~20~-50~-500~-500~-5e-05~0~999~24"
-      YMax		      "8.545~50~60~50~500~500~5e-05~1~1001~26"
+      YMin		      "-5~-5~-5~-5~-5~-5~-5~-5~-5~-5"
+      YMax		      "5~5~5~5~5~5~5~5~5~5"
       SaveName		      "ScopeData3"
       Decimation	      "100"
       ScrollMode	      off
@@ -2701,7 +2699,7 @@ Model {
       Position		      [1855, 23, 1930, 162]
       ZOrder		      69
       Floating		      off
-      Location		      [10, 69, 1916, 1043]
+      Location		      [1, 55, 1921, 1029]
       Open		      off
       NumInputPorts	      "4"
       List {
@@ -2725,7 +2723,7 @@ Model {
       YMin		      "-1~-1~-1~-1"
       YMax		      "1~1~1~1"
       SaveName		      "ScopeData4"
-      Decimation	      "1000"
+      Decimation	      "1e5"
       ScrollMode	      off
     }
     Block {
@@ -2736,7 +2734,7 @@ Model {
       Position		      [1310, 895, 1390, 1040]
       ZOrder		      70
       Floating		      off
-      Location		      [10, 69, 1916, 1043]
+      Location		      [1, 55, 1921, 1029]
       Open		      off
       NumInputPorts	      "4"
       List {
@@ -2760,6 +2758,7 @@ Model {
       YMin		      "-5~-5~-5~-5"
       YMax		      "5~5~5~5"
       SaveName		      "ScopeData5"
+      Decimation	      "1e5"
       ScrollMode	      off
     }
     Block {
@@ -2775,7 +2774,7 @@ Model {
       SourceType	      "Slider Gain"
       ContentPreviewEnabled   off
       low		      "0"
-      gain		      "1000"
+      gain		      "500"
       high		      "1000"
     }
     Block {
@@ -2841,6 +2840,7 @@ Model {
       SID		      "5492"
       Position		      [320, 747, 350, 783]
       ZOrder		      78
+      CurrentSetting	      "0"
       Port {
 	PortNumber		1
 	Name			"source_select"
@@ -3044,24 +3044,6 @@ Model {
       SrcPort		      1
       DstBlock		      "pwm_source"
       DstPort		      2
-    }
-    Line {
-      Name		      "<Temperature>"
-      ZOrder		      4
-      Labels		      [0, 0]
-      SrcBlock		      "Bus\nSelector1"
-      SrcPort		      12
-      DstBlock		      "Scope2"
-      DstPort		      10
-    }
-    Line {
-      Name		      "<Irradiance>"
-      ZOrder		      5
-      Labels		      [0, 0]
-      SrcBlock		      "Bus\nSelector1"
-      SrcPort		      11
-      DstBlock		      "Scope2"
-      DstPort		      9
     }
     Line {
       Name		      "<Gate>"

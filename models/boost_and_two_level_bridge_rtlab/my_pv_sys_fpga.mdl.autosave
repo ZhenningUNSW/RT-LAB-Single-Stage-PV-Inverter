@@ -7,7 +7,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.9"
+    ComputedModelVersion    "1.10"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -56,7 +56,7 @@ Model {
 	LoadSaveID		"0"
 	Extents			[1886.0, 846.0]
 	ZoomFactor		[1.5]
-	Offset			[199.90952380952285, 268.39631696428546]
+	Offset			[679.90952380952274, 268.39631696428546]
       }
     }
   }
@@ -69,9 +69,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "jiang"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Sat Mar 04 16:56:03 2017"
-  RTWModifiedTimeStamp	  416858322
-  ModelVersionFormat	  "1.%<AutoIncrement:9>"
+  LastModifiedDate	  "Tue May 16 19:54:56 2017"
+  RTWModifiedTimeStamp	  416957113
+  ModelVersionFormat	  "1.%<AutoIncrement:10>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -899,7 +899,7 @@ Model {
   System {
     Name		    "my_pv_sys_fpga"
     Location		    [-9, -9, 1929, 1039]
-    Open		    on
+    Open		    off
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
     ScreenColor		    "white"
@@ -955,7 +955,7 @@ Model {
       LConnTagsString	      "a"
       RConnTagsString	      "__new0"
       NominalVoltage	      "240"
-      NominalFrequency	      "60"
+      NominalFrequency	      "50"
       ActivePower	      "10.5"
       InductivePower	      "0"
       CapacitivePower	      "525"

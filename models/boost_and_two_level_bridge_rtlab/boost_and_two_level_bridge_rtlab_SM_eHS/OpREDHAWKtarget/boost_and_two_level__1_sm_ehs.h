@@ -3,9 +3,9 @@
  *
  * Code generation for model "boost_and_two_level__1_sm_ehs".
  *
- * Model version              : 1.1057
+ * Model version              : 1.1059
  * Simulink Coder version : 8.7 (R2014b) 08-Sep-2014
- * C source code generated on : Tue May 16 17:33:54 2017
+ * C source code generated on : Tue May 16 20:01:21 2017
  *
  * Target selection: rtlab_rtmodel.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -3003,7 +3003,7 @@ struct P_boost_and_two_level__1_sm_ehs_T_ {
   real_T Saturation_UpperSat_b1;       /* Expression: 10
                                         * Referenced by: '<S10>/Saturation'
                                         */
-  real_T Saturation_LowerSat_c;        /* Expression: -10
+  real_T Saturation_LowerSat_c;        /* Expression: 0
                                         * Referenced by: '<S10>/Saturation'
                                         */
   real_T Constant1_Value_h;            /* Expression: 0.5
