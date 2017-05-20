@@ -1,6 +1,6 @@
 MODEL=boost_and_two_level__1_sm_ehs
 NUMST=2
-NCSTATES=2
+NCSTATES=8
 HAVESTDIO
 RT
 USE_RTMODEL

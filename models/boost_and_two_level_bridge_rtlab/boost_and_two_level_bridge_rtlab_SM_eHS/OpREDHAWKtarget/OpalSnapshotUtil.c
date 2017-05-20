@@ -141,6 +141,22 @@ int OpalSnapshot_Copy_DWork(void * src, void * dst) {
    memcpy(&pDst->SFunction_PreviousInput, &pSrc->SFunction_PreviousInput, eltSize);
    size += eltSize;
 
+   eltSize = sizeof(pSrc->Memory1_1_PreviousInput);
+   memcpy(&pDst->Memory1_1_PreviousInput, &pSrc->Memory1_1_PreviousInput, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->Memory1_2_PreviousInput);
+   memcpy(&pDst->Memory1_2_PreviousInput, &pSrc->Memory1_2_PreviousInput, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->Memory1_3_PreviousInput);
+   memcpy(&pDst->Memory1_3_PreviousInput, &pSrc->Memory1_3_PreviousInput, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->Memory1_4_PreviousInput);
+   memcpy(&pDst->Memory1_4_PreviousInput, &pSrc->Memory1_4_PreviousInput, eltSize);
+   size += eltSize;
+
    eltSize = sizeof(pSrc->Memory1_PreviousInput);
    memcpy(&pDst->Memory1_PreviousInput, &pSrc->Memory1_PreviousInput, eltSize);
    size += eltSize;
@@ -149,12 +165,48 @@ int OpalSnapshot_Copy_DWork(void * src, void * dst) {
    memcpy(&pDst->Memory_PreviousInput, &pSrc->Memory_PreviousInput, eltSize);
    size += eltSize;
 
-   eltSize = sizeof(pSrc->Memory_PreviousInput_n);
-   memcpy(&pDst->Memory_PreviousInput_n, &pSrc->Memory_PreviousInput_n, eltSize);
+   eltSize = sizeof(pSrc->Memory2_1_PreviousInput);
+   memcpy(&pDst->Memory2_1_PreviousInput, &pSrc->Memory2_1_PreviousInput, eltSize);
    size += eltSize;
 
-   eltSize = sizeof(pSrc->Memory_PreviousInput_e);
-   memcpy(&pDst->Memory_PreviousInput_e, &pSrc->Memory_PreviousInput_e, eltSize);
+   eltSize = sizeof(pSrc->Memory2_2_PreviousInput);
+   memcpy(&pDst->Memory2_2_PreviousInput, &pSrc->Memory2_2_PreviousInput, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->Memory2_3_PreviousInput);
+   memcpy(&pDst->Memory2_3_PreviousInput, &pSrc->Memory2_3_PreviousInput, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->Memory_1_PreviousInput);
+   memcpy(&pDst->Memory_1_PreviousInput, &pSrc->Memory_1_PreviousInput, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->Memory_2_PreviousInput);
+   memcpy(&pDst->Memory_2_PreviousInput, &pSrc->Memory_2_PreviousInput, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->Memory_3_PreviousInput);
+   memcpy(&pDst->Memory_3_PreviousInput, &pSrc->Memory_3_PreviousInput, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->Memory_4_PreviousInput);
+   memcpy(&pDst->Memory_4_PreviousInput, &pSrc->Memory_4_PreviousInput, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->Memory_5_PreviousInput);
+   memcpy(&pDst->Memory_5_PreviousInput, &pSrc->Memory_5_PreviousInput, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->Memory_6_PreviousInput);
+   memcpy(&pDst->Memory_6_PreviousInput, &pSrc->Memory_6_PreviousInput, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->Memory3_1_PreviousInput);
+   memcpy(&pDst->Memory3_1_PreviousInput, &pSrc->Memory3_1_PreviousInput, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->Memory3_2_PreviousInput);
+   memcpy(&pDst->Memory3_2_PreviousInput, &pSrc->Memory3_2_PreviousInput, eltSize);
    size += eltSize;
 
    eltSize = sizeof(pSrc->Memory1_PreviousInput_h);
@@ -179,6 +231,14 @@ int OpalSnapshot_Copy_DWork(void * src, void * dst) {
 
    eltSize = sizeof(pSrc->Memory_PreviousInput_h);
    memcpy(&pDst->Memory_PreviousInput_h, &pSrc->Memory_PreviousInput_h, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->Memory_PreviousInput_n);
+   memcpy(&pDst->Memory_PreviousInput_n, &pSrc->Memory_PreviousInput_n, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->Memory_PreviousInput_e);
+   memcpy(&pDst->Memory_PreviousInput_e, &pSrc->Memory_PreviousInput_e, eltSize);
    size += eltSize;
 
    eltSize = sizeof(pSrc->DiscreteDerivative_tmp);
@@ -257,20 +317,8 @@ int OpalSnapshot_Copy_DWork(void * src, void * dst) {
    memcpy(&pDst->DelayInput1_DSTATE_k, &pSrc->DelayInput1_DSTATE_k, eltSize);
    size += eltSize;
 
-   eltSize = sizeof(pSrc->TransportDelay_IWORK);
-   memcpy(&pDst->TransportDelay_IWORK, &pSrc->TransportDelay_IWORK, eltSize);
-   size += eltSize;
-
-   eltSize = sizeof(pSrc->TransportDelay_IWORK_g);
-   memcpy(&pDst->TransportDelay_IWORK_g, &pSrc->TransportDelay_IWORK_g, eltSize);
-   size += eltSize;
-
    eltSize = sizeof(pSrc->SFunction_IWORK);
    memcpy(&pDst->SFunction_IWORK, &pSrc->SFunction_IWORK, eltSize);
-   size += eltSize;
-
-   eltSize = sizeof(pSrc->SFunction_IWORK_n);
-   memcpy(&pDst->SFunction_IWORK_n, &pSrc->SFunction_IWORK_n, eltSize);
    size += eltSize;
 
    eltSize = sizeof(pSrc->SFunction_IWORK_b);
@@ -283,6 +331,34 @@ int OpalSnapshot_Copy_DWork(void * src, void * dst) {
 
    eltSize = sizeof(pSrc->SFunction_IWORK_o);
    memcpy(&pDst->SFunction_IWORK_o, &pSrc->SFunction_IWORK_o, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->SFunction_IWORK_m);
+   memcpy(&pDst->SFunction_IWORK_m, &pSrc->SFunction_IWORK_m, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->TransportDelay_IWORK);
+   memcpy(&pDst->TransportDelay_IWORK, &pSrc->TransportDelay_IWORK, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->TransportDelay_IWORK_g);
+   memcpy(&pDst->TransportDelay_IWORK_g, &pSrc->TransportDelay_IWORK_g, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->SFunction_IWORK_n);
+   memcpy(&pDst->SFunction_IWORK_n, &pSrc->SFunction_IWORK_n, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->SFunction_IWORK_bd);
+   memcpy(&pDst->SFunction_IWORK_bd, &pSrc->SFunction_IWORK_bd, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->SFunction_IWORK_jw);
+   memcpy(&pDst->SFunction_IWORK_jw, &pSrc->SFunction_IWORK_jw, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->SFunction_IWORK_os);
+   memcpy(&pDst->SFunction_IWORK_os, &pSrc->SFunction_IWORK_os, eltSize);
    size += eltSize;
 
    eltSize = sizeof(pSrc->SFunction_IWORK_k);
@@ -339,6 +415,22 @@ int OpalSnapshot_Copy_DWork(void * src, void * dst) {
 
    eltSize = sizeof(pSrc->AutomaticGainControl_MODE);
    memcpy(&pDst->AutomaticGainControl_MODE, &pSrc->AutomaticGainControl_MODE, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->TrueRMS_i);
+   memcpy(&pDst->TrueRMS_i, &pSrc->TrueRMS_i, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->RMS_h);
+   memcpy(&pDst->RMS_h, &pSrc->RMS_h, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->TrueRMS);
+   memcpy(&pDst->TrueRMS, &pSrc->TrueRMS, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->RMS);
+   memcpy(&pDst->RMS, &pSrc->RMS, eltSize);
    size += eltSize;
 
    return size;

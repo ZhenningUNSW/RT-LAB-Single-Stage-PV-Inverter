@@ -7,7 +7,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.10"
+    ComputedModelVersion    "1.11"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -30,7 +30,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [-9.0, -9.0, 1938.0, 1048.0]
+      Location		      [-9.0, 0.0, 1932.0, 1048.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -54,9 +54,9 @@ Model {
 	IsActive		[1]
 	ViewObjType		"SimulinkTopLevel"
 	LoadSaveID		"0"
-	Extents			[1886.0, 846.0]
-	ZoomFactor		[1.5]
-	Offset			[679.90952380952274, 268.39631696428546]
+	Extents			[1880.0, 846.0]
+	ZoomFactor		[1.25]
+	Offset			[283.37619047618949, 233.86298363095216]
       }
     }
   }
@@ -69,9 +69,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "jiang"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Tue May 16 19:54:56 2017"
-  RTWModifiedTimeStamp	  416865293
-  ModelVersionFormat	  "1.%<AutoIncrement:10>"
+  LastModifiedDate	  "Sat May 20 13:13:33 2017"
+  RTWModifiedTimeStamp	  417186808
+  ModelVersionFormat	  "1.%<AutoIncrement:11>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -828,7 +828,7 @@ Model {
   }
   System {
     Name		    "my_pv_sys_fpga"
-    Location		    [-9, -9, 1929, 1039]
+    Location		    [-9, 0, 1923, 1048]
     Open		    on
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
@@ -840,7 +840,7 @@ Model {
     TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "150"
+    ZoomFactor		    "125"
     ReportName		    "simulink-default.rpt"
     SIDHighWatermark	    "115"
     Block {
@@ -1125,7 +1125,7 @@ Model {
       LConnTagsString	      "__new0"
       RConnTagsString	      "__new0"
       BranchType	      "R"
-      Resistance	      "301.8*14"
+      Resistance	      "301.8*10"
       Inductance	      "2.183e-3"
       SetiL0		      off
       InitialCurrent	      "0"
@@ -1150,7 +1150,7 @@ Model {
       LConnTagsString	      "__new0"
       RConnTagsString	      "__new0"
       BranchType	      "R"
-      Resistance	      "0.247*14"
+      Resistance	      "0.247"
       Inductance	      "2.183e-3"
       SetiL0		      off
       InitialCurrent	      "0"

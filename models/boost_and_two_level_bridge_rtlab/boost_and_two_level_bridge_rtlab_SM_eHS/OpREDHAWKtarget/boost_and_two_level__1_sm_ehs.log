@@ -1,8 +1,9 @@
 
 --------------- Transferring files ... ------------------------------
 
-Transferring in binary: C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\eHS_Config\ehs_config_eHSx64v3_SID4894.mat (SM_eHS) ... OK.
+Transferring in binary: C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\boost_and_two_level__1_sm_ehs (SM_eHS) ... OK.
 Transferring in binary: C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\MMPK7_1-EX-0001-2_3_2_19-300Series_eHSgen3_with_IOs-303-03.bin (SM_eHS) ... OK.
+Transferring in binary: C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\eHS_Config\ehs_config_eHSx64v3_SID4894.mat (SM_eHS) ... OK.
 Transferring in binary: C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\Opal*Creator.data (SM_eHS) ... OK.
 
 --------------- Done transferring files -----------------------------
@@ -68,7 +69,7 @@ Setting MMPK7 flash in asynchronous read mode....
 Preparing to erase and write at base address 0x00800000
 Sending Unlock commands to the 88 Flash sectors
 Sending Erase commands
-#*.........#*........#*........#*.......#*.......#*........#*........#*........#*........#*.........#*........#*........#*........#*.........#*.......#*........#*........#*........#*........#*.........#*........#*.......#*.......#*........#*.........#*........#*........#*.........#*........#*........#*........#*........#*........#*........#*........#*........#*........#*........#*.........#*........#*........#*.......#*.......#*........#*.......#*........#*........#*........#*........#*........#*........#*........#*.........#*.......#*........#*.......#*........#*........#*........#*........#*........#*.......#*........#*.........#*........#*........#*........#*........#*........#*........#*.......#*........#*........#*........#*.......#*........#*........#*.........#*.......#*........#*........#*........#*........#*........#*........#*........#*........#*........
+#*.........#*........#*........#*.......#*........#*.........#*........#*........#*........#*.........#*.........#*........#*........#*........#*........#*.........#*........#*.........#*.......#*........#*........#*........#*........#*........#*.........#*........#*........#*.........#*........#*........#*.........#*.........#*.........#*........#*.........#*.........#*........#*........#*.........#*.........#*.........#*........#*........#*........#*.......#*.........#*........#*.........#*........#*.........#*........#*.........#*.........#*........#*.........#*........#*........#*........#*.........#*........#*........#*........#*........#*..........#*.........#*.........#*.........#*.........#*........#*........#*........#*........#*........#*.........#*........#*........#*........#*..........#*........#*........#*........#*.........#*........#*........#*.........#*........#*........#*........
 Starting Flash Write in buffered programming mode ...
 ****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************
 Writing completed successfully 
@@ -88,445 +89,835 @@ The OP4500 card has been updated with bitstream MMPK7_1-EX-0001-2_3_2_19-300Seri
 
 Bitstream successfully programmed.
  
-[      0.001 ]           Initialized as OpalRoot
-[      0.001 ]           Loading services from "/usr/opalrt/v11.0.8.13/common/bin/Services"
+[      0.001 ]           Begin to register on OpalRoot
+[      0.002 ]           Registered on OpalRoot
+[      0.003 ]           Loading services from "/usr/opalrt/v11.0.8.13/common/bin/Services"
 [      0.012 ]             Plugin "Web": services informations retrieved
-[      0.023 ]             Plugin "DVP": services informations retrieved
-[      0.034 ]             Plugin "RFM": services informations retrieved
-[      0.044 ]             Plugin "sFlashUpdate": services informations retrieved
-[      0.058 ]             Plugin "DataAcquisition": services informations retrieved
-[      0.071 ]             Plugin "SimulationSetup": services informations retrieved
-[      0.081 ]             Plugin "HEI": services informations retrieved
-[      0.093 ]             Plugin "MODBUS": services informations retrieved
-[      0.104 ]             Plugin "DriverIdentification": services informations retrieved
-[      0.126 ]             Plugin "IRTS": services informations retrieved
-[      0.136 ]             Plugin "WatchDogClient": services informations retrieved
-[      0.146 ]             Plugin "Pickering-41-752": services informations retrieved
-[      0.159 ]             Plugin "IEC104": services informations retrieved
-[      0.172 ]             Plugin "Parameters": services informations retrieved
-[      0.182 ]             Plugin "LogRT": services informations retrieved
-[      0.196 ]             Plugin "ARINC": services informations retrieved
-[      0.206 ]             Plugin "WatchDogServer": services informations retrieved
-[      0.216 ]             Plugin "Dummy": services informations retrieved
-[      0.217 ]           Service DataAcquisition/DataAcquisition found
-[      0.217 ]           WatchDogServer service - server socket created, available on address: 192.168.5.113:50334
-[      0.217 ]           Root initialized: 192.168.5.113:2525/resources/root
-[      0.217 ]           Initialization done
-[      0.296 ]           OpalRtMain.c        : Calculated cpu speed = 3299 MHz
-[      0.296 ]           OpalRtMain.c        : Model 'boost_and_two_level__1_sm_ehs' compiled in RELEASE mode.
-[      0.296 ]           OpalRtMain.c        : 4 CPUs active on this Computer
-[      0.296 ]           OpalRtMain.c        : libOpalR2014B.a : v11.0.8.13 (build = undefined)
-[      0.338 ]           Highest active CPU: 4
-[      0.338 ]           Subsystem SM_eHS allocates 1 cores.
-[      0.355 ]           OpalRtMain.c        : model boost_and_two_level__1_sm_ehs assigned to logical cpu 1
-[      0.355 ]           OpalRtMain.c        : Monitoring is enabled
-[      0.355 ]           MonLogger.c         : Registering internal probes ...
-[      0.355 ]           MonLogger.c         : Done registering 22 internal probes.
-[      0.355 ]           OpalSync.c          : Monitoring Controller initialization, step 1 done
-[      0.355 ]           Loading data file: OpalAcquisitionSourcesCreator.data
-[      0.358 ]           Loading data file: OpalRealTimeParametersCreator.data
-[      0.361 ]           Service Parameters/ParametersService found
-[      0.361 ]           HostRequest.c       : Requests from host will be received from thread
-[      0.361 ]           OpalHostRecvIf.c    : Recv Thread started
-[      0.361 ]           TargetRequest.c     : Requests to host will be sent from thread
-[      0.361 ]           TargetRequest.c     : Requests to file will be sent from thread
-[      0.361 ]           OpalHostSendIf.c    : Send Thread started
-[      2.841 ]           OpalHostRecvIf.c    : RECV: connection to host established
-[      2.865 ]           OpalPrint.c         : Sending path notification request for system control (cmd 29)
-[      2.865 ]           OpalHostSendIf.c    : SEND: connection to host established
-[      3.065 ]           OpalTarget.c        : OPALRT Shared Memory unlocked (post)
-[      3.066 ]           OpalTarget.c        : Sub-systems added at position 0.
-[      3.066 ]           OpalRtMain.c        : RT_mem_name = RT_boost_and_two_level__1_sm_ehs_8078
-[      3.066 ]           OpalRtIf.c          : Shared memory RT created
-[      3.072 ]           OpalRtMain.c        : Model stop time has been set to 0.000000 s
-[      3.072 ]           OpalRtMain.c        : Model pause time has been set to 0.000000 s
-[      3.072 ]           OpalRtMain.c        : Assigned main thread to CPU 1 (mask 0x2)
-[      3.072 ]           OpalRtMain.c        : Display of standard output will be disabled
-[      3.072 ]           MonLogger.c         : id 22 given to event "op7160ex1_wait_recv_0_OpCtrl"
-[      3.072 ]           Loading data file: OpalControlSignalsCreator.data
-[      3.072 ]           efs solver config: ehs_config_eHSx64v3_SID4894.mat was opened successfully
+[      0.024 ]             Plugin "DVP": services informations retrieved
+[      0.035 ]             Plugin "RFM": services informations retrieved
+[      0.047 ]             Plugin "sFlashUpdate": services informations retrieved
+[      0.062 ]             Plugin "DataAcquisition": services informations retrieved
+[      0.074 ]             Plugin "SimulationSetup": services informations retrieved
+[      0.084 ]             Plugin "HEI": services informations retrieved
+[      0.113 ]             Plugin "MODBUS": services informations retrieved
+[      0.124 ]             Plugin "DriverIdentification": services informations retrieved
+[      0.145 ]             Plugin "IRTS": services informations retrieved
+[      0.154 ]             Plugin "WatchDogClient": services informations retrieved
+[      0.164 ]             Plugin "Pickering-41-752": services informations retrieved
+[      0.176 ]             Plugin "IEC104": services informations retrieved
+[      0.188 ]             Plugin "Parameters": services informations retrieved
+[      0.198 ]             Plugin "LogRT": services informations retrieved
+[      0.211 ]             Plugin "ARINC": services informations retrieved
+[      0.221 ]             Plugin "WatchDogServer": services informations retrieved
+[      0.230 ]             Plugin "Dummy": services informations retrieved
+[      0.231 ]           Service DataAcquisition/DataAcquisition found
+[      0.231 ]           WatchDogServer service - server socket created, available on address: 192.168.5.113:47486
+[      0.231 ]           Root initialized: 192.168.5.113:25278/resources/root
+[      0.231 ]           Initialization done
+[      0.308 ]           OpalRtMain.c        : Calculated cpu speed = 3299 MHz
+[      0.308 ]           OpalRtMain.c        : Model 'boost_and_two_level__1_sm_ehs' compiled in RELEASE mode.
+[      0.308 ]           OpalRtMain.c        : 4 CPUs active on this Computer
+[      0.308 ]           OpalRtMain.c        : libOpalR2014B.a : v11.0.8.13 (build = undefined)
+[      0.350 ]           OpalRtMain.c        : 
+[      0.350 ]           OpalRtMain.c        : ------- License info dump START -------
+[      0.350 ]           OpalRtMain.c        : ##For support, do not hesitate to contact OPAL-RT Technologies through 
+[      0.350 ]           OpalRtMain.c        : ##our web site support section : http://opal-rt.com/support/support-request
+[      0.350 ]           OpalRtMain.c        : ##Company Name: University New South Wales
+[      0.350 ]           OpalRtMain.c        : ##Name: Georgios Konstantinou 
+[      0.350 ]           OpalRtMain.c        : ##Email: g.konstantinou@unsw.edu.au
+[      0.350 ]           OpalRtMain.c        : ##Country: Australia
+[      0.350 ]           OpalRtMain.c        : ##Serial Number: PF914-241
+[      0.350 ]           OpalRtMain.c        : ##Target Number: PF914-241S08
+[      0.350 ]           OpalRtMain.c        : ##Created by: CG
+[      0.350 ]           OpalRtMain.c        : ##RT3: 288002
+[      0.350 ]           OpalRtMain.c        : EXPIRATION=INFINITE
+[      0.350 ]           OpalRtMain.c        : END_OF_SUPPORT=27/12/2018
+[      0.350 ]           OpalRtMain.c        : TARGET_NUMBER=PF914-241-S08
+[      0.350 ]           OpalRtMain.c        : LICENSE_NUMBER=201600453
+[      0.350 ]           OpalRtMain.c        : RTLAB_NRT.value=true
+[      0.350 ]           OpalRtMain.c        : RTLAB_NRT.version=11.0
+[      0.350 ]           OpalRtMain.c        : RTLAB_NRT.description=Allows to execute a model in non real-time mode
+[      0.350 ]           OpalRtMain.c        : RTLAB_RT.value=true
+[      0.350 ]           OpalRtMain.c        : RTLAB_RT.version=11.0
+[      0.350 ]           OpalRtMain.c        : RTLAB_RT.description=Allows to execute a model in real-time mode with RT-LAB.
+[      0.350 ]           OpalRtMain.c        : RTLAB_NUM_CORES.value=2
+[      0.350 ]           OpalRtMain.c        : RTLAB_NUM_CORES.version=11.0
+[      0.350 ]           OpalRtMain.c        : RTLAB_NUM_CORES.description=Number of activated core to execute a model in real-time.
+[      0.350 ]           OpalRtMain.c        : RTLAB_XHP.value=true
+[      0.350 ]           OpalRtMain.c        : RTLAB_XHP.version=11.0
+[      0.350 ]           OpalRtMain.c        : RTLAB_XHP.description=Enables the XHP mode within RT-LAB.
+[      0.350 ]           OpalRtMain.c        : ARTEMIS_RTE.value=true
+[      0.350 ]           OpalRtMain.c        : ARTEMIS_RTE.version=7.0
+[      0.350 ]           OpalRtMain.c        : ARTEMIS_RTE.description=Enables ARTEMIS blockset.
+[      0.350 ]           OpalRtMain.c        : ARTEMIS_SSN.value=true
+[      0.350 ]           OpalRtMain.c        : ARTEMIS_SSN.version=7.0
+[      0.350 ]           OpalRtMain.c        : ARTEMIS_SSN.description=Enables ARTEMIS blockset with SSN option.
+[      0.350 ]           OpalRtMain.c        : RTE_RT.value=true
+[      0.350 ]           OpalRtMain.c        : RTE_RT.version=4.0
+[      0.350 ]           OpalRtMain.c        : RTE_RT.description=Allows to execute models in real-time within RT-EVENTS.
+[      0.350 ]           OpalRtMain.c        : ARTEMIS_NUM_CORES.value=2
+[      0.350 ]           OpalRtMain.c        : ARTEMIS_NUM_CORES.version=7.0
+[      0.350 ]           OpalRtMain.c        : ARTEMIS_NUM_CORES.description=Number of activated core to execute a model in real-time with ARTEMiS library.
+[      0.350 ]           OpalRtMain.c        : RTE_DRIVE_NUM_CORES.value=2
+[      0.350 ]           OpalRtMain.c        : RTE_DRIVE_NUM_CORES.version=4.0
+[      0.350 ]           OpalRtMain.c        : RTE_DRIVE_NUM_CORES.description=Number of activated core to execute a model in real-time with RT-EVENTS library.
+[      0.350 ]           OpalRtMain.c        : RTE_NUM_CORES.value=2
+[      0.350 ]           OpalRtMain.c        : RTE_NUM_CORES.version=4.0
+[      0.350 ]           OpalRtMain.c        : RTE_NUM_CORES.description=Number of activated core to execute a model in real-time with RT-EVENTS library.
+[      0.350 ]           OpalRtMain.c        : SCOPEVIEW.value=true
+[      0.350 ]           OpalRtMain.c        : SCOPEVIEW.version=11.0
+[      0.350 ]           OpalRtMain.c        : SCOPEVIEW.description=Enables the ScopeView module for data analysis and chart reporting.
+[      0.350 ]           OpalRtMain.c        : ARTEMIS_RT.value=true
+[      0.350 ]           OpalRtMain.c        : ARTEMIS_RT.version=7.0
+[      0.350 ]           OpalRtMain.c        : ARTEMIS_RT.description=Allows to execute models in real-time with ARTEMIS library. 
+[      0.350 ]           OpalRtMain.c        : ARTEMIS_MMC.value=true
+[      0.350 ]           OpalRtMain.c        : ARTEMIS_MMC.version=7.0
+[      0.350 ]           OpalRtMain.c        : ARTEMIS_MMC.description=Enables  MMC block within ARTEMiS library.
+[      0.350 ]           OpalRtMain.c        : ARTEMIS_MMC_CONTROLLER.value=true
+[      0.350 ]           OpalRtMain.c        : ARTEMIS_MMC_CONTROLLER.version=7.0
+[      0.350 ]           OpalRtMain.c        : ARTEMIS_MMC_CONTROLLER.description=Enables  MMC controller block within ARTEMiS library.
+[      0.350 ]           OpalRtMain.c        : PHASOR_RT.value=true
+[      0.350 ]           OpalRtMain.c        : PHASOR_RT.version=11.0
+[      0.350 ]           OpalRtMain.c        : PHASOR_RT.description=Enables ePHASORsim real-time
+[      0.350 ]           OpalRtMain.c        : PHASOR_NRT.value=true
+[      0.350 ]           OpalRtMain.c        : PHASOR_NRT.version=11.0
+[      0.350 ]           OpalRtMain.c        : PHASOR_NRT.description=Enables ePHASORsim offline
+[      0.350 ]           OpalRtMain.c        : RTLAB_C37_118_SLAVE.value=true
+[      0.350 ]           OpalRtMain.c        : RTLAB_C37_118_SLAVE.version=11.0
+[      0.350 ]           OpalRtMain.c        : RTLAB_C37_118_SLAVE.description=Enables slave Synchrophasor Protocol C37.118.
+[      0.350 ]           OpalRtMain.c        : RTLAB_DNP3_SLAVE.value=true
+[      0.350 ]           OpalRtMain.c        : RTLAB_DNP3_SLAVE.version=11.0
+[      0.350 ]           OpalRtMain.c        : RTLAB_DNP3_SLAVE.description=Enables slave Distributed Network Protocol (DNP3).
+[      0.350 ]           OpalRtMain.c        : RTLAB_SPECTRACOM_TSYNC_PCIE.value=true
+[      0.350 ]           OpalRtMain.c        : RTLAB_SPECTRACOM_TSYNC_PCIE.version=11.0
+[      0.350 ]           OpalRtMain.c        : RTLAB_SPECTRACOM_TSYNC_PCIE.description=Enables GPS synchronization with the Spectracom TSync PCIe card.
+[      0.350 ]           OpalRtMain.c        : RTE_DRIVE_RT.value=true
+[      0.350 ]           OpalRtMain.c        : RTE_DRIVE_RT.version=4.0
+[      0.351 ]           OpalRtMain.c        : RTE_DRIVE_RT.description=Allows to execute models in real-time within RT-EVENTS
+[      0.351 ]           OpalRtMain.c        : XSG_PMSM_VDQ.value=true
+[      0.351 ]           OpalRtMain.c        : XSG_PMSM_VDQ.version=11.0
+[      0.351 ]           OpalRtMain.c        : XSG_PMSM_VDQ.description=Enables variable-DQ (VDQ) PMSM motor models on FPGA
+[      0.351 ]           OpalRtMain.c        : XSG_PMSM_SH.value=true
+[      0.351 ]           OpalRtMain.c        : XSG_PMSM_SH.version=11.0
+[      0.351 ]           OpalRtMain.c        : XSG_PMSM_SH.description=Enables spacial harmonic  (SH) PMSM motor models on FPGA
+[      0.351 ]           OpalRtMain.c        : XSG_EHS.value=true
+[      0.351 ]           OpalRtMain.c        : XSG_EHS.version=11.0
+[      0.351 ]           OpalRtMain.c        : XSG_EHS.description=Enables ultra-fast electric solver (eHS) on FPGA 
+[      0.351 ]           OpalRtMain.c        : ARTEMIS_MMC_FPGA.value=true
+[      0.351 ]           OpalRtMain.c        : ARTEMIS_MMC_FPGA.version=7.0
+[      0.351 ]           OpalRtMain.c        : ARTEMIS_MMC_FPGA.description=Enables multi-modular converter (MMC) models on FPGA
+[      0.351 ]           OpalRtMain.c        : XSG_FP.value=true
+[      0.351 ]           OpalRtMain.c        : XSG_FP.version=11.0
+[      0.351 ]           OpalRtMain.c        : XSG_FP.description=Enables XSG floating point (FP) block set on FPGA
+[      0.351 ]           OpalRtMain.c        : XSG_DEV.value=true
+[      0.351 ]           OpalRtMain.c        : XSG_DEV.version=11.0
+[      0.351 ]           OpalRtMain.c        : XSG_DEV.description=Enables XSG development of custom firmware on FPGA
+[      0.351 ]           OpalRtMain.c        : XSG_RT.value=true
+[      0.351 ]           OpalRtMain.c        : XSG_RT.version=11.0
+[      0.351 ]           OpalRtMain.c        : XSG_RT.description=Enables XSG runtime execution of custom firmware on FPGA
+[      0.351 ]           OpalRtMain.c        : RTXSG_MMC.value=true
+[      0.351 ]           OpalRtMain.c        : RTXSG_MMC.version=11.0
+[      0.351 ]           OpalRtMain.c        : RTXSG_MMC.description=Enables RT-XSG blockset with MMC Block
+[      0.351 ]           OpalRtMain.c        : RTLAB_C37_118_MASTER.value=true
+[      0.351 ]           OpalRtMain.c        : RTLAB_C37_118_MASTER.version=11.0
+[      0.351 ]           OpalRtMain.c        : RTLAB_C37_118_MASTER.description=Enables C37.118 master protocol option.
+[      0.351 ]           OpalRtMain.c        : XSG_MMC_VALVE_CONTROLLERS.value=6
+[      0.351 ]           OpalRtMain.c        : XSG_MMC_VALVE_CONTROLLERS.version=11.0
+[      0.351 ]           OpalRtMain.c        : XSG_MMC_VALVE_CONTROLLERS.description=Maximum number of valve controllers
+[      0.351 ]           OpalRtMain.c        : ARTEMIS_MMC_2P.value=true
+[      0.351 ]           OpalRtMain.c        : ARTEMIS_MMC_2P.version=7.0
+[      0.351 ]           OpalRtMain.c        : ARTEMIS_MMC_2P.description=Enables ARTEMIS blockset with MMC 2P Block
+[      0.351 ]           OpalRtMain.c        : PHASOR_PARALLEL.value=1
+[      0.351 ]           OpalRtMain.c        : PHASOR_PARALLEL.version=11.0
+[      0.351 ]           OpalRtMain.c        : PHASOR_PARALLEL.description=Number of enabled threads for the ePHASORsim parallel feature
+[      0.351 ]           OpalRtMain.c        : XSG_MMC_CELLS_PER_VALVE.value=100
+[      0.351 ]           OpalRtMain.c        : XSG_MMC_CELLS_PER_VALVE.version=11.0
+[      0.351 ]           OpalRtMain.c        : XSG_MMC_CELLS_PER_VALVE.description=MMC cells per valve
+[      0.351 ]           OpalRtMain.c        : XSG_MMC_VALVES.value=6
+[      0.351 ]           OpalRtMain.c        : XSG_MMC_VALVES.version=11.0
+[      0.351 ]           OpalRtMain.c        : XSG_MMC_VALVES.description=MMC Valves
+[      0.351 ]           OpalRtMain.c        : RTLAB_DEV.value=true
+[      0.351 ]           OpalRtMain.c        : RTLAB_DEV.version=11.0
+[      0.351 ]           OpalRtMain.c        : RTLAB_DEV.description=Allows to compile a model
+[      0.351 ]           OpalRtMain.c        : C37_118_MASTER.value=true
+[      0.351 ]           OpalRtMain.c        : C37_118_MASTER.version=11.0
+[      0.351 ]           OpalRtMain.c        : C37_118_MASTER.description=C37118 MASTER
+[      0.351 ]           OpalRtMain.c        : C37_118_SLAVE.value=true
+[      0.351 ]           OpalRtMain.c        : C37_118_SLAVE.version=11.0
+[      0.351 ]           OpalRtMain.c        : C37_118_SLAVE.description=C37118 SLAVE
+[      0.351 ]           OpalRtMain.c        : MACHINE_INFO_BEGIN
+[      0.351 ]           OpalRtMain.c        : MAC_RANK=0
+[      0.351 ]           OpalRtMain.c        : INFO_TIME=06/05/2016
+[      0.351 ]           OpalRtMain.c        : MAC Address=0C:C4:7A:0C:1F:5A
+[      0.351 ]           OpalRtMain.c        : HD Serial Number=SATA_Samsung_SSD_840S1ANNSADB62748Y
+[      0.351 ]           OpalRtMain.c        : MACHINE_INFO_END
+[      0.351 ]           OpalRtMain.c        : -------  License info dump END  -------
+[      0.351 ]           OpalRtMain.c        : 
+[      0.351 ]           Highest active CPU: 4
+[      0.351 ]           Subsystem SM_eHS allocates 1 cores.
+[      0.368 ]           OpalRtMain.c        : model boost_and_two_level__1_sm_ehs assigned to logical cpu 1
+[      0.368 ]           OpalRtMain.c        : Line 8131
+[      0.368 ]           OpalRtMain.c        : Line 863
+[      0.368 ]           OpalRtMain.c        : Monitoring is enabled
+[      0.368 ]           MonLogger.c         : Registering internal probes ...
+[      0.368 ]           MonLogger.c         : id  0 given to event "Sync Handler Jitter"
+[      0.368 ]           MonLogger.c         : id  1 given to event "Synchronized IOs"
+[      0.369 ]           MonLogger.c         : id  2 given to event "Status Update"
+[      0.369 ]           MonLogger.c         : id  3 given to event "Data Acquisition"
+[      0.369 ]           MonLogger.c         : id  4 given to event "New Data Acquisition"
+[      0.369 ]           MonLogger.c         : id  5 given to event "Signals Change"
+[      0.369 ]           MonLogger.c         : id  6 given to event "User Blobs"
+[      0.369 ]           MonLogger.c         : id  7 given to event "Send Status"
+[      0.369 ]           MonLogger.c         : id  8 given to event "Multi-Receive"
+[      0.369 ]           MonLogger.c         : id  9 given to event "Handle target requests"
+[      0.369 ]           MonLogger.c         : id 10 given to event "Handle host requests"
+[      0.369 ]           MonLogger.c         : id 11 given to event "Pre-execution computation time"
+[      0.369 ]           MonLogger.c         : id 12 given to event "Major computation time"
+[      0.369 ]           MonLogger.c         : id 13 given to event "Minor computation time"
+[      0.369 ]           MonLogger.c         : id 14 given to event "Post-execution computation time"
+[      0.369 ]           MonLogger.c         : id 15 given to event "Execution Cycle"
+[      0.369 ]           MonLogger.c         : id 16 given to event "Total Step Size"
+[      0.369 ]           MonLogger.c         : id 17 given to event "Idle wait for clock"
+[      0.369 ]           MonLogger.c         : id 18 given to event "Idle wait for comm"
+[      0.369 ]           MonLogger.c         : id 19 given to event "Idle wait for io"
+[      0.369 ]           MonLogger.c         : id 20 given to event "Total idle"
+[      0.369 ]           MonLogger.c         : id 21 given to event "Number of Overruns"
+[      0.369 ]           MonLogger.c         : Done registering 22 internal probes.
+[      0.369 ]           OpalSync.c          : Monitoring Controller initialization, step 1 done
+[      0.369 ]           OpalRtMain.c        : OpalAcq_Init()
+[      0.369 ]           Loading data file: OpalAcquisitionSourcesCreator.data
+[      0.372 ]           Loading data file: OpalRealTimeParametersCreator.data
+[      0.375 ]           Service Parameters/ParametersService found
+[      0.376 ]           HostRequest.c       : Requests from host will be received from thread
+[      0.376 ]           OpalHostRecvIf.c    : Recv Thread started
+[      0.376 ]           TargetRequest.c     : Requests to host will be sent from thread
+[      0.376 ]           TargetRequest.c     : Requests to file will be sent from thread
+[      0.376 ]           OpalHostSendIf.c    : Send Thread started
+[      2.715 ]           OpalHostRecvIf.c    : RECV: connection to host established
+[      2.779 ]           OpalPrint.c         : Sending path notification request for system control (cmd 29)
+[      2.780 ]           OpalHostSendIf.c    : SEND: connection to host established
+[      2.979 ]           OpalTarget.c        : OPALRT Shared Memory unlocked (post)
+[      2.980 ]           OpalTarget.c        : Sub-systems added at position 0.
+[      2.980 ]           OpalRtMain.c        : OpalInit: OPALRT shared memory found and opened
+[      2.980 ]           OpalRtMain.c        : Line 1130
+[      2.980 ]           OpalRtMain.c        : RT_mem_name = RT_boost_and_two_level__1_sm_ehs_13641
+[      2.980 ]           OpalRtMain.c        : Line 1136
+[      2.980 ]           OpalRtIf.c          : Shared memory RT created
+[      2.986 ]           OpalRtMain.c        : Line 1141
+[      2.986 ]           OpalRtMain.c        : Line 1246
+[      2.986 ]           OpalRtMain.c        : Model stop time has been set to 0.000000 s
+[      2.986 ]           OpalRtMain.c        : Model pause time has been set to 0.000000 s
+[      2.986 ]           OpalRtMain.c        : Line 1311
+[      2.986 ]           OpalRtMain.c        : Snapshot enabled.
+[      2.986 ]           OpalRtMain.c        : Line 1342
+[      2.986 ]           OpalRtMain.c        : Line 1418
+[      2.986 ]           OpalRtMain.c        : Line 1542
+[      2.986 ]           OpalRtMain.c        : Line 1579
+[      2.986 ]           OpalRtMain.c        : Line 1601
+[      2.986 ]           OpalRtMain.c        : Line 1640
+[      2.986 ]           OpalRtMain.c        : Line 1664
+[      2.986 ]           OpalRtMain.c        : Assigned main thread to CPU 1 (mask 0x2)
+[      2.986 ]           OpalRtMain.c        : Display of standard output will be disabled
+[      2.986 ]           OpalRtMain.c        : Standard output has been redirected to /dev/null
+[      2.986 ]           OpalRtMain.c        : Standard error has been redirected to /dev/null
+[      2.986 ]           OpalRtMain.c        : Standard input has been redirected to /dev/null
+[      2.986 ]           OpalRtMain.c        : Line 1696
+[      2.986 ]           OpalBlobsInternal.c : blobs: new callback function registered for blob id "OP_INFO_REGISTER_GET_INFO"
+[      2.986 ]           OpalBlobsInternal.c : blobs: new callback function registered for blob id "OP_INFO_REGISTER_SET_INFO_1"
+[      2.986 ]           OpalRtMain.c        : Exiting from OpalInit function. User block(s) will be called.
+[      2.986 ]           OpalAcquisition.c   : Successfully registered acq group 1 for 4 fixed signals and 100 max dynamic signals
+[      2.986 ]           Loading data file: OpalControlSignalsCreator.data
+[      2.986 ]           FctOP7160ex1Load_In_: OpFcn LoadIn: Registered functionalities  1 to controller 'OpCtrl'.
+[      2.986 ]           efs solver config: ehs_config_eHSx64v3_SID4894.mat was opened successfully
 Number of signals (including time ): 12
 Number of samples: 1457
 Variable name = ehs_config 
-[      3.073 ]           efs solver config: successfully transferred ehs_config_eHSx64v3_SID4894.mat to the memory buffer.
-[      3.073 ]           MonLogger.c         : id 23 given to event "op7160ex1_wait_recv_1_OpCtrl"
-[      3.073 ]           OpalAcquisition.c   : Successfully registered acq group 1 for 29 fixed signals and 100 max dynamic signals
-[      3.073 ]           MonLogger.c         : id 24 given to event "op7160ex1_wait_pwmi_4_OpCtrl"
-[      3.073 ]           MonLogger.c         : id 25 given to event "op7160ex1_wait_pwmi_5_OpCtrl"
-[      3.073 ]           opwritefile.c       : Registering OpWriteFile group 26: static filename. RT-LAB acq writes.
-[      3.073 ]           OpalAcquisition.c   : OpWriteFile group 26: the specified buffer size (1000000 bytes) is not large enough
-[      3.073 ]           OpalAcquisition.c   : for 400000 sample(s) of 4 signal(s). The buffer size has been set to 16000026.
-[      3.078 ]           OpalClientServer.c  : DATA MEM allocated: 16004179 bytes for client 31
-[      3.078 ]           OpalClientServer.c  : (One extra signal for Write to File)
-[      3.078 ]           OpalAcquisition.c   : Registering trigger for acq group 26 : type is 0, offset is 0
-[      3.078 ]           opsystemlib.c       : opsystem_single_step = 0, len = 0
-[      3.078 ]           opsystemlib.c       : opsystem_dcs_sync = 1
-[      3.078 ]           opsystemlib.c       : Creating Opal PCIe shared memory OP4500EX1
-[      4.194 ]           opsystem_bdlib.c    : Board found (0x1b2c 0x7325 0)
-[      4.295 ]           ml605lib.c          : Device Control Register [3007]
-[      4.295 ]           ml605lib.c          : IRQ Number:	11
-[      4.295 ]           ml605irq_lib.c      : Share memory size: 56
-[      4.295 ]           ml605irq_lib.c      : Share memory virtual address: 0xadd4d000
-[      4.295 ]           ml605irq_lib.c      : Share memory physical address: 0x2e186000
-[      4.295 ]           ml605irq_lib.c      : Share memory kernel address: 0xee186000
-[      4.295 ]           ml605lib.c          : Chassis index:	0
-[      4.295 ]           ml605lib.c          : Card type:	MMPK1A
-[      4.295 ]           ml605lib.c          : Bus type:	EX  
-[      4.295 ]           ml605lib.c          : Minor ID:	0303
-[      4.295 ]           ml605lib.c          : Revision ID:	0003
-[      4.295 ]           ml605lib.c          : PCIe gen:	2 (x4)
-[      4.596 ]           ml605shm_lib.c      : Smallest board index found 
-[      4.601 ]           ml605shm_lib.c      : Smallest board index found = 0
-[      4.606 ]           ml605shm_lib.c      : Number of cards detected = 1 
-[      4.611 ]           opsystemlib.c       : Board found with board index 0
-[      4.611 ]           opsystemlib.c       : Module search completed
-[      4.611 ]           opsystemlib.c       : Number of modules connected to board type 5, index 0 : 1
-[      4.611 ]           ml605lib.c          : *bdData->dmab.Size=12000,DmaPhys = 0x2e1c0000
-[      4.611 ]           ml605lib.c          : Check PCI8311_DMA0_COUNT = 0x0
-[      4.611 ]           ml605lib.c          : Check PCI8311_DMA0_PCI_ADDR = 0x2e1c0000
-[      4.611 ]           ml605lib.c          : Check PCI8311_DMA1_COUNT = 0x0
-[      4.611 ]           ml605lib.c          : Check PCI8311_DMA1_PCI_ADDR = 0x2e1c9000
-[      4.611 ]           op7160ex1_ctrl.c    : Controller 'OpCtrl': sync status = 1 (1:Master, 0:Slave)
-[      4.611 ]           op7160ex1_ctrl_publi: op7160ex1_getHarwareIDs
-[      4.611 ]           op7160ex1_ctrl_publi: Controller 'OpCtrl': Hardware detected in slot 1 / section A is 'DIN' (FB) (expected 'DIN' (FB)) 
-[      4.611 ]           op7160ex1_ctrl_publi: Controller 'OpCtrl': Hardware detected in slot 1 / section B is 'DOUT' (CD) (expected 'DOUT' (CD)) 
-[      4.611 ]           op7160ex1_ctrl_publi: Controller 'OpCtrl': Hardware detected in slot 2 / section A is 'AIN' (C1) (expected 'AIN' (C1)) 
-[      4.611 ]           op7160ex1_ctrl_publi: Controller 'OpCtrl': Hardware detected in slot 2 / section B is 'AOUT' (C3) (expected 'AOUT' (C3)) 
-[      4.611 ]           op7160ex1_ctrl_publi: Controller 'OpCtrl': Hardware detected in slot 3 / section A is 'Unsupported Id (0)' (0) (expected 'Unsupported Id (0)' (0)) 
-[      4.611 ]           op7160ex1_ctrl_publi: Controller 'OpCtrl': Hardware detected in slot 3 / section B is 'Unsupported Id (0)' (0) (expected 'Unsupported Id (0)' (0)) 
-[      4.611 ]           op7160ex1_ctrl_publi: Controller 'OpCtrl': Hardware detected in slot 4 / section A is 'Unsupported Id (0)' (0) (expected 'Unsupported Id (0)' (0)) 
-[      4.611 ]           op7160ex1_ctrl_publi: Controller 'OpCtrl': Hardware detected in slot 4 / section B is 'Unsupported Id (0)' (0) (expected 'Unsupported Id (0)' (0)) 
-[      4.611 ]           ctrl_op7160ex1_misc.: Controller 'OpCtrl': Initialized
-[      4.611 ]           ctrl_op7160ex1_misc.: Only one configuration is specified by the bitstream
-[      4.611 ]           OpalSync.c          : Monitoring Controller initialization completed.
-[      4.611 ]           MonLogger.c         : Acq source memory created for monitoring, 26 probes, 52 signals
-[      4.611 ]           MonLogger.c         : Monitoring Logger initialization completed.
-[      4.611 ]           OpalAcquisition.c   : Successfully registered 52 signals for monitoring
-[      4.611 ]           OpalAcquisition.c   : Registering trigger for acq group 1 : type is 3, offset is 0
-[      4.612 ]           OpalAcquisition.c   : Registering trigger for acq group 25 : type is 3, offset is 0
-[      4.613 ]           OpalClientServer.c  : DATA MEM allocated: 5209936 bytes for client 6
-[      4.613 ]           OpalClientServer.c  : (One extra signal for Write to File)
-[      4.613 ]           OpalClientServer.c  : DATA MEM allocated: 93968 bytes for client 30
-[      4.613 ]           OpalClientServer.c  : (One extra signal for Write to File)
-[      4.613 ]           OpalClientServer.c  : DATA MEM allocated: 4300 bytes for client 1
-[      4.613 ]           OpalClientServer.c  : (One extra signal for Write to File)
-[      4.613 ]           OpalClientServer.c  : DATA MEM allocated: 66092 bytes for client 5
-[      4.613 ]           OpalClientServer.c  : (One extra signal for Write to File)
-[      4.613 ]           OpalRtBlobs.c       : OpalBlobs_MemInit, frame 0, actualDataSize 66092
-[      4.613 ]           op7160ex1_ctrl.c    : attachFunctionToCtrl: fcnId=48 *pFcnNo=0 uNbFcn=1
-[      4.613 ]           op7160ex1_ctrl.c    : attachFunctionToCtrl: fcnId=50 *pFcnNo=1 uNbFcn=1
-[      4.613 ]           op7160ex1_ctrl.c    : attachFunctionToCtrl: fcnId=50 *pFcnNo=0 uNbFcn=1
-[      4.613 ]           op7160ex1_ctrl.c    : attachFunctionToCtrl: fcnId=49 *pFcnNo=0 uNbFcn=1
-[      4.613 ]           op7160ex1_ctrl.c    : attachFunctionToCtrl: fcnId=48 *pFcnNo=1 uNbFcn=1
-[      4.613 ]           op7160ex1_ctrl.c    : attachFunctionToCtrl: fcnId=50 *pFcnNo=3 uNbFcn=1
-[      4.613 ]           op7160ex1_ctrl.c    : attachFunctionToCtrl: fcnId=49 *pFcnNo=14 uNbFcn=1
-[      4.613 ]           op7160ex1_ctrl.c    : attachFunctionToCtrl: fcnId=48 *pFcnNo=4 uNbFcn=1
-[      4.613 ]           op7160ex1_ctrl.c    : attachFunctionToCtrl: fcnId=50 *pFcnNo=12 uNbFcn=1
-[      4.613 ]           op7160ex1_ctrl.c    : attachFunctionToCtrl: fcnId=48 *pFcnNo=5 uNbFcn=1
-[      4.613 ]           op7160ex1_ctrl.c    : attachFunctionToCtrl: fcnId=50 *pFcnNo=13 uNbFcn=1
-[      4.613 ]           op7160ex1_ctrl.c    : attachFunctionToCtrl: fcnId=49 *pFcnNo=1 uNbFcn=1
-[      4.613 ]           opconfig_sync.c     : The OpCtrl OP7160EX1 block has registered to be master of the synchronization.
-[      4.613 ]           ml605lib.c          : Clock Mode 0 (0 for Hardware) Mode 1 (0 Slave 1 Master 2 Master with ext)
-[      4.613 ]           ml605lib.c          : Setting synchronization type to LVDS (audio)
-[      4.614 ]           OpalRtIf.c          : Shared memory MRate created
-[      4.614 ]           OpalRtIf.c          : BossClk : sm_ehs
-[      4.614 ]           OpalRtIf.c          : Status sample time: 0.000020
-[      4.614 ]           OpalRtMain.c        : SubSystem step size = 0.000020 sec. Status updated at every 1 local step.
-[      4.614 ]           OpalRtMain.c        : ------- Log node 1 -------
-[      4.614 ]           OpalRtMain.c        : IO               = 0
-[      4.614 ]           OpalRtMain.c        : subSysSampleTime = 0.000020
-[      4.614 ]           OpalRtMain.c        : typeOfClock      = 3
-[      4.614 ]           OpalRtMain.c        : clockFactor      = 1
-[      4.614 ]           OpalRtMain.c        : OpSyncHard       = 1
-[      4.614 ]           OpalRtMain.c        : NeedSync         = 0
-[      4.614 ]           OpalRtMain.c        : StatusST         = 0.000020
-[      4.614 ]           OpalRtMain.c        : skip             = 1
-[      4.614 ]           OpalRtMain.c        : XHP mode enabled on this CPU.
-[      4.614 ]           OpalRtMain.c        : Synchronized with hardware timer.
-[      4.614 ]           OpalClientServer.c  : DATA MEM allocated: 286941 bytes for client 3
-[      4.614 ]           OpalClientServer.c  : (One extra signal for Write to File)
-[      4.614 ]           OpalRtMain.c        : Some of the model parameters are not double. Parameter modification may not work properly.
-[      4.614 ]           OpalRtMain.c        : Parameters Init: subsystem has 1073 values (1099), 1 pages.
+[      2.987 ]           efs solver config: successfully transferred ehs_config_eHSx64v3_SID4894.mat to the memory buffer.
+[      2.987 ]           FctOP7160ex1Load_In_: OpFcn LoadIn: Registered functionalities  0 to controller 'OpCtrl'.
+[      2.987 ]           FctOP7160ex1Send_mis: OpFcn Send: Registered functionalities  0 to controller 'OpCtrl'.
+[      2.987 ]           FctOP7160ex1Recv_mis: OpFcn Recv: Registered functionality  0 to controller 'OpCtrl'.
+[      2.987 ]           FctOP7160ex1Recv_mis: OpFcn 'Recv': OP7160EX1_PERFS is set to ON
+[      2.987 ]           MonLogger.c         : id 22 given to event "op7160ex1_wait_recv_0_OpCtrl"
+[      2.987 ]           OpalAcquisition.c   : Successfully registered acq group 2 for 8 fixed signals and 0 max dynamic signals
+[      2.987 ]           OpalAcquisition.c   : Successfully registered acq group 4 for 3 fixed signals and 0 max dynamic signals
+[      2.987 ]           OpalAcquisition.c   : Successfully registered acq group 3 for 6 fixed signals and 0 max dynamic signals
+[      2.987 ]           OpalAcquisition.c   : Successfully registered acq group 5 for 2 fixed signals and 0 max dynamic signals
+[      2.987 ]           FctOP7160ex1Load_In_: OpFcn LoadIn: Registered functionalities  3 to controller 'OpCtrl'.
+[      2.987 ]           FctOP7160ex1Recv_mis: OpFcn Recv: Registered functionality  1 to controller 'OpCtrl'.
+[      2.987 ]           FctOP7160ex1Recv_mis: OpFcn 'Recv': OP7160EX1_PERFS is set to ON
+[      2.987 ]           MonLogger.c         : id 23 given to event "op7160ex1_wait_recv_1_OpCtrl"
+[      2.987 ]           FctOP7160ex1Send_mis: OpFcn Send: Registered functionalities 14 to controller 'OpCtrl'.
+[      2.987 ]           op7160ex1_pwm_in_mis: OpFcn Recv: Registered functionality  4 to controller 'OpCtrl'.
+[      2.987 ]           MonLogger.c         : id 24 given to event "op7160ex1_wait_pwmi_4_OpCtrl"
+[      2.987 ]           FctOP7160ex1Load_In_: OpFcn LoadIn: Registered functionalities 12 to controller 'OpCtrl'.
+[      2.987 ]           op7160ex1_pwm_in_mis: OpFcn Recv: Registered functionality  5 to controller 'OpCtrl'.
+[      2.987 ]           MonLogger.c         : id 25 given to event "op7160ex1_wait_pwmi_5_OpCtrl"
+[      2.988 ]           FctOP7160ex1Load_In_: OpFcn LoadIn: Registered functionalities 13 to controller 'OpCtrl'.
+[      2.988 ]           opwritefile.c       : Registering OpWriteFile group 26: static filename. RT-LAB acq writes.
+[      2.988 ]           OpalAcquisition.c   : OpWriteFile group 26: the specified buffer size (1048576 bytes) is not large enough
+[      2.988 ]           OpalAcquisition.c   : for 400000 sample(s) of 6 signal(s). The buffer size has been set to 22400026.
+[      2.994 ]           OpalClientServer.c  : DATA MEM allocated: 22404179 bytes for client 31
+[      2.994 ]           OpalClientServer.c  : (One extra signal for Write to File)
+[      2.994 ]           sfun_op7160ex1_event: EventGenerator : ld->maxEvent[0] = 4
+[      2.994 ]           sfun_op7160ex1_event: EventGenerator : ld->maxEvent[1] = 4
+[      2.994 ]           sfun_op7160ex1_event: EventGenerator : ld->maxEvent[2] = 4
+[      2.994 ]           sfun_op7160ex1_event: EventGenerator : ld->maxEvent[3] = 4
+[      2.994 ]           sfun_op7160ex1_event: EventGenerator : ld->maxEvent[4] = 4
+[      2.994 ]           sfun_op7160ex1_event: EventGenerator : ld->maxEvent[5] = 4
+[      2.994 ]           sfun_op7160ex1_event: EventGenerator : ld->maxEvent[6] = 4
+[      2.994 ]           sfun_op7160ex1_event: EventGenerator : ld->maxEvent[7] = 4
+[      2.994 ]           op7160ex1_event_gene: Event Generator 'Send': Initialization of DataInt2 (port 1) with controller 'OpCtrl' done.
+[      2.994 ]           OpalAcquisition.c   : Registering trigger for acq group 26 : type is 0, offset is 0
+[      2.994 ]           sfun_ctrl_op7160ex1.: Board Id = 0
+[      2.994 ]           op7160ex1_ctrl.c    : Controller: sampleTime=0.000020, sampleFactor=0, decimation=1
+[      2.994 ]           op7160ex1_ctrl.c    : productId = 35
+[      2.994 ]           opsystemlib.c       : opsystem_single_step = 0, len = 0
+[      2.994 ]           opsystemlib.c       : opsystem_dcs_sync = 1
+[      2.994 ]           opsystemlib.c       : Creating Opal PCIe shared memory OP4500EX1
+[      4.111 ]           opsystem_bdlib.c    : Board found (0x1b2c 0x7325 0)
+[      4.211 ]           ml605lib.c          : Device Control Register [3007]
+[      4.211 ]           ml605lib.c          : bdStruct->pciSpec.physicalBar[0]=0xdfa00000
+[      4.211 ]           ml605lib.c          : map_pcibar0=0xad6ed000
+[      4.211 ]           ml605lib.c          : IRQ Number:	11
+[      4.211 ]           ml605irq_lib.c      : Share memory size: 56
+[      4.211 ]           ml605irq_lib.c      : Share memory virtual address: 0xad6ec000
+[      4.212 ]           ml605irq_lib.c      : Share memory physical address: 0x2b590000
+[      4.212 ]           ml605irq_lib.c      : Share memory kernel address: 0xeb590000
+[      4.212 ]           ml605lib.c          : vendor_id=4d4d504b
+[      4.212 ]           ml605lib.c          : board_number=7325
+[      4.212 ]           ml605lib.c          : board_number_minor=1
+[      4.212 ]           ml605lib.c          : board_number_tag=A
+[      4.212 ]           ml605lib.c          : impl_value[3]=E
+[      4.212 ]           ml605lib.c          : impl_value[2]=-
+[      4.212 ]           ml605lib.c          : impl_value[1]=X
+[      4.212 ]           ml605lib.c          : impl_value[0]=-
+[      4.212 ]           ml605lib.c          : Chassis Index=0
+[      4.212 ]           ml605lib.c          : Slot Id=1
+[      4.212 ]           ml605lib.c          : GZ_minor=0
+[      4.212 ]           ml605lib.c          : GZ_revision=2
+[      4.212 ]           ml605lib.c          : minor_id=303
+[      4.212 ]           ml605lib.c          : revision_id=3
+[      4.212 ]           ml605lib.c          : pcie_gen=1
+[      4.212 ]           ml605lib.c          : pcie_link_width=4
+[      4.212 ]           ml605lib.c          : Chassis index:	0
+[      4.212 ]           ml605lib.c          : Card type:	MMPK1A
+[      4.212 ]           ml605lib.c          : Bus type:	EX  
+[      4.212 ]           ml605lib.c          : Minor ID:	0303
+[      4.212 ]           ml605lib.c          : Revision ID:	0003
+[      4.212 ]           ml605lib.c          : PCIe gen:	2 (x4)
+[      4.212 ]           ml605shm_lib.c      : [0] - ml605_shmem 0xad7ed000, addr0=dfa00000, size0 = 100, inUse = 1 pci_index 0 
 
-[      4.614 ]           OpalClientServer.c  : DATA MEM allocated: 18302 bytes for client 2
-[      4.614 ]           OpalClientServer.c  : (One extra signal for Write to File)
-[      4.614 ]           OpalClientServer.c  : DATA MEM allocated: 327645 bytes for client 4
-[      4.614 ]           OpalClientServer.c  : (One extra signal for Write to File)
-[      4.614 ]           Signals.c           : ReturnSignalsInit, id 4, maxNbSignals 1015, buf size 327645
-[      4.614 ]           Signals.c           : ReturnSignalsInit, frame 0, actualDataSize 327645
-[      4.631 ]           OpalTarget.c        : Sending notification request for system control (cmd 7)
-[      4.639 ]           OpalRtMain.c        : The model contains 2 sample times.
-[      4.639 ]           OpalRtMain.c        : Base sample time = 0.000020
-[      4.639 ]           OpalRtMain.c        : Real-time SingleTasking mode.
-[      4.639 ]           OpalRtMain.c        : *** Fetched 1 cores, remains 1
-[      4.639 ]           OpalRtMain.c        : RT-LAB license ok. Unlimited time license.
-[      4.639 ]           OpalRtSnapshot.c    : Snapshot taken (opboost_and_two_level__sm_ehs_0.snap).
-[      4.639 ]           OpalRtSnapshot.c    : Estimated time to take a snapshot = 35 us.
-[      4.640 ]           OpalPrint.c         : Sending file name notification request for system control (cmd 30)
-[      4.640 ]           OpalHostSendIf.c    : Open file done (/home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_workspace/pv_inverter/models/boost_and_two_level_bridge_rtlab/boost_and_two_level_bridge_rtlab_sm_ehs/opboost_and_two_level__sm_ehs_0.snap)
-[      4.662 ]           OpalHostSendIf.c    : Close file done (/home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_workspace/pv_inverter/models/boost_and_two_level_bridge_rtlab/boost_and_two_level_bridge_rtlab_sm_ehs/opboost_and_two_level__sm_ehs_0.snap)
-[      4.662 ]           OpalPrint.c         : Sending file name notification request for system control (cmd 33)
-[      4.663 ]           OpalTarget.c        : Sending notification request for system control (cmd 20)
-[      4.663 ]           OpalRtMain.c        :  [0]: PAUSE mode, IO set to pause value.
-[      4.663 ]           OpalRtMain.c        : 		Total of 0 Overrun detected.
-[      4.663 ]           OpalRtMain.c        : 		Tue May 16 23:35:08 2017
+[      4.212 ]           opsystem_bdlib.c    : Board not found (0x1b2c 0x7325 1)
+[      4.412 ]           opsystem_bdlib.c    : Board not found (0x1b2c 0x7410 0)
+[      4.512 ]           ml605shm_lib.c      : Smallest board index found 
+[      4.517 ]           ml605shm_lib.c      : Smallest board index found = 0
+[      4.522 ]           ml605shm_lib.c      : Number of cards detected = 1 
+[      4.527 ]           opsystemlib.c       : Board found with board index 0
+[      4.528 ]           opsystemlib.c       : Module search completed
+[      4.528 ]           opsystemlib.c       : Number of modules connected to board type 5, index 0 : 1
+[      4.528 ]           opsystemlib.c       : Adding pid for board 0, nextAddr= 0, procList= 0xad7ed149
+[      4.528 ]           opsystemlib.c       : procPIDs[0]= 13641
+[      4.528 ]           opsystemlib.c       : board 0 nextFreeID 1 totalProcessConnected 1
+[      4.528 ]           ml605lib.c          : *bdData->dmab.Size=12000,DmaPhys = 0x2b5c0000
+[      4.528 ]           ml605lib.c          : Check PCI8311_DMA0_COUNT = 0x0
+[      4.528 ]           ml605lib.c          : Check PCI8311_DMA0_PCI_ADDR = 0x2b5c0000
+[      4.528 ]           ml605lib.c          : Check PCI8311_DMA1_COUNT = 0x0
+[      4.528 ]           ml605lib.c          : Check PCI8311_DMA1_PCI_ADDR = 0x2b5c9000
+[      4.528 ]           op7160ex1_ctrl.c    : Controller 'OpCtrl': sync status = 1 (1:Master, 0:Slave)
+[      4.528 ]           op7160ex1_ctrl_publi: op7160ex1_getHarwareIDs
+[      4.528 ]           op7160ex1_ctrl_publi: Controller 'OpCtrl': Hardware detected in slot 1 / section A is 'DIN' (FB) (expected 'DIN' (FB)) 
+[      4.528 ]           op7160ex1_ctrl_publi: Controller 'OpCtrl': Hardware detected in slot 1 / section B is 'DOUT' (CD) (expected 'DOUT' (CD)) 
+[      4.528 ]           op7160ex1_ctrl_publi: Controller 'OpCtrl': Hardware detected in slot 2 / section A is 'AIN' (C1) (expected 'AIN' (C1)) 
+[      4.528 ]           op7160ex1_ctrl_publi: Controller 'OpCtrl': Hardware detected in slot 2 / section B is 'AOUT' (C3) (expected 'AOUT' (C3)) 
+[      4.528 ]           op7160ex1_ctrl_publi: Controller 'OpCtrl': Hardware detected in slot 3 / section A is 'Unsupported Id (0)' (0) (expected 'Unsupported Id (0)' (0)) 
+[      4.528 ]           op7160ex1_ctrl_publi: Controller 'OpCtrl': Hardware detected in slot 3 / section B is 'Unsupported Id (0)' (0) (expected 'Unsupported Id (0)' (0)) 
+[      4.528 ]           op7160ex1_ctrl_publi: Controller 'OpCtrl': Hardware detected in slot 4 / section A is 'Unsupported Id (0)' (0) (expected 'Unsupported Id (0)' (0)) 
+[      4.528 ]           op7160ex1_ctrl_publi: Controller 'OpCtrl': Hardware detected in slot 4 / section B is 'Unsupported Id (0)' (0) (expected 'Unsupported Id (0)' (0)) 
+[      4.528 ]           ctrl_op7160ex1_misc.: Controller 'OpCtrl': Initialized
+[      4.528 ]           ctrl_op7160ex1_misc.: Only one configuration is specified by the bitstream
+[      4.528 ]           op7160ex1_ctrl_publi: getApplication_DataSel_ToFPGA_Address() setted register address 0xad769000
+[      4.528 ]           ml605lib.c          : in ml605_getApplication_DataSel_FromFPGA_Address(addr 0xad769100)
+[      4.528 ]           op7160ex1_ctrl_publi: getApplication_DataSel_FromFPGA_Address() setted register address 0xad769100
+[      4.528 ]           OpalRtMain.c        : SyncExchanger manager licenses registering...
+[      4.528 ]           OpalRtMain.c        : OpalMainLoop()
+[      4.528 ]           OpalSync.c          : Monitoring Controller initialization completed.
+[      4.528 ]           MonLogger.c         : Acq source memory created for monitoring, 26 probes, 52 signals
+[      4.528 ]           MonLogger.c         : Monitoring Logger initialization completed.
+[      4.528 ]           OpalAcquisition.c   : Successfully registered 52 signals for monitoring
+[      4.528 ]           OpalAcquisition.c   : Registering trigger for acq group 1 : type is 3, offset is 0
+[      4.528 ]           OpalAcquisition.c   : Registering trigger for acq group 2 : type is 3, offset is 0
+[      4.528 ]           OpalAcquisition.c   : Registering trigger for acq group 3 : type is 3, offset is 0
+[      4.528 ]           OpalAcquisition.c   : Registering trigger for acq group 4 : type is 3, offset is 0
+[      4.528 ]           OpalAcquisition.c   : Registering trigger for acq group 5 : type is 3, offset is 0
+[      4.528 ]           OpalAcquisition.c   : Registering trigger for acq group 25 : type is 3, offset is 0
+[      4.528 ]           OpalBlobsInternal.c : blobs: new callback function registered for blob id "STATIC_ACQ_INFO"
+[      4.529 ]           OpalClientServer.c  : DATA MEM allocated: 4209936 bytes for client 6
+[      4.529 ]           OpalClientServer.c  : (One extra signal for Write to File)
+[      4.529 ]           OpalClientServer.c  : DATA MEM allocated: 368336 bytes for client 7
+[      4.529 ]           OpalClientServer.c  : (One extra signal for Write to File)
+[      4.529 ]           OpalClientServer.c  : DATA MEM allocated: 288336 bytes for client 8
+[      4.530 ]           OpalClientServer.c  : (One extra signal for Write to File)
+[      4.530 ]           OpalClientServer.c  : DATA MEM allocated: 168336 bytes for client 9
+[      4.530 ]           OpalClientServer.c  : (One extra signal for Write to File)
+[      4.530 ]           OpalClientServer.c  : DATA MEM allocated: 128336 bytes for client 10
+[      4.530 ]           OpalClientServer.c  : (One extra signal for Write to File)
+[      4.530 ]           OpalClientServer.c  : DATA MEM allocated: 857168 bytes for client 30
+[      4.530 ]           OpalClientServer.c  : (One extra signal for Write to File)
+[      4.530 ]           OpalRtMain.c        : Line 1778
+[      4.530 ]           OpalClientServer.c  : DATA MEM allocated: 4300 bytes for client 1
+[      4.530 ]           OpalClientServer.c  : (One extra signal for Write to File)
+[      4.530 ]           OpalRtMain.c        : Line 1783
+[      4.530 ]           OpalRtBlobs.c       : Number of registered blobs ids = 3
+[      4.530 ]           OpalClientServer.c  : DATA MEM allocated: 66092 bytes for client 5
+[      4.530 ]           OpalClientServer.c  : (One extra signal for Write to File)
+[      4.530 ]           OpalRtBlobs.c       : OpalBlobs_MemInit, frame 0, actualDataSize 66092
+[      4.530 ]           OpalRtMain.c        : Line 1785
+[      4.530 ]           OpalIO.c            : Searching call back INIT for sample time 0.000000 ...
+[      4.530 ]           OpalIO.c            :    Calling prio 1
+[      4.530 ]           op7160ex1_ctrl.c    : attachFunctionToCtrl: fcnId=50 *pFcnNo=1 uNbFcn=1
+[      4.530 ]           FctOP7160ex1Load_In_: OpFcn LoadIn: Attached to controller 'OpCtrl' with functionality 'LoadIn'.
+[      4.530 ]           OpalIO.c            :    Calling prio 1
+[      4.530 ]           op7160ex1_ctrl.c    : attachFunctionToCtrl: fcnId=50 *pFcnNo=0 uNbFcn=1
+[      4.530 ]           FctOP7160ex1Load_In_: OpFcn LoadIn: Attached to controller 'OpCtrl' with functionality 'LoadIn'.
+[      4.530 ]           OpalIO.c            :    Calling prio 1
+[      4.530 ]           op7160ex1_ctrl.c    : attachFunctionToCtrl: fcnId=49 *pFcnNo=0 uNbFcn=1
+[      4.530 ]           OpGenFun_OP7160EX1Se: OpGenFun_OP7160EX1Send_Init_FcnData : pFuncData=0x893fa38, FcnNo = 0 (DataIn0), pvAddress=0xad7ed251, pWidth=0x84f8ee0
+[      4.530 ]           FctOP7160ex1Send_mis: OpFcn Send: Attached to controller 'OpCtrl' with functionality 'Send'.
+[      4.530 ]           OpGenFun_OP7160EX1Se: OpGenFun_OP7160EX1Send_init() : uNbFcn=0, uFcnNumber=0, adr=0x0
+[      4.530 ]           OpGenFun_OP7160EX1Se: OpGenFun_OP7160EX1Send_init() : h->width = 3
+[      4.530 ]           OpGenFun_OP7160EX1Se: OpGenFun_OP7160EX1Send_init() : h->p_width = 0xad7ed251, *h->p_width = 0
+[      4.530 ]           OpalIO.c            :    Calling prio 1
+[      4.530 ]           op7160ex1_ctrl.c    : attachFunctionToCtrl: fcnId=48 *pFcnNo=0 uNbFcn=1
+[      4.530 ]           OpGenFun_OP7160EX1Re: OpGenFun_OP7160EX1Recv_Init_FcnData() : pFuncData=0x893ed14, FcnNo = 0, pvAddress=0x0, pWidth=0xad7ed2e1
+[      4.530 ]           FctOP7160ex1Recv_mis: OpFcn Recv: Attached to controller 'OpCtrl' with functionality 'Recv'.
+[      4.530 ]           OpGenFun_OP7160EX1Re: OpGenFun_OP7160EX1Recv_init() : uNbFcn=0, uFcnNumber=0, adr=0x0
+[      4.530 ]           OpGenFun_OP7160EX1Re: OpGenFun_OP7160EX1Recv_init() : h->width = 8
+[      4.530 ]           OpGenFun_OP7160EX1Re: OpGenFun_OP7160EX1Recv_init() : h->p_width = 0xad7ed2e1, *h->p_width = 0
+[      4.530 ]           OpalIO.c            :    Calling prio 1
+[      4.530 ]           op7160ex1_ctrl.c    : attachFunctionToCtrl: fcnId=50 *pFcnNo=3 uNbFcn=1
+[      4.530 ]           FctOP7160ex1Load_In_: OpFcn LoadIn: Attached to controller 'OpCtrl' with functionality 'LoadIn'.
+[      4.530 ]           OpalIO.c            :    Calling prio 1
+[      4.530 ]           op7160ex1_ctrl.c    : attachFunctionToCtrl: fcnId=48 *pFcnNo=1 uNbFcn=1
+[      4.530 ]           OpGenFun_OP7160EX1Re: OpGenFun_OP7160EX1Recv_Init_FcnData() : pFuncData=0x893ed7c, FcnNo = 1, pvAddress=0x0, pWidth=0xad7ed2e5
+[      4.530 ]           FctOP7160ex1Recv_mis: OpFcn Recv: Attached to controller 'OpCtrl' with functionality 'Recv'.
+[      4.530 ]           OpGenFun_OP7160EX1Re: OpGenFun_OP7160EX1Recv_init() : uNbFcn=0, uFcnNumber=1, adr=0x0
+[      4.530 ]           OpGenFun_OP7160EX1Re: OpGenFun_OP7160EX1Recv_init() : h->width = 7
+[      4.530 ]           OpGenFun_OP7160EX1Re: OpGenFun_OP7160EX1Recv_init() : h->p_width = 0xad7ed2e5, *h->p_width = 0
+[      4.530 ]           OpalIO.c            :    Calling prio 1
+[      4.530 ]           op7160ex1_ctrl.c    : attachFunctionToCtrl: fcnId=49 *pFcnNo=14 uNbFcn=1
+[      4.530 ]           OpGenFun_OP7160EX1Se: OpGenFun_OP7160EX1Send_Init_FcnData : pFuncData=0x893faa8, FcnNo = 14 (DataIn0), pvAddress=0xad7ed289, pWidth=0x84f8ee0
+[      4.530 ]           FctOP7160ex1Send_mis: OpFcn Send: Attached to controller 'OpCtrl' with functionality 'Send'.
+[      4.530 ]           OpGenFun_OP7160EX1Se: OpGenFun_OP7160EX1Send_init() : uNbFcn=0, uFcnNumber=14, adr=0x0
+[      4.530 ]           OpGenFun_OP7160EX1Se: OpGenFun_OP7160EX1Send_init() : h->width = 16
+[      4.530 ]           OpGenFun_OP7160EX1Se: OpGenFun_OP7160EX1Send_init() : h->p_width = 0xad7ed289, *h->p_width = 0
+[      4.530 ]           OpalIO.c            :    Calling prio 1
+[      4.530 ]           op7160ex1_ctrl.c    : attachFunctionToCtrl: fcnId=48 *pFcnNo=4 uNbFcn=1
+[      4.530 ]           OpGenFun_OP7160EX1Re: OpGenFun_OP7160EX1Recv_Init_FcnData() : pFuncData=0x893ede4, FcnNo = 4, pvAddress=0x0, pWidth=0xad7ed2f1
+[      4.530 ]           op7160ex1_pwm_in_mis: OpFcn Recv: Attached to controller 'OpCtrl' with functionality 'Recv'.
+[      4.530 ]           OpGenFun_OP7160EX1Re: OpGenFun_OP7160EX1Recv_init() : uNbFcn=0, uFcnNumber=4, adr=0x0
+[      4.530 ]           OpGenFun_OP7160EX1Re: OpGenFun_OP7160EX1Recv_init() : h->width = 16
+[      4.530 ]           OpGenFun_OP7160EX1Re: OpGenFun_OP7160EX1Recv_init() : h->p_width = 0xad7ed2f1, *h->p_width = 0
+[      4.530 ]           OpGenFun_OP7160EX1Re: OpGenFun_OP7160EX1Recv_set_application_DataSel_FromFPGA() : Registers at address 0xad769100 are disabled (old bitstream?)
+[      4.531 ]           OpalIO.c            :    Calling prio 1
+[      4.531 ]           op7160ex1_ctrl.c    : attachFunctionToCtrl: fcnId=50 *pFcnNo=12 uNbFcn=1
+[      4.531 ]           FctOP7160ex1Load_In_: OpFcn LoadIn: Attached to controller 'OpCtrl' with functionality 'LoadIn'.
+[      4.531 ]           OpalIO.c            :    Calling prio 1
+[      4.531 ]           op7160ex1_ctrl.c    : attachFunctionToCtrl: fcnId=48 *pFcnNo=5 uNbFcn=1
+[      4.531 ]           OpGenFun_OP7160EX1Re: OpGenFun_OP7160EX1Recv_Init_FcnData() : pFuncData=0x893ee4c, FcnNo = 5, pvAddress=0x0, pWidth=0xad7ed2f5
+[      4.531 ]           op7160ex1_pwm_in_mis: OpFcn Recv: Attached to controller 'OpCtrl' with functionality 'Recv'.
+[      4.531 ]           OpGenFun_OP7160EX1Re: OpGenFun_OP7160EX1Recv_init() : uNbFcn=0, uFcnNumber=5, adr=0x0
+[      4.531 ]           OpGenFun_OP7160EX1Re: OpGenFun_OP7160EX1Recv_init() : h->width = 16
+[      4.531 ]           OpGenFun_OP7160EX1Re: OpGenFun_OP7160EX1Recv_init() : h->p_width = 0xad7ed2f5, *h->p_width = 0
+[      4.531 ]           OpGenFun_OP7160EX1Re: OpGenFun_OP7160EX1Recv_set_application_DataSel_FromFPGA() : Registers at address 0xad769100 are disabled (old bitstream?)
+[      4.531 ]           OpalIO.c            :    Calling prio 1
+[      4.531 ]           op7160ex1_ctrl.c    : attachFunctionToCtrl: fcnId=50 *pFcnNo=13 uNbFcn=1
+[      4.531 ]           FctOP7160ex1Load_In_: OpFcn LoadIn: Attached to controller 'OpCtrl' with functionality 'LoadIn'.
+[      4.531 ]           OpalIO.c            :    Calling prio 1
+[      4.531 ]           op7160ex1_ctrl.c    : attachFunctionToCtrl: fcnId=49 *pFcnNo=1 uNbFcn=1
+[      4.531 ]           OpGenFun_OP7160EX1Se: OpGenFun_OP7160EX1Send_Init_FcnData : pFuncData=0x893fb18, FcnNo = 1 (DataIn0), pvAddress=0xad7ed255, pWidth=0x84f8ee0
+[      4.531 ]           op7160ex1_event_gene: Event Generator 'Send' (DataIn2): Attached to controller 'OpCtrl' with functionality 'Send'.
+[      4.531 ]           OpGenFun_OP7160EX1Se: OpGenFun_OP7160EX1Send_init() : uNbFcn=0, uFcnNumber=1, adr=0x0
+[      4.531 ]           OpGenFun_OP7160EX1Se: OpGenFun_OP7160EX1Send_init() : h->width = 32
+[      4.531 ]           OpGenFun_OP7160EX1Se: OpGenFun_OP7160EX1Send_init() : h->p_width = 0xad7ed255, *h->p_width = 0
+[      4.531 ]           OpGenFun_OP7160EX1Se: OpGenFun_OP7160EX1Send_set_application_DataSel_ToFPGA() : Registers at address 0xad769000 are disabled (old bitstream?)
+[      4.531 ]           OpalIO.c            :    Calling prio 1
+[      4.531 ]           opconfig_sync.c     : The OpCtrl OP7160EX1 block has registered to be master of the synchronization.
+[      4.531 ]           ml605lib.c          : Clock Mode 0 (0 for Hardware) Mode 1 (0 Slave 1 Master 2 Master with ext)
+[      4.531 ]           ml605lib.c          : Setting synchronization type to LVDS (audio)
+[      4.531 ]           OpalIO.c            :    Calling prio 2
+[      4.531 ]           OpalIO.c            : Searching call back INIT for sample time 0.000020 ...
+[      4.531 ]           OpalRtMain.c        : Line 1795
+[      4.531 ]           OpalRtIf.c          : Shared memory MRate created
+[      4.531 ]           OpalRtIf.c          : Line 2338
+[      4.531 ]           OpalRtIf.c          : Line 2363
+[      4.531 ]           OpalRtIf.c          : sm_ehs have 1509 points (500+0+5+0+4+0+0+1000)
+[      4.531 ]           OpalRtIf.c          : BossClk : sm_ehs
+[      4.531 ]           OpalRtIf.c          : Status sample time: 0.000020
+[      4.531 ]           OpalRtIf.c          : Line 3040
+[      4.531 ]           OpalRtMain.c        : SubSystem step size = 0.000020 sec. Status updated at every 1 local step.
+[      4.531 ]           OpalRtMain.c        : ------- Log node 1 -------
+[      4.531 ]           OpalRtMain.c        : IO               = 0
+[      4.531 ]           OpalRtMain.c        : subSysSampleTime = 0.000020
+[      4.531 ]           OpalRtMain.c        : typeOfClock      = 3
+[      4.531 ]           OpalRtMain.c        : clockFactor      = 1
+[      4.531 ]           OpalRtMain.c        : OpSyncHard       = 1
+[      4.531 ]           OpalRtMain.c        : NeedSync         = 0
+[      4.531 ]           OpalRtMain.c        : StatusST         = 0.000020
+[      4.531 ]           OpalRtMain.c        : skip             = 1
+[      4.531 ]           OpalRtMain.c        : XHP mode enabled on this CPU.
+[      4.531 ]           OpalRtMain.c        : Synchronized with hardware timer.
+[      4.531 ]           OpalRtMain.c        : Line 2231
+[      4.531 ]           OpalClientServer.c  : DATA MEM allocated: 1075927 bytes for client 3
+[      4.531 ]           OpalClientServer.c  : (One extra signal for Write to File)
+[      4.532 ]           OpalRtMain.c        : Some of the model parameters are not double. Parameter modification may not work properly.
+[      4.532 ]           OpalRtMain.c        : Line 2296
+[      4.532 ]           OpalRtMain.c        : Parameters Init: subsystem has 1184 values (1210), 1 pages.
 
-[      4.663 ]           ml605lib.c          : -- LOADOUT --
-[      4.663 ]           ml605lib.c          : Channel 0, width 0, address 0
-[      4.663 ]           ml605lib.c          : Channel 1, width 0, address 0
-[      4.663 ]           ml605lib.c          : Channel 2, width 0, address 0
-[      4.663 ]           ml605lib.c          : Channel 3, width 0, address 0
-[      4.663 ]           ml605lib.c          : Channel 4, width 0, address 0
-[      4.663 ]           ml605lib.c          : Channel 5, width 0, address 0
-[      4.663 ]           ml605lib.c          : Channel 6, width 0, address 0
-[      4.663 ]           ml605lib.c          : Channel 7, width 0, address 0
-[      4.663 ]           ml605lib.c          : Channel 8, width 0, address 0
-[      4.663 ]           ml605lib.c          : Channel 9, width 0, address 0
-[      4.663 ]           ml605lib.c          : Channel 10, width 0, address 0
-[      4.663 ]           ml605lib.c          : Channel 11, width 0, address 0
-[      4.663 ]           ml605lib.c          : Channel 12, width 0, address 0
-[      4.663 ]           ml605lib.c          : Channel 13, width 0, address 0
-[      4.663 ]           ml605lib.c          : Channel 14, width 0, address 0
-[      4.663 ]           ml605lib.c          : Channel 15, width 0, address 0
-[      4.663 ]           ml605lib.c          : Channel 16, width 0, address 0
-[      4.663 ]           ml605lib.c          : Channel 17, width 0, address 0
-[      4.663 ]           ml605lib.c          : Channel 18, width 0, address 0
-[      4.663 ]           ml605lib.c          : Channel 19, width 0, address 0
-[      4.663 ]           ml605lib.c          : Channel 20, width 0, address 0
-[      4.663 ]           ml605lib.c          : Channel 21, width 0, address 0
-[      4.663 ]           ml605lib.c          : Channel 22, width 0, address 0
-[      4.663 ]           ml605lib.c          : Channel 23, width 0, address 0
-[      4.663 ]           ml605lib.c          : Channel 24, width 0, address 0
-[      4.663 ]           ml605lib.c          : Channel 25, width 0, address 0
-[      4.663 ]           ml605lib.c          : Channel 26, width 0, address 0
-[      4.663 ]           ml605lib.c          : Channel 27, width 0, address 0
-[      4.663 ]           ml605lib.c          : Channel 28, width 0, address 0
-[      4.663 ]           ml605lib.c          : Channel 29, width 0, address 0
-[      4.663 ]           ml605lib.c          : Channel 30, width 0, address 0
-[      4.663 ]           ml605lib.c          : Channel 31, width 0, address 0
-[      4.663 ]           ml605lib.c          : -- LOADIN --
-[      4.663 ]           ml605lib.c          : Channel 0, width 10, address add7a000
-[      4.663 ]           ml605lib.c          : Channel 1, width 1, address add7a400
-[      4.663 ]           ml605lib.c          : Channel 2, width 0, address 0
-[      4.663 ]           ml605lib.c          : Channel 3, width 18, address add7ac00
-[      4.663 ]           ml605lib.c          : Channel 4, width 0, address 0
-[      4.663 ]           ml605lib.c          : Channel 5, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 6, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 7, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 8, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 9, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 10, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 11, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 12, width 1, address add7d000
-[      4.664 ]           ml605lib.c          : Channel 13, width 1, address add7d400
-[      4.664 ]           ml605lib.c          : Channel 14, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 15, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 16, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 17, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 18, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 19, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 20, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 21, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 22, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 23, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 24, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 25, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 26, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 27, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 28, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 29, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 30, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 31, width 0, address 0
-[      4.664 ]           ml605lib.c          : ml605_setDefMapConfig - set initial configuration for MapIn/MapOut tables
-[      4.664 ]           ml605lib.c          : Configure DMA channel 0 with size 1 dword (controller's sync word)
-[      4.664 ]           ml605lib.c          : -- RECV --
-[      4.664 ]           ml605lib.c          : Program unmapper port 0 with size 8 dwords
-[      4.664 ]           ml605lib.c          : Configure DMA channel 0 with size 10 dwords
-[      4.664 ]           ml605lib.c          : Program unmapper port 1 with size 7 dwords
-[      4.664 ]           ml605lib.c          : Configure DMA channel 0 with size 18 dwords
-[      4.664 ]           ml605lib.c          : Program unmapper port 4 with size 16 dwords
-[      4.664 ]           ml605lib.c          : Configure DMA channel 0 with size 35 dwords
-[      4.664 ]           ml605lib.c          : Program unmapper port 5 with size 16 dwords
-[      4.664 ]           ml605lib.c          : Configure DMA channel 0 with size 52 dwords
-[      4.664 ]           ml605lib.c          : Channel 0, width 8, address add3b004
-[      4.664 ]           ml605lib.c          : Channel 1, width 7, address add3b028
-[      4.664 ]           ml605lib.c          : Channel 2, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 3, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 4, width 16, address add3b048
-[      4.664 ]           ml605lib.c          : Channel 5, width 16, address add3b08c
-[      4.664 ]           ml605lib.c          : Channel 6, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 7, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 8, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 9, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 10, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 11, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 12, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 13, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 14, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 15, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 16, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 17, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 18, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 19, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 20, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 21, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 22, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 23, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 24, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 25, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 26, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 27, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 28, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 29, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 30, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 31, width 0, address 0
-[      4.664 ]           ml605lib.c          : Final:Configure DMA channel 0 with size 52 dwords
-[      4.664 ]           ml605lib.c          : -- SEND --
-[      4.664 ]           ml605lib.c          : Program mapper port 0 with size 3 dwords
-[      4.664 ]           ml605lib.c          : Configure DMA channel 1 with size 3 dwords (prev 0, width 3)
-[      4.664 ]           ml605lib.c          : Program mapper port 1 with size 32 dwords
-[      4.664 ]           ml605lib.c          : Configure DMA channel 1 with size 35 dwords (prev 3, width 32)
-[      4.664 ]           ml605lib.c          : Program mapper port 14 with size 16 dwords
-[      4.664 ]           ml605lib.c          : Configure DMA channel 1 with size 51 dwords (prev 35, width 16)
-[      4.664 ]           ml605lib.c          : Channel 0, width 3, address add44000
-[      4.664 ]           ml605lib.c          : Channel 1, width 32, address add4400c
-[      4.664 ]           ml605lib.c          : Channel 2, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 3, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 4, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 5, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 6, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 7, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 8, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 9, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 10, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 11, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 12, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 13, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 14, width 16, address add4408c
-[      4.664 ]           ml605lib.c          : Channel 15, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 16, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 17, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 18, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 19, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 20, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 21, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 22, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 23, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 24, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 25, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 26, width 0, address 0
-[      4.664 ]           ml605lib.c          : Channel 27, width 0, address 0
+[      4.532 ]           OpalClientServer.c  : DATA MEM allocated: 20078 bytes for client 2
+[      4.532 ]           OpalClientServer.c  : (One extra signal for Write to File)
+[      4.532 ]           OpalRtMain.c        : Line 2302
+[      4.532 ]           OpalClientServer.c  : DATA MEM allocated: 327645 bytes for client 4
+[      4.532 ]           OpalClientServer.c  : (One extra signal for Write to File)
+[      4.532 ]           Signals.c           : ReturnSignalsInit, id 4, maxNbSignals 1015, buf size 327645
+[      4.532 ]           Signals.c           : ReturnSignalsInit, frame 0, actualDataSize 327645
+[      4.532 ]           OpalRtMain.c        : Line 2320
+[      4.532 ]           OpalRtMain.c        : Subsys found in shared memory.
+[      4.546 ]           OpalRtMain.c        : Line 2347
+[      4.546 ]           OpalTarget.c        : Sending notification request for system control (cmd 7)
+[      4.582 ]           OpalRtMain.c        : Line 2352
+[      4.582 ]           OpalRtMain.c        : Line 2418
+[      4.582 ]           OpalRtMain.c        : The model contains 2 sample times.
+[      4.582 ]           OpalRtMain.c        : Base sample time = 0.000020
+[      4.582 ]           OpalRtMain.c        : Real-time SingleTasking mode.
+[      4.582 ]           OpalRtMain.c        : OpalExecutionMainLoop()
+[      4.582 ]           OpalRtMain.c        : *** Fetched 1 cores, remains 1
+[      4.582 ]           OpalRtMain.c        : RT-LAB license ok. Unlimited time license.
+[      4.582 ]           MonLogger.c         : Monitoring: start time = 0.000 ms, using CPU speed = 3299 MHz
+[      4.582 ]           OpalRtSnapshot.c    : Snapshot taken (opboost_and_two_level__sm_ehs_0.snap).
+[      4.582 ]           OpalRtSnapshot.c    : Estimated time to take a snapshot = 134 us.
+[      4.583 ]           OpalPrint.c         : Sending file name notification request for system control (cmd 30)
+[      4.583 ]           OpalHostSendIf.c    : Open file done (/home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_workspace/pv_inverter/models/boost_and_two_level_bridge_rtlab/boost_and_two_level_bridge_rtlab_sm_ehs/opboost_and_two_level__sm_ehs_0.snap)
+[      4.664 ]           OpalHostSendIf.c    : Close file done (/home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_workspace/pv_inverter/models/boost_and_two_level_bridge_rtlab/boost_and_two_level_bridge_rtlab_sm_ehs/opboost_and_two_level__sm_ehs_0.snap)
+[      4.664 ]           OpalPrint.c         : Sending file name notification request for system control (cmd 33)
+[      4.665 ]           OpalTarget.c        : Sending notification request for system control (cmd 20)
+[      4.665 ]           OpalRtMain.c        :  [0]: PAUSE mode, IO set to pause value.
+[      4.665 ]           OpalRtMain.c        : 		Total of 0 Overrun detected.
+[      4.665 ]           OpalRtMain.c        : 		Sat May 20 23:08:04 2017
+
+[      4.665 ]           ml605lib.c          : -- LOADOUT --
+[      4.665 ]           ml605lib.c          : Channel 0, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 1, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 2, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 3, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 4, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 5, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 6, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 7, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 8, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 9, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 10, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 11, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 12, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 13, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 14, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 15, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 16, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 17, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 18, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 19, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 20, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 21, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 22, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 23, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 24, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 25, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 26, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 27, width 0, address 0
 [      4.665 ]           ml605lib.c          : Channel 28, width 0, address 0
 [      4.665 ]           ml605lib.c          : Channel 29, width 0, address 0
 [      4.665 ]           ml605lib.c          : Channel 30, width 0, address 0
 [      4.665 ]           ml605lib.c          : Channel 31, width 0, address 0
-[      4.665 ]           ml605lib.c          : Final: Configure DMA channel 1 with size 51 
-[      4.665 ]           ml605lib.c          : Write: 52, Read: 51, softDmaEngCtrl = 3
-[      4.755 ]           OpalRtMain.c        : SYS_CALC_STEP Command (0.000020)
-[      4.755 ]           OpalTarget.c        : Sending feedback request for system control (cmd 8)
-[      4.775 ]           OpalRtMain.c        : received blob cmd 60 at cycle 0
-[      4.775 ]           OpalRtBlobs.c       : Sending feedback request for blobs (cmd 60)
-[      4.775 ]           OpalTarget.c        : Send data request for client 5 (Queue=1)
-[      4.786 ]           OpalRtMain.c        : received blob cmd 61 at cycle 0
-[      4.786 ]           OpalRtBlobs.c       : Sending feedback request for blobs (cmd 61)
-[      4.786 ]           OpalTarget.c        : Send data request for client 5 (Queue=1)
-[      4.796 ]           OpalRtMain.c        : received blob cmd 59 at cycle 0
-[      4.796 ]           OpalRtMain.c        : handling blob cmd 59 at cycle 0 (blob OP_INFO_REGISTER_GET_INFO)
-[      4.796 ]           OpalRtBlobs.c       : Sending feedback request for blobs (cmd 59)
-[      4.796 ]           OpalTarget.c        : Send data request for client 5 (Queue=1)
-[      4.806 ]           OpalSync.c          : Sending feedback request for monitoring (cmd 48)
-[      4.806 ]           OpalTarget.c        : Send data request for client 1 (Queue=1)
-[      5.237 ]           192.168.5.200:25254/resources/root/6A9306BA-C839-4BEF-86B0-BE0A84F97672 : data -> 1
-[      5.440 ]           OpalRtMain.c        : received blob cmd 59 at cycle 0
-[      5.440 ]           OpalRtMain.c        : handling blob cmd 59 at cycle 0 (blob STATIC_ACQ_INFO)
-[      5.440 ]           OpalRtBlobs.c       : Sending feedback request for blobs (cmd 59)
-[      5.440 ]           OpalTarget.c        : Send data request for client 5 (Queue=1)
-[      5.460 ]           OpalSync.c          : Probe cmd 34 for 1 subSys (group 1)
-[      5.460 ]           OpalAcquisition.c   : Probe cmd (34) group 1: ok to apply at pass 0.000000
-[      5.460 ]           OpalAcquisition.c   : ACQ GROUP 1: UPDATING PARAMETER AT PASS 0.000000 ....
+[      4.665 ]           ml605lib.c          : -- LOADIN --
+[      4.665 ]           ml605lib.c          : Channel 0, width 10, address ad719000
+[      4.665 ]           ml605lib.c          : Channel 1, width 1, address ad719400
+[      4.665 ]           ml605lib.c          : Channel 2, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 3, width 18, address ad719c00
+[      4.665 ]           ml605lib.c          : Channel 4, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 5, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 6, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 7, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 8, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 9, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 10, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 11, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 12, width 1, address ad71c000
+[      4.665 ]           ml605lib.c          : Channel 13, width 1, address ad71c400
+[      4.665 ]           ml605lib.c          : Channel 14, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 15, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 16, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 17, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 18, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 19, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 20, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 21, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 22, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 23, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 24, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 25, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 26, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 27, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 28, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 29, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 30, width 0, address 0
+[      4.665 ]           ml605lib.c          : Channel 31, width 0, address 0
+[      4.665 ]           ml605lib.c          : ml605_setDefMapConfig - set initial configuration for MapIn/MapOut tables
+[      4.665 ]           ml605lib.c          : Configure DMA channel 0 with size 1 dword (controller's sync word)
+[      4.665 ]           ml605lib.c          : -- RECV --
+[      4.665 ]           ml605lib.c          : Program unmapper port 0 with size 8 dwords
+[      4.666 ]           ml605lib.c          : Configure DMA channel 0 with size 10 dwords
+[      4.666 ]           ml605lib.c          : Program unmapper port 1 with size 7 dwords
+[      4.666 ]           ml605lib.c          : Configure DMA channel 0 with size 18 dwords
+[      4.666 ]           ml605lib.c          : Program unmapper port 4 with size 16 dwords
+[      4.666 ]           ml605lib.c          : Configure DMA channel 0 with size 35 dwords
+[      4.666 ]           ml605lib.c          : Program unmapper port 5 with size 16 dwords
+[      4.666 ]           ml605lib.c          : Configure DMA channel 0 with size 52 dwords
+[      4.666 ]           ml605lib.c          : Channel 0, width 8, address ad6da004
+[      4.666 ]           ml605lib.c          : Channel 1, width 7, address ad6da028
+[      4.666 ]           ml605lib.c          : Channel 2, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 3, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 4, width 16, address ad6da048
+[      4.666 ]           ml605lib.c          : Channel 5, width 16, address ad6da08c
+[      4.666 ]           ml605lib.c          : Channel 6, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 7, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 8, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 9, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 10, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 11, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 12, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 13, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 14, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 15, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 16, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 17, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 18, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 19, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 20, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 21, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 22, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 23, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 24, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 25, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 26, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 27, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 28, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 29, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 30, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 31, width 0, address 0
+[      4.666 ]           ml605lib.c          : Final:Configure DMA channel 0 with size 52 dwords
+[      4.666 ]           ml605lib.c          : -- SEND --
+[      4.666 ]           ml605lib.c          : Program mapper port 0 with size 3 dwords
+[      4.666 ]           ml605lib.c          : Configure DMA channel 1 with size 3 dwords (prev 0, width 3)
+[      4.666 ]           ml605lib.c          : Program mapper port 1 with size 32 dwords
+[      4.666 ]           ml605lib.c          : Configure DMA channel 1 with size 35 dwords (prev 3, width 32)
+[      4.666 ]           ml605lib.c          : Program mapper port 14 with size 16 dwords
+[      4.666 ]           ml605lib.c          : Configure DMA channel 1 with size 51 dwords (prev 35, width 16)
+[      4.666 ]           ml605lib.c          : Channel 0, width 3, address ad6e3000
+[      4.666 ]           ml605lib.c          : Channel 1, width 32, address ad6e300c
+[      4.666 ]           ml605lib.c          : Channel 2, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 3, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 4, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 5, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 6, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 7, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 8, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 9, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 10, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 11, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 12, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 13, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 14, width 16, address ad6e308c
+[      4.666 ]           ml605lib.c          : Channel 15, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 16, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 17, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 18, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 19, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 20, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 21, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 22, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 23, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 24, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 25, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 26, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 27, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 28, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 29, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 30, width 0, address 0
+[      4.666 ]           ml605lib.c          : Channel 31, width 0, address 0
+[      4.666 ]           ml605lib.c          : Final: Configure DMA channel 1 with size 51 
+[      4.666 ]           ml605lib.c          : Write: 52, Read: 51, softDmaEngCtrl = 3
+[      4.717 ]           OpalRtMain.c        : SYS_CALC_STEP Command (0.000020)
+[      4.717 ]           OpalTarget.c        : Sending feedback request for system control (cmd 8)
+[      4.727 ]           OpalRtMain.c        : received blob cmd 60 at cycle 0
+[      4.727 ]           OpalRtBlobs.c       : Sending feedback request for blobs (cmd 60)
+[      4.727 ]           OpalTarget.c        : Send data request for client 5 (Queue=1)
+[      4.737 ]           OpalRtMain.c        : received blob cmd 61 at cycle 0
+[      4.737 ]           OpalRtBlobs.c       : Sending feedback request for blobs (cmd 61)
+[      4.737 ]           OpalTarget.c        : Send data request for client 5 (Queue=1)
+[      4.747 ]           OpalRtMain.c        : received blob cmd 59 at cycle 0
+[      4.747 ]           OpalRtMain.c        : handling blob cmd 59 at cycle 0 (blob OP_INFO_REGISTER_GET_INFO)
+[      4.747 ]           OpalRtBlobs.c       : Sending feedback request for blobs (cmd 59)
+[      4.747 ]           OpalTarget.c        : Send data request for client 5 (Queue=1)
+[      4.757 ]           OpalSync.c          : Monitoring: received request for number of probes
+[      4.757 ]           OpalSync.c          : Sending feedback request for monitoring (cmd 48)
+[      4.757 ]           OpalTarget.c        : Send data request for client 1 (Queue=1)
+[      5.169 ]           Unable to create a new HTTP connection - aborting
+[      5.195 ]           192.168.5.200:25256/resources/root/D964067D-02A3-44EE-83F7-6F0E6B48B5D5 : data -> 1
+[      5.391 ]           OpalRtMain.c        : received blob cmd 59 at cycle 0
+[      5.391 ]           OpalRtMain.c        : handling blob cmd 59 at cycle 0 (blob STATIC_ACQ_INFO)
+[      5.391 ]           OpalRtBlobs.c       : Sending feedback request for blobs (cmd 59)
+[      5.391 ]           OpalTarget.c        : Send data request for client 5 (Queue=1)
+[      5.411 ]           OpalSync.c          : Group 1: Receive 9 cmd from probe
+[      5.411 ]           OpalAcquisition.c   : Changing trigger for acq group 1 : type is 3, offset is 0
+[      5.411 ]           OpalSync.c          : Probe cmd 34 for 1 subSys (group 1)
+[      5.411 ]           OpalAcquisition.c   : Probe cmd (34) group 1: ok to apply at pass 0.000000
+[      5.411 ]           OpalAcquisition.c   : ACQ GROUP 1: UPDATING PARAMETER AT PASS 0.000000 ....
 
-[      5.460 ]           OpalAcquisition.c   : Group 1: repeat factor = 1 (1), status decimation = 1
-[      5.460 ]           OpalSync.c          : Sending feedback request for probe (cmd 34, group 1)
-[      5.460 ]           OpalTarget.c        : Send data request for client 1 (Queue=1)
-[      5.491 ]           OpalSync.c          : Probe cmd 34 for 1 subSys (group 25)
-[      5.491 ]           OpalAcquisition.c   : Probe cmd (34) group 25: ok to apply at pass 0.000000
-[      5.491 ]           OpalAcquisition.c   : ACQ GROUP 25: UPDATING PARAMETER AT PASS 0.000000 ....
+[      5.411 ]           OpalAcquisition.c   : Group 1: repeat factor = 1 (1), status decimation = 1
+[      5.411 ]           OpalAcquisition.c   : Probe cmd has been applied at pass 0.000000.
+[      5.411 ]           OpalSync.c          : Sending feedback request for probe (cmd 34, group 1)
+[      5.411 ]           OpalTarget.c        : Send data request for client 1 (Queue=1)
+[      5.431 ]           OpalSync.c          : Group 2: Receive 9 cmd from probe
+[      5.431 ]           OpalAcquisition.c   : Changing trigger for acq group 2 : type is 3, offset is 0
+[      5.431 ]           OpalSync.c          : Probe cmd 34 for 1 subSys (group 2)
+[      5.431 ]           OpalAcquisition.c   : Probe cmd (34) group 2: ok to apply at pass 0.000000
+[      5.431 ]           OpalAcquisition.c   : ACQ GROUP 2: UPDATING PARAMETER AT PASS 0.000000 ....
 
-[      5.491 ]           OpalAcquisition.c   : Group 25: repeat factor = 1 (1), status decimation = 1
-[      5.491 ]           OpalSync.c          : Sending feedback request for probe (cmd 34, group 25)
-[      5.491 ]           OpalTarget.c        : Send data request for client 1 (Queue=1)
+[      5.431 ]           OpalAcquisition.c   : Group 2: repeat factor = 1 (1), status decimation = 1
+[      5.431 ]           OpalAcquisition.c   : Probe cmd has been applied at pass 0.000000.
+[      5.431 ]           OpalSync.c          : Sending feedback request for probe (cmd 34, group 2)
+[      5.431 ]           OpalTarget.c        : Send data request for client 1 (Queue=1)
+[      5.462 ]           OpalSync.c          : Group 3: Receive 9 cmd from probe
+[      5.462 ]           OpalAcquisition.c   : Changing trigger for acq group 3 : type is 3, offset is 0
+[      5.462 ]           OpalSync.c          : Probe cmd 34 for 1 subSys (group 3)
+[      5.462 ]           OpalAcquisition.c   : Probe cmd (34) group 3: ok to apply at pass 0.000000
+[      5.462 ]           OpalAcquisition.c   : ACQ GROUP 3: UPDATING PARAMETER AT PASS 0.000000 ....
+
+[      5.462 ]           OpalAcquisition.c   : Group 3: repeat factor = 1 (1), status decimation = 1
+[      5.462 ]           OpalAcquisition.c   : Probe cmd has been applied at pass 0.000000.
+[      5.462 ]           OpalSync.c          : Sending feedback request for probe (cmd 34, group 3)
+[      5.462 ]           OpalTarget.c        : Send data request for client 1 (Queue=1)
+[      5.482 ]           OpalSync.c          : Group 4: Receive 9 cmd from probe
+[      5.482 ]           OpalAcquisition.c   : Changing trigger for acq group 4 : type is 3, offset is 0
+[      5.482 ]           OpalSync.c          : Probe cmd 34 for 1 subSys (group 4)
+[      5.482 ]           OpalAcquisition.c   : Probe cmd (34) group 4: ok to apply at pass 0.000000
+[      5.482 ]           OpalAcquisition.c   : ACQ GROUP 4: UPDATING PARAMETER AT PASS 0.000000 ....
+
+[      5.482 ]           OpalAcquisition.c   : Group 4: repeat factor = 1 (1), status decimation = 1
+[      5.482 ]           OpalAcquisition.c   : Probe cmd has been applied at pass 0.000000.
+[      5.482 ]           OpalSync.c          : Sending feedback request for probe (cmd 34, group 4)
+[      5.482 ]           OpalTarget.c        : Send data request for client 1 (Queue=1)
+[      5.502 ]           OpalSync.c          : Group 5: Receive 9 cmd from probe
+[      5.502 ]           OpalAcquisition.c   : Changing trigger for acq group 5 : type is 3, offset is 0
+[      5.502 ]           OpalSync.c          : Probe cmd 34 for 1 subSys (group 5)
+[      5.502 ]           OpalAcquisition.c   : Probe cmd (34) group 5: ok to apply at pass 0.000000
+[      5.502 ]           OpalAcquisition.c   : ACQ GROUP 5: UPDATING PARAMETER AT PASS 0.000000 ....
+
+[      5.502 ]           OpalAcquisition.c   : Group 5: repeat factor = 1 (1), status decimation = 1
+[      5.502 ]           OpalAcquisition.c   : Probe cmd has been applied at pass 0.000000.
+[      5.502 ]           OpalSync.c          : Sending feedback request for probe (cmd 34, group 5)
+[      5.502 ]           OpalTarget.c        : Send data request for client 1 (Queue=1)
+[      5.522 ]           OpalSync.c          : Group 25: Receive 9 cmd from probe
+[      5.522 ]           OpalAcquisition.c   : Changing trigger for acq group 25 : type is 3, offset is 0
+[      5.522 ]           OpalSync.c          : Probe cmd 34 for 1 subSys (group 25)
+[      5.522 ]           OpalAcquisition.c   : Probe cmd (34) group 25: ok to apply at pass 0.000000
+[      5.522 ]           OpalAcquisition.c   : ACQ GROUP 25: UPDATING PARAMETER AT PASS 0.000000 ....
+
+[      5.522 ]           OpalAcquisition.c   : Group 25: repeat factor = 1 (1), status decimation = 1
+[      5.522 ]           OpalAcquisition.c   : Probe cmd has been applied at pass 0.000000.
+[      5.522 ]           OpalSync.c          : Sending feedback request for probe (cmd 34, group 25)
+[      5.522 ]           OpalTarget.c        : Send data request for client 1 (Queue=1)
+[      5.537 ]           Unable to create a new HTTP connection - aborting
+[      5.537 ]           Unable to create a new HTTP connection - aborting
 Starting transfer of /home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_workspace/pv_inverter/models/boost_and_two_level_bridge_rtlab/boost_and_two_level_bridge_rtlab_sm_ehs/opboost_and_two_level__sm_ehs_0.snap...
 Transfer of /home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_workspace/pv_inverter/models/boost_and_two_level_bridge_rtlab/boost_and_two_level_bridge_rtlab_sm_ehs/opboost_and_two_level__sm_ehs_0.snap OK
-[     23.747 ]           Unable to create a new HTTP connection - aborting
-[     25.780 ]           Unable to create a new HTTP connection - aborting
-[     87.763 ]           Unable to create a new HTTP connection - aborting
-[     90.266 ]           Unable to create a new HTTP connection - aborting
-[    118.818 ]           OpalRtMain.c        : SYS_CALC_STEP Command (0.000020)
-[    118.818 ]           OpalTarget.c        : Sending feedback request for system control (cmd 8)
-[    118.828 ]           OpalRtMain.c        : SYS_EXECUTE Command
-[    118.828 ]           OpalRtMain.c        : Calculation step set to 0.000020, stopTime = 0.000000, pauseTime = 0.000000
-[    118.828 ]           OpalRtMain.c        : XHP mode enabled
-[    118.828 ]           OpalTarget.c        : Sending notification request for system control (cmd 9)
-[    118.828 ]           OpalTarget.c        : Sending feedback request for system control (cmd 9)
-[    118.828 ]           OpalRtMain.c        :  [1]: RUN mode, IO set to run value.
-[    118.828 ]           ctrl_op7160ex1_misc.: Controller is forced to polling mode because XHP is enabled
-[    118.828 ]           ml605lib.c          : Freq set to 100000000.0
-[    118.828 ]           ml605lib.c          : Program Sync with timestep = 1999 (0.000020, freq 100000000.000000, total 2000.000000)
-[    118.828 ]           ml605lib.c          : Program sync done
-[    118.829 ]           OpalRtMain.c        : 		Synchronized step size = 20 us.
-[    118.829 ]           OpalRtMain.c        : 		Tue May 16 23:37:02 2017
+[     20.748 ]           OpalRtMain.c        : SYS_CALC_STEP Command (0.000020)
+[     20.748 ]           OpalTarget.c        : Sending feedback request for system control (cmd 8)
+[     20.758 ]           OpalRtMain.c        : SYS_EXECUTE Command
+[     20.758 ]           OpalRtMain.c        : Calculation step set to 0.000020, stopTime = 0.000000, pauseTime = 0.000000
+[     20.758 ]           OpalRtMain.c        : XHP mode enabled
+[     20.758 ]           OpalTarget.c        : Sending notification request for system control (cmd 9)
+[     20.758 ]           OpalTarget.c        : Sending feedback request for system control (cmd 9)
+[     20.758 ]           OpalRtMain.c        :  [1]: RUN mode, IO set to run value.
+[     20.758 ]           ctrl_op7160ex1_misc.: Controller is forced to polling mode because XHP is enabled
+[     20.758 ]           ml605lib.c          : Freq set to 100000000.0
+[     20.758 ]           ml605lib.c          : Program Sync with timestep = 1999 (0.000020, freq 100000000.000000, total 2000.000000)
+[     20.758 ]           ml605lib.c          : Program sync done
+[     20.759 ]           OpalRtMain.c        : 		Synchronized step size = 20 us.
+[     20.759 ]           OpalRtMain.c        : 		Sat May 20 23:08:20 2017
 
-[    118.829 ]           OpalAcquisition.c   : ACQ GROUP 1: UPDATING PARAMETER AT PASS 0.000000 ....
+[     20.759 ]           OpalAcquisition.c   : ACQ GROUP 1: UPDATING PARAMETER AT PASS 0.000000 ....
 
-[    118.829 ]           OpalAcquisition.c   : Group 1: repeat factor = 1 (1), status decimation = 1
-[    118.829 ]           OpalAcquisition.c   : ACQ GROUP 25: UPDATING PARAMETER AT PASS 0.000000 ....
+[     20.759 ]           OpalAcquisition.c   : Group 1: repeat factor = 1 (1), status decimation = 1
+[     20.759 ]           OpalAcquisition.c   : ACQ GROUP 2: UPDATING PARAMETER AT PASS 0.000000 ....
 
-[    118.829 ]           OpalAcquisition.c   : Group 25: repeat factor = 1 (1), status decimation = 1
-[    118.829 ]           OpalAcquisition.c   : ACQ GROUP 26: UPDATING PARAMETER AT PASS 0.000000 ....
+[     20.760 ]           OpalAcquisition.c   : Group 2: repeat factor = 1 (1), status decimation = 1
+[     20.760 ]           OpalAcquisition.c   : ACQ GROUP 3: UPDATING PARAMETER AT PASS 0.000000 ....
 
-[    118.829 ]           OpalAcquisition.c   : Group 26: repeat factor = 1 (1), status decimation = 1
-[    118.833 ]           OpalPrint.c         : Sending file name notification request for system control (cmd 30)
-[    118.833 ]           OpalHostSendIf.c    : Open file done (/./myPV_inverter.mat)
-[    118.834 ]           OpalRtMain.c        : Main priority set to 99
-[    152.385 ]           Unable to create a new HTTP connection - aborting
-[    154.674 ]           Unable to create a new HTTP connection - aborting
-[    216.702 ]           Unable to create a new HTTP connection - aborting
-[    218.894 ]           Unable to create a new HTTP connection - aborting
-[    281.708 ]           Unable to create a new HTTP connection - aborting
-[    284.166 ]           Unable to create a new HTTP connection - aborting
-[    346.900 ]           Unable to create a new HTTP connection - aborting
-[    349.293 ]           Unable to create a new HTTP connection - aborting
-[    411.616 ]           Unable to create a new HTTP connection - aborting
-[    414.252 ]           Unable to create a new HTTP connection - aborting
-[    476.512 ]           Unable to create a new HTTP connection - aborting
-[    478.594 ]           Unable to create a new HTTP connection - aborting
-[    541.098 ]           Unable to create a new HTTP connection - aborting
-[    543.443 ]           Unable to create a new HTTP connection - aborting
-[    571.955 ]           OpalRtMain.c        : XHP mode disabled
-[    571.955 ]           OpalRtMain.c        :  [22656232]: Reset
-[    571.955 ]           OpalRtMain.c        : 		Total of 0 Overrun detected.
-[    571.955 ]           OpalRtMain.c        : 		Tue May 16 23:44:35 2017
+[     20.760 ]           OpalAcquisition.c   : Group 3: repeat factor = 1 (1), status decimation = 1
+[     20.760 ]           OpalAcquisition.c   : ACQ GROUP 4: UPDATING PARAMETER AT PASS 0.000000 ....
 
-[    571.955 ]           OpalAcquisition.c   : Unregistering trigger for acq group 26.
-[    571.955 ]           ml605lib.c          : ml605_stopSyncSource
-[    571.955 ]           ml605lib.c          : ml605_stopSyncSource (wait 0.00 us for aborting)
-[    571.955 ]           op7160ex1_ctrl.c    : Prepare to unregister controller
-[    572.955 ]           ml605shm_lib.c      : Close OP7160 share memory 
-[    572.955 ]           opsystemlib.c       : Entering opsystem_detach
-[    572.955 ]           opsystemlib.c       :  Closing shared memory of PCIe board (2)
-[    573.211 ]           OpalTarget.c        : Sending feedback request for system control (cmd 13)
-[    573.212 ]           OpalPrint.c         : Sending file name notification request for system control (cmd 30)
-[    573.212 ]           OpalPrint.c         : Sending file name notification request for system control (cmd 30)
-[    573.214 ]           OpalHostSendIf.c    : Close file done (/./myPV_inverter.mat)
-[    573.214 ]           OpalPrint.c         : Sending file name notification request for system control (cmd 33)
-[    573.222 ]           TargetRequest.c     : Reset done
-[    573.323 ]           OpalHostSendIf.c    : SEND: connection to host closed
-[    573.429 ]           OpalTarget.c        : Subsystem at position 0 (total = 1) has been deleted.
-[    573.430 ]           
+[     20.760 ]           OpalAcquisition.c   : Group 4: repeat factor = 1 (1), status decimation = 1
+[     20.760 ]           OpalAcquisition.c   : ACQ GROUP 5: UPDATING PARAMETER AT PASS 0.000000 ....
+
+[     20.760 ]           OpalAcquisition.c   : Group 5: repeat factor = 1 (1), status decimation = 1
+[     20.760 ]           OpalAcquisition.c   : ACQ GROUP 25: UPDATING PARAMETER AT PASS 0.000000 ....
+
+[     20.760 ]           OpalAcquisition.c   : Group 25: repeat factor = 1 (1), status decimation = 1
+[     20.760 ]           OpalAcquisition.c   : ACQ GROUP 26: UPDATING PARAMETER AT PASS 0.000000 ....
+
+[     20.760 ]           OpalAcquisition.c   : Group 26: repeat factor = 1 (1), status decimation = 1
+[     20.760 ]           OpalAcquisition.c   : WriteFile Group 26: OPENING FILE
+[     20.761 ]           OpalPrint.c         : Sending file name notification request for system control (cmd 30)
+[     20.761 ]           OpalHostSendIf.c    : Open file done (/./myPV_inverter.mat)
+[     20.762 ]           op7160ex1_ctrl_publi: op7160ex1_send_update_request (boardId = 0)
+[     20.762 ]           OpalRtMain.c        : Main priority set to 99
+[    217.021 ]           OpalRtMain.c        : XHP mode disabled
+[    217.021 ]           OpalRtMain.c        :  [9812270]: Reset
+[    217.021 ]           OpalRtMain.c        : 		Total of 0 Overrun detected.
+[    217.021 ]           OpalRtMain.c        : 		Sat May 20 23:11:36 2017
+
+[    217.021 ]           OpalRtMain.c        : OpalCloseBeforeUserFunction()
+[    217.021 ]           OpalIO.c            : Searching call back CLOSE for sample time 0.000000 ...
+[    217.021 ]           OpalIO.c            : Searching call back CLOSE for sample time 0.000020 ...
+[    217.021 ]           OpalAcquisition.c   : Unregistering trigger for acq group 26.
+[    217.021 ]           ml605lib.c          : ml605_stopSyncSource
+[    217.021 ]           ml605lib.c          : ml605_stopSyncSource (wait 0.00 us for aborting)
+[    217.021 ]           op7160ex1_ctrl.c    : Prepare to unregister controller
+[    218.021 ]           ml605shm_lib.c      : Close OP7160 share memory 
+[    218.021 ]           opsystemlib.c       : Entering opsystem_detach
+[    218.021 ]           opsystemlib.c       :  Closing shared memory of PCIe board (2)
+[    218.277 ]           OpalRtMain.c        : OpalClose()
+[    218.277 ]           OpalTarget.c        : Sending feedback request for system control (cmd 13)
+[    218.277 ]           OpalRtMain.c        : PrintOverrunMsg()
+[    218.277 ]           OpalRtMain.c        : OpalParameter_Close()
+[    218.277 ]           OpalRtMain.c        : CommRtClose()
+[    218.278 ]           OpalPrint.c         : Sending file name notification request for system control (cmd 30)
+[    218.278 ]           OpalPrint.c         : Sending file name notification request for system control (cmd 30)
+[    218.278 ]           TargetRequest.c     : Purging target requests priority 0 ...
+[    218.280 ]           OpalHostSendIf.c    : Close file done (/./myPV_inverter.mat)
+[    218.280 ]           OpalPrint.c         : Sending file name notification request for system control (cmd 33)
+[    218.288 ]           TargetRequest.c     : Done purging target requests priority 0.
+[    218.288 ]           TargetRequest.c     : Purging target requests priority 1 ...
+[    218.288 ]           TargetRequest.c     : Done purging target requests priority 1.
+[    218.288 ]           TargetRequest.c     : Reset done
+[    218.389 ]           OpalHostSendIf.c    : SEND: connection to host closed
+[    218.496 ]           OpalRtMain.c        : *** Returned used cores, remains 2
+[    218.497 ]           OpalTarget.c        : Subsystem at position 0 (total = 1) has been deleted.
+[    218.497 ]           
 
 MasterRoot shutdown!
-[    573.430 ]           Unable to create a new HTTP connection - aborting
-[    573.430 ]           Objects destruction
+[    218.497 ]           Unable to create a new HTTP connection - aborting
+[    218.498 ]           Objects destruction
 Executing script /usr/opalrt/v11.0.8.13/common/python/rtlab/global/target_postreset.py ... done
 Executing script /usr/opalrt/v11.0.8.13/common/python/rtlab/global/target_subsys_postreset.py ... done
 

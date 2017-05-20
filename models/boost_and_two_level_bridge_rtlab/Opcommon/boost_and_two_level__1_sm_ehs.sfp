@@ -20,6 +20,7 @@ boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Conversion=rte_convers
 boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Conversion1=rte_conversion
 boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Ground=rte_ground
 boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Logical Operator1=rte_logical_operator
+boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Period Meter=rte_period_meter
 boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE SPWM=rte_svpwm
 [S-Function list]
 boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI/IOTypeSel_LoadIn=1
@@ -46,6 +47,10 @@ boost_and_two_level__1_sm_ehs/SM_eHS/eHSx64 Gen3 CommBlk/c_solver_rte1/EventGen_
 boost_and_two_level__1_sm_ehs/SM_eHS/eHSx64 Gen3 CommBlk/c_solver_rte1/RTE_Conversion_1=0
 boost_and_two_level__1_sm_ehs/SM_eHS/eHSx64 Gen3 CommBlk/eHS_rst_loadin=1
 boost_and_two_level__1_sm_ehs/SM_eHS/rtlab_send_subsystem/Subsystem1/Send1/S-Function=0
+boost_and_two_level__1_sm_ehs/SM_eHS/rtlab_send_subsystem/Subsystem2/Send2/S-Function=0
+boost_and_two_level__1_sm_ehs/SM_eHS/rtlab_send_subsystem/Subsystem3/Send3/S-Function=0
+boost_and_two_level__1_sm_ehs/SM_eHS/rtlab_send_subsystem/Subsystem4/Send4/S-Function=0
+boost_and_two_level__1_sm_ehs/SM_eHS/rtlab_send_subsystem/Subsystem5/Send5/S-Function=0
 boost_and_two_level__1_sm_ehs/SM_eHS/sfp2dbl=0
 boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/Inverter Control/MPPT Controller using Perturbe  & Observe technique  / SFunction =0
 boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Discrete Variable Time Delay/S-Function=1
@@ -54,6 +59,7 @@ boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Conversion=0
 boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Conversion1=0
 boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Ground=0
 boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Logical Operator1=0
+boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Period Meter=0
 boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE SPWM=0
 [S-Function modules]
 boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI/IOTypeSel_LoadIn=''
@@ -77,6 +83,7 @@ boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Conversion=''
 boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Conversion1=''
 boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Ground=''
 boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Logical Operator1=''
+boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Period Meter=''
 boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE SPWM=''
 [S-Function parameters]
 boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI/IOTypeSel_LoadIn/P3=LoadIn port width [1..250]

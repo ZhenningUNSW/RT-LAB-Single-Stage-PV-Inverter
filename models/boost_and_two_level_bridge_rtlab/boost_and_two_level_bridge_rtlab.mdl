@@ -7,7 +7,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.1061"
+    ComputedModelVersion    "1.1106"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -42,7 +42,7 @@ Model {
 	DockPosition		"Left"
 	Width			[50]
 	Height			[50]
-	Filter			[59]
+	Filter			[58]
       }
       Object {
 	$PropName		"ExplorerBarInfo"
@@ -58,8 +58,8 @@ Model {
 	ViewObjType		"SimulinkSubsys"
 	LoadSaveID		"4847"
 	Extents			[924.0, 836.0]
-	ZoomFactor		[1.25]
-	Offset			[1025.9761904761906, 409.19940638116412]
+	ZoomFactor		[2.0]
+	Offset			[698.9229117492838, 516.8644314318185]
       }
     }
   }
@@ -73,9 +73,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "jiang"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed May 17 21:25:09 2017"
-  RTWModifiedTimeStamp	  416957105
-  ModelVersionFormat	  "1.%<AutoIncrement:1061>"
+  LastModifiedDate	  "Sat May 20 22:29:05 2017"
+  RTWModifiedTimeStamp	  417220142
+  ModelVersionFormat	  "1.%<AutoIncrement:1106>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -933,6 +933,14 @@ Model {
       BusSelectionMode	      off
     }
     Block {
+      BlockType		      Display
+      Format		      "short"
+      Decimation	      "10"
+      Floating		      off
+      Lockdown		      off
+      SampleTime	      "-1"
+    }
+    Block {
       BlockType		      Gain
       Gain		      "1"
       Multiplication	      "Element-wise(K.*u)"
@@ -1237,9 +1245,9 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "80"
+    ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "5469"
+    SIDHighWatermark	    "5515"
     Block {
       BlockType		      SubSystem
       Name		      "Help"
@@ -1413,8 +1421,8 @@ Model {
       BlockType		      SubSystem
       Name		      "SC_Console"
       SID		      "4847"
-      Ports		      [2, 1]
-      Position		      [345, 458, 595, 562]
+      Ports		      [5, 1]
+      Position		      [365, 447, 615, 553]
       ZOrder		      7
       BackgroundColor	      "lightBlue"
       RequestExecContextInheritance off
@@ -1432,12 +1440,12 @@ Model {
 	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"125"
+	ZoomFactor		"200"
 	Block {
 	  BlockType		  Inport
 	  Name			  "from_FPGA1"
 	  SID			  "4848"
-	  Position		  [600, 263, 630, 277]
+	  Position		  [625, 408, 655, 422]
 	  ZOrder		  -1
 	  BackgroundColor	  "yellow"
 	  IconDisplay		  "Port number"
@@ -1446,10 +1454,40 @@ Model {
 	  BlockType		  Inport
 	  Name			  "from_FPGA2"
 	  SID			  "4849"
-	  Position		  [600, 368, 630, 382]
+	  Position		  [635, 1018, 665, 1032]
 	  ZOrder		  -2
 	  BackgroundColor	  "yellow"
 	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "panel"
+	  SID			  "5495"
+	  Position		  [635, 838, 665, 852]
+	  ZOrder		  69
+	  BackgroundColor	  "yellow"
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "invert"
+	  SID			  "5496"
+	  Position		  [625, 608, 655, 622]
+	  ZOrder		  70
+	  BackgroundColor	  "yellow"
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "rms"
+	  SID			  "5511"
+	  Position		  [625, 718, 655, 732]
+	  ZOrder		  77
+	  BackgroundColor	  "yellow"
+	  Port			  "5"
 	  IconDisplay		  "Port number"
 	}
 	Block {
@@ -1457,7 +1495,7 @@ Model {
 	  Name			  "Analog Output Mapping and \nRescaling block Control Panel"
 	  SID			  "5298"
 	  Ports			  [0, 1]
-	  Position		  [140, 645, 280, 675]
+	  Position		  [140, 735, 280, 765]
 	  ZOrder		  55
 	  LibraryVersion	  "1.33"
 	  LinkData {
@@ -1647,7 +1685,7 @@ Model {
 	  Name			  "Bus\nCreator2"
 	  SID			  "4850"
 	  Ports			  [6, 1]
-	  Position		  [450, 192, 455, 813]
+	  Position		  [450, 282, 455, 903]
 	  ZOrder		  -3
 	  ShowName		  off
 	  Inputs		  "6"
@@ -1663,11 +1701,11 @@ Model {
 	  BlockType		  BusSelector
 	  Name			  "Bus\nSelector"
 	  SID			  "5260"
-	  Ports			  [1, 4]
-	  Position		  [1255, 1205, 1260, 1350]
+	  Ports			  [1, 5]
+	  Position		  [860, 952, 865, 1098]
 	  ZOrder		  49
 	  ShowName		  off
-	  OutputSignals		  "Computation_time,Real_step_size,Idle_time,Num_overruns"
+	  OutputSignals		  "Computation_time,Real_step_size,Idle_time,Num_overruns,fpga_status"
 	  Port {
 	    PortNumber		    1
 	    Name		    "<Computation_time>"
@@ -1692,159 +1730,156 @@ Model {
 	    RTWStorageClass	    "Auto"
 	    DataLoggingNameMode	    "SignalName"
 	  }
+	  Port {
+	    PortNumber		    5
+	    Name		    "<fpga_status>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
 	}
 	Block {
 	  BlockType		  BusSelector
 	  Name			  "Bus\nSelector1"
-	  SID			  "5265"
-	  Ports			  [1, 14]
-	  Position		  [1275, 210, 1285, 835]
-	  ZOrder		  53
+	  SID			  "5499"
+	  Ports			  [1, 4]
+	  Position		  [955, 790, 960, 895]
+	  ZOrder		  73
 	  ShowName		  off
-	  OutputSignals		  "fpga_status,panel_info,I_PV,V_PV,V_PVCELL,V_INV,I_GRID,V_GRID,I_LEAK,Gate,Irradiance,Temperature,"
-	  "signal13.in_freq,signal13.in_duty"
+	  OutputSignals		  "Irradiance(w/m^2),I_PV,V_PV,P_PV"
 	  Port {
 	    PortNumber		    1
-	    Name		    "<fpga_status>"
+	    Name		    "<Irradiance(w/m^2)>"
 	    RTWStorageClass	    "Auto"
 	    DataLoggingNameMode	    "SignalName"
 	  }
 	  Port {
 	    PortNumber		    2
-	    Name		    "<panel_info>"
-	    RTWStorageClass	    "Auto"
-	    DataLoggingNameMode	    "SignalName"
-	  }
-	  Port {
-	    PortNumber		    3
 	    Name		    "<I_PV>"
 	    RTWStorageClass	    "Auto"
 	    DataLoggingNameMode	    "SignalName"
 	  }
 	  Port {
-	    PortNumber		    4
+	    PortNumber		    3
 	    Name		    "<V_PV>"
 	    RTWStorageClass	    "Auto"
 	    DataLoggingNameMode	    "SignalName"
 	  }
 	  Port {
-	    PortNumber		    5
-	    Name		    "<V_PVCELL>"
+	    PortNumber		    4
+	    Name		    "<P_PV>"
 	    RTWStorageClass	    "Auto"
 	    DataLoggingNameMode	    "SignalName"
 	  }
+	}
+	Block {
+	  BlockType		  BusSelector
+	  Name			  "Bus\nSelector2"
+	  SID			  "5500"
+	  Ports			  [1, 3]
+	  Position		  [865, 574, 870, 656]
+	  ZOrder		  74
+	  ShowName		  off
+	  OutputSignals		  "I_GRID,V_GRID,V_INV"
 	  Port {
-	    PortNumber		    6
-	    Name		    "<V_INV>"
-	    RTWStorageClass	    "Auto"
-	    DataLoggingNameMode	    "SignalName"
-	  }
-	  Port {
-	    PortNumber		    7
+	    PortNumber		    1
 	    Name		    "<I_GRID>"
 	    RTWStorageClass	    "Auto"
 	    DataLoggingNameMode	    "SignalName"
 	  }
 	  Port {
-	    PortNumber		    8
+	    PortNumber		    2
 	    Name		    "<V_GRID>"
 	    RTWStorageClass	    "Auto"
 	    DataLoggingNameMode	    "SignalName"
 	  }
 	  Port {
-	    PortNumber		    9
-	    Name		    "<I_LEAK>"
-	    RTWStorageClass	    "Auto"
-	    DataLoggingNameMode	    "SignalName"
-	  }
-	  Port {
-	    PortNumber		    10
-	    Name		    "<Gate>"
-	    RTWStorageClass	    "Auto"
-	    DataLoggingNameMode	    "SignalName"
-	  }
-	  Port {
-	    PortNumber		    11
-	    Name		    "<Irradiance>"
-	    RTWStorageClass	    "Auto"
-	    DataLoggingNameMode	    "SignalName"
-	  }
-	  Port {
-	    PortNumber		    12
-	    Name		    "<Temperature>"
-	    RTWStorageClass	    "Auto"
-	    DataLoggingNameMode	    "SignalName"
-	  }
-	  Port {
-	    PortNumber		    13
-	    Name		    "<in_freq>"
-	    RTWStorageClass	    "Auto"
-	    DataLoggingNameMode	    "SignalName"
-	  }
-	  Port {
-	    PortNumber		    14
-	    Name		    "<in_duty>"
+	    PortNumber		    3
+	    Name		    "<V_INV>"
 	    RTWStorageClass	    "Auto"
 	    DataLoggingNameMode	    "SignalName"
 	  }
 	}
 	Block {
-	  BlockType		  Demux
-	  Name			  "Demux1"
-	  SID			  "5086"
-	  Ports			  [1, 4]
-	  Position		  [1655, 20, 1660, 165]
-	  ZOrder		  45
+	  BlockType		  BusSelector
+	  Name			  "Bus\nSelector3"
+	  SID			  "5501"
+	  Ports			  [1, 3]
+	  Position		  [865, 374, 870, 456]
+	  ZOrder		  75
 	  ShowName		  off
-	  DisplayOption		  "bar"
-	}
-	Block {
-	  BlockType		  Demux
-	  Name			  "Demux2"
-	  SID			  "4853"
-	  Ports			  [1, 4]
-	  Position		  [1655, 205, 1660, 340]
-	  ZOrder		  12
-	  ShowName		  off
-	  DisplayOption		  "bar"
+	  OutputSignals		  "digital_in.ext_freq,digital_in.ext_duty,Gate"
 	  Port {
 	    PortNumber		    1
-	    Name		    "I_PV"
+	    Name		    "<ext_freq>"
 	    RTWStorageClass	    "Auto"
 	    DataLoggingNameMode	    "SignalName"
 	  }
 	  Port {
 	    PortNumber		    2
-	    Name		    "V_PV"
+	    Name		    "<ext_duty>"
 	    RTWStorageClass	    "Auto"
 	    DataLoggingNameMode	    "SignalName"
 	  }
 	  Port {
 	    PortNumber		    3
-	    Name		    "P_PV"
-	    RTWStorageClass	    "Auto"
-	    DataLoggingNameMode	    "SignalName"
-	  }
-	  Port {
-	    PortNumber		    4
-	    Name		    "Irradiance(W/m^2)"
+	    Name		    "<Gate>"
 	    RTWStorageClass	    "Auto"
 	    DataLoggingNameMode	    "SignalName"
 	  }
 	}
 	Block {
+	  BlockType		  BusSelector
+	  Name			  "Bus\nSelector4"
+	  SID			  "5513"
+	  Ports			  [1, 2]
+	  Position		  [865, 684, 870, 766]
+	  ZOrder		  79
+	  ShowName		  off
+	  OutputSignals		  "V_rms,I_rms"
+	  Port {
+	    PortNumber		    1
+	    Name		    "<V_rms>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    2
+	    Name		    "<I_rms>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Display
+	  Name			  "Display2"
+	  SID			  "5475"
+	  Ports			  [1]
+	  Position		  [1085, 1070, 1175, 1100]
+	  ZOrder		  63
+	  Decimation		  "1"
+	}
+	Block {
+	  BlockType		  Display
+	  Name			  "Display3"
+	  SID			  "5476"
+	  Ports			  [1]
+	  Position		  [1085, 1135, 1175, 1225]
+	  ZOrder		  64
+	  Decimation		  "1"
+	}
+	Block {
 	  BlockType		  Reference
 	  Name			  "OpComm"
 	  SID			  "4857"
-	  Ports			  [2, 2]
-	  Position		  [690, 219, 780, 426]
+	  Ports			  [1, 1]
+	  Position		  [695, 378, 770, 452]
 	  ZOrder		  -6
 	  ShowName		  off
 	  LibraryVersion	  "1.471"
 	  SourceBlock		  "rtlab/OpComm"
 	  SourceType		  "RT-LAB OpComm"
 	  ContentPreviewEnabled	  off
-	  nbport		  "2"
+	  nbport		  "1"
 	  groupe_acq		  "1"
 	  subsys_rate		  "0"
 	  st			  "0"
@@ -1859,19 +1894,125 @@ Model {
 	  from_console		  "0"
 	  warning_done		  off
 	  writeOpCommFile	  off
-	  Port {
-	    PortNumber		    1
-	    ShowPropagatedSignals   "on"
-	    RTWStorageClass	    "Auto"
-	    DataLoggingNameMode	    "SignalName"
-	  }
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "OpComm1"
+	  SID			  "5480"
+	  Ports			  [1, 1]
+	  Position		  [700, 991, 790, 1059]
+	  ZOrder		  68
+	  ShowName		  off
+	  LibraryVersion	  "1.471"
+	  SourceBlock		  "rtlab/OpComm"
+	  SourceType		  "RT-LAB OpComm"
+	  ContentPreviewEnabled	  off
+	  nbport		  "1"
+	  groupe_acq		  "2"
+	  subsys_rate		  "0"
+	  st			  "0"
+	  Synchronization	  on
+	  Interpolation		  on
+	  Threshold		  "1.0"
+	  Missed_Data		  off
+	  Offset		  off
+	  Sim_Time		  off
+	  Samples		  off
+	  dynSigOut		  off
+	  from_console		  "0"
+	  warning_done		  off
+	  writeOpCommFile	  off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "OpComm2"
+	  SID			  "5497"
+	  Ports			  [1, 1]
+	  Position		  [690, 580, 780, 650]
+	  ZOrder		  71
+	  ShowName		  off
+	  LibraryVersion	  "1.471"
+	  SourceBlock		  "rtlab/OpComm"
+	  SourceType		  "RT-LAB OpComm"
+	  ContentPreviewEnabled	  off
+	  nbport		  "1"
+	  groupe_acq		  "4"
+	  subsys_rate		  "0"
+	  st			  "0"
+	  Synchronization	  on
+	  Interpolation		  on
+	  Threshold		  "1.0"
+	  Missed_Data		  off
+	  Offset		  off
+	  Sim_Time		  off
+	  Samples		  off
+	  dynSigOut		  off
+	  from_console		  "0"
+	  warning_done		  off
+	  writeOpCommFile	  off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "OpComm3"
+	  SID			  "5498"
+	  Ports			  [1, 1]
+	  Position		  [690, 806, 780, 884]
+	  ZOrder		  72
+	  ShowName		  off
+	  LibraryVersion	  "1.471"
+	  SourceBlock		  "rtlab/OpComm"
+	  SourceType		  "RT-LAB OpComm"
+	  ContentPreviewEnabled	  off
+	  nbport		  "1"
+	  groupe_acq		  "3"
+	  subsys_rate		  "0"
+	  st			  "0"
+	  Synchronization	  on
+	  Interpolation		  on
+	  Threshold		  "1.0"
+	  Missed_Data		  off
+	  Offset		  off
+	  Sim_Time		  off
+	  Samples		  off
+	  dynSigOut		  off
+	  from_console		  "0"
+	  warning_done		  off
+	  writeOpCommFile	  off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "OpComm4"
+	  SID			  "5512"
+	  Ports			  [1, 1]
+	  Position		  [690, 690, 780, 760]
+	  ZOrder		  78
+	  ShowName		  off
+	  LibraryVersion	  "1.471"
+	  SourceBlock		  "rtlab/OpComm"
+	  SourceType		  "RT-LAB OpComm"
+	  ContentPreviewEnabled	  off
+	  nbport		  "1"
+	  groupe_acq		  "5"
+	  subsys_rate		  "0"
+	  st			  "0"
+	  Synchronization	  on
+	  Interpolation		  on
+	  Threshold		  "1.0"
+	  Missed_Data		  off
+	  Offset		  off
+	  Sim_Time		  off
+	  Samples		  off
+	  dynSigOut		  off
+	  from_console		  "0"
+	  warning_done		  off
+	  writeOpCommFile	  off
 	}
 	Block {
 	  BlockType		  SubSystem
 	  Name			  "OpLogo"
 	  SID			  "4858"
 	  Ports			  []
-	  Position		  [145, 90, 214, 147]
+	  Position		  [145, 180, 214, 237]
 	  ZOrder		  -7
 	  ForegroundColor	  "white"
 	  ShowName		  off
@@ -1903,7 +2044,7 @@ Model {
 	  BlockType		  ManualSwitch
 	  Name			  "PWM enable"
 	  SID			  "4859"
-	  Position		  [290, 432, 320, 468]
+	  Position		  [290, 522, 320, 558]
 	  ZOrder		  -8
 	  Port {
 	    PortNumber		    1
@@ -1917,7 +2058,7 @@ Model {
 	  Name			  "Saturation"
 	  SID			  "5236"
 	  Ports			  [1, 1]
-	  Position		  [320, 225, 350, 255]
+	  Position		  [320, 315, 350, 345]
 	  ZOrder		  47
 	  InputPortMap		  "u0"
 	  UpperLimit		  "1000"
@@ -1934,7 +2075,7 @@ Model {
 	  Name			  "Saturation1"
 	  SID			  "5237"
 	  Ports			  [1, 1]
-	  Position		  [280, 330, 310, 360]
+	  Position		  [320, 420, 350, 450]
 	  ZOrder		  48
 	  InputPortMap		  "u0"
 	  UpperLimit		  "60"
@@ -1951,7 +2092,7 @@ Model {
 	  Name			  "Scope"
 	  SID			  "4860"
 	  Ports			  [4]
-	  Position		  [1875, 203, 1950, 342]
+	  Position		  [1090, 790, 1165, 895]
 	  ZOrder		  10
 	  Floating		  off
 	  Location		  [1, 55, 1921, 1029]
@@ -1979,23 +2120,26 @@ Model {
 	  YMax			  "5~5~5~5"
 	  SaveName		  "ScopeData1"
 	  Decimation		  "100"
+	  SampleInput		  on
+	  SampleTime		  "2e-3"
 	  ScrollMode		  off
 	}
 	Block {
 	  BlockType		  Scope
 	  Name			  "Scope1"
 	  SID			  "5468"
-	  Ports			  [2]
-	  Position		  [1495, 770, 1570, 910]
+	  Ports			  [3]
+	  Position		  [1005, 575, 1080, 655]
 	  ZOrder		  59
 	  Floating		  off
-	  Location		  [10, 69, 1924, 1043]
+	  Location		  [1, 55, 1921, 1029]
 	  Open			  off
-	  NumInputPorts		  "2"
+	  NumInputPorts		  "3"
 	  List {
 	    ListType		    AxesTitles
 	    axes1		    "%<SignalLabel>"
 	    axes2		    "%<SignalLabel>"
+	    axes3		    "%<SignalLabel>"
 	  }
 	  List {
 	    ListType		    ScopeGraphics
@@ -2008,35 +2152,27 @@ Model {
 	    MarkerStyles	    "none|none|none|none|none|none"
 	  }
 	  ShowLegends		  off
-	  YMin			  "-5~-5"
-	  YMax			  "5~5"
+	  YMin			  "-5~-5~-5"
+	  YMax			  "5~5~5"
 	  SaveName		  "ScopeData2"
-	  Decimation		  "100"
+	  SampleInput		  on
+	  SampleTime		  "1e-3"
 	  ScrollMode		  off
 	}
 	Block {
 	  BlockType		  Scope
 	  Name			  "Scope2"
-	  SID			  "5063"
-	  Ports			  [10]
-	  Position		  [1480, 304, 1580, 741]
-	  ZOrder		  30
+	  SID			  "5502"
+	  Ports			  [1]
+	  Position		  [1005, 460, 1080, 540]
+	  ZOrder		  76
 	  Floating		  off
-	  Location		  [1, 55, 1921, 1029]
+	  Location		  [1, 64, 1921, 1038]
 	  Open			  off
-	  NumInputPorts		  "10"
+	  NumInputPorts		  "1"
 	  List {
 	    ListType		    AxesTitles
 	    axes1		    "%<SignalLabel>"
-	    axes2		    "%<SignalLabel>"
-	    axes3		    "%<SignalLabel>"
-	    axes4		    "%<SignalLabel>"
-	    axes5		    "%<SignalLabel>"
-	    axes6		    "%<SignalLabel>"
-	    axes7		    "%<SignalLabel>"
-	    axes8		    "%<SignalLabel>"
-	    axes9		    "%<SignalLabel>"
-	    axes10		    "%<SignalLabel>"
 	  }
 	  List {
 	    ListType		    ScopeGraphics
@@ -2049,65 +2185,27 @@ Model {
 	    MarkerStyles	    "none|none|none|none|none|none"
 	  }
 	  ShowLegends		  off
-	  YMin			  "-5~-5~-5~-5~-5~-5~-5~-5~-5~-5"
-	  YMax			  "5~5~5~5~5~5~5~5~5~5"
 	  SaveName		  "ScopeData3"
-	  LimitDataPoints	  off
-	  Decimation		  "100"
-	  ScrollMode		  off
-	}
-	Block {
-	  BlockType		  Scope
-	  Name			  "Scope3"
-	  SID			  "5085"
-	  Ports			  [4]
-	  Position		  [1855, 23, 1930, 162]
-	  ZOrder		  44
-	  Floating		  off
-	  Location		  [10, 69, 1916, 1043]
-	  Open			  off
-	  NumInputPorts		  "4"
-	  List {
-	    ListType		    AxesTitles
-	    axes1		    "%<SignalLabel>"
-	    axes2		    "%<SignalLabel>"
-	    axes3		    "%<SignalLabel>"
-	    axes4		    "%<SignalLabel>"
-	  }
-	  List {
-	    ListType		    ScopeGraphics
-	    FigureColor		    "[0.5 0.5 0.5]"
-	    AxesColor		    "[0 0 0]"
-	    AxesTickColor	    "[1 1 1]"
-	    LineColors		    "[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
-	    LineStyles		    "-|-|-|-|-|-"
-	    LineWidths		    "[0.5 0.5 0.5 0.5 0.5 0.5]"
-	    MarkerStyles	    "none|none|none|none|none|none"
-	  }
-	  ShowLegends		  off
-	  YMin			  "-1~-1~-1~-1"
-	  YMax			  "1~1~1~1"
-	  SaveName		  "ScopeData4"
-	  Decimation		  "1000"
+	  SampleInput		  on
+	  SampleTime		  "100e-6"
 	  ScrollMode		  off
 	}
 	Block {
 	  BlockType		  Scope
 	  Name			  "Scope4"
 	  SID			  "5263"
-	  Ports			  [4]
-	  Position		  [1475, 1205, 1555, 1350]
+	  Ports			  [3]
+	  Position		  [1085, 949, 1170, 1041]
 	  ZOrder		  52
 	  Floating		  off
 	  Location		  [10, 69, 1916, 1043]
 	  Open			  off
-	  NumInputPorts		  "4"
+	  NumInputPorts		  "3"
 	  List {
 	    ListType		    AxesTitles
 	    axes1		    "%<SignalLabel>"
 	    axes2		    "%<SignalLabel>"
 	    axes3		    "%<SignalLabel>"
-	    axes4		    "%<SignalLabel>"
 	  }
 	  List {
 	    ListType		    ScopeGraphics
@@ -2120,43 +2218,12 @@ Model {
 	    MarkerStyles	    "none|none|none|none|none|none"
 	  }
 	  ShowLegends		  off
-	  YMin			  "-5~-5~-5~-5"
-	  YMax			  "5~5~5~5"
+	  YMin			  "-5~-5~-5"
+	  YMax			  "5~5~5"
 	  SaveName		  "ScopeData5"
 	  LimitDataPoints	  off
-	  ScrollMode		  off
-	}
-	Block {
-	  BlockType		  Scope
-	  Name			  "Scope5"
-	  SID			  "5469"
-	  Ports			  [2]
-	  Position		  [1495, 950, 1570, 1090]
-	  ZOrder		  60
-	  Floating		  off
-	  Location		  [10, 69, 1924, 1043]
-	  Open			  off
-	  NumInputPorts		  "2"
-	  List {
-	    ListType		    AxesTitles
-	    axes1		    "%<SignalLabel>"
-	    axes2		    "%<SignalLabel>"
-	  }
-	  List {
-	    ListType		    ScopeGraphics
-	    FigureColor		    "[0.5 0.5 0.5]"
-	    AxesColor		    "[0 0 0]"
-	    AxesTickColor	    "[1 1 1]"
-	    LineColors		    "[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
-	    LineStyles		    "-|-|-|-|-|-"
-	    LineWidths		    "[0.5 0.5 0.5 0.5 0.5 0.5]"
-	    MarkerStyles	    "none|none|none|none|none|none"
-	  }
-	  ShowLegends		  off
-	  YMin			  "-5~-5"
-	  YMax			  "5~5"
-	  SaveName		  "ScopeData6"
-	  Decimation		  "100"
+	  SampleInput		  on
+	  SampleTime		  "5e-2"
 	  ScrollMode		  off
 	}
 	Block {
@@ -2164,7 +2231,7 @@ Model {
 	  Name			  "adjust reference"
 	  SID			  "4864"
 	  Ports			  [1, 1]
-	  Position		  [120, 232, 210, 248]
+	  Position		  [120, 322, 210, 338]
 	  ZOrder		  4
 	  BackgroundColor	  "[0.380392, 0.741176, 0.988235]"
 	  LibraryVersion	  "1.354"
@@ -2172,7 +2239,7 @@ Model {
 	  SourceType		  "Slider Gain"
 	  ContentPreviewEnabled	  off
 	  low			  "0"
-	  gain			  "1000"
+	  gain			  "800"
 	  high			  "1000"
 	}
 	Block {
@@ -2180,7 +2247,7 @@ Model {
 	  Name			  "adjust reference1"
 	  SID			  "4865"
 	  Ports			  [1, 1]
-	  Position		  [80, 337, 170, 353]
+	  Position		  [120, 427, 210, 443]
 	  ZOrder		  6
 	  BackgroundColor	  "[0.380392, 0.741176, 0.988235]"
 	  LibraryVersion	  "1.354"
@@ -2192,10 +2259,28 @@ Model {
 	  high			  "60"
 	}
 	Block {
+	  BlockType		  Display
+	  Name			  "external_duty"
+	  SID			  "5474"
+	  Ports			  [1]
+	  Position		  [995, 400, 1085, 430]
+	  ZOrder		  62
+	  Decimation		  "1"
+	}
+	Block {
+	  BlockType		  Display
+	  Name			  "external_freq"
+	  SID			  "5473"
+	  Ports			  [1]
+	  Position		  [995, 340, 1085, 370]
+	  ZOrder		  61
+	  Decimation		  "1"
+	}
+	Block {
 	  BlockType		  Constant
 	  Name			  "one"
 	  SID			  "4866"
-	  Position		  [225, 433, 265, 447]
+	  Position		  [225, 523, 265, 537]
 	  ZOrder		  -23
 	  ShowName		  off
 	}
@@ -2203,7 +2288,7 @@ Model {
 	  BlockType		  Constant
 	  Name			  "one1"
 	  SID			  "4867"
-	  Position		  [60, 230, 80, 250]
+	  Position		  [60, 320, 80, 340]
 	  ZOrder		  3
 	  BackgroundColor	  "[0.380392, 0.741176, 0.988235]"
 	}
@@ -2211,7 +2296,7 @@ Model {
 	  BlockType		  Constant
 	  Name			  "one2"
 	  SID			  "4868"
-	  Position		  [170, 538, 210, 552]
+	  Position		  [170, 628, 210, 642]
 	  ZOrder		  -24
 	  ShowName		  off
 	}
@@ -2219,7 +2304,7 @@ Model {
 	  BlockType		  Constant
 	  Name			  "one3"
 	  SID			  "4869"
-	  Position		  [20, 335, 40, 355]
+	  Position		  [60, 425, 80, 445]
 	  ZOrder		  5
 	  BackgroundColor	  "[0.380392, 0.741176, 0.988235]"
 	}
@@ -2227,7 +2312,7 @@ Model {
 	  BlockType		  Constant
 	  Name			  "one4"
 	  SID			  "5454"
-	  Position		  [255, 748, 295, 762]
+	  Position		  [255, 838, 295, 852]
 	  ZOrder		  57
 	  ShowName		  off
 	  Value			  "2"
@@ -2236,7 +2321,7 @@ Model {
 	  BlockType		  ManualSwitch
 	  Name			  "pwm_source"
 	  SID			  "5453"
-	  Position		  [320, 747, 350, 783]
+	  Position		  [320, 837, 350, 873]
 	  ZOrder		  58
 	  Port {
 	    PortNumber		    1
@@ -2249,7 +2334,7 @@ Model {
 	  BlockType		  ManualSwitch
 	  Name			  "rst"
 	  SID			  "4870"
-	  Position		  [275, 537, 305, 573]
+	  Position		  [275, 627, 305, 663]
 	  ZOrder		  -26
 	  ShowName		  off
 	  CurrentSetting	  "0"
@@ -2261,10 +2346,28 @@ Model {
 	  }
 	}
 	Block {
+	  BlockType		  Display
+	  Name			  "v_rms"
+	  SID			  "5514"
+	  Ports			  [1]
+	  Position		  [995, 685, 1085, 715]
+	  ZOrder		  80
+	  Decimation		  "1"
+	}
+	Block {
+	  BlockType		  Display
+	  Name			  "v_rms1"
+	  SID			  "5515"
+	  Ports			  [1]
+	  Position		  [995, 730, 1085, 760]
+	  ZOrder		  81
+	  Decimation		  "1"
+	}
+	Block {
 	  BlockType		  Constant
 	  Name			  "zero"
 	  SID			  "4871"
-	  Position		  [225, 453, 265, 467]
+	  Position		  [225, 543, 265, 557]
 	  ZOrder		  -27
 	  ShowName		  off
 	  Value			  "0"
@@ -2273,7 +2376,7 @@ Model {
 	  BlockType		  Constant
 	  Name			  "zero1"
 	  SID			  "5455"
-	  Position		  [255, 768, 295, 782]
+	  Position		  [255, 858, 295, 872]
 	  ZOrder		  56
 	  ShowName		  off
 	  Value			  "0"
@@ -2282,7 +2385,7 @@ Model {
 	  BlockType		  Constant
 	  Name			  "zero2"
 	  SID			  "4872"
-	  Position		  [170, 558, 210, 572]
+	  Position		  [170, 648, 210, 662]
 	  ZOrder		  -28
 	  ShowName		  off
 	  Value			  "0"
@@ -2291,7 +2394,7 @@ Model {
 	  BlockType		  Outport
 	  Name			  "to_FPGA"
 	  SID			  "4873"
-	  Position		  [550, 498, 580, 512]
+	  Position		  [550, 588, 580, 602]
 	  ZOrder		  -29
 	  BackgroundColor	  "yellow"
 	  IconDisplay		  "Port number"
@@ -2362,8 +2465,8 @@ Model {
 	  ZOrder		  9
 	  SrcBlock		  "from_FPGA2"
 	  SrcPort		  1
-	  DstBlock		  "OpComm"
-	  DstPort		  2
+	  DstBlock		  "OpComm1"
+	  DstPort		  1
 	}
 	Line {
 	  FontName		  "Arial"
@@ -2402,34 +2505,6 @@ Model {
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  189
-	  SrcBlock		  "Demux1"
-	  SrcPort		  4
-	  DstBlock		  "Scope3"
-	  DstPort		  4
-	}
-	Line {
-	  ZOrder		  190
-	  SrcBlock		  "Demux1"
-	  SrcPort		  3
-	  DstBlock		  "Scope3"
-	  DstPort		  3
-	}
-	Line {
-	  ZOrder		  191
-	  SrcBlock		  "Demux1"
-	  SrcPort		  2
-	  DstBlock		  "Scope3"
-	  DstPort		  2
-	}
-	Line {
-	  ZOrder		  192
-	  SrcBlock		  "Demux1"
-	  SrcPort		  1
-	  DstBlock		  "Scope3"
-	  DstPort		  1
-	}
-	Line {
 	  Name			  "Irradiance_con"
 	  ZOrder		  194
 	  Labels		  [1, 1]
@@ -2446,14 +2521,6 @@ Model {
 	  SrcPort		  1
 	  DstBlock		  "Bus\nCreator2"
 	  DstPort		  2
-	}
-	Line {
-	  ZOrder		  196
-	  SrcBlock		  "OpComm"
-	  SrcPort		  2
-	  Points		  [25, 0; 0, 905]
-	  DstBlock		  "Bus\nSelector"
-	  DstPort		  1
 	}
 	Line {
 	  Name			  "<Idle_time>"
@@ -2475,12 +2542,13 @@ Model {
 	}
 	Line {
 	  Name			  "<Num_overruns>"
-	  ZOrder		  213
+	  ZOrder		  299
 	  Labels		  [0, 0]
 	  SrcBlock		  "Bus\nSelector"
 	  SrcPort		  4
-	  DstBlock		  "Scope4"
-	  DstPort		  4
+	  Points		  [200, 0]
+	  DstBlock		  "Display2"
+	  DstPort		  1
 	}
 	Line {
 	  Name			  "<Computation_time>"
@@ -2492,70 +2560,6 @@ Model {
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  215
-	  SrcBlock		  "OpComm"
-	  SrcPort		  1
-	  Points		  [78, 0; 0, 255]
-	  DstBlock		  "Bus\nSelector1"
-	  DstPort		  1
-	}
-	Line {
-	  Name			  "<fpga_status>"
-	  ZOrder		  223
-	  Labels		  [0, 0]
-	  SrcBlock		  "Bus\nSelector1"
-	  SrcPort		  1
-	  Points		  [180, 0; 0, -135]
-	  DstBlock		  "Demux1"
-	  DstPort		  1
-	}
-	Line {
-	  Name			  "<panel_info>"
-	  ZOrder		  247
-	  Labels		  [0, 0]
-	  SrcBlock		  "Bus\nSelector1"
-	  SrcPort		  2
-	  Points		  [0, 0]
-	  DstBlock		  "Demux2"
-	  DstPort		  1
-	}
-	Line {
-	  Name			  "I_PV"
-	  ZOrder		  248
-	  Labels		  [1, 1]
-	  SrcBlock		  "Demux2"
-	  SrcPort		  1
-	  DstBlock		  "Scope"
-	  DstPort		  1
-	}
-	Line {
-	  Name			  "V_PV"
-	  ZOrder		  249
-	  Labels		  [1, 1]
-	  SrcBlock		  "Demux2"
-	  SrcPort		  2
-	  DstBlock		  "Scope"
-	  DstPort		  2
-	}
-	Line {
-	  Name			  "P_PV"
-	  ZOrder		  250
-	  Labels		  [1, 1]
-	  SrcBlock		  "Demux2"
-	  SrcPort		  3
-	  DstBlock		  "Scope"
-	  DstPort		  3
-	}
-	Line {
-	  Name			  "Irradiance(W/m^2)"
-	  ZOrder		  251
-	  Labels		  [1, 1]
-	  SrcBlock		  "Demux2"
-	  SrcPort		  4
-	  DstBlock		  "Scope"
-	  DstPort		  4
-	}
-	Line {
 	  Name			  "AOut Cfg"
 	  ZOrder		  252
 	  Labels		  [1, 1]
@@ -2563,124 +2567,6 @@ Model {
 	  SrcPort		  1
 	  DstBlock		  "Bus\nCreator2"
 	  DstPort		  5
-	}
-	Line {
-	  Name			  "<I_PV>"
-	  ZOrder		  253
-	  Labels		  [0, 0]
-	  SrcBlock		  "Bus\nSelector1"
-	  SrcPort		  3
-	  Points		  [0, 0]
-	  DstBlock		  "Scope2"
-	  DstPort		  1
-	}
-	Line {
-	  Name			  "<V_PV>"
-	  ZOrder		  254
-	  Labels		  [0, 0]
-	  SrcBlock		  "Bus\nSelector1"
-	  SrcPort		  4
-	  Points		  [0, 0]
-	  DstBlock		  "Scope2"
-	  DstPort		  2
-	}
-	Line {
-	  Name			  "<V_PVCELL>"
-	  ZOrder		  255
-	  Labels		  [0, 0]
-	  SrcBlock		  "Bus\nSelector1"
-	  SrcPort		  5
-	  Points		  [0, 0]
-	  DstBlock		  "Scope2"
-	  DstPort		  3
-	}
-	Line {
-	  Name			  "<V_INV>"
-	  ZOrder		  256
-	  Labels		  [0, 0]
-	  SrcBlock		  "Bus\nSelector1"
-	  SrcPort		  6
-	  Points		  [0, 0]
-	  DstBlock		  "Scope2"
-	  DstPort		  4
-	}
-	Line {
-	  Name			  "<I_GRID>"
-	  ZOrder		  257
-	  Labels		  [0, 0]
-	  SrcBlock		  "Bus\nSelector1"
-	  SrcPort		  7
-	  Points		  [0, 0; 63, 0]
-	  Branch {
-	    ZOrder		    269
-	    Points		    [0, 375]
-	    DstBlock		    "Scope1"
-	    DstPort		    2
-	  }
-	  Branch {
-	    ZOrder		    268
-	    DstBlock		    "Scope2"
-	    DstPort		    5
-	  }
-	}
-	Line {
-	  Name			  "<V_GRID>"
-	  ZOrder		  258
-	  Labels		  [0, 0]
-	  SrcBlock		  "Bus\nSelector1"
-	  SrcPort		  8
-	  Points		  [0, 0; 120, 0]
-	  Branch {
-	    ZOrder		    271
-	    Points		    [0, 260]
-	    DstBlock		    "Scope1"
-	    DstPort		    1
-	  }
-	  Branch {
-	    ZOrder		    270
-	    DstBlock		    "Scope2"
-	    DstPort		    6
-	  }
-	}
-	Line {
-	  Name			  "<I_LEAK>"
-	  ZOrder		  259
-	  Labels		  [0, 0]
-	  SrcBlock		  "Bus\nSelector1"
-	  SrcPort		  9
-	  Points		  [0, 0]
-	  DstBlock		  "Scope2"
-	  DstPort		  7
-	}
-	Line {
-	  Name			  "<Gate>"
-	  ZOrder		  260
-	  Labels		  [0, 0]
-	  SrcBlock		  "Bus\nSelector1"
-	  SrcPort		  10
-	  Points		  [0, 0]
-	  DstBlock		  "Scope2"
-	  DstPort		  8
-	}
-	Line {
-	  Name			  "<Irradiance>"
-	  ZOrder		  261
-	  Labels		  [0, 0]
-	  SrcBlock		  "Bus\nSelector1"
-	  SrcPort		  11
-	  Points		  [0, 0]
-	  DstBlock		  "Scope2"
-	  DstPort		  9
-	}
-	Line {
-	  Name			  "<Temperature>"
-	  ZOrder		  262
-	  Labels		  [0, 0]
-	  SrcBlock		  "Bus\nSelector1"
-	  SrcPort		  12
-	  Points		  [0, 0]
-	  DstBlock		  "Scope2"
-	  DstPort		  10
 	}
 	Line {
 	  ZOrder		  263
@@ -2706,29 +2592,186 @@ Model {
 	  DstPort		  6
 	}
 	Line {
-	  Name			  "<in_freq>"
-	  ZOrder		  272
-	  Labels		  [0, 0]
-	  SrcBlock		  "Bus\nSelector1"
-	  SrcPort		  13
-	  Points		  [29, 0; 0, 215]
-	  DstBlock		  "Scope5"
+	  ZOrder		  343
+	  SrcBlock		  "OpComm1"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nSelector"
 	  DstPort		  1
 	}
 	Line {
-	  Name			  "<in_duty>"
-	  ZOrder		  273
+	  ZOrder		  344
+	  SrcBlock		  "panel"
+	  SrcPort		  1
+	  DstBlock		  "OpComm3"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  345
+	  SrcBlock		  "invert"
+	  SrcPort		  1
+	  DstBlock		  "OpComm2"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  346
+	  SrcBlock		  "OpComm3"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nSelector1"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "<Irradiance(w/m^2)>"
+	  ZOrder		  351
 	  Labels		  [0, 0]
 	  SrcBlock		  "Bus\nSelector1"
-	  SrcPort		  14
-	  Points		  [12, 0; 0, 240]
-	  DstBlock		  "Scope5"
+	  SrcPort		  1
+	  DstBlock		  "Scope"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "<I_PV>"
+	  ZOrder		  352
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector1"
+	  SrcPort		  2
+	  DstBlock		  "Scope"
 	  DstPort		  2
+	}
+	Line {
+	  Name			  "<P_PV>"
+	  ZOrder		  353
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector1"
+	  SrcPort		  4
+	  DstBlock		  "Scope"
+	  DstPort		  4
+	}
+	Line {
+	  Name			  "<V_PV>"
+	  ZOrder		  354
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector1"
+	  SrcPort		  3
+	  DstBlock		  "Scope"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  355
+	  SrcBlock		  "OpComm2"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nSelector2"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "<V_GRID>"
+	  ZOrder		  356
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector2"
+	  SrcPort		  2
+	  DstBlock		  "Scope1"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "<I_GRID>"
+	  ZOrder		  357
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector2"
+	  SrcPort		  1
+	  DstBlock		  "Scope1"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "<V_INV>"
+	  ZOrder		  359
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector2"
+	  SrcPort		  3
+	  DstBlock		  "Scope1"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  360
+	  SrcBlock		  "OpComm"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nSelector3"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "<ext_freq>"
+	  ZOrder		  361
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector3"
+	  SrcPort		  1
+	  Points		  [58, 0; 0, -35]
+	  DstBlock		  "external_freq"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "<ext_duty>"
+	  ZOrder		  362
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector3"
+	  SrcPort		  2
+	  DstBlock		  "external_duty"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "<Gate>"
+	  ZOrder		  364
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector3"
+	  SrcPort		  3
+	  Points		  [63, 0; 0, 60]
+	  DstBlock		  "Scope2"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "<fpga_status>"
+	  ZOrder		  367
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector"
+	  SrcPort		  5
+	  Points		  [160, 0; 0, 95]
+	  DstBlock		  "Display3"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  368
+	  SrcBlock		  "rms"
+	  SrcPort		  1
+	  DstBlock		  "OpComm4"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  369
+	  SrcBlock		  "OpComm4"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nSelector4"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "<V_rms>"
+	  ZOrder		  370
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector4"
+	  SrcPort		  1
+	  Points		  [105, 0]
+	  DstBlock		  "v_rms"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "<I_rms>"
+	  ZOrder		  371
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector4"
+	  SrcPort		  2
+	  DstBlock		  "v_rms1"
+	  DstPort		  1
 	}
 	Annotation {
 	  SID			  "5467"
 	  Name			  "External"
-	  Position		  [255, 785, 296, 800]
+	  Position		  [255, 875, 296, 890]
 	  InternalMargins	  [0, 0, 0, 0]
 	  FixedHeight		  off
 	  FixedWidth		  off
@@ -2739,7 +2782,7 @@ Model {
 	Annotation {
 	  SID			  "5466"
 	  Name			  "Internal"
-	  Position		  [255, 728, 293, 743]
+	  Position		  [255, 818, 293, 833]
 	  InternalMargins	  [0, 0, 0, 0]
 	  FixedHeight		  off
 	  FixedWidth		  off
@@ -2750,7 +2793,7 @@ Model {
 	Annotation {
 	  SID			  "4881"
 	  Name			  "___________To eHS controller________"
-	  Position		  [332, 178, 710, 205]
+	  Position		  [332, 268, 710, 295]
 	  InternalMargins	  [0, 0, 0, 0]
 	  FixedHeight		  off
 	  FixedWidth		  off
@@ -2763,7 +2806,7 @@ Model {
 	Annotation {
 	  SID			  "4880"
 	  Name			  "_________________From eHS Controller________________"
-	  Position		  [907, 178, 1469, 205]
+	  Position		  [907, 268, 1469, 295]
 	  InternalMargins	  [0, 0, 0, 0]
 	  FixedHeight		  off
 	  FixedWidth		  off
@@ -2776,7 +2819,7 @@ Model {
 	Annotation {
 	  SID			  "4879"
 	  Name			  "Enable switching"
-	  Position		  [164, 442, 246, 457]
+	  Position		  [164, 532, 246, 547]
 	  InternalMargins	  [0, 0, 0, 0]
 	  FixedHeight		  off
 	  FixedWidth		  off
@@ -2787,7 +2830,7 @@ Model {
 	Annotation {
 	  SID			  "4878"
 	  Name			  "Disable switching"
-	  Position		  [164, 457, 247, 472]
+	  Position		  [164, 547, 247, 562]
 	  InternalMargins	  [0, 0, 0, 0]
 	  FixedHeight		  off
 	  FixedWidth		  off
@@ -2798,7 +2841,7 @@ Model {
 	Annotation {
 	  SID			  "4877"
 	  Name			  "v1.0 24/09/2015\n(c) 2015 Opal-RT Technologies inc."
-	  Position		  [611, 105, 810, 137]
+	  Position		  [611, 195, 810, 227]
 	  InternalMargins	  [0, 0, 0, 0]
 	  FixedHeight		  off
 	  FixedWidth		  off
@@ -2812,7 +2855,7 @@ Model {
 	Annotation {
 	  SID			  "4876"
 	  Name			  "Two-level inverter example model"
-	  Position		  [221, 100, 570, 128]
+	  Position		  [221, 190, 570, 218]
 	  InternalMargins	  [0, 0, 0, 0]
 	  FixedHeight		  off
 	  FixedWidth		  off
@@ -2826,7 +2869,7 @@ Model {
 	Annotation {
 	  SID			  "4875"
 	  Name			  "Basic sample model for the eHS solver - RT-LAB model console"
-	  Position		  [221, 125, 584, 142]
+	  Position		  [221, 215, 584, 232]
 	  InternalMargins	  [0, 0, 0, 0]
 	  FixedHeight		  off
 	  FixedWidth		  off
@@ -2840,7 +2883,7 @@ Model {
 	Annotation {
 	  SID			  "4874"
 	  Name			  "reset_ehs"
-	  Position		  [112, 560, 158, 575]
+	  Position		  [112, 650, 158, 665]
 	  InternalMargins	  [0, 0, 0, 0]
 	  FixedHeight		  off
 	  FixedWidth		  off
@@ -2852,8 +2895,8 @@ Model {
       BlockType		      SubSystem
       Name		      "SM_eHS"
       SID		      "4882"
-      Ports		      [1, 2]
-      Position		      [705, 459, 945, 561]
+      Ports		      [1, 5]
+      Position		      [675, 448, 915, 552]
       ZOrder		      6
       BackgroundColor	      "lightBlue"
       RequestExecContextInheritance off
@@ -2871,12 +2914,12 @@ Model {
 	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"100"
+	ZoomFactor		"175"
 	Block {
 	  BlockType		  Inport
 	  Name			  "from_Console"
 	  SID			  "4883"
-	  Position		  [230, 468, 260, 482]
+	  Position		  [230, 683, 260, 697]
 	  ZOrder		  -1
 	  BackgroundColor	  "yellow"
 	  FontSize		  12
@@ -2887,7 +2930,7 @@ Model {
 	  Name			  "Bus\nCreator"
 	  SID			  "5259"
 	  Ports			  [5, 1]
-	  Position		  [1430, 873, 1435, 1067]
+	  Position		  [1430, 1088, 1435, 1282]
 	  ZOrder		  16
 	  ShowName		  off
 	  Inputs		  "5"
@@ -2898,7 +2941,7 @@ Model {
 	  Name			  "Bus\nCreator1"
 	  SID			  "5450"
 	  Ports			  [2, 1]
-	  Position		  [245, 526, 250, 579]
+	  Position		  [245, 741, 250, 794]
 	  ZOrder		  35
 	  ShowName		  off
 	  Inputs		  "2"
@@ -2908,11 +2951,50 @@ Model {
 	  BlockType		  BusCreator
 	  Name			  "Bus\nCreator2"
 	  SID			  "5428"
-	  Ports			  [13, 1]
-	  Position		  [1615, 40, 1620, 540]
+	  Ports			  [3, 1]
+	  Position		  [1620, 486, 1625, 604]
 	  ZOrder		  26
 	  ShowName		  off
-	  Inputs		  "13"
+	  Inputs		  "3"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "Bus\nCreator3"
+	  SID			  "5472"
+	  Ports			  [2, 1]
+	  Position		  [545, 1186, 550, 1239]
+	  ZOrder		  4353
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	  Port {
+	    PortNumber		    1
+	    Name		    "digital_in"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "Bus\nCreator4"
+	  SID			  "5489"
+	  Ports			  [3, 1]
+	  Position		  [1630, 167, 1635, 293]
+	  ZOrder		  4359
+	  ShowName		  off
+	  Inputs		  "3"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "Bus\nCreator5"
+	  SID			  "5506"
+	  Ports			  [2, 1]
+	  Position		  [1750, 339, 1755, 401]
+	  ZOrder		  4360
+	  ShowName		  off
+	  Inputs		  "2"
 	  DisplayOption		  "bar"
 	}
 	Block {
@@ -2920,7 +3002,7 @@ Model {
 	  Name			  "Bus\nSelector"
 	  SID			  "4884"
 	  Ports			  [1, 2]
-	  Position		  [520, 733, 525, 797]
+	  Position		  [520, 913, 525, 977]
 	  ZOrder		  -2
 	  ShowName		  off
 	  OutputSignals		  "reset_ehs,AOut Cfg"
@@ -2941,7 +3023,7 @@ Model {
 	  BlockType		  Clock
 	  Name			  "Clock"
 	  SID			  "5243"
-	  Position		  [525, 25, 545, 45]
+	  Position		  [525, 240, 545, 260]
 	  ZOrder		  7
 	}
 	Block {
@@ -2949,14 +3031,14 @@ Model {
 	  Name			  "Compare\nTo Constant"
 	  SID			  "5267"
 	  Ports			  [1, 1]
-	  Position		  [570, 20, 610, 50]
+	  Position		  [570, 235, 610, 265]
 	  ZOrder		  18
 	  LibraryVersion	  "1.354"
 	  SourceBlock		  "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
 	  SourceType		  "Compare To Constant"
 	  ContentPreviewEnabled	  off
 	  relop			  ">="
-	  const			  "0.2"
+	  const			  "1"
 	  OutDataTypeStr	  "boolean"
 	  ZeroCross		  on
 	}
@@ -2964,7 +3046,7 @@ Model {
 	  BlockType		  Constant
 	  Name			  "Constant1"
 	  SID			  "5246"
-	  Position		  [635, 95, 665, 125]
+	  Position		  [635, 310, 665, 340]
 	  ZOrder		  10
 	  Value			  "0.5"
 	}
@@ -2972,7 +3054,7 @@ Model {
 	  BlockType		  DataTypeConversion
 	  Name			  "Data Type Conversion"
 	  SID			  "5255"
-	  Position		  [645, 18, 720, 52]
+	  Position		  [645, 233, 720, 267]
 	  ZOrder		  12
 	  OutDataTypeStr	  "double"
 	  RndMeth		  "Floor"
@@ -2983,29 +3065,11 @@ Model {
 	  Name			  "Demux"
 	  SID			  "5429"
 	  Ports			  [1, 7]
-	  Position		  [1275, 31, 1280, 309]
+	  Position		  [1275, 246, 1280, 524]
 	  ZOrder		  27
 	  ShowName		  off
 	  Outputs		  "7"
 	  DisplayOption		  "bar"
-	  Port {
-	    PortNumber		    1
-	    Name		    "I_PV"
-	    RTWStorageClass	    "Auto"
-	    DataLoggingNameMode	    "SignalName"
-	  }
-	  Port {
-	    PortNumber		    2
-	    Name		    "V_PV"
-	    RTWStorageClass	    "Auto"
-	    DataLoggingNameMode	    "SignalName"
-	  }
-	  Port {
-	    PortNumber		    3
-	    Name		    "V_PVCELL"
-	    RTWStorageClass	    "Auto"
-	    DataLoggingNameMode	    "SignalName"
-	  }
 	  Port {
 	    PortNumber		    4
 	    Name		    "V_INV"
@@ -3036,7 +3100,7 @@ Model {
 	  Name			  "Demux1"
 	  SID			  "5430"
 	  Ports			  [1, 3]
-	  Position		  [1275, 307, 1280, 433]
+	  Position		  [1275, 522, 1280, 648]
 	  ZOrder		  28
 	  ShowName		  off
 	  Outputs		  "3"
@@ -3044,12 +3108,6 @@ Model {
 	  Port {
 	    PortNumber		    1
 	    Name		    "Gate"
-	    RTWStorageClass	    "Auto"
-	    DataLoggingNameMode	    "SignalName"
-	  }
-	  Port {
-	    PortNumber		    2
-	    Name		    "Irradiance"
 	    RTWStorageClass	    "Auto"
 	    DataLoggingNameMode	    "SignalName"
 	  }
@@ -3065,7 +3123,7 @@ Model {
 	  Name			  "From Digital Inputs\n(Pulse-Width Analyzers)"
 	  SID			  "5435"
 	  Ports			  [0, 2]
-	  Position		  [20, 528, 180, 577]
+	  Position		  [20, 743, 180, 792]
 	  ZOrder		  29
 	  RequestExecContextInheritance	off
 	  Port {
@@ -3260,15 +3318,43 @@ Model {
 	  BlockType		  Ground
 	  Name			  "Ground"
 	  SID			  "5258"
-	  Position		  [870, 990, 890, 1010]
+	  Position		  [870, 1205, 890, 1225]
 	  ZOrder		  15
+	}
+	Block {
+	  BlockType		  Memory
+	  Name			  "Memory"
+	  SID			  "5485"
+	  Position		  [1650, 20, 1680, 50]
+	  ZOrder		  4355
+	}
+	Block {
+	  BlockType		  Memory
+	  Name			  "Memory1"
+	  SID			  "5486"
+	  Position		  [1665, 530, 1695, 560]
+	  ZOrder		  4356
+	}
+	Block {
+	  BlockType		  Memory
+	  Name			  "Memory2"
+	  SID			  "5487"
+	  Position		  [1675, 215, 1705, 245]
+	  ZOrder		  4357
+	}
+	Block {
+	  BlockType		  Memory
+	  Name			  "Memory3"
+	  SID			  "5510"
+	  Position		  [1775, 355, 1805, 385]
+	  ZOrder		  4364
 	}
 	Block {
 	  BlockType		  Reference
 	  Name			  "OpComm"
 	  SID			  "4886"
 	  Ports			  [1, 1]
-	  Position		  [325, 419, 385, 531]
+	  Position		  [325, 634, 385, 746]
 	  ZOrder		  -3
 	  ShowName		  off
 	  LibraryVersion	  "1.471"
@@ -3296,7 +3382,7 @@ Model {
 	  Name			  "OpCtrl"
 	  SID			  "4887"
 	  Ports			  [0, 2]
-	  Position		  [850, 312, 1040, 363]
+	  Position		  [850, 527, 1040, 578]
 	  ZOrder		  -4
 	  ForegroundColor	  "[0.901961, 0.000000, 0.000000]"
 	  BackgroundColor	  "[0.909804, 0.819608, 0.321569]"
@@ -3322,7 +3408,7 @@ Model {
 	  Name			  "OpLogo"
 	  SID			  "4888"
 	  Ports			  []
-	  Position		  [180, 240, 249, 297]
+	  Position		  [180, 455, 249, 512]
 	  ZOrder		  -5
 	  ForegroundColor	  "white"
 	  ShowName		  off
@@ -3355,7 +3441,7 @@ Model {
 	  Name			  "OpMonitor"
 	  SID			  "5257"
 	  Ports			  [1, 4]
-	  Position		  [935, 950, 1165, 1045]
+	  Position		  [935, 1165, 1165, 1260]
 	  ZOrder		  14
 	  LibraryVersion	  "1.471"
 	  SourceBlock		  "rtlab/Monitoring/OpMonitor"
@@ -3396,7 +3482,7 @@ Model {
 	  Name			  "OpTrigger"
 	  SID			  "5242"
 	  Ports			  [2, 1]
-	  Position		  [765, 23, 935, 72]
+	  Position		  [765, 238, 935, 287]
 	  ZOrder		  6
 	  LibraryVersion	  "1.471"
 	  SourceBlock		  "rtlab/DataLogging/OpTrigger"
@@ -3410,30 +3496,30 @@ Model {
 	  Name			  "OpWriteFile"
 	  SID			  "5239"
 	  Ports			  [1, 2]
-	  Position		  [1660, 538, 1765, 582]
+	  Position		  [1640, 88, 1745, 132]
 	  ZOrder		  3
 	  LibraryVersion	  "1.471"
 	  SourceBlock		  "rtlab/DataLogging/OpWriteFile"
 	  SourceType		  "OpWriteFile"
 	  Static_File		  on
-	  Decimation		  "1"
+	  Decimation		  "100"
 	  varname		  "opvar"
 	  Filename		  "myPV_inverter.mat"
 	  rtpath		  "'./'"
 	  nrtpath		  "'.\\'"
 	  Acq_Group		  "26"
-	  file_size		  "1/Ts*60*500"
+	  file_size		  "1024*1024*1024"
 	  write_offline		  off
 	  Sim_Mode		  off
 	  Nb_Samples		  "4e5"
-	  Buffer_size		  "1000000"
+	  Buffer_size		  "1024*1024"
 	}
 	Block {
 	  BlockType		  Reference
 	  Name			  "Outputs_eHS1_Recv"
 	  SID			  "4889"
 	  Ports			  [0, 2]
-	  Position		  [670, 880, 860, 920]
+	  Position		  [595, 995, 785, 1035]
 	  ZOrder		  -6
 	  AttributesFormatString  "%<CtrlName>"
 	  LibraryVersion	  "1.58"
@@ -3450,29 +3536,100 @@ Model {
 	  opComp		  ">="
 	}
 	Block {
+	  BlockType		  Reference
+	  Name			  "RMS"
+	  SID			  "5507"
+	  Ports			  [1, 1]
+	  Position		  [1600, 335, 1650, 375]
+	  ZOrder		  4361
+	  LibraryVersion	  "1.59"
+	  FontName		  "Arial"
+	  SourceBlock		  "powerlib_meascontrol/Measurements/RMS"
+	  SourceType		  "RMS"
+	  ContentPreviewEnabled	  off
+	  TrueRMS		  on
+	  Freq			  "60"
+	  RMSInit		  "120"
+	  Ts			  "0"
+	  Port {
+	    PortNumber		    1
+	    Name		    "V_rms"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "RMS1"
+	  SID			  "5508"
+	  Ports			  [1, 1]
+	  Position		  [1600, 405, 1650, 445]
+	  ZOrder		  4362
+	  LibraryVersion	  "1.59"
+	  FontName		  "Arial"
+	  SourceBlock		  "powerlib_meascontrol/Measurements/RMS"
+	  SourceType		  "RMS"
+	  ContentPreviewEnabled	  off
+	  TrueRMS		  on
+	  Freq			  "60"
+	  RMSInit		  "120"
+	  Ts			  "0"
+	  Port {
+	    PortNumber		    1
+	    Name		    "I_rms"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
 	  BlockType		  Selector
 	  Name			  "Selector1"
 	  SID			  "4890"
 	  Ports			  [1, 1]
-	  Position		  [1145, 416, 1185, 454]
+	  Position		  [1145, 631, 1185, 669]
 	  ZOrder		  -7
 	  Indices		  "[1:7]"
 	}
 	Block {
 	  BlockType		  Selector
-	  Name			  "Selector2"
-	  SID			  "5447"
+	  Name			  "Selector4"
+	  SID			  "5470"
 	  Ports			  [1, 1]
-	  Position		  [1415, 1096, 1455, 1134]
-	  ZOrder		  33
-	  Indices		  "[1:7]"
+	  Position		  [310, 1166, 350, 1204]
+	  ZOrder		  4351
+	  ShowName		  off
+	  InputPortWidth	  "16"
+	  Indices		  "[1]"
+	  Port {
+	    PortNumber		    1
+	    Name		    "ext_freq"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Selector
+	  Name			  "Selector5"
+	  SID			  "5471"
+	  Ports			  [1, 1]
+	  Position		  [310, 1241, 350, 1279]
+	  ZOrder		  4352
+	  ShowName		  off
+	  InputPortWidth	  "16"
+	  Indices		  "[1]"
+	  Port {
+	    PortNumber		    1
+	    Name		    "ext_duty"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
 	}
 	Block {
 	  BlockType		  SubSystem
 	  Name			  "Subsystem"
 	  SID			  "5272"
-	  Ports			  [3, 1]
-	  Position		  [1400, 597, 1470, 693]
+	  Ports			  [5, 1]
+	  Position		  [1505, 61, 1575, 159]
 	  ZOrder		  23
 	  RequestExecContextInheritance	off
 	  Port {
@@ -3483,7 +3640,7 @@ Model {
 	  }
 	  System {
 	    Name		    "Subsystem"
-	    Location		    [952, 0, 1928, 1038]
+	    Location		    [952, 0, 1927, 1038]
 	    Open		    off
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
@@ -3495,7 +3652,7 @@ Model {
 	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
-	    ZoomFactor		    "125"
+	    ZoomFactor		    "200"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "i_pv"
@@ -3521,6 +3678,53 @@ Model {
 	      ZOrder		      32
 	      Port		      "3"
 	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		Name			"Irradiance(w/m^2)"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "temp"
+	      SID		      "5482"
+	      Position		      [20, 263, 50, 277]
+	      ZOrder		      34
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		Name			"Temperature"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "i_diode"
+	      SID		      "5483"
+	      Position		      [20, 318, 50, 332]
+	      ZOrder		      35
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		Name			"I_DIODE"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      BusCreator
+	      Name		      "Bus\nCreator"
+	      SID		      "5481"
+	      Ports		      [6, 1]
+	      Position		      [720, 27, 725, 348]
+	      ZOrder		      33
+	      ShowName		      off
+	      Inputs		      "6"
+	      DisplayOption	      "bar"
 	    }
 	    Block {
 	      BlockType		      Product
@@ -3586,16 +3790,6 @@ Model {
 	      }
 	    }
 	    Block {
-	      BlockType		      Mux
-	      Name		      "Mux"
-	      SID		      "5278"
-	      Ports		      [4, 1]
-	      Position		      [715, 18, 720, 247]
-	      ZOrder		      28
-	      ShowName		      off
-	      DisplayOption	      "bar"
-	    }
-	    Block {
 	      BlockType		      Outport
 	      Name		      "PANEL"
 	      SID		      "5274"
@@ -3605,11 +3799,11 @@ Model {
 	    }
 	    Line {
 	      Name		      "P_PV"
-	      ZOrder		      98
+	      ZOrder		      143
 	      Labels		      [1, 1]
 	      SrcBlock		      "Divide"
 	      SrcPort		      1
-	      DstBlock		      "Mux"
+	      DstBlock		      "Bus\nCreator"
 	      DstPort		      3
 	    }
 	    Line {
@@ -3619,15 +3813,15 @@ Model {
 	      SrcPort		      1
 	      Points		      [12, 0]
 	      Branch {
-		ZOrder			122
+		ZOrder			148
 		Points			[0, 115]
 		DstBlock		"Divide"
 		DstPort			2
 	      }
 	      Branch {
-		ZOrder			96
+		ZOrder			131
 		Labels			[1, 1]
-		DstBlock		"Mux"
+		DstBlock		"Bus\nCreator"
 		DstPort			1
 	      }
 	    }
@@ -3638,30 +3832,25 @@ Model {
 	      SrcPort		      1
 	      Points		      [23, 0]
 	      Branch {
-		ZOrder			123
+		ZOrder			147
 		Points			[0, 45]
 		DstBlock		"Divide"
 		DstPort			1
 	      }
 	      Branch {
-		ZOrder			97
+		ZOrder			141
 		Labels			[1, 0]
-		DstBlock		"Mux"
+		DstBlock		"Bus\nCreator"
 		DstPort			2
 	      }
 	    }
 	    Line {
-	      ZOrder		      111
-	      SrcBlock		      "Mux"
-	      SrcPort		      1
-	      DstBlock		      "PANEL"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      124
+	      Name		      "Irradiance(w/m^2)"
+	      ZOrder		      146
+	      Labels		      [1, 1]
 	      SrcBlock		      "sun"
 	      SrcPort		      1
-	      DstBlock		      "Mux"
+	      DstBlock		      "Bus\nCreator"
 	      DstPort		      4
 	    }
 	    Line {
@@ -3678,13 +3867,39 @@ Model {
 	      DstBlock		      "Mean1"
 	      DstPort		      1
 	    }
+	    Line {
+	      ZOrder		      144
+	      SrcBlock		      "Bus\nCreator"
+	      SrcPort		      1
+	      Points		      [18, 0; 0, -55]
+	      DstBlock		      "PANEL"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "Temperature"
+	      ZOrder		      149
+	      Labels		      [1, 1]
+	      SrcBlock		      "temp"
+	      SrcPort		      1
+	      DstBlock		      "Bus\nCreator"
+	      DstPort		      5
+	    }
+	    Line {
+	      Name		      "I_DIODE"
+	      ZOrder		      150
+	      Labels		      [1, 1]
+	      SrcBlock		      "i_diode"
+	      SrcPort		      1
+	      DstBlock		      "Bus\nCreator"
+	      DstPort		      6
+	    }
 	  }
 	}
 	Block {
 	  BlockType		  Terminator
 	  Name			  "Terminator1"
 	  SID			  "5240"
-	  Position		  [1785, 540, 1805, 560]
+	  Position		  [1790, 90, 1810, 110]
 	  ZOrder		  4
 	  ShowName		  off
 	}
@@ -3692,7 +3907,7 @@ Model {
 	  BlockType		  Terminator
 	  Name			  "Terminator2"
 	  SID			  "5241"
-	  Position		  [1785, 560, 1805, 580]
+	  Position		  [1790, 110, 1810, 130]
 	  ZOrder		  5
 	  ShowName		  off
 	}
@@ -3700,7 +3915,7 @@ Model {
 	  BlockType		  Terminator
 	  Name			  "Terminator3"
 	  SID			  "4892"
-	  Position		  [1110, 315, 1130, 335]
+	  Position		  [1110, 530, 1130, 550]
 	  ZOrder		  -9
 	  ShowName		  off
 	}
@@ -3708,7 +3923,7 @@ Model {
 	  BlockType		  Terminator
 	  Name			  "Terminator4"
 	  SID			  "5247"
-	  Position		  [970, 40, 990, 60]
+	  Position		  [970, 255, 990, 275]
 	  ZOrder		  11
 	  ShowName		  off
 	}
@@ -3716,7 +3931,7 @@ Model {
 	  BlockType		  Terminator
 	  Name			  "Terminator7"
 	  SID			  "4893"
-	  Position		  [1110, 340, 1130, 360]
+	  Position		  [1110, 555, 1130, 575]
 	  ZOrder		  -10
 	  ShowName		  off
 	}
@@ -3725,7 +3940,7 @@ Model {
 	  Name			  "To Analog Outputs"
 	  SID			  "5282"
 	  Ports			  [2]
-	  Position		  [1740, 772, 1850, 808]
+	  Position		  [1015, 952, 1125, 988]
 	  ZOrder		  25
 	  RequestExecContextInheritance	off
 	  System {
@@ -4083,7 +4298,7 @@ Model {
 	  Name			  "eHSx64 Gen3 CommBlk"
 	  SID			  "4894"
 	  Ports			  [3, 2]
-	  Position		  [710, 383, 1110, 587]
+	  Position		  [710, 598, 1110, 802]
 	  ZOrder		  -11
 	  AttributesFormatString  "%<CtrlName>"
 	  LibraryVersion	  "1.171"
@@ -4147,7 +4362,7 @@ Model {
 	  Name			  "sfp2dbl"
 	  SID			  "4895"
 	  Ports			  [1, 1]
-	  Position		  [1015, 881, 1085, 899]
+	  Position		  [855, 996, 925, 1014]
 	  ZOrder		  -12
 	  LibraryVersion	  "1.471"
 	  SourceBlock		  "rtlab/Miscellaneous/Convert \nSingle floating-point (FPGA) \nto double"
@@ -4164,7 +4379,7 @@ Model {
 	  Name			  "source_and_gates"
 	  SID			  "4896"
 	  Ports			  [3, 3]
-	  Position		  [460, 383, 585, 587]
+	  Position		  [460, 598, 585, 802]
 	  ZOrder		  -13
 	  NamePlacement		  "alternate"
 	  RequestExecContextInheritance	off
@@ -4182,7 +4397,7 @@ Model {
 	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
-	    ZoomFactor		    "80"
+	    ZoomFactor		    "60"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "from_sc_con"
@@ -4214,7 +4429,7 @@ Model {
 	      Name		      "Bus\nSelector"
 	      SID		      "5452"
 	      Ports		      [1, 2]
-	      Position		      [405, 1626, 410, 1684]
+	      Position		      [260, 1626, 265, 1684]
 	      ZOrder		      4341
 	      ShowName		      off
 	      OutputSignals	      "in_freq,in_duty"
@@ -7549,7 +7764,7 @@ Model {
 	      Name		      "Mux1"
 	      SID		      "5030"
 	      Ports		      [3, 1]
-	      Position		      [1215, 61, 1220, 99]
+	      Position		      [1410, 76, 1415, 114]
 	      ZOrder		      4303
 	      ShowName		      off
 	      Inputs		      "3"
@@ -7651,6 +7866,25 @@ Model {
 	    }
 	    Block {
 	      BlockType		      Reference
+	      Name		      "RTE Period Meter"
+	      SID		      "5505"
+	      Ports		      [1, 1]
+	      Position		      [1165, 5, 1265, 65]
+	      ZOrder		      4352
+	      LibraryVersion	      "1.201"
+	      SourceBlock	      "rteventslib/Signal\nAttributes/RTE Period Meter"
+	      SourceType	      "RTE Period Meter"
+	      Period		      off
+	      Frequency		      off
+	      EdgeType		      "Rising edges"
+	      TOn		      off
+	      TOff		      off
+	      DutyCycle		      on
+	      DuringType	      "Signal period"
+	      MinimumFrequency	      "0"
+	    }
+	    Block {
+	      BlockType		      Reference
 	      Name		      "RTE SPWM"
 	      SID		      "5458"
 	      Ports		      [2, 2]
@@ -7667,7 +7901,7 @@ Model {
 	      ComplementaryMode	      on
 	      SpaceVector	      off
 	      RiseTimeDelay	      "0"
-	      MaxEvents		      "10"
+	      MaxEvents		      "100"
 	      SampleTime	      "Ts"
 	    }
 	    Block {
@@ -7769,7 +8003,7 @@ Model {
 	      Name		      "Selector3"
 	      SID		      "5426"
 	      Ports		      [1, 1]
-	      Position		      [780, 16, 820, 54]
+	      Position		      [1090, 16, 1130, 54]
 	      ZOrder		      4336
 	      Indices		      "[1]"
 	    }
@@ -7778,7 +8012,7 @@ Model {
 	      Name		      "Selector4"
 	      SID		      "5460"
 	      Ports		      [1, 1]
-	      Position		      [485, 1601, 525, 1639]
+	      Position		      [340, 1601, 380, 1639]
 	      ZOrder		      4346
 	      ShowName		      off
 	      InputPortWidth	      "16"
@@ -7789,7 +8023,7 @@ Model {
 	      Name		      "Selector5"
 	      SID		      "5464"
 	      Ports		      [1, 1]
-	      Position		      [485, 1676, 525, 1714]
+	      Position		      [340, 1676, 380, 1714]
 	      ZOrder		      4350
 	      ShowName		      off
 	      InputPortWidth	      "16"
@@ -7812,7 +8046,7 @@ Model {
 	      SID		      "5038"
 	      Position		      [240, 746, 270, 764]
 	      ZOrder		      -18
-	      Time		      "0.01"
+	      Time		      "0.05"
 	      SampleTime	      "Ts"
 	    }
 	    Block {
@@ -7847,7 +8081,7 @@ Model {
 	      BlockType		      Outport
 	      Name		      "to_con"
 	      SID		      "5041"
-	      Position		      [1280, 73, 1310, 87]
+	      Position		      [1475, 88, 1505, 102]
 	      ZOrder		      4302
 	      Port		      "3"
 	      IconDisplay	      "Port number"
@@ -8083,7 +8317,7 @@ Model {
 	      Points		      [116, 0; 0, -335]
 	      Branch {
 		ZOrder			213
-		Points			[0, -200]
+		Points			[0, -185]
 		DstBlock		"Mux1"
 		DstPort			2
 	      }
@@ -8107,7 +8341,7 @@ Model {
 	      }
 	      Branch {
 		ZOrder			216
-		Points			[0, -190; 542, 0; 0, -60]
+		Points			[0, -190; 542, 0; 0, -45]
 		DstBlock		"Mux1"
 		DstPort			3
 	      }
@@ -8159,25 +8393,14 @@ Model {
 	      ZOrder		      226
 	      SrcBlock		      "Inverter Control"
 	      SrcPort		      1
-	      Points		      [11, 0]
-	      Branch {
-		ZOrder			229
-		DstBlock		"RTE Conversion1"
-		DstPort			1
-	      }
-	      Branch {
-		ZOrder			228
-		Points			[0, -1190]
-		DstBlock		"Selector3"
-		DstPort			1
-	      }
+	      DstBlock		      "RTE Conversion1"
+	      DstPort		      1
 	    }
 	    Line {
 	      ZOrder		      227
 	      SrcBlock		      "Selector3"
 	      SrcPort		      1
-	      Points		      [193, 0; 0, 35]
-	      DstBlock		      "Mux1"
+	      DstBlock		      "RTE Period Meter"
 	      DstPort		      1
 	    }
 	    Line {
@@ -8252,9 +8475,18 @@ Model {
 	      ZOrder		      247
 	      SrcBlock		      "Switch"
 	      SrcPort		      1
-	      Points		      [32, 0; 0, -240]
-	      DstBlock		      "Mux3"
-	      DstPort		      1
+	      Points		      [30, 0; 0, -240]
+	      Branch {
+		ZOrder			284
+		Points			[0, -705]
+		DstBlock		"Selector3"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			283
+		DstBlock		"Mux3"
+		DstPort			1
+	      }
 	    }
 	    Line {
 	      ZOrder		      251
@@ -8281,7 +8513,7 @@ Model {
 	      ZOrder		      254
 	      SrcBlock		      "Selector4"
 	      SrcPort		      1
-	      Points		      [15, 0; 0, 20]
+	      Points		      [160, 0; 0, 20]
 	      DstBlock		      "RTE SPWM"
 	      DstPort		      1
 	    }
@@ -8289,9 +8521,17 @@ Model {
 	      ZOrder		      261
 	      SrcBlock		      "Selector5"
 	      SrcPort		      1
-	      Points		      [14, 0; 0, -25]
+	      Points		      [159, 0; 0, -25]
 	      DstBlock		      "RTE SPWM"
 	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      282
+	      SrcBlock		      "RTE Period Meter"
+	      SrcPort		      1
+	      Points		      [125, 0]
+	      DstBlock		      "Mux1"
+	      DstPort		      1
 	    }
 	  }
 	}
@@ -8299,7 +8539,7 @@ Model {
 	  BlockType		  Outport
 	  Name			  "to_Console1"
 	  SID			  "5042"
-	  Position		  [1695, 263, 1725, 277]
+	  Position		  [1735, 538, 1765, 552]
 	  ZOrder		  -14
 	  BackgroundColor	  "yellow"
 	  FontSize		  12
@@ -8309,11 +8549,44 @@ Model {
 	  BlockType		  Outport
 	  Name			  "to_Console2"
 	  SID			  "5043"
-	  Position		  [1495, 963, 1525, 977]
+	  Position		  [1495, 1178, 1525, 1192]
 	  ZOrder		  -15
 	  BackgroundColor	  "yellow"
 	  FontSize		  12
 	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "panel"
+	  SID			  "5484"
+	  Position		  [1735, 28, 1765, 42]
+	  ZOrder		  4354
+	  BackgroundColor	  "yellow"
+	  FontSize		  12
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "invert"
+	  SID			  "5488"
+	  Position		  [1745, 223, 1775, 237]
+	  ZOrder		  4358
+	  BackgroundColor	  "yellow"
+	  FontSize		  12
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "invert1"
+	  SID			  "5509"
+	  Position		  [1825, 363, 1855, 377]
+	  ZOrder		  4363
+	  BackgroundColor	  "yellow"
+	  FontSize		  12
+	  Port			  "5"
 	  IconDisplay		  "Port number"
 	}
 	Line {
@@ -8330,7 +8603,7 @@ Model {
 	  Points		  [35, 0]
 	  Branch {
 	    ZOrder		    3
-	    Points		    [0, 290]
+	    Points		    [0, 255]
 	    DstBlock		    "Bus\nSelector"
 	    DstPort		    1
 	  }
@@ -8389,7 +8662,7 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "Bus\nSelector"
 	  SrcPort		  1
-	  Points		  [118, 0; 0, -195]
+	  Points		  [118, 0; 0, -160]
 	  DstBlock		  "eHSx64 Gen3 CommBlk"
 	  DstPort		  3
 	}
@@ -8410,16 +8683,6 @@ Model {
 	    DstBlock		    "source_and_gates"
 	    DstPort		    2
 	  }
-	}
-	Line {
-	  Name			  "fpga_status"
-	  ZOrder		  162
-	  Labels		  [-1, 0]
-	  SrcBlock		  "eHSx64 Gen3 CommBlk"
-	  SrcPort		  2
-	  Points		  [222, 0; 0, -85]
-	  DstBlock		  "Bus\nCreator2"
-	  DstPort		  11
 	}
 	Line {
 	  ZOrder		  44
@@ -8488,21 +8751,12 @@ Model {
 	Line {
 	  Name			  "fpga_raw"
 	  ZOrder		  57
-	  Labels		  [1, 1]
+	  Labels		  [2, 1]
 	  SrcBlock		  "sfp2dbl"
 	  SrcPort		  1
-	  Points		  [288, 0]
-	  Branch {
-	    ZOrder		    209
-	    Points		    [0, -90]
-	    DstBlock		    "To Analog Outputs"
-	    DstPort		    2
-	  }
-	  Branch {
-	    ZOrder		    208
-	    DstBlock		    "Bus\nCreator"
-	    DstPort		    1
-	  }
+	  Points		  [43, 0; 0, -25]
+	  DstBlock		  "To Analog Outputs"
+	  DstPort		  2
 	}
 	Line {
 	  Name			  "Num_overruns"
@@ -8549,17 +8803,17 @@ Model {
 	  Labels		  [0, 1]
 	  SrcBlock		  "Subsystem"
 	  SrcPort		  1
-	  Points		  [14, 0; 0, -85]
+	  Points		  [32, 0]
 	  Branch {
-	    ZOrder		    173
-	    DstBlock		    "OpWriteFile"
+	    ZOrder		    270
+	    Points		    [0, -75]
+	    DstBlock		    "Memory"
 	    DstPort		    1
 	  }
 	  Branch {
-	    ZOrder		    172
-	    Points		    [0, -70]
-	    DstBlock		    "Bus\nCreator2"
-	    DstPort		    12
+	    ZOrder		    269
+	    DstBlock		    "OpWriteFile"
+	    DstPort		    1
 	  }
 	}
 	Line {
@@ -8572,43 +8826,20 @@ Model {
 	  DstPort		  1
 	}
 	Line {
-	  Name			  "I_PV"
 	  ZOrder		  145
 	  SrcBlock		  "Demux"
 	  SrcPort		  1
-	  Points		  [38, 0]
-	  Branch {
-	    ZOrder		    167
-	    Labels		    [1, 1]
-	    Points		    [277, 0]
-	    DstBlock		    "Bus\nCreator2"
-	    DstPort		    1
-	  }
-	  Branch {
-	    ZOrder		    166
-	    Points		    [0, 565]
-	    DstBlock		    "Subsystem"
-	    DstPort		    1
-	  }
+	  Points		  [56, 0; 0, -195]
+	  DstBlock		  "Subsystem"
+	  DstPort		  1
 	}
 	Line {
-	  Name			  "V_PV"
 	  ZOrder		  146
 	  SrcBlock		  "Demux"
 	  SrcPort		  2
-	  Points		  [15, 0]
-	  Branch {
-	    ZOrder		    169
-	    Points		    [0, 555]
-	    DstBlock		    "Subsystem"
-	    DstPort		    2
-	  }
-	  Branch {
-	    ZOrder		    168
-	    Labels		    [1, 1]
-	    DstBlock		    "Bus\nCreator2"
-	    DstPort		    2
-	  }
+	  Points		  [86, 0; 0, -215]
+	  DstBlock		  "Subsystem"
+	  DstPort		  2
 	}
 	Line {
 	  Name			  "V_INV"
@@ -8616,18 +8847,17 @@ Model {
 	  Labels		  [1, 1]
 	  SrcBlock		  "Demux"
 	  SrcPort		  4
-	  DstBlock		  "Bus\nCreator2"
-	  DstPort		  4
+	  Points		  [236, 0; 0, -195]
+	  DstBlock		  "Bus\nCreator4"
+	  DstPort		  1
 	}
 	Line {
-	  Name			  "V_PVCELL"
 	  ZOrder		  148
-	  Labels		  [1, 1]
 	  SrcBlock		  "Demux"
 	  SrcPort		  3
-	  Points		  [315, 0]
-	  DstBlock		  "Bus\nCreator2"
-	  DstPort		  3
+	  Points		  [150, 0; 0, -195]
+	  DstBlock		  "Subsystem"
+	  DstPort		  5
 	}
 	Line {
 	  Name			  "I_GRID"
@@ -8635,9 +8865,18 @@ Model {
 	  Labels		  [1, 1]
 	  SrcBlock		  "Demux"
 	  SrcPort		  5
-	  Points		  [315, 0]
-	  DstBlock		  "Bus\nCreator2"
-	  DstPort		  5
+	  Points		  [257, 0]
+	  Branch {
+	    ZOrder		    305
+	    DstBlock		    "RMS1"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    304
+	    Points		    [0, -195]
+	    DstBlock		    "Bus\nCreator4"
+	    DstPort		    2
+	  }
 	}
 	Line {
 	  Name			  "V_GRID"
@@ -8645,8 +8884,18 @@ Model {
 	  Labels		  [1, 1]
 	  SrcBlock		  "Demux"
 	  SrcPort		  6
-	  DstBlock		  "Bus\nCreator2"
-	  DstPort		  6
+	  Points		  [282, 0; 0, -110]
+	  Branch {
+	    ZOrder		    302
+	    DstBlock		    "RMS"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    301
+	    Points		    [0, -85]
+	    DstBlock		    "Bus\nCreator4"
+	    DstPort		    3
+	  }
 	}
 	Line {
 	  Name			  "I_LEAK"
@@ -8655,7 +8904,7 @@ Model {
 	  SrcBlock		  "Demux"
 	  SrcPort		  7
 	  DstBlock		  "Bus\nCreator2"
-	  DstPort		  7
+	  DstPort		  1
 	}
 	Line {
 	  ZOrder		  152
@@ -8668,12 +8917,12 @@ Model {
 	Line {
 	  Name			  "Temperature"
 	  ZOrder		  161
-	  Labels		  [1, 0]
+	  Labels		  [2, 0]
 	  SrcBlock		  "Demux1"
 	  SrcPort		  3
-	  Points		  [315, 0]
-	  DstBlock		  "Bus\nCreator2"
-	  DstPort		  10
+	  Points		  [112, 0; 0, -495]
+	  DstBlock		  "Subsystem"
+	  DstPort		  4
 	}
 	Line {
 	  Name			  "Gate"
@@ -8682,33 +8931,21 @@ Model {
 	  SrcBlock		  "Demux1"
 	  SrcPort		  1
 	  DstBlock		  "Bus\nCreator2"
-	  DstPort		  8
+	  DstPort		  2
 	}
 	Line {
-	  Name			  "Irradiance"
 	  ZOrder		  159
 	  SrcBlock		  "Demux1"
 	  SrcPort		  2
-	  Points		  [66, 0]
-	  Branch {
-	    ZOrder		    240
-	    Points		    [0, 305]
-	    DstBlock		    "Subsystem"
-	    DstPort		    3
-	  }
-	  Branch {
-	    ZOrder		    170
-	    Labels		    [1, 0]
-	    DstBlock		    "Bus\nCreator2"
-	    DstPort		    9
-	  }
+	  Points		  [188, 0; 0, -475]
+	  DstBlock		  "Subsystem"
+	  DstPort		  3
 	}
 	Line {
 	  ZOrder		  164
 	  SrcBlock		  "Bus\nCreator2"
 	  SrcPort		  1
-	  Points		  [24, 0; 0, -20]
-	  DstBlock		  "to_Console1"
+	  DstBlock		  "Memory1"
 	  DstPort		  1
 	}
 	Line {
@@ -8717,39 +8954,150 @@ Model {
 	  Labels		  [1, 1]
 	  SrcBlock		  "From Digital Inputs\n(Pulse-Width Analyzers)"
 	  SrcPort		  1
-	  DstBlock		  "Bus\nCreator1"
-	  DstPort		  1
+	  Points		  [27, 0]
+	  Branch {
+	    ZOrder		    251
+	    Points		    [0, 430]
+	    DstBlock		    "Selector4"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    250
+	    DstBlock		    "Bus\nCreator1"
+	    DstPort		    1
+	  }
 	}
 	Line {
 	  Name			  "in_duty"
 	  ZOrder		  238
-	  Labels		  [1, 1]
 	  SrcBlock		  "From Digital Inputs\n(Pulse-Width Analyzers)"
 	  SrcPort		  2
-	  DstBlock		  "Bus\nCreator1"
-	  DstPort		  2
+	  Points		  [5, 0]
+	  Branch {
+	    ZOrder		    253
+	    Points		    [0, 480]
+	    DstBlock		    "Selector5"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    252
+	    Labels		    [1, 1]
+	    DstBlock		    "Bus\nCreator1"
+	    DstPort		    2
+	  }
 	}
 	Line {
 	  ZOrder		  239
 	  SrcBlock		  "Bus\nCreator1"
 	  SrcPort		  1
-	  Points		  [119, 0]
-	  Branch {
-	    ZOrder		    243
-	    Points		    [0, 526; 1204, 0; 0, -551]
-	    DstBlock		    "Bus\nCreator2"
-	    DstPort		    13
-	  }
-	  Branch {
-	    ZOrder		    242
-	    DstBlock		    "source_and_gates"
-	    DstPort		    3
-	  }
+	  DstBlock		  "source_and_gates"
+	  DstPort		  3
+	}
+	Line {
+	  Name			  "ext_freq"
+	  ZOrder		  254
+	  Labels		  [3, 1]
+	  SrcBlock		  "Selector4"
+	  SrcPort		  1
+	  Points		  [43, 0; 0, 15]
+	  DstBlock		  "Bus\nCreator3"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "ext_duty"
+	  ZOrder		  255
+	  Labels		  [3, 1]
+	  SrcBlock		  "Selector5"
+	  SrcPort		  1
+	  Points		  [43, 0; 0, -35]
+	  DstBlock		  "Bus\nCreator3"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "digital_in"
+	  ZOrder		  262
+	  Labels		  [3, 1]
+	  SrcBlock		  "Bus\nCreator3"
+	  SrcPort		  1
+	  Points		  [55, 0; 0, -144; 930, 0; 0, -486]
+	  DstBlock		  "Bus\nCreator2"
+	  DstPort		  3
+	}
+	Line {
+	  Name			  "fpga_status"
+	  ZOrder		  260
+	  Labels		  [0, 0]
+	  SrcBlock		  "eHSx64 Gen3 CommBlk"
+	  SrcPort		  2
+	  Points		  [44, 0; 0, 355]
+	  DstBlock		  "Bus\nCreator"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  268
+	  SrcBlock		  "Memory"
+	  SrcPort		  1
+	  DstBlock		  "panel"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  278
+	  SrcBlock		  "Memory1"
+	  SrcPort		  1
+	  DstBlock		  "to_Console1"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  279
+	  SrcBlock		  "Memory2"
+	  SrcPort		  1
+	  DstBlock		  "invert"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  287
+	  SrcBlock		  "Bus\nCreator4"
+	  SrcPort		  1
+	  DstBlock		  "Memory2"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "V_rms"
+	  ZOrder		  300
+	  Labels		  [1, 1]
+	  SrcBlock		  "RMS"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator5"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "I_rms"
+	  ZOrder		  306
+	  Labels		  [3, 1]
+	  SrcBlock		  "RMS1"
+	  SrcPort		  1
+	  Points		  [45, 0; 0, -40]
+	  DstBlock		  "Bus\nCreator5"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  307
+	  SrcBlock		  "Bus\nCreator5"
+	  SrcPort		  1
+	  DstBlock		  "Memory3"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  308
+	  SrcBlock		  "Memory3"
+	  SrcPort		  1
+	  DstBlock		  "invert1"
+	  DstPort		  1
 	}
 	Annotation {
 	  SID			  "5047"
 	  Name			  "v2.0 25/11/2015\n(c) 2015 Opal-RT Technologies inc."
-	  Position		  [716, 260, 915, 292]
+	  Position		  [716, 475, 915, 507]
 	  InternalMargins	  [0, 0, 0, 0]
 	  FixedHeight		  off
 	  FixedWidth		  off
@@ -8763,7 +9111,7 @@ Model {
 	Annotation {
 	  SID			  "5046"
 	  Name			  "Two-level inverter example model"
-	  Position		  [256, 250, 605, 278]
+	  Position		  [256, 465, 605, 493]
 	  InternalMargins	  [0, 0, 0, 0]
 	  FixedHeight		  off
 	  FixedWidth		  off
@@ -8777,7 +9125,7 @@ Model {
 	Annotation {
 	  SID			  "5045"
 	  Name			  "Basic sample model for the eHS solver - RT-LAB model master subsystem"
-	  Position		  [256, 275, 682, 292]
+	  Position		  [256, 490, 682, 507]
 	  InternalMargins	  [0, 0, 0, 0]
 	  FixedHeight		  off
 	  FixedWidth		  off
@@ -8792,7 +9140,7 @@ Model {
 	  SID			  "5044"
 	  Name			  "Update this block \"Board Index\" parameter by the \nboard intex of your hardware. To get this info, sele"
 	  "ct \n\"Tools > Get I/O infos\" on the target context menu \nin RT-LAB and find the index of your hardware."
-	  Position		  [580, 335, 828, 389]
+	  Position		  [580, 550, 828, 604]
 	  InternalMargins	  [0, 0, 0, 0]
 	  FixedHeight		  off
 	  FixedWidth		  off
@@ -8813,7 +9161,7 @@ Model {
       ZOrder		      8
       SrcBlock		      "SM_eHS"
       SrcPort		      1
-      Points		      [65, 0; 0, 140; -715, 0; 0, -140]
+      Points		      [95, 0; 0, 165; -715, 0; 0, -165]
       DstBlock		      "SC_Console"
       DstPort		      1
     }
@@ -8821,9 +9169,33 @@ Model {
       ZOrder		      9
       SrcBlock		      "SM_eHS"
       SrcPort		      2
-      Points		      [60, 0; 0, 85; -705, 0; 0, -85]
+      Points		      [90, 0; 0, 140; -705, 0; 0, -140]
       DstBlock		      "SC_Console"
       DstPort		      2
+    }
+    Line {
+      ZOrder		      10
+      SrcBlock		      "SM_eHS"
+      SrcPort		      3
+      Points		      [47, 0; 0, 105; -653, 0; 0, -105]
+      DstBlock		      "SC_Console"
+      DstPort		      3
+    }
+    Line {
+      ZOrder		      11
+      SrcBlock		      "SM_eHS"
+      SrcPort		      4
+      Points		      [33, 0; 0, 71; -620, 0; 0, -71]
+      DstBlock		      "SC_Console"
+      DstPort		      4
+    }
+    Line {
+      ZOrder		      12
+      SrcBlock		      "SM_eHS"
+      SrcPort		      5
+      Points		      [9, 0; 0, 39; -578, 0; 0, -39]
+      DstBlock		      "SC_Console"
+      DstPort		      5
     }
     Annotation {
       SID		      "5048"
