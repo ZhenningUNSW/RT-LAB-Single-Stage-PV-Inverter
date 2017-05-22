@@ -181,1860 +181,2096 @@ F64
 SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI/rtlab_io_block/port1
 1832
 F64
-8
+1
 SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI/rtlab_io_block/port2
-1896
-F64
-8
-SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI/rtlab_io_block/port3
-1960
+1840
 F64
 1
+SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI/rtlab_io_block/port3
+1848
+F64
+1
+SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Sum/port1
+1856
+F64
+1
+SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Data Type Conversion1/port1
+1864
+F64
+2
 SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI/Memory1/port1
-1968
+1880
 F64
 1
 SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI/IOTypeSel_LoadIn/port1
-1976
+1888
 F64
 1
 SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI/Memory/port1
-1984
+1896
 F64
 1
 SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1/rtlab_io_block/port1
+1904
+F64
+1
+SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1/rtlab_io_block/port2
+1912
+F64
+1
+SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1/rtlab_io_block/port3
+1920
+F64
+1
+SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1/rtlab_io_block/port4
+1928
+F64
+1
+SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1/rtlab_io_block/port5
+1936
+F64
+1
+SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1/rtlab_io_block/port6
+1944
+F64
+1
+SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1/rtlab_io_block/port7
+1952
+F64
+1
+SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1/rtlab_io_block/port8
+1960
+F64
+1
+SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1/rtlab_io_block/port9
+1968
+F64
+1
+SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1/rtlab_io_block/port10
+1976
+F64
+1
+SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1/rtlab_io_block/port11
+1984
+F64
+1
+SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1/rtlab_io_block/port12
 1992
 F64
-8
-SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1/rtlab_io_block/port2
-2056
+1
+SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1/rtlab_io_block/port13
+2000
 F64
-8
-SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1/rtlab_io_block/port3
-2120
+1
+SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1/rtlab_io_block/port14
+2008
+F64
+1
+SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1/rtlab_io_block/port15
+2016
+F64
+1
+SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1/rtlab_io_block/port16
+2024
+F64
+1
+SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1/rtlab_io_block/port17
+2032
 F64
 1
 SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1/Memory1/port1
-2128
+2040
 F64
 1
 SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1/IOTypeSel_LoadIn/port1
-2136
+2048
 F64
 1
 SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1/Memory/port1
-2144
+2056
 F64
 1
 SM_eHS/Subsystem/Mean/Model/integrator/port1
-2152
+2064
 F64
 1
 SM_eHS/Subsystem/Mean/Model/Transport Delay/port1
-2160
+2072
 F64
 1
 SM_eHS/Subsystem/Mean/Model/Clock/port1
-2168
+2080
 F64
 1
 SM_eHS/Subsystem/Mean/Model/Memory/port1
-2176
+2088
 F64
 1
 SM_eHS/Subsystem/Mean/Model/Switch/port1
-2184
+2096
 F64
 1
 SM_eHS/Subsystem/Mean1/Model/integrator/port1
-2192
+2104
 F64
 1
 SM_eHS/Subsystem/Mean1/Model/Transport Delay/port1
-2200
+2112
 F64
 1
 SM_eHS/Subsystem/Mean1/Model/Clock/port1
-2208
+2120
 F64
 1
 SM_eHS/Subsystem/Mean1/Model/Memory/port1
-2216
+2128
 F64
 1
 SM_eHS/Subsystem/Mean1/Model/Switch/port1
-2224
+2136
 F64
 1
 SM_eHS/Subsystem/Divide/port1
-2232
+2144
 F64
 1
 SM_eHS/eHSx64 Gen3 CommBlk/Convert  Single floating-point (FPGA)  to double/port1
-2240
+2152
 F64
 7
 SM_eHS/eHSx64 Gen3 CommBlk/Divide/port1
-2296
+2208
 F64
 7
 SM_eHS/OpWriteFile/port1
-2352
+2264
 F64
 1
 SM_eHS/OpWriteFile/port2
-2360
+2272
 F64
 1
 SM_eHS/RMS/Switch/port1
-2368
+2280
 F64
 1
 SM_eHS/RMS1/Switch/port1
-2376
+2288
 F64
 1
 SM_eHS/eHSx64 Gen3 CommBlk/change_detector/Data Type Conversion1/port1
-2384
+2296
 F64
 1
 SM_eHS/source_and_gates/Step/port1
-2392
+2304
+F64
+1
+SM_eHS/source_and_gates/Gain/port1
+2312
+F64
+1
+SM_eHS/source_and_gates/Switch1/port1
+2320
 F64
 1
 SM_eHS/source_and_gates/Product1/port1
-2400
+2328
 F64
 1
 SM_eHS/source_and_gates/RTE Conversion/port1
-2440
+2368
 F64
 4
 SM_eHS/source_and_gates/Inverter Control/Unit Delay/port1
-2472
+2400
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PWM_Generator/Sampling/Unsync Natural/Unsync_NaturalSampling/Triangle Generator/Model/Digital Clock/port1
-2480
+2408
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PWM_Generator/Sampling/Unsync Natural/Unsync_NaturalSampling/Triangle Generator/Model/Add1/port1
-2488
+2416
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PWM_Generator/Sampling/Unsync Natural/Unsync_NaturalSampling/Triangle Generator/Model/Math Function/port1
-2496
+2424
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PWM_Generator/Sampling/Unsync Natural/Unsync_NaturalSampling/Triangle Generator/Model/1\ib1/port1
-2504
+2432
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PWM_Generator/Sampling/Unsync Natural/Unsync_NaturalSampling/Triangle Generator/Model/Lookup Table/port1
-2512
+2440
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PWM_Generator/Sampling/Unsync Natural/Unsync_NaturalSampling/Triangle Generator/Model/Add3/port1
-2520
+2448
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PWM_Generator/Cr_MinMax/Add3/port1
-2528
+2456
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PWM_Generator/Cr_MinMax/Gain1/port1
-2536
+2464
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PWM_Generator/Cr_MinMax/MUL1/port1
-2544
+2472
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PWM_Generator/Cr_MinMax/Add4/port1
-2552
+2480
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PWM_Generator/Data Type Conversion/port1
-2560
+2488
 F64
 4
 SM_eHS/source_and_gates/RTE Conversion1/port1
-2592
+2520
+F64
+4
+SM_eHS/source_and_gates/RTE Conversion2/port1
+2584
+F64
+4
+SM_eHS/source_and_gates/Switch/port1
+2616
 F64
 4
 SM_eHS/source_and_gates/RTE Logical Operator1/port1
-2624
-F64
-4
-SM_eHS/source_and_gates/RTE SPWM/port1
-2656
-F64
-1
-SM_eHS/source_and_gates/RTE SPWM/port2
-2664
-F64
-1
-SM_eHS/source_and_gates/Switch/port1
-2672
+2648
 F64
 4
 SM_eHS/source_and_gates/RTE Ground/port1
-2704
+2680
 F64
 4
 SM_eHS/eHSx64 Gen3 CommBlk/c_solver_rte1/RTE_Conversion_1/port1
-2736
+2712
 F64
 4
 SM_eHS/eHSx64 Gen3 CommBlk/c_solver_rte1/RTE_Conversion_1/port2
-2768
+2744
 F64
 4
 SM_eHS/eHSx64 Gen3 CommBlk/c_solver_rte1/RTE_Conversion_1/port3
-2800
+2776
 F64
 4
 SM_eHS/eHSx64 Gen3 CommBlk/c_solver_rte1/RTE_Conversion_1/port4
-2832
+2808
 F64
 4
 SM_eHS/eHSx64 Gen3 CommBlk/c_solver_rte1/RTE_Conversion_1/port5
-2864
+2840
 F64
 4
 SM_eHS/eHSx64 Gen3 CommBlk/c_solver_rte1/RTE_Conversion_1/port6
-2896
+2872
 F64
 4
 SM_eHS/eHSx64 Gen3 CommBlk/c_solver_rte1/RTE_Conversion_1/port7
-2928
+2904
 F64
 4
 SM_eHS/eHSx64 Gen3 CommBlk/c_solver_rte1/RTE_Conversion_1/port8
-2960
+2936
 F64
 4
 SM_eHS/eHSx64 Gen3 CommBlk/c_solver_rte1/RTE_Conversion_1/port9
-2992
+2968
 F64
 4
 SM_eHS/eHSx64 Gen3 CommBlk/c_solver_rte1/RTE_Conversion_1/port10
-3024
+3000
 F64
 4
 SM_eHS/eHSx64 Gen3 CommBlk/c_solver_rte1/RTE_Conversion_1/port11
-3056
+3032
 F64
 4
 SM_eHS/eHSx64 Gen3 CommBlk/c_solver_rte1/RTE_Conversion_1/port12
-3088
+3064
 F64
 4
 SM_eHS/eHSx64 Gen3 CommBlk/c_solver_rte1/RTE_Conversion_1/port13
-3120
+3096
 F64
 4
 SM_eHS/eHSx64 Gen3 CommBlk/c_solver_rte1/RTE_Conversion_1/port14
-3152
+3128
 F64
 4
 SM_eHS/eHSx64 Gen3 CommBlk/c_solver_rte1/RTE_Conversion_1/port15
-3184
+3160
 F64
 4
 SM_eHS/eHSx64 Gen3 CommBlk/c_solver_rte1/RTE_Conversion_1/port16
-3216
+3192
 F64
 4
 SM_eHS/eHSx64 Gen3 CommBlk/c_solver_rte1/EventGen_eHS_1/port1
-3248
+3224
 F64
 1
 SM_eHS/source_and_gates/Rate Transition5/port1
-3256
+3232
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/A->pu/port1
-3264
+3240
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Unit Delay/port1
-3272
+3248
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Single-Phase dq Transform/avoid division by zero/port1
-3280
+3256
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Math Function/port1
-3288
+3264
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Gain/port1
-3296
+3272
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Discrete Variable Time Delay/S-Function/port1
-3304
+3280
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Discrete-Time Integrator/port1
-3312
+3288
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Math Function/port1
-3320
+3296
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Single-Phase dq Transform/First cycle of simulation Id=0.92, Iq=0/port1
-3328
+3304
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Switch/port1
-3336
+3312
 F64
 2
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Second-Order Filter/Model/D*u(k)/port1
-3352
+3328
 F64
 2
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Second-Order Filter/Model/Delay_x1/port1
-3368
+3344
 F64
 2
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Second-Order Filter/Model/C*x(k)/C11/port1
-3384
+3360
 F64
 2
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Second-Order Filter/Model/Delay_x2/port1
-3400
+3376
 F64
 2
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Second-Order Filter/Model/C*x(k)/C12/port1
-3416
+3392
 F64
 2
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Second-Order Filter/Model/C*x(k)/sum2/port1
-3432
+3408
 F64
 2
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Second-Order Filter/Model/C*X(k)+D*u(k)/port1
-3448
+3424
 F64
 2
 SM_eHS/source_and_gates/Inverter Control/Unit Delay2/port1
-3464
+3440
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/Current Regulator/Sum/port1
-3472
+3448
 F64
 2
 SM_eHS/source_and_gates/Inverter Control/Current Regulator/PI/Proportional Gain/port1
-3488
+3464
 F64
 2
 SM_eHS/source_and_gates/Inverter Control/Current Regulator/PI/Integrator/port1
-3504
+3480
 F64
 2
 SM_eHS/source_and_gates/Inverter Control/Current Regulator/PI/Sum/port1
-3520
+3496
 F64
 2
 SM_eHS/source_and_gates/Inverter Control/Current Regulator/PI/Saturate/port1
-3536
+3512
 F64
 2
 SM_eHS/source_and_gates/Rate Transition4/port1
-3552
+3528
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/V->pu/port1
-3560
+3536
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Trigonometric Function/port1
-3568
+3544
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Gain1/port1
-3576
+3552
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Product1/port1
-3584
+3560
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Integ4/port1
-3592
+3568
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/To avoid division  by zero/port1
-3600
+3576
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Number of samples per cycle/port1
-3608
+3584
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Rounding Function/port1
-3616
+3592
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Gain/port1
-3624
+3600
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Discrete Variable Time Delay/S-Function/port1
-3632
+3608
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Unit Delay/port1
-3640
+3616
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Digital  Clock/port1
-3648
+3624
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Unit Delay1/port1
-3656
+3632
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Switch/port1
-3664
+3640
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Trigonometric Function3/port1
-3672
+3648
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Gain3/port1
-3680
+3656
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Product2/port1
-3688
+3664
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Integ4/port1
-3696
+3672
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/To avoid division  by zero/port1
-3704
+3680
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Number of samples per cycle/port1
-3712
+3688
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Rounding Function/port1
-3720
+3696
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Gain/port1
-3728
+3704
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Discrete Variable Time Delay/S-Function/port1
-3736
+3712
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Unit Delay/port1
-3744
+3720
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Digital  Clock/port1
-3752
+3728
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Unit Delay1/port1
-3760
+3736
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Switch/port1
-3768
+3744
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Complex to Magnitude-Angle/port1
-3776
+3752
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Complex to Magnitude-Angle/port2
-3784
+3760
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Rad->Deg./port1
-3792
+3768
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/to-rad/port1
-3800
+3776
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Complex to Real-Imag/port1
-3808
+3784
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Complex to Real-Imag/port2
-3816
+3792
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/Current Regulator/Rff /port1
-3824
+3800
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/Current Regulator/Lff  /port1
-3832
+3808
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/Current Regulator/Add1/port1
-3840
+3816
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/Current Regulator/Rff/port1
-3848
+3824
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/Current Regulator/Lff/port1
-3856
+3832
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/Current Regulator/Add3/port1
-3864
+3840
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/Current Regulator/Add2/port1
-3872
+3848
 F64
 2
 SM_eHS/source_and_gates/Inverter Control/Current Regulator/PI/Integral Gain/port1
-3888
+3864
 F64
 2
 SM_eHS/source_and_gates/Inverter Control/Current Regulator/Saturation/port1
-3904
+3880
 F64
 2
 SM_eHS/source_and_gates/Rate Transition7/port1
-3920
+3896
 F64
 1
 SM_eHS/source_and_gates/Rate Transition8/port1
-3928
+3904
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Mean/Model/Digital  Clock/port1
-3936
+3912
 F64
 1
 SM_eHS/source_and_gates/Rate Transition6/port1
-3944
+3920
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Mean/Model/Integ4/port1
-3952
+3928
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Mean/Model/K1/port1
-3960
+3936
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Mean/Model/Discrete Variable Time Delay/S-Function/port1
-3968
+3944
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Mean/Model/Unit Delay/port1
-3976
+3952
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Mean/Model/Unit Delay1/port1
-3984
+3960
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Mean/Model/Switch/port1
-3992
+3968
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Trigonometric Function2/port1
-4000
+3976
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Product1/port1
-4008
+3984
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Integ4/port1
-4016
+3992
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/To avoid division  by zero/port1
-4024
+4000
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Number of samples per cycle/port1
-4032
+4008
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Rounding Function/port1
-4040
+4016
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Gain/port1
-4048
+4024
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Discrete Variable Time Delay/S-Function/port1
-4056
+4032
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Correction subsystem/Unit Delay/port1
-4064
+4040
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Digital  Clock/port1
-4072
+4048
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Unit Delay1/port1
-4080
+4056
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Switch/port1
-4088
+4064
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Divide/port1
-4096
+4072
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Discrete/Discrete Derivative /port1
-4104
+4080
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Discrete/Discrete-Time Integrator/port1
-4112
+4088
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Discrete/Kp4/port1
-4120
+4096
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Discrete/Sum6/port1
-4128
+4104
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Discrete/Saturation1/port1
-4136
+4112
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Gain10/port1
-4144
+4120
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Rate Limiter/port1
-4152
+4128
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/Delay_x1/port1
-4160
+4136
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/A*k(k-1)/A11/port1
-4168
+4144
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/Delay_x2/port1
-4176
+4152
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/A*k(k-1)/A12/port1
-4184
+4160
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/A*k(k-1)/A21/port1
-4192
+4168
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/A*k(k-1)/A22/port1
-4200
+4176
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/A*k(k-1)/sum2/port1
-4208
+4184
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/A*k(k-1)/sum3/port1
-4216
+4192
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/B*(u(k)+u(k-1))/B11/port1
-4224
+4200
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/A*x1(k) + B*u1(k) /port1
-4232
+4208
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/B*(u(k)+u(k-1))/B21/port1
-4240
+4216
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/A*x2(k) + B*u2(k)/port1
-4248
+4224
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/D*u(k)/port1
-4256
+4232
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/C*x(k)/C11/port1
-4264
+4240
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/C*x(k)/C12/port1
-4272
+4248
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/C*x(k)/sum2/port1
-4280
+4256
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/C*X(k)+D*u(k)/port1
-4288
+4264
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Second-Order Filter/Model/A*k(k-1)/A11/port1
-4296
+4272
 F64
 2
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Second-Order Filter/Model/A*k(k-1)/A12/port1
-4312
+4288
 F64
 2
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Second-Order Filter/Model/A*k(k-1)/A21/port1
-4328
+4304
 F64
 2
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Second-Order Filter/Model/A*k(k-1)/A22/port1
-4344
+4320
 F64
 2
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Second-Order Filter/Model/A*k(k-1)/sum2/port1
-4360
+4336
 F64
 2
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Second-Order Filter/Model/A*k(k-1)/sum3/port1
-4376
+4352
 F64
 2
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Second-Order Filter/Model/B*(u(k)+u(k-1))/B11/port1
-4392
+4368
 F64
 2
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Second-Order Filter/Model/A*x1(k) + B*u1(k) /port1
-4408
+4384
 F64
 2
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Second-Order Filter/Model/B*(u(k)+u(k-1))/B21/port1
-4424
+4400
 F64
 2
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Second-Order Filter/Model/A*x2(k) + B*u2(k)/port1
-4440
+4416
 F64
 2
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Constant1/port1
-4456
+4432
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/Switch/port1
-4464
+4440
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/U_ref Generation /Add1/port1
-4472
+4448
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/Unit Delay3/port1
-4480
+4456
 F64
 2
 SM_eHS/source_and_gates/Inverter Control/U_ref Generation /Gain1/port1
-4496
+4472
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/U_ref Generation /Product/port1
-4504
+4480
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/U_ref Generation /Product1/port1
-4512
+4488
 F64
 2
 SM_eHS/source_and_gates/Inverter Control/U_ref Generation /Complex to Magnitude-Angle/port1
-4528
+4504
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/U_ref Generation /Complex to Magnitude-Angle/port2
-4536
+4512
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/U_ref Generation /Add2/port1
-4544
+4520
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/U_ref Generation /Trigonometric Function/port1
-4552
+4528
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/U_ref Generation /Product2/port1
-4560
+4536
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/Unit Delay1/port1
-4568
+4544
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/VDC Regulator/Sum/port1
-4576
+4552
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/VDC Regulator/Rtot_pu2/port1
-4584
+4560
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/VDC Regulator/PI/Integral Gain/port1
-4592
+4568
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/VDC Regulator/PI/Integrator/port1
-4600
+4576
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/VDC Regulator/PI/Proportional Gain/port1
-4608
+4584
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/VDC Regulator/PI/Sum/port1
-4616
+4592
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/VDC Regulator/PI/Saturate/port1
-4624
+4600
 F64
 1
 SM_eHS/source_and_gates/Rate Transition3/port1
-4632
+4608
 F64
 1
 SM_eHS/source_and_gates/Rate Transition1/port1
-4640
+4616
 F64
 1
 SM_eHS/source_and_gates/Rate Transition2/port1
-4648
+4624
+F64
+1
+SM_eHS/source_and_gates/RMS1/Switch/port1
+4632
 F64
 1
 SM_eHS/source_and_gates/RTE Period Meter/port1
-4656
+4640
 F64
 1
 SM_eHS/source_and_gates/Saturation/port1
-4664
+4648
 F64
 1
 SM_eHS/Clock/port1
-4672
+4656
 F64
 1
 SM_eHS/Constant1/port1
-4680
+4664
 F64
 1
 SM_eHS/Data Type Conversion/port1
-4688
+4672
 F64
 1
 SM_eHS/OpTrigger/port1
-4696
+4680
 F64
 1
 SM_eHS/OpCtrl/port1
-4704
+4688
 F64
 1
 SM_eHS/OpCtrl/port2
-4712
+4696
 F64
 4
 SM_eHS/source_and_gates/MATLAB Function/port1
-4744
+4728
 F64
 1
 SM_eHS/source_and_gates/MATLAB Function/port2
-4752
+4736
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Alpha-Beta-Zero to dq0/Subsystem1/Fcn/port1
-4760
+4744
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Alpha-Beta-Zero to dq0/Subsystem1/Fcn1/port1
-4768
+4752
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Alpha-Beta-Zero to dq0/Subsystem - pi__2 delay/Fcn/port1
-4776
+4760
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Alpha-Beta-Zero to dq0/Subsystem - pi__2 delay/Fcn1/port1
-4784
+4768
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Alpha-Beta-Zero to dq0/Switch/port1
-4792
+4776
 F64
 2
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Correction subsystem/Sum1/port1
-4808
+4792
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Correction subsystem/Sum5/port1
-4816
+4800
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Correction subsystem/Product5/port1
-4824
+4808
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Correction subsystem/Gain1/port1
-4832
+4816
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Correction subsystem/Sum4/port1
-4840
+4824
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Correction subsystem/Product2/port1
-4848
+4832
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Correction subsystem/Product4/port1
-4856
+4840
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Sum7/port1
-4864
+4848
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Product/port1
-4872
+4856
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Sum5/port1
-4880
+4864
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Trigonometric Function/port1
-4888
+4872
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Gain1/port1
-4896
+4880
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Product1/port1
-4904
+4888
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Integ4/port1
-4912
+4896
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/To avoid division  by zero/port1
-4920
+4904
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Number of samples per cycle/port1
-4928
+4912
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Rounding Function/port1
-4936
+4920
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Gain/port1
-4944
+4928
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Discrete Variable Time Delay/S-Function/port1
-4952
+4936
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Unit Delay/port1
-4960
+4944
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Digital  Clock/port1
-4968
+4952
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Unit Delay1/port1
-4976
+4960
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Switch/port1
-4984
+4968
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Trigonometric Function3/port1
-4992
+4976
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Gain3/port1
-5000
+4984
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Product2/port1
-5008
+4992
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Integ4/port1
-5016
+5000
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/To avoid division  by zero/port1
-5024
+5008
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Number of samples per cycle/port1
-5032
+5016
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Rounding Function/port1
-5040
+5024
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Gain/port1
-5048
+5032
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Discrete Variable Time Delay/S-Function/port1
-5056
+5040
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Unit Delay/port1
-5064
+5048
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Digital  Clock/port1
-5072
+5056
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Unit Delay1/port1
-5080
+5064
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Switch/port1
-5088
+5072
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Complex to Magnitude-Angle/port1
-5096
+5080
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Complex to Magnitude-Angle/port2
-5104
+5088
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Rad->Deg./port1
-5112
+5096
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Saturation/port1
-5120
+5104
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Math Function/port1
-5128
+5112
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Sum1/port1
-5136
+5120
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Sum5/port1
-5144
+5128
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Product5/port1
-5152
+5136
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Gain1/port1
-5160
+5144
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Sum4/port1
-5168
+5152
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Product2/port1
-5176
+5160
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Product4/port1
-5184
+5168
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Sum7/port1
-5192
+5176
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Product/port1
-5200
+5184
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Sum5/port1
-5208
+5192
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Sum1/port1
-5216
+5200
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Sum5/port1
-5224
+5208
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Product5/port1
-5232
+5216
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Gain1/port1
-5240
+5224
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Sum4/port1
-5248
+5232
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Product2/port1
-5256
+5240
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Product4/port1
-5264
+5248
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Sum7/port1
-5272
+5256
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Product/port1
-5280
+5264
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Sum5/port1
-5288
+5272
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Mean/Model/Gain1/port1
-5296
+5280
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Mean/Model/Gain/port1
-5304
+5288
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Mean/Model/Sum1/port1
-5312
+5296
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Mean/Model/Sum7/port1
-5320
+5304
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Mean/Model/Product/port1
-5328
+5312
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Mean/Model/Sum5/port1
-5336
+5320
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Sum1/port1
-5344
+5328
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Sum5/port1
-5352
+5336
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Product5/port1
-5360
+5344
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Gain1/port1
-5368
+5352
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Sum4/port1
-5376
+5360
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Product2/port1
-5384
+5368
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Product4/port1
-5392
+5376
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Sum7/port1
-5400
+5384
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Product/port1
-5408
+5392
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Sum5/port1
-5416
+5400
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Sum1/port1
-5424
+5408
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Sum5/port1
-5432
+5416
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Product5/port1
-5440
+5424
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Gain1/port1
-5448
+5432
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Sum4/port1
-5456
+5440
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Product2/port1
-5464
+5448
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Product4/port1
-5472
+5456
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Sum7/port1
-5480
+5464
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Product/port1
-5488
+5472
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Sum5/port1
-5496
+5480
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/MPPT Controller using Perturbe  & Observe technique  /port1
-5504
+5488
 F64
 4
 SM_eHS/source_and_gates/Inverter Control/MPPT Controller using Perturbe  & Observe technique  /port2
-5536
+5520
 F64
 1
 SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/Rescale to  Fixed-Pt  format2/Saturation/port1
-5544
+5528
 F64
 16
 SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/Rescale to  Fixed-Pt  format2/Gain1/port1
-5672
+5656
 F64
 16
 SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/Rescale to  Fixed-Pt  format2/Saturation1/port1
-5800
+5784
 F64
 16
 SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/Rescale to  Fixed-Pt  format2/Gain2/port1
-5928
+5912
 F64
 16
 SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/Rescale to  Fixed-Pt  format1/Saturation/port1
-6056
+6040
 F64
 16
 SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/Rescale to  Fixed-Pt  format1/Gain1/port1
-6184
+6168
 F64
 16
 SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/Rescale to  Fixed-Pt  format1/Saturation1/port1
-6312
+6296
 F64
 16
 SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/Rescale to  Fixed-Pt  format1/Gain2/port1
-6440
+6424
 F64
 16
 SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/Rescale to  Fixed-Pt  format/Saturation/port1
-6568
+6552
 F64
 16
 SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/Rescale to  Fixed-Pt  format/Gain1/port1
-6696
+6680
 F64
 16
 SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/Rescale to  Fixed-Pt  format/Saturation1/port1
-6824
+6808
 F64
 16
 SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/Rescale to  Fixed-Pt  format/Gain2/port1
-6952
+6936
 F64
 16
 SM_eHS/Subsystem/Mean1/Model/Sum/port1
-7080
+7064
 F64
 1
 SM_eHS/Subsystem/Mean1/Model/Gain/port1
-7088
+7072
 F64
 1
 SM_eHS/Subsystem/Mean/Model/Sum/port1
-7096
+7080
 F64
 1
 SM_eHS/Subsystem/Mean/Model/Gain/port1
-7104
+7088
 F64
 1
 SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/Rescale to  Fixed-Pt  format2/Data Type Conversion2/port1
-7112
+7096
 I32
 16
 SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/Rescale to  Fixed-Pt  format1/Data Type Conversion2/port1
-7176
+7160
 I32
 16
 SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/Rescale to  Fixed-Pt  format/Data Type Conversion2/port1
-7240
+7224
 I32
 16
 SM_eHS/eHSx64 Gen3 CommBlk/Data Type Conversion1/port1
-7304
+7288
 U32
 1
 SM_eHS/eHSx64 Gen3 CommBlk/sat_scn/port1
-7308
+7292
 U32
 1
 SM_eHS/eHSx64 Gen3 CommBlk/shift_2bits/port1
-7312
+7296
 U32
 1
 SM_eHS/eHSx64 Gen3 CommBlk/Add/port1
-7316
+7300
 U32
 1
 SM_eHS/eHSx64 Gen3 CommBlk/Detect Change/Delay Input1/port1
-7320
+7304
 U32
 1
 SM_eHS/eHSx64 Gen3 CommBlk/Convert double to  Single floating-point (FPGA)/port1
-7324
+7308
 U32
 3
 SM_eHS/eHSx64 Gen3 CommBlk/Outputs_eHS1_Recv/port1
-7336
+7320
 U32
 8
 SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/Convert double to  Single floating-point (FPGA)/port1
-7368
+7352
 U32
 16
 SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/Convert double to  Single floating-point (FPGA)1/port1
-7432
+7416
 U32
 16
 SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/Rescale to  Fixed-Pt  format2/Switch/port1
-7496
+7480
 U32
 16
 SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/Rescale to  Fixed-Pt  format2/Bitwise Operator/port1
-7560
+7544
 U32
 16
 SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/Rescale to  Fixed-Pt  format2/Data Type Conversion5/port1
-7624
+7608
 U32
 16
 SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/Rescale to  Fixed-Pt  format/Switch/port1
-7688
+7672
 U32
 16
 SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/Rescale to  Fixed-Pt  format/Bitwise Operator/port1
-7752
+7736
 U32
 16
 SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/Rescale to  Fixed-Pt  format/Data Type Conversion5/port1
-7816
+7800
 U32
 16
 SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/Rescale to  Fixed-Pt  format1/Switch/port1
-7880
+7864
 U32
 16
 SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/Rescale to  Fixed-Pt  format1/Bitwise Operator/port1
-7944
+7928
 U32
 16
 SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/Rescale to  Fixed-Pt  format1/Data Type Conversion5/port1
-8008
+7992
 U32
 16
 SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/change_detector/Detect Change/Delay Input1/port1
-8072
+8056
 U32
 80
 SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/Multiport Switch/port1
-8392
+8376
 U32
 17
 SM_eHS/Outputs_eHS1_Recv/port1
-8532
+8516
 U32
 7
 SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/Convert double to  Single floating-point (FPGA)2/port1
-8560
+8544
 U32
 16
 SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI/IOTypeSel/port1
-8624
+8608
 U32
 1
 SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1/IOTypeSel/port1
-8628
+8612
 U32
 1
 SM_eHS/eHSx64 Gen3 CommBlk/Saturation/port1
-8632
+8616
 U32
 1
 SM_eHS/eHSx64 Gen3 CommBlk/load_config1/port1
-8636
+8620
 U32
 10
 SM_eHS/eHSx64 Gen3 CommBlk/change_detector/Detect Change/Delay Input1/port1
-8676
+8660
 U32
 10
 SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/Rescale to  Fixed-Pt  format2/Data Type Conversion1/port1
-8716
+8700
 U32
 16
 SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/Rescale to  Fixed-Pt  format1/Data Type Conversion1/port1
-8780
+8764
 U32
 16
 SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/Rescale to  Fixed-Pt  format/Data Type Conversion1/port1
-8844
+8828
 U32
 16
 SM_eHS/eHSx64 Gen3 CommBlk/Detect Change/FixPt Relational Operator/port1
-8908
+8892
 U8
 1
 SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/change_detector/Detect Change/FixPt Relational Operator/port1
-8909
+8893
 U8
 80
 SM_eHS/eHSx64 Gen3 CommBlk/change_detector/Detect Change/FixPt Relational Operator/port1
-8989
+8973
 U8
 10
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Alpha-Beta-Zero to dq0/Compare To Constant/Compare/port1
-8999
+8983
 U8
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Alpha-Beta-Zero to dq0/Compare To Constant1/Compare/port1
-9000
+8984
 U8
 1
 SM_eHS/eHSx64 Gen3 CommBlk/Logical Operator/port1
-9001
+8985
 Boolean
 1
 SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/change_detector/Logical Operator/port1
-9002
+8986
 Boolean
 1
 SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/Counter/Logical Operator1/port1
-9003
+8987
+Boolean
+1
+SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Data Type Conversion/port1
+8988
 Boolean
 1
 SM_eHS/Subsystem/Mean/Model/Relational Operator/port1
-9004
+8989
 Boolean
 1
 SM_eHS/Subsystem/Mean1/Model/Relational Operator/port1
-9005
+8990
 Boolean
 1
 SM_eHS/RMS/Data Type Conversion/port1
-9006
+8991
 Boolean
 1
 SM_eHS/RMS/Logical Operator/port1
-9007
+8992
 Boolean
 1
 SM_eHS/RMS1/Data Type Conversion/port1
-9008
+8993
 Boolean
 1
 SM_eHS/RMS1/Logical Operator/port1
-9009
+8994
 Boolean
 1
 SM_eHS/eHSx64 Gen3 CommBlk/change_detector/Logical Operator/port1
-9010
+8995
 Boolean
 1
 SM_eHS/source_and_gates/Inverter Control/PWM_Generator/Modulator type/Full Bridge Bipolar/Relational Operator2/port1
-9011
+8996
 Boolean
 1
 SM_eHS/source_and_gates/Inverter Control/PWM_Generator/Modulator type/Full Bridge Bipolar/Logical Operator/port1
-9012
+8997
 Boolean
 1
 SM_eHS/source_and_gates/Inverter Control/PWM_Generator/Logical Operator4/port1
-9013
+8998
 Boolean
 2
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Relational Operator/port1
-9015
+9000
 Boolean
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Relational Operator/port1
-9016
+9001
 Boolean
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Mean/Model/Relational Operator/port1
-9017
+9002
 Boolean
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Relational Operator/port1
-9018
+9003
+Boolean
+1
+SM_eHS/source_and_gates/RMS1/Data Type Conversion/port1
+9004
+Boolean
+1
+SM_eHS/source_and_gates/RMS1/Logical Operator/port1
+9005
 Boolean
 1
 SM_eHS/Compare To Constant/Compare/port1
-9019
+9006
 Boolean
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Relational Operator/port1
-9020
+9007
 Boolean
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Automatic Gain Control/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Relational Operator/port1
-9021
+9008
+Boolean
+1
+SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/D Latch/D Latch/D/port1
+9009
+Boolean
+1
+SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/D Latch/D Latch/Logic/port1
+9010
+Boolean
+1
+SM_eHS/source_and_gates/RMS1/TrueRMS /Mean value/Model/Clock/port1
+9011
+F64
+1
+SM_eHS/source_and_gates/RMS1/TrueRMS /Mean value/Model/integrator/port1
+9019
+F64
+1
+SM_eHS/source_and_gates/RMS1/TrueRMS /Mean value/Model/Transport Delay/port1
+9027
+F64
+1
+SM_eHS/source_and_gates/RMS1/TrueRMS /Mean value/Model/Memory/port1
+9035
+F64
+1
+SM_eHS/source_and_gates/RMS1/TrueRMS /Mean value/Model/Switch/port1
+9043
+F64
+1
+SM_eHS/source_and_gates/RMS1/TrueRMS /Product/port1
+9051
+F64
+1
+SM_eHS/source_and_gates/RMS1/TrueRMS /Saturation to avoid negative sqrt/port1
+9059
+F64
+1
+SM_eHS/source_and_gates/RMS1/TrueRMS /Sqrt/port1
+9067
+F64
+1
+SM_eHS/source_and_gates/RMS1/TrueRMS /Mean value/Model/Sum/port1
+9075
+F64
+1
+SM_eHS/source_and_gates/RMS1/TrueRMS /Mean value/Model/Gain/port1
+9083
+F64
+1
+SM_eHS/source_and_gates/RMS1/TrueRMS /Mean value/Model/Relational Operator/port1
+9091
+Boolean
+1
+SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Real-Imag to Complex/port1
+9092
+F64
+2
+SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Mean value1/Model/integrator/port1
+9108
+F64
+1
+SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Mean value1/Model/Transport Delay/port1
+9116
+F64
+1
+SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Mean value1/Model/Clock/port1
+9124
+F64
+1
+SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Mean value1/Model/Memory/port1
+9132
+F64
+1
+SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Mean value1/Model/Switch/port1
+9140
+F64
+1
+SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Mean/Model/integrator/port1
+9148
+F64
+1
+SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Mean/Model/Transport Delay/port1
+9156
+F64
+1
+SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Mean/Model/Clock/port1
+9164
+F64
+1
+SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Mean/Model/Memory/port1
+9172
+F64
+1
+SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Mean/Model/Switch/port1
+9180
+F64
+1
+SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Complex to Magnitude-Angle/port1
+9188
+F64
+1
+SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Complex to Magnitude-Angle/port2
+9196
+F64
+1
+SM_eHS/source_and_gates/RMS1/RMS /Fourier1/sin(wt)/port1
+9204
+F64
+1
+SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Product/port1
+9212
+F64
+1
+SM_eHS/source_and_gates/RMS1/RMS /Fourier1/cos(wt)/port1
+9220
+F64
+1
+SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Product1/port1
+9228
+F64
+1
+SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Rad->Deg./port1
+9236
+F64
+1
+SM_eHS/source_and_gates/RMS1/RMS /Gain/port1
+9244
+F64
+1
+SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Mean value1/Model/Sum/port1
+9252
+F64
+1
+SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Mean value1/Model/Gain/port1
+9260
+F64
+1
+SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Mean/Model/Sum/port1
+9268
+F64
+1
+SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Mean/Model/Gain/port1
+9276
+F64
+1
+SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Mean value1/Model/Relational Operator/port1
+9284
+Boolean
+1
+SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Mean/Model/Relational Operator/port1
+9285
 Boolean
 1
 SM_eHS/RMS1/TrueRMS /Mean value/Model/Clock/port1
-9022
+9286
 F64
 1
 SM_eHS/RMS1/TrueRMS /Mean value/Model/integrator/port1
-9030
+9294
 F64
 1
 SM_eHS/RMS1/TrueRMS /Mean value/Model/Transport Delay/port1
-9038
+9302
 F64
 1
 SM_eHS/RMS1/TrueRMS /Mean value/Model/Memory/port1
-9046
+9310
 F64
 1
 SM_eHS/RMS1/TrueRMS /Mean value/Model/Switch/port1
-9054
+9318
 F64
 1
 SM_eHS/RMS1/TrueRMS /Product/port1
-9062
+9326
 F64
 1
 SM_eHS/RMS1/TrueRMS /Saturation to avoid negative sqrt/port1
-9070
+9334
 F64
 1
 SM_eHS/RMS1/TrueRMS /Sqrt/port1
-9078
+9342
 F64
 1
 SM_eHS/RMS1/TrueRMS /Mean value/Model/Sum/port1
-9086
+9350
 F64
 1
 SM_eHS/RMS1/TrueRMS /Mean value/Model/Gain/port1
-9094
+9358
 F64
 1
 SM_eHS/RMS1/TrueRMS /Mean value/Model/Relational Operator/port1
-9102
+9366
 Boolean
 1
 SM_eHS/RMS1/RMS /Fourier1/Real-Imag to Complex/port1
-9103
+9367
 F64
 2
 SM_eHS/RMS1/RMS /Fourier1/Mean value1/Model/integrator/port1
-9119
+9383
 F64
 1
 SM_eHS/RMS1/RMS /Fourier1/Mean value1/Model/Transport Delay/port1
-9127
+9391
 F64
 1
 SM_eHS/RMS1/RMS /Fourier1/Mean value1/Model/Clock/port1
-9135
+9399
 F64
 1
 SM_eHS/RMS1/RMS /Fourier1/Mean value1/Model/Memory/port1
-9143
+9407
 F64
 1
 SM_eHS/RMS1/RMS /Fourier1/Mean value1/Model/Switch/port1
-9151
+9415
 F64
 1
 SM_eHS/RMS1/RMS /Fourier1/Mean/Model/integrator/port1
-9159
+9423
 F64
 1
 SM_eHS/RMS1/RMS /Fourier1/Mean/Model/Transport Delay/port1
-9167
+9431
 F64
 1
 SM_eHS/RMS1/RMS /Fourier1/Mean/Model/Clock/port1
-9175
+9439
 F64
 1
 SM_eHS/RMS1/RMS /Fourier1/Mean/Model/Memory/port1
-9183
+9447
 F64
 1
 SM_eHS/RMS1/RMS /Fourier1/Mean/Model/Switch/port1
-9191
+9455
 F64
 1
 SM_eHS/RMS1/RMS /Fourier1/Complex to Magnitude-Angle/port1
-9199
+9463
 F64
 1
 SM_eHS/RMS1/RMS /Fourier1/Complex to Magnitude-Angle/port2
-9207
+9471
 F64
 1
 SM_eHS/RMS1/RMS /Fourier1/sin(wt)/port1
-9215
+9479
 F64
 1
 SM_eHS/RMS1/RMS /Fourier1/Product/port1
-9223
+9487
 F64
 1
 SM_eHS/RMS1/RMS /Fourier1/cos(wt)/port1
-9231
+9495
 F64
 1
 SM_eHS/RMS1/RMS /Fourier1/Product1/port1
-9239
+9503
 F64
 1
 SM_eHS/RMS1/RMS /Fourier1/Rad->Deg./port1
-9247
+9511
 F64
 1
 SM_eHS/RMS1/RMS /Gain/port1
-9255
+9519
 F64
 1
 SM_eHS/RMS1/RMS /Fourier1/Mean value1/Model/Sum/port1
-9263
+9527
 F64
 1
 SM_eHS/RMS1/RMS /Fourier1/Mean value1/Model/Gain/port1
-9271
+9535
 F64
 1
 SM_eHS/RMS1/RMS /Fourier1/Mean/Model/Sum/port1
-9279
+9543
 F64
 1
 SM_eHS/RMS1/RMS /Fourier1/Mean/Model/Gain/port1
-9287
+9551
 F64
 1
 SM_eHS/RMS1/RMS /Fourier1/Mean value1/Model/Relational Operator/port1
-9295
+9559
 Boolean
 1
 SM_eHS/RMS1/RMS /Fourier1/Mean/Model/Relational Operator/port1
-9296
+9560
 Boolean
 1
 SM_eHS/RMS/TrueRMS /Mean value/Model/Clock/port1
-9297
+9561
 F64
 1
 SM_eHS/RMS/TrueRMS /Mean value/Model/integrator/port1
-9305
+9569
 F64
 1
 SM_eHS/RMS/TrueRMS /Mean value/Model/Transport Delay/port1
-9313
+9577
 F64
 1
 SM_eHS/RMS/TrueRMS /Mean value/Model/Memory/port1
-9321
+9585
 F64
 1
 SM_eHS/RMS/TrueRMS /Mean value/Model/Switch/port1
-9329
+9593
 F64
 1
 SM_eHS/RMS/TrueRMS /Product/port1
-9337
+9601
 F64
 1
 SM_eHS/RMS/TrueRMS /Saturation to avoid negative sqrt/port1
-9345
+9609
 F64
 1
 SM_eHS/RMS/TrueRMS /Sqrt/port1
-9353
+9617
 F64
 1
 SM_eHS/RMS/TrueRMS /Mean value/Model/Sum/port1
-9361
+9625
 F64
 1
 SM_eHS/RMS/TrueRMS /Mean value/Model/Gain/port1
-9369
+9633
 F64
 1
 SM_eHS/RMS/TrueRMS /Mean value/Model/Relational Operator/port1
-9377
+9641
 Boolean
 1
 SM_eHS/RMS/RMS /Fourier1/Real-Imag to Complex/port1
-9378
+9642
 F64
 2
 SM_eHS/RMS/RMS /Fourier1/Mean value1/Model/integrator/port1
-9394
+9658
 F64
 1
 SM_eHS/RMS/RMS /Fourier1/Mean value1/Model/Transport Delay/port1
-9402
+9666
 F64
 1
 SM_eHS/RMS/RMS /Fourier1/Mean value1/Model/Clock/port1
-9410
+9674
 F64
 1
 SM_eHS/RMS/RMS /Fourier1/Mean value1/Model/Memory/port1
-9418
+9682
 F64
 1
 SM_eHS/RMS/RMS /Fourier1/Mean value1/Model/Switch/port1
-9426
+9690
 F64
 1
 SM_eHS/RMS/RMS /Fourier1/Mean/Model/integrator/port1
-9434
+9698
 F64
 1
 SM_eHS/RMS/RMS /Fourier1/Mean/Model/Transport Delay/port1
-9442
+9706
 F64
 1
 SM_eHS/RMS/RMS /Fourier1/Mean/Model/Clock/port1
-9450
+9714
 F64
 1
 SM_eHS/RMS/RMS /Fourier1/Mean/Model/Memory/port1
-9458
+9722
 F64
 1
 SM_eHS/RMS/RMS /Fourier1/Mean/Model/Switch/port1
-9466
+9730
 F64
 1
 SM_eHS/RMS/RMS /Fourier1/Complex to Magnitude-Angle/port1
-9474
+9738
 F64
 1
 SM_eHS/RMS/RMS /Fourier1/Complex to Magnitude-Angle/port2
-9482
+9746
 F64
 1
 SM_eHS/RMS/RMS /Fourier1/sin(wt)/port1
-9490
+9754
 F64
 1
 SM_eHS/RMS/RMS /Fourier1/Product/port1
-9498
+9762
 F64
 1
 SM_eHS/RMS/RMS /Fourier1/cos(wt)/port1
-9506
+9770
 F64
 1
 SM_eHS/RMS/RMS /Fourier1/Product1/port1
-9514
+9778
 F64
 1
 SM_eHS/RMS/RMS /Fourier1/Rad->Deg./port1
-9522
+9786
 F64
 1
 SM_eHS/RMS/RMS /Gain/port1
-9530
+9794
 F64
 1
 SM_eHS/RMS/RMS /Fourier1/Mean value1/Model/Sum/port1
-9538
+9802
 F64
 1
 SM_eHS/RMS/RMS /Fourier1/Mean value1/Model/Gain/port1
-9546
+9810
 F64
 1
 SM_eHS/RMS/RMS /Fourier1/Mean/Model/Sum/port1
-9554
+9818
 F64
 1
 SM_eHS/RMS/RMS /Fourier1/Mean/Model/Gain/port1
-9562
+9826
 F64
 1
 SM_eHS/RMS/RMS /Fourier1/Mean value1/Model/Relational Operator/port1
-9570
+9834
 Boolean
 1
 SM_eHS/RMS/RMS /Fourier1/Mean/Model/Relational Operator/port1
-9571
+9835
 Boolean
 1

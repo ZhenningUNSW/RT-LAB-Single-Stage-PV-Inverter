@@ -1,12 +1,13 @@
 
 -------------------- Starting compilation --------------------
-Start at : Saturday, May 20, 2017, 23:00:28
+Start at : Monday, May 22, 2017, 20:48:35
 
 The current RT-LAB version is:  v11.0.8.13
 The current model is:           C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab.mdl
 The current host platform is:   Windows
 The current target platform is: Redhat
 The current compiler is:        Automatic
+Separating model because C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab.mdl has changed.
 Preparing original model for code separation and generation...
 The current Matlab version is:  v8.4 (32 Bit)
 
@@ -47,9 +48,10 @@ Separating RT-LAB subsystem 'SC_Console'.
 WARNING: Saving subsystems with breaklinks option has been disabled. Subsystems real-time behavior may be different.
 WARNING: Saving subsystems with breaklinks option has been disabled. Subsystems real-time behavior may be different.
 A monitoring block (OpMonitor) has been found. The monitoring will be enabled.
-Model preparation and separation duration : 00h:00m:45s
+Model preparation and separation duration : 00h:01m:07s
 -------------------- Completed successfully --------------------
 
+Generating model because C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\Opcommon\boost_and_two_level__1_sm_ehs.mdl has changed.
 
 -------------------- Generating C code --------------------
 
@@ -111,9 +113,44 @@ found]
 found] 
 [Warning: Matching "From" for "Goto" '<a href="matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/Inverter Control/VDC Regulator/Goto5','error')">boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/Inverter Control/VDC Regulator/Goto5</a>' not
 found] 
+[Warning: Output port 2 of '<a href="matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI','error')">boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI</a>' is not
+connected.] 
+[Warning: Output port 1 of '<a href="matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1','error')">boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1</a>' is not
+connected.] 
+[Warning: Output port 2 of '<a href="matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1','error')">boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1</a>' is not
+connected.] 
+[Warning: Output port 3 of '<a href="matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1','error')">boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1</a>' is not
+connected.] 
+[Warning: Output port 4 of '<a href="matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1','error')">boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1</a>' is not
+connected.] 
+[Warning: Output port 5 of '<a href="matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1','error')">boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1</a>' is not
+connected.] 
+[Warning: Output port 6 of '<a href="matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1','error')">boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1</a>' is not
+connected.] 
+[Warning: Output port 7 of '<a href="matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1','error')">boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1</a>' is not
+connected.] 
+[Warning: Output port 8 of '<a href="matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1','error')">boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1</a>' is not
+connected.] 
+[Warning: Output port 9 of '<a href="matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1','error')">boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1</a>' is not
+connected.] 
+[Warning: Output port 10 of '<a href="matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1','error')">boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1</a>' is not
+connected.] 
+[Warning: Output port 11 of '<a href="matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1','error')">boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1</a>' is not
+connected.] 
+[Warning: Output port 12 of '<a href="matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1','error')">boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1</a>' is not
+connected.] 
+[Warning: Output port 13 of '<a href="matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1','error')">boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1</a>' is not
+connected.] 
+[Warning: Output port 14 of '<a href="matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1','error')">boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1</a>' is not
+connected.] 
+[Warning: Output port 15 of '<a href="matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1','error')">boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1</a>' is not
+connected.] 
+[Warning: Output port 16 of '<a href="matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1','error')">boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1</a>' is not
+connected.] 
 [Warning: Output port 2 of '<a href="matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/Outputs_eHS1_Recv','error')">boost_and_two_level__1_sm_ehs/SM_eHS/Outputs_eHS1_Recv</a>' is not connected.] 
 [Warning: Output port 4 of '<a href="matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/Demux','error')">boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/Demux</a>' is not connected.] 
 [Warning: Output port 7 of '<a href="matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/Demux','error')">boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/Demux</a>' is not connected.] 
+[Warning: Output port 1 of '<a href="matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RMS1','error')">boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RMS1</a>' is not connected.] 
 [Warning: Use fixed buffer size in 'boost_and_two_level__1_sm_ehs/SM_eHS/RMS/RMS /Fourier1/Mean/Model/Transport Delay' is not selected.
 When generating GRT/ERT code, Simulink will automatically use fixed buffer of the initial buffer size set by user. Code generation
 results and simulation results may differ] 
@@ -150,6 +187,15 @@ following three combinations: u2 ~= 0, u2 > Threshold with Threshold equal to 0,
 format2/Switch' is a boolean signal. Input 3 is passed to the output if control input is false (0), otherwise input 1 is passed to the
 output. The current threshold values are being ignored. To eliminate this warning, set the criteria and threshold to any of the
 following three combinations: u2 ~= 0, u2 > Threshold with Threshold equal to 0, or u2 >= Threshold with Threshold equal to 1.] 
+[Warning: Use fixed buffer size in 'boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Mean/Model/Transport Delay'
+is not selected. When generating GRT/ERT code, Simulink will automatically use fixed buffer of the initial buffer size set by user. Code
+generation results and simulation results may differ] 
+[Warning: Use fixed buffer size in 'boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Mean value1/Model/Transport
+Delay' is not selected. When generating GRT/ERT code, Simulink will automatically use fixed buffer of the initial buffer size set by
+user. Code generation results and simulation results may differ] 
+[Warning: Use fixed buffer size in 'boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RMS1/TrueRMS /Mean value/Model/Transport Delay'
+is not selected. When generating GRT/ERT code, Simulink will automatically use fixed buffer of the initial buffer size set by user. Code
+generation results and simulation results may differ] 
 
 ### Invoking Target Language Compiler on boost_and_two_level__1_sm_ehs.rtw
 ### Using System Target File: D:\OPAL-RT\RT-LAB\v11.0.8.13\Simulink\rtw\c\common\rtlab_rtmodel.tlc
@@ -158,7 +204,7 @@ following three combinations: u2 ~= 0, u2 > Threshold with Threshold equal to 0,
 ### Initial pass through model to cache user defined code
 ............
 ### TLC Scope icon is not supported by RT-LAB.
-................
+.................
 ### Caching model source code
 ...............................................................................
 ...............................................................................
@@ -167,37 +213,37 @@ following three combinations: u2 ~= 0, u2 > Threshold with Threshold equal to 0,
 ...............................................................................
 ...............................................................................
 ...............................................................................
+...............................
 ### Writing source file boost_and_two_level__1_sm_ehs.c
-.
 ### Writing header file boost_and_two_level__1_sm_ehs_private.h
+.
 ### Writing header file boost_and_two_level__1_sm_ehs.h
-.
 ### Writing header file boost_and_two_level__1_sm_ehs_types.h
+.
 ### Writing header file rtwtypes.h
-.
 ### Writing header file builtin_typeid_types.h
+.
 ### Writing header file multiword_types.h
-.
 ### Writing header file rtGetInf.h
+.
 ### Writing source file rtGetInf.c
-.
 ### Writing header file rtGetNaN.h
+.
 ### Writing source file rtGetNaN.c
-.
 ### Writing header file rt_defines.h
+.
 ### Writing header file rt_nonfinite.h
-.
 ### Writing source file rt_nonfinite.c
-### Writing header file rtmodel.h
 .
+### Writing header file rtmodel.h
 ### Writing source file boost_and_two_level__1_sm_ehs_data.c
 ### TLC code generation complete.
-.....
+......
 Warning:  Version[0] 8 Version[1] . Version[2] 7
 ### Creating model mapping file boost_and_two_level__1_sm_ehs.map using map_r2014b.tlc
 ...............................................................................
 ...............................................................................
-........................................[Warning: Incorrect internal Simulink identifiers were detected. The following blocks have conflicting identifiers:
+..................................................[Warning: Incorrect internal Simulink identifiers were detected. The following blocks have conflicting identifiers:
   '<a href="matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/eHSx64 Gen3 CommBlk/Convert double to  Single floating-point (FPGA)','error')">boost_and_two_level__1_sm_ehs/SM_eHS/eHSx64 Gen3 CommBlk/Convert double to  Single floating-point (FPGA)</a>'
   '<a href="matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/eHSx64 Gen3 CommBlk/INPUTS','error')">boost_and_two_level__1_sm_ehs/SM_eHS/eHSx64 Gen3 CommBlk/INPUTS</a>'.
 The Simulink identifier of '<a href="matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/eHSx64 Gen3 CommBlk/Convert double to  Single floating-point (FPGA)','error')">boost_and_two_level__1_sm_ehs/SM_eHS/eHSx64 Gen3 CommBlk/Convert double to  Single floating-point (FPGA)</a>'
@@ -207,7 +253,6 @@ was changed from '542' to '2373'. Backup the original model, and then save and r
   '<a href="matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/eHSx64 Gen3 CommBlk/INPUTS','error')">boost_and_two_level__1_sm_ehs/SM_eHS/eHSx64 Gen3 CommBlk/INPUTS</a>'.
 The Simulink identifier of '<a href="matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/eHSx64 Gen3 CommBlk/OUTPUTS','error')">boost_and_two_level__1_sm_ehs/SM_eHS/eHSx64 Gen3 CommBlk/OUTPUTS</a>' was changed from '542' to '2377'. Backup
 the original model, and then save and reopen the current model.] 
-### Creating project marker file: rtw_proj.tmw
 .
 ### Processing Template Makefile: D:\OPAL-RT\RT-LAB\v11.0.8.13\Simulink\rtw\c\common\rtlab_rtmodel.tmf
 ### Wrapping unrecognized make command (angle brackets added)
@@ -217,8 +262,8 @@ the original model, and then save and reopen the current model.]
 ### Successful completion of code generation for model: boost_and_two_level__1_sm_ehs
 
 
-boost_and_two_level__1_sm_ehs : Generating C code duration : 00h:00m:31s
-Generating C code total duration : 00h:00m:31s
+boost_and_two_level__1_sm_ehs : Generating C code duration : 00h:00m:36s
+Generating C code total duration : 00h:00m:36s
 
 -------------------- Completed successfully --------------------
 
@@ -239,6 +284,7 @@ Data generated in 00h:00m:01s
 
 Closing Matlab... OK.
 Updating dependencies... OK.
+Compiling model because C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\boost_and_two_level__1_sm_ehs.c has changed.
 
 -------------------- Validating sources files --------------------------
 
@@ -266,6 +312,9 @@ Transferring in ascii: C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\mo
 Transferring in ascii: C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\drive_boost_and_two_level__1_sm_ehs*.c (SM_eHS) ... OK.
 Transferring in ascii: C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\drive_boost_and_two_level__1_sm_ehs*.h (SM_eHS) ... OK.
 Transferring in ascii: C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\Opal*.c (SM_eHS) ... OK.
+Transferring in ascii: C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\slprj\rtlab_rtmodel\_sharedutils\*.c (SM_eHS) ... OK.
+Transferring in ascii: C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\slprj\rtlab_rtmodel\_sharedutils\*.h (SM_eHS) ... OK.
+Transferring in ascii: C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\slprj\rtlab_rtmodel\_sharedutils\*.mk (SM_eHS) ... OK.
 
 Transferring common RT-LAB files:
 Transferring in ascii: D:\OPAL-RT\RT-LAB\v11.0.8.13\common\include_target\*.h (SM_eHS) ... OK.
@@ -283,6 +332,7 @@ Transferring in ascii: C:\Program Files (x86)\MATLAB\R2014b\toolbox\physmod\powe
 Transferring in binary: D:\OPAL-RT\RT-LAB\v11.0.8.13\common\lib\redhawk\libOpalOP7160.a (SM_eHS) ... OK.
 Transferring in binary: D:\OPAL-RT\RT-LAB\v11.0.8.13\common\lib\redhawk\libOpalOpSystem.a (SM_eHS) ... OK.
 Transferring in binary: D:\OPAL-RT\RT-LAB\v11.0.8.13\simulink\libR2014b\redhawk\libOpalIoFcnOP7160R2014b.a (SM_eHS) ... OK.
+Transferring in binary: D:\OPAL-RT\ARTEMIS\v7.0.5.931\art_r2014b\lib\redhawk\artemis_RT705931r2014br.a (SM_eHS) ... OK.
 Transferring in binary: D:\OPAL-RT\RT-LAB\v11.0.8.13\simulink\libR2014b\redhawk\libOpalIoCtrlOP7160R2014b.a (SM_eHS) ... OK.
 Transferring in binary: D:\OPAL-RT\RT-EVENTS\v4.0.2.520\rte_r2014b\lib\redhawk\libRtEvents_RT402520R2014Br.a (SM_eHS) ... OK.
 Transferring in binary: D:\OPAL-RT\eFPGAsim\v1.4.2.496\Simulink\efs_R2014b\redhawk\libEHS_cfgR2014b.a (SM_eHS) ... OK.
@@ -300,24 +350,24 @@ Executing script /usr/opalrt/v11.0.8.13/common/python/rtlab/global/target_subsys
 -------------------- Building boost_and_two_level__1_sm_ehs --------------------
 
 rm -f boost_and_two_level__1_sm_ehs
-gcc -c  -O2 -ffast-math -mtune=i686 -march=i686 -falign-loops=2 -falign-jumps=2 -falign-functions=2    -DUSE_RTMODEL -DMODEL=boost_and_two_level__1_sm_ehs -DRT=RT -DNUMST=2 -DTID01EQ=1 -DNCSTATES=8 -DMT=0 -DTERMFCN=1 -DMULTITASKING=0 -D_SIMULINK -DRTLAB -DOP_MATLABR2014B	 -DMAT_FILE=1 -DCLASSIC_INTERFACE=1 -DONESTEPFCN=0 -DMULTI_INSTANCE_CODE=0 -DUNIX -I/usr/opalrt/externals/include  -I. -I/usr/matlab/v8.4/simulink/include -I/usr/matlab/v8.4/extern/include -I/usr/matlab/v8.4/rtw/c/src -I/usr/matlab/v8.4/rtw/c/src/matrixmath -I/usr/matlab/v8.4/rtw/c/libsrc  -I/usr/matlab/v8.4/toolbox/simscape/include/drive -I/usr/matlab/v8.4/toolbox/simscape/include/mech -I/usr/matlab/v8.4/toolbox/simscape/include/foundation -I/usr/matlab/v8.4/toolbox/simscape/include/network_engine -I/usr/matlab/v8.4/toolbox/simscape/include/ne_sli -I/usr/matlab/v8.4/toolbox/dspblks/include -I/usr/matlab/v8.4/toolbox/simscape/include/compiler/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/sli/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/utils  -I/usr/opalrt/v11.0.8.13/common/include -I/usr/opalrt/v11.0.8.13/common/include_target -I/usr/opalrt/v11.0.8.13/RT-LAB/include    -I_sharedutils  boost_and_two_level__1_sm_ehs.c
-gcc -c  -O2 -ffast-math -mtune=i686 -march=i686 -falign-loops=2 -falign-jumps=2 -falign-functions=2    -DUSE_RTMODEL -DMODEL=boost_and_two_level__1_sm_ehs -DRT=RT -DNUMST=2 -DTID01EQ=1 -DNCSTATES=8 -DMT=0 -DTERMFCN=1 -DMULTITASKING=0 -D_SIMULINK -DRTLAB -DOP_MATLABR2014B	 -DMAT_FILE=1 -DCLASSIC_INTERFACE=1 -DONESTEPFCN=0 -DMULTI_INSTANCE_CODE=0 -DUNIX -I/usr/opalrt/externals/include  -I. -I/usr/matlab/v8.4/simulink/include -I/usr/matlab/v8.4/extern/include -I/usr/matlab/v8.4/rtw/c/src -I/usr/matlab/v8.4/rtw/c/src/matrixmath -I/usr/matlab/v8.4/rtw/c/libsrc  -I/usr/matlab/v8.4/toolbox/simscape/include/drive -I/usr/matlab/v8.4/toolbox/simscape/include/mech -I/usr/matlab/v8.4/toolbox/simscape/include/foundation -I/usr/matlab/v8.4/toolbox/simscape/include/network_engine -I/usr/matlab/v8.4/toolbox/simscape/include/ne_sli -I/usr/matlab/v8.4/toolbox/dspblks/include -I/usr/matlab/v8.4/toolbox/simscape/include/compiler/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/sli/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/utils  -I/usr/opalrt/v11.0.8.13/common/include -I/usr/opalrt/v11.0.8.13/common/include_target -I/usr/opalrt/v11.0.8.13/RT-LAB/include    -I_sharedutils  boost_and_two_level__1_sm_ehs_data.c
-gcc -c  -O2 -ffast-math -mtune=i686 -march=i686 -falign-loops=2 -falign-jumps=2 -falign-functions=2    -DUSE_RTMODEL -DMODEL=boost_and_two_level__1_sm_ehs -DRT=RT -DNUMST=2 -DTID01EQ=1 -DNCSTATES=8 -DMT=0 -DTERMFCN=1 -DMULTITASKING=0 -D_SIMULINK -DRTLAB -DOP_MATLABR2014B	 -DMAT_FILE=1 -DCLASSIC_INTERFACE=1 -DONESTEPFCN=0 -DMULTI_INSTANCE_CODE=0 -DUNIX -I/usr/opalrt/externals/include  -I. -I/usr/matlab/v8.4/simulink/include -I/usr/matlab/v8.4/extern/include -I/usr/matlab/v8.4/rtw/c/src -I/usr/matlab/v8.4/rtw/c/src/matrixmath -I/usr/matlab/v8.4/rtw/c/libsrc  -I/usr/matlab/v8.4/toolbox/simscape/include/drive -I/usr/matlab/v8.4/toolbox/simscape/include/mech -I/usr/matlab/v8.4/toolbox/simscape/include/foundation -I/usr/matlab/v8.4/toolbox/simscape/include/network_engine -I/usr/matlab/v8.4/toolbox/simscape/include/ne_sli -I/usr/matlab/v8.4/toolbox/dspblks/include -I/usr/matlab/v8.4/toolbox/simscape/include/compiler/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/sli/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/utils  -I/usr/opalrt/v11.0.8.13/common/include -I/usr/opalrt/v11.0.8.13/common/include_target -I/usr/opalrt/v11.0.8.13/RT-LAB/include    -I_sharedutils  model_main.c
-gcc -c  -O2 -ffast-math -mtune=i686 -march=i686 -falign-loops=2 -falign-jumps=2 -falign-functions=2    -DUSE_RTMODEL -DMODEL=boost_and_two_level__1_sm_ehs -DRT=RT -DNUMST=2 -DTID01EQ=1 -DNCSTATES=8 -DMT=0 -DTERMFCN=1 -DMULTITASKING=0 -D_SIMULINK -DRTLAB -DOP_MATLABR2014B	 -DMAT_FILE=1 -DCLASSIC_INTERFACE=1 -DONESTEPFCN=0 -DMULTI_INSTANCE_CODE=0 -DUNIX -I/usr/opalrt/externals/include  -I. -I/usr/matlab/v8.4/simulink/include -I/usr/matlab/v8.4/extern/include -I/usr/matlab/v8.4/rtw/c/src -I/usr/matlab/v8.4/rtw/c/src/matrixmath -I/usr/matlab/v8.4/rtw/c/libsrc  -I/usr/matlab/v8.4/toolbox/simscape/include/drive -I/usr/matlab/v8.4/toolbox/simscape/include/mech -I/usr/matlab/v8.4/toolbox/simscape/include/foundation -I/usr/matlab/v8.4/toolbox/simscape/include/network_engine -I/usr/matlab/v8.4/toolbox/simscape/include/ne_sli -I/usr/matlab/v8.4/toolbox/dspblks/include -I/usr/matlab/v8.4/toolbox/simscape/include/compiler/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/sli/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/utils  -I/usr/opalrt/v11.0.8.13/common/include -I/usr/opalrt/v11.0.8.13/common/include_target -I/usr/opalrt/v11.0.8.13/RT-LAB/include    -I_sharedutils  rtGetInf.c
-gcc -c  -O2 -ffast-math -mtune=i686 -march=i686 -falign-loops=2 -falign-jumps=2 -falign-functions=2    -DUSE_RTMODEL -DMODEL=boost_and_two_level__1_sm_ehs -DRT=RT -DNUMST=2 -DTID01EQ=1 -DNCSTATES=8 -DMT=0 -DTERMFCN=1 -DMULTITASKING=0 -D_SIMULINK -DRTLAB -DOP_MATLABR2014B	 -DMAT_FILE=1 -DCLASSIC_INTERFACE=1 -DONESTEPFCN=0 -DMULTI_INSTANCE_CODE=0 -DUNIX -I/usr/opalrt/externals/include  -I. -I/usr/matlab/v8.4/simulink/include -I/usr/matlab/v8.4/extern/include -I/usr/matlab/v8.4/rtw/c/src -I/usr/matlab/v8.4/rtw/c/src/matrixmath -I/usr/matlab/v8.4/rtw/c/libsrc  -I/usr/matlab/v8.4/toolbox/simscape/include/drive -I/usr/matlab/v8.4/toolbox/simscape/include/mech -I/usr/matlab/v8.4/toolbox/simscape/include/foundation -I/usr/matlab/v8.4/toolbox/simscape/include/network_engine -I/usr/matlab/v8.4/toolbox/simscape/include/ne_sli -I/usr/matlab/v8.4/toolbox/dspblks/include -I/usr/matlab/v8.4/toolbox/simscape/include/compiler/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/sli/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/utils  -I/usr/opalrt/v11.0.8.13/common/include -I/usr/opalrt/v11.0.8.13/common/include_target -I/usr/opalrt/v11.0.8.13/RT-LAB/include    -I_sharedutils  rtGetNaN.c
-gcc -c  -O2 -ffast-math -mtune=i686 -march=i686 -falign-loops=2 -falign-jumps=2 -falign-functions=2    -DUSE_RTMODEL -DMODEL=boost_and_two_level__1_sm_ehs -DRT=RT -DNUMST=2 -DTID01EQ=1 -DNCSTATES=8 -DMT=0 -DTERMFCN=1 -DMULTITASKING=0 -D_SIMULINK -DRTLAB -DOP_MATLABR2014B	 -DMAT_FILE=1 -DCLASSIC_INTERFACE=1 -DONESTEPFCN=0 -DMULTI_INSTANCE_CODE=0 -DUNIX -I/usr/opalrt/externals/include  -I. -I/usr/matlab/v8.4/simulink/include -I/usr/matlab/v8.4/extern/include -I/usr/matlab/v8.4/rtw/c/src -I/usr/matlab/v8.4/rtw/c/src/matrixmath -I/usr/matlab/v8.4/rtw/c/libsrc  -I/usr/matlab/v8.4/toolbox/simscape/include/drive -I/usr/matlab/v8.4/toolbox/simscape/include/mech -I/usr/matlab/v8.4/toolbox/simscape/include/foundation -I/usr/matlab/v8.4/toolbox/simscape/include/network_engine -I/usr/matlab/v8.4/toolbox/simscape/include/ne_sli -I/usr/matlab/v8.4/toolbox/dspblks/include -I/usr/matlab/v8.4/toolbox/simscape/include/compiler/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/sli/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/utils  -I/usr/opalrt/v11.0.8.13/common/include -I/usr/opalrt/v11.0.8.13/common/include_target -I/usr/opalrt/v11.0.8.13/RT-LAB/include    -I_sharedutils  /usr/matlab/v8.4/rtw/c/src/rt_logging.c
-gcc -c  -O2 -ffast-math -mtune=i686 -march=i686 -falign-loops=2 -falign-jumps=2 -falign-functions=2    -DUSE_RTMODEL -DMODEL=boost_and_two_level__1_sm_ehs -DRT=RT -DNUMST=2 -DTID01EQ=1 -DNCSTATES=8 -DMT=0 -DTERMFCN=1 -DMULTITASKING=0 -D_SIMULINK -DRTLAB -DOP_MATLABR2014B	 -DMAT_FILE=1 -DCLASSIC_INTERFACE=1 -DONESTEPFCN=0 -DMULTI_INSTANCE_CODE=0 -DUNIX -I/usr/opalrt/externals/include  -I. -I/usr/matlab/v8.4/simulink/include -I/usr/matlab/v8.4/extern/include -I/usr/matlab/v8.4/rtw/c/src -I/usr/matlab/v8.4/rtw/c/src/matrixmath -I/usr/matlab/v8.4/rtw/c/libsrc  -I/usr/matlab/v8.4/toolbox/simscape/include/drive -I/usr/matlab/v8.4/toolbox/simscape/include/mech -I/usr/matlab/v8.4/toolbox/simscape/include/foundation -I/usr/matlab/v8.4/toolbox/simscape/include/network_engine -I/usr/matlab/v8.4/toolbox/simscape/include/ne_sli -I/usr/matlab/v8.4/toolbox/dspblks/include -I/usr/matlab/v8.4/toolbox/simscape/include/compiler/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/sli/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/utils  -I/usr/opalrt/v11.0.8.13/common/include -I/usr/opalrt/v11.0.8.13/common/include_target -I/usr/opalrt/v11.0.8.13/RT-LAB/include    -I_sharedutils  rt_nonfinite.c
-gcc -c  -O2 -ffast-math -mtune=i686 -march=i686 -falign-loops=2 -falign-jumps=2 -falign-functions=2    -DUSE_RTMODEL -DMODEL=boost_and_two_level__1_sm_ehs -DRT=RT -DNUMST=2 -DTID01EQ=1 -DNCSTATES=8 -DMT=0 -DTERMFCN=1 -DMULTITASKING=0 -D_SIMULINK -DRTLAB -DOP_MATLABR2014B	 -DMAT_FILE=1 -DCLASSIC_INTERFACE=1 -DONESTEPFCN=0 -DMULTI_INSTANCE_CODE=0 -DUNIX -I/usr/opalrt/externals/include  -I. -I/usr/matlab/v8.4/simulink/include -I/usr/matlab/v8.4/extern/include -I/usr/matlab/v8.4/rtw/c/src -I/usr/matlab/v8.4/rtw/c/src/matrixmath -I/usr/matlab/v8.4/rtw/c/libsrc  -I/usr/matlab/v8.4/toolbox/simscape/include/drive -I/usr/matlab/v8.4/toolbox/simscape/include/mech -I/usr/matlab/v8.4/toolbox/simscape/include/foundation -I/usr/matlab/v8.4/toolbox/simscape/include/network_engine -I/usr/matlab/v8.4/toolbox/simscape/include/ne_sli -I/usr/matlab/v8.4/toolbox/dspblks/include -I/usr/matlab/v8.4/toolbox/simscape/include/compiler/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/sli/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/utils  -I/usr/opalrt/v11.0.8.13/common/include -I/usr/opalrt/v11.0.8.13/common/include_target -I/usr/opalrt/v11.0.8.13/RT-LAB/include    -I_sharedutils  /usr/matlab/v8.4/rtw/c/src/rt_printf.c
-gcc -c  -O2 -ffast-math -mtune=i686 -march=i686 -falign-loops=2 -falign-jumps=2 -falign-functions=2    -DUSE_RTMODEL -DMODEL=boost_and_two_level__1_sm_ehs -DRT=RT -DNUMST=2 -DTID01EQ=1 -DNCSTATES=8 -DMT=0 -DTERMFCN=1 -DMULTITASKING=0 -D_SIMULINK -DRTLAB -DOP_MATLABR2014B	 -DMAT_FILE=1 -DCLASSIC_INTERFACE=1 -DONESTEPFCN=0 -DMULTI_INSTANCE_CODE=0 -DUNIX -I/usr/opalrt/externals/include  -I. -I/usr/matlab/v8.4/simulink/include -I/usr/matlab/v8.4/extern/include -I/usr/matlab/v8.4/rtw/c/src -I/usr/matlab/v8.4/rtw/c/src/matrixmath -I/usr/matlab/v8.4/rtw/c/libsrc  -I/usr/matlab/v8.4/toolbox/simscape/include/drive -I/usr/matlab/v8.4/toolbox/simscape/include/mech -I/usr/matlab/v8.4/toolbox/simscape/include/foundation -I/usr/matlab/v8.4/toolbox/simscape/include/network_engine -I/usr/matlab/v8.4/toolbox/simscape/include/ne_sli -I/usr/matlab/v8.4/toolbox/dspblks/include -I/usr/matlab/v8.4/toolbox/simscape/include/compiler/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/sli/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/utils  -I/usr/opalrt/v11.0.8.13/common/include -I/usr/opalrt/v11.0.8.13/common/include_target -I/usr/opalrt/v11.0.8.13/RT-LAB/include    -I_sharedutils  /usr/matlab/v8.4/rtw/c/src/rt_sim.c
-gcc -c  -O2 -ffast-math -mtune=i686 -march=i686 -falign-loops=2 -falign-jumps=2 -falign-functions=2    -DUSE_RTMODEL -DMODEL=boost_and_two_level__1_sm_ehs -DRT=RT -DNUMST=2 -DTID01EQ=1 -DNCSTATES=8 -DMT=0 -DTERMFCN=1 -DMULTITASKING=0 -D_SIMULINK -DRTLAB -DOP_MATLABR2014B	 -DMAT_FILE=1 -DCLASSIC_INTERFACE=1 -DONESTEPFCN=0 -DMULTI_INSTANCE_CODE=0 -DUNIX -I/usr/opalrt/externals/include  -I. -I/usr/matlab/v8.4/simulink/include -I/usr/matlab/v8.4/extern/include -I/usr/matlab/v8.4/rtw/c/src -I/usr/matlab/v8.4/rtw/c/src/matrixmath -I/usr/matlab/v8.4/rtw/c/libsrc  -I/usr/matlab/v8.4/toolbox/simscape/include/drive -I/usr/matlab/v8.4/toolbox/simscape/include/mech -I/usr/matlab/v8.4/toolbox/simscape/include/foundation -I/usr/matlab/v8.4/toolbox/simscape/include/network_engine -I/usr/matlab/v8.4/toolbox/simscape/include/ne_sli -I/usr/matlab/v8.4/toolbox/dspblks/include -I/usr/matlab/v8.4/toolbox/simscape/include/compiler/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/sli/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/utils  -I/usr/opalrt/v11.0.8.13/common/include -I/usr/opalrt/v11.0.8.13/common/include_target -I/usr/opalrt/v11.0.8.13/RT-LAB/include    -I_sharedutils  sfun_discreteVariableDelay.c
+opicc -c  -O2 -xHost -falign-functions=2 -diag-disable remark,warn,cpu-dispatch    -DUSE_RTMODEL -DMODEL=boost_and_two_level__1_sm_ehs -DRT=RT -DNUMST=2 -DTID01EQ=1 -DNCSTATES=11 -DMT=0 -DTERMFCN=1 -DMULTITASKING=0 -D_SIMULINK -DRTLAB -DOP_MATLABR2014B	 -DMAT_FILE=1 -DCLASSIC_INTERFACE=1 -DONESTEPFCN=0 -DMULTI_INSTANCE_CODE=0 -DUNIX -I/usr/opalrt/externals/include  -I. -I/usr/matlab/v8.4/simulink/include -I/usr/matlab/v8.4/extern/include -I/usr/matlab/v8.4/rtw/c/src -I/usr/matlab/v8.4/rtw/c/src/matrixmath -I/usr/matlab/v8.4/rtw/c/libsrc  -I/usr/matlab/v8.4/toolbox/simscape/include/drive -I/usr/matlab/v8.4/toolbox/simscape/include/mech -I/usr/matlab/v8.4/toolbox/simscape/include/foundation -I/usr/matlab/v8.4/toolbox/simscape/include/network_engine -I/usr/matlab/v8.4/toolbox/simscape/include/ne_sli -I/usr/matlab/v8.4/toolbox/dspblks/include -I/usr/matlab/v8.4/toolbox/simscape/include/compiler/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/sli/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/utils  -I/usr/opalrt/v11.0.8.13/common/include -I/usr/opalrt/v11.0.8.13/common/include_target -I/usr/opalrt/v11.0.8.13/RT-LAB/include    -I_sharedutils  boost_and_two_level__1_sm_ehs.c
+opicc -c  -O2 -xHost -falign-functions=2 -diag-disable remark,warn,cpu-dispatch    -DUSE_RTMODEL -DMODEL=boost_and_two_level__1_sm_ehs -DRT=RT -DNUMST=2 -DTID01EQ=1 -DNCSTATES=11 -DMT=0 -DTERMFCN=1 -DMULTITASKING=0 -D_SIMULINK -DRTLAB -DOP_MATLABR2014B	 -DMAT_FILE=1 -DCLASSIC_INTERFACE=1 -DONESTEPFCN=0 -DMULTI_INSTANCE_CODE=0 -DUNIX -I/usr/opalrt/externals/include  -I. -I/usr/matlab/v8.4/simulink/include -I/usr/matlab/v8.4/extern/include -I/usr/matlab/v8.4/rtw/c/src -I/usr/matlab/v8.4/rtw/c/src/matrixmath -I/usr/matlab/v8.4/rtw/c/libsrc  -I/usr/matlab/v8.4/toolbox/simscape/include/drive -I/usr/matlab/v8.4/toolbox/simscape/include/mech -I/usr/matlab/v8.4/toolbox/simscape/include/foundation -I/usr/matlab/v8.4/toolbox/simscape/include/network_engine -I/usr/matlab/v8.4/toolbox/simscape/include/ne_sli -I/usr/matlab/v8.4/toolbox/dspblks/include -I/usr/matlab/v8.4/toolbox/simscape/include/compiler/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/sli/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/utils  -I/usr/opalrt/v11.0.8.13/common/include -I/usr/opalrt/v11.0.8.13/common/include_target -I/usr/opalrt/v11.0.8.13/RT-LAB/include    -I_sharedutils  boost_and_two_level__1_sm_ehs_data.c
+opicc -c  -O2 -xHost -falign-functions=2 -diag-disable remark,warn,cpu-dispatch    -DUSE_RTMODEL -DMODEL=boost_and_two_level__1_sm_ehs -DRT=RT -DNUMST=2 -DTID01EQ=1 -DNCSTATES=11 -DMT=0 -DTERMFCN=1 -DMULTITASKING=0 -D_SIMULINK -DRTLAB -DOP_MATLABR2014B	 -DMAT_FILE=1 -DCLASSIC_INTERFACE=1 -DONESTEPFCN=0 -DMULTI_INSTANCE_CODE=0 -DUNIX -I/usr/opalrt/externals/include  -I. -I/usr/matlab/v8.4/simulink/include -I/usr/matlab/v8.4/extern/include -I/usr/matlab/v8.4/rtw/c/src -I/usr/matlab/v8.4/rtw/c/src/matrixmath -I/usr/matlab/v8.4/rtw/c/libsrc  -I/usr/matlab/v8.4/toolbox/simscape/include/drive -I/usr/matlab/v8.4/toolbox/simscape/include/mech -I/usr/matlab/v8.4/toolbox/simscape/include/foundation -I/usr/matlab/v8.4/toolbox/simscape/include/network_engine -I/usr/matlab/v8.4/toolbox/simscape/include/ne_sli -I/usr/matlab/v8.4/toolbox/dspblks/include -I/usr/matlab/v8.4/toolbox/simscape/include/compiler/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/sli/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/utils  -I/usr/opalrt/v11.0.8.13/common/include -I/usr/opalrt/v11.0.8.13/common/include_target -I/usr/opalrt/v11.0.8.13/RT-LAB/include    -I_sharedutils  model_main.c
+opicc -c  -O2 -xHost -falign-functions=2 -diag-disable remark,warn,cpu-dispatch    -DUSE_RTMODEL -DMODEL=boost_and_two_level__1_sm_ehs -DRT=RT -DNUMST=2 -DTID01EQ=1 -DNCSTATES=11 -DMT=0 -DTERMFCN=1 -DMULTITASKING=0 -D_SIMULINK -DRTLAB -DOP_MATLABR2014B	 -DMAT_FILE=1 -DCLASSIC_INTERFACE=1 -DONESTEPFCN=0 -DMULTI_INSTANCE_CODE=0 -DUNIX -I/usr/opalrt/externals/include  -I. -I/usr/matlab/v8.4/simulink/include -I/usr/matlab/v8.4/extern/include -I/usr/matlab/v8.4/rtw/c/src -I/usr/matlab/v8.4/rtw/c/src/matrixmath -I/usr/matlab/v8.4/rtw/c/libsrc  -I/usr/matlab/v8.4/toolbox/simscape/include/drive -I/usr/matlab/v8.4/toolbox/simscape/include/mech -I/usr/matlab/v8.4/toolbox/simscape/include/foundation -I/usr/matlab/v8.4/toolbox/simscape/include/network_engine -I/usr/matlab/v8.4/toolbox/simscape/include/ne_sli -I/usr/matlab/v8.4/toolbox/dspblks/include -I/usr/matlab/v8.4/toolbox/simscape/include/compiler/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/sli/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/utils  -I/usr/opalrt/v11.0.8.13/common/include -I/usr/opalrt/v11.0.8.13/common/include_target -I/usr/opalrt/v11.0.8.13/RT-LAB/include    -I_sharedutils  rtGetInf.c
+opicc -c  -O2 -xHost -falign-functions=2 -diag-disable remark,warn,cpu-dispatch    -DUSE_RTMODEL -DMODEL=boost_and_two_level__1_sm_ehs -DRT=RT -DNUMST=2 -DTID01EQ=1 -DNCSTATES=11 -DMT=0 -DTERMFCN=1 -DMULTITASKING=0 -D_SIMULINK -DRTLAB -DOP_MATLABR2014B	 -DMAT_FILE=1 -DCLASSIC_INTERFACE=1 -DONESTEPFCN=0 -DMULTI_INSTANCE_CODE=0 -DUNIX -I/usr/opalrt/externals/include  -I. -I/usr/matlab/v8.4/simulink/include -I/usr/matlab/v8.4/extern/include -I/usr/matlab/v8.4/rtw/c/src -I/usr/matlab/v8.4/rtw/c/src/matrixmath -I/usr/matlab/v8.4/rtw/c/libsrc  -I/usr/matlab/v8.4/toolbox/simscape/include/drive -I/usr/matlab/v8.4/toolbox/simscape/include/mech -I/usr/matlab/v8.4/toolbox/simscape/include/foundation -I/usr/matlab/v8.4/toolbox/simscape/include/network_engine -I/usr/matlab/v8.4/toolbox/simscape/include/ne_sli -I/usr/matlab/v8.4/toolbox/dspblks/include -I/usr/matlab/v8.4/toolbox/simscape/include/compiler/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/sli/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/utils  -I/usr/opalrt/v11.0.8.13/common/include -I/usr/opalrt/v11.0.8.13/common/include_target -I/usr/opalrt/v11.0.8.13/RT-LAB/include    -I_sharedutils  rtGetNaN.c
+opicc -c  -O2 -xHost -falign-functions=2 -diag-disable remark,warn,cpu-dispatch    -DUSE_RTMODEL -DMODEL=boost_and_two_level__1_sm_ehs -DRT=RT -DNUMST=2 -DTID01EQ=1 -DNCSTATES=11 -DMT=0 -DTERMFCN=1 -DMULTITASKING=0 -D_SIMULINK -DRTLAB -DOP_MATLABR2014B	 -DMAT_FILE=1 -DCLASSIC_INTERFACE=1 -DONESTEPFCN=0 -DMULTI_INSTANCE_CODE=0 -DUNIX -I/usr/opalrt/externals/include  -I. -I/usr/matlab/v8.4/simulink/include -I/usr/matlab/v8.4/extern/include -I/usr/matlab/v8.4/rtw/c/src -I/usr/matlab/v8.4/rtw/c/src/matrixmath -I/usr/matlab/v8.4/rtw/c/libsrc  -I/usr/matlab/v8.4/toolbox/simscape/include/drive -I/usr/matlab/v8.4/toolbox/simscape/include/mech -I/usr/matlab/v8.4/toolbox/simscape/include/foundation -I/usr/matlab/v8.4/toolbox/simscape/include/network_engine -I/usr/matlab/v8.4/toolbox/simscape/include/ne_sli -I/usr/matlab/v8.4/toolbox/dspblks/include -I/usr/matlab/v8.4/toolbox/simscape/include/compiler/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/sli/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/utils  -I/usr/opalrt/v11.0.8.13/common/include -I/usr/opalrt/v11.0.8.13/common/include_target -I/usr/opalrt/v11.0.8.13/RT-LAB/include    -I_sharedutils  /usr/matlab/v8.4/rtw/c/src/rt_logging.c
+opicc -c  -O2 -xHost -falign-functions=2 -diag-disable remark,warn,cpu-dispatch    -DUSE_RTMODEL -DMODEL=boost_and_two_level__1_sm_ehs -DRT=RT -DNUMST=2 -DTID01EQ=1 -DNCSTATES=11 -DMT=0 -DTERMFCN=1 -DMULTITASKING=0 -D_SIMULINK -DRTLAB -DOP_MATLABR2014B	 -DMAT_FILE=1 -DCLASSIC_INTERFACE=1 -DONESTEPFCN=0 -DMULTI_INSTANCE_CODE=0 -DUNIX -I/usr/opalrt/externals/include  -I. -I/usr/matlab/v8.4/simulink/include -I/usr/matlab/v8.4/extern/include -I/usr/matlab/v8.4/rtw/c/src -I/usr/matlab/v8.4/rtw/c/src/matrixmath -I/usr/matlab/v8.4/rtw/c/libsrc  -I/usr/matlab/v8.4/toolbox/simscape/include/drive -I/usr/matlab/v8.4/toolbox/simscape/include/mech -I/usr/matlab/v8.4/toolbox/simscape/include/foundation -I/usr/matlab/v8.4/toolbox/simscape/include/network_engine -I/usr/matlab/v8.4/toolbox/simscape/include/ne_sli -I/usr/matlab/v8.4/toolbox/dspblks/include -I/usr/matlab/v8.4/toolbox/simscape/include/compiler/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/sli/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/utils  -I/usr/opalrt/v11.0.8.13/common/include -I/usr/opalrt/v11.0.8.13/common/include_target -I/usr/opalrt/v11.0.8.13/RT-LAB/include    -I_sharedutils  rt_nonfinite.c
+opicc -c  -O2 -xHost -falign-functions=2 -diag-disable remark,warn,cpu-dispatch    -DUSE_RTMODEL -DMODEL=boost_and_two_level__1_sm_ehs -DRT=RT -DNUMST=2 -DTID01EQ=1 -DNCSTATES=11 -DMT=0 -DTERMFCN=1 -DMULTITASKING=0 -D_SIMULINK -DRTLAB -DOP_MATLABR2014B	 -DMAT_FILE=1 -DCLASSIC_INTERFACE=1 -DONESTEPFCN=0 -DMULTI_INSTANCE_CODE=0 -DUNIX -I/usr/opalrt/externals/include  -I. -I/usr/matlab/v8.4/simulink/include -I/usr/matlab/v8.4/extern/include -I/usr/matlab/v8.4/rtw/c/src -I/usr/matlab/v8.4/rtw/c/src/matrixmath -I/usr/matlab/v8.4/rtw/c/libsrc  -I/usr/matlab/v8.4/toolbox/simscape/include/drive -I/usr/matlab/v8.4/toolbox/simscape/include/mech -I/usr/matlab/v8.4/toolbox/simscape/include/foundation -I/usr/matlab/v8.4/toolbox/simscape/include/network_engine -I/usr/matlab/v8.4/toolbox/simscape/include/ne_sli -I/usr/matlab/v8.4/toolbox/dspblks/include -I/usr/matlab/v8.4/toolbox/simscape/include/compiler/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/sli/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/utils  -I/usr/opalrt/v11.0.8.13/common/include -I/usr/opalrt/v11.0.8.13/common/include_target -I/usr/opalrt/v11.0.8.13/RT-LAB/include    -I_sharedutils  /usr/matlab/v8.4/rtw/c/src/rt_printf.c
+opicc -c  -O2 -xHost -falign-functions=2 -diag-disable remark,warn,cpu-dispatch    -DUSE_RTMODEL -DMODEL=boost_and_two_level__1_sm_ehs -DRT=RT -DNUMST=2 -DTID01EQ=1 -DNCSTATES=11 -DMT=0 -DTERMFCN=1 -DMULTITASKING=0 -D_SIMULINK -DRTLAB -DOP_MATLABR2014B	 -DMAT_FILE=1 -DCLASSIC_INTERFACE=1 -DONESTEPFCN=0 -DMULTI_INSTANCE_CODE=0 -DUNIX -I/usr/opalrt/externals/include  -I. -I/usr/matlab/v8.4/simulink/include -I/usr/matlab/v8.4/extern/include -I/usr/matlab/v8.4/rtw/c/src -I/usr/matlab/v8.4/rtw/c/src/matrixmath -I/usr/matlab/v8.4/rtw/c/libsrc  -I/usr/matlab/v8.4/toolbox/simscape/include/drive -I/usr/matlab/v8.4/toolbox/simscape/include/mech -I/usr/matlab/v8.4/toolbox/simscape/include/foundation -I/usr/matlab/v8.4/toolbox/simscape/include/network_engine -I/usr/matlab/v8.4/toolbox/simscape/include/ne_sli -I/usr/matlab/v8.4/toolbox/dspblks/include -I/usr/matlab/v8.4/toolbox/simscape/include/compiler/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/sli/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/utils  -I/usr/opalrt/v11.0.8.13/common/include -I/usr/opalrt/v11.0.8.13/common/include_target -I/usr/opalrt/v11.0.8.13/RT-LAB/include    -I_sharedutils  /usr/matlab/v8.4/rtw/c/src/rt_sim.c
+opicc -c  -O2 -xHost -falign-functions=2 -diag-disable remark,warn,cpu-dispatch    -DUSE_RTMODEL -DMODEL=boost_and_two_level__1_sm_ehs -DRT=RT -DNUMST=2 -DTID01EQ=1 -DNCSTATES=11 -DMT=0 -DTERMFCN=1 -DMULTITASKING=0 -D_SIMULINK -DRTLAB -DOP_MATLABR2014B	 -DMAT_FILE=1 -DCLASSIC_INTERFACE=1 -DONESTEPFCN=0 -DMULTI_INSTANCE_CODE=0 -DUNIX -I/usr/opalrt/externals/include  -I. -I/usr/matlab/v8.4/simulink/include -I/usr/matlab/v8.4/extern/include -I/usr/matlab/v8.4/rtw/c/src -I/usr/matlab/v8.4/rtw/c/src/matrixmath -I/usr/matlab/v8.4/rtw/c/libsrc  -I/usr/matlab/v8.4/toolbox/simscape/include/drive -I/usr/matlab/v8.4/toolbox/simscape/include/mech -I/usr/matlab/v8.4/toolbox/simscape/include/foundation -I/usr/matlab/v8.4/toolbox/simscape/include/network_engine -I/usr/matlab/v8.4/toolbox/simscape/include/ne_sli -I/usr/matlab/v8.4/toolbox/dspblks/include -I/usr/matlab/v8.4/toolbox/simscape/include/compiler/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/sli/c -I/usr/matlab/v8.4/toolbox/simscape/include/engine/core/c -I/usr/matlab/v8.4/toolbox/simscape/include/utils  -I/usr/opalrt/v11.0.8.13/common/include -I/usr/opalrt/v11.0.8.13/common/include_target -I/usr/opalrt/v11.0.8.13/RT-LAB/include    -I_sharedutils  sfun_discreteVariableDelay.c
 ### Linking ...
-g++  -Wl,-rpath='/usr/opalrt/v11.0.8.13/common/bin' -Wl,'-rpath=/usr/opalrt/v11.0.8.13/common/bin/x32' -Wl,-rpath='/opt/intel/Compiler/11.1/072/lib/ia32' -Wl,-rpath='/opt/intel/Compiler/11.1/056/lib/ia32' -L. -L/usr/opalrt/v11.0.8.13/RT-LAB/lib -L/usr/opalrt/v11.0.8.13/common/lib -L/usr/opalrt/v11.0.8.13/common/lib/redhawk -L/usr/opalrt/v11.0.8.13/common/bin -L/usr/opalrt/v11.0.8.13/common/bin/x32 -L/usr/opalrt/externals/lib   -L/usr/matlab/v8.4/toolbox/dspblks/lib/redhawk	 -L/usr/matlab/v8.4/toolbox/simscape/lib/redhawk   -o boost_and_two_level__1_sm_ehs boost_and_two_level__1_sm_ehs.o boost_and_two_level__1_sm_ehs_data.o model_main.o rtGetInf.o rtGetNaN.o rt_logging.o rt_nonfinite.o rt_printf.o rt_sim.o sfun_discreteVariableDelay.o   -lOpalIoFcnOP7160R2014b -lOpalIoCtrlOP7160R2014b -lOpalIoFcnOP7160R2014b -lRtEvents_RT402520R2014Br -lOpalRTER2014B -lOpalOP7160 -lOpalOpSystem -lOpalRTER2014B -lOpalIoSysR2014b -lEHS_cfgR2014b -lEfsSolver_cfgR2014b -lOpalSimCore -lSimCoreLib -lSyncExchangerLib -lConnectionLib -lConnectionFactoryLib -lOpalSfunR2014b -lOpalR2014b -lBlocksRT-2014b -lOpalCore -lOpalOhci -lOpalCore -llicenseRH32 -lSimulink -lInfrastructure  -lNetwork -lKLU -lNumeric -lFramework -lSystem -lMatio -luuid -lpthread -lOpalSimCore -lSimCoreLib -lSyncExchangerLib -lConnectionLib -lConnectionFactoryLib -lOpalUtils -ldspblks -lsimscape -lpthread -lm -ldl -lutil -lrt -limf -lirc     /usr/matlab/v8.4/rtw/c/libsrc/rtwlibr_redhawk.a 
+opicpc  -Wl,-rpath='/usr/opalrt/v11.0.8.13/common/bin' -Wl,'-rpath=/usr/opalrt/v11.0.8.13/common/bin/x32' -Wl,-rpath='/opt/intel/Compiler/11.1/072/lib/ia32' -Wl,-rpath='/opt/intel/Compiler/11.1/056/lib/ia32' -diag-disable remark -L. -L/usr/opalrt/v11.0.8.13/RT-LAB/lib -L/usr/opalrt/v11.0.8.13/common/lib -L/usr/opalrt/v11.0.8.13/common/lib/redhawk -L/usr/opalrt/v11.0.8.13/common/bin -L/usr/opalrt/v11.0.8.13/common/bin/x32 -L/usr/opalrt/externals/lib   -L/usr/matlab/v8.4/toolbox/dspblks/lib/redhawk	 -L/usr/matlab/v8.4/toolbox/simscape/lib/redhawk   -o boost_and_two_level__1_sm_ehs boost_and_two_level__1_sm_ehs.o boost_and_two_level__1_sm_ehs_data.o model_main.o rtGetInf.o rtGetNaN.o rt_logging.o rt_nonfinite.o rt_printf.o rt_sim.o sfun_discreteVariableDelay.o   -lOpalIoFcnOP7160R2014b -lOpalIoCtrlOP7160R2014b -lOpalIoFcnOP7160R2014b -lRtEvents_RT402520R2014Br -lOpalRTER2014B -lOpalOP7160 -lOpalOpSystem -lOpalRTER2014B artemis_RT705931r2014br.a -lOpalIoSysR2014b -lEHS_cfgR2014b -lEfsSolver_cfgR2014b -lOpalSimCore -lSimCoreLib -lSyncExchangerLib -lConnectionLib -lConnectionFactoryLib -lOpalSfunR2014b -lOpalR2014b -lBlocksRT-2014b -lOpalCore -lOpalOhci -lOpalCore -llicenseRH32 -lSimulink -lInfrastructure  -lNetwork -lKLU -lNumeric -lFramework -lSystem -lMatio -luuid -lpthread -lOpalSimCore -lSimCoreLib -lSyncExchangerLib -lConnectionLib -lConnectionFactoryLib -lOpalUtils -ldspblks -lsimscape -lpthread -lm -ldl -lutil -lrt     /usr/matlab/v8.4/rtw/c/libsrc/rtwlibr_redhawk.a 
 chmod a+x boost_and_two_level__1_sm_ehs
 ### Created executable: boost_and_two_level__1_sm_ehs
 
-boost_and_two_level__1_sm_ehs : Building subsystem duration : 00h:00m:03s
+boost_and_two_level__1_sm_ehs : Building subsystem duration : 00h:00m:04s
 
-Building model total duration : 00h:00m:03s
+Building model total duration : 00h:00m:04s
 -------------------- Completed successfully --------------------
 
 -------------------- Transferring the built model --------------------
@@ -328,8 +378,8 @@ Transferring in ascii mode /home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_w
 File transfer duration : 00h:00m:01s
 -------------------- Completed successfully --------------------
 
-End at : Saturday, May 20, 2017, 23:02:07
+End at : Monday, May 22, 2017, 20:50:47
 
-Compilation duration : 00h:01m:39s
+Compilation duration : 00h:02m:12s
 
 Updating status for next build...OK

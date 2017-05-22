@@ -62,11 +62,11 @@ MODULES         = boost_and_two_level__1_sm_ehs_data.c rtGetInf.c rtGetNaN.c rt_
 MAKEFILE        = boost_and_two_level__1_sm_ehs.mk
 MATLAB_ROOT     = C:\Program Files (x86)\MATLAB\R2014b
 ALT_MATLAB_ROOT = C:\PROGRA~2\MATLAB\R2014b
-S_FUNCTIONS     = sfun_discreteVariableDelay.c OP_SEND.c RECV_Param.c sfun_fct_op7160ex1_load_in.c sfun_efs_solver_cfg.c sfun_DBL2SFP.c sfun_fct_op7160ex1_send.c sfun_fct_op7160ex1_recv.c opmonitor.c sfun_SFP2DBL.c sfun_op7160ex1_pwm_in.c opwritefile.c rte_conversion.c rte_logical_operator.c rte_svpwm.c rte_ground.c rte_conversion_ophsdio.c sfun_op7160ex1_event_generator.c rte_period_meter.c optrigger.c sfun_ctrl_op7160ex1.c
+S_FUNCTIONS     = sfun_discreteVariableDelay.c OP_SEND.c RECV_Param.c sfun_fct_op7160ex1_load_in.c sfun_efs_solver_cfg.c sfun_DBL2SFP.c sfun_fct_op7160ex1_send.c sfun_fct_op7160ex1_recv.c opmonitor.c sfun_SFP2DBL.c sfun_op7160ex1_event_detector.c opwritefile.c rte_conversion.c rte_logical_operator.c rte_ground.c rte_conversion_ophsdio.c sfun_op7160ex1_event_generator.c rte_period_meter.c optrigger.c sfun_ctrl_op7160ex1.c
 SOLVER          = 
 NUMST           = 2
 TID01EQ         = 1
-NCSTATES        = 8
+NCSTATES        = 11
 COMPUTER        = PCWIN
 BUILDARGS       =  EXT_MODE=0 EXTMODE_STATIC_ALLOC=0 TMW_EXTMODE_TESTING=0 EXTMODE_STATIC_ALLOC_SIZE=1000000 EXTMODE_TRANSPORT=0
 MULTITASKING    = 0

@@ -277,6 +277,10 @@ int OpalSnapshot_Copy_DWork(void * src, void * dst) {
    memcpy(&pDst->RTEConversion1_RWORK, &pSrc->RTEConversion1_RWORK, eltSize);
    size += eltSize;
 
+   eltSize = sizeof(pSrc->RTEConversion2_RWORK);
+   memcpy(&pDst->RTEConversion2_RWORK, &pSrc->RTEConversion2_RWORK, eltSize);
+   size += eltSize;
+
    eltSize = sizeof(pSrc->SFunction_RWORK);
    memcpy(&pDst->SFunction_RWORK, &pSrc->SFunction_RWORK, eltSize);
    size += eltSize;
@@ -321,20 +325,20 @@ int OpalSnapshot_Copy_DWork(void * src, void * dst) {
    memcpy(&pDst->SFunction_IWORK, &pSrc->SFunction_IWORK, eltSize);
    size += eltSize;
 
-   eltSize = sizeof(pSrc->SFunction_IWORK_b);
-   memcpy(&pDst->SFunction_IWORK_b, &pSrc->SFunction_IWORK_b, eltSize);
+   eltSize = sizeof(pSrc->SFunction_IWORK_h);
+   memcpy(&pDst->SFunction_IWORK_h, &pSrc->SFunction_IWORK_h, eltSize);
    size += eltSize;
 
-   eltSize = sizeof(pSrc->SFunction_IWORK_j);
-   memcpy(&pDst->SFunction_IWORK_j, &pSrc->SFunction_IWORK_j, eltSize);
+   eltSize = sizeof(pSrc->SFunction_IWORK_i);
+   memcpy(&pDst->SFunction_IWORK_i, &pSrc->SFunction_IWORK_i, eltSize);
    size += eltSize;
 
    eltSize = sizeof(pSrc->SFunction_IWORK_o);
    memcpy(&pDst->SFunction_IWORK_o, &pSrc->SFunction_IWORK_o, eltSize);
    size += eltSize;
 
-   eltSize = sizeof(pSrc->SFunction_IWORK_m);
-   memcpy(&pDst->SFunction_IWORK_m, &pSrc->SFunction_IWORK_m, eltSize);
+   eltSize = sizeof(pSrc->SFunction_IWORK_c);
+   memcpy(&pDst->SFunction_IWORK_c, &pSrc->SFunction_IWORK_c, eltSize);
    size += eltSize;
 
    eltSize = sizeof(pSrc->TransportDelay_IWORK);
@@ -349,12 +353,12 @@ int OpalSnapshot_Copy_DWork(void * src, void * dst) {
    memcpy(&pDst->SFunction_IWORK_n, &pSrc->SFunction_IWORK_n, eltSize);
    size += eltSize;
 
-   eltSize = sizeof(pSrc->SFunction_IWORK_bd);
-   memcpy(&pDst->SFunction_IWORK_bd, &pSrc->SFunction_IWORK_bd, eltSize);
+   eltSize = sizeof(pSrc->SFunction_IWORK_b);
+   memcpy(&pDst->SFunction_IWORK_b, &pSrc->SFunction_IWORK_b, eltSize);
    size += eltSize;
 
-   eltSize = sizeof(pSrc->SFunction_IWORK_jw);
-   memcpy(&pDst->SFunction_IWORK_jw, &pSrc->SFunction_IWORK_jw, eltSize);
+   eltSize = sizeof(pSrc->SFunction_IWORK_j);
+   memcpy(&pDst->SFunction_IWORK_j, &pSrc->SFunction_IWORK_j, eltSize);
    size += eltSize;
 
    eltSize = sizeof(pSrc->SFunction_IWORK_os);
@@ -415,6 +419,14 @@ int OpalSnapshot_Copy_DWork(void * src, void * dst) {
 
    eltSize = sizeof(pSrc->AutomaticGainControl_MODE);
    memcpy(&pDst->AutomaticGainControl_MODE, &pSrc->AutomaticGainControl_MODE, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->TrueRMS_a);
+   memcpy(&pDst->TrueRMS_a, &pSrc->TrueRMS_a, eltSize);
+   size += eltSize;
+
+   eltSize = sizeof(pSrc->RMS_l);
+   memcpy(&pDst->RMS_l, &pSrc->RMS_l, eltSize);
    size += eltSize;
 
    eltSize = sizeof(pSrc->TrueRMS_i);

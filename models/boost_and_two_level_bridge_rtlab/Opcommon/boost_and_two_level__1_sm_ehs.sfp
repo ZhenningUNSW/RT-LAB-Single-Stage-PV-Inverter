@@ -1,8 +1,8 @@
 [S-Function files]
 boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI/IOTypeSel_LoadIn=sfun_fct_op7160ex1_load_in
-boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI/rtlab_io_block=sfun_op7160ex1_pwm_in
+boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI/rtlab_io_block=sfun_op7160ex1_event_detector
 boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1/IOTypeSel_LoadIn=sfun_fct_op7160ex1_load_in
-boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1/rtlab_io_block=sfun_op7160ex1_pwm_in
+boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1/rtlab_io_block=sfun_op7160ex1_event_detector
 boost_and_two_level__1_sm_ehs/SM_eHS/OpCtrl=sfun_ctrl_op7160ex1
 boost_and_two_level__1_sm_ehs/SM_eHS/Outputs_eHS1_Recv=sfun_fct_op7160ex1_recv
 boost_and_two_level__1_sm_ehs/SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/DataIn Send=sfun_fct_op7160ex1_send
@@ -18,10 +18,10 @@ boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/Inverter Control/PLL & Mea
 boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/MATLAB Function/ SFunction =sf_sfun
 boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Conversion=rte_conversion
 boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Conversion1=rte_conversion
+boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Conversion2=rte_conversion
 boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Ground=rte_ground
 boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Logical Operator1=rte_logical_operator
 boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Period Meter=rte_period_meter
-boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE SPWM=rte_svpwm
 [S-Function list]
 boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI/IOTypeSel_LoadIn=1
 boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI/rtlab_io_block=1
@@ -57,10 +57,10 @@ boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/Inverter Control/PLL & Mea
 boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/MATLAB Function/ SFunction =0
 boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Conversion=0
 boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Conversion1=0
+boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Conversion2=0
 boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Ground=0
 boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Logical Operator1=0
 boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Period Meter=0
-boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE SPWM=0
 [S-Function modules]
 boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI/IOTypeSel_LoadIn=''
 boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI/rtlab_io_block=''
@@ -81,25 +81,29 @@ boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/Inverter Control/PLL & Mea
 boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/MATLAB Function/ SFunction =''
 boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Conversion=''
 boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Conversion1=''
+boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Conversion2=''
 boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Ground=''
 boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Logical Operator1=''
 boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Period Meter=''
-boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE SPWM=''
 [S-Function parameters]
 boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI/IOTypeSel_LoadIn/P3=LoadIn port width [1..250]
 boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI/IOTypeSel_LoadIn/P4=Data type
-boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI/rtlab_io_block/P2=Slot Infos
+boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI/rtlab_io_block/P2=Slot infos
 boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI/rtlab_io_block/P3=Sample Time (s)
-boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI/rtlab_io_block/P4=DataOut Port Number
-boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI/rtlab_io_block/P5=numchan-internal
-boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI/rtlab_io_block/P6=Available channels
+boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI/rtlab_io_block/P5=Size
+boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI/rtlab_io_block/P6=Number of channels
+boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI/rtlab_io_block/P7=numwidth - internal
+boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI/rtlab_io_block/P8=Time unit
+boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI/rtlab_io_block/P9=Maximum number of channels controlled by this block
 boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1/IOTypeSel_LoadIn/P3=LoadIn port width [1..250]
 boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1/IOTypeSel_LoadIn/P4=Data type
-boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1/rtlab_io_block/P2=Slot Infos
+boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1/rtlab_io_block/P2=Slot infos
 boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1/rtlab_io_block/P3=Sample Time (s)
-boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1/rtlab_io_block/P4=DataOut Port Number
-boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1/rtlab_io_block/P5=numchan-internal
-boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1/rtlab_io_block/P6=Available channels
+boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1/rtlab_io_block/P5=Size
+boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1/rtlab_io_block/P6=Number of channels
+boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1/rtlab_io_block/P7=numwidth - internal
+boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1/rtlab_io_block/P8=Time unit
+boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1/rtlab_io_block/P9=Maximum number of channels controlled by this block
 boost_and_two_level__1_sm_ehs/SM_eHS/OpCtrl/P1=Controller Name
 boost_and_two_level__1_sm_ehs/SM_eHS/OpCtrl/P10=loadinport
 boost_and_two_level__1_sm_ehs/SM_eHS/OpCtrl/P11=Board Type
