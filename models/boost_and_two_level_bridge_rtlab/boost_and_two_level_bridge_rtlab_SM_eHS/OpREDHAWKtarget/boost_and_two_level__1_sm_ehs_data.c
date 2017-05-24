@@ -3,9 +3,9 @@
  *
  * Code generation for model "boost_and_two_level__1_sm_ehs".
  *
- * Model version              : 1.1155
+ * Model version              : 1.1162
  * Simulink Coder version : 8.7 (R2014b) 08-Sep-2014
- * C source code generated on : Mon May 22 20:50:22 2017
+ * C source code generated on : Wed May 24 22:51:59 2017
  *
  * Target selection: rtlab_rtmodel.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -397,7 +397,7 @@ P_boost_and_two_level__1_sm_ehs_T boost_and_two_level__1_sm_ehs_P = {
                                         * Referenced by: '<S60>/S-Function'
                                         */
 
-  /*  Computed Parameter: SFunction_P1_Size_p
+  /*  Computed Parameter: SFunction_P1_Size_n
    * Referenced by: '<S18>/S-Function'
    */
   { 1.0, 1.0 },
@@ -413,19 +413,19 @@ P_boost_and_two_level__1_sm_ehs_T boost_and_two_level__1_sm_ehs_P = {
   /*  Expression: InitialConditions
    * Referenced by: '<S18>/S-Function'
    */
-  { 1000.0, 25.0, 1.0, 0.0, 49.0, 48.0, 52.0, 53.0, 53.0, 9.0, 1.0, 3.0, 12.0,
+  { 1000.0, 25.0, 1.0, 0.0, 49.0, 48.0, 52.0, 53.0, 53.0, 52.0, 49.0, 3.0, 12.0,
     13.0, 0.0, 2.0, 48.0, 49.0, 50.0, 51.0, 48.0, 49.0, 50.0, 51.0, 52.0, 53.0,
-    54.0, 54.0, 56.0, 57.0, 58.0, 59.0, 60.0, 61.0, 62.0, 63.0, 0.0066, 0.33,
-    0.066, 0.004125, 0.0048529, 1.0, 0.005, 0.005, 0.1, 0.1, 0.1, 0.1, 0.005,
-    0.1, 0.1, 0.1, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0,
-    1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 1.65, 1.65, 1.65, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+    54.0, 54.0, 56.0, 57.0, 58.0, 59.0, 60.0, 61.0, 62.0, 63.0, 0.0063462, 0.33,
+    0.053848, 0.0048614, 0.0048614, 0.066, 0.0063462, 0.005, 0.1, 0.1, 0.1, 0.1,
+    0.005, 0.1, 0.1, 0.1, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0,
+    1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 1.65, 1.65, 1.65, 1.65, 0.0, 0.0, 0.0,
     0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
-    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 3.3, 3.3, 3.3, 3.3, 3.3, 5.0, 5.0, 5.0, 5.0,
-    5.0, 5.0, 5.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0,
-    16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 0.0, 0.0, 0.0,
-    0.0, 0.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -5.0, -16.0, -16.0, -16.0,
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 3.3, 3.3, 3.3, 3.3, 3.3, 3.3, 3.3,
+    5.0, 5.0, 5.0, 5.0, 5.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0,
+    16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 0.0,
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -5.0, -5.0, -5.0, -5.0, -5.0, -16.0, -16.0,
     -16.0, -16.0, -16.0, -16.0, -16.0, -16.0, -16.0, -16.0, -16.0, -16.0, -16.0,
-    -16.0, -16.0, -16.0, -16.0, -16.0, -16.0, 2.0 },
+    -16.0, -16.0, -16.0, -16.0, -16.0, -16.0, -16.0, 2.0 },
   0.5,                                 /* Expression: .5
                                         * Referenced by: '<S11>/Relay1'
                                         */
@@ -713,7 +713,7 @@ P_boost_and_two_level__1_sm_ehs_T boost_and_two_level__1_sm_ehs_P = {
     109.0, 101.0, 44.0, 97.0, 110.0, 111.0, 116.0, 104.0, 101.0, 114.0, 95.0,
     101.0, 118.0, 101.0, 110.0, 116.0, 95.0, 110.0, 97.0, 109.0, 101.0 },
 
-  /*  Computed Parameter: SFunction_P1_Size_pu
+  /*  Computed Parameter: SFunction_P1_Size_f
    * Referenced by: '<S61>/S-Function'
    */
   { 1.0, 1.0 },
@@ -730,7 +730,7 @@ P_boost_and_two_level__1_sm_ehs_T boost_and_two_level__1_sm_ehs_P = {
                                         * Referenced by: '<S3>/Memory2'
                                         */
 
-  /*  Computed Parameter: SFunction_P1_Size_b
+  /*  Computed Parameter: SFunction_P1_Size_m
    * Referenced by: '<S62>/S-Function'
    */
   { 1.0, 1.0 },
@@ -756,7 +756,7 @@ P_boost_and_two_level__1_sm_ehs_T boost_and_two_level__1_sm_ehs_P = {
                                         * Referenced by: '<S3>/Memory'
                                         */
 
-  /*  Computed Parameter: SFunction_P1_Size_j
+  /*  Computed Parameter: SFunction_P1_Size_b
    * Referenced by: '<S63>/S-Function'
    */
   { 1.0, 1.0 },
@@ -770,7 +770,7 @@ P_boost_and_two_level__1_sm_ehs_T boost_and_two_level__1_sm_ehs_P = {
                                         * Referenced by: '<S3>/Memory3'
                                         */
 
-  /*  Computed Parameter: SFunction_P1_Size_ad
+  /*  Computed Parameter: SFunction_P1_Size_nb
    * Referenced by: '<S64>/S-Function'
    */
   { 1.0, 1.0 },
@@ -1491,8 +1491,45 @@ P_boost_and_two_level__1_sm_ehs_T boost_and_two_level__1_sm_ehs_P = {
   2.0E-5,                              /* Expression: sampleTime
                                         * Referenced by: '<S13>/RTE Conversion2'
                                         */
-  1.0,                                 /* Expression: 1
-                                        * Referenced by: '<S13>/Switch'
+
+  /*  Computed Parameter: RTESwitch_P1_Size
+   * Referenced by: '<S13>/RTE Switch'
+   */
+  { 1.0, 1.0 },
+  1.0,                                 /* Expression: criteria
+                                        * Referenced by: '<S13>/RTE Switch'
+                                        */
+
+  /*  Computed Parameter: RTESwitch_P2_Size
+   * Referenced by: '<S13>/RTE Switch'
+   */
+  { 1.0, 1.0 },
+  1.0,                                 /* Expression: threshold
+                                        * Referenced by: '<S13>/RTE Switch'
+                                        */
+
+  /*  Computed Parameter: RTESwitch_P3_Size
+   * Referenced by: '<S13>/RTE Switch'
+   */
+  { 1.0, 1.0 },
+  1.0,                                 /* Expression: interpolate
+                                        * Referenced by: '<S13>/RTE Switch'
+                                        */
+
+  /*  Computed Parameter: RTESwitch_P4_Size
+   * Referenced by: '<S13>/RTE Switch'
+   */
+  { 1.0, 1.0 },
+  10.0,                                /* Expression: nbMaxEvents
+                                        * Referenced by: '<S13>/RTE Switch'
+                                        */
+
+  /*  Computed Parameter: RTESwitch_P5_Size
+   * Referenced by: '<S13>/RTE Switch'
+   */
+  { 1.0, 1.0 },
+  1.0,                                 /* Expression: switchType
+                                        * Referenced by: '<S13>/RTE Switch'
                                         */
 
   /*  Computed Parameter: RTELogicalOperator1_P1_Size

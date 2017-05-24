@@ -3,7 +3,7 @@
     <General>
         <att_name>pv_inverter</att_name>
         <att_description>This is a project!</att_description>
-        <att_ip_address>192.168.5.200:25260</att_ip_address>
+        <att_ip_address>192.168.5.200:25254</att_ip_address>
         <att_hashcode>28D029B2-E2C8-4D1B-B94C-13BA9571B94C</att_hashcode>
         <att_autosave>ON</att_autosave>
         <att_filename>C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\pv_inverter.llp</att_filename>

@@ -31730,3 +31730,1216 @@ The command will be ignored.
 
 Please see the compilation results display for more information.
 2017-5-22 20h31m33s:CtrlException.cpp: CtrlException, code 13, msg Internal error: Unable to access model state mutex in SetRunState
+2017-5-24 21h24m9s:Controller.cpp: ------- NEW CONTROLLER STARTED (pid 24184) ------
+2017-5-24 21h24m9s:Controller.cpp: new client: 24920
+2017-5-24 21h24m9s:CClient.cpp: Creating new client ID: 11172
+2017-5-24 21h24m9s:CClient.cpp: clientThread started with port:932
+2017-5-24 21h24m9s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2017-5-24 21h24m9s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 15108
+2017-5-24 21h24m10s:Controller.cpp: API function call : Get model list changes
+2017-5-24 21h24m10s:Controller.cpp: API function call : COMMAND Project ApiSync
+2017-5-24 21h24m10s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2017-5-24 21h24m10s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2017-5-24 21h24m10s:Controller.cpp: API function call : SET ATTRIBUTES
+2017-5-24 21h24m10s:Controller.cpp: API function call : GetSystemControl (true)
+2017-5-24 21h24m10s:Controller.cpp: API function call : GetSystemControl (false)
+2017-5-24 21h24m10s:Controller.cpp: API function call : GetParamControl (true)
+2017-5-24 21h24m10s:Controller.cpp: API function call : GetParamControl (false)
+2017-5-24 21h24m10s:Controller.cpp: API function call : Take control of configurations, prio 127
+2017-5-24 21h24m10s:Controller.cpp: API function call : SET ATTRIBUTES
+2017-5-24 21h24m10s:Controller.cpp: API function call : Release control of configurations
+2017-5-24 21h24m10s:Controller.cpp: API function call : Release control of the system
+2017-5-24 21h24m10s:Controller.cpp: API function call : SET ATTRIBUTES
+2017-5-24 21h24m10s:Controller.cpp: new client: 24920
+2017-5-24 21h24m10s:CClient.cpp: Creating new client ID: 17604
+2017-5-24 21h24m10s:CClient.cpp: clientThread started with port:1452
+2017-5-24 21h24m10s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2017-5-24 21h24m10s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 15108
+2017-5-24 21h24m10s:Controller.cpp: API function call : Get model list changes
+2017-5-24 21h24m10s:Controller.cpp: API function call : COMMAND Project ApiSync
+2017-5-24 21h24m10s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2017-5-24 21h24m10s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2017-5-24 21h24m10s:Controller.cpp: API function call : SET ATTRIBUTES
+2017-5-24 21h24m10s:Controller.cpp: API function call : NotificationConnect
+2017-5-24 21h24m10s:Controller.cpp: pClient->notifCommSock = 1508
+2017-5-24 21h24m10s:Controller.cpp: API function call : SetEventInterest
+2017-5-24 21h24m10s:Controller.cpp: API function call : GET_CHILDREN Project
+2017-5-24 21h24m10s:Controller.cpp: API function call : GET_CHILDREN Model List
+2017-5-24 21h24m10s:Controller.cpp: API function call : NotificationConnect
+2017-5-24 21h24m10s:Controller.cpp: pClient->notifCommSock = 1500
+2017-5-24 21h24m10s:Controller.cpp: API function call : SetEventInterest
+2017-5-24 21h24m10s:Controller.cpp: API function call : GET_CHILDREN Environment Variable List
+2017-5-24 21h24m10s:Controller.cpp: API function call : COMMAND Selection Remove
+2017-5-24 21h24m10s:Controller.cpp: API function call : COMMAND Selection Add
+2017-5-24 21h24m10s:Controller.cpp: API function call : SetEventInterest
+2017-5-24 21h24m10s:Controller.cpp: API function call : GET_CHILDREN Environment Variable List
+2017-5-24 21h24m10s:Controller.cpp: API function call : COMMAND Selection Remove
+2017-5-24 21h24m10s:Controller.cpp: API function call : COMMAND Selection Add
+2017-5-24 21h24m10s:Controller.cpp: API function call : GET_CHILDREN Missing Model List
+2017-5-24 21h24m10s:Controller.cpp: API function call : SET ATTRIBUTES
+2017-5-24 21h24m10s:Controller.cpp: API function call : COMMAND Selection Remove
+2017-5-24 21h24m10s:Controller.cpp: API function call : COMMAND Selection Add
+2017-5-24 21h24m10s:Controller.cpp: API function call : RegisterDisplay
+2017-5-24 21h24m11s:Controller.cpp: new client: 24920
+2017-5-24 21h24m11s:CClient.cpp: Creating new client ID: 19904
+2017-5-24 21h24m11s:CClient.cpp: clientThread started with port:1540
+2017-5-24 21h24m11s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2017-5-24 21h24m11s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 15108
+2017-5-24 21h24m11s:Controller.cpp: API function call : Get model list changes
+2017-5-24 21h24m11s:Controller.cpp: API function call : COMMAND Project ApiSync
+2017-5-24 21h24m11s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2017-5-24 21h24m11s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2017-5-24 21h24m11s:Controller.cpp: API function call : SET ATTRIBUTES
+2017-5-24 21h24m11s:Controller.cpp: API function call : COMMAND Selection Remove
+2017-5-24 21h24m11s:Controller.cpp: API function call : COMMAND Selection Add
+2017-5-24 21h24m11s:Controller.cpp: API function call : RegisterDisplay
+2017-5-24 21h24m11s:Controller.cpp: new client: 24920
+2017-5-24 21h24m11s:CClient.cpp: Creating new client ID: 20892
+2017-5-24 21h24m11s:CClient.cpp: clientThread started with port:1576
+2017-5-24 21h24m11s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2017-5-24 21h24m11s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 15108
+2017-5-24 21h24m11s:Controller.cpp: API function call : Get model list changes
+2017-5-24 21h24m11s:Controller.cpp: API function call : COMMAND Project ApiSync
+2017-5-24 21h24m11s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2017-5-24 21h24m11s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2017-5-24 21h24m11s:Controller.cpp: API function call : SET ATTRIBUTES
+2017-5-24 21h24m11s:Controller.cpp: new client: 24920
+2017-5-24 21h24m11s:CClient.cpp: Creating new client ID: 22356
+2017-5-24 21h24m11s:CClient.cpp: clientThread started with port:1628
+2017-5-24 21h24m11s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2017-5-24 21h24m11s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 15108
+2017-5-24 21h24m11s:Controller.cpp: API function call : Get model list changes
+2017-5-24 21h24m11s:Controller.cpp: API function call : COMMAND Project ApiSync
+2017-5-24 21h24m11s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2017-5-24 21h24m11s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2017-5-24 21h24m11s:Controller.cpp: API function call : SET ATTRIBUTES
+2017-5-24 21h24m42s:Controller.cpp: new client: 24920
+2017-5-24 21h24m42s:CClient.cpp: Creating new client ID: 8620
+2017-5-24 21h24m42s:CClient.cpp: clientThread started with port:596
+2017-5-24 21h24m42s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2017-5-24 21h24m42s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 15108
+2017-5-24 21h24m42s:Controller.cpp: API function call : Get model list changes
+2017-5-24 21h24m42s:Controller.cpp: API function call : COMMAND Project ApiSync
+2017-5-24 21h24m42s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2017-5-24 21h24m42s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2017-5-24 21h24m42s:Controller.cpp: API function call : SET ATTRIBUTES
+2017-5-24 21h24m42s:Controller.cpp: API function call : COMMAND Selection Remove
+2017-5-24 21h24m42s:Controller.cpp: API function call : COMMAND Selection Add
+2017-5-24 21h24m42s:Controller.cpp: API function call : SET ATTRIBUTES
+2017-5-24 21h24m42s:Controller.cpp: API function call : COMMAND Matlab Handler Open
+2017-5-24 21h24m42s:Service Matlab/CommandsProcessor found
+2017-5-24 21h24m52s:MatlabHandler - createConnection: create connection has been successful with Matlab version = 8.4
+2017-5-24 21h24m52s:Controller.cpp: API function call : COMMAND Matlab Handler Execute
+2017-5-24 21h24m52s:Controller.cpp: API function call : COMMAND Matlab Handler Execute
+2017-5-24 21h24m58s:Controller.cpp: API function call : COMMAND Matlab Handler Load
+2017-5-24 21h24m59s:MatlabHandler - getConflictFlag: The model version is older than Matlab's (Model[UnknownMatlabVersion]<->Matlab[v8.4])
+2017-5-24 21h29m50s:Controller.cpp: API function call : COMMAND Selection Remove
+2017-5-24 21h29m50s:Controller.cpp: API function call : COMMAND Selection Add
+2017-5-24 21h29m50s:Controller.cpp: API function call : COMMAND Project Load
+2017-5-24 21h29m50s:AcqControl.cpp: *** Computing sync data for acq group 1
+2017-5-24 21h29m50s:AcqControl.cpp: subsys id 1, repeat factor 1, status skip 1
+2017-5-24 21h29m50s:AcqControl.cpp: *** Multiplicateur du nbre de samples 1 (0.000020, 0.000020, 0.000020)
+2017-5-24 21h29m50s:AcqControl.cpp: *** Computing sync data for acq group 2
+2017-5-24 21h29m50s:AcqControl.cpp: subsys id 1, repeat factor 1, status skip 1
+2017-5-24 21h29m50s:AcqControl.cpp: *** Multiplicateur du nbre de samples 1 (0.000020, 0.000020, 0.000020)
+2017-5-24 21h29m50s:AcqControl.cpp: *** Computing sync data for acq group 3
+2017-5-24 21h29m50s:AcqControl.cpp: subsys id 1, repeat factor 1, status skip 1
+2017-5-24 21h29m50s:AcqControl.cpp: *** Multiplicateur du nbre de samples 1 (0.000020, 0.000020, 0.000020)
+2017-5-24 21h29m50s:AcqControl.cpp: *** Computing sync data for acq group 4
+2017-5-24 21h29m50s:AcqControl.cpp: subsys id 1, repeat factor 1, status skip 1
+2017-5-24 21h29m50s:AcqControl.cpp: *** Multiplicateur du nbre de samples 1 (0.000020, 0.000020, 0.000020)
+2017-5-24 21h29m50s:AcqControl.cpp: *** Computing sync data for acq group 5
+2017-5-24 21h29m50s:AcqControl.cpp: subsys id 1, repeat factor 1, status skip 1
+2017-5-24 21h29m50s:AcqControl.cpp: *** Multiplicateur du nbre de samples 1 (0.000020, 0.000020, 0.000020)
+2017-5-24 21h29m50s:AcqControl.cpp: *** Computing sync data for acq group 25
+2017-5-24 21h29m50s:AcqControl.cpp: subsys id 1, repeat factor 1, status skip 1
+2017-5-24 21h29m51s:AcqControl.cpp: *** Multiplicateur du nbre de samples 1 (0.000020, 0.000020, 0.000020)
+2017-5-24 21h29m53s:Controller.cpp: NOTIFICATION MSG IS: MODEL_LOADING
+2017-5-24 21h29m53s:WinUtils.cpp: Could not execute command. 
+The model is not running correctly (may be loading or resetting). 
+
+Please try again later.
+2017-5-24 21h29m53s:CtrlException.cpp: CtrlException, code 28698, msg Could not execute command. 
+The model is not running correctly (may be loading or resetting). 
+
+Please try again later.
+2017-5-24 21h29m55s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h29m56s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h29m56s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h29m57s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h30m6s:SystemControl.cpp: ------- CONTROLLER PRIORITY HAS BEEN INCREASED ------
+2017-5-24 21h30m6s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h30m6s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h30m6s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h30m6s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h30m6s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h30m6s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h30m6s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h30m9s:CTargetConnectionOpalD.cpp: LoadSubsys, daemonIpAddr 192.168.5.113
+2017-5-24 21h30m9s:NodesLoadingServer.cpp: Load : 1 temp sockets connected
+2017-5-24 21h30m11s:SystemControl.cpp: Load : received pid-ports for logical node 1
+2017-5-24 21h30m11s:SystemControl.cpp: Load: established connections for logical node 1 (to recv and send on target)
+2017-5-24 21h30m11s:OpalSystemClient.cpp: --- modeleStatus thread (handle 0x5a9c) start
+2017-5-24 21h30m11s:Acquisition.cpp: acqGroupReqThread handle (0xadc)
+2017-5-24 21h30m11s:Acquisition.cpp: acqGroupReqThread handle (0xaf0)
+2017-5-24 21h30m11s:Acquisition.cpp: acqGroupReqThread handle (0xb00)
+2017-5-24 21h30m11s:Acquisition.cpp: acqGroupReqThread handle (0xb14)
+2017-5-24 21h30m11s:Acquisition.cpp: acqGroupReqThread handle (0xb24)
+2017-5-24 21h30m11s:Acquisition.cpp: acqGroupReqThread handle (0xb7c)
+2017-5-24 21h30m11s:SystemControl.cpp: Load: all subsystems connected
+2017-5-24 21h30m13s:SystemControl.cpp: Load: received commrt extra info from logical node 1 (final = 0)
+2017-5-24 21h30m13s:SystemControl.cpp: Load: sent combined commrt extra info to logicalNode 1
+2017-5-24 21h30m13s:SystemControl.cpp: Load: received commrt extra info from logical node 1 (final = 0)
+2017-5-24 21h30m13s:SystemControl.cpp: Load: sent combined commrt extra info to logicalNode 1
+2017-5-24 21h30m13s:SystemControl.cpp: Load: received commrt extra info from logical node 1 (final = 1)
+2017-5-24 21h30m13s:SystemControl.cpp: Load: sent combined commrt extra info to logicalNode 1
+2017-5-24 21h30m13s:SystemControl.cpp: All subsystems sent their UDP ports and other useful info.
+2017-5-24 21h30m13s:SystemControl.cpp: Load: received combined status from master
+2017-5-24 21h30m13s:SystemControl.cpp: Load: sent UDP ports to logical node 1
+2017-5-24 21h30m13s:SystemControl.cpp: Load: closed temp socket to logical node 1
+2017-5-24 21h30m13s:OpalSystemClient.cpp: Subsys SM_eHS is done initializing.
+2017-5-24 21h30m13s:SystemControl.cpp: Load: sent calc step to logical node 1
+2017-5-24 21h30m13s:OpalControlClient.cpp:     POSTED  recv sem for client 0 (System Control), cmd 8, thread 18376
+2017-5-24 21h30m13s:SystemControl.cpp: Load: received feedback for calc step command
+2017-5-24 21h30m13s:OpalControlClient.cpp:     POSTED  recv sem for client 5 (Blobs Control), cmd 60, thread 12764
+2017-5-24 21h30m13s:OpalControlClient.cpp:     POSTED  recv sem for client 5 (Blobs Control), cmd 61, thread 12764
+2017-5-24 21h30m13s:OpalControlClient.cpp:     POSTED  recv sem for client 5 (Blobs Control), cmd 59, thread 12764
+2017-5-24 21h30m13s:OpalControlClient.cpp:     POSTED  recv sem for client 1 (Probe Control), cmd 48, thread 18908
+2017-5-24 21h30m13s:Unable to create a new HTTP connection - aborting
+2017-5-24 21h30m14s:OpalControlClient.cpp:     POSTED  recv sem for client 5 (Blobs Control), cmd 59, thread 12764
+2017-5-24 21h30m14s:AcqControl.cpp: Group 1 : SUBYS ID 1 : 42 samples maximum apres restriction TCP/IP
+2017-5-24 21h30m14s:AcqControl.cpp: Group 1 : The lowest subsys sample is 42
+2017-5-24 21h30m14s:AcqControl.cpp: Group 1: skip 1, for 20 ms -> 999 samples 
+2017-5-24 21h30m14s:OpalControlClient.cpp:     POSTED  recv sem for client 1 (Probe Control), cmd 34, thread 18908
+2017-5-24 21h30m14s:AcqControl.cpp: Group 2 : SUBYS ID 1 : 21 samples maximum apres restriction TCP/IP
+2017-5-24 21h30m14s:AcqControl.cpp: Group 2 : The lowest subsys sample is 21
+2017-5-24 21h30m14s:AcqControl.cpp: Group 2: skip 1, for 20 ms -> 999 samples 
+2017-5-24 21h30m14s:OpalControlClient.cpp:     POSTED  recv sem for client 1 (Probe Control), cmd 34, thread 18908
+2017-5-24 21h30m14s:AcqControl.cpp: Group 3 : SUBYS ID 1 : 28 samples maximum apres restriction TCP/IP
+2017-5-24 21h30m14s:AcqControl.cpp: Group 3 : The lowest subsys sample is 28
+2017-5-24 21h30m14s:AcqControl.cpp: Group 3: skip 1, for 20 ms -> 999 samples 
+2017-5-24 21h30m14s:OpalControlClient.cpp:     POSTED  recv sem for client 1 (Probe Control), cmd 34, thread 18908
+2017-5-24 21h30m14s:AcqControl.cpp: Group 4 : SUBYS ID 1 : 57 samples maximum apres restriction TCP/IP
+2017-5-24 21h30m14s:AcqControl.cpp: Group 4 : The lowest subsys sample is 57
+2017-5-24 21h30m14s:AcqControl.cpp: Group 4: skip 1, for 20 ms -> 999 samples 
+2017-5-24 21h30m14s:OpalControlClient.cpp:     POSTED  recv sem for client 1 (Probe Control), cmd 34, thread 18908
+2017-5-24 21h30m14s:AcqControl.cpp: Group 5 : SUBYS ID 1 : 85 samples maximum apres restriction TCP/IP
+2017-5-24 21h30m14s:AcqControl.cpp: Group 5 : The lowest subsys sample is 85
+2017-5-24 21h30m14s:AcqControl.cpp: Group 5: skip 1, for 20 ms -> 999 samples 
+2017-5-24 21h30m14s:OpalControlClient.cpp:     POSTED  recv sem for client 1 (Probe Control), cmd 34, thread 18908
+2017-5-24 21h30m14s:AcqControl.cpp: Group 25 : SUBYS ID 1 : 1 samples maximum apres restriction TCP/IP
+2017-5-24 21h30m14s:AcqControl.cpp: Group 25 : The lowest subsys sample is 1
+2017-5-24 21h30m14s:AcqControl.cpp: Group 25: skip 1, for 20 ms -> 999 samples 
+2017-5-24 21h30m14s:OpalControlClient.cpp:     POSTED  recv sem for client 1 (Probe Control), cmd 34, thread 18908
+2017-5-24 21h30m14s:Controller.cpp: NOTIFICATION MSG IS: MODEL_PAUSED
+2017-5-24 21h30m14s:CTargetConnectionOpalD.cpp: GetFileList, daemonIpAddr 192.168.5.113
+2017-5-24 21h30m14s:CModel.cpp: Done loading model "C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab.mdl"
+2017-5-24 21h30m14s:Controller.cpp: API function call : GetSubsysList
+2017-5-24 21h30m14s:Controller.cpp: API function call : GetSubsysList
+2017-5-24 21h30m14s:CTargetConnectionOpalD.cpp: RetrieveFileFromTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h30m14s:Controller.cpp: NOTIFICATION MSG IS: 2|C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_sm_ehs\OpREDHAWKtarget\opboost_and_two_level__sm_ehs_0.snap
+2017-5-24 21h30m18s:Controller.cpp: new client: 24920
+2017-5-24 21h30m18s:CClient.cpp: Creating new client ID: 20004
+2017-5-24 21h30m18s:CClient.cpp: clientThread started with port:3104
+2017-5-24 21h30m18s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2017-5-24 21h30m18s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 15108
+2017-5-24 21h30m18s:Controller.cpp: API function call : Get model list changes
+2017-5-24 21h30m18s:Controller.cpp: API function call : COMMAND Project ApiSync
+2017-5-24 21h30m18s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2017-5-24 21h30m18s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2017-5-24 21h30m18s:Controller.cpp: API function call : SET ATTRIBUTES
+2017-5-24 21h32m2s:Controller.cpp: API function call : COMMAND Selection Remove
+2017-5-24 21h32m2s:Controller.cpp: API function call : COMMAND Selection Add
+2017-5-24 21h32m2s:Controller.cpp: API function call : COMMAND Project Execute
+2017-5-24 21h32m2s:OpalControlClient.cpp:     POSTED  recv sem for client 0 (System Control), cmd 8, thread 18376
+2017-5-24 21h32m2s:Controller.cpp: NOTIFICATION MSG IS: MODEL_RUNNING
+2017-5-24 21h32m2s:OpalControlClient.cpp:     POSTED  recv sem for client 0 (System Control), cmd 9, thread 18376
+2017-5-24 21h32m12s:Controller.cpp: API function call : COMMAND Selection Remove
+2017-5-24 21h32m12s:Controller.cpp: API function call : COMMAND Selection Add
+2017-5-24 21h32m13s:Controller.cpp: API function call : Snapshot
+2017-5-24 21h32m13s:OpalControlClient.cpp:     POSTED  recv sem for client 3 (Snapshot Control), cmd 51, thread 19092
+2017-5-24 21h32m13s:OpalControlClient.cpp: REPLY MESSAGE IS: Snapshot not taken because snapshot is disabled.
+2017-5-24 21h32m13s:OpalControlClient.h: Client 3 (Snapshot Control) received notification cmd 51, status 0 (MSG DROPPED)
+2017-5-24 21h32m13s:OpalControlClient.h: DROPPED REPLY MESSAGE IS: Snapshot successfully taken.
+2017-5-24 21h32m14s:Controller.cpp: API function call : COMMAND Selection Remove
+2017-5-24 21h32m14s:Controller.cpp: API function call : COMMAND Selection Add
+2017-5-24 21h32m14s:Controller.cpp: API function call : COMMAND Project Reset
+2017-5-24 21h32m14s:OpalSystemClient.cpp: --- modelStatusThread exiting, semStatusStop TryWait returned 0 (lastErr=0)
+2017-5-24 21h32m14s:Controller.cpp: NOTIFICATION MSG IS: MODEL_RESETTING
+2017-5-24 21h32m14s:OpalSystemClient.cpp: ModelStatusThread exit.
+2017-5-24 21h32m15s:OpalControlClient.cpp:     POSTED  recv sem for client 0 (System Control), cmd 13, thread 18376
+2017-5-24 21h32m15s:SystemControl.cpp: Reset: waiting for model to finish resetting ...
+2017-5-24 21h32m15s:CSubSystem.cpp: Ignoring file transfer for /./myPV_inverter.mat: model is resetting
+2017-5-24 21h32m15s:OpalSystemClient.cpp: Subsys SM_eHS is done resetting.
+2017-5-24 21h32m15s:SystemControl.cpp: Reset: done for all subsystems (1).
+2017-5-24 21h32m15s:RECV_Thread.c: RECV_THREAD: Waiting header (avail) error (-1)
+2017-5-24 21h32m15s:RECV_Thread.c: Cleanup done.
+2017-5-24 21h32m18s:SystemControl.cpp: Reset : Ok. 1 subsys (out of 1) are gone.
+2017-5-24 21h32m18s:Acquisition.cpp: 2-acqGroupReqThread exiting, stopFlag raised (lastErr=0)
+2017-5-24 21h32m18s:Acquisition.cpp: 2-acqGroupReqThread exiting, stopFlag raised (lastErr=0)
+2017-5-24 21h32m18s:Acquisition.cpp: 2-acqGroupReqThread exiting, stopFlag raised (lastErr=0)
+2017-5-24 21h32m18s:Acquisition.cpp: 2-acqGroupReqThread exiting, stopFlag raised (lastErr=0)
+2017-5-24 21h32m18s:Acquisition.cpp: 2-acqGroupReqThread exiting, stopFlag raised (lastErr=0)
+2017-5-24 21h32m18s:Acquisition.cpp: 2-acqGroupReqThread exiting, stopFlag raised (lastErr=0)
+2017-5-24 21h32m18s:SystemControl.cpp: ------- CONTROLLER PRIORITY HAS BEEN DECREASED ------
+2017-5-24 21h32m19s:CTargetConnectionOpalD.cpp: GetFileList, daemonIpAddr 192.168.5.113
+2017-5-24 21h32m19s:CTargetConnectionOpalD.cpp: RetrieveFileFromTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h32m19s:Controller.cpp: NOTIFICATION MSG IS: 0|C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_sm_ehs\OpREDHAWKtarget\myPV_inverter.mat
+2017-5-24 21h32m19s:CTargetConnectionOpalD.cpp: GetFileList, daemonIpAddr 192.168.5.113
+2017-5-24 21h32m19s:CTargetConnectionOpalD.cpp: RetrieveFileFromTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h32m19s:Controller.cpp: NOTIFICATION MSG IS: 3|C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_sm_ehs\OpREDHAWKtarget\target_report.xml
+2017-5-24 21h32m20s:WinUtils.cpp: Could not execute command. 
+The model is not running correctly (may be loading or resetting). 
+
+Please try again later.
+2017-5-24 21h32m20s:CtrlException.cpp: CtrlException, code 28698, msg Could not execute command. 
+The model is not running correctly (may be loading or resetting). 
+
+Please try again later.
+2017-5-24 21h32m20s:WinUtils.cpp: Could not execute command. 
+The model is not running correctly (may be loading or resetting). 
+
+Please try again later.
+2017-5-24 21h32m20s:CtrlException.cpp: CtrlException, code 28698, msg Could not execute command. 
+The model is not running correctly (may be loading or resetting). 
+
+Please try again later.
+2017-5-24 21h32m22s:OpalControlClient.cpp: Signals Control thread (id 208) normal exit.
+2017-5-24 21h32m22s:OpalControlClient.cpp: Probe Control thread (id 18908) normal exit.
+2017-5-24 21h32m22s:OpalControlClient.cpp: Snapshot Control thread (id 19092) normal exit.
+2017-5-24 21h32m22s:OpalControlClient.cpp: Parameter Control thread (id 10868) normal exit.
+2017-5-24 21h32m22s:OpalControlClient.cpp: System Control thread (id 18376) normal exit.
+2017-5-24 21h32m22s:OpalControlClient.cpp: Blobs Control thread (id 12764) normal exit.
+2017-5-24 21h32m22s:SEND_Thread.c: Thread 13700 stopping because stop flag is set
+2017-5-24 21h32m22s:Controller.cpp: NOTIFICATION MSG IS: MODEL_LOADABLE
+2017-5-24 21h32m22s:SEND_Thread.c: SEND THREAD: Cleanup done
+2017-5-24 21h33m39s:Controller.cpp: API function call : COMMAND Selection Remove
+2017-5-24 21h33m39s:Controller.cpp: API function call : COMMAND Selection Add
+2017-5-24 21h33m39s:Controller.cpp: API function call : COMMAND Matlab Handler Load
+2017-5-24 21h33m39s:MatlabHandler - getConflictFlag: The model version is older than Matlab's (Model[UnknownMatlabVersion]<->Matlab[v8.4])
+2017-5-24 21h57m37s:Controller.cpp: API function call : COMMAND Selection Remove
+2017-5-24 21h57m37s:Controller.cpp: API function call : COMMAND Selection Add
+2017-5-24 21h57m37s:Controller.cpp: API function call : RegisterDisplay
+2017-5-24 21h57m37s:Controller.cpp: API function call : Clean model
+2017-5-24 21h57m37s:Controller.cpp: API function call : Compile (boost_and_two_level_bridge_rtlab.mdl   C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab)
+2017-5-24 21h57m37s:Controller.cpp: NOTIFICATION MSG IS: MODEL_COMPILING
+2017-5-24 21h57m37s:Compile.cpp: compileThread launched with id = 21692
+2017-5-24 21h57m37s:Controller.cpp: NOTIFICATION MSG IS: Preparing model
+2017-5-24 21h57m37s:CTargetConnectionOpalD.cpp: RetrieveFileFromTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h57m38s:Controller.cpp: NOTIFICATION MSG IS: Model separation
+2017-5-24 21h57m52s:MatlabHandler - createConnection: create connection has been successful with Matlab version = 8.4
+2017-5-24 21h58m59s:Failed to connect to 192.168.5.113:25252 (status = -1)
+2017-5-24 21h59m0s:Controller.cpp: NOTIFICATION MSG IS: Code generation
+2017-5-24 21h59m0s:CIniFileCache.cpp: CIniFileCache.Load():: Empty line (#41) before EOF has been reached
+2017-5-24 21h59m0s:CIniFileCache.cpp: CIniFileCache.Load():: Empty line (#101) before EOF has been reached
+2017-5-24 21h59m0s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 21h59m0s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 21h59m0s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 21h59m0s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 21h59m0s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 21h59m0s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 21h59m0s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 21h59m0s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 21h59m0s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 21h59m0s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 21h59m0s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 21h59m0s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 21h59m0s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 21h59m0s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 21h59m0s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 21h59m0s:CIniFileCache.cpp: CIniFileCache.Load():: Empty line (#142) before EOF has been reached
+2017-5-24 21h59m0s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 21h59m0s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 21h59m0s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 21h59m0s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 21h59m0s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 21h59m0s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 21h59m0s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 21h59m0s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 21h59m0s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 21h59m0s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 21h59m0s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 21h59m0s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 21h59m0s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 21h59m0s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 21h59m0s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 21h59m0s:CIniFileCache.cpp: Saving boost_and_two_level__1_sm_ehs.sfp because error was detected
+2017-5-24 21h59m0s:Controller.cpp: NOTIFICATION MSG IS: Code generation: boost_and_two_level__1_sm_ehs
+2017-5-24 21h59m0s:OpalUtilNoMfc.cpp: Could not to delete the folder C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\\..\slprj\_sfprj\boost_and_two_level__1_sm_ehs\_self\rtw\rtlab_rtmodel\src\ error no: 41
+2017-5-24 21h59m0s:OpalUtilNoMfc.cpp: Could not to delete the folder C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\\..\slprj\_sfprj\boost_and_two_level__1_sm_ehs\_self\rtw\rtlab_rtmodel\ error no: 41
+2017-5-24 21h59m0s:OpalUtilNoMfc.cpp: Could not to delete the folder C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\\..\slprj\_sfprj\boost_and_two_level__1_sm_ehs\_self\rtw\ error no: 41
+2017-5-24 21h59m0s:OpalUtilNoMfc.cpp: Could not to delete the folder C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\\..\slprj\_sfprj\boost_and_two_level__1_sm_ehs\_self\sfun\src\ error no: 41
+2017-5-24 21h59m0s:OpalUtilNoMfc.cpp: Could not to delete the folder C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\\..\slprj\_sfprj\boost_and_two_level__1_sm_ehs\_self\sfun\ error no: 41
+2017-5-24 21h59m0s:OpalUtilNoMfc.cpp: Could not to delete the folder C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\\..\slprj\_sfprj\boost_and_two_level__1_sm_ehs\_self\ error no: 41
+2017-5-24 21h59m0s:OpalUtilNoMfc.cpp: Could not to delete the folder C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\\..\slprj\_sfprj\boost_and_two_level__1_sm_ehs\ error no: 41
+2017-5-24 21h59m0s:OpalUtilNoMfc.cpp: Could not to delete the folder C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\\..\slprj\_sfprj\ error no: 41
+2017-5-24 21h59m0s:OpalUtilNoMfc.cpp: Could not to delete the folder C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\\..\slprj error no: 41
+2017-5-24 21h59m36s:********* binary ********
+2017-5-24 21h59m36s:********* binary ********
+2017-5-24 21h59m36s:********* binary ********
+2017-5-24 21h59m36s:********* binary ********
+2017-5-24 21h59m36s:********* binary ********
+2017-5-24 21h59m36s:********* binary ********
+2017-5-24 21h59m36s:********* binary ********
+2017-5-24 21h59m36s:********* binary ********
+2017-5-24 21h59m37s:********* binary ********
+2017-5-24 21h59m37s:********* binary ********
+2017-5-24 21h59m37s:moveFile error: Cannot create a file when that file already exists.
+
+2017-5-24 21h59m37s:Controller.cpp: NOTIFICATION MSG IS: Parameters database
+2017-5-24 21h59m37s:Controller.cpp: NOTIFICATION MSG IS: Signals database
+2017-5-24 21h59m37s:CIniFileCache.cpp: CIniFileCache.Load():: Empty line (#726) before EOF has been reached
+2017-5-24 21h59m37s:CIniFileCache.cpp: CIniFileCache.Load():: Empty line (#1303) before EOF has been reached
+2017-5-24 21h59m37s:CIniFileCache.cpp: CIniFileCache.Load():: Empty line (#1310) before EOF has been reached
+2017-5-24 21h59m37s:CIniFileCache.cpp: CIniFileCache.Load():: Empty line (#1423) before EOF has been reached
+2017-5-24 21h59m37s:CIniFileCache.cpp: CIniFileCache.Load():: Empty line (#1443) before EOF has been reached
+2017-5-24 21h59m37s:CIniFileCache.cpp: CIniFileCache.Load():: Empty line (#1444) before EOF has been reached
+2017-5-24 21h59m37s:CIniFileCache.cpp: Saving boost_and_two_level__1_sm_ehs.map because error was detected
+2017-5-24 21h59m37s:CIniFileCache.cpp: CIniFileCache.Load():: Empty line (#7) before EOF has been reached
+2017-5-24 21h59m37s:CIniFileCache.cpp: CIniFileCache.Load():: Empty line (#18) before EOF has been reached
+2017-5-24 21h59m37s:CIniFileCache.cpp: CIniFileCache.Load():: Empty line (#24) before EOF has been reached
+2017-5-24 21h59m37s:CIniFileCache.cpp: CIniFileCache.Load():: Empty line (#33) before EOF has been reached
+2017-5-24 21h59m37s:CIniFileCache.cpp: CIniFileCache.Load():: Empty line (#38) before EOF has been reached
+2017-5-24 21h59m37s:CIniFileCache.cpp: CIniFileCache.Load():: Empty line (#206) before EOF has been reached
+2017-5-24 21h59m37s:CIniFileCache.cpp: Saving boost_and_two_level_bridge_rtlab.sig because error was detected
+2017-5-24 21h59m37s:MatlabCOM::initializeClassCOM: CoInitialize function failed with code 262
+2017-5-24 21h59m38s:Controller.cpp: NOTIFICATION MSG IS: Source files validation
+2017-5-24 21h59m38s:Controller.cpp: NOTIFICATION MSG IS: File transfer
+2017-5-24 21h59m38s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h59m38s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h59m40s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h59m40s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h59m40s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h59m40s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h59m40s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h59m40s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h59m40s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h59m40s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h59m40s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h59m40s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h59m40s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h59m40s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h59m40s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h59m40s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h59m40s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h59m40s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h59m41s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h59m41s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h59m41s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h59m41s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h59m41s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h59m41s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h59m41s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h59m41s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h59m41s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h59m41s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h59m41s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h59m41s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h59m41s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h59m42s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h59m42s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h59m42s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h59m42s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h59m42s:Controller.cpp: NOTIFICATION MSG IS: Code compilation
+2017-5-24 21h59m42s:CTargetConnectionOpalD.cpp: RetrieveFileFromTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h59m43s:Controller.cpp: NOTIFICATION MSG IS: Code compilation: boost_and_two_level__1_sm_ehs
+2017-5-24 21h59m46s:Controller.cpp: NOTIFICATION MSG IS: File retrieval
+2017-5-24 21h59m46s:CTargetConnectionOpalD.cpp: GetFileList, daemonIpAddr 192.168.5.113
+2017-5-24 21h59m46s:CTargetConnectionOpalD.cpp: RetrieveFileFromTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h59m47s:CTargetConnectionOpalD.cpp: GetFileList, daemonIpAddr 192.168.5.113
+2017-5-24 21h59m47s:CTargetConnectionOpalD.cpp: RetrieveFileFromTarget, daemonIpAddr 192.168.5.113
+2017-5-24 21h59m49s:Controller.cpp: NOTIFICATION MSG IS: End of build process
+2017-5-24 21h59m50s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\Opcommon\boost_and_two_level__1_sm_ehs.mdl: file access date is 05/24/17 21:58:54 and last access was 05/22/17 20:49:51
+2017-5-24 21h59m50s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab.mdl: file access date is 05/24/17 21:55:23 and last access was 05/22/17 20:48:16
+2017-5-24 21h59m50s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\sogi.m: file access date is 05/24/17 21:23:21 and last access was 05/16/17 14:41:58
+2017-5-24 21h59m50s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\Opcommon\boost_and_two_level_bridge_rtlab.subsys: file access date is 05/24/17 21:58:55 and last access was 05/22/17 20:49:53
+2017-5-24 21h59m50s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\Opcommon\boost_and_two_level_bridge_rtlab.param: file access date is 05/24/17 21:59:37 and last access was 05/22/17 20:50:35
+2017-5-24 21h59m50s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\Opcommon\boost_and_two_level_bridge_rtlab.signal: file access date is 05/24/17 21:59:37 and last access was 05/22/17 20:50:35
+2017-5-24 21h59m50s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\OpalSnapshotUtil.c: file access date is 05/24/17 21:59:37 and last access was 05/22/17 20:50:35
+2017-5-24 21h59m50s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\boost_and_two_level__1_sm_ehs.c: file access date is 05/24/17 21:59:38 and last access was 05/22/17 20:50:37
+2017-5-24 21h59m51s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\boost_and_two_level__1_sm_ehs.h: file access date is 05/24/17 21:59:32 and last access was 05/22/17 20:50:32
+2017-5-24 21h59m51s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\boost_and_two_level__1_sm_ehs.mk: file access date is 05/24/17 21:59:36 and last access was 05/22/17 20:50:34
+2017-5-24 21h59m51s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\boost_and_two_level__1_sm_ehs_data.c: file access date is 05/24/17 21:59:32 and last access was 05/22/17 20:50:32
+2017-5-24 21h59m51s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\boost_and_two_level__1_sm_ehs_private.h: file access date is 05/24/17 21:59:32 and last access was 05/22/17 20:50:32
+2017-5-24 21h59m51s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\boost_and_two_level__1_sm_ehs_types.h: file access date is 05/24/17 21:59:32 and last access was 05/22/17 20:50:32
+2017-5-24 21h59m51s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\builtin_typeid_types.h: file access date is 05/24/17 21:59:32 and last access was 05/22/17 20:50:32
+2017-5-24 21h59m51s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\multiword_types.h: file access date is 05/24/17 21:59:32 and last access was 05/22/17 20:50:32
+2017-5-24 21h59m51s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\rtGetInf.c: file access date is 05/24/17 21:59:32 and last access was 05/22/17 20:50:32
+2017-5-24 21h59m51s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\rtGetInf.h: file access date is 05/24/17 21:59:32 and last access was 05/22/17 20:50:32
+2017-5-24 21h59m51s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\rtGetNaN.c: file access date is 05/24/17 21:59:32 and last access was 05/22/17 20:50:32
+2017-5-24 21h59m51s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\rtGetNaN.h: file access date is 05/24/17 21:59:32 and last access was 05/22/17 20:50:32
+2017-5-24 21h59m51s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\rt_defines.h: file access date is 05/24/17 21:59:32 and last access was 05/22/17 20:50:32
+2017-5-24 21h59m51s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\rt_nonfinite.c: file access date is 05/24/17 21:59:32 and last access was 05/22/17 20:50:32
+2017-5-24 21h59m51s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\rt_nonfinite.h: file access date is 05/24/17 21:59:32 and last access was 05/22/17 20:50:32
+2017-5-24 21h59m51s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\rtmodel.h: file access date is 05/24/17 21:59:32 and last access was 05/22/17 20:50:32
+2017-5-24 21h59m51s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\rtwtypes.h: file access date is 05/24/17 21:59:32 and last access was 05/22/17 20:50:32
+2017-5-24 21h59m52s:Controller.cpp: NOTIFICATION MSG IS: MODEL_LOADABLE
+2017-5-24 21h59m52s:Compile.cpp: Compilation completed successfully.
+2017-5-24 21h59m52s:Compile.cpp: Compilation Thread closed.
+2017-5-24 21h59m52s:Controller.cpp: API function call : RegisterDisplay
+2017-5-24 21h59m52s:Controller.cpp: API function call : COMMAND Selection Remove
+2017-5-24 21h59m52s:Controller.cpp: API function call : COMMAND Selection Add
+2017-5-24 21h59m52s:Controller.cpp: API function call : COMMAND Selection Remove
+2017-5-24 21h59m52s:Controller.cpp: API function call : COMMAND Selection Add
+2017-5-24 21h59m52s:Controller.cpp: API function call : GET_CHILDREN Model
+2017-5-24 21h59m52s:Controller.cpp: API function call : GET_CHILDREN Model Variable List
+2017-5-24 21h59m52s:Controller.cpp: API function call : GET_CHILDREN Model Parameter List
+2017-5-24 21h59m52s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2017-5-24 22h6m17s:Controller.cpp: new client: 24920
+2017-5-24 22h6m17s:CClient.cpp: Creating new client ID: 21620
+2017-5-24 22h6m17s:CClient.cpp: clientThread started with port:12140
+2017-5-24 22h6m17s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2017-5-24 22h6m17s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 15108
+2017-5-24 22h6m17s:Controller.cpp: API function call : Get model list changes
+2017-5-24 22h6m17s:Controller.cpp: API function call : COMMAND Project ApiSync
+2017-5-24 22h6m17s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2017-5-24 22h6m17s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2017-5-24 22h6m17s:Controller.cpp: API function call : SET ATTRIBUTES
+2017-5-24 22h6m17s:Controller.cpp: API function call : COMMAND Selection Remove
+2017-5-24 22h6m17s:Controller.cpp: API function call : COMMAND Selection Add
+2017-5-24 22h6m17s:Controller.cpp: API function call : COMMAND Matlab Handler Load
+2017-5-24 22h6m17s:MatlabHandler - createConnection: create connection has been successful with Matlab version = 8.4
+2017-5-24 22h6m17s:MatlabHandler - getConflictFlag: The model version is older than Matlab's (Model[UnknownMatlabVersion]<->Matlab[v8.4])
+2017-5-24 22h6m19s:Controller.cpp: API function call : COMMAND Selection Remove
+2017-5-24 22h6m19s:Controller.cpp: API function call : COMMAND Selection Add
+2017-5-24 22h6m19s:Controller.cpp: API function call : COMMAND Project Load
+2017-5-24 22h6m19s:AcqControl.cpp: *** Computing sync data for acq group 1
+2017-5-24 22h6m19s:AcqControl.cpp: subsys id 1, repeat factor 1, status skip 1
+2017-5-24 22h6m19s:AcqControl.cpp: *** Multiplicateur du nbre de samples 1 (0.000020, 0.000020, 0.000020)
+2017-5-24 22h6m19s:AcqControl.cpp: *** Computing sync data for acq group 2
+2017-5-24 22h6m19s:AcqControl.cpp: subsys id 1, repeat factor 1, status skip 1
+2017-5-24 22h6m19s:AcqControl.cpp: *** Multiplicateur du nbre de samples 1 (0.000020, 0.000020, 0.000020)
+2017-5-24 22h6m19s:AcqControl.cpp: *** Computing sync data for acq group 3
+2017-5-24 22h6m19s:AcqControl.cpp: subsys id 1, repeat factor 1, status skip 1
+2017-5-24 22h6m19s:AcqControl.cpp: *** Multiplicateur du nbre de samples 1 (0.000020, 0.000020, 0.000020)
+2017-5-24 22h6m19s:AcqControl.cpp: *** Computing sync data for acq group 4
+2017-5-24 22h6m19s:AcqControl.cpp: subsys id 1, repeat factor 1, status skip 1
+2017-5-24 22h6m19s:AcqControl.cpp: *** Multiplicateur du nbre de samples 1 (0.000020, 0.000020, 0.000020)
+2017-5-24 22h6m19s:AcqControl.cpp: *** Computing sync data for acq group 5
+2017-5-24 22h6m19s:AcqControl.cpp: subsys id 1, repeat factor 1, status skip 1
+2017-5-24 22h6m19s:AcqControl.cpp: *** Multiplicateur du nbre de samples 1 (0.000020, 0.000020, 0.000020)
+2017-5-24 22h6m19s:AcqControl.cpp: *** Computing sync data for acq group 25
+2017-5-24 22h6m19s:AcqControl.cpp: subsys id 1, repeat factor 1, status skip 1
+2017-5-24 22h6m19s:AcqControl.cpp: *** Multiplicateur du nbre de samples 1 (0.000020, 0.000020, 0.000020)
+2017-5-24 22h6m19s:Controller.cpp: NOTIFICATION MSG IS: MODEL_LOADING
+2017-5-24 22h6m19s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h6m20s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h6m21s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h6m21s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h6m31s:SystemControl.cpp: ------- CONTROLLER PRIORITY HAS BEEN INCREASED ------
+2017-5-24 22h6m31s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h6m31s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h6m31s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h6m31s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h6m31s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h6m31s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h6m31s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h6m33s:CTargetConnectionOpalD.cpp: LoadSubsys, daemonIpAddr 192.168.5.113
+2017-5-24 22h6m33s:NodesLoadingServer.cpp: Load : 1 temp sockets connected
+2017-5-24 22h6m35s:SystemControl.cpp: Load : received pid-ports for logical node 1
+2017-5-24 22h6m35s:SystemControl.cpp: Load: established connections for logical node 1 (to recv and send on target)
+2017-5-24 22h6m35s:OpalSystemClient.cpp: --- modeleStatus thread (handle 0x4b54) start
+2017-5-24 22h6m35s:Acquisition.cpp: acqGroupReqThread handle (0x30c0)
+2017-5-24 22h6m35s:Acquisition.cpp: acqGroupReqThread handle (0x30d4)
+2017-5-24 22h6m35s:Acquisition.cpp: acqGroupReqThread handle (0x30e4)
+2017-5-24 22h6m35s:Acquisition.cpp: acqGroupReqThread handle (0x30f8)
+2017-5-24 22h6m35s:Acquisition.cpp: acqGroupReqThread handle (0x3108)
+2017-5-24 22h6m35s:Acquisition.cpp: acqGroupReqThread handle (0x3164)
+2017-5-24 22h6m35s:SystemControl.cpp: Load: all subsystems connected
+2017-5-24 22h6m37s:SystemControl.cpp: Load: received commrt extra info from logical node 1 (final = 0)
+2017-5-24 22h6m37s:SystemControl.cpp: Load: sent combined commrt extra info to logicalNode 1
+2017-5-24 22h6m37s:SystemControl.cpp: Load: received commrt extra info from logical node 1 (final = 0)
+2017-5-24 22h6m37s:SystemControl.cpp: Load: sent combined commrt extra info to logicalNode 1
+2017-5-24 22h6m37s:SystemControl.cpp: Load: received commrt extra info from logical node 1 (final = 1)
+2017-5-24 22h6m37s:SystemControl.cpp: Load: sent combined commrt extra info to logicalNode 1
+2017-5-24 22h6m37s:SystemControl.cpp: All subsystems sent their UDP ports and other useful info.
+2017-5-24 22h6m37s:SystemControl.cpp: Load: received combined status from master
+2017-5-24 22h6m37s:SystemControl.cpp: Load: sent UDP ports to logical node 1
+2017-5-24 22h6m37s:SystemControl.cpp: Load: closed temp socket to logical node 1
+2017-5-24 22h6m37s:OpalSystemClient.cpp: Subsys SM_eHS is done initializing.
+2017-5-24 22h6m37s:SystemControl.cpp: Load: sent calc step to logical node 1
+2017-5-24 22h6m37s:OpalControlClient.cpp:     POSTED  recv sem for client 0 (System Control), cmd 8, thread 16900
+2017-5-24 22h6m37s:SystemControl.cpp: Load: received feedback for calc step command
+2017-5-24 22h6m37s:OpalControlClient.cpp:     POSTED  recv sem for client 5 (Blobs Control), cmd 60, thread 7884
+2017-5-24 22h6m37s:OpalControlClient.cpp:     POSTED  recv sem for client 5 (Blobs Control), cmd 61, thread 7884
+2017-5-24 22h6m37s:OpalControlClient.cpp:     POSTED  recv sem for client 5 (Blobs Control), cmd 59, thread 7884
+2017-5-24 22h6m37s:OpalControlClient.cpp:     POSTED  recv sem for client 1 (Probe Control), cmd 48, thread 19388
+2017-5-24 22h6m37s:Unable to create a new HTTP connection - aborting
+2017-5-24 22h6m38s:OpalControlClient.cpp:     POSTED  recv sem for client 5 (Blobs Control), cmd 59, thread 7884
+2017-5-24 22h6m38s:AcqControl.cpp: Group 1 : SUBYS ID 1 : 42 samples maximum apres restriction TCP/IP
+2017-5-24 22h6m38s:AcqControl.cpp: Group 1 : The lowest subsys sample is 42
+2017-5-24 22h6m38s:AcqControl.cpp: Group 1: skip 1, for 20 ms -> 999 samples 
+2017-5-24 22h6m38s:OpalControlClient.cpp:     POSTED  recv sem for client 1 (Probe Control), cmd 34, thread 19388
+2017-5-24 22h6m38s:AcqControl.cpp: Group 2 : SUBYS ID 1 : 21 samples maximum apres restriction TCP/IP
+2017-5-24 22h6m38s:AcqControl.cpp: Group 2 : The lowest subsys sample is 21
+2017-5-24 22h6m38s:AcqControl.cpp: Group 2: skip 1, for 20 ms -> 999 samples 
+2017-5-24 22h6m38s:OpalControlClient.cpp:     POSTED  recv sem for client 1 (Probe Control), cmd 34, thread 19388
+2017-5-24 22h6m38s:AcqControl.cpp: Group 3 : SUBYS ID 1 : 28 samples maximum apres restriction TCP/IP
+2017-5-24 22h6m38s:AcqControl.cpp: Group 3 : The lowest subsys sample is 28
+2017-5-24 22h6m38s:AcqControl.cpp: Group 3: skip 1, for 20 ms -> 999 samples 
+2017-5-24 22h6m38s:OpalControlClient.cpp:     POSTED  recv sem for client 1 (Probe Control), cmd 34, thread 19388
+2017-5-24 22h6m38s:AcqControl.cpp: Group 4 : SUBYS ID 1 : 57 samples maximum apres restriction TCP/IP
+2017-5-24 22h6m38s:AcqControl.cpp: Group 4 : The lowest subsys sample is 57
+2017-5-24 22h6m38s:AcqControl.cpp: Group 4: skip 1, for 20 ms -> 999 samples 
+2017-5-24 22h6m38s:OpalControlClient.cpp:     POSTED  recv sem for client 1 (Probe Control), cmd 34, thread 19388
+2017-5-24 22h6m38s:AcqControl.cpp: Group 5 : SUBYS ID 1 : 85 samples maximum apres restriction TCP/IP
+2017-5-24 22h6m38s:AcqControl.cpp: Group 5 : The lowest subsys sample is 85
+2017-5-24 22h6m38s:AcqControl.cpp: Group 5: skip 1, for 20 ms -> 999 samples 
+2017-5-24 22h6m38s:OpalControlClient.cpp:     POSTED  recv sem for client 1 (Probe Control), cmd 34, thread 19388
+2017-5-24 22h6m38s:AcqControl.cpp: Group 25 : SUBYS ID 1 : 1 samples maximum apres restriction TCP/IP
+2017-5-24 22h6m38s:AcqControl.cpp: Group 25 : The lowest subsys sample is 1
+2017-5-24 22h6m38s:AcqControl.cpp: Group 25: skip 1, for 20 ms -> 999 samples 
+2017-5-24 22h6m38s:OpalControlClient.cpp:     POSTED  recv sem for client 1 (Probe Control), cmd 34, thread 19388
+2017-5-24 22h6m38s:Controller.cpp: NOTIFICATION MSG IS: MODEL_PAUSED
+2017-5-24 22h6m38s:CTargetConnectionOpalD.cpp: GetFileList, daemonIpAddr 192.168.5.113
+2017-5-24 22h6m38s:CModel.cpp: Done loading model "C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab.mdl"
+2017-5-24 22h6m38s:Controller.cpp: API function call : GetSubsysList
+2017-5-24 22h6m38s:Controller.cpp: API function call : GetSubsysList
+2017-5-24 22h6m38s:CTargetConnectionOpalD.cpp: RetrieveFileFromTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h6m38s:Controller.cpp: NOTIFICATION MSG IS: 2|C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_sm_ehs\OpREDHAWKtarget\opboost_and_two_level__sm_ehs_0.snap
+2017-5-24 22h7m13s:Controller.cpp: API function call : COMMAND Selection Remove
+2017-5-24 22h7m13s:Controller.cpp: API function call : COMMAND Selection Remove
+2017-5-24 22h7m13s:Controller.cpp: API function call : COMMAND Selection Add
+2017-5-24 22h7m13s:Controller.cpp: API function call : COMMAND Selection Add
+2017-5-24 22h7m13s:Controller.cpp: API function call : COMMAND Project Execute
+2017-5-24 22h7m13s:Controller.cpp: API function call : COMMAND Matlab Handler Load
+2017-5-24 22h7m13s:OpalControlClient.cpp:     POSTED  recv sem for client 0 (System Control), cmd 8, thread 16900
+2017-5-24 22h7m13s:Controller.cpp: NOTIFICATION MSG IS: MODEL_RUNNING
+2017-5-24 22h7m13s:OpalControlClient.cpp:     POSTED  recv sem for client 0 (System Control), cmd 9, thread 16900
+2017-5-24 22h7m13s:MatlabHandler - getConflictFlag: The model version is older than Matlab's (Model[UnknownMatlabVersion]<->Matlab[v8.4])
+2017-5-24 22h7m13s:Controller.cpp: API function call : COMMAND Selection Remove
+2017-5-24 22h7m13s:Controller.cpp: API function call : COMMAND Selection Add
+2017-5-24 22h7m13s:Controller.cpp: API function call : COMMAND Matlab Handler Execute
+2017-5-24 22h7m14s:Controller.cpp: new client: 24920
+2017-5-24 22h7m14s:CClient.cpp: Creating new client ID: 22892
+2017-5-24 22h7m14s:CClient.cpp: clientThread started with port:11828
+2017-5-24 22h7m14s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2017-5-24 22h7m14s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 19048
+2017-5-24 22h7m14s:Controller.cpp: API function call : Get model list changes
+2017-5-24 22h7m14s:Controller.cpp: API function call : COMMAND Project ApiSync
+2017-5-24 22h7m14s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2017-5-24 22h7m14s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2017-5-24 22h7m14s:Controller.cpp: API function call : COMMAND Selection Remove
+2017-5-24 22h7m14s:Controller.cpp: API function call : COMMAND Selection Add
+2017-5-24 22h7m14s:Controller.cpp: new client: 24920
+2017-5-24 22h7m14s:CClient.cpp: Creating new client ID: 12808
+2017-5-24 22h7m14s:CClient.cpp: clientThread started with port:12776
+2017-5-24 22h7m14s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2017-5-24 22h7m14s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 19048
+2017-5-24 22h7m14s:Controller.cpp: API function call : Get model list changes
+2017-5-24 22h7m14s:Controller.cpp: API function call : COMMAND Project ApiSync
+2017-5-24 22h7m14s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2017-5-24 22h7m14s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2017-5-24 22h7m14s:Controller.cpp: API function call : COMMAND Selection Remove
+2017-5-24 22h7m14s:Controller.cpp: API function call : COMMAND Selection Add
+2017-5-24 22h7m14s:Controller.cpp: API function call : SET ATTRIBUTES
+2017-5-24 22h7m14s:Controller.cpp: API function call : COMMAND Matlab Handler Open
+2017-5-24 22h7m14s:MatlabHandler - Open: argument ATT_WAIT_FOR_COMPLETION = false, opening matlab asynchronously
+2017-5-24 22h7m14s:Controller.cpp: API function call : getNumSignalsForGroup2
+2017-5-24 22h7m14s:Controller.cpp: API function call : getNumSignalsForGroup2
+2017-5-24 22h7m14s:Controller.cpp: API function call : getNumSignalsForGroup2
+2017-5-24 22h7m14s:Controller.cpp: API function call : getNumSignalsForGroup2
+2017-5-24 22h7m14s:Controller.cpp: API function call : getNumSignalsForGroup2
+2017-5-24 22h7m14s:MatlabHandler - createConnection: create connection has been successful with Matlab version = 8.4
+2017-5-24 22h7m14s:Controller.cpp: API function call : SetSignals
+2017-5-24 22h7m14s:Controller.cpp: API function call : getNumSignalsForGroup2
+2017-5-24 22h7m14s:Controller.cpp: NOTIFICATION MSG IS: ¥
+2017-5-24 22h7m14s:Controller.cpp: API function call : Getting acquisition memory size
+2017-5-24 22h7m14s:Controller.cpp: API function call : getNumSignalsForGroup2
+2017-5-24 22h7m14s:Controller.cpp: API function call : GetSignalListForGroup
+2017-5-24 22h7m14s:Controller.cpp: API function call : GetAcqBlockLastVal
+2017-5-24 22h7m14s:Controller.cpp: API function call : NotificationConnect
+2017-5-24 22h7m14s:Controller.cpp: pClient->notifCommSock = 12680
+2017-5-24 22h7m14s:Controller.cpp: API function call : SetEventInterest
+2017-5-24 22h7m14s:Controller.cpp: API function call : GetTimeInfo
+2017-5-24 22h7m14s:Controller.cpp: API function call : GetSignals (group 1), starting acquisition ... this message will be displayed once.
+2017-5-24 22h7m14s:Controller.cpp: API function call : getNumSignalsForGroup2
+2017-5-24 22h7m14s:Controller.cpp: API function call : Getting acquisition memory size
+2017-5-24 22h7m14s:Controller.cpp: API function call : getNumSignalsForGroup2
+2017-5-24 22h7m14s:Controller.cpp: API function call : GetSignalListForGroup
+2017-5-24 22h7m14s:Controller.cpp: API function call : GetTimeInfo
+2017-5-24 22h7m14s:Controller.cpp: API function call : GetSignals (group 2), starting acquisition ... this message will be displayed once.
+2017-5-24 22h7m14s:Controller.cpp: API function call : getNumSignalsForGroup2
+2017-5-24 22h7m14s:Controller.cpp: API function call : Getting acquisition memory size
+2017-5-24 22h7m14s:Controller.cpp: API function call : getNumSignalsForGroup2
+2017-5-24 22h7m14s:Controller.cpp: API function call : GetSignalListForGroup
+2017-5-24 22h7m14s:Controller.cpp: API function call : GetTimeInfo
+2017-5-24 22h7m14s:Controller.cpp: API function call : GetSignals (group 3), starting acquisition ... this message will be displayed once.
+2017-5-24 22h7m14s:Controller.cpp: API function call : getNumSignalsForGroup2
+2017-5-24 22h7m14s:Controller.cpp: API function call : Getting acquisition memory size
+2017-5-24 22h7m14s:Controller.cpp: API function call : getNumSignalsForGroup2
+2017-5-24 22h7m14s:Controller.cpp: API function call : GetSignalListForGroup
+2017-5-24 22h7m14s:Controller.cpp: API function call : GetTimeInfo
+2017-5-24 22h7m14s:Controller.cpp: API function call : GetSignals (group 0), starting acquisition ... this message will be displayed once.
+2017-5-24 22h7m14s:Controller.cpp: API function call : getNumSignalsForGroup2
+2017-5-24 22h7m14s:Controller.cpp: API function call : Getting acquisition memory size
+2017-5-24 22h7m14s:Controller.cpp: API function call : getNumSignalsForGroup2
+2017-5-24 22h7m14s:Controller.cpp: API function call : GetSignalListForGroup
+2017-5-24 22h7m14s:Controller.cpp: API function call : GetTimeInfo
+2017-5-24 22h7m14s:Controller.cpp: API function call : GetSignals (group 4), starting acquisition ... this message will be displayed once.
+2017-5-24 22h7m23s:Controller.cpp: API function call : SetSignals
+2017-5-24 22h7m23s:Controller.cpp: NOTIFICATION MSG IS: 
+2017-5-24 22h9m44s:Controller.cpp: API function call : SetSignals
+2017-5-24 22h9m44s:Controller.cpp: NOTIFICATION MSG IS: 
+2017-5-24 22h9m46s:Controller.cpp: API function call : SetSignals
+2017-5-24 22h9m46s:Controller.cpp: NOTIFICATION MSG IS: 
+2017-5-24 22h10m17s:Controller.cpp: API function call : GetSignalControl (false)
+2017-5-24 22h10m17s:Controller.cpp: Removing client: 22892
+2017-5-24 22h10m17s:CClient.cpp: clientThread exit.
+2017-5-24 22h10m17s:Controller.cpp: Removing client: 12808
+2017-5-24 22h10m17s:CClient.cpp: clientThread exit.
+2017-5-24 22h10m25s:Controller.cpp: new client: 24920
+2017-5-24 22h10m25s:CClient.cpp: Creating new client ID: 25536
+2017-5-24 22h10m25s:CClient.cpp: clientThread started with port:12680
+2017-5-24 22h10m25s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2017-5-24 22h10m25s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 19048
+2017-5-24 22h10m25s:Controller.cpp: API function call : Get model list changes
+2017-5-24 22h10m25s:Controller.cpp: API function call : COMMAND Project ApiSync
+2017-5-24 22h10m25s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2017-5-24 22h10m25s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2017-5-24 22h10m25s:Controller.cpp: API function call : COMMAND Selection Remove
+2017-5-24 22h10m25s:Controller.cpp: API function call : COMMAND Selection Add
+2017-5-24 22h10m25s:Controller.cpp: new client: 24920
+2017-5-24 22h10m25s:CClient.cpp: Creating new client ID: 1008
+2017-5-24 22h10m25s:CClient.cpp: clientThread started with port:12836
+2017-5-24 22h10m25s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2017-5-24 22h10m25s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 19048
+2017-5-24 22h10m25s:Controller.cpp: API function call : Get model list changes
+2017-5-24 22h10m25s:Controller.cpp: API function call : COMMAND Project ApiSync
+2017-5-24 22h10m25s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2017-5-24 22h10m25s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2017-5-24 22h10m25s:Controller.cpp: API function call : COMMAND Selection Remove
+2017-5-24 22h10m25s:Controller.cpp: API function call : COMMAND Selection Add
+2017-5-24 22h10m25s:Controller.cpp: API function call : SET ATTRIBUTES
+2017-5-24 22h10m25s:Controller.cpp: API function call : COMMAND Matlab Handler Open
+2017-5-24 22h10m25s:MatlabHandler - Open: argument ATT_WAIT_FOR_COMPLETION = false, opening matlab asynchronously
+2017-5-24 22h10m25s:Controller.cpp: API function call : getNumSignalsForGroup2
+2017-5-24 22h10m25s:Controller.cpp: API function call : getNumSignalsForGroup2
+2017-5-24 22h10m25s:Controller.cpp: API function call : getNumSignalsForGroup2
+2017-5-24 22h10m25s:Controller.cpp: API function call : getNumSignalsForGroup2
+2017-5-24 22h10m25s:Controller.cpp: API function call : getNumSignalsForGroup2
+2017-5-24 22h10m25s:MatlabHandler - createConnection: create connection has been successful with Matlab version = 8.4
+2017-5-24 22h10m25s:Controller.cpp: API function call : SetSignals
+2017-5-24 22h10m25s:Controller.cpp: API function call : getNumSignalsForGroup2
+2017-5-24 22h10m25s:Controller.cpp: NOTIFICATION MSG IS: ¥
+2017-5-24 22h10m25s:Controller.cpp: API function call : Getting acquisition memory size
+2017-5-24 22h10m25s:Controller.cpp: API function call : getNumSignalsForGroup2
+2017-5-24 22h10m25s:Controller.cpp: API function call : GetSignalListForGroup
+2017-5-24 22h10m25s:Controller.cpp: API function call : GetAcqBlockLastVal
+2017-5-24 22h10m25s:Controller.cpp: API function call : NotificationConnect
+2017-5-24 22h10m25s:Controller.cpp: pClient->notifCommSock = 12996
+2017-5-24 22h10m25s:Controller.cpp: API function call : SetEventInterest
+2017-5-24 22h10m25s:Controller.cpp: API function call : GetTimeInfo
+2017-5-24 22h10m25s:Controller.cpp: API function call : GetSignals (group 1), starting acquisition ... this message will be displayed once.
+2017-5-24 22h10m25s:Controller.cpp: API function call : getNumSignalsForGroup2
+2017-5-24 22h10m25s:Controller.cpp: API function call : Getting acquisition memory size
+2017-5-24 22h10m25s:Controller.cpp: API function call : getNumSignalsForGroup2
+2017-5-24 22h10m25s:Controller.cpp: API function call : GetSignalListForGroup
+2017-5-24 22h10m25s:Controller.cpp: API function call : GetTimeInfo
+2017-5-24 22h10m25s:Controller.cpp: API function call : GetSignals (group 2), starting acquisition ... this message will be displayed once.
+2017-5-24 22h10m25s:Controller.cpp: API function call : getNumSignalsForGroup2
+2017-5-24 22h10m25s:Controller.cpp: API function call : Getting acquisition memory size
+2017-5-24 22h10m25s:Controller.cpp: API function call : getNumSignalsForGroup2
+2017-5-24 22h10m25s:Controller.cpp: API function call : GetSignalListForGroup
+2017-5-24 22h10m25s:Controller.cpp: API function call : GetTimeInfo
+2017-5-24 22h10m25s:Controller.cpp: API function call : GetSignals (group 3), starting acquisition ... this message will be displayed once.
+2017-5-24 22h10m25s:Controller.cpp: API function call : getNumSignalsForGroup2
+2017-5-24 22h10m25s:Controller.cpp: API function call : Getting acquisition memory size
+2017-5-24 22h10m25s:Controller.cpp: API function call : getNumSignalsForGroup2
+2017-5-24 22h10m25s:Controller.cpp: API function call : GetSignalListForGroup
+2017-5-24 22h10m25s:Controller.cpp: API function call : GetTimeInfo
+2017-5-24 22h10m25s:Controller.cpp: API function call : GetSignals (group 0), starting acquisition ... this message will be displayed once.
+2017-5-24 22h10m25s:Controller.cpp: API function call : getNumSignalsForGroup2
+2017-5-24 22h10m25s:Controller.cpp: API function call : Getting acquisition memory size
+2017-5-24 22h10m25s:Controller.cpp: API function call : getNumSignalsForGroup2
+2017-5-24 22h10m25s:Controller.cpp: API function call : GetSignalListForGroup
+2017-5-24 22h10m25s:Controller.cpp: API function call : GetTimeInfo
+2017-5-24 22h10m25s:Controller.cpp: API function call : GetSignals (group 4), starting acquisition ... this message will be displayed once.
+2017-5-24 22h10m28s:Controller.cpp: API function call : SetSignals
+2017-5-24 22h10m28s:Controller.cpp: NOTIFICATION MSG IS: 
+2017-5-24 22h10m31s:Controller.cpp: API function call : SetSignals
+2017-5-24 22h10m31s:Controller.cpp: NOTIFICATION MSG IS: 
+2017-5-24 22h10m33s:Controller.cpp: API function call : SetSignals
+2017-5-24 22h10m33s:Controller.cpp: NOTIFICATION MSG IS: 
+2017-5-24 22h11m17s:Controller.cpp: API function call : SetSignals
+2017-5-24 22h11m17s:Controller.cpp: NOTIFICATION MSG IS: 
+2017-5-24 22h13m5s:Controller.cpp: API function call : SetSignals
+2017-5-24 22h13m5s:Controller.cpp: NOTIFICATION MSG IS: 
+2017-5-24 22h13m28s:Controller.cpp: API function call : SetSignals
+2017-5-24 22h13m28s:Controller.cpp: NOTIFICATION MSG IS: 
+2017-5-24 22h13m39s:Controller.cpp: API function call : SetSignals
+2017-5-24 22h13m39s:Controller.cpp: NOTIFICATION MSG IS: 
+2017-5-24 22h14m10s:Controller.cpp: API function call : SetSignals
+2017-5-24 22h14m10s:Controller.cpp: NOTIFICATION MSG IS: 
+2017-5-24 22h15m31s:Controller.cpp: API function call : SetSignals
+2017-5-24 22h15m31s:Controller.cpp: NOTIFICATION MSG IS: 
+2017-5-24 22h15m38s:Controller.cpp: API function call : SetSignals
+2017-5-24 22h15m38s:Controller.cpp: NOTIFICATION MSG IS: 
+2017-5-24 22h22m28s:Controller.cpp: API function call : SetSignals
+2017-5-24 22h22m28s:Controller.cpp: NOTIFICATION MSG IS: 
+2017-5-24 22h23m15s:Controller.cpp: API function call : SetSignals
+2017-5-24 22h23m15s:Controller.cpp: NOTIFICATION MSG IS: 
+2017-5-24 22h24m23s:Controller.cpp: API function call : COMMAND Selection Remove
+2017-5-24 22h24m23s:Controller.cpp: API function call : COMMAND Selection Add
+2017-5-24 22h24m23s:Controller.cpp: API function call : COMMAND Project Reset
+2017-5-24 22h24m23s:OpalSystemClient.cpp: --- modelStatusThread exiting, semStatusStop TryWait returned 0 (lastErr=0)
+2017-5-24 22h24m23s:Controller.cpp: NOTIFICATION MSG IS: MODEL_RESETTING
+2017-5-24 22h24m23s:WinUtils.cpp: Could not execute command. 
+The model is not running correctly (may be loading or resetting). 
+
+Please try again later.
+2017-5-24 22h24m23s:OpalSystemClient.cpp: ModelStatusThread exit.
+2017-5-24 22h24m23s:CtrlException.cpp: CtrlException, code 28698, msg Could not execute command. 
+The model is not running correctly (may be loading or resetting). 
+
+Please try again later.
+2017-5-24 22h24m23s:WinUtils.cpp: Could not execute command. 
+The model is not running correctly (may be loading or resetting). 
+
+Please try again later.
+2017-5-24 22h24m23s:CtrlException.cpp: CtrlException, code 28698, msg Could not execute command. 
+The model is not running correctly (may be loading or resetting). 
+
+Please try again later.
+2017-5-24 22h24m23s:Controller.cpp: Removing client: 25536
+2017-5-24 22h24m23s:CClient.cpp: clientThread exit.
+2017-5-24 22h24m23s:Controller.cpp: Removing client: 1008
+2017-5-24 22h24m23s:CClient.cpp: clientThread exit.
+2017-5-24 22h24m24s:OpalControlClient.cpp:     POSTED  recv sem for client 0 (System Control), cmd 13, thread 16900
+2017-5-24 22h24m24s:SystemControl.cpp: Reset: waiting for model to finish resetting ...
+2017-5-24 22h24m24s:CSubSystem.cpp: Ignoring file transfer for /./myPV_inverter.mat: model is resetting
+2017-5-24 22h24m24s:OpalSystemClient.cpp: Subsys SM_eHS is done resetting.
+2017-5-24 22h24m24s:SystemControl.cpp: Reset: done for all subsystems (1).
+2017-5-24 22h24m24s:RECV_Thread.c: RECV_THREAD: Waiting header (avail) error (-1)
+2017-5-24 22h24m24s:RECV_Thread.c: Cleanup done.
+2017-5-24 22h24m26s:SystemControl.cpp: Reset : Ok. 1 subsys (out of 1) are gone.
+2017-5-24 22h24m26s:Acquisition.cpp: 2-acqGroupReqThread exiting, stopFlag raised (lastErr=0)
+2017-5-24 22h24m26s:Acquisition.cpp: 2-acqGroupReqThread exiting, stopFlag raised (lastErr=0)
+2017-5-24 22h24m26s:Acquisition.cpp: 2-acqGroupReqThread exiting, stopFlag raised (lastErr=0)
+2017-5-24 22h24m27s:Acquisition.cpp: 2-acqGroupReqThread exiting, stopFlag raised (lastErr=0)
+2017-5-24 22h24m27s:Acquisition.cpp: 2-acqGroupReqThread exiting, stopFlag raised (lastErr=0)
+2017-5-24 22h24m27s:Acquisition.cpp: 2-acqGroupReqThread exiting, stopFlag raised (lastErr=0)
+2017-5-24 22h24m27s:SystemControl.cpp: ------- CONTROLLER PRIORITY HAS BEEN DECREASED ------
+2017-5-24 22h24m27s:CTargetConnectionOpalD.cpp: GetFileList, daemonIpAddr 192.168.5.113
+2017-5-24 22h24m27s:CTargetConnectionOpalD.cpp: RetrieveFileFromTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h24m28s:Controller.cpp: NOTIFICATION MSG IS: 0|C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_sm_ehs\OpREDHAWKtarget\myPV_inverter.mat
+2017-5-24 22h24m28s:CTargetConnectionOpalD.cpp: GetFileList, daemonIpAddr 192.168.5.113
+2017-5-24 22h24m28s:CTargetConnectionOpalD.cpp: RetrieveFileFromTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h24m28s:Controller.cpp: NOTIFICATION MSG IS: 3|C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_sm_ehs\OpREDHAWKtarget\target_report.xml
+2017-5-24 22h24m31s:OpalControlClient.cpp: Signals Control thread (id 22884) normal exit.
+2017-5-24 22h24m31s:OpalControlClient.cpp: Probe Control thread (id 19388) normal exit.
+2017-5-24 22h24m31s:OpalControlClient.cpp: Snapshot Control thread (id 17980) normal exit.
+2017-5-24 22h24m31s:OpalControlClient.cpp: Parameter Control thread (id 15992) normal exit.
+2017-5-24 22h24m31s:OpalControlClient.cpp: System Control thread (id 16900) normal exit.
+2017-5-24 22h24m31s:OpalControlClient.cpp: Blobs Control thread (id 7884) normal exit.
+2017-5-24 22h24m31s:SEND_Thread.c: Thread 16176 stopping because stop flag is set
+2017-5-24 22h24m31s:Controller.cpp: NOTIFICATION MSG IS: MODEL_LOADABLE
+2017-5-24 22h24m31s:SEND_Thread.c: SEND THREAD: Cleanup done
+2017-5-24 22h24m31s:Controller.cpp: API function call : COMMAND Selection Remove
+2017-5-24 22h24m31s:Controller.cpp: API function call : COMMAND Selection Add
+2017-5-24 22h24m31s:Controller.cpp: API function call : COMMAND Matlab Handler Close
+2017-5-24 22h24m31s:MatlabHandler - Close: closing matlab instance with refId = 288514058741612544
+2017-5-24 22h32m44s:Controller.cpp: API function call : COMMAND Selection Remove
+2017-5-24 22h32m44s:Controller.cpp: API function call : COMMAND Selection Add
+2017-5-24 22h32m44s:Controller.cpp: API function call : COMMAND Matlab Handler Load
+2017-5-24 22h32m44s:MatlabHandler - getConflictFlag: The model version is older than Matlab's (Model[UnknownMatlabVersion]<->Matlab[v8.4])
+2017-5-24 22h50m15s:Controller.cpp: API function call : COMMAND Selection Remove
+2017-5-24 22h50m15s:Controller.cpp: API function call : COMMAND Selection Add
+2017-5-24 22h50m15s:Controller.cpp: API function call : RegisterDisplay
+2017-5-24 22h50m15s:Controller.cpp: API function call : Clean model
+2017-5-24 22h50m15s:Controller.cpp: API function call : Compile (boost_and_two_level_bridge_rtlab.mdl   C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab)
+2017-5-24 22h50m15s:Controller.cpp: NOTIFICATION MSG IS: MODEL_COMPILING
+2017-5-24 22h50m15s:Compile.cpp: compileThread launched with id = 22696
+2017-5-24 22h50m15s:Controller.cpp: NOTIFICATION MSG IS: Preparing model
+2017-5-24 22h50m15s:CTargetConnectionOpalD.cpp: RetrieveFileFromTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h50m16s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab.mdl: file access date is 05/24/17 22:50:07 and last access was 05/24/17 21:55:23
+2017-5-24 22h50m16s:Controller.cpp: NOTIFICATION MSG IS: Model separation
+2017-5-24 22h50m28s:MatlabHandler - createConnection: create connection has been successful with Matlab version = 8.4
+2017-5-24 22h51m34s:Failed to connect to 192.168.5.113:25253 (status = -1)
+2017-5-24 22h51m35s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\Opcommon\boost_and_two_level__1_sm_ehs.mdl: file access date is 05/24/17 22:51:27 and last access was 05/24/17 21:58:54
+2017-5-24 22h51m35s:Controller.cpp: NOTIFICATION MSG IS: Code generation
+2017-5-24 22h51m35s:CIniFileCache.cpp: CIniFileCache.Load():: Empty line (#41) before EOF has been reached
+2017-5-24 22h51m35s:CIniFileCache.cpp: CIniFileCache.Load():: Empty line (#101) before EOF has been reached
+2017-5-24 22h51m35s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 22h51m35s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 22h51m35s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 22h51m35s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 22h51m35s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 22h51m35s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 22h51m35s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 22h51m35s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 22h51m35s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 22h51m35s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 22h51m35s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 22h51m35s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 22h51m35s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 22h51m35s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 22h51m35s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 22h51m35s:CIniFileCache.cpp: CIniFileCache.Load():: Empty line (#142) before EOF has been reached
+2017-5-24 22h51m35s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 22h51m35s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 22h51m35s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 22h51m35s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 22h51m35s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 22h51m35s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 22h51m35s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 22h51m35s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 22h51m35s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 22h51m35s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 22h51m35s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 22h51m35s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 22h51m35s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 22h51m35s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 22h51m35s:CIniFileCache.cpp: CIniFileCache.Load(): Will have to be save because of an invalid line.
+2017-5-24 22h51m35s:CIniFileCache.cpp: Saving boost_and_two_level__1_sm_ehs.sfp because error was detected
+2017-5-24 22h51m35s:Controller.cpp: NOTIFICATION MSG IS: Code generation: boost_and_two_level__1_sm_ehs
+2017-5-24 22h52m13s:********* binary ********
+2017-5-24 22h52m13s:********* binary ********
+2017-5-24 22h52m13s:********* binary ********
+2017-5-24 22h52m13s:********* binary ********
+2017-5-24 22h52m13s:********* binary ********
+2017-5-24 22h52m13s:********* binary ********
+2017-5-24 22h52m13s:********* binary ********
+2017-5-24 22h52m13s:********* binary ********
+2017-5-24 22h52m13s:********* binary ********
+2017-5-24 22h52m13s:********* binary ********
+2017-5-24 22h52m14s:Controller.cpp: NOTIFICATION MSG IS: Parameters database
+2017-5-24 22h52m14s:Controller.cpp: NOTIFICATION MSG IS: Signals database
+2017-5-24 22h52m14s:CIniFileCache.cpp: CIniFileCache.Load():: Empty line (#726) before EOF has been reached
+2017-5-24 22h52m14s:CIniFileCache.cpp: CIniFileCache.Load():: Empty line (#1303) before EOF has been reached
+2017-5-24 22h52m14s:CIniFileCache.cpp: CIniFileCache.Load():: Empty line (#1310) before EOF has been reached
+2017-5-24 22h52m14s:CIniFileCache.cpp: CIniFileCache.Load():: Empty line (#1423) before EOF has been reached
+2017-5-24 22h52m14s:CIniFileCache.cpp: CIniFileCache.Load():: Empty line (#1443) before EOF has been reached
+2017-5-24 22h52m14s:CIniFileCache.cpp: CIniFileCache.Load():: Empty line (#1444) before EOF has been reached
+2017-5-24 22h52m14s:CIniFileCache.cpp: Saving boost_and_two_level__1_sm_ehs.map because error was detected
+2017-5-24 22h52m14s:CIniFileCache.cpp: CIniFileCache.Load():: Empty line (#7) before EOF has been reached
+2017-5-24 22h52m14s:CIniFileCache.cpp: CIniFileCache.Load():: Empty line (#18) before EOF has been reached
+2017-5-24 22h52m14s:CIniFileCache.cpp: CIniFileCache.Load():: Empty line (#24) before EOF has been reached
+2017-5-24 22h52m14s:CIniFileCache.cpp: CIniFileCache.Load():: Empty line (#33) before EOF has been reached
+2017-5-24 22h52m14s:CIniFileCache.cpp: CIniFileCache.Load():: Empty line (#38) before EOF has been reached
+2017-5-24 22h52m14s:CIniFileCache.cpp: CIniFileCache.Load():: Empty line (#206) before EOF has been reached
+2017-5-24 22h52m14s:CIniFileCache.cpp: Saving boost_and_two_level_bridge_rtlab.sig because error was detected
+2017-5-24 22h52m14s:MatlabCOM::initializeClassCOM: CoInitialize function failed with code 262
+2017-5-24 22h52m15s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\OpalSnapshotUtil.c: file access date is 05/24/17 22:52:13 and last access was 05/24/17 21:59:37
+2017-5-24 22h52m15s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\boost_and_two_level__1_sm_ehs.c: file access date is 05/24/17 22:52:10 and last access was 05/24/17 21:59:38
+2017-5-24 22h52m15s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\boost_and_two_level__1_sm_ehs.h: file access date is 05/24/17 22:52:10 and last access was 05/24/17 21:59:32
+2017-5-24 22h52m15s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\boost_and_two_level__1_sm_ehs.mk: file access date is 05/24/17 22:52:12 and last access was 05/24/17 21:59:36
+2017-5-24 22h52m15s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\boost_and_two_level__1_sm_ehs_data.c: file access date is 05/24/17 22:52:10 and last access was 05/24/17 21:59:32
+2017-5-24 22h52m15s:Controller.cpp: NOTIFICATION MSG IS: Source files validation
+2017-5-24 22h52m15s:Controller.cpp: NOTIFICATION MSG IS: File transfer
+2017-5-24 22h52m15s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m15s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m18s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m18s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m18s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m18s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m18s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m18s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m18s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m18s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m18s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m18s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m18s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m18s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m18s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m18s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m18s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m18s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m18s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m18s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m18s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m19s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m19s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m19s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m19s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m19s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m19s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m19s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m19s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m19s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m19s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m19s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m19s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m19s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m20s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m20s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m20s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m20s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m20s:Controller.cpp: NOTIFICATION MSG IS: Code compilation
+2017-5-24 22h52m20s:CTargetConnectionOpalD.cpp: RetrieveFileFromTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m21s:Controller.cpp: NOTIFICATION MSG IS: Code compilation: boost_and_two_level__1_sm_ehs
+2017-5-24 22h52m24s:Controller.cpp: NOTIFICATION MSG IS: File retrieval
+2017-5-24 22h52m24s:CTargetConnectionOpalD.cpp: GetFileList, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m24s:CTargetConnectionOpalD.cpp: RetrieveFileFromTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m25s:CTargetConnectionOpalD.cpp: GetFileList, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m25s:CTargetConnectionOpalD.cpp: RetrieveFileFromTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m27s:Controller.cpp: NOTIFICATION MSG IS: End of build process
+2017-5-24 22h52m27s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\Opcommon\boost_and_two_level_bridge_rtlab.subsys: file access date is 05/24/17 22:51:29 and last access was 05/24/17 21:58:55
+2017-5-24 22h52m27s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\Opcommon\boost_and_two_level_bridge_rtlab.param: file access date is 05/24/17 22:52:14 and last access was 05/24/17 21:59:37
+2017-5-24 22h52m27s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\Opcommon\boost_and_two_level_bridge_rtlab.signal: file access date is 05/24/17 22:52:14 and last access was 05/24/17 21:59:37
+2017-5-24 22h52m27s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\boost_and_two_level__1_sm_ehs.c: file access date is 05/24/17 22:52:15 and last access was 05/24/17 22:52:10
+2017-5-24 22h52m27s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\boost_and_two_level__1_sm_ehs_private.h: file access date is 05/24/17 22:52:10 and last access was 05/24/17 21:59:32
+2017-5-24 22h52m27s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\boost_and_two_level__1_sm_ehs_types.h: file access date is 05/24/17 22:52:10 and last access was 05/24/17 21:59:32
+2017-5-24 22h52m27s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\builtin_typeid_types.h: file access date is 05/24/17 22:52:10 and last access was 05/24/17 21:59:32
+2017-5-24 22h52m27s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\multiword_types.h: file access date is 05/24/17 22:52:10 and last access was 05/24/17 21:59:32
+2017-5-24 22h52m27s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\rtGetInf.c: file access date is 05/24/17 22:52:10 and last access was 05/24/17 21:59:32
+2017-5-24 22h52m27s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\rtGetInf.h: file access date is 05/24/17 22:52:10 and last access was 05/24/17 21:59:32
+2017-5-24 22h52m27s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\rtGetNaN.c: file access date is 05/24/17 22:52:10 and last access was 05/24/17 21:59:32
+2017-5-24 22h52m27s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\rtGetNaN.h: file access date is 05/24/17 22:52:10 and last access was 05/24/17 21:59:32
+2017-5-24 22h52m27s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\rt_defines.h: file access date is 05/24/17 22:52:10 and last access was 05/24/17 21:59:32
+2017-5-24 22h52m27s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\rt_nonfinite.c: file access date is 05/24/17 22:52:10 and last access was 05/24/17 21:59:32
+2017-5-24 22h52m27s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\rt_nonfinite.h: file access date is 05/24/17 22:52:10 and last access was 05/24/17 21:59:32
+2017-5-24 22h52m27s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\rtmodel.h: file access date is 05/24/17 22:52:10 and last access was 05/24/17 21:59:32
+2017-5-24 22h52m27s:CCompanionFile.cpp: MD5 needed for C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\rtwtypes.h: file access date is 05/24/17 22:52:10 and last access was 05/24/17 21:59:32
+2017-5-24 22h52m28s:Controller.cpp: NOTIFICATION MSG IS: MODEL_LOADABLE
+2017-5-24 22h52m28s:Compile.cpp: Compilation completed successfully.
+2017-5-24 22h52m28s:Compile.cpp: Compilation Thread closed.
+2017-5-24 22h52m28s:Controller.cpp: API function call : RegisterDisplay
+2017-5-24 22h52m28s:Controller.cpp: API function call : COMMAND Selection Remove
+2017-5-24 22h52m28s:Controller.cpp: API function call : COMMAND Selection Add
+2017-5-24 22h52m28s:Controller.cpp: API function call : COMMAND Selection Remove
+2017-5-24 22h52m28s:Controller.cpp: API function call : COMMAND Selection Add
+2017-5-24 22h52m28s:Controller.cpp: API function call : GET_CHILDREN Model
+2017-5-24 22h52m28s:Controller.cpp: API function call : GET_CHILDREN Model Variable List
+2017-5-24 22h52m28s:Controller.cpp: API function call : GET_CHILDREN Model Parameter List
+2017-5-24 22h52m28s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2017-5-24 22h52m40s:Controller.cpp: API function call : COMMAND Selection Remove
+2017-5-24 22h52m40s:Controller.cpp: API function call : COMMAND Selection Add
+2017-5-24 22h52m40s:Controller.cpp: API function call : COMMAND Matlab Handler Load
+2017-5-24 22h52m40s:MatlabHandler - getConflictFlag: The model version is older than Matlab's (Model[UnknownMatlabVersion]<->Matlab[v8.4])
+2017-5-24 22h52m42s:Controller.cpp: API function call : COMMAND Selection Remove
+2017-5-24 22h52m42s:Controller.cpp: API function call : COMMAND Selection Add
+2017-5-24 22h52m42s:Controller.cpp: API function call : COMMAND Project Load
+2017-5-24 22h52m42s:AcqControl.cpp: *** Computing sync data for acq group 1
+2017-5-24 22h52m42s:AcqControl.cpp: subsys id 1, repeat factor 1, status skip 1
+2017-5-24 22h52m42s:AcqControl.cpp: *** Multiplicateur du nbre de samples 1 (0.000020, 0.000020, 0.000020)
+2017-5-24 22h52m42s:AcqControl.cpp: *** Computing sync data for acq group 2
+2017-5-24 22h52m42s:AcqControl.cpp: subsys id 1, repeat factor 1, status skip 1
+2017-5-24 22h52m42s:AcqControl.cpp: *** Multiplicateur du nbre de samples 1 (0.000020, 0.000020, 0.000020)
+2017-5-24 22h52m42s:AcqControl.cpp: *** Computing sync data for acq group 3
+2017-5-24 22h52m42s:AcqControl.cpp: subsys id 1, repeat factor 1, status skip 1
+2017-5-24 22h52m42s:AcqControl.cpp: *** Multiplicateur du nbre de samples 1 (0.000020, 0.000020, 0.000020)
+2017-5-24 22h52m42s:AcqControl.cpp: *** Computing sync data for acq group 4
+2017-5-24 22h52m42s:AcqControl.cpp: subsys id 1, repeat factor 1, status skip 1
+2017-5-24 22h52m42s:AcqControl.cpp: *** Multiplicateur du nbre de samples 1 (0.000020, 0.000020, 0.000020)
+2017-5-24 22h52m42s:AcqControl.cpp: *** Computing sync data for acq group 5
+2017-5-24 22h52m42s:AcqControl.cpp: subsys id 1, repeat factor 1, status skip 1
+2017-5-24 22h52m42s:AcqControl.cpp: *** Multiplicateur du nbre de samples 1 (0.000020, 0.000020, 0.000020)
+2017-5-24 22h52m42s:AcqControl.cpp: *** Computing sync data for acq group 25
+2017-5-24 22h52m42s:AcqControl.cpp: subsys id 1, repeat factor 1, status skip 1
+2017-5-24 22h52m42s:AcqControl.cpp: *** Multiplicateur du nbre de samples 1 (0.000020, 0.000020, 0.000020)
+2017-5-24 22h52m43s:Controller.cpp: NOTIFICATION MSG IS: MODEL_LOADING
+2017-5-24 22h52m43s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m44s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m44s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m45s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m54s:SystemControl.cpp: ------- CONTROLLER PRIORITY HAS BEEN INCREASED ------
+2017-5-24 22h52m54s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m54s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m54s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m54s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m54s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m54s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m54s:CTargetConnectionOpalD.cpp: TransferFileToTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m57s:CTargetConnectionOpalD.cpp: LoadSubsys, daemonIpAddr 192.168.5.113
+2017-5-24 22h52m57s:NodesLoadingServer.cpp: Load : 1 temp sockets connected
+2017-5-24 22h52m59s:SystemControl.cpp: Load : received pid-ports for logical node 1
+2017-5-24 22h52m59s:SystemControl.cpp: Load: established connections for logical node 1 (to recv and send on target)
+2017-5-24 22h52m59s:OpalSystemClient.cpp: --- modeleStatus thread (handle 0x5310) start
+2017-5-24 22h52m59s:Acquisition.cpp: acqGroupReqThread handle (0x1ad4)
+2017-5-24 22h52m59s:Acquisition.cpp: acqGroupReqThread handle (0x100c)
+2017-5-24 22h52m59s:Acquisition.cpp: acqGroupReqThread handle (0x1068)
+2017-5-24 22h52m59s:Acquisition.cpp: acqGroupReqThread handle (0x1024)
+2017-5-24 22h52m59s:Acquisition.cpp: acqGroupReqThread handle (0x1ad8)
+2017-5-24 22h52m59s:Acquisition.cpp: acqGroupReqThread handle (0x102c)
+2017-5-24 22h52m59s:SystemControl.cpp: Load: all subsystems connected
+2017-5-24 22h53m1s:SystemControl.cpp: Load: received commrt extra info from logical node 1 (final = 0)
+2017-5-24 22h53m1s:SystemControl.cpp: Load: sent combined commrt extra info to logicalNode 1
+2017-5-24 22h53m1s:SystemControl.cpp: Load: received commrt extra info from logical node 1 (final = 0)
+2017-5-24 22h53m1s:SystemControl.cpp: Load: sent combined commrt extra info to logicalNode 1
+2017-5-24 22h53m1s:SystemControl.cpp: Load: received commrt extra info from logical node 1 (final = 1)
+2017-5-24 22h53m1s:SystemControl.cpp: Load: sent combined commrt extra info to logicalNode 1
+2017-5-24 22h53m1s:SystemControl.cpp: All subsystems sent their UDP ports and other useful info.
+2017-5-24 22h53m1s:SystemControl.cpp: Load: received combined status from master
+2017-5-24 22h53m1s:SystemControl.cpp: Load: sent UDP ports to logical node 1
+2017-5-24 22h53m1s:SystemControl.cpp: Load: closed temp socket to logical node 1
+2017-5-24 22h53m1s:OpalSystemClient.cpp: Subsys SM_eHS is done initializing.
+2017-5-24 22h53m1s:SystemControl.cpp: Load: sent calc step to logical node 1
+2017-5-24 22h53m1s:OpalControlClient.cpp:     POSTED  recv sem for client 0 (System Control), cmd 8, thread 25428
+2017-5-24 22h53m1s:SystemControl.cpp: Load: received feedback for calc step command
+2017-5-24 22h53m1s:OpalControlClient.cpp:     POSTED  recv sem for client 5 (Blobs Control), cmd 60, thread 24796
+2017-5-24 22h53m1s:OpalControlClient.cpp:     POSTED  recv sem for client 5 (Blobs Control), cmd 61, thread 24796
+2017-5-24 22h53m1s:OpalControlClient.cpp:     POSTED  recv sem for client 5 (Blobs Control), cmd 59, thread 24796
+2017-5-24 22h53m1s:OpalControlClient.cpp:     POSTED  recv sem for client 1 (Probe Control), cmd 48, thread 8500
+2017-5-24 22h53m2s:Unable to create a new HTTP connection - aborting
+2017-5-24 22h53m2s:OpalControlClient.cpp:     POSTED  recv sem for client 5 (Blobs Control), cmd 59, thread 24796
+2017-5-24 22h53m2s:AcqControl.cpp: Group 1 : SUBYS ID 1 : 42 samples maximum apres restriction TCP/IP
+2017-5-24 22h53m2s:AcqControl.cpp: Group 1 : The lowest subsys sample is 42
+2017-5-24 22h53m2s:AcqControl.cpp: Group 1: skip 1, for 20 ms -> 999 samples 
+2017-5-24 22h53m2s:OpalControlClient.cpp:     POSTED  recv sem for client 1 (Probe Control), cmd 34, thread 8500
+2017-5-24 22h53m2s:AcqControl.cpp: Group 2 : SUBYS ID 1 : 21 samples maximum apres restriction TCP/IP
+2017-5-24 22h53m2s:AcqControl.cpp: Group 2 : The lowest subsys sample is 21
+2017-5-24 22h53m2s:AcqControl.cpp: Group 2: skip 1, for 20 ms -> 999 samples 
+2017-5-24 22h53m2s:AcqControl.cpp: Group 3 : SUBYS ID 1 : 28 samples maximum apres restriction TCP/IP
+2017-5-24 22h53m2s:OpalControlClient.cpp:     POSTED  recv sem for client 1 (Probe Control), cmd 34, thread 8500
+2017-5-24 22h53m2s:AcqControl.cpp: Group 3 : The lowest subsys sample is 28
+2017-5-24 22h53m2s:AcqControl.cpp: Group 3: skip 1, for 20 ms -> 999 samples 
+2017-5-24 22h53m2s:OpalControlClient.cpp:     POSTED  recv sem for client 1 (Probe Control), cmd 34, thread 8500
+2017-5-24 22h53m2s:AcqControl.cpp: Group 4 : SUBYS ID 1 : 57 samples maximum apres restriction TCP/IP
+2017-5-24 22h53m2s:AcqControl.cpp: Group 4 : The lowest subsys sample is 57
+2017-5-24 22h53m2s:AcqControl.cpp: Group 4: skip 1, for 20 ms -> 999 samples 
+2017-5-24 22h53m2s:OpalControlClient.cpp:     POSTED  recv sem for client 1 (Probe Control), cmd 34, thread 8500
+2017-5-24 22h53m2s:AcqControl.cpp: Group 5 : SUBYS ID 1 : 85 samples maximum apres restriction TCP/IP
+2017-5-24 22h53m2s:AcqControl.cpp: Group 5 : The lowest subsys sample is 85
+2017-5-24 22h53m2s:AcqControl.cpp: Group 5: skip 1, for 20 ms -> 999 samples 
+2017-5-24 22h53m2s:OpalControlClient.cpp:     POSTED  recv sem for client 1 (Probe Control), cmd 34, thread 8500
+2017-5-24 22h53m2s:AcqControl.cpp: Group 25 : SUBYS ID 1 : 1 samples maximum apres restriction TCP/IP
+2017-5-24 22h53m2s:AcqControl.cpp: Group 25 : The lowest subsys sample is 1
+2017-5-24 22h53m2s:AcqControl.cpp: Group 25: skip 1, for 20 ms -> 999 samples 
+2017-5-24 22h53m2s:OpalControlClient.cpp:     POSTED  recv sem for client 1 (Probe Control), cmd 34, thread 8500
+2017-5-24 22h53m2s:Controller.cpp: NOTIFICATION MSG IS: MODEL_PAUSED
+2017-5-24 22h53m2s:CTargetConnectionOpalD.cpp: GetFileList, daemonIpAddr 192.168.5.113
+2017-5-24 22h53m2s:CModel.cpp: Done loading model "C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab.mdl"
+2017-5-24 22h53m2s:Controller.cpp: API function call : GetSubsysList
+2017-5-24 22h53m2s:Controller.cpp: API function call : GetSubsysList
+2017-5-24 22h53m2s:CTargetConnectionOpalD.cpp: RetrieveFileFromTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h53m2s:Controller.cpp: NOTIFICATION MSG IS: 2|C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_sm_ehs\OpREDHAWKtarget\opboost_and_two_level__sm_ehs_0.snap
+2017-5-24 22h53m28s:Controller.cpp: API function call : COMMAND Selection Remove
+2017-5-24 22h53m28s:Controller.cpp: API function call : COMMAND Selection Remove
+2017-5-24 22h53m28s:Controller.cpp: API function call : COMMAND Selection Add
+2017-5-24 22h53m28s:Controller.cpp: API function call : COMMAND Selection Add
+2017-5-24 22h53m28s:Controller.cpp: API function call : COMMAND Project Execute
+2017-5-24 22h53m28s:Controller.cpp: API function call : COMMAND Matlab Handler Load
+2017-5-24 22h53m28s:OpalControlClient.cpp:     POSTED  recv sem for client 0 (System Control), cmd 8, thread 25428
+2017-5-24 22h53m28s:Controller.cpp: NOTIFICATION MSG IS: MODEL_RUNNING
+2017-5-24 22h53m28s:OpalControlClient.cpp:     POSTED  recv sem for client 0 (System Control), cmd 9, thread 25428
+2017-5-24 22h53m28s:MatlabHandler - getConflictFlag: The model version is older than Matlab's (Model[UnknownMatlabVersion]<->Matlab[v8.4])
+2017-5-24 22h53m29s:Controller.cpp: API function call : COMMAND Selection Remove
+2017-5-24 22h53m29s:Controller.cpp: API function call : COMMAND Selection Add
+2017-5-24 22h53m29s:Controller.cpp: API function call : COMMAND Matlab Handler Execute
+2017-5-24 22h53m29s:Controller.cpp: new client: 24920
+2017-5-24 22h53m29s:CClient.cpp: Creating new client ID: 18988
+2017-5-24 22h53m29s:CClient.cpp: clientThread started with port:4148
+2017-5-24 22h53m29s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2017-5-24 22h53m29s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 19048
+2017-5-24 22h53m29s:Controller.cpp: API function call : Get model list changes
+2017-5-24 22h53m29s:Controller.cpp: API function call : COMMAND Project ApiSync
+2017-5-24 22h53m29s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2017-5-24 22h53m29s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2017-5-24 22h53m29s:Controller.cpp: API function call : COMMAND Selection Remove
+2017-5-24 22h53m29s:Controller.cpp: API function call : COMMAND Selection Add
+2017-5-24 22h53m29s:Controller.cpp: new client: 24920
+2017-5-24 22h53m29s:CClient.cpp: Creating new client ID: 18300
+2017-5-24 22h53m29s:CClient.cpp: clientThread started with port:12712
+2017-5-24 22h53m29s:Controller.cpp: API function call : COMMAND RT-Lab Global Open
+2017-5-24 22h53m29s:CClient.cpp: Client connected: name "jiang", computer "LAPTOP-5FBKHMJV", ip "127.0.0.1", pid 19048
+2017-5-24 22h53m29s:Controller.cpp: API function call : Get model list changes
+2017-5-24 22h53m29s:Controller.cpp: API function call : COMMAND Project ApiSync
+2017-5-24 22h53m29s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2017-5-24 22h53m29s:Controller.cpp: API function call : GET_CHILDREN Sub-System List
+2017-5-24 22h53m29s:Controller.cpp: API function call : COMMAND Selection Remove
+2017-5-24 22h53m29s:Controller.cpp: API function call : COMMAND Selection Add
+2017-5-24 22h53m29s:Controller.cpp: API function call : SET ATTRIBUTES
+2017-5-24 22h53m29s:Controller.cpp: API function call : COMMAND Matlab Handler Open
+2017-5-24 22h53m29s:MatlabHandler - Open: argument ATT_WAIT_FOR_COMPLETION = false, opening matlab asynchronously
+2017-5-24 22h53m29s:Controller.cpp: API function call : getNumSignalsForGroup2
+2017-5-24 22h53m29s:Controller.cpp: API function call : getNumSignalsForGroup2
+2017-5-24 22h53m29s:Controller.cpp: API function call : getNumSignalsForGroup2
+2017-5-24 22h53m29s:Controller.cpp: API function call : getNumSignalsForGroup2
+2017-5-24 22h53m29s:Controller.cpp: API function call : getNumSignalsForGroup2
+2017-5-24 22h53m30s:MatlabHandler - createConnection: create connection has been successful with Matlab version = 8.4
+2017-5-24 22h53m30s:Controller.cpp: API function call : SetSignals
+2017-5-24 22h53m30s:Controller.cpp: NOTIFICATION MSG IS: ¥
+2017-5-24 22h53m30s:Controller.cpp: API function call : getNumSignalsForGroup2
+2017-5-24 22h53m30s:Controller.cpp: API function call : Getting acquisition memory size
+2017-5-24 22h53m30s:Controller.cpp: API function call : getNumSignalsForGroup2
+2017-5-24 22h53m30s:Controller.cpp: API function call : GetSignalListForGroup
+2017-5-24 22h53m30s:Controller.cpp: API function call : GetAcqBlockLastVal
+2017-5-24 22h53m30s:Controller.cpp: API function call : NotificationConnect
+2017-5-24 22h53m30s:Controller.cpp: pClient->notifCommSock = 13392
+2017-5-24 22h53m30s:Controller.cpp: API function call : SetEventInterest
+2017-5-24 22h53m30s:Controller.cpp: API function call : GetTimeInfo
+2017-5-24 22h53m30s:Controller.cpp: API function call : GetSignals (group 1), starting acquisition ... this message will be displayed once.
+2017-5-24 22h53m30s:Controller.cpp: API function call : getNumSignalsForGroup2
+2017-5-24 22h53m30s:Controller.cpp: API function call : Getting acquisition memory size
+2017-5-24 22h53m30s:Controller.cpp: API function call : getNumSignalsForGroup2
+2017-5-24 22h53m30s:Controller.cpp: API function call : GetSignalListForGroup
+2017-5-24 22h53m30s:Controller.cpp: API function call : GetTimeInfo
+2017-5-24 22h53m30s:Controller.cpp: API function call : GetSignals (group 2), starting acquisition ... this message will be displayed once.
+2017-5-24 22h53m30s:Controller.cpp: API function call : getNumSignalsForGroup2
+2017-5-24 22h53m30s:Controller.cpp: API function call : Getting acquisition memory size
+2017-5-24 22h53m30s:Controller.cpp: API function call : getNumSignalsForGroup2
+2017-5-24 22h53m30s:Controller.cpp: API function call : GetSignalListForGroup
+2017-5-24 22h53m30s:Controller.cpp: API function call : GetTimeInfo
+2017-5-24 22h53m30s:Controller.cpp: API function call : GetSignals (group 3), starting acquisition ... this message will be displayed once.
+2017-5-24 22h53m30s:Controller.cpp: API function call : getNumSignalsForGroup2
+2017-5-24 22h53m30s:Controller.cpp: API function call : Getting acquisition memory size
+2017-5-24 22h53m30s:Controller.cpp: API function call : getNumSignalsForGroup2
+2017-5-24 22h53m30s:Controller.cpp: API function call : GetSignalListForGroup
+2017-5-24 22h53m30s:Controller.cpp: API function call : GetTimeInfo
+2017-5-24 22h53m30s:Controller.cpp: API function call : GetSignals (group 0), starting acquisition ... this message will be displayed once.
+2017-5-24 22h53m30s:Controller.cpp: API function call : getNumSignalsForGroup2
+2017-5-24 22h53m30s:Controller.cpp: API function call : Getting acquisition memory size
+2017-5-24 22h53m30s:Controller.cpp: API function call : getNumSignalsForGroup2
+2017-5-24 22h53m30s:Controller.cpp: API function call : GetSignalListForGroup
+2017-5-24 22h53m30s:Controller.cpp: API function call : GetTimeInfo
+2017-5-24 22h53m30s:Controller.cpp: API function call : GetSignals (group 4), starting acquisition ... this message will be displayed once.
+2017-5-24 22h54m9s:Controller.cpp: API function call : SetSignals
+2017-5-24 22h54m9s:Controller.cpp: NOTIFICATION MSG IS: 
+2017-5-24 22h54m12s:Controller.cpp: API function call : SetSignals
+2017-5-24 22h54m12s:Controller.cpp: NOTIFICATION MSG IS: 
+2017-5-24 22h54m16s:Controller.cpp: API function call : SetSignals
+2017-5-24 22h54m16s:Controller.cpp: NOTIFICATION MSG IS: 
+2017-5-24 22h54m27s:Controller.cpp: API function call : SetSignals
+2017-5-24 22h54m27s:Controller.cpp: NOTIFICATION MSG IS: 
+2017-5-24 22h54m49s:Controller.cpp: API function call : SetSignals
+2017-5-24 22h54m49s:Controller.cpp: NOTIFICATION MSG IS: 
+2017-5-24 22h54m53s:Controller.cpp: API function call : SetSignals
+2017-5-24 22h54m53s:Controller.cpp: NOTIFICATION MSG IS: 
+2017-5-24 22h56m12s:Controller.cpp: API function call : SetSignals
+2017-5-24 22h56m12s:Controller.cpp: NOTIFICATION MSG IS: 
+2017-5-24 22h57m32s:Controller.cpp: API function call : GetSignalControl (false)
+2017-5-24 22h57m32s:Controller.cpp: Removing client: 18988
+2017-5-24 22h57m32s:CClient.cpp: clientThread exit.
+2017-5-24 22h57m32s:Controller.cpp: Removing client: 18300
+2017-5-24 22h57m32s:CClient.cpp: clientThread exit.
+2017-5-24 22h57m41s:Controller.cpp: API function call : COMMAND Selection Remove
+2017-5-24 22h57m41s:Controller.cpp: API function call : COMMAND Selection Add
+2017-5-24 22h57m41s:Controller.cpp: API function call : COMMAND Project Reset
+2017-5-24 22h57m41s:OpalSystemClient.cpp: --- modelStatusThread exiting, semStatusStop TryWait returned 0 (lastErr=0)
+2017-5-24 22h57m41s:Controller.cpp: NOTIFICATION MSG IS: MODEL_RESETTING
+2017-5-24 22h57m41s:OpalSystemClient.cpp: ModelStatusThread exit.
+2017-5-24 22h57m43s:OpalControlClient.cpp:     POSTED  recv sem for client 0 (System Control), cmd 13, thread 25428
+2017-5-24 22h57m43s:SystemControl.cpp: Reset: waiting for model to finish resetting ...
+2017-5-24 22h57m43s:CSubSystem.cpp: Ignoring file transfer for /./myPV_inverter.mat: model is resetting
+2017-5-24 22h57m43s:OpalSystemClient.cpp: Subsys SM_eHS is done resetting.
+2017-5-24 22h57m43s:SystemControl.cpp: Reset: done for all subsystems (1).
+2017-5-24 22h57m43s:RECV_Thread.c: RECV_THREAD: Waiting header (avail) error (-1)
+2017-5-24 22h57m43s:RECV_Thread.c: Cleanup done.
+2017-5-24 22h57m46s:SystemControl.cpp: Reset : Ok. 1 subsys (out of 1) are gone.
+2017-5-24 22h57m46s:Acquisition.cpp: 2-acqGroupReqThread exiting, stopFlag raised (lastErr=0)
+2017-5-24 22h57m46s:Acquisition.cpp: 2-acqGroupReqThread exiting, stopFlag raised (lastErr=0)
+2017-5-24 22h57m46s:Acquisition.cpp: 2-acqGroupReqThread exiting, stopFlag raised (lastErr=0)
+2017-5-24 22h57m46s:Acquisition.cpp: 2-acqGroupReqThread exiting, stopFlag raised (lastErr=0)
+2017-5-24 22h57m46s:Acquisition.cpp: 2-acqGroupReqThread exiting, stopFlag raised (lastErr=0)
+2017-5-24 22h57m46s:Acquisition.cpp: 2-acqGroupReqThread exiting, stopFlag raised (lastErr=0)
+2017-5-24 22h57m46s:SystemControl.cpp: ------- CONTROLLER PRIORITY HAS BEEN DECREASED ------
+2017-5-24 22h57m46s:CTargetConnectionOpalD.cpp: GetFileList, daemonIpAddr 192.168.5.113
+2017-5-24 22h57m46s:CTargetConnectionOpalD.cpp: RetrieveFileFromTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h57m46s:Controller.cpp: NOTIFICATION MSG IS: 0|C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_sm_ehs\OpREDHAWKtarget\myPV_inverter.mat
+2017-5-24 22h57m46s:CTargetConnectionOpalD.cpp: GetFileList, daemonIpAddr 192.168.5.113
+2017-5-24 22h57m46s:CTargetConnectionOpalD.cpp: RetrieveFileFromTarget, daemonIpAddr 192.168.5.113
+2017-5-24 22h57m46s:Controller.cpp: NOTIFICATION MSG IS: 3|C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_sm_ehs\OpREDHAWKtarget\target_report.xml
+2017-5-24 22h57m50s:OpalControlClient.cpp: Signals Control thread (id 24284) normal exit.
+2017-5-24 22h57m50s:OpalControlClient.cpp: Probe Control thread (id 8500) normal exit.
+2017-5-24 22h57m50s:OpalControlClient.cpp: Snapshot Control thread (id 3904) normal exit.
+2017-5-24 22h57m50s:OpalControlClient.cpp: Parameter Control thread (id 23452) normal exit.
+2017-5-24 22h57m50s:OpalControlClient.cpp: System Control thread (id 25428) normal exit.
+2017-5-24 22h57m50s:OpalControlClient.cpp: Blobs Control thread (id 24796) normal exit.
+2017-5-24 22h57m50s:SEND_Thread.c: Thread 3684 stopping because stop flag is set
+2017-5-24 22h57m50s:Controller.cpp: NOTIFICATION MSG IS: MODEL_LOADABLE
+2017-5-24 22h57m50s:SEND_Thread.c: SEND THREAD: Cleanup done
+2017-5-24 22h57m50s:Controller.cpp: API function call : COMMAND Selection Remove
+2017-5-24 22h57m50s:Controller.cpp: API function call : COMMAND Selection Add
+2017-5-24 22h57m50s:Controller.cpp: API function call : COMMAND Matlab Handler Close
+2017-5-24 22h57m50s:MatlabHandler - Close: closing matlab instance with refId = 288514058741612544

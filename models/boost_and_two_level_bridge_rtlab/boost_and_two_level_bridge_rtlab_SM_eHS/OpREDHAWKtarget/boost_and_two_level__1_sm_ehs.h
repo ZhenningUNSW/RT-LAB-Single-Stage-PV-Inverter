@@ -3,9 +3,9 @@
  *
  * Code generation for model "boost_and_two_level__1_sm_ehs".
  *
- * Model version              : 1.1155
+ * Model version              : 1.1162
  * Simulink Coder version : 8.7 (R2014b) 08-Sep-2014
- * C source code generated on : Mon May 22 20:50:22 2017
+ * C source code generated on : Wed May 24 22:51:59 2017
  *
  * Target selection: rtlab_rtmodel.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -946,7 +946,7 @@ typedef struct {
   real_T Gate;                         /* '<S3>/Memory1' */
   real_T ext_freq;                     /* '<S3>/Memory1' */
   real_T ext_duty;                     /* '<S3>/Memory1' */
-  real_T SFunction_m[165];             /* '<S18>/S-Function' */
+  real_T SFunction_b[165];             /* '<S18>/S-Function' */
   real_T Relay1;                       /* '<S11>/Relay1' */
   real_T DataTypeConversion8;          /* '<S11>/Data Type Conversion8' */
   real_T eHS_rst_loadin;               /* '<S11>/eHS_rst_loadin' */
@@ -1050,7 +1050,7 @@ typedef struct {
   real_T RTEConversion1[4];            /* '<S13>/RTE Conversion1' */
   real_T TmpSignalConversionAtRTEConve_h[4];
   real_T RTEConversion2[4];            /* '<S13>/RTE Conversion2' */
-  real_T Switch_fr[4];                 /* '<S13>/Switch' */
+  real_T RTESwitch[4];                 /* '<S13>/RTE Switch' */
   real_T RTELogicalOperator1[4];       /* '<S13>/RTE Logical Operator1' */
   real_T RTEGround[4];                 /* '<S13>/RTE Ground' */
   real_T RTE_Conversion_1_o1[4];       /* '<S52>/RTE_Conversion_1' */
@@ -1251,7 +1251,7 @@ typedef struct {
   real_T Numberofsamplespercycle_o;    /* '<S99>/Number of samples per cycle' */
   real_T RoundingFunction_j;           /* '<S99>/Rounding Function' */
   real_T Delay_o;                      /* '<S99>/Gain' */
-  real_T SFunction_b;                  /* '<S101>/S-Function' */
+  real_T SFunction_bx;                 /* '<S101>/S-Function' */
   real_T UnitDelay_e;                  /* '<S100>/Unit Delay' */
   real_T DigitalClock_g;               /* '<S99>/Digital  Clock' */
   real_T UnitDelay1_a;                 /* '<S99>/Unit Delay1' */
@@ -1413,6 +1413,7 @@ typedef struct {
 /* Block states (auto storage) for system '<Root>' */
 typedef struct {
   real_T UnitDelay_DSTATE;             /* '<S65>/Unit Delay' */
+  real_T RTESwitch_DSTATE[8];          /* '<S13>/RTE Switch' */
   real_T UnitDelay_DSTATE_b;           /* '<S91>/Unit Delay' */
   real_T DiscreteTimeIntegrator_DSTATE;/* '<S91>/Discrete-Time Integrator' */
   real_T Delay_x1_DSTATE[2];           /* '<S112>/Delay_x1' */
@@ -1488,6 +1489,7 @@ typedef struct {
   real_T RTEConversion_RWORK[4];       /* '<S13>/RTE Conversion' */
   real_T RTEConversion1_RWORK[4];      /* '<S13>/RTE Conversion1' */
   real_T RTEConversion2_RWORK[4];      /* '<S13>/RTE Conversion2' */
+  real_T RTESwitch_RWORK[4];           /* '<S13>/RTE Switch' */
   real_T SFunction_RWORK;              /* '<S117>/S-Function' */
   real_T SFunction_RWORK_d;            /* '<S85>/S-Function' */
   real_T SFunction_RWORK_g;            /* '<S88>/S-Function' */
@@ -1519,6 +1521,7 @@ typedef struct {
   void *RTEConversion_PWORK;           /* '<S13>/RTE Conversion' */
   void *RTEConversion1_PWORK;          /* '<S13>/RTE Conversion1' */
   void *RTEConversion2_PWORK;          /* '<S13>/RTE Conversion2' */
+  void *RTESwitch_PWORK;               /* '<S13>/RTE Switch' */
   void *RTELogicalOperator1_PWORK;     /* '<S13>/RTE Logical Operator1' */
   void *RTEGround_PWORK;               /* '<S13>/RTE Ground' */
   void *RTE_Conversion_1_PWORK;        /* '<S52>/RTE_Conversion_1' */
@@ -1540,10 +1543,10 @@ typedef struct {
   uint32_T DelayInput1_DSTATE_m[80];   /* '<S50>/Delay Input1' */
   uint32_T DelayInput1_DSTATE_k[10];   /* '<S54>/Delay Input1' */
   int_T SFunction_IWORK[5];            /* '<S60>/S-Function' */
-  int_T SFunction_IWORK_h[5];          /* '<S61>/S-Function' */
-  int_T SFunction_IWORK_i[5];          /* '<S62>/S-Function' */
-  int_T SFunction_IWORK_o[5];          /* '<S63>/S-Function' */
-  int_T SFunction_IWORK_c[5];          /* '<S64>/S-Function' */
+  int_T SFunction_IWORK_b[5];          /* '<S61>/S-Function' */
+  int_T SFunction_IWORK_k[5];          /* '<S62>/S-Function' */
+  int_T SFunction_IWORK_g[5];          /* '<S63>/S-Function' */
+  int_T SFunction_IWORK_gt[5];         /* '<S64>/S-Function' */
   struct {
     int_T Tail;
     int_T Head;
@@ -1559,10 +1562,10 @@ typedef struct {
   } TransportDelay_IWORK_g;            /* '<S42>/Transport Delay' */
 
   int_T SFunction_IWORK_n;             /* '<S117>/S-Function' */
-  int_T SFunction_IWORK_b;             /* '<S85>/S-Function' */
+  int_T SFunction_IWORK_bd;            /* '<S85>/S-Function' */
   int_T SFunction_IWORK_j;             /* '<S88>/S-Function' */
-  int_T SFunction_IWORK_os;            /* '<S90>/S-Function' */
-  int_T SFunction_IWORK_k;             /* '<S107>/S-Function' */
+  int_T SFunction_IWORK_o;             /* '<S90>/S-Function' */
+  int_T SFunction_IWORK_kh;            /* '<S107>/S-Function' */
   int_T OpTrigger_IWORK[5];            /* '<S3>/OpTrigger' */
   int_T OpCtrl_IWORK;                  /* '<S3>/OpCtrl' */
   int_T SFunction_IWORK_nb;            /* '<S101>/S-Function' */
@@ -2093,19 +2096,19 @@ struct P_boost_and_two_level__1_sm_ehs_T_ {
   real_T SFunction_P1_Size_a[2];       /* Computed Parameter: SFunction_P1_Size_a
                                         * Referenced by: '<S60>/S-Function'
                                         */
-  real_T SFunction_P1_j;               /* Expression: Acqu_group
+  real_T SFunction_P1_e;               /* Expression: Acqu_group
                                         * Referenced by: '<S60>/S-Function'
                                         */
-  real_T SFunction_P1_Size_p[2];       /* Computed Parameter: SFunction_P1_Size_p
+  real_T SFunction_P1_Size_n[2];       /* Computed Parameter: SFunction_P1_Size_n
                                         * Referenced by: '<S18>/S-Function'
                                         */
-  real_T SFunction_P1_f;               /* Expression: Data_width
+  real_T SFunction_P1_c;               /* Expression: Data_width
                                         * Referenced by: '<S18>/S-Function'
                                         */
   real_T SFunction_P2_Size_d[2];       /* Computed Parameter: SFunction_P2_Size_d
                                         * Referenced by: '<S18>/S-Function'
                                         */
-  real_T SFunction_P2_m[165];          /* Expression: InitialConditions
+  real_T SFunction_P2_n[165];          /* Expression: InitialConditions
                                         * Referenced by: '<S18>/S-Function'
                                         */
   real_T Relay1_OnVal;                 /* Expression: .5
@@ -2318,10 +2321,10 @@ struct P_boost_and_two_level__1_sm_ehs_T_ {
   real_T OpMonitor_P6[32];             /* Computed Parameter: OpMonitor_P6
                                         * Referenced by: '<S3>/OpMonitor'
                                         */
-  real_T SFunction_P1_Size_pu[2];      /* Computed Parameter: SFunction_P1_Size_pu
+  real_T SFunction_P1_Size_f[2];       /* Computed Parameter: SFunction_P1_Size_f
                                         * Referenced by: '<S61>/S-Function'
                                         */
-  real_T SFunction_P1_b;               /* Expression: Acqu_group
+  real_T SFunction_P1_i4;              /* Expression: Acqu_group
                                         * Referenced by: '<S61>/S-Function'
                                         */
   real_T Memory2_1_X0;                 /* Expression: 0
@@ -2333,10 +2336,10 @@ struct P_boost_and_two_level__1_sm_ehs_T_ {
   real_T Memory2_3_X0;                 /* Expression: 0
                                         * Referenced by: '<S3>/Memory2'
                                         */
-  real_T SFunction_P1_Size_b[2];       /* Computed Parameter: SFunction_P1_Size_b
+  real_T SFunction_P1_Size_m[2];       /* Computed Parameter: SFunction_P1_Size_m
                                         * Referenced by: '<S62>/S-Function'
                                         */
-  real_T SFunction_P1_h;               /* Expression: Acqu_group
+  real_T SFunction_P1_eq;              /* Expression: Acqu_group
                                         * Referenced by: '<S62>/S-Function'
                                         */
   real_T Memory_1_X0;                  /* Expression: 0
@@ -2357,10 +2360,10 @@ struct P_boost_and_two_level__1_sm_ehs_T_ {
   real_T Memory_6_X0;                  /* Expression: 0
                                         * Referenced by: '<S3>/Memory'
                                         */
-  real_T SFunction_P1_Size_j[2];       /* Computed Parameter: SFunction_P1_Size_j
+  real_T SFunction_P1_Size_b[2];       /* Computed Parameter: SFunction_P1_Size_b
                                         * Referenced by: '<S63>/S-Function'
                                         */
-  real_T SFunction_P1_e;               /* Expression: Acqu_group
+  real_T SFunction_P1_p;               /* Expression: Acqu_group
                                         * Referenced by: '<S63>/S-Function'
                                         */
   real_T Memory3_1_X0;                 /* Expression: 0
@@ -2369,10 +2372,10 @@ struct P_boost_and_two_level__1_sm_ehs_T_ {
   real_T Memory3_2_X0;                 /* Expression: 0
                                         * Referenced by: '<S3>/Memory3'
                                         */
-  real_T SFunction_P1_Size_ad[2];      /* Computed Parameter: SFunction_P1_Size_ad
+  real_T SFunction_P1_Size_nb[2];      /* Computed Parameter: SFunction_P1_Size_nb
                                         * Referenced by: '<S64>/S-Function'
                                         */
-  real_T SFunction_P1_k;               /* Expression: Acqu_group
+  real_T SFunction_P1_m;               /* Expression: Acqu_group
                                         * Referenced by: '<S64>/S-Function'
                                         */
   real_T Memory1_X0_c;                 /* Expression: 0
@@ -2912,8 +2915,35 @@ struct P_boost_and_two_level__1_sm_ehs_T_ {
   real_T RTEConversion2_P5;            /* Expression: sampleTime
                                         * Referenced by: '<S13>/RTE Conversion2'
                                         */
-  real_T Switch_Threshold;             /* Expression: 1
-                                        * Referenced by: '<S13>/Switch'
+  real_T RTESwitch_P1_Size[2];         /* Computed Parameter: RTESwitch_P1_Size
+                                        * Referenced by: '<S13>/RTE Switch'
+                                        */
+  real_T RTESwitch_P1;                 /* Expression: criteria
+                                        * Referenced by: '<S13>/RTE Switch'
+                                        */
+  real_T RTESwitch_P2_Size[2];         /* Computed Parameter: RTESwitch_P2_Size
+                                        * Referenced by: '<S13>/RTE Switch'
+                                        */
+  real_T RTESwitch_P2;                 /* Expression: threshold
+                                        * Referenced by: '<S13>/RTE Switch'
+                                        */
+  real_T RTESwitch_P3_Size[2];         /* Computed Parameter: RTESwitch_P3_Size
+                                        * Referenced by: '<S13>/RTE Switch'
+                                        */
+  real_T RTESwitch_P3;                 /* Expression: interpolate
+                                        * Referenced by: '<S13>/RTE Switch'
+                                        */
+  real_T RTESwitch_P4_Size[2];         /* Computed Parameter: RTESwitch_P4_Size
+                                        * Referenced by: '<S13>/RTE Switch'
+                                        */
+  real_T RTESwitch_P4;                 /* Expression: nbMaxEvents
+                                        * Referenced by: '<S13>/RTE Switch'
+                                        */
+  real_T RTESwitch_P5_Size[2];         /* Computed Parameter: RTESwitch_P5_Size
+                                        * Referenced by: '<S13>/RTE Switch'
+                                        */
+  real_T RTESwitch_P5;                 /* Expression: switchType
+                                        * Referenced by: '<S13>/RTE Switch'
                                         */
   real_T RTELogicalOperator1_P1_Size[2];/* Computed Parameter: RTELogicalOperator1_P1_Size
                                          * Referenced by: '<S13>/RTE Logical Operator1'
@@ -3047,7 +3077,7 @@ struct P_boost_and_two_level__1_sm_ehs_T_ {
   real_T SFunction_P1_Size_i[2];       /* Computed Parameter: SFunction_P1_Size_i
                                         * Referenced by: '<S117>/S-Function'
                                         */
-  real_T SFunction_P1_ki;              /* Expression: MaxDelay
+  real_T SFunction_P1_k;               /* Expression: MaxDelay
                                         * Referenced by: '<S117>/S-Function'
                                         */
   real_T SFunction_P2_Size_i[2];       /* Computed Parameter: SFunction_P2_Size_i
@@ -3251,7 +3281,7 @@ struct P_boost_and_two_level__1_sm_ehs_T_ {
   real_T SFunction_P1_Size_o[2];       /* Computed Parameter: SFunction_P1_Size_o
                                         * Referenced by: '<S90>/S-Function'
                                         */
-  real_T SFunction_P1_c;               /* Expression: MaxDelay
+  real_T SFunction_P1_cs;              /* Expression: MaxDelay
                                         * Referenced by: '<S90>/S-Function'
                                         */
   real_T SFunction_P2_Size_id[2];      /* Computed Parameter: SFunction_P2_Size_id
@@ -3667,12 +3697,12 @@ struct tag_RTM_boost_and_two_level__1_sm_ehs_T {
   struct {
     RTWSfcnInfo sfcnInfo;
     time_T *taskTimePtrs[2];
-    SimStruct childSFunctions[42];
-    SimStruct *childSFunctionPtrs[42];
-    struct _ssBlkInfo2 blkInfo2[42];
-    struct _ssSFcnModelMethods2 methods2[42];
-    struct _ssSFcnModelMethods3 methods3[42];
-    struct _ssStatesInfo2 statesInfo2[42];
+    SimStruct childSFunctions[43];
+    SimStruct *childSFunctionPtrs[43];
+    struct _ssBlkInfo2 blkInfo2[43];
+    struct _ssSFcnModelMethods2 methods2[43];
+    struct _ssSFcnModelMethods3 methods3[43];
+    struct _ssStatesInfo2 statesInfo2[43];
     struct {
       time_T sfcnPeriod[1];
       time_T sfcnOffset[1];
@@ -4020,6 +4050,21 @@ struct tag_RTM_boost_and_two_level__1_sm_ehs_T {
       time_T sfcnPeriod[1];
       time_T sfcnOffset[1];
       int_T sfcnTsMap[1];
+      struct _ssPortInputs inputPortInfo[3];
+      real_T const *UPtrs0[4];
+      real_T const *UPtrs1[1];
+      real_T const *UPtrs2[4];
+      struct _ssPortOutputs outputPortInfo[1];
+      uint_T attribs[5];
+      mxArray *params[5];
+      struct _ssDWorkRecord dWork[3];
+      struct _ssDWorkAuxRecord dWorkAux[3];
+    } Sfcn30;
+
+    struct {
+      time_T sfcnPeriod[1];
+      time_T sfcnOffset[1];
+      int_T sfcnTsMap[1];
       struct _ssPortInputs inputPortInfo[2];
       real_T const *UPtrs0[4];
       real_T const *UPtrs1[4];
@@ -4028,7 +4073,7 @@ struct tag_RTM_boost_and_two_level__1_sm_ehs_T {
       mxArray *params[3];
       struct _ssDWorkRecord dWork[1];
       struct _ssDWorkAuxRecord dWorkAux[1];
-    } Sfcn30;
+    } Sfcn31;
 
     struct {
       time_T sfcnPeriod[1];
@@ -4039,7 +4084,7 @@ struct tag_RTM_boost_and_two_level__1_sm_ehs_T {
       mxArray *params[1];
       struct _ssDWorkRecord dWork[1];
       struct _ssDWorkAuxRecord dWorkAux[1];
-    } Sfcn31;
+    } Sfcn32;
 
     struct {
       time_T sfcnPeriod[1];
@@ -4052,7 +4097,7 @@ struct tag_RTM_boost_and_two_level__1_sm_ehs_T {
       mxArray *params[7];
       struct _ssDWorkRecord dWork[1];
       struct _ssDWorkAuxRecord dWorkAux[1];
-    } Sfcn32;
+    } Sfcn33;
 
     struct {
       time_T sfcnPeriod[1];
@@ -4080,20 +4125,6 @@ struct tag_RTM_boost_and_two_level__1_sm_ehs_T {
       mxArray *params[7];
       struct _ssDWorkRecord dWork[1];
       struct _ssDWorkAuxRecord dWorkAux[1];
-    } Sfcn33;
-
-    struct {
-      time_T sfcnPeriod[1];
-      time_T sfcnOffset[1];
-      int_T sfcnTsMap[1];
-      struct _ssPortInputs inputPortInfo[2];
-      real_T const *UPtrs0[1];
-      real_T const *UPtrs1[1];
-      struct _ssPortOutputs outputPortInfo[1];
-      uint_T attribs[4];
-      mxArray *params[4];
-      struct _ssDWorkRecord dWork[3];
-      struct _ssDWorkAuxRecord dWorkAux[3];
     } Sfcn34;
 
     struct {
@@ -4156,6 +4187,20 @@ struct tag_RTM_boost_and_two_level__1_sm_ehs_T {
       time_T sfcnPeriod[1];
       time_T sfcnOffset[1];
       int_T sfcnTsMap[1];
+      struct _ssPortInputs inputPortInfo[2];
+      real_T const *UPtrs0[1];
+      real_T const *UPtrs1[1];
+      struct _ssPortOutputs outputPortInfo[1];
+      uint_T attribs[4];
+      mxArray *params[4];
+      struct _ssDWorkRecord dWork[3];
+      struct _ssDWorkAuxRecord dWorkAux[3];
+    } Sfcn39;
+
+    struct {
+      time_T sfcnPeriod[1];
+      time_T sfcnOffset[1];
+      int_T sfcnTsMap[1];
       struct _ssPortInputs inputPortInfo[1];
       real_T const *UPtrs0[1];
       struct _ssPortOutputs outputPortInfo[1];
@@ -4163,7 +4208,7 @@ struct tag_RTM_boost_and_two_level__1_sm_ehs_T {
       mxArray *params[8];
       struct _ssDWorkRecord dWork[1];
       struct _ssDWorkAuxRecord dWorkAux[1];
-    } Sfcn39;
+    } Sfcn40;
 
     struct {
       time_T sfcnPeriod[1];
@@ -4177,7 +4222,7 @@ struct tag_RTM_boost_and_two_level__1_sm_ehs_T {
       mxArray *params[3];
       struct _ssDWorkRecord dWork[1];
       struct _ssDWorkAuxRecord dWorkAux[1];
-    } Sfcn40;
+    } Sfcn41;
 
     struct {
       time_T sfcnPeriod[1];
@@ -4188,7 +4233,7 @@ struct tag_RTM_boost_and_two_level__1_sm_ehs_T {
       mxArray *params[12];
       struct _ssDWorkRecord dWork[2];
       struct _ssDWorkAuxRecord dWorkAux[2];
-    } Sfcn41;
+    } Sfcn42;
   } NonInlinedSFcns;
 
   /*

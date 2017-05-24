@@ -706,923 +706,919 @@ SM_eHS/source_and_gates/Inverter Control/PWM_Generator/Cr_MinMax/Gain1/Gain
 6304
 F64
 1
-SM_eHS/source_and_gates/Switch/Threshold
-6552
-F64
-1
 SM_eHS/eHSx64 Gen3 CommBlk/c_solver_rte1/EventGen_eHS_1/Controller Name
-6840
+6952
 F64
 6
 SM_eHS/eHSx64 Gen3 CommBlk/c_solver_rte1/EventGen_eHS_1/DataIn port number
-6904
-F64
-1
-SM_eHS/eHSx64 Gen3 CommBlk/c_solver_rte1/EventGen_eHS_1/Size
-6944
-F64
-1
-SM_eHS/eHSx64 Gen3 CommBlk/c_solver_rte1/EventGen_eHS_1/Number of channels
-6968
-F64
-1
-SM_eHS/eHSx64 Gen3 CommBlk/c_solver_rte1/EventGen_eHS_1/numwidth - internal
-6992
-F64
-1
-SM_eHS/eHSx64 Gen3 CommBlk/c_solver_rte1/EventGen_eHS_1/Time unit
 7016
 F64
 1
-SM_eHS/source_and_gates/Constant1/Value
-7024
-F64
-1
-SM_eHS/source_and_gates/Constant2/Value
-7032
-F64
-1
-SM_eHS/source_and_gates/Constant3/Value
-7040
-F64
-1
-SM_eHS/source_and_gates/Constant4/Value
-7048
-F64
-1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Unit Delay/InitialCondition
+SM_eHS/eHSx64 Gen3 CommBlk/c_solver_rte1/EventGen_eHS_1/Size
 7056
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Single-Phase dq Transform/avoid division by zero/UpperLimit
-7064
-F64
-1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Single-Phase dq Transform/avoid division by zero/LowerLimit
-7072
-F64
-1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Gain/Gain
+SM_eHS/eHSx64 Gen3 CommBlk/c_solver_rte1/EventGen_eHS_1/Number of channels
 7080
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Discrete Variable Time Delay/S-Function/MaxDelay
+SM_eHS/eHSx64 Gen3 CommBlk/c_solver_rte1/EventGen_eHS_1/numwidth - internal
 7104
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Discrete Variable Time Delay/S-Function/Ts
+SM_eHS/eHSx64 Gen3 CommBlk/c_solver_rte1/EventGen_eHS_1/Time unit
 7128
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Discrete Variable Time Delay/S-Function/InitialValue
+SM_eHS/source_and_gates/Constant1/Value
+7136
+F64
+1
+SM_eHS/source_and_gates/Constant2/Value
+7144
+F64
+1
+SM_eHS/source_and_gates/Constant3/Value
 7152
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Discrete Variable Time Delay/S-Function/DFT
+SM_eHS/source_and_gates/Constant4/Value
+7160
+F64
+1
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Unit Delay/InitialCondition
+7168
+F64
+1
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Single-Phase dq Transform/avoid division by zero/UpperLimit
 7176
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Discrete-Time Integrator/gainval
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Single-Phase dq Transform/avoid division by zero/LowerLimit
 7184
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Discrete-Time Integrator/InitialCondition
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Gain/Gain
 7192
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Constant4/Value
-7200
-F64
-1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Single-Phase dq Transform/First cycle of simulation Id=0.92, Iq=0/Before
-7208
-F64
-1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Single-Phase dq Transform/First cycle of simulation Id=0.92, Iq=0/After
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Discrete Variable Time Delay/S-Function/MaxDelay
 7216
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Second-Order Filter/Model/D*u(k)/Gain
-7224
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Discrete Variable Time Delay/S-Function/Ts
+7240
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Second-Order Filter/Model/Delay_x1/InitialCondition
-7232
-F64
-2
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Second-Order Filter/Model/C*x(k)/C11/Gain
-7248
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Discrete Variable Time Delay/S-Function/InitialValue
+7264
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Second-Order Filter/Model/Delay_x2/InitialCondition
-7256
-F64
-2
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Second-Order Filter/Model/C*x(k)/C12/Gain
-7272
-F64
-1
-SM_eHS/source_and_gates/Inverter Control/Unit Delay2/InitialCondition
-7280
-F64
-1
-SM_eHS/source_and_gates/Inverter Control/Iq_ref/Value
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Discrete Variable Time Delay/S-Function/DFT
 7288
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/Current Regulator/PI/Integrator/gainval
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Discrete-Time Integrator/gainval
 7296
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/Current Regulator/PI/Integrator/InitialCondition
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Discrete-Time Integrator/InitialCondition
 7304
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Gain1/Gain
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Constant4/Value
 7312
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Integ4/gainval
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Single-Phase dq Transform/First cycle of simulation Id=0.92, Iq=0/Before
 7320
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Integ4/InitialCondition
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Single-Phase dq Transform/First cycle of simulation Id=0.92, Iq=0/After
 7328
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/To avoid division  by zero/UpperLimit
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Second-Order Filter/Model/D*u(k)/Gain
 7336
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/To avoid division  by zero/LowerLimit
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Second-Order Filter/Model/Delay_x1/InitialCondition
 7344
 F64
+2
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Second-Order Filter/Model/C*x(k)/C11/Gain
+7360
+F64
 1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Unit Delay/InitialCondition
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Second-Order Filter/Model/Delay_x2/InitialCondition
+7368
+F64
+2
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Second-Order Filter/Model/C*x(k)/C12/Gain
+7384
+F64
+1
+SM_eHS/source_and_gates/Inverter Control/Unit Delay2/InitialCondition
+7392
+F64
+1
+SM_eHS/source_and_gates/Inverter Control/Iq_ref/Value
+7400
+F64
+1
+SM_eHS/source_and_gates/Inverter Control/Current Regulator/PI/Integrator/gainval
+7408
+F64
+1
+SM_eHS/source_and_gates/Inverter Control/Current Regulator/PI/Integrator/InitialCondition
+7416
+F64
+1
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Gain1/Gain
+7424
+F64
+1
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Integ4/gainval
+7432
+F64
+1
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Integ4/InitialCondition
+7440
+F64
+1
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/To avoid division  by zero/UpperLimit
 7448
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Constant/Value
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/To avoid division  by zero/LowerLimit
 7456
 F64
 1
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Correction subsystem/Unit Delay/InitialCondition
+7560
+F64
+1
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Constant/Value
+7568
+F64
+1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)1/Model/Unit Delay1/InitialCondition
-7464
+7576
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Gain3/Gain
-7472
+7584
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Integ4/gainval
-7480
+7592
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Integ4/InitialCondition
-7488
+7600
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/To avoid division  by zero/UpperLimit
-7496
-F64
-1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/To avoid division  by zero/LowerLimit
-7504
-F64
-1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Unit Delay/InitialCondition
 7608
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Constant/Value
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/To avoid division  by zero/LowerLimit
 7616
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Unit Delay1/InitialCondition
-7624
-F64
-1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Rad->Deg./Gain
-7632
-F64
-1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/to-rad/Gain
-7640
-F64
-1
-SM_eHS/source_and_gates/Inverter Control/Current Regulator/Rff /Gain
-7648
-F64
-1
-SM_eHS/source_and_gates/Inverter Control/Current Regulator/Lff  /Gain
-7656
-F64
-1
-SM_eHS/source_and_gates/Inverter Control/Current Regulator/Rff/Gain
-7664
-F64
-1
-SM_eHS/source_and_gates/Inverter Control/Current Regulator/Lff/Gain
-7672
-F64
-1
-SM_eHS/source_and_gates/Inverter Control/Current Regulator/Saturation/UpperLimit
-7680
-F64
-1
-SM_eHS/source_and_gates/Inverter Control/Current Regulator/Saturation/LowerLimit
-7688
-F64
-1
-SM_eHS/source_and_gates/Inverter Control/MPPT  Parameters/Iph_1/Value
-7696
-F64
-1
-SM_eHS/source_and_gates/Inverter Control/MPPT  Parameters/Iph_2/Value
-7704
-F64
-1
-SM_eHS/source_and_gates/MPPT_On/Value
-7712
-F64
-1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Mean/Model/Integ4/gainval
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Correction subsystem/Unit Delay/InitialCondition
 7720
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Mean/Model/Integ4/InitialCondition
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Constant/Value
 7728
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Mean/Model/K1/Value
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Mean (Variable Frequency)2/Model/Unit Delay1/InitialCondition
 7736
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Mean/Model/Unit Delay/InitialCondition
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Fundamental (PLL-Driven)/Rad->Deg./Gain
+7744
+F64
+1
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/to-rad/Gain
+7752
+F64
+1
+SM_eHS/source_and_gates/Inverter Control/Current Regulator/Rff /Gain
+7760
+F64
+1
+SM_eHS/source_and_gates/Inverter Control/Current Regulator/Lff  /Gain
+7768
+F64
+1
+SM_eHS/source_and_gates/Inverter Control/Current Regulator/Rff/Gain
+7776
+F64
+1
+SM_eHS/source_and_gates/Inverter Control/Current Regulator/Lff/Gain
+7784
+F64
+1
+SM_eHS/source_and_gates/Inverter Control/Current Regulator/Saturation/UpperLimit
+7792
+F64
+1
+SM_eHS/source_and_gates/Inverter Control/Current Regulator/Saturation/LowerLimit
+7800
+F64
+1
+SM_eHS/source_and_gates/Inverter Control/MPPT  Parameters/Iph_1/Value
+7808
+F64
+1
+SM_eHS/source_and_gates/Inverter Control/MPPT  Parameters/Iph_2/Value
+7816
+F64
+1
+SM_eHS/source_and_gates/MPPT_On/Value
+7824
+F64
+1
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Mean/Model/Integ4/gainval
+7832
+F64
+1
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Mean/Model/Integ4/InitialCondition
 7840
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Mean/Model/K2/Value
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Mean/Model/K1/Value
 7848
 F64
 1
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Mean/Model/Unit Delay/InitialCondition
+7952
+F64
+1
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Mean/Model/K2/Value
+7960
+F64
+1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Mean/Model/Unit Delay1/InitialCondition
-7856
+7968
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Integ4/gainval
-7864
+7976
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Integ4/InitialCondition
-7872
+7984
 F64
 1
 SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/To avoid division  by zero/UpperLimit
-7880
-F64
-1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/To avoid division  by zero/LowerLimit
-7888
-F64
-1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Correction subsystem/Unit Delay/InitialCondition
 7992
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Constant/Value
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/To avoid division  by zero/LowerLimit
 8000
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Unit Delay1/InitialCondition
-8008
-F64
-1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Discrete/Discrete Derivative /Denominator
-8016
-F64
-2
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Discrete/Discrete Derivative /InitialStates
-8032
-F64
-1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Discrete/Discrete-Time Integrator/gainval
-8040
-F64
-1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Discrete/Discrete-Time Integrator/UpperSaturationLimit
-8048
-F64
-1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Discrete/Discrete-Time Integrator/LowerSaturationLimit
-8056
-F64
-1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Discrete/Saturation1/UpperLimit
-8064
-F64
-1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Discrete/Saturation1/LowerLimit
-8072
-F64
-1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Gain10/Gain
-8080
-F64
-1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Rate Limiter/RisingSlewLimit
-8088
-F64
-1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Rate Limiter/FallingSlewLimit
-8096
-F64
-1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Rate Limiter/InitialCondition
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Correction subsystem/Unit Delay/InitialCondition
 8104
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/Delay_x1/InitialCondition
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Constant/Value
 8112
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/A*k(k-1)/A11/Gain
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Mean (Variable Frequency)/Model/Unit Delay1/InitialCondition
 8120
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/Delay_x2/InitialCondition
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Discrete/Discrete Derivative /Denominator
 8128
 F64
-1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/A*k(k-1)/A12/Gain
-8136
-F64
-1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/A*k(k-1)/A21/Gain
+2
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Discrete/Discrete Derivative /InitialStates
 8144
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/A*k(k-1)/A22/Gain
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Discrete/Discrete-Time Integrator/gainval
 8152
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/B*(u(k)+u(k-1))/B11/Gain
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Discrete/Discrete-Time Integrator/UpperSaturationLimit
 8160
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/B*(u(k)+u(k-1))/B21/Gain
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Discrete/Discrete-Time Integrator/LowerSaturationLimit
 8168
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/D*u(k)/Gain
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Discrete/Saturation1/UpperLimit
 8176
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/C*x(k)/C11/Gain
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Discrete/Saturation1/LowerLimit
 8184
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/C*x(k)/C12/Gain
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Gain10/Gain
 8192
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Second-Order Filter/Model/A*k(k-1)/A11/Gain
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Rate Limiter/RisingSlewLimit
 8200
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Second-Order Filter/Model/A*k(k-1)/A12/Gain
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Rate Limiter/FallingSlewLimit
 8208
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Second-Order Filter/Model/A*k(k-1)/A21/Gain
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Rate Limiter/InitialCondition
 8216
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Second-Order Filter/Model/A*k(k-1)/A22/Gain
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/Delay_x1/InitialCondition
 8224
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Second-Order Filter/Model/B*(u(k)+u(k-1))/B11/Gain
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/A*k(k-1)/A11/Gain
 8232
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Second-Order Filter/Model/B*(u(k)+u(k-1))/B21/Gain
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/Delay_x2/InitialCondition
 8240
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Constant1/Value
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/A*k(k-1)/A12/Gain
 8248
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/U_ref Generation /Constant2/Value
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/A*k(k-1)/A21/Gain
 8256
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/Unit Delay3/InitialCondition
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/A*k(k-1)/A22/Gain
 8264
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/U_ref Generation /Gain1/Gain
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/B*(u(k)+u(k-1))/B11/Gain
 8272
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/Unit Delay1/InitialCondition
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/B*(u(k)+u(k-1))/B21/Gain
 8280
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/VDC Regulator/PI/Integrator/gainval
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/D*u(k)/Gain
 8288
 F64
 1
-SM_eHS/source_and_gates/Inverter Control/VDC Regulator/PI/Integrator/InitialCondition
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/C*x(k)/C11/Gain
 8296
 F64
 1
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/PLL/Model/Second-Order Filter/Model/C*x(k)/C12/Gain
+8304
+F64
+1
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Second-Order Filter/Model/A*k(k-1)/A11/Gain
+8312
+F64
+1
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Second-Order Filter/Model/A*k(k-1)/A12/Gain
+8320
+F64
+1
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Second-Order Filter/Model/A*k(k-1)/A21/Gain
+8328
+F64
+1
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Second-Order Filter/Model/A*k(k-1)/A22/Gain
+8336
+F64
+1
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Second-Order Filter/Model/B*(u(k)+u(k-1))/B11/Gain
+8344
+F64
+1
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Second-Order Filter/Model/B*(u(k)+u(k-1))/B21/Gain
+8352
+F64
+1
+SM_eHS/source_and_gates/Inverter Control/PLL & Measurements/Single-Phase dq Transform/Constant1/Value
+8360
+F64
+1
+SM_eHS/source_and_gates/Inverter Control/U_ref Generation /Constant2/Value
+8368
+F64
+1
+SM_eHS/source_and_gates/Inverter Control/Unit Delay3/InitialCondition
+8376
+F64
+1
+SM_eHS/source_and_gates/Inverter Control/U_ref Generation /Gain1/Gain
+8384
+F64
+1
+SM_eHS/source_and_gates/Inverter Control/Unit Delay1/InitialCondition
+8392
+F64
+1
+SM_eHS/source_and_gates/Inverter Control/VDC Regulator/PI/Integrator/gainval
+8400
+F64
+1
+SM_eHS/source_and_gates/Inverter Control/VDC Regulator/PI/Integrator/InitialCondition
+8408
+F64
+1
 SM_eHS/source_and_gates/Saturation/UpperLimit
-8496
+8608
 F64
 1
 SM_eHS/source_and_gates/Saturation/LowerLimit
-8504
+8616
 F64
 1
 SM_eHS/Constant1/Value
-8512
+8624
 F64
 1
 SM_eHS/OpCtrl/Controller Name
-8608
+8720
 F64
 6
 SM_eHS/OpCtrl/Board ID
-8672
+8784
 F64
 1
 SM_eHS/OpCtrl/Synchronization mode
-8696
+8808
 F64
 1
 SM_eHS/OpCtrl/Generate External Clock
-8720
+8832
 F64
 1
 SM_eHS/OpCtrl/Decimation factor
-8744
+8856
 F64
 1
 SM_eHS/OpCtrl/P6
-8768
+8880
 F64
 1
 SM_eHS/OpCtrl/Sample Time (s)
-8792
+8904
 F64
 1
 SM_eHS/OpCtrl/Enable calibration inputsoutputs
-8816
+8928
 F64
 1
 SM_eHS/OpCtrl/Configuration Number
-8840
+8952
 F64
 1
 SM_eHS/OpCtrl/loadinport
-8864
+8976
 F64
 1
 SM_eHS/OpCtrl/Board Type
-8888
+9000
 F64
 1
 SM_eHS/OpCtrl/Synchronization type
-8912
+9024
 F64
 1
 SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/default/Value
-8920
+9032
 U32
 17
 SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/addr4/Value
-8988
+9100
 U32
 1
 SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/addr3/Value
-8992
+9104
 U32
 1
 SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/addr2/Value
-8996
+9108
 U32
 1
 SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/addr1/Value
-9000
+9112
 U32
 1
 SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/addr/Value
-9004
+9116
 U32
 1
 SM_eHS/eHSx64 Gen3 CommBlk/sat_scn/UpperLimit
-9008
+9120
 U32
 1
 SM_eHS/eHSx64 Gen3 CommBlk/sat_scn/LowerLimit
-9012
+9124
 U32
 1
 SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/blockID/Value
-9016
+9128
 U32
 1
 SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI/IOTypeSel/Value
-9020
+9132
 U32
 1
 SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1/IOTypeSel/Value
-9024
+9136
 U32
 1
 SM_eHS/eHSx64 Gen3 CommBlk/Saturation/UpperLimit
-9028
+9140
 U32
 1
 SM_eHS/eHSx64 Gen3 CommBlk/Saturation/LowerLimit
-9032
+9144
 U32
 1
 SM_eHS/eHSx64 Gen3 CommBlk/load_config1/Value
-9036
+9148
 U32
 10
 SM_eHS/eHSx64 Gen3 CommBlk/shift_2bits/Gain
-9076
+9188
 F32
 1
 SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/D Latch/D Latch/Q/InitialOutput
-9080
+9192
 Boolean
 1
 SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/D Latch/D Latch/!Q/InitialOutput
-9081
+9193
 Boolean
 1
 SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/Rescale to  Fixed-Pt  format2/Constant/Value
-9082
+9194
 Boolean
 1
 SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/Rescale to  Fixed-Pt  format/Constant/Value
-9083
+9195
 Boolean
 1
 SM_eHS/To Analog Outputs/Aout_Mapping&Adjustments/Rescale to  Fixed-Pt  format1/Constant/Value
-9084
+9196
 Boolean
 1
 SM_eHS/source_and_gates/RMS1/TrueRMS /Mean value/Model/Gain/Gain
-9085
-F64
-1
-SM_eHS/source_and_gates/RMS1/TrueRMS /Mean value/Model/integrator/InitialCondition
-9093
-F64
-1
-SM_eHS/source_and_gates/RMS1/TrueRMS /Mean value/Model/Transport Delay/DelayTime
-9101
-F64
-1
-SM_eHS/source_and_gates/RMS1/TrueRMS /Mean value/Model/Transport Delay/InitialOutput
-9109
-F64
-1
-SM_eHS/source_and_gates/RMS1/TrueRMS /Mean value/Model/K1/Value
-9117
-F64
-1
-SM_eHS/source_and_gates/RMS1/TrueRMS /Mean value/Model/Memory/X0
-9125
-F64
-1
-SM_eHS/source_and_gates/RMS1/TrueRMS /Saturation to avoid negative sqrt/UpperLimit
-9133
-F64
-1
-SM_eHS/source_and_gates/RMS1/TrueRMS /Saturation to avoid negative sqrt/LowerLimit
-9141
-F64
-1
-SM_eHS/source_and_gates/RMS1/RMS /Fourier1/cos(wt)/Frequency
-9149
-F64
-1
-SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Mean/Model/Gain/Gain
-9157
-F64
-1
-SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Mean value1/Model/Gain/Gain
-9165
-F64
-1
-SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Mean value1/Model/integrator/InitialCondition
-9173
-F64
-1
-SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Mean value1/Model/Transport Delay/DelayTime
-9181
-F64
-1
-SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Mean value1/Model/Transport Delay/InitialOutput
-9189
-F64
-1
-SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Mean value1/Model/K1/Value
 9197
 F64
 1
-SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Mean value1/Model/Memory/X0
+SM_eHS/source_and_gates/RMS1/TrueRMS /Mean value/Model/integrator/InitialCondition
 9205
 F64
 1
-SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Mean/Model/integrator/InitialCondition
+SM_eHS/source_and_gates/RMS1/TrueRMS /Mean value/Model/Transport Delay/DelayTime
 9213
 F64
 1
-SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Mean/Model/Transport Delay/DelayTime
+SM_eHS/source_and_gates/RMS1/TrueRMS /Mean value/Model/Transport Delay/InitialOutput
 9221
 F64
 1
-SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Mean/Model/Transport Delay/InitialOutput
+SM_eHS/source_and_gates/RMS1/TrueRMS /Mean value/Model/K1/Value
 9229
 F64
 1
-SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Mean/Model/K1/Value
+SM_eHS/source_and_gates/RMS1/TrueRMS /Mean value/Model/Memory/X0
 9237
 F64
 1
-SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Mean/Model/Memory/X0
+SM_eHS/source_and_gates/RMS1/TrueRMS /Saturation to avoid negative sqrt/UpperLimit
 9245
 F64
 1
-SM_eHS/source_and_gates/RMS1/RMS /Fourier1/sin(wt)/Amplitude
+SM_eHS/source_and_gates/RMS1/TrueRMS /Saturation to avoid negative sqrt/LowerLimit
 9253
 F64
 1
-SM_eHS/source_and_gates/RMS1/RMS /Fourier1/sin(wt)/Bias
+SM_eHS/source_and_gates/RMS1/RMS /Fourier1/cos(wt)/Frequency
 9261
 F64
 1
-SM_eHS/source_and_gates/RMS1/RMS /Fourier1/sin(wt)/Phase
+SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Mean/Model/Gain/Gain
 9269
 F64
 1
-SM_eHS/source_and_gates/RMS1/RMS /Fourier1/cos(wt)/Amplitude
+SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Mean value1/Model/Gain/Gain
 9277
 F64
 1
-SM_eHS/source_and_gates/RMS1/RMS /Fourier1/cos(wt)/Bias
+SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Mean value1/Model/integrator/InitialCondition
 9285
 F64
 1
-SM_eHS/source_and_gates/RMS1/RMS /Fourier1/cos(wt)/Phase
+SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Mean value1/Model/Transport Delay/DelayTime
 9293
 F64
 1
-SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Rad->Deg./Gain
+SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Mean value1/Model/Transport Delay/InitialOutput
 9301
 F64
 1
-SM_eHS/source_and_gates/RMS1/RMS /Gain/Gain
+SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Mean value1/Model/K1/Value
 9309
 F64
 1
-SM_eHS/RMS1/TrueRMS /Mean value/Model/Gain/Gain
+SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Mean value1/Model/Memory/X0
 9317
 F64
 1
-SM_eHS/RMS1/TrueRMS /Mean value/Model/integrator/InitialCondition
+SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Mean/Model/integrator/InitialCondition
 9325
 F64
 1
-SM_eHS/RMS1/TrueRMS /Mean value/Model/Transport Delay/DelayTime
+SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Mean/Model/Transport Delay/DelayTime
 9333
 F64
 1
-SM_eHS/RMS1/TrueRMS /Mean value/Model/Transport Delay/InitialOutput
+SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Mean/Model/Transport Delay/InitialOutput
 9341
 F64
 1
-SM_eHS/RMS1/TrueRMS /Mean value/Model/K1/Value
+SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Mean/Model/K1/Value
 9349
 F64
 1
-SM_eHS/RMS1/TrueRMS /Mean value/Model/Memory/X0
+SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Mean/Model/Memory/X0
 9357
 F64
 1
-SM_eHS/RMS1/TrueRMS /Saturation to avoid negative sqrt/UpperLimit
+SM_eHS/source_and_gates/RMS1/RMS /Fourier1/sin(wt)/Amplitude
 9365
 F64
 1
-SM_eHS/RMS1/TrueRMS /Saturation to avoid negative sqrt/LowerLimit
+SM_eHS/source_and_gates/RMS1/RMS /Fourier1/sin(wt)/Bias
 9373
 F64
 1
-SM_eHS/RMS1/RMS /Fourier1/cos(wt)/Frequency
+SM_eHS/source_and_gates/RMS1/RMS /Fourier1/sin(wt)/Phase
 9381
 F64
 1
-SM_eHS/RMS1/RMS /Fourier1/Mean/Model/Gain/Gain
+SM_eHS/source_and_gates/RMS1/RMS /Fourier1/cos(wt)/Amplitude
 9389
 F64
 1
-SM_eHS/RMS1/RMS /Fourier1/Mean value1/Model/Gain/Gain
+SM_eHS/source_and_gates/RMS1/RMS /Fourier1/cos(wt)/Bias
 9397
 F64
 1
-SM_eHS/RMS1/RMS /Fourier1/Mean value1/Model/integrator/InitialCondition
+SM_eHS/source_and_gates/RMS1/RMS /Fourier1/cos(wt)/Phase
 9405
 F64
 1
-SM_eHS/RMS1/RMS /Fourier1/Mean value1/Model/Transport Delay/DelayTime
+SM_eHS/source_and_gates/RMS1/RMS /Fourier1/Rad->Deg./Gain
 9413
 F64
 1
-SM_eHS/RMS1/RMS /Fourier1/Mean value1/Model/Transport Delay/InitialOutput
+SM_eHS/source_and_gates/RMS1/RMS /Gain/Gain
 9421
 F64
 1
-SM_eHS/RMS1/RMS /Fourier1/Mean value1/Model/K1/Value
+SM_eHS/RMS1/TrueRMS /Mean value/Model/Gain/Gain
 9429
 F64
 1
-SM_eHS/RMS1/RMS /Fourier1/Mean value1/Model/Memory/X0
+SM_eHS/RMS1/TrueRMS /Mean value/Model/integrator/InitialCondition
 9437
 F64
 1
-SM_eHS/RMS1/RMS /Fourier1/Mean/Model/integrator/InitialCondition
+SM_eHS/RMS1/TrueRMS /Mean value/Model/Transport Delay/DelayTime
 9445
 F64
 1
-SM_eHS/RMS1/RMS /Fourier1/Mean/Model/Transport Delay/DelayTime
+SM_eHS/RMS1/TrueRMS /Mean value/Model/Transport Delay/InitialOutput
 9453
 F64
 1
-SM_eHS/RMS1/RMS /Fourier1/Mean/Model/Transport Delay/InitialOutput
+SM_eHS/RMS1/TrueRMS /Mean value/Model/K1/Value
 9461
 F64
 1
-SM_eHS/RMS1/RMS /Fourier1/Mean/Model/K1/Value
+SM_eHS/RMS1/TrueRMS /Mean value/Model/Memory/X0
 9469
 F64
 1
-SM_eHS/RMS1/RMS /Fourier1/Mean/Model/Memory/X0
+SM_eHS/RMS1/TrueRMS /Saturation to avoid negative sqrt/UpperLimit
 9477
 F64
 1
-SM_eHS/RMS1/RMS /Fourier1/sin(wt)/Amplitude
+SM_eHS/RMS1/TrueRMS /Saturation to avoid negative sqrt/LowerLimit
 9485
 F64
 1
-SM_eHS/RMS1/RMS /Fourier1/sin(wt)/Bias
+SM_eHS/RMS1/RMS /Fourier1/cos(wt)/Frequency
 9493
 F64
 1
-SM_eHS/RMS1/RMS /Fourier1/sin(wt)/Phase
+SM_eHS/RMS1/RMS /Fourier1/Mean/Model/Gain/Gain
 9501
 F64
 1
-SM_eHS/RMS1/RMS /Fourier1/cos(wt)/Amplitude
+SM_eHS/RMS1/RMS /Fourier1/Mean value1/Model/Gain/Gain
 9509
 F64
 1
-SM_eHS/RMS1/RMS /Fourier1/cos(wt)/Bias
+SM_eHS/RMS1/RMS /Fourier1/Mean value1/Model/integrator/InitialCondition
 9517
 F64
 1
-SM_eHS/RMS1/RMS /Fourier1/cos(wt)/Phase
+SM_eHS/RMS1/RMS /Fourier1/Mean value1/Model/Transport Delay/DelayTime
 9525
 F64
 1
-SM_eHS/RMS1/RMS /Fourier1/Rad->Deg./Gain
+SM_eHS/RMS1/RMS /Fourier1/Mean value1/Model/Transport Delay/InitialOutput
 9533
 F64
 1
-SM_eHS/RMS1/RMS /Gain/Gain
+SM_eHS/RMS1/RMS /Fourier1/Mean value1/Model/K1/Value
 9541
 F64
 1
-SM_eHS/RMS/TrueRMS /Mean value/Model/Gain/Gain
+SM_eHS/RMS1/RMS /Fourier1/Mean value1/Model/Memory/X0
 9549
 F64
 1
-SM_eHS/RMS/TrueRMS /Mean value/Model/integrator/InitialCondition
+SM_eHS/RMS1/RMS /Fourier1/Mean/Model/integrator/InitialCondition
 9557
 F64
 1
-SM_eHS/RMS/TrueRMS /Mean value/Model/Transport Delay/DelayTime
+SM_eHS/RMS1/RMS /Fourier1/Mean/Model/Transport Delay/DelayTime
 9565
 F64
 1
-SM_eHS/RMS/TrueRMS /Mean value/Model/Transport Delay/InitialOutput
+SM_eHS/RMS1/RMS /Fourier1/Mean/Model/Transport Delay/InitialOutput
 9573
 F64
 1
-SM_eHS/RMS/TrueRMS /Mean value/Model/K1/Value
+SM_eHS/RMS1/RMS /Fourier1/Mean/Model/K1/Value
 9581
 F64
 1
-SM_eHS/RMS/TrueRMS /Mean value/Model/Memory/X0
+SM_eHS/RMS1/RMS /Fourier1/Mean/Model/Memory/X0
 9589
 F64
 1
-SM_eHS/RMS/TrueRMS /Saturation to avoid negative sqrt/UpperLimit
+SM_eHS/RMS1/RMS /Fourier1/sin(wt)/Amplitude
 9597
 F64
 1
-SM_eHS/RMS/TrueRMS /Saturation to avoid negative sqrt/LowerLimit
+SM_eHS/RMS1/RMS /Fourier1/sin(wt)/Bias
 9605
 F64
 1
-SM_eHS/RMS/RMS /Fourier1/cos(wt)/Frequency
+SM_eHS/RMS1/RMS /Fourier1/sin(wt)/Phase
 9613
 F64
 1
-SM_eHS/RMS/RMS /Fourier1/Mean/Model/Gain/Gain
+SM_eHS/RMS1/RMS /Fourier1/cos(wt)/Amplitude
 9621
 F64
 1
-SM_eHS/RMS/RMS /Fourier1/Mean value1/Model/Gain/Gain
+SM_eHS/RMS1/RMS /Fourier1/cos(wt)/Bias
 9629
 F64
 1
-SM_eHS/RMS/RMS /Fourier1/Mean value1/Model/integrator/InitialCondition
+SM_eHS/RMS1/RMS /Fourier1/cos(wt)/Phase
 9637
 F64
 1
-SM_eHS/RMS/RMS /Fourier1/Mean value1/Model/Transport Delay/DelayTime
+SM_eHS/RMS1/RMS /Fourier1/Rad->Deg./Gain
 9645
 F64
 1
-SM_eHS/RMS/RMS /Fourier1/Mean value1/Model/Transport Delay/InitialOutput
+SM_eHS/RMS1/RMS /Gain/Gain
 9653
 F64
 1
-SM_eHS/RMS/RMS /Fourier1/Mean value1/Model/K1/Value
+SM_eHS/RMS/TrueRMS /Mean value/Model/Gain/Gain
 9661
 F64
 1
-SM_eHS/RMS/RMS /Fourier1/Mean value1/Model/Memory/X0
+SM_eHS/RMS/TrueRMS /Mean value/Model/integrator/InitialCondition
 9669
 F64
 1
-SM_eHS/RMS/RMS /Fourier1/Mean/Model/integrator/InitialCondition
+SM_eHS/RMS/TrueRMS /Mean value/Model/Transport Delay/DelayTime
 9677
 F64
 1
-SM_eHS/RMS/RMS /Fourier1/Mean/Model/Transport Delay/DelayTime
+SM_eHS/RMS/TrueRMS /Mean value/Model/Transport Delay/InitialOutput
 9685
 F64
 1
-SM_eHS/RMS/RMS /Fourier1/Mean/Model/Transport Delay/InitialOutput
+SM_eHS/RMS/TrueRMS /Mean value/Model/K1/Value
 9693
 F64
 1
-SM_eHS/RMS/RMS /Fourier1/Mean/Model/K1/Value
+SM_eHS/RMS/TrueRMS /Mean value/Model/Memory/X0
 9701
 F64
 1
-SM_eHS/RMS/RMS /Fourier1/Mean/Model/Memory/X0
+SM_eHS/RMS/TrueRMS /Saturation to avoid negative sqrt/UpperLimit
 9709
 F64
 1
-SM_eHS/RMS/RMS /Fourier1/sin(wt)/Amplitude
+SM_eHS/RMS/TrueRMS /Saturation to avoid negative sqrt/LowerLimit
 9717
 F64
 1
-SM_eHS/RMS/RMS /Fourier1/sin(wt)/Bias
+SM_eHS/RMS/RMS /Fourier1/cos(wt)/Frequency
 9725
 F64
 1
-SM_eHS/RMS/RMS /Fourier1/sin(wt)/Phase
+SM_eHS/RMS/RMS /Fourier1/Mean/Model/Gain/Gain
 9733
 F64
 1
-SM_eHS/RMS/RMS /Fourier1/cos(wt)/Amplitude
+SM_eHS/RMS/RMS /Fourier1/Mean value1/Model/Gain/Gain
 9741
 F64
 1
-SM_eHS/RMS/RMS /Fourier1/cos(wt)/Bias
+SM_eHS/RMS/RMS /Fourier1/Mean value1/Model/integrator/InitialCondition
 9749
 F64
 1
-SM_eHS/RMS/RMS /Fourier1/cos(wt)/Phase
+SM_eHS/RMS/RMS /Fourier1/Mean value1/Model/Transport Delay/DelayTime
 9757
 F64
 1
-SM_eHS/RMS/RMS /Fourier1/Rad->Deg./Gain
+SM_eHS/RMS/RMS /Fourier1/Mean value1/Model/Transport Delay/InitialOutput
 9765
 F64
 1
-SM_eHS/RMS/RMS /Gain/Gain
+SM_eHS/RMS/RMS /Fourier1/Mean value1/Model/K1/Value
 9773
+F64
+1
+SM_eHS/RMS/RMS /Fourier1/Mean value1/Model/Memory/X0
+9781
+F64
+1
+SM_eHS/RMS/RMS /Fourier1/Mean/Model/integrator/InitialCondition
+9789
+F64
+1
+SM_eHS/RMS/RMS /Fourier1/Mean/Model/Transport Delay/DelayTime
+9797
+F64
+1
+SM_eHS/RMS/RMS /Fourier1/Mean/Model/Transport Delay/InitialOutput
+9805
+F64
+1
+SM_eHS/RMS/RMS /Fourier1/Mean/Model/K1/Value
+9813
+F64
+1
+SM_eHS/RMS/RMS /Fourier1/Mean/Model/Memory/X0
+9821
+F64
+1
+SM_eHS/RMS/RMS /Fourier1/sin(wt)/Amplitude
+9829
+F64
+1
+SM_eHS/RMS/RMS /Fourier1/sin(wt)/Bias
+9837
+F64
+1
+SM_eHS/RMS/RMS /Fourier1/sin(wt)/Phase
+9845
+F64
+1
+SM_eHS/RMS/RMS /Fourier1/cos(wt)/Amplitude
+9853
+F64
+1
+SM_eHS/RMS/RMS /Fourier1/cos(wt)/Bias
+9861
+F64
+1
+SM_eHS/RMS/RMS /Fourier1/cos(wt)/Phase
+9869
+F64
+1
+SM_eHS/RMS/RMS /Fourier1/Rad->Deg./Gain
+9877
+F64
+1
+SM_eHS/RMS/RMS /Gain/Gain
+9885
 F64
 1

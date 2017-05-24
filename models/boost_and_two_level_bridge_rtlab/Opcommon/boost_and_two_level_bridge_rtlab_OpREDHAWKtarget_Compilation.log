@@ -1,6 +1,6 @@
 
 -------------------- Starting compilation --------------------
-Start at : Monday, May 22, 2017, 20:48:35
+Start at : Wednesday, May 24, 2017, 22:50:15
 
 The current RT-LAB version is:  v11.0.8.13
 The current model is:           C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab.mdl
@@ -48,7 +48,7 @@ Separating RT-LAB subsystem 'SC_Console'.
 WARNING: Saving subsystems with breaklinks option has been disabled. Subsystems real-time behavior may be different.
 WARNING: Saving subsystems with breaklinks option has been disabled. Subsystems real-time behavior may be different.
 A monitoring block (OpMonitor) has been found. The monitoring will be enabled.
-Model preparation and separation duration : 00h:01m:07s
+Model preparation and separation duration : 00h:01m:02s
 -------------------- Completed successfully --------------------
 
 Generating model because C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\Opcommon\boost_and_two_level__1_sm_ehs.mdl has changed.
@@ -202,9 +202,9 @@ generation results and simulation results may differ]
 ### Loading TLC function libraries
 ......
 ### Initial pass through model to cache user defined code
-............
+.............
 ### TLC Scope icon is not supported by RT-LAB.
-.................
+................
 ### Caching model source code
 ...............................................................................
 ...............................................................................
@@ -213,22 +213,22 @@ generation results and simulation results may differ]
 ...............................................................................
 ...............................................................................
 ...............................................................................
-...............................
+.......................................
 ### Writing source file boost_and_two_level__1_sm_ehs.c
+.
 ### Writing header file boost_and_two_level__1_sm_ehs_private.h
-.
 ### Writing header file boost_and_two_level__1_sm_ehs.h
+.
 ### Writing header file boost_and_two_level__1_sm_ehs_types.h
-.
 ### Writing header file rtwtypes.h
+.
 ### Writing header file builtin_typeid_types.h
-.
 ### Writing header file multiword_types.h
+.
 ### Writing header file rtGetInf.h
-.
 ### Writing source file rtGetInf.c
-### Writing header file rtGetNaN.h
 .
+### Writing header file rtGetNaN.h
 ### Writing source file rtGetNaN.c
 ### Writing header file rt_defines.h
 .
@@ -237,13 +237,14 @@ generation results and simulation results may differ]
 .
 ### Writing header file rtmodel.h
 ### Writing source file boost_and_two_level__1_sm_ehs_data.c
+.
 ### TLC code generation complete.
-......
+.....
 Warning:  Version[0] 8 Version[1] . Version[2] 7
 ### Creating model mapping file boost_and_two_level__1_sm_ehs.map using map_r2014b.tlc
 ...............................................................................
 ...............................................................................
-..................................................[Warning: Incorrect internal Simulink identifiers were detected. The following blocks have conflicting identifiers:
+....................................................[Warning: Incorrect internal Simulink identifiers were detected. The following blocks have conflicting identifiers:
   '<a href="matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/eHSx64 Gen3 CommBlk/Convert double to  Single floating-point (FPGA)','error')">boost_and_two_level__1_sm_ehs/SM_eHS/eHSx64 Gen3 CommBlk/Convert double to  Single floating-point (FPGA)</a>'
   '<a href="matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/eHSx64 Gen3 CommBlk/INPUTS','error')">boost_and_two_level__1_sm_ehs/SM_eHS/eHSx64 Gen3 CommBlk/INPUTS</a>'.
 The Simulink identifier of '<a href="matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/eHSx64 Gen3 CommBlk/Convert double to  Single floating-point (FPGA)','error')">boost_and_two_level__1_sm_ehs/SM_eHS/eHSx64 Gen3 CommBlk/Convert double to  Single floating-point (FPGA)</a>'
@@ -262,8 +263,8 @@ the original model, and then save and reopen the current model.]
 ### Successful completion of code generation for model: boost_and_two_level__1_sm_ehs
 
 
-boost_and_two_level__1_sm_ehs : Generating C code duration : 00h:00m:36s
-Generating C code total duration : 00h:00m:36s
+boost_and_two_level__1_sm_ehs : Generating C code duration : 00h:00m:39s
+Generating C code total duration : 00h:00m:39s
 
 -------------------- Completed successfully --------------------
 
@@ -280,11 +281,11 @@ Use SIGNALS_VECTOR_SIZE_LIMIT environment variable to modify this limit.
 Signal database creation duration: 00h:00m:00s
 -------------------- Signal database created successfully --------------------
 Generating simulation data...
-Data generated in 00h:00m:01s
+Data generated in 00h:00m:00s
 
 Closing Matlab... OK.
 Updating dependencies... OK.
-Compiling model because C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\boost_and_two_level__1_sm_ehs.c has changed.
+Compiling model because C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\boost_and_two_level__1_sm_ehs_data.c has changed.
 
 -------------------- Validating sources files --------------------------
 
@@ -338,7 +339,7 @@ Transferring in binary: D:\OPAL-RT\RT-EVENTS\v4.0.2.520\rte_r2014b\lib\redhawk\l
 Transferring in binary: D:\OPAL-RT\eFPGAsim\v1.4.2.496\Simulink\efs_R2014b\redhawk\libEHS_cfgR2014b.a (SM_eHS) ... OK.
 Transferring in binary: D:\OPAL-RT\eFPGAsim\v1.4.2.496\Simulink\efs_R2014b\redhawk\libEfsSolver_cfgR2014b.a (SM_eHS) ... OK.
 
-File transfer duration : 00h:00m:04s
+File transfer duration : 00h:00m:05s
 -------------------- Completed successfully --------------------
 
 -------------------- Building the generated C code --------------------
@@ -378,7 +379,7 @@ Transferring in ascii mode /home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_w
 File transfer duration : 00h:00m:01s
 -------------------- Completed successfully --------------------
 
-End at : Monday, May 22, 2017, 20:50:47
+End at : Wednesday, May 24, 2017, 22:52:27
 
 Compilation duration : 00h:02m:12s
 

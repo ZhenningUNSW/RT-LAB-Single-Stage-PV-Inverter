@@ -70,7 +70,7 @@ Model {
   LastModifiedBy	  "jiang"
   ModifiedDateFormat	  "%<Auto>"
   LastModifiedDate	  "Sat May 20 13:13:33 2017"
-  RTWModifiedTimeStamp	  417390895
+  RTWModifiedTimeStamp	  417567096
   ModelVersionFormat	  "1.%<AutoIncrement:11>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off

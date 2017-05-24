@@ -22,6 +22,7 @@ boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Conversion2=rte_conver
 boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Ground=rte_ground
 boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Logical Operator1=rte_logical_operator
 boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Period Meter=rte_period_meter
+boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Switch=rte_switch
 [S-Function list]
 boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI/IOTypeSel_LoadIn=1
 boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI/rtlab_io_block=1
@@ -61,6 +62,7 @@ boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Conversion2=0
 boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Ground=0
 boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Logical Operator1=0
 boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Period Meter=0
+boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Switch=0
 [S-Function modules]
 boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI/IOTypeSel_LoadIn=''
 boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI/rtlab_io_block=''
@@ -85,6 +87,7 @@ boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Conversion2=''
 boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Ground=''
 boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Logical Operator1=''
 boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Period Meter=''
+boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/RTE Switch=''
 [S-Function parameters]
 boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI/IOTypeSel_LoadIn/P3=LoadIn port width [1..250]
 boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI/IOTypeSel_LoadIn/P4=Data type

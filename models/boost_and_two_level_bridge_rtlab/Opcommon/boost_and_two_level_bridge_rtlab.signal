@@ -151,10 +151,10 @@
 150=boost_and_two_level_bridge_rtlab/SM_eHS/source_and_gates/RTE Conversion2/port1(2)|signal1(2)|1|1|324|1|4|1|V|0|
 151=boost_and_two_level_bridge_rtlab/SM_eHS/source_and_gates/RTE Conversion2/port1(3)|signal1(3)|1|1|325|1|4|1|V|0|
 152=boost_and_two_level_bridge_rtlab/SM_eHS/source_and_gates/RTE Conversion2/port1(4)|signal1(4)|1|1|326|1|4|1|V|0|
-153=boost_and_two_level_bridge_rtlab/SM_eHS/source_and_gates/Switch/port1(1)|signal1(1)|1|1|327|1|4|1|V|0|
-154=boost_and_two_level_bridge_rtlab/SM_eHS/source_and_gates/Switch/port1(2)|signal1(2)|1|1|328|1|4|1|V|0|
-155=boost_and_two_level_bridge_rtlab/SM_eHS/source_and_gates/Switch/port1(3)|signal1(3)|1|1|329|1|4|1|V|0|
-156=boost_and_two_level_bridge_rtlab/SM_eHS/source_and_gates/Switch/port1(4)|signal1(4)|1|1|330|1|4|1|V|0|
+153=boost_and_two_level_bridge_rtlab/SM_eHS/source_and_gates/RTE Switch/port1(1)|signal1(1)|1|1|327|1|4|1|V|0|
+154=boost_and_two_level_bridge_rtlab/SM_eHS/source_and_gates/RTE Switch/port1(2)|signal1(2)|1|1|328|1|4|1|V|0|
+155=boost_and_two_level_bridge_rtlab/SM_eHS/source_and_gates/RTE Switch/port1(3)|signal1(3)|1|1|329|1|4|1|V|0|
+156=boost_and_two_level_bridge_rtlab/SM_eHS/source_and_gates/RTE Switch/port1(4)|signal1(4)|1|1|330|1|4|1|V|0|
 157=boost_and_two_level_bridge_rtlab/SM_eHS/source_and_gates/RTE Logical Operator1/port1(1)|signal1(1)|1|1|331|1|4|1|V|0|
 158=boost_and_two_level_bridge_rtlab/SM_eHS/source_and_gates/RTE Logical Operator1/port1(2)|signal1(2)|1|1|332|1|4|1|V|0|
 159=boost_and_two_level_bridge_rtlab/SM_eHS/source_and_gates/RTE Logical Operator1/port1(3)|signal1(3)|1|1|333|1|4|1|V|0|
