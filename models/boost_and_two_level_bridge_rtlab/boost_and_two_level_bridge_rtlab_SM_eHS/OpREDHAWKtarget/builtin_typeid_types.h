@@ -3,9 +3,9 @@
  *
  * Code generation for model "boost_and_two_level__1_sm_ehs".
  *
- * Model version              : 1.1162
+ * Model version              : 1.1170
  * Simulink Coder version : 8.7 (R2014b) 08-Sep-2014
- * C source code generated on : Wed May 24 22:51:59 2017
+ * C source code generated on : Thu May 25 21:48:36 2017
  *
  * Target selection: rtlab_rtmodel.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping

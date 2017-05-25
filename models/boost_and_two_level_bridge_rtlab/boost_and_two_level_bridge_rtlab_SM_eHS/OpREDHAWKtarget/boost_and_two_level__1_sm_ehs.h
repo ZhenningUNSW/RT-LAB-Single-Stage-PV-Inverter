@@ -3,9 +3,9 @@
  *
  * Code generation for model "boost_and_two_level__1_sm_ehs".
  *
- * Model version              : 1.1162
+ * Model version              : 1.1170
  * Simulink Coder version : 8.7 (R2014b) 08-Sep-2014
- * C source code generated on : Wed May 24 22:51:59 2017
+ * C source code generated on : Thu May 25 21:48:36 2017
  *
  * Target selection: rtlab_rtmodel.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -1024,6 +1024,9 @@ typedef struct {
   real_T P_PV_l;                       /* '<S9>/Divide' */
   real_T ConvertSinglefloatingpointFPGAt[7];/* '<S11>/Convert  Single floating-point (FPGA)  to double' */
   real_T Divide[7];                    /* '<S11>/Divide' */
+  real_T RateTransition3;              /* '<S13>/Rate Transition3' */
+  real_T RateTransition1;              /* '<S13>/Rate Transition1' */
+  real_T RateTransition2;              /* '<S13>/Rate Transition2' */
   real_T OpWriteFile_o1;               /* '<S3>/OpWriteFile' */
   real_T OpWriteFile_o2;               /* '<S3>/OpWriteFile' */
   real_T Switch_h;                     /* '<S7>/Switch' */
@@ -1214,9 +1217,6 @@ typedef struct {
   real_T ProportionalGain_e;           /* '<S146>/Proportional Gain' */
   real_T Sum_e;                        /* '<S146>/Sum' */
   real_T Saturate_d;                   /* '<S146>/Saturate' */
-  real_T RateTransition3;              /* '<S13>/Rate Transition3' */
-  real_T RateTransition1;              /* '<S13>/Rate Transition1' */
-  real_T RateTransition2;              /* '<S13>/Rate Transition2' */
   real_T Switch_p;                     /* '<S67>/Switch' */
   real_T RTEPeriodMeter;               /* '<S13>/RTE Period Meter' */
   real_T Saturation_p;                 /* '<S13>/Saturation' */
@@ -1934,7 +1934,7 @@ struct P_boost_and_two_level__1_sm_ehs_T_ {
   real_T Constant5_Value;              /* Expression: 1
                                         * Referenced by: '<S13>/Constant5'
                                         */
-  real_T Constant_Value_f;             /* Expression: 0
+  real_T Constant_Value_f;             /* Expression: 1
                                         * Referenced by: '<S13>/Constant'
                                         */
   real_T Gain1_Gain_jj;                /* Expression: 0.5
@@ -2714,6 +2714,18 @@ struct P_boost_and_two_level__1_sm_ehs_T_ {
   real_T Memory_X0_c;                  /* Expression: sps.Vinit
                                         * Referenced by: '<S42>/Memory'
                                         */
+  real_T Constant4_Value;              /* Expression: 60*14
+                                        * Referenced by: '<S13>/Constant4'
+                                        */
+  real_T Constant1_Value_p;            /* Expression: 8.55
+                                        * Referenced by: '<S13>/Constant1'
+                                        */
+  real_T Constant2_Value_c;            /* Expression: 37.4*14
+                                        * Referenced by: '<S13>/Constant2'
+                                        */
+  real_T Constant3_Value;              /* Expression: 0.06
+                                        * Referenced by: '<S13>/Constant3'
+                                        */
   real_T OpWriteFile_P1_Size[2];       /* Computed Parameter: OpWriteFile_P1_Size
                                         * Referenced by: '<S3>/OpWriteFile'
                                         */
@@ -2834,7 +2846,7 @@ struct P_boost_and_two_level__1_sm_ehs_T_ {
   real_T UnitDelay_InitialCondition_i; /* Expression: 0.1684
                                         * Referenced by: '<S65>/Unit Delay'
                                         */
-  real_T Constant3_Value;              /* Expression: sps.Delay
+  real_T Constant3_Value_h;            /* Expression: sps.Delay
                                         * Referenced by: '<S144>/Constant3'
                                         */
   real_T Constant1_Value_l;            /* Expression: sps.Period
@@ -3049,18 +3061,6 @@ struct P_boost_and_two_level__1_sm_ehs_T_ {
                                         */
   real_T EventGen_eHS_1_P7;            /* Expression: timeUnit
                                         * Referenced by: '<S52>/EventGen_eHS_1'
-                                        */
-  real_T Constant1_Value_p;            /* Expression: 8.55
-                                        * Referenced by: '<S13>/Constant1'
-                                        */
-  real_T Constant2_Value_c;            /* Expression: 37.4*14
-                                        * Referenced by: '<S13>/Constant2'
-                                        */
-  real_T Constant3_Value_b;            /* Expression: 0.06
-                                        * Referenced by: '<S13>/Constant3'
-                                        */
-  real_T Constant4_Value;              /* Expression: 60*14
-                                        * Referenced by: '<S13>/Constant4'
                                         */
   real_T UnitDelay_InitialCondition_a; /* Expression: sps.Finit
                                         * Referenced by: '<S91>/Unit Delay'

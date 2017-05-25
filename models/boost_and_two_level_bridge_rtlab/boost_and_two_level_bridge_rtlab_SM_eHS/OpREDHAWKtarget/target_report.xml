@@ -477,7 +477,7 @@ tmpfs                 4.0G     0  4.0G   0% /dev/shm
             <item name="Memory">
                 <property name="MemFree">
                     <value>
-                        6984884 kB
+                        6979428 kB
                     </value>
                 </property>
                 <property name="MemTotal">
@@ -493,20 +493,20 @@ tmpfs                 4.0G     0  4.0G   0% /dev/shm
           inet addr:192.168.5.113  Bcast:192.168.5.255  Mask:255.255.255.0
           inet6 addr: fe80::ec4:7aff:fe0c:1f5a/64 Scope:Link
           UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
-          RX packets:3340292 errors:0 dropped:0 overruns:0 frame:0
-          TX packets:3309393 errors:0 dropped:0 overruns:0 carrier:0
+          RX packets:80782674 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:80762058 errors:0 dropped:0 overruns:0 carrier:0
           collisions:0 txqueuelen:1000 
-          RX bytes:490097276 (467.3 MiB)  TX bytes:3591804393 (3.3 GiB)
+          RX bytes:1662032101 (1.5 GiB)  TX bytes:3684638699 (3.4 GiB)
           Memory:df900000-df920000 
 
 lo        Link encap:Local Loopback  
           inet addr:127.0.0.1  Mask:255.0.0.0
           inet6 addr: ::1/128 Scope:Host
           UP LOOPBACK RUNNING  MTU:16436  Metric:1
-          RX packets:573 errors:0 dropped:0 overruns:0 frame:0
-          TX packets:573 errors:0 dropped:0 overruns:0 carrier:0
+          RX packets:1123 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:1123 errors:0 dropped:0 overruns:0 carrier:0
           collisions:0 txqueuelen:0 
-          RX bytes:1005983 (982.4 KiB)  TX bytes:1005983 (982.4 KiB)
+          RX bytes:1070143 (1.0 MiB)  TX bytes:1070143 (1.0 MiB)
 
                     </value>
                 </textlog>
@@ -1312,6 +1312,174 @@ pci 0000:01:00.0: setting latency timer to 64
 pci 0000:01:00.0: setting latency timer to 64
 pci 0000:01:00.0: setting latency timer to 64
 Clocksource tsc unstable (delta = 899862933943 ns)
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+e1000e: eth0 NIC Link is Down
+e1000e: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX/TX
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
                     </value>
                 </textlog>
             </item>

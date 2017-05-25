@@ -13,7 +13,7 @@
  Solver achievable minimum number of FPGA clock cycle:      41 
  
  
- Number of States (Inductor Current, Capacitor Voltages):  12 
+ Number of States (Inductor Current, Capacitor Voltages):  10 
  Number of Switches:   4 
  Number of Inputs:   3 
  Number of Outputs:   7 
@@ -73,9 +73,7 @@
      6                    Uc_Stray Capacitance1            Capacitor        
      7                    Uc_Stray Capacitance2            Capacitor        
      8                                     Uc_C            Capacitor        
-     9                                Il_Load 1           Inductance        
-    10                                Il_Load 2           Inductance        
-    11 Il_winding_1: 75-kVA Transformer (120V//120V//14.4 kV)           Inductance        
-    12 Il_Lm: 75-kVA Transformer (120V//120V//14.4 kV)           Inductance        
+     9 Il_winding_1: 75-kVA Transformer (120V//120V//14.4 kV)           Inductance        
+    10 Il_Lm: 75-kVA Transformer (120V//120V//14.4 kV)           Inductance        
  ----------------------------------------------------------------------
 

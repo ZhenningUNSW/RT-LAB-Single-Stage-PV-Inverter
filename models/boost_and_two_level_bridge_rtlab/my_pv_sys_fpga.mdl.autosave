@@ -7,7 +7,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.11"
+    ComputedModelVersion    "1.14"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -56,7 +56,7 @@ Model {
 	LoadSaveID		"0"
 	Extents			[1880.0, 846.0]
 	ZoomFactor		[1.25]
-	Offset			[283.37619047618949, 233.86298363095216]
+	Offset			[283.29999999999995, 233.86298363095216]
       }
     }
   }
@@ -69,9 +69,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "jiang"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Sat May 20 13:13:33 2017"
-  RTWModifiedTimeStamp	  417567096
-  ModelVersionFormat	  "1.%<AutoIncrement:11>"
+  LastModifiedDate	  "Thu May 25 19:55:20 2017"
+  RTWModifiedTimeStamp	  417649698
+  ModelVersionFormat	  "1.%<AutoIncrement:14>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -958,7 +958,7 @@ Model {
       NominalFrequency	      "50"
       ActivePower	      "10.5"
       InductivePower	      "0"
-      CapacitivePower	      "525"
+      CapacitivePower	      "630"
       Setx0		      off
       InitialVoltage	      "0"
       SetiL0		      off
@@ -1044,7 +1044,7 @@ Model {
       NominalVoltage	      "120"
       NominalFrequency	      "50"
       ActivePower	      "5e3"
-      InductivePower	      "2e3"
+      InductivePower	      "0"
       CapacitivePower	      "0"
       Setx0		      off
       InitialVoltage	      "0"
@@ -1070,7 +1070,7 @@ Model {
       NominalVoltage	      "120"
       NominalFrequency	      "50"
       ActivePower	      "5e3"
-      InductivePower	      "2e3"
+      InductivePower	      "0"
       CapacitivePower	      "0"
       Setx0		      off
       InitialVoltage	      "0"
@@ -1195,7 +1195,7 @@ Model {
       LConnTagsString	      "__new0"
       RConnTagsString	      "__new0"
       BranchType	      "R"
-      Resistance	      "301.8*10"
+      Resistance	      "301.8"
       Inductance	      "2.183e-3"
       SetiL0		      off
       InitialCurrent	      "0"

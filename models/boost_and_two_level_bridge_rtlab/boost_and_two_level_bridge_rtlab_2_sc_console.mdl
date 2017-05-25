@@ -7,7 +7,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.1162"
+    ComputedModelVersion    "1.1170"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -33,7 +33,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [952.0, 0.0, 974.0, 1038.0]
+      Location		      [-11.0, 4.0, 974.0, 1038.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -56,10 +56,10 @@ Model {
 	$ClassName		"Simulink.EditorInfo"
 	IsActive		[1]
 	ViewObjType		"SimulinkSubsys"
-	LoadSaveID		"4847"
+	LoadSaveID		"4882"
 	Extents			[922.0, 836.0]
-	ZoomFactor		[1.5]
-	Offset			[-7.2500000000000853, 357.83333333333331]
+	ZoomFactor		[1.25]
+	Offset			[1055.5044967447711, 385.905978617999]
       }
     }
   }
@@ -73,9 +73,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "jiang"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed May 24 22:51:28 2017"
-  RTWModifiedTimeStamp	  417567088
-  ModelVersionFormat	  "1.%<AutoIncrement:1162>"
+  LastModifiedDate	  "Thu May 25 21:48:12 2017"
+  RTWModifiedTimeStamp	  417649692
+  ModelVersionFormat	  "1.%<AutoIncrement:1170>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1045,7 +1045,7 @@ Model {
   }
   System {
     Name		    "boost_and_two_level_bridge_rtlab_2_sc_console"
-    Location		    [952, 0, 1926, 1038]
+    Location		    [-11, 4, 963, 1042]
     Open		    off
     ModelBrowserVisibility  off
     ModelBrowserWidth	    356

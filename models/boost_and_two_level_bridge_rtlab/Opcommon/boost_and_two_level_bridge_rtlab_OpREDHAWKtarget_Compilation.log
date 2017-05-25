@@ -1,6 +1,6 @@
 
 -------------------- Starting compilation --------------------
-Start at : Wednesday, May 24, 2017, 22:50:15
+Start at : Thursday, May 25, 2017, 21:47:07
 
 The current RT-LAB version is:  v11.0.8.13
 The current model is:           C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab.mdl
@@ -48,7 +48,7 @@ Separating RT-LAB subsystem 'SC_Console'.
 WARNING: Saving subsystems with breaklinks option has been disabled. Subsystems real-time behavior may be different.
 WARNING: Saving subsystems with breaklinks option has been disabled. Subsystems real-time behavior may be different.
 A monitoring block (OpMonitor) has been found. The monitoring will be enabled.
-Model preparation and separation duration : 00h:01m:02s
+Model preparation and separation duration : 00h:00m:56s
 -------------------- Completed successfully --------------------
 
 Generating model because C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\Opcommon\boost_and_two_level__1_sm_ehs.mdl has changed.
@@ -113,6 +113,7 @@ found]
 found] 
 [Warning: Matching "From" for "Goto" '<a href="matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/Inverter Control/VDC Regulator/Goto5','error')">boost_and_two_level__1_sm_ehs/SM_eHS/source_and_gates/Inverter Control/VDC Regulator/Goto5</a>' not
 found] 
+[Warning: Output port 3 of '<a href="matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/Demux','error')">boost_and_two_level__1_sm_ehs/SM_eHS/Demux</a>' is not connected.] 
 [Warning: Output port 2 of '<a href="matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI','error')">boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI</a>' is not
 connected.] 
 [Warning: Output port 1 of '<a href="matlab:open_and_hilite_hyperlink ('boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1','error')">boost_and_two_level__1_sm_ehs/SM_eHS/From Digital Inputs (Pulse-Width Analyzers)/Selectable DI1</a>' is not
@@ -263,8 +264,8 @@ the original model, and then save and reopen the current model.]
 ### Successful completion of code generation for model: boost_and_two_level__1_sm_ehs
 
 
-boost_and_two_level__1_sm_ehs : Generating C code duration : 00h:00m:39s
-Generating C code total duration : 00h:00m:39s
+boost_and_two_level__1_sm_ehs : Generating C code duration : 00h:00m:32s
+Generating C code total duration : 00h:00m:32s
 
 -------------------- Completed successfully --------------------
 
@@ -285,7 +286,7 @@ Data generated in 00h:00m:00s
 
 Closing Matlab... OK.
 Updating dependencies... OK.
-Compiling model because C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\boost_and_two_level__1_sm_ehs_data.c has changed.
+Compiling model because C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\boost_and_two_level_bridge_rtlab\boost_and_two_level_bridge_rtlab_SM_eHS\OpREDHAWKtarget\boost_and_two_level__1_sm_ehs.c has changed.
 
 -------------------- Validating sources files --------------------------
 
@@ -339,7 +340,7 @@ Transferring in binary: D:\OPAL-RT\RT-EVENTS\v4.0.2.520\rte_r2014b\lib\redhawk\l
 Transferring in binary: D:\OPAL-RT\eFPGAsim\v1.4.2.496\Simulink\efs_R2014b\redhawk\libEHS_cfgR2014b.a (SM_eHS) ... OK.
 Transferring in binary: D:\OPAL-RT\eFPGAsim\v1.4.2.496\Simulink\efs_R2014b\redhawk\libEfsSolver_cfgR2014b.a (SM_eHS) ... OK.
 
-File transfer duration : 00h:00m:05s
+File transfer duration : 00h:00m:06s
 -------------------- Completed successfully --------------------
 
 -------------------- Building the generated C code --------------------
@@ -366,9 +367,9 @@ opicpc  -Wl,-rpath='/usr/opalrt/v11.0.8.13/common/bin' -Wl,'-rpath=/usr/opalrt/v
 chmod a+x boost_and_two_level__1_sm_ehs
 ### Created executable: boost_and_two_level__1_sm_ehs
 
-boost_and_two_level__1_sm_ehs : Building subsystem duration : 00h:00m:04s
+boost_and_two_level__1_sm_ehs : Building subsystem duration : 00h:00m:03s
 
-Building model total duration : 00h:00m:04s
+Building model total duration : 00h:00m:03s
 -------------------- Completed successfully --------------------
 
 -------------------- Transferring the built model --------------------
@@ -379,8 +380,8 @@ Transferring in ascii mode /home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_w
 File transfer duration : 00h:00m:01s
 -------------------- Completed successfully --------------------
 
-End at : Wednesday, May 24, 2017, 22:52:27
+End at : Thursday, May 25, 2017, 21:49:03
 
-Compilation duration : 00h:02m:12s
+Compilation duration : 00h:01m:56s
 
 Updating status for next build...OK

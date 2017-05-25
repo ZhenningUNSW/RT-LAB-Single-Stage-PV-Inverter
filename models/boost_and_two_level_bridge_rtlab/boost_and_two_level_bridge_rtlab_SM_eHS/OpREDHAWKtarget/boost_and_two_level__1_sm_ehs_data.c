@@ -3,9 +3,9 @@
  *
  * Code generation for model "boost_and_two_level__1_sm_ehs".
  *
- * Model version              : 1.1162
+ * Model version              : 1.1170
  * Simulink Coder version : 8.7 (R2014b) 08-Sep-2014
- * C source code generated on : Wed May 24 22:51:59 2017
+ * C source code generated on : Thu May 25 21:48:36 2017
  *
  * Target selection: rtlab_rtmodel.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -207,7 +207,7 @@ P_boost_and_two_level__1_sm_ehs_T boost_and_two_level__1_sm_ehs_P = {
   1.0,                                 /* Expression: 1
                                         * Referenced by: '<S13>/Constant5'
                                         */
-  0.0,                                 /* Expression: 0
+  1.0,                                 /* Expression: 1
                                         * Referenced by: '<S13>/Constant'
                                         */
   0.5,                                 /* Expression: 0.5
@@ -1223,6 +1223,18 @@ P_boost_and_two_level__1_sm_ehs_T boost_and_two_level__1_sm_ehs_P = {
   0.0,                                 /* Expression: sps.Vinit
                                         * Referenced by: '<S42>/Memory'
                                         */
+  840.0,                               /* Expression: 60*14
+                                        * Referenced by: '<S13>/Constant4'
+                                        */
+  8.55,                                /* Expression: 8.55
+                                        * Referenced by: '<S13>/Constant1'
+                                        */
+  523.6,                               /* Expression: 37.4*14
+                                        * Referenced by: '<S13>/Constant2'
+                                        */
+  0.06,                                /* Expression: 0.06
+                                        * Referenced by: '<S13>/Constant3'
+                                        */
 
   /*  Computed Parameter: OpWriteFile_P1_Size
    * Referenced by: '<S3>/OpWriteFile'
@@ -1673,18 +1685,6 @@ P_boost_and_two_level__1_sm_ehs_T boost_and_two_level__1_sm_ehs_P = {
   { 1.0, 1.0 },
   1.0,                                 /* Expression: timeUnit
                                         * Referenced by: '<S52>/EventGen_eHS_1'
-                                        */
-  8.55,                                /* Expression: 8.55
-                                        * Referenced by: '<S13>/Constant1'
-                                        */
-  523.6,                               /* Expression: 37.4*14
-                                        * Referenced by: '<S13>/Constant2'
-                                        */
-  0.06,                                /* Expression: 0.06
-                                        * Referenced by: '<S13>/Constant3'
-                                        */
-  840.0,                               /* Expression: 60*14
-                                        * Referenced by: '<S13>/Constant4'
                                         */
   50.0,                                /* Expression: sps.Finit
                                         * Referenced by: '<S91>/Unit Delay'
