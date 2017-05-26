@@ -3,9 +3,9 @@
  *
  * Code generation for model "my_pv_system_1_sm_master".
  *
- * Model version              : 1.225
+ * Model version              : 1.231
  * Simulink Coder version : 8.7 (R2014b) 08-Sep-2014
- * C source code generated on : Mon Feb 27 11:22:27 2017
+ * C source code generated on : Fri May 26 22:43:51 2017
  *
  * Target selection: rtlab_rtmodel.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -152,7 +152,7 @@ P_my_pv_system_1_sm_master_T my_pv_system_1_sm_master_P = {
                                         * Referenced by: '<S3>/Memory1'
                                         */
 
-  /*  Computed Parameter: SFunction_P1_Size_i
+  /*  Computed Parameter: SFunction_P1_Size_c
    * Referenced by: '<S48>/S-Function'
    */
   { 1.0, 1.0 },
@@ -212,7 +212,7 @@ P_my_pv_system_1_sm_master_T my_pv_system_1_sm_master_P = {
     109.0, 101.0, 44.0, 97.0, 110.0, 111.0, 116.0, 104.0, 101.0, 114.0, 95.0,
     101.0, 118.0, 101.0, 110.0, 116.0, 95.0, 110.0, 97.0, 109.0, 101.0 },
 
-  /*  Computed Parameter: SFunction_P1_Size_p
+  /*  Computed Parameter: SFunction_P1_Size_b
    * Referenced by: '<S49>/S-Function'
    */
   { 1.0, 1.0 },
@@ -226,7 +226,7 @@ P_my_pv_system_1_sm_master_T my_pv_system_1_sm_master_P = {
                                         * Referenced by: '<S24>/Unit Delay'
                                         */
 
-  /*  Computed Parameter: SFunction_P1_Size_d
+  /*  Computed Parameter: SFunction_P1_Size_b3
    * Referenced by: '<S51>/S-Function'
    */
   { 1.0, 1.0 },
@@ -234,7 +234,7 @@ P_my_pv_system_1_sm_master_T my_pv_system_1_sm_master_P = {
                                         * Referenced by: '<S51>/S-Function'
                                         */
 
-  /*  Computed Parameter: SFunction_P2_Size_b
+  /*  Computed Parameter: SFunction_P2_Size_o
    * Referenced by: '<S51>/S-Function'
    */
   { 1.0, 1.0 },
@@ -242,7 +242,7 @@ P_my_pv_system_1_sm_master_T my_pv_system_1_sm_master_P = {
                                         * Referenced by: '<S51>/S-Function'
                                         */
 
-  /*  Computed Parameter: SFunction_P3_Size_d
+  /*  Computed Parameter: SFunction_P3_Size_c
    * Referenced by: '<S51>/S-Function'
    */
   { 1.0, 1.0 },
@@ -577,7 +577,7 @@ P_my_pv_system_1_sm_master_T my_pv_system_1_sm_master_P = {
                                         * Referenced by: '<S30>/Memory'
                                         */
 
-  /*  Computed Parameter: SFunction_P1_Size_f
+  /*  Computed Parameter: SFunction_P1_Size_k
    * Referenced by: '<S31>/S-Function'
    */
   { 1.0, 1.0 },
@@ -585,7 +585,7 @@ P_my_pv_system_1_sm_master_T my_pv_system_1_sm_master_P = {
                                         * Referenced by: '<S31>/S-Function'
                                         */
 
-  /*  Computed Parameter: SFunction_P2_Size_m
+  /*  Computed Parameter: SFunction_P2_Size_k
    * Referenced by: '<S31>/S-Function'
    */
   { 2.0, 1.0 },
@@ -593,7 +593,7 @@ P_my_pv_system_1_sm_master_T my_pv_system_1_sm_master_P = {
   /*  Expression: InitialConditions
    * Referenced by: '<S31>/S-Function'
    */
-  { 1000.0, 25.0 },
+  { 500.0, 25.0 },
   1.0,                                 /* Expression: 1
                                         * Referenced by: '<S35>/do not delete this gain'
                                         */

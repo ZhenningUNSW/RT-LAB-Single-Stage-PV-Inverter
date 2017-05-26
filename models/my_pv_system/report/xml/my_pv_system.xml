@@ -3,7 +3,7 @@
     <item name="general">
         <property name="Date">
             <value>
-                Mon, 06 Mar 2017 17:20:15
+                Fri, 26 May 2017 22:55:10
             </value>
         </property>
         <property name="RTLAB version">
@@ -40,8 +40,8 @@
                 <textlog name="Disk space">
                     <value>
                         Filesystem            Size  Used Avail Use% Mounted on
-/dev/sda1             107G   20G   82G  20% /
-tmpfs                 4.0G  3.6M  4.0G   1% /dev/shm
+/dev/sda1             107G   21G   82G  20% /
+tmpfs                 4.0G     0  4.0G   0% /dev/shm
                     </value>
                 </textlog>
             </item>
@@ -101,6 +101,11 @@ tmpfs                 4.0G  3.6M  4.0G   1% /dev/shm
                         /dev/pts/0
                     </value>
                 </property>
+                <property name="CORE_ASSIGNMENT">
+                    <value>
+                        SM_master 1 SS_controller 1
+                    </value>
+                </property>
                 <property name="DEBUG">
                     <value>
                         0
@@ -149,6 +154,16 @@ tmpfs                 4.0G  3.6M  4.0G   1% /dev/shm
                 <property name="LANG">
                     <value>
                         en_US
+                    </value>
+                </property>
+                <property name="LastLoaderMachineName">
+                    <value>
+                        LAPTOP-5FBKHMJV
+                    </value>
+                </property>
+                <property name="LastLoaderUserName">
+                    <value>
+                        jiang
                     </value>
                 </property>
                 <property name="LC_ALL">
@@ -231,6 +246,18 @@ tmpfs                 4.0G  3.6M  4.0G   1% /dev/shm
                         OFF
                     </value>
                 </property>
+                <item name="OriginalModelFile">
+                    <property name="0">
+                        <value>
+                            C
+                        </value>
+                    </property>
+                    <property name="1">
+                        <value>
+                            /Users/jiang/OPAL-RT/RT-LABv11_Workspace/pv_inverter/models/my_pv_system/my_pv_system.mdl
+                        </value>
+                    </property>
+                </item>
                 <property name="OriginalModelName">
                     <value>
                         my_pv_system
@@ -318,6 +345,9 @@ tmpfs                 4.0G  3.6M  4.0G   1% /dev/shm
                         ON
                     </value>
                 </property>
+                <property name="RTLAB_MODEL_SIM_TIME">
+                    <value/>
+                </property>
                 <property name="RTLAB_PLATFORM">
                     <value>
                         REDHAWK
@@ -393,7 +423,7 @@ tmpfs                 4.0G  3.6M  4.0G   1% /dev/shm
             <item name="Memory">
                 <property name="MemFree">
                     <value>
-                        7330384 kB
+                        7365320 kB
                     </value>
                 </property>
                 <property name="MemTotal">
@@ -409,20 +439,20 @@ tmpfs                 4.0G  3.6M  4.0G   1% /dev/shm
           inet addr:192.168.5.113  Bcast:192.168.5.255  Mask:255.255.255.0
           inet6 addr: fe80::ec4:7aff:fe0c:1f5a/64 Scope:Link
           UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
-          RX packets:951749 errors:0 dropped:0 overruns:0 frame:0
-          TX packets:907147 errors:0 dropped:0 overruns:0 carrier:0
+          RX packets:194100 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:136699 errors:0 dropped:0 overruns:0 carrier:0
           collisions:0 txqueuelen:1000 
-          RX bytes:291081292 (277.5 MiB)  TX bytes:1152759070 (1.0 GiB)
+          RX bytes:276202241 (263.4 MiB)  TX bytes:57402071 (54.7 MiB)
           Memory:df900000-df920000 
 
 lo        Link encap:Local Loopback  
           inet addr:127.0.0.1  Mask:255.0.0.0
           inet6 addr: ::1/128 Scope:Host
           UP LOOPBACK RUNNING  MTU:16436  Metric:1
-          RX packets:586 errors:0 dropped:0 overruns:0 frame:0
-          TX packets:586 errors:0 dropped:0 overruns:0 carrier:0
+          RX packets:640 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:640 errors:0 dropped:0 overruns:0 carrier:0
           collisions:0 txqueuelen:0 
-          RX bytes:1011723 (988.0 KiB)  TX bytes:1011723 (988.0 KiB)
+          RX bytes:1016621 (992.7 KiB)  TX bytes:1016621 (992.7 KiB)
                     </value>
                 </textlog>
             </item>
@@ -624,7 +654,7 @@ CPU 0 irqstacks, hard=c075a000 soft=c073a000
 PID hash table entries: 4096 (order: 12, 16384 bytes)
 Extended CMOS year: 2000
 Fast TSC calibration using PIT
-Detected 3300.430 MHz processor.
+Detected 3300.447 MHz processor.
 Console: colour VGA+ 80x25
 console [tty0] enabled
 Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
@@ -643,7 +673,7 @@ Checking if this processor honours the WP bit even in supervisor mode...Ok.
 SLUB: Genslabs=13, HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=8
 hpet clockevent registered
 HPET: 8 timers in total, 4 timers will be used for per-cpu timer
-Calibrating delay loop (skipped), value calculated using timer frequency.. 6600.86 BogoMIPS (lpj=13201720)
+Calibrating delay loop (skipped), value calculated using timer frequency.. 6600.89 BogoMIPS (lpj=13201788)
 Security Framework initialized
 SELinux:  Initializing.
 SELinux:  Starting in permissive mode
@@ -665,7 +695,7 @@ CPU 1 irqstacks, hard=c075b000 soft=c073b000
 Booting processor 1 APIC 0x2 ip 0x6000
 Initializing CPU#1
 Mapping cpu 1 to node 0
-Calibrating delay using timer specific routine.. 6599.77 BogoMIPS (lpj=13199553)
+Calibrating delay using timer specific routine.. 6599.77 BogoMIPS (lpj=13199558)
 CPU: Physical Processor ID: 0
 CPU: Processor Core ID: 1
 CPU: L1 I cache: 32K, L1 D cache: 32K
@@ -680,7 +710,7 @@ CPU 2 irqstacks, hard=c075c000 soft=c073c000
 Booting processor 2 APIC 0x4 ip 0x6000
 Initializing CPU#2
 Mapping cpu 2 to node 0
-Calibrating delay using timer specific routine.. 6599.77 BogoMIPS (lpj=13199550)
+Calibrating delay using timer specific routine.. 6599.77 BogoMIPS (lpj=13199547)
 CPU: Physical Processor ID: 0
 CPU: Processor Core ID: 2
 CPU: L1 I cache: 32K, L1 D cache: 32K
@@ -695,7 +725,7 @@ CPU 3 irqstacks, hard=c075d000 soft=c073d000
 Booting processor 3 APIC 0x6 ip 0x6000
 Initializing CPU#3
 Mapping cpu 3 to node 0
-Calibrating delay using timer specific routine.. 6599.77 BogoMIPS (lpj=13199551)
+Calibrating delay using timer specific routine.. 6599.77 BogoMIPS (lpj=13199543)
 CPU: Physical Processor ID: 0
 CPU: Processor Core ID: 3
 CPU: L1 I cache: 32K, L1 D cache: 32K
@@ -707,7 +737,7 @@ x86 PAT enabled: cpu 3, old 0x7040600070406, new 0x7010600070106
 CPU3: Intel(R) Xeon(R) CPU E3-1230 V2 @ 3.30GHz stepping 09
 checking TSC synchronization [CPU#0 -&gt; CPU#3]: passed.
 Brought up 4 CPUs
-Total of 4 processors activated (26400.18 BogoMIPS).
+Total of 4 processors activated (26400.21 BogoMIPS).
 net_namespace: 920 bytes
 NET: Registered protocol family 16
 ACPI FADT declares the system doesn't support PCIe ASPM, so disable it
@@ -774,10 +804,10 @@ ACPI: PCI Interrupt Link [LNKA] (IRQs 3 4 5 6 10 *11 12 14 15)
 ACPI: PCI Interrupt Link [LNKB] (IRQs 3 4 5 6 10 11 12 14 15) *0, disabled.
 ACPI: PCI Interrupt Link [LNKC] (IRQs 3 4 5 6 10 *11 12 14 15)
 ACPI: PCI Interrupt Link [LNKD] (IRQs 3 4 *5 6 10 11 12 14 15)
-ACPI: PCI Interrupt Link [LNKE] (IRQs 3 4 *5 6 10 11 12 14 15)
+ACPI: PCI Interrupt Link [LNKE] (IRQs 3 4 5 6 10 *11 12 14 15)
 ACPI: PCI Interrupt Link [LNKF] (IRQs 3 4 5 6 10 11 12 14 15) *0, disabled.
 ACPI: PCI Interrupt Link [LNKG] (IRQs 3 4 5 6 10 11 12 14 15) *0, disabled.
-ACPI: PCI Interrupt Link [LNKH] (IRQs 3 4 5 6 10 *11 12 14 15)
+ACPI: PCI Interrupt Link [LNKH] (IRQs 3 4 *5 6 10 11 12 14 15)
 ACPI: Power Resource [FN00] (off)
 ACPI: Power Resource [FN01] (off)
 ACPI: Power Resource [FN02] (off)
@@ -826,10 +856,6 @@ system 00:0e: iomem range 0xfed45000-0xfed8ffff has been reserved
 system 00:0e: iomem range 0xff000000-0xffffffff has been reserved
 system 00:0e: iomem range 0xfee00000-0xfeefffff could not be reserved
 system 00:0e: iomem range 0xd0000000-0xd0000fff has been reserved
-Switched to high resolution mode on CPU 1
-Switched to high resolution mode on CPU 3
-Switched to high resolution mode on CPU 2
-Switched to high resolution mode on CPU 0
 pci 0000:00:1c.0: PCI bridge, secondary bus 0000:01
 pci 0000:00:1c.0:   IO window: disabled
 pci 0000:00:1c.0:   MEM window: 0xdfa00000-0xdfafffff
@@ -863,6 +889,10 @@ pci_bus 0000:03: resource 2 mem: [0xde000000-0xdeffffff]
 pci_bus 0000:03: resource 3 io:  [0x00-0xffff]
 pci_bus 0000:03: resource 4 mem: [0x000000-0xffffffffffffffff]
 NET: Registered protocol family 2
+Switched to high resolution mode on CPU 3
+Switched to high resolution mode on CPU 1
+Switched to high resolution mode on CPU 2
+Switched to high resolution mode on CPU 0
 IP route cache hash table entries: 32768 (order: 5, 131072 bytes)
 TCP established hash table entries: 131072 (order: 8, 1048576 bytes)
 TCP bind hash table entries: 65536 (order: 7, 524288 bytes)
@@ -873,7 +903,7 @@ checking if image is initramfs... it is
 Freeing initrd memory: 2376k freed
 Microcode Update Driver: v2.00 &lt;tigran@aivazian.fsnet.co.uk&gt;, Peter Oruba
 audit: initializing netlink socket (disabled)
-type=2000 audit(1488823952.772:1): initialized
+type=2000 audit(1495847188.756:1): initialized
 highmem bounce pool size: 64 pages
 VFS: Disk quotas dquot_6.5.2
 Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
@@ -1068,15 +1098,22 @@ ata3: SATA link down (SStatus 0 SControl 300)
 ata4: SATA link down (SStatus 0 SControl 300)
 ata5: SATA link down (SStatus 0 SControl 300)
 ata6: SATA link down (SStatus 0 SControl 300)
+EXT3-fs: INFO: recovery required on readonly filesystem.
+EXT3-fs: write access will be enabled during recovery.
 kjournald starting.  Commit interval 5 seconds
+EXT3-fs: recovery complete.
 EXT3-fs: mounted filesystem with ordered data mode.
 SELinux:  Disabled at runtime.
 SELinux:  Unregistering netfilter hooks
-type=1404 audit(1488823959.585:2): selinux=0 auid=4294967295 ses=4294967295
+type=1404 audit(1495847196.109:2): selinux=0 auid=4294967295 ses=4294967295
 input: PC Speaker as /class/input/input0
 rtc_cmos 00:06: RTC can wake from S4
 rtc_cmos 00:06: rtc core: registered rtc_cmos as rtc0
 rtc0: alarms up to one month, y3k, 242 bytes nvram, hpet irqs
+input: Power Button (FF) as /class/input/input1
+ACPI: Power Button (FF) [PWRF]
+input: Power Button (CM) as /class/input/input2
+ACPI: Power Button (CM) [PWRB]
 e1000e: Intel(R) PRO/1000 Network Driver - 0.3.3.3-k6
 e1000e: Copyright (c) 1999-2008 Intel Corporation.
 e1000e 0000:02:00.0: PCI INT A -&gt; GSI 16 (level, low) -&gt; IRQ 16
@@ -1084,14 +1121,10 @@ e1000e 0000:02:00.0: setting latency timer to 64
 e1000e 0000:02:00.0: irq 31 for MSI/MSI-X
 e1000e 0000:02:00.0: irq 32 for MSI/MSI-X
 e1000e 0000:02:00.0: irq 33 for MSI/MSI-X
-input: Power Button (FF) as /class/input/input1
+sd 0:0:0:0: Attached scsi generic sg0 type 0
 0000:02:00.0: eth0: (PCI Express:2.5GB/s:Width x1) 0c:c4:7a:0c:1f:5a
 0000:02:00.0: eth0: Intel(R) PRO/1000 Network Connection
 0000:02:00.0: eth0: MAC: 3, PHY: 8, PBA No: ffffff-0ff
-ACPI: Power Button (FF) [PWRF]
-input: Power Button (CM) as /class/input/input2
-ACPI: Power Button (CM) [PWRB]
-sd 0:0:0:0: Attached scsi generic sg0 type 0
 floppy0: no floppy controllers found
 lp: driver loaded but no devices found
 NET: Registered protocol family 10
@@ -1107,8 +1140,6 @@ device-mapper: multipath: version 1.0.5 loaded
 EXT3 FS on sda1, internal journal
 Adding 9213268k swap on /dev/sda2.  Priority:-1 extents:1 across:9213268k SS
 ADDRCONF(NETDEV_UP): eth0: link is not ready
-e1000e: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX/TX
-ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
 warning: `dbus-daemon' uses 32-bit capabilities (legacy support in use)
 Unmapping cpu 1 from all nodes
 Breaking affinity for irq 25
@@ -1125,7 +1156,7 @@ CPU 1 irqstacks, hard=c075b000 soft=c073b000
 Booting processor 1 APIC 0x2 ip 0x6000
 Initializing CPU#1
 Mapping cpu 1 to node 0
-Calibrating delay using timer specific routine.. 6601.21 BogoMIPS (lpj=13202437)
+Calibrating delay using timer specific routine.. 6600.99 BogoMIPS (lpj=13201990)
 CPU: Physical Processor ID: 0
 CPU: Processor Core ID: 1
 CPU: L1 I cache: 32K, L1 D cache: 32K
@@ -1145,7 +1176,7 @@ CPU 2 irqstacks, hard=c075c000 soft=c073c000
 Booting processor 2 APIC 0x4 ip 0x6000
 Initializing CPU#2
 Mapping cpu 2 to node 0
-Calibrating delay using timer specific routine.. 6600.59 BogoMIPS (lpj=13201190)
+Calibrating delay using timer specific routine.. 6600.85 BogoMIPS (lpj=13201708)
 CPU: Physical Processor ID: 0
 CPU: Processor Core ID: 2
 CPU: L1 I cache: 32K, L1 D cache: 32K
@@ -1163,7 +1194,7 @@ CPU 3 irqstacks, hard=c075d000 soft=c073d000
 Booting processor 3 APIC 0x6 ip 0x6000
 Initializing CPU#3
 Mapping cpu 3 to node 0
-Calibrating delay using timer specific routine.. 6600.91 BogoMIPS (lpj=13201832)
+Calibrating delay using timer specific routine.. 6601.05 BogoMIPS (lpj=13202106)
 CPU: Physical Processor ID: 0
 CPU: Processor Core ID: 3
 CPU: L1 I cache: 32K, L1 D cache: 32K
@@ -1178,42 +1209,11 @@ platform microcode: firmware: requesting intel-ucode/06-3a-09
 Switched to high resolution mode on CPU 3
 hpet: hpet5 irq 27 for MSI
 mtrr: type mismatch for de000000,1000000 old: write-back new: write-combining
+e1000e: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX/TX
+ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
 eth0: no IPv6 routers present
 opalpci: driver loaded  (major 250)
 pci 0000:01:00.0: PCI INT A -&gt; GSI 16 (level, low) -&gt; IRQ 16
-pci 0000:01:00.0: setting latency timer to 64
-pci 0000:01:00.0: setting latency timer to 64
-pci 0000:01:00.0: setting latency timer to 64
-pci 0000:01:00.0: setting latency timer to 64
-pci 0000:01:00.0: setting latency timer to 64
-pci 0000:01:00.0: setting latency timer to 64
-pci 0000:01:00.0: setting latency timer to 64
-pci 0000:01:00.0: setting latency timer to 64
-pci 0000:01:00.0: setting latency timer to 64
-pci 0000:01:00.0: setting latency timer to 64
-Clocksource tsc unstable (delta = 599846599122 ns)
-pci 0000:01:00.0: setting latency timer to 64
-pci 0000:01:00.0: setting latency timer to 64
-pci 0000:01:00.0: setting latency timer to 64
-pci 0000:01:00.0: setting latency timer to 64
-pci 0000:01:00.0: setting latency timer to 64
-pci 0000:01:00.0: setting latency timer to 64
-pci 0000:01:00.0: setting latency timer to 64
-pci 0000:01:00.0: setting latency timer to 64
-pci 0000:01:00.0: setting latency timer to 64
-pci 0000:01:00.0: setting latency timer to 64
-pci 0000:01:00.0: setting latency timer to 64
-pci 0000:01:00.0: setting latency timer to 64
-pci 0000:01:00.0: setting latency timer to 64
-pci 0000:01:00.0: setting latency timer to 64
-pci 0000:01:00.0: setting latency timer to 64
-pci 0000:01:00.0: setting latency timer to 64
-pci 0000:01:00.0: setting latency timer to 64
-pci 0000:01:00.0: setting latency timer to 64
-pci 0000:01:00.0: setting latency timer to 64
-pci 0000:01:00.0: setting latency timer to 64
-e1000e: eth0 NIC Link is Down
-e1000e: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX/TX
 pci 0000:01:00.0: setting latency timer to 64
 pci 0000:01:00.0: setting latency timer to 64
 pci 0000:01:00.0: setting latency timer to 64
@@ -1428,35 +1428,60 @@ pci 0000:01:00.0: setting latency timer to 64
                     </property>
                     <property name="35">
                         <value>
-                            d:\jiang\anaconda
+                            d:\strawberry\perl\bin
                         </value>
                     </property>
                     <property name="36">
                         <value>
-                            d:\jiang\anaconda\scripts
+                            d:\strawberry\perl\site\bin
                         </value>
                     </property>
                     <property name="37">
                         <value>
-                            d:\jiang\anaconda\library\bin
+                            d:\strawberry\c\bin
                         </value>
                     </property>
                     <property name="38">
                         <value>
-                            c:\users\jiang\appdata\local\microsoft\windowsapps
+                            d:\jiang\anaconda
                         </value>
                     </property>
                     <property name="39">
                         <value>
-                            d:\program files (x86)\microsoft vs code\bin
+                            d:\jiang\anaconda\scripts
                         </value>
                     </property>
                     <property name="40">
                         <value>
-                            d:\program files (x86)\microsoft vs code\bin
+                            d:\jiang\anaconda\library\bin
                         </value>
                     </property>
                     <property name="41">
+                        <value>
+                            c:\users\jiang\appdata\local\microsoft\windowsapps
+                        </value>
+                    </property>
+                    <property name="42">
+                        <value>
+                            d:\program files (x86)\microsoft vs code\bin
+                        </value>
+                    </property>
+                    <property name="43">
+                        <value>
+                            d:\program files (x86)\microsoft vs code\bin
+                        </value>
+                    </property>
+                    <property name="44">
+                        <value>
+                            d:\program files (x86)\microsoft vs code\bin
+                        </value>
+                    </property>
+                    <property name="45">
+                        <value>
+                            d:\program files (x86)\microsoft vs code\bin
+                        </value>
+                    </property>
+                    <property name="46">
                         <value>
                             d:\opal-rt\rt-lab\v11.0.8.13
                         </value>
@@ -1518,8 +1543,8 @@ NetworkInterfacesManager on LAPTOP-5FBKHMJV: (5 interfaces)
   - state: Up
   ` subnet boundaries: [192.168.44.0, 192.168.44.255]
   - found in subnet map: VMware Network Adapter VMnet8
-* Wi-Fi (index: 22)
-  - IP address: 10.248.65.9 [0x0af84109]
+* Wi-Fi (index: 25)
+  - IP address: 10.248.73.220 [0x0af849dc]
   - MAC address: 48-e2-44-4e-21-dd
   - type: Wireless
   - state: Up
@@ -5326,6 +5351,1621 @@ HttpClient::connect 127.0.0.1: Success
                 </item>
             </item>
         </item>
+        <item name="Execution - Host (LAPTOP-5FBKHMJV)">
+            <property name="Computer name">
+                <value>
+                    LAPTOP-5FBKHMJV
+                </value>
+            </property>
+            <item name="Environment variables">
+                <item name="Path">
+                    <property name="0">
+                        <value>
+                            d:\opal-rt\rt-lab\v11.0.8.13\common\bin
+                        </value>
+                    </property>
+                    <property name="1">
+                        <value>
+                            d:/opal-rt/rt-lab/v11.0.8.13/common/ui/jre/bin/client
+                        </value>
+                    </property>
+                    <property name="2">
+                        <value>
+                            d:/opal-rt/rt-lab/v11.0.8.13/common/ui/jre/bin
+                        </value>
+                    </property>
+                    <property name="3">
+                        <value>
+                            d:/opal-rt/rt-lab/v11.0.8.13/common/ui/jre/lib/i386
+                        </value>
+                    </property>
+                    <property name="4">
+                        <value>
+                            c:\program files\nvidia gpu computing toolkit\cuda\v8.0\bin
+                        </value>
+                    </property>
+                    <property name="5">
+                        <value>
+                            c:\program files\nvidia gpu computing toolkit\cuda\v8.0\libnvvp
+                        </value>
+                    </property>
+                    <property name="6">
+                        <value>
+                            c:\programdata\oracle\java\javapath
+                        </value>
+                    </property>
+                    <property name="7">
+                        <value>
+                            c:\program files (x86)\intel\icls client\
+                        </value>
+                    </property>
+                    <property name="8">
+                        <value>
+                            c:\program files\intel\icls client\
+                        </value>
+                    </property>
+                    <property name="9">
+                        <value>
+                            c:\windows\system32
+                        </value>
+                    </property>
+                    <property name="10">
+                        <value>
+                            c:\windows
+                        </value>
+                    </property>
+                    <property name="11">
+                        <value>
+                            c:\windows\system32\wbem
+                        </value>
+                    </property>
+                    <property name="12">
+                        <value>
+                            c:\windows\system32\windowspowershell\v1.0\
+                        </value>
+                    </property>
+                    <property name="13">
+                        <value>
+                            c:\program files (x86)\nvidia corporation\physx\common
+                        </value>
+                    </property>
+                    <property name="14">
+                        <value>
+                            c:\program files\git\cmd
+                        </value>
+                    </property>
+                    <property name="15">
+                        <value>
+                            c:\python27
+                        </value>
+                    </property>
+                    <property name="16">
+                        <value>
+                            c:\users\jiang\.dnx\bin
+                        </value>
+                    </property>
+                    <property name="17">
+                        <value>
+                            c:\program files\microsoft dnx\dnvm\
+                        </value>
+                    </property>
+                    <property name="18">
+                        <value>
+                            c:\program files\microsoft sql server\130\tools\binn\
+                        </value>
+                    </property>
+                    <property name="19">
+                        <value>
+                            d:\program files\miktex 2.9\miktex\bin\x64
+                        </value>
+                    </property>
+                    <property name="20">
+                        <value>
+                            c:\program files (x86)\notepad++
+                        </value>
+                    </property>
+                    <property name="21">
+                        <value>
+                            c:\windows\system32
+                        </value>
+                    </property>
+                    <property name="22">
+                        <value>
+                            c:\windows
+                        </value>
+                    </property>
+                    <property name="23">
+                        <value>
+                            c:\windows\system32\wbem
+                        </value>
+                    </property>
+                    <property name="24">
+                        <value>
+                            c:\windows\system32\windowspowershell\v1.0\
+                        </value>
+                    </property>
+                    <property name="25">
+                        <value>
+                            c:\program files (x86)\intel\intel(r) management engine components\dal
+                        </value>
+                    </property>
+                    <property name="26">
+                        <value>
+                            c:\program files\intel\intel(r) management engine components\dal
+                        </value>
+                    </property>
+                    <property name="27">
+                        <value>
+                            c:\program files (x86)\intel\intel(r) management engine components\ipt
+                        </value>
+                    </property>
+                    <property name="28">
+                        <value>
+                            c:\program files\intel\intel(r) management engine components\ipt
+                        </value>
+                    </property>
+                    <property name="29">
+                        <value>
+                            c:\program files (x86)\matlab\r2014b\runtime\win32
+                        </value>
+                    </property>
+                    <property name="30">
+                        <value>
+                            d:\program files\gs\gs920\bin
+                        </value>
+                    </property>
+                    <property name="31">
+                        <value>
+                            c:\program files (x86)\microsoft sql server\110\dts\binn\
+                        </value>
+                    </property>
+                    <property name="32">
+                        <value>
+                            c:\program files (x86)\microsoft sql server\120\dts\binn\
+                        </value>
+                    </property>
+                    <property name="33">
+                        <value>
+                            c:\program files (x86)\microsoft sql server\130\dts\binn\
+                        </value>
+                    </property>
+                    <property name="34">
+                        <value>
+                            c:\program files (x86)\windows kits\10\windows performance toolkit\
+                        </value>
+                    </property>
+                    <property name="35">
+                        <value>
+                            d:\strawberry\perl\bin
+                        </value>
+                    </property>
+                    <property name="36">
+                        <value>
+                            d:\strawberry\perl\site\bin
+                        </value>
+                    </property>
+                    <property name="37">
+                        <value>
+                            d:\strawberry\c\bin
+                        </value>
+                    </property>
+                    <property name="38">
+                        <value>
+                            d:\jiang\anaconda
+                        </value>
+                    </property>
+                    <property name="39">
+                        <value>
+                            d:\jiang\anaconda\scripts
+                        </value>
+                    </property>
+                    <property name="40">
+                        <value>
+                            d:\jiang\anaconda\library\bin
+                        </value>
+                    </property>
+                    <property name="41">
+                        <value>
+                            c:\users\jiang\appdata\local\microsoft\windowsapps
+                        </value>
+                    </property>
+                    <property name="42">
+                        <value>
+                            d:\program files (x86)\microsoft vs code\bin
+                        </value>
+                    </property>
+                    <property name="43">
+                        <value>
+                            d:\program files (x86)\microsoft vs code\bin
+                        </value>
+                    </property>
+                    <property name="44">
+                        <value>
+                            d:\program files (x86)\microsoft vs code\bin
+                        </value>
+                    </property>
+                    <property name="45">
+                        <value>
+                            d:\program files (x86)\microsoft vs code\bin
+                        </value>
+                    </property>
+                    <property name="46">
+                        <value>
+                            d:\opal-rt\rt-lab\v11.0.8.13
+                        </value>
+                    </property>
+                </item>
+                <item name="PYTHONPATH">
+                    <property name="0">
+                        <value>
+                            d:\opal-rt\rt-lab\v11.0.8.13\common\python
+                        </value>
+                    </property>
+                    <property name="1">
+                        <value>
+                            d:\opal-rt\rt-lab\v11.0.8.13\common\bin
+                        </value>
+                    </property>
+                </item>
+                <property name="RTLAB_ROOT">
+                    <value>
+                        D:\OPAL-RT\RT-LAB\v11.0.8.13\
+                    </value>
+                </property>
+            </item>
+            <property name="IP">
+                <value>
+                    ['::1']
+                </value>
+            </property>
+            <item name="Network">
+                <textlog name="Network">
+                    <value>
+                        ---------- Network interfaces list ----------
+NetworkInterfacesManager on LAPTOP-5FBKHMJV: (5 interfaces)
+* Ethernet (index: 2)
+  - IP address: 192.168.5.200 [0xc0a805c8]
+  - MAC address: 30-65-ec-89-ff-86
+  - type: Wired
+  - state: Up
+  ` subnet boundaries: [192.168.5.0, 192.168.5.255]
+  - found in subnet map: Ethernet
+* Loopback Pseudo-Interface 1 (index: 1)
+  - IP address: 127.0.0.1 [0x7f000001]
+  - MAC address: 
+  - type: Loopback
+  - state: Up
+  ` subnet boundaries: [127.0.0.0, 127.255.255.255]
+  - found in subnet map: Loopback Pseudo-Interface 1
+* VMware Network Adapter VMnet1 (index: 14)
+  - IP address: 192.168.163.1 [0xc0a8a301]
+  - MAC address: 00-50-56-c0-00-01
+  - type: Wired
+  - state: Up
+  ` subnet boundaries: [192.168.163.0, 192.168.163.255]
+  - found in subnet map: VMware Network Adapter VMnet1
+* VMware Network Adapter VMnet8 (index: 3)
+  - IP address: 192.168.44.1 [0xc0a82c01]
+  - MAC address: 00-50-56-c0-00-08
+  - type: Wired
+  - state: Up
+  ` subnet boundaries: [192.168.44.0, 192.168.44.255]
+  - found in subnet map: VMware Network Adapter VMnet8
+* Wi-Fi (index: 25)
+  - IP address: 10.248.73.220 [0x0af849dc]
+  - MAC address: 48-e2-44-4e-21-dd
+  - type: Wireless
+  - state: Up
+  ` subnet boundaries: [10.248.64.0, 10.248.79.255]
+  - found in subnet map: Wi-Fi
+---------------------------------------------
+
+
+---------- Object name resolution ----------
+IP successfully selected: 127.0.0.1:2525
+
+--------------------------------------------
+
+---------- HTTP Client ----------
+HttpClient::connect 127.0.0.1: Success
+
+------------------------------
+
+---------- Looking for self in own subnet ----------
+
+---------- Success ----------
+                    </value>
+                </textlog>
+            </item>
+            <item name="OS= Windows">
+                <property name="Other information">
+                    <value/>
+                </property>
+                <property name="Release">
+                    <value>
+                        post2008Server
+                    </value>
+                </property>
+                <property name="Version">
+                    <value>
+                        6.2.9200
+                    </value>
+                </property>
+            </item>
+            <property name="User Name">
+                <value>
+                    jiang
+                </value>
+            </property>
+        </item>
+        <item name="Execution - Target (192:168:5:11)">
+            <item name="Applications">
+                <property name="gcc">
+                    <value>
+                        4.1.2
+                    </value>
+                </property>
+                <property name="opicc">
+                    <value>
+                        11.1
+                    </value>
+                </property>
+                <property name="python">
+                    <value>
+                        2.4.3
+                    </value>
+                </property>
+            </item>
+            <property name="Computer name">
+                <value>
+                    RTServer_5_113
+                </value>
+            </property>
+            <item name="Disk space">
+                <textlog name="Disk space">
+                    <value>
+                        Filesystem            Size  Used Avail Use% Mounted on
+/dev/sda1             107G   21G   82G  20% /
+tmpfs                 4.0G     0  4.0G   0% /dev/shm
+                    </value>
+                </textlog>
+            </item>
+            <item name="Environment variables">
+                <property name="_">
+                    <value>
+                        /bin/env
+                    </value>
+                </property>
+                <property name="ABORT_COMPILE_WHEN_NO_BITSTREAM">
+                    <value>
+                        0
+                    </value>
+                </property>
+                <property name="AcquisitionMemory">
+                    <value>
+                        0,2500,1,2500,24,100
+                    </value>
+                </property>
+                <property name="ACTION_AFTER_N_OVERRUNS">
+                    <value>
+                        10
+                    </value>
+                </property>
+                <property name="ACTION_ON_OVERRUNS">
+                    <value>
+                        0
+                    </value>
+                </property>
+                <property name="ActiveGroups">
+                    <value>
+                        8/0/1/24/25/26/27/28/29/
+                    </value>
+                </property>
+                <property name="CACHEABLE_DMA_MEMORY_ACCESS">
+                    <value>
+                        ON
+                    </value>
+                </property>
+                <property name="ClockPeriodMode">
+                    <value>
+                        Free-Clock
+                    </value>
+                </property>
+                <property name="ClockPeriodTime">
+                    <value>
+                        10
+                    </value>
+                </property>
+                <property name="COMM_RT">
+                    <value>
+                        UDP/IP
+                    </value>
+                </property>
+                <property name="CONSOLE">
+                    <value>
+                        /dev/pts/0
+                    </value>
+                </property>
+                <property name="CORE_ASSIGNMENT">
+                    <value>
+                        SM_master 1 SS_controller 1
+                    </value>
+                </property>
+                <property name="DEBUG">
+                    <value>
+                        0
+                    </value>
+                </property>
+                <property name="DETECT_OVERRUNS">
+                    <value>
+                        ON
+                    </value>
+                </property>
+                <property name="DINAMO_LOAD">
+                    <value>
+                        0
+                    </value>
+                </property>
+                <property name="DISABLE_INT">
+                    <value>
+                        my_pv_system_1_sm_master my_pv_system_3_ss_controller
+                    </value>
+                </property>
+                <property name="DISPLAY">
+                    <value>
+                        192.168.44.1:0.0
+                    </value>
+                </property>
+                <property name="ENABLE_WATCHDOG">
+                    <value>
+                        ON
+                    </value>
+                </property>
+                <property name="EXT_CC_OPTS">
+                    <value/>
+                </property>
+                <property name="EXT_LD_OPTS">
+                    <value/>
+                </property>
+                <property name="EXT_LIB">
+                    <value/>
+                </property>
+                <property name="EXT_LIBPATH">
+                    <value/>
+                </property>
+                <property name="FLASH_UPDATE_OPTIONS">
+                    <value/>
+                </property>
+                <property name="FPGA_BITSTREAM_INFO">
+                    <value/>
+                </property>
+                <property name="INIT_VERSION">
+                    <value>
+                        sysvinit-2.86
+                    </value>
+                </property>
+                <property name="INTERNAL_IGN_SOURCE_FILE">
+                    <value>
+                        fts5abcd_dtc.c fts2flux.c fts2dla.c fts2hfun.c fts5conversion.c fts5stub.c fts5abcd_noncomp.c ftshysteresis.c ssn_sfun_v1.c marti_line.c wb_line.c art_mmc_1p_sf.c art_mmc_1p_condensator_sf.c art_mmc_1p_50_sf.c art_mmc_1p_condensator_50_sf.c art_mmc_2p_1_sf.c art_mmc_2p_2_sf.c art_mmc_2p_condensator_sf.c art_mmc_cap_sf.c art_mmc_d_sf.c art_VSCController_dqabc_sf.c art_VSCController_ctrl_sf.c tsb_sfun.c alt_sync_nl_reseau0_sf.c algo_princ0_sf.c consign_del_w0_sf.c consign_del_x0_sf.c consign_del_p0_sf.c model_load0_sf.c mod_turb_nl0_sf.c mod_lin_turb0_sf.c mod_lin_rv0_sf.c thermal_turbine_gov0_sf.c hydro_turb0_sf.c ext_hydro_reg0_sf.c gas_turbine0_sf.c stabilisateur0_sf.c tested_hydro_speed_gov0_sf.c algoberta0_sf.c algo_alerte0_sf.cmmc_2p_ctr0_sf.c
+                    </value>
+                </property>
+                <property name="INTERNAL_LIBRARY3">
+                    <value>
+                        artemis_RT705931r2014br.a -lOpalRTER2014B
+                    </value>
+                </property>
+                <property name="LANG">
+                    <value>
+                        en_US
+                    </value>
+                </property>
+                <property name="LastLoaderMachineName">
+                    <value>
+                        LAPTOP-5FBKHMJV
+                    </value>
+                </property>
+                <property name="LastLoaderUserName">
+                    <value>
+                        jiang
+                    </value>
+                </property>
+                <property name="LC_ALL">
+                    <value>
+                        en_US
+                    </value>
+                </property>
+                <property name="LC_COLLATE">
+                    <value>
+                        en_US
+                    </value>
+                </property>
+                <property name="LC_MESSAGES">
+                    <value>
+                        en_US
+                    </value>
+                </property>
+                <property name="LC_MONETARY">
+                    <value>
+                        en_US
+                    </value>
+                </property>
+                <property name="LC_NUMERIC">
+                    <value>
+                        en_US
+                    </value>
+                </property>
+                <property name="LC_TIME">
+                    <value>
+                        en_US
+                    </value>
+                </property>
+                <property name="MaxDynamicSignals">
+                    <value>
+                        1/24/96/
+                    </value>
+                </property>
+                <property name="MODEL_PAUSE_TIME">
+                    <value>
+                        0.000000
+                    </value>
+                </property>
+                <property name="MODEL_STOP_TIME">
+                    <value>
+                        0.000000
+                    </value>
+                </property>
+                <property name="MONITORING">
+                    <value>
+                        ON
+                    </value>
+                </property>
+                <property name="MONITORING_BLOCK">
+                    <value>
+                        ON
+                    </value>
+                </property>
+                <property name="MONITORING_DISPLAY">
+                    <value>
+                        NEVER
+                    </value>
+                </property>
+                <property name="MSG_PRECISION_FACTOR">
+                    <value>
+                        0
+                    </value>
+                </property>
+                <property name="NB_STEP_WITHOUT_OVERRUNS">
+                    <value>
+                        10
+                    </value>
+                </property>
+                <property name="nODE_mAP_lOG_eXEnAME">
+                    <value>
+                        1 my_pv_system_1_sm_master 3 my_pv_system_3_ss_controller
+                    </value>
+                </property>
+                <property name="nODE_mAP_lOG_nAME">
+                    <value>
+                        1 RTServer_5_113 3 RTServer_5_113
+                    </value>
+                </property>
+                <property name="nODE_mAP_lOG_sUBsYSnAME">
+                    <value>
+                        1 SM_master 3 SS_controller
+                    </value>
+                </property>
+                <property name="nODE_mAP_nAME_iPaDDR">
+                    <value>
+                        RTServer_5_113 192.168.5.113 RTServer_5_113 192.168.5.113
+                    </value>
+                </property>
+                <property name="OP_MATLABR2014B">
+                    <value>
+                        1
+                    </value>
+                </property>
+                <property name="OPAL_DEBUG">
+                    <value>
+                        OFF
+                    </value>
+                </property>
+                <item name="OriginalModelFile">
+                    <property name="0">
+                        <value>
+                            C
+                        </value>
+                    </property>
+                    <property name="1">
+                        <value>
+                            /Users/jiang/OPAL-RT/RT-LABv11_Workspace/pv_inverter/models/my_pv_system/my_pv_system.mdl
+                        </value>
+                    </property>
+                </item>
+                <property name="OriginalModelName">
+                    <value>
+                        my_pv_system
+                    </value>
+                </property>
+                <property name="OriginalModelPath">
+                    <value>
+                        C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\my_pv_system\
+                    </value>
+                </property>
+                <property name="OriginalProjectPath">
+                    <value>
+                        C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\pv_inverter.llp
+                    </value>
+                </property>
+                <property name="OS_COMPILE_RELEASE">
+                    <value>
+                        2.6.29.6-opalrt-6.1
+                    </value>
+                </property>
+                <item name="PATH">
+                    <property name="0">
+                        <value>
+                            /sbin
+                        </value>
+                    </property>
+                    <property name="1">
+                        <value>
+                            /usr/sbin
+                        </value>
+                    </property>
+                    <property name="2">
+                        <value>
+                            /bin
+                        </value>
+                    </property>
+                    <property name="3">
+                        <value>
+                            /usr/bin
+                        </value>
+                    </property>
+                </item>
+                <property name="previous">
+                    <value>
+                        N
+                    </value>
+                </property>
+                <property name="PREVLEVEL">
+                    <value>
+                        N
+                    </value>
+                </property>
+                <property name="PRINT_LOG_LEVEL">
+                    <value>
+                        DEBUG_ALL
+                    </value>
+                </property>
+                <property name="PWD">
+                    <value>
+                        /usr/opalrt/v11.0.8.13/common/python/rtlab/global
+                    </value>
+                </property>
+                <property name="PYTHONPATH">
+                    <value>
+                        /usr/opalrt/v11.0.8.13/common/python/
+                    </value>
+                </property>
+                <property name="REDHAWK_MATLAB_ROOT">
+                    <value>
+                        /usr/matlab/v8.4
+                    </value>
+                </property>
+                <property name="REDHAWK_OPALRT_ROOT">
+                    <value>
+                        /usr/opalrt/v11.0.8.13
+                    </value>
+                </property>
+                <property name="REMOTE_HOST">
+                    <value>
+                        192.168.5.200
+                    </value>
+                </property>
+                <property name="RESET_IO_MISSING">
+                    <value>
+                        ON
+                    </value>
+                </property>
+                <property name="RTLAB_MODEL_SIM_TIME">
+                    <value/>
+                </property>
+                <property name="RTLAB_PLATFORM">
+                    <value>
+                        REDHAWK
+                    </value>
+                </property>
+                <property name="RTLAB_PRODUCT_VERSION">
+                    <value>
+                        v11.0.8.13
+                    </value>
+                </property>
+                <property name="RTLAB_SUBSYS_FILE">
+                    <value>
+                        my_pv_system_1_sm_master my_pv_system_3_ss_controller
+                    </value>
+                </property>
+                <property name="RTLAB_SUBSYS_NAME">
+                    <value>
+                        SM_master SS_controller
+                    </value>
+                </property>
+                <property name="runlevel">
+                    <value>
+                        5
+                    </value>
+                </property>
+                <property name="RUNLEVEL">
+                    <value>
+                        5
+                    </value>
+                </property>
+                <property name="SELINUX_INIT">
+                    <value>
+                        YES
+                    </value>
+                </property>
+                <property name="SHLVL">
+                    <value>
+                        4
+                    </value>
+                </property>
+                <property name="SYSNAME">
+                    <value>
+                        linux
+                    </value>
+                </property>
+                <property name="TargetWorkingPath">
+                    <value>
+                        /home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_workspace/pv_inverter/models/my_pv_system/my_pv_system_sm_master/
+                    </value>
+                </property>
+                <property name="TERM">
+                    <value>
+                        linux
+                    </value>
+                </property>
+                <property name="USER_INCS">
+                    <value/>
+                </property>
+                <property name="USER_SRCS">
+                    <value/>
+                </property>
+                <property name="WATCHDOG_TIMEOUT">
+                    <value>
+                        5000
+                    </value>
+                </property>
+            </item>
+            <property name="IP">
+                <value>
+                    192.168.5.11
+                </value>
+            </property>
+            <item name="Memory">
+                <property name="MemFree">
+                    <value>
+                        7319568 kB
+                    </value>
+                </property>
+                <property name="MemTotal">
+                    <value>
+                        8205124 kB
+                    </value>
+                </property>
+            </item>
+            <item name="Network">
+                <textlog name="Network">
+                    <value>
+                        eth0      Link encap:Ethernet  HWaddr 0C:C4:7A:0C:1F:5A  
+          inet addr:192.168.5.113  Bcast:192.168.5.255  Mask:255.255.255.0
+          inet6 addr: fe80::ec4:7aff:fe0c:1f5a/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:216270 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:177214 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:300919283 (286.9 MiB)  TX bytes:105138256 (100.2 MiB)
+          Memory:df900000-df920000 
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:16436  Metric:1
+          RX packets:640 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:640 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:1016621 (992.7 KiB)  TX bytes:1016621 (992.7 KiB)
+                    </value>
+                </textlog>
+            </item>
+            <item name="OS= linux2">
+                <property name="Release">
+                    <value>
+                        2.6.29.6-opalrt-6.1
+                    </value>
+                </property>
+                <property name="Version">
+                    <value>
+                        #8 SMP PREEMPT Thu Oct 3 11:56:23 EDT 2013
+                    </value>
+                </property>
+            </item>
+            <item name="System log (dmesg)">
+                <textlog name="System log (dmesg)">
+                    <value>
+                        Initializing cgroup subsys cpuset
+Linux version 2.6.29.6-opalrt-6.1 (root@RTGen) (gcc version 4.1.2 20071124 (Red Hat 4.1.2-42)) #8 SMP PREEMPT Thu Oct 3 11:56:23 EDT 2013
+KERNEL supported cpus:
+  Intel GenuineIntel
+  AMD AuthenticAMD
+  NSC Geode by NSC
+  Cyrix CyrixInstead
+  Centaur CentaurHauls
+  Transmeta GenuineTMx86
+  Transmeta TransmetaCPU
+  UMC UMC UMC UMC
+BIOS-provided physical RAM map:
+ BIOS-e820: 0000000000000000 - 000000000009d800 (usable)
+ BIOS-e820: 000000000009d800 - 00000000000a0000 (reserved)
+ BIOS-e820: 00000000000e0000 - 0000000000100000 (reserved)
+ BIOS-e820: 0000000000100000 - 00000000beff3000 (usable)
+ BIOS-e820: 00000000beff3000 - 00000000bf036000 (ACPI NVS)
+ BIOS-e820: 00000000bf036000 - 00000000ce4ae000 (usable)
+ BIOS-e820: 00000000ce4ae000 - 00000000ce551000 (reserved)
+ BIOS-e820: 00000000ce551000 - 00000000ce5dc000 (usable)
+ BIOS-e820: 00000000ce5dc000 - 00000000ce679000 (ACPI NVS)
+ BIOS-e820: 00000000ce679000 - 00000000cf7ff000 (reserved)
+ BIOS-e820: 00000000cf7ff000 - 00000000cf800000 (usable)
+ BIOS-e820: 00000000e0000000 - 00000000f0000000 (reserved)
+ BIOS-e820: 00000000fec00000 - 00000000fec01000 (reserved)
+ BIOS-e820: 00000000fed00000 - 00000000fed04000 (reserved)
+ BIOS-e820: 00000000fed1c000 - 00000000fed20000 (reserved)
+ BIOS-e820: 00000000fee00000 - 00000000fee01000 (reserved)
+ BIOS-e820: 00000000ff000000 - 0000000100000000 (reserved)
+ BIOS-e820: 0000000100000000 - 0000000230000000 (usable)
+DMI 2.7 present.
+AMI BIOS detected: BIOS may corrupt low RAM, working around it.
+last_pfn = 0x230000 max_arch_pfn = 0x1000000
+x86 PAT enabled: cpu 0, old 0x7040600070406, new 0x7010600070106
+kernel direct mapping tables up to 379fe000 @ 10000-16000
+NX (Execute Disable) protection: active
+RAMDISK: 37d9d000 - 37fef264
+Allocated new RAMDISK: 007f9000 - 00a4b264
+Move RAMDISK from 0000000037d9d000 - 0000000037fef263 to 007f9000 - 00a4b263
+ACPI: RSDP 000F0490, 0024 (r2 SUPERM)
+ACPI: XSDT CE669080, 007C (r1 SUPERM SMCI--MB        1 AMI     10013)
+ACPI: FACP CE6741F8, 010C (r5 SUPERM SMCI--MB        1 AMI     10013)
+ACPI Warning (tbfadt-0257): FADT (revision 5) is longer than ACPI 2.0 version, truncating length 0x10C to 0xF4 [20081204]
+FADT: X_PM1a_EVT_BLK.bit_width (16) does not match PM1_EVT_LEN (4)
+ACPI: DSDT CE669190, B068 (r2 SUPERM SMCI--MB        0 INTL 20051117)
+ACPI: FACS CE677080, 0040
+ACPI: APIC CE674308, 0072 (r3 SUPERM SMCI--MB        1 AMI     10013)
+ACPI: FPDT CE674380, 0044 (r1 SUPERM SMCI--MB        1 AMI     10013)
+ACPI: MCFG CE6743C8, 003C (r1 SUPERM SMCI--MB        1 MSFT       97)
+ACPI: HPET CE674408, 0038 (r1 SUPERM SMCI--MB        1 AMI.        5)
+ACPI: SSDT CE674440, 0397 (r1 SataRe SataTabl     1000 INTL 20091112)
+ACPI: SSDT CE6747D8, 0B18 (r1  PmRef    CpuPm     3000 INTL 20051117)
+ACPI: EINJ CE6752F0, 0130 (r1    AMI AMI EINJ        0             0)
+ACPI: ERST CE675420, 0210 (r1  AMIER AMI ERST        0             0)
+ACPI: HEST CE675630, 00A8 (r1    AMI AMI HEST        0             0)
+ACPI: BERT CE6756D8, 0030 (r1    AMI AMI BERT        0             0)
+ACPI: Local APIC address 0xfee00000
+NUMA - single node, flat memory mode
+Node: 0, start_pfn: 0, end_pfn: 230000
+  Setting physnode_map array to node 0 for pfns:
+  0 4000 8000 c000 10000 14000 18000 1c000 20000 24000 28000 2c000 30000 34000 38000 3c000 40000 44000 48000 4c000 50000 54000 58000 5c000 60000 64000 68000 6c000 70000 74000 78000 7c000 80000 84000 88000 8c000 90000 94000 98000 9c000 a0000 a4000 a8000 ac000 b0000 b4000 b8000 bc000 c0000 c4000 c8000 cc000 d0000 d4000 d8000 dc000 e0000 e4000 e8000 ec000 f0000 f4000 f8000 fc000 100000 104000 108000 10c000 110000 114000 118000 11c000 120000 124000 128000 12c000 130000 134000 138000 13c000 140000 144000 148000 14c000 150000 154000 158000 15c000 160000 164000 168000 16c000 170000 174000 178000 17c000 180000 184000 188000 18c000 190000 194000 198000 19c000 1a0000 1a4000 1a8000 1ac000 1b0000 1b4000 1b8000 1bc000 1c0000 1c4000 1c8000 1cc000 1d0000 1d4000 1d8000 1dc000 1e0000 1e4000 1e8000 1ec000 1f0000 1f4000 1f8000 1fc000 200000 204000 208000 20c000 210000 214000 218000 21c000 220000 224000 228000 22c000 
+node 0 pfn: [0 - 230000]
+Reserving 18432 pages of KVA for lmem_map of node 0 at 22b800
+remove_active_range (0, 2275328, 2293760)
+Reserving total of 4800 pages for numa KVA remap
+kva_start_pfn ~ 33000 max_low_pfn ~ 379fe
+max_pfn = 230000
+8070MB HIGHMEM available.
+889MB LOWMEM available.
+max_low_pfn = 379fe, highstart_pfn = 379fe
+Low memory ends at vaddr f79fe000
+node 0 will remap to vaddr f3000000 - f7800000
+allocate_pgdat: node 0 NODE_DATA f3000000
+remap_numa_kva: node 0
+remap_numa_kva: f3000000 to pfn 0022b800
+remap_numa_kva: f3200000 to pfn 0022ba00
+remap_numa_kva: f3400000 to pfn 0022bc00
+remap_numa_kva: f3600000 to pfn 0022be00
+remap_numa_kva: f3800000 to pfn 0022c000
+remap_numa_kva: f3a00000 to pfn 0022c200
+remap_numa_kva: f3c00000 to pfn 0022c400
+remap_numa_kva: f3e00000 to pfn 0022c600
+remap_numa_kva: f4000000 to pfn 0022c800
+remap_numa_kva: f4200000 to pfn 0022ca00
+remap_numa_kva: f4400000 to pfn 0022cc00
+remap_numa_kva: f4600000 to pfn 0022ce00
+remap_numa_kva: f4800000 to pfn 0022d000
+remap_numa_kva: f4a00000 to pfn 0022d200
+remap_numa_kva: f4c00000 to pfn 0022d400
+remap_numa_kva: f4e00000 to pfn 0022d600
+remap_numa_kva: f5000000 to pfn 0022d800
+remap_numa_kva: f5200000 to pfn 0022da00
+remap_numa_kva: f5400000 to pfn 0022dc00
+remap_numa_kva: f5600000 to pfn 0022de00
+remap_numa_kva: f5800000 to pfn 0022e000
+remap_numa_kva: f5a00000 to pfn 0022e200
+remap_numa_kva: f5c00000 to pfn 0022e400
+remap_numa_kva: f5e00000 to pfn 0022e600
+remap_numa_kva: f6000000 to pfn 0022e800
+remap_numa_kva: f6200000 to pfn 0022ea00
+remap_numa_kva: f6400000 to pfn 0022ec00
+remap_numa_kva: f6600000 to pfn 0022ee00
+remap_numa_kva: f6800000 to pfn 0022f000
+remap_numa_kva: f6a00000 to pfn 0022f200
+remap_numa_kva: f6c00000 to pfn 0022f400
+remap_numa_kva: f6e00000 to pfn 0022f600
+remap_numa_kva: f7000000 to pfn 0022f800
+remap_numa_kva: f7200000 to pfn 0022fa00
+remap_numa_kva: f7400000 to pfn 0022fc00
+remap_numa_kva: f7600000 to pfn 0022fe00
+High memory starts at vaddr f79fe000
+  mapped low ram: 0 - 379fe000
+  low ram: 00000000 - 379fe000
+  bootmap 00011000 - 00017f40
+(11 early reservations) ==&gt; bootmem [0000000000 - 00379fe000]
+  #0 [0000000000 - 0000001000]   BIOS data page ==&gt; [0000000000 - 0000001000]
+  #1 [0000001000 - 0000002000]    EX TRAMPOLINE ==&gt; [0000001000 - 0000002000]
+  #2 [0000006000 - 0000007000]       TRAMPOLINE ==&gt; [0000006000 - 0000007000]
+  #3 [0000100000 - 00007ef264]    TEXT DATA BSS ==&gt; [0000100000 - 00007ef264]
+  #4 [00007f0000 - 00007f9000]    INIT_PG_TABLE ==&gt; [00007f0000 - 00007f9000]
+  #5 [000009d800 - 0000100000]    BIOS reserved ==&gt; [000009d800 - 0000100000]
+  #6 [0000010000 - 0000011000]          PGTABLE ==&gt; [0000010000 - 0000011000]
+  #7 [00007f9000 - 0000a4b264]      NEW RAMDISK ==&gt; [00007f9000 - 0000a4b264]
+  #8 [022b800000 - 0230000000]          KVA RAM
+  #9 [0033000000 - 0037800000]           KVA PG ==&gt; [0033000000 - 0037800000]
+  #10 [0000011000 - 0000018000]          BOOTMAP ==&gt; [0000011000 - 0000018000]
+found SMP MP-table at [c00fd740] 000fd740
+Zone PFN ranges:
+  DMA      0x00000010 -&gt; 0x00001000
+  Normal   0x00001000 -&gt; 0x000379fe
+  HighMem  0x000379fe -&gt; 0x00230000
+Movable zone start PFN for each node
+early_node_map[6] active PFN ranges
+    0: 0x00000010 -&gt; 0x0000009d
+    0: 0x00000100 -&gt; 0x000beff3
+    0: 0x000bf036 -&gt; 0x000ce4ae
+    0: 0x000ce551 -&gt; 0x000ce5dc
+    0: 0x000cf7ff -&gt; 0x000cf800
+    0: 0x00100000 -&gt; 0x0022b800
+On node 0 totalpages: 2071684
+free_area_init_node: node 0, pgdat f3000000, node_mem_map f3002200
+  DMA zone: 32 pages used for memmap
+  DMA zone: 0 pages reserved
+  DMA zone: 3949 pages, LIFO batch:0
+  Normal zone: 1748 pages used for memmap
+  Normal zone: 221994 pages, LIFO batch:31
+  HighMem zone: 15997 pages used for memmap
+  HighMem zone: 1827964 pages, LIFO batch:31
+Using APIC driver default
+ACPI: PM-Timer IO Port: 0x408
+ACPI: Local APIC address 0xfee00000
+ACPI: LAPIC (acpi_id[0x01] lapic_id[0x00] enabled)
+ACPI: LAPIC (acpi_id[0x02] lapic_id[0x02] enabled)
+ACPI: LAPIC (acpi_id[0x03] lapic_id[0x04] enabled)
+ACPI: LAPIC (acpi_id[0x04] lapic_id[0x06] enabled)
+ACPI: LAPIC_NMI (acpi_id[0xff] high edge lint[0x1])
+ACPI: IOAPIC (id[0x02] address[0xfec00000] gsi_base[0])
+IOAPIC[0]: apic_id 2, version 32, address 0xfec00000, GSI 0-23
+ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+ACPI: IRQ0 used by override.
+ACPI: IRQ2 used by override.
+ACPI: IRQ9 used by override.
+Enabling APIC mode:  Flat.  Using 1 I/O APICs
+Using ACPI (MADT) for SMP configuration information
+ACPI: HPET id: 0x8086a701 base: 0xfed00000
+SMP: Allowing 4 CPUs, 0 hotplug CPUs
+nr_irqs_gsi: 24
+Allocating PCI resources starting at d0000000 (gap: cf800000:10800000)
+NR_CPUS:32 nr_cpumask_bits:32 nr_cpu_ids:4 nr_node_ids:8
+PERCPU: Allocating 40960 bytes of per cpu data
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 2053907
+Policy zone: HighMem
+Kernel command line: ro root=LABEL=/ rhgb quiet
+Enabling fast FPU save and restore... done.
+Enabling unmasked SIMD FPU exception support... done.
+Initializing CPU#0
+xsave/xrstor: enabled xstate_bv 0x3, cntxt size 0x240
+Preemptible RCU implementation.
+CPU 0 irqstacks, hard=c075a000 soft=c073a000
+PID hash table entries: 4096 (order: 12, 16384 bytes)
+Extended CMOS year: 2000
+Fast TSC calibration using PIT
+Detected 3300.447 MHz processor.
+Console: colour VGA+ 80x25
+console [tty0] enabled
+Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
+Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)
+Initializing HighMem for node 0 (000379fe:0022b800)
+Memory: 8202396k/9175040k available (3579k kernel code, 84340k reserved, 2412k data, 348k init, 7375844k highmem)
+virtual kernel memory layout:
+    fixmap  : 0xffe18000 - 0xfffff000   (1948 kB)
+    pkmap   : 0xffa00000 - 0xffc00000   (2048 kB)
+    vmalloc : 0xf81fe000 - 0xff9fe000   ( 120 MB)
+    lowmem  : 0xc0000000 - 0xf79fe000   ( 889 MB)
+      .init : 0xc06e0000 - 0xc0737000   ( 348 kB)
+      .data : 0xc047ed52 - 0xc06d9d74   (2412 kB)
+      .text : 0xc0100000 - 0xc047ed52   (3579 kB)
+Checking if this processor honours the WP bit even in supervisor mode...Ok.
+SLUB: Genslabs=13, HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=8
+hpet clockevent registered
+HPET: 8 timers in total, 4 timers will be used for per-cpu timer
+Calibrating delay loop (skipped), value calculated using timer frequency.. 6600.89 BogoMIPS (lpj=13201788)
+Security Framework initialized
+SELinux:  Initializing.
+SELinux:  Starting in permissive mode
+Mount-cache hash table entries: 512
+CPU: Physical Processor ID: 0
+CPU: Processor Core ID: 0
+CPU: L1 I cache: 32K, L1 D cache: 32K
+CPU: L2 cache: 256K
+CPU: L3 cache: 8192K
+Intel machine check architecture supported.
+Intel machine check reporting enabled on CPU#0.
+using mwait in idle threads.
+Checking 'hlt' instruction... OK.
+ACPI: Core revision 20081204
+Mapping cpu 0 to node 0
+..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+CPU0: Intel(R) Xeon(R) CPU E3-1230 V2 @ 3.30GHz stepping 09
+CPU 1 irqstacks, hard=c075b000 soft=c073b000
+Booting processor 1 APIC 0x2 ip 0x6000
+Initializing CPU#1
+Mapping cpu 1 to node 0
+Calibrating delay using timer specific routine.. 6599.77 BogoMIPS (lpj=13199558)
+CPU: Physical Processor ID: 0
+CPU: Processor Core ID: 1
+CPU: L1 I cache: 32K, L1 D cache: 32K
+CPU: L2 cache: 256K
+CPU: L3 cache: 8192K
+Intel machine check architecture supported.
+Intel machine check reporting enabled on CPU#1.
+x86 PAT enabled: cpu 1, old 0x7040600070406, new 0x7010600070106
+CPU1: Intel(R) Xeon(R) CPU E3-1230 V2 @ 3.30GHz stepping 09
+checking TSC synchronization [CPU#0 -&gt; CPU#1]: passed.
+CPU 2 irqstacks, hard=c075c000 soft=c073c000
+Booting processor 2 APIC 0x4 ip 0x6000
+Initializing CPU#2
+Mapping cpu 2 to node 0
+Calibrating delay using timer specific routine.. 6599.77 BogoMIPS (lpj=13199547)
+CPU: Physical Processor ID: 0
+CPU: Processor Core ID: 2
+CPU: L1 I cache: 32K, L1 D cache: 32K
+CPU: L2 cache: 256K
+CPU: L3 cache: 8192K
+Intel machine check architecture supported.
+Intel machine check reporting enabled on CPU#2.
+x86 PAT enabled: cpu 2, old 0x7040600070406, new 0x7010600070106
+CPU2: Intel(R) Xeon(R) CPU E3-1230 V2 @ 3.30GHz stepping 09
+checking TSC synchronization [CPU#0 -&gt; CPU#2]: passed.
+CPU 3 irqstacks, hard=c075d000 soft=c073d000
+Booting processor 3 APIC 0x6 ip 0x6000
+Initializing CPU#3
+Mapping cpu 3 to node 0
+Calibrating delay using timer specific routine.. 6599.77 BogoMIPS (lpj=13199543)
+CPU: Physical Processor ID: 0
+CPU: Processor Core ID: 3
+CPU: L1 I cache: 32K, L1 D cache: 32K
+CPU: L2 cache: 256K
+CPU: L3 cache: 8192K
+Intel machine check architecture supported.
+Intel machine check reporting enabled on CPU#3.
+x86 PAT enabled: cpu 3, old 0x7040600070406, new 0x7010600070106
+CPU3: Intel(R) Xeon(R) CPU E3-1230 V2 @ 3.30GHz stepping 09
+checking TSC synchronization [CPU#0 -&gt; CPU#3]: passed.
+Brought up 4 CPUs
+Total of 4 processors activated (26400.21 BogoMIPS).
+net_namespace: 920 bytes
+NET: Registered protocol family 16
+ACPI FADT declares the system doesn't support PCIe ASPM, so disable it
+ACPI: bus type pci registered
+PCI: MCFG configuration 0: base e0000000 segment 0 buses 0 - 255
+PCI: MCFG area at e0000000 reserved in E820
+PCI: Using MMCONFIG for extended config space
+PCI: Using configuration type 1 for base access
+bio: create slab &lt;bio-0&gt; at 0
+ACPI: EC: Look up EC in DSDT
+ACPI: Interpreter enabled
+ACPI: (supports S0 S5)
+ACPI: Using IOAPIC for interrupt routing
+ACPI: No dock devices found.
+ACPI: PCI Root Bridge [PCI0] (0000:00)
+pci 0000:00:19.0: reg 10 32bit mmio: [0xdfb00000-0xdfb1ffff]
+pci 0000:00:19.0: reg 14 32bit mmio: [0xdfb25000-0xdfb25fff]
+pci 0000:00:19.0: reg 18 io port: [0xf020-0xf03f]
+pci 0000:00:19.0: PME# supported from D0 D3hot D3cold
+pci 0000:00:19.0: PME# disabled
+pci 0000:00:1a.0: reg 10 32bit mmio: [0xdfb24000-0xdfb243ff]
+pci 0000:00:1a.0: PME# supported from D0 D3hot D3cold
+pci 0000:00:1a.0: PME# disabled
+pci 0000:00:1c.0: PME# supported from D0 D3hot D3cold
+pci 0000:00:1c.0: PME# disabled
+pci 0000:00:1c.4: PME# supported from D0 D3hot D3cold
+pci 0000:00:1c.4: PME# disabled
+pci 0000:00:1d.0: reg 10 32bit mmio: [0xdfb23000-0xdfb233ff]
+pci 0000:00:1d.0: PME# supported from D0 D3hot D3cold
+pci 0000:00:1d.0: PME# disabled
+pci 0000:00:1f.2: reg 10 io port: [0xf070-0xf077]
+pci 0000:00:1f.2: reg 14 io port: [0xf060-0xf063]
+pci 0000:00:1f.2: reg 18 io port: [0xf050-0xf057]
+pci 0000:00:1f.2: reg 1c io port: [0xf040-0xf043]
+pci 0000:00:1f.2: reg 20 io port: [0xf000-0xf01f]
+pci 0000:00:1f.2: reg 24 32bit mmio: [0xdfb22000-0xdfb227ff]
+pci 0000:00:1f.2: PME# supported from D3hot
+pci 0000:00:1f.2: PME# disabled
+pci 0000:00:1f.3: reg 10 64bit mmio: [0xdfb21000-0xdfb210ff]
+pci 0000:00:1f.3: reg 20 io port: [0x580-0x59f]
+pci 0000:01:00.0: reg 10 32bit mmio: [0xdfa00000-0xdfafffff]
+pci 0000:01:00.0: PME# supported from D0 D1 D2 D3hot
+pci 0000:01:00.0: PME# disabled
+pci 0000:00:1c.0: bridge 32bit mmio: [0xdfa00000-0xdfafffff]
+pci 0000:02:00.0: reg 10 32bit mmio: [0xdf900000-0xdf91ffff]
+pci 0000:02:00.0: reg 18 io port: [0xe000-0xe01f]
+pci 0000:02:00.0: reg 1c 32bit mmio: [0xdf920000-0xdf923fff]
+pci 0000:02:00.0: PME# supported from D0 D3hot D3cold
+pci 0000:02:00.0: PME# disabled
+pci 0000:00:1c.4: bridge io port: [0xe000-0xefff]
+pci 0000:00:1c.4: bridge 32bit mmio: [0xdf900000-0xdf9fffff]
+pci 0000:03:03.0: reg 10 32bit mmio: [0xde000000-0xdeffffff]
+pci 0000:03:03.0: reg 14 32bit mmio: [0xdf800000-0xdf803fff]
+pci 0000:03:03.0: reg 18 32bit mmio: [0xdf000000-0xdf7fffff]
+pci 0000:00:1e.0: transparent bridge
+pci 0000:00:1e.0: bridge 32bit mmio: [0xdf000000-0xdf8fffff]
+pci 0000:00:1e.0: bridge 64bit mmio pref: [0xde000000-0xdeffffff]
+pci_bus 0000:00: on NUMA node 0
+ACPI: PCI Interrupt Routing Table [\_SB_.PCI0._PRT]
+ACPI: PCI Interrupt Routing Table [\_SB_.PCI0.P0P1._PRT]
+ACPI: PCI Interrupt Routing Table [\_SB_.PCI0.RP01._PRT]
+ACPI: PCI Interrupt Routing Table [\_SB_.PCI0.RP05._PRT]
+ACPI: PCI Interrupt Link [LNKA] (IRQs 3 4 5 6 10 *11 12 14 15)
+ACPI: PCI Interrupt Link [LNKB] (IRQs 3 4 5 6 10 11 12 14 15) *0, disabled.
+ACPI: PCI Interrupt Link [LNKC] (IRQs 3 4 5 6 10 *11 12 14 15)
+ACPI: PCI Interrupt Link [LNKD] (IRQs 3 4 *5 6 10 11 12 14 15)
+ACPI: PCI Interrupt Link [LNKE] (IRQs 3 4 5 6 10 *11 12 14 15)
+ACPI: PCI Interrupt Link [LNKF] (IRQs 3 4 5 6 10 11 12 14 15) *0, disabled.
+ACPI: PCI Interrupt Link [LNKG] (IRQs 3 4 5 6 10 11 12 14 15) *0, disabled.
+ACPI: PCI Interrupt Link [LNKH] (IRQs 3 4 *5 6 10 11 12 14 15)
+ACPI: Power Resource [FN00] (off)
+ACPI: Power Resource [FN01] (off)
+ACPI: Power Resource [FN02] (off)
+ACPI: Power Resource [FN03] (off)
+ACPI: Power Resource [FN04] (off)
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+PCI: Using ACPI for IRQ routing
+NetLabel: Initializing
+NetLabel:  domain hash size = 128
+NetLabel:  protocols = UNLABELED CIPSOv4
+NetLabel:  unlabeled traffic allowed by default
+hpet0: at MMIO 0xfed00000, IRQs 2, 8, 24, 25, 26, 27, 0, 0
+hpet0: 8 comparators, 64-bit 14.318180 MHz counter
+hpet: hpet2 irq 24 for MSI
+hpet: hpet3 irq 25 for MSI
+hpet: hpet4 irq 26 for MSI
+hpet: hpet5 irq 27 for MSI
+pnp: PnP ACPI init
+ACPI: bus type pnp registered
+pnp: PnP ACPI: found 15 devices
+ACPI: ACPI bus type pnp unregistered
+system 00:01: iomem range 0xfed40000-0xfed44fff has been reserved
+system 00:05: ioport range 0x680-0x69f has been reserved
+system 00:05: ioport range 0x1000-0x100f has been reserved
+system 00:05: ioport range 0xffff-0xffff has been reserved
+system 00:05: ioport range 0xffff-0xffff has been reserved
+system 00:05: ioport range 0x400-0x453 has been reserved
+system 00:05: ioport range 0x458-0x47f has been reserved
+system 00:05: ioport range 0x500-0x57f has been reserved
+system 00:05: ioport range 0x164e-0x164f has been reserved
+system 00:07: ioport range 0x454-0x457 has been reserved
+system 00:08: ioport range 0x4d0-0x4d1 has been reserved
+system 00:0a: ioport range 0xa00-0xa1f has been reserved
+system 00:0a: ioport range 0xa30-0xa3f has been reserved
+system 00:0d: ioport range 0xb00-0xb7f has been reserved
+system 00:0e: iomem range 0xfed1c000-0xfed1ffff has been reserved
+system 00:0e: iomem range 0xfed10000-0xfed17fff has been reserved
+system 00:0e: iomem range 0xfed18000-0xfed18fff has been reserved
+system 00:0e: iomem range 0xfed19000-0xfed19fff has been reserved
+system 00:0e: iomem range 0xe0000000-0xefffffff has been reserved
+system 00:0e: iomem range 0xfed20000-0xfed3ffff has been reserved
+system 00:0e: iomem range 0xfed90000-0xfed93fff has been reserved
+system 00:0e: iomem range 0xfed45000-0xfed8ffff has been reserved
+system 00:0e: iomem range 0xff000000-0xffffffff has been reserved
+system 00:0e: iomem range 0xfee00000-0xfeefffff could not be reserved
+system 00:0e: iomem range 0xd0000000-0xd0000fff has been reserved
+pci 0000:00:1c.0: PCI bridge, secondary bus 0000:01
+pci 0000:00:1c.0:   IO window: disabled
+pci 0000:00:1c.0:   MEM window: 0xdfa00000-0xdfafffff
+pci 0000:00:1c.0:   PREFETCH window: disabled
+pci 0000:00:1c.4: PCI bridge, secondary bus 0000:02
+pci 0000:00:1c.4:   IO window: 0xe000-0xefff
+pci 0000:00:1c.4:   MEM window: 0xdf900000-0xdf9fffff
+pci 0000:00:1c.4:   PREFETCH window: disabled
+pci 0000:00:1e.0: PCI bridge, secondary bus 0000:03
+pci 0000:00:1e.0:   IO window: disabled
+pci 0000:00:1e.0:   MEM window: 0xdf000000-0xdf8fffff
+pci 0000:00:1e.0:   PREFETCH window: 0x000000de000000-0x000000deffffff
+pci 0000:00:1c.0: PCI INT A -&gt; GSI 16 (level, low) -&gt; IRQ 16
+pci 0000:00:1c.0: setting latency timer to 64
+pci 0000:00:1c.4: PCI INT A -&gt; GSI 16 (level, low) -&gt; IRQ 16
+pci 0000:00:1c.4: setting latency timer to 64
+pci 0000:00:1e.0: setting latency timer to 64
+pci_bus 0000:00: resource 0 io:  [0x00-0xffff]
+pci_bus 0000:00: resource 1 mem: [0x000000-0xffffffffffffffff]
+pci_bus 0000:01: resource 0 mem: [0x0-0x0]
+pci_bus 0000:01: resource 1 mem: [0xdfa00000-0xdfafffff]
+pci_bus 0000:01: resource 2 mem: [0x0-0x0]
+pci_bus 0000:01: resource 3 mem: [0x0-0x0]
+pci_bus 0000:02: resource 0 io:  [0xe000-0xefff]
+pci_bus 0000:02: resource 1 mem: [0xdf900000-0xdf9fffff]
+pci_bus 0000:02: resource 2 mem: [0x0-0x0]
+pci_bus 0000:02: resource 3 mem: [0x0-0x0]
+pci_bus 0000:03: resource 0 mem: [0x0-0x0]
+pci_bus 0000:03: resource 1 mem: [0xdf000000-0xdf8fffff]
+pci_bus 0000:03: resource 2 mem: [0xde000000-0xdeffffff]
+pci_bus 0000:03: resource 3 io:  [0x00-0xffff]
+pci_bus 0000:03: resource 4 mem: [0x000000-0xffffffffffffffff]
+NET: Registered protocol family 2
+Switched to high resolution mode on CPU 3
+Switched to high resolution mode on CPU 1
+Switched to high resolution mode on CPU 2
+Switched to high resolution mode on CPU 0
+IP route cache hash table entries: 32768 (order: 5, 131072 bytes)
+TCP established hash table entries: 131072 (order: 8, 1048576 bytes)
+TCP bind hash table entries: 65536 (order: 7, 524288 bytes)
+TCP: Hash tables configured (established 131072 bind 65536)
+TCP reno registered
+NET: Registered protocol family 1
+checking if image is initramfs... it is
+Freeing initrd memory: 2376k freed
+Microcode Update Driver: v2.00 &lt;tigran@aivazian.fsnet.co.uk&gt;, Peter Oruba
+audit: initializing netlink socket (disabled)
+type=2000 audit(1495847188.756:1): initialized
+highmem bounce pool size: 64 pages
+VFS: Disk quotas dquot_6.5.2
+Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+msgmni has been set to 1619
+SELinux:  Registering netfilter hooks
+alg: No test for stdrng (krng)
+io scheduler noop registered
+io scheduler anticipatory registered (default)
+io scheduler deadline registered
+io scheduler cfq registered
+pci 0000:03:03.0: Boot video device
+pcieport-driver 0000:00:1c.0: setting latency timer to 64
+pcieport-driver 0000:00:1c.0: irq 28 for MSI/MSI-X
+pcieport-driver 0000:00:1c.4: setting latency timer to 64
+pcieport-driver 0000:00:1c.4: irq 29 for MSI/MSI-X
+pci_hotplug: PCI Hot Plug PCI Core version: 0.5
+fan PNP0C0B:00: registered as cooling_device0
+ACPI: Fan [FAN0] (off)
+fan PNP0C0B:01: registered as cooling_device1
+ACPI: Fan [FAN1] (off)
+fan PNP0C0B:02: registered as cooling_device2
+ACPI: Fan [FAN2] (off)
+fan PNP0C0B:03: registered as cooling_device3
+ACPI: Fan [FAN3] (off)
+fan PNP0C0B:04: registered as cooling_device4
+ACPI: Fan [FAN4] (off)
+ACPI: SSDT CE4E0018, 083B (r1  PmRef  Cpu0Cst     3001 INTL 20051117)
+Monitor-Mwait will be used to enter C-1 state
+processor ACPI_CPU:00: registered as cooling_device5
+ACPI: SSDT CE4FFC18, 0119 (r1  PmRef    ApCst     3000 INTL 20051117)
+processor ACPI_CPU:01: registered as cooling_device6
+processor ACPI_CPU:02: registered as cooling_device7
+processor ACPI_CPU:03: registered as cooling_device8
+thermal LNXTHERM:01: registered as thermal_zone0
+ACPI: Thermal Zone [TZ00] (28 C)
+thermal LNXTHERM:02: registered as thermal_zone1
+ACPI: Thermal Zone [TZ01] (30 C)
+Non-volatile memory driver v1.3
+Linux agpgart interface v0.103
+Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+serial8250: ttyS0 at I/O 0x3f8 (irq = 4) is a 16550A
+serial8250: ttyS1 at I/O 0x2f8 (irq = 3) is a 16550A
+00:0b: ttyS0 at I/O 0x3f8 (irq = 4) is a 16550A
+00:0c: ttyS1 at I/O 0x2f8 (irq = 3) is a 16550A
+brd: module loaded
+ixgbe: Intel(R) 10 Gigabit PCI Express Network Driver - version 1.3.30-k2
+ixgbe: Copyright (c) 1999-2007 Intel Corporation.
+Intel(R) PRO/10GbE Network Driver - version 1.0.135-k2-NAPI
+Copyright (c) 1999-2008 Intel Corporation.
+Atheros(R) L2 Ethernet Driver - version 2.2.3
+Copyright (c) 2007 Atheros Corporation.
+tehuti: Tehuti Networks(R) Network Driver, 7.29.3
+tehuti: Options: hw_csum 
+enic: Cisco 10G Ethernet Driver, ver 1.0.0.648
+jme: JMicron JMC250 gigabit ethernet driver version 1.0.3
+pcnet32.c:v1.35 21.Apr.2008 tsbogend@alpha.franken.de
+e100: Intel(R) PRO/100 Network Driver, 3.5.23-k6-NAPI
+e100: Copyright(c) 1999-2006 Intel Corporation
+ThunderLAN driver v1.15a
+TLAN: 0 devices installed, PCI: 0  EISA: 0
+ns83820.c: National Semiconductor DP83820 10/100/1000 driver.
+sky2 driver version 1.22
+Fixed MDIO Bus: probed
+cs89x0:cs89x0_probe(0x0)
+PP_addr at 300[a]: 0xffff
+eth0: incorrect signature at 300[c]: 0xffff!=0x630E
+PP_addr at 320[a]: 0xffff
+eth0: incorrect signature at 320[c]: 0xffff!=0x630E
+PP_addr at 340[a]: 0xffff
+eth0: incorrect signature at 340[c]: 0xffff!=0x630E
+PP_addr at 360[a]: 0xffff
+eth0: incorrect signature at 360[c]: 0xffff!=0x630E
+PP_addr at 200[a]: 0xffff
+eth0: incorrect signature at 200[c]: 0xffff!=0x630E
+PP_addr at 220[a]: 0xffff
+eth0: incorrect signature at 220[c]: 0xffff!=0x630E
+PP_addr at 240[a]: 0xffff
+eth0: incorrect signature at 240[c]: 0xffff!=0x630E
+PP_addr at 260[a]: 0xffff
+eth0: incorrect signature at 260[c]: 0xffff!=0x630E
+PP_addr at 280[a]: 0xffff
+eth0: incorrect signature at 280[c]: 0xffff!=0x630E
+PP_addr at 2a0[a]: 0xffff
+eth0: incorrect signature at 2a0[c]: 0xffff!=0x630E
+PP_addr at 2c0[a]: 0xffff
+eth0: incorrect signature at 2c0[c]: 0xffff!=0x630E
+PP_addr at 2e0[a]: 0xffff
+eth0: incorrect signature at 2e0[c]: 0xffff!=0x630E
+cs89x0: no cs8900 or cs8920 detected.  Be sure to disable PnP with SETUP
+Silan SC92031 PCI Fast Ethernet Adapter driver 2.0c
+myri10ge: Version 1.4.4-1.401
+Solarflare NET driver v2.3
+Uniform Multi-Platform E-IDE driver
+ide_generic: please use &quot;probe_mask=0x3f&quot; module parameter for probing all legacy ISA IDE ports
+Probing IDE interface ide0...
+ide0 at 0x1f0-0x1f7,0x3f6 on irq 14
+Probing IDE interface ide1...
+ide1 at 0x170-0x177,0x376 on irq 15
+ide-gd driver 1.18
+PNP: No PS/2 controller found. Probing ports directly.
+serio: i8042 KBD port at 0x60,0x64 irq 1
+serio: i8042 AUX port at 0x60,0x64 irq 12
+mice: PS/2 mouse device common for all mice
+cpuidle: using governor ladder
+cpuidle: using governor menu
+usbcore: registered new interface driver hiddev
+usbcore: registered new interface driver usbhid
+usbhid: v2.6:USB HID core driver
+TCP bic registered
+Initializing XFRM netlink socket
+NET: Registered protocol family 17
+Using IPI No-Shortcut mode
+registered taskstats version 1
+Freeing unused kernel memory: 348k freed
+ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+ehci_hcd 0000:00:1a.0: PCI INT A -&gt; GSI 16 (level, low) -&gt; IRQ 16
+ehci_hcd 0000:00:1a.0: setting latency timer to 64
+ehci_hcd 0000:00:1a.0: EHCI Host Controller
+ehci_hcd 0000:00:1a.0: new USB bus registered, assigned bus number 1
+ehci_hcd 0000:00:1a.0: debug port 2
+ehci_hcd 0000:00:1a.0: cache line size of 32 is not supported
+ehci_hcd 0000:00:1a.0: irq 16, io mem 0xdfb24000
+ehci_hcd 0000:00:1a.0: USB 2.0 started, EHCI 1.00
+usb usb1: configuration #1 chosen from 1 choice
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 2 ports detected
+ehci_hcd 0000:00:1d.0: PCI INT A -&gt; GSI 23 (level, low) -&gt; IRQ 23
+ehci_hcd 0000:00:1d.0: setting latency timer to 64
+ehci_hcd 0000:00:1d.0: EHCI Host Controller
+ehci_hcd 0000:00:1d.0: new USB bus registered, assigned bus number 2
+ehci_hcd 0000:00:1d.0: debug port 2
+ehci_hcd 0000:00:1d.0: cache line size of 32 is not supported
+ehci_hcd 0000:00:1d.0: irq 23, io mem 0xdfb23000
+ehci_hcd 0000:00:1d.0: USB 2.0 started, EHCI 1.00
+usb usb2: configuration #1 chosen from 1 choice
+hub 2-0:1.0: USB hub found
+hub 2-0:1.0: 2 ports detected
+ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+uhci_hcd: USB Universal Host Controller Interface driver
+SCSI subsystem initialized
+Driver 'sd' needs updating - please use bus_type methods
+libata version 3.00 loaded.
+ahci 0000:00:1f.2: version 3.0
+ahci 0000:00:1f.2: PCI INT B -&gt; GSI 19 (level, low) -&gt; IRQ 19
+ahci 0000:00:1f.2: irq 30 for MSI/MSI-X
+ahci 0000:00:1f.2: AHCI 0001.0300 32 slots 6 ports 6 Gbps 0x3f impl SATA mode
+ahci 0000:00:1f.2: flags: 64bit ncq pm led clo pio slum part ems 
+ahci 0000:00:1f.2: setting latency timer to 64
+scsi0 : ahci
+scsi1 : ahci
+scsi2 : ahci
+scsi3 : ahci
+scsi4 : ahci
+scsi5 : ahci
+ata1: SATA max UDMA/133 abar m2048@0xdfb22000 port 0xdfb22100 irq 30
+ata2: SATA max UDMA/133 abar m2048@0xdfb22000 port 0xdfb22180 irq 30
+ata3: SATA max UDMA/133 abar m2048@0xdfb22000 port 0xdfb22200 irq 30
+ata4: SATA max UDMA/133 abar m2048@0xdfb22000 port 0xdfb22280 irq 30
+ata5: SATA max UDMA/133 abar m2048@0xdfb22000 port 0xdfb22300 irq 30
+ata6: SATA max UDMA/133 abar m2048@0xdfb22000 port 0xdfb22380 irq 30
+usb 1-1: new high speed USB device using ehci_hcd and address 2
+ata1: SATA link up 6.0 Gbps (SStatus 133 SControl 300)
+ata1.00: ACPI cmd ef/10:06:00:00:00:00 succeeded
+ata1.00: ACPI cmd f5/00:00:00:00:00:00 filtered out
+ata1.00: ACPI cmd b1/c1:00:00:00:00:00 filtered out
+ata1.00: ATA-9: Samsung SSD 840 PRO Series, DXM05B0Q, max UDMA/133
+ata1.00: 250069680 sectors, multi 16: LBA48 NCQ (depth 31/32)
+ata1.00: ACPI cmd ef/10:06:00:00:00:00 succeeded
+ata1.00: ACPI cmd f5/00:00:00:00:00:00 filtered out
+ata1.00: ACPI cmd b1/c1:00:00:00:00:00 filtered out
+ata1.00: configured for UDMA/133
+scsi 0:0:0:0: Direct-Access     ATA      Samsung SSD 840  DXM0 PQ: 0 ANSI: 5
+sd 0:0:0:0: [sda] 250069680 512-byte hardware sectors: (128 GB/119 GiB)
+sd 0:0:0:0: [sda] Write Protect is off
+sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
+sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+sd 0:0:0:0: [sda] 250069680 512-byte hardware sectors: (128 GB/119 GiB)
+sd 0:0:0:0: [sda] Write Protect is off
+sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
+sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+ sda: sda1 sda2
+sd 0:0:0:0: [sda] Attached SCSI disk
+usb 1-1: configuration #1 chosen from 1 choice
+hub 1-1:1.0: USB hub found
+hub 1-1:1.0: 6 ports detected
+usb 2-1: new high speed USB device using ehci_hcd and address 2
+usb 2-1: configuration #1 chosen from 1 choice
+hub 2-1:1.0: USB hub found
+hub 2-1:1.0: 6 ports detected
+ata2: SATA link down (SStatus 0 SControl 300)
+ata3: SATA link down (SStatus 0 SControl 300)
+ata4: SATA link down (SStatus 0 SControl 300)
+ata5: SATA link down (SStatus 0 SControl 300)
+ata6: SATA link down (SStatus 0 SControl 300)
+EXT3-fs: INFO: recovery required on readonly filesystem.
+EXT3-fs: write access will be enabled during recovery.
+kjournald starting.  Commit interval 5 seconds
+EXT3-fs: recovery complete.
+EXT3-fs: mounted filesystem with ordered data mode.
+SELinux:  Disabled at runtime.
+SELinux:  Unregistering netfilter hooks
+type=1404 audit(1495847196.109:2): selinux=0 auid=4294967295 ses=4294967295
+input: PC Speaker as /class/input/input0
+rtc_cmos 00:06: RTC can wake from S4
+rtc_cmos 00:06: rtc core: registered rtc_cmos as rtc0
+rtc0: alarms up to one month, y3k, 242 bytes nvram, hpet irqs
+input: Power Button (FF) as /class/input/input1
+ACPI: Power Button (FF) [PWRF]
+input: Power Button (CM) as /class/input/input2
+ACPI: Power Button (CM) [PWRB]
+e1000e: Intel(R) PRO/1000 Network Driver - 0.3.3.3-k6
+e1000e: Copyright (c) 1999-2008 Intel Corporation.
+e1000e 0000:02:00.0: PCI INT A -&gt; GSI 16 (level, low) -&gt; IRQ 16
+e1000e 0000:02:00.0: setting latency timer to 64
+e1000e 0000:02:00.0: irq 31 for MSI/MSI-X
+e1000e 0000:02:00.0: irq 32 for MSI/MSI-X
+e1000e 0000:02:00.0: irq 33 for MSI/MSI-X
+sd 0:0:0:0: Attached scsi generic sg0 type 0
+0000:02:00.0: eth0: (PCI Express:2.5GB/s:Width x1) 0c:c4:7a:0c:1f:5a
+0000:02:00.0: eth0: Intel(R) PRO/1000 Network Connection
+0000:02:00.0: eth0: MAC: 3, PHY: 8, PBA No: ffffff-0ff
+floppy0: no floppy controllers found
+lp: driver loaded but no devices found
+NET: Registered protocol family 10
+lo: Disabled Privacy Extensions
+mtrr: type mismatch for de000000,1000000 old: write-back new: write-combining
+md: Autodetecting RAID arrays.
+md: Scanned 0 and added 0 devices.
+md: autorun ...
+md: ... autorun DONE.
+device-mapper: uevent: version 1.0.3
+device-mapper: ioctl: 4.14.0-ioctl (2008-04-23) initialised: dm-devel@redhat.com
+device-mapper: multipath: version 1.0.5 loaded
+EXT3 FS on sda1, internal journal
+Adding 9213268k swap on /dev/sda2.  Priority:-1 extents:1 across:9213268k SS
+ADDRCONF(NETDEV_UP): eth0: link is not ready
+warning: `dbus-daemon' uses 32-bit capabilities (legacy support in use)
+Unmapping cpu 1 from all nodes
+Breaking affinity for irq 25
+CPU 1 is now offline
+Unmapping cpu 2 from all nodes
+Breaking affinity for irq 26
+CPU 2 is now offline
+Unmapping cpu 3 from all nodes
+Breaking affinity for irq 27
+CPU 3 is now offline
+SMP alternatives: switching to UP code
+SMP alternatives: switching to SMP code
+CPU 1 irqstacks, hard=c075b000 soft=c073b000
+Booting processor 1 APIC 0x2 ip 0x6000
+Initializing CPU#1
+Mapping cpu 1 to node 0
+Calibrating delay using timer specific routine.. 6600.99 BogoMIPS (lpj=13201990)
+CPU: Physical Processor ID: 0
+CPU: Processor Core ID: 1
+CPU: L1 I cache: 32K, L1 D cache: 32K
+CPU: L2 cache: 256K
+CPU: L3 cache: 8192K
+Intel machine check architecture supported.
+Intel machine check reporting enabled on CPU#1.
+x86 PAT enabled: cpu 1, old 0x7040600070406, new 0x7010600070106
+CPU1: Intel(R) Xeon(R) CPU E3-1230 V2 @ 3.30GHz stepping 09
+checking TSC synchronization [CPU#0 -&gt; CPU#1]: passed.
+platform microcode: firmware: requesting intel-ucode/06-3a-09
+Switched to high resolution mode on CPU 1
+Warning: Processor Platform Limit event detected, but not handled.
+Consider compiling CPUfreq support into your kernel.
+hpet: hpet3 irq 25 for MSI
+CPU 2 irqstacks, hard=c075c000 soft=c073c000
+Booting processor 2 APIC 0x4 ip 0x6000
+Initializing CPU#2
+Mapping cpu 2 to node 0
+Calibrating delay using timer specific routine.. 6600.85 BogoMIPS (lpj=13201708)
+CPU: Physical Processor ID: 0
+CPU: Processor Core ID: 2
+CPU: L1 I cache: 32K, L1 D cache: 32K
+CPU: L2 cache: 256K
+CPU: L3 cache: 8192K
+Intel machine check architecture supported.
+Intel machine check reporting enabled on CPU#2.
+x86 PAT enabled: cpu 2, old 0x7040600070406, new 0x7010600070106
+CPU2: Intel(R) Xeon(R) CPU E3-1230 V2 @ 3.30GHz stepping 09
+checking TSC synchronization [CPU#1 -&gt; CPU#2]: passed.
+platform microcode: firmware: requesting intel-ucode/06-3a-09
+Switched to high resolution mode on CPU 2
+hpet: hpet4 irq 26 for MSI
+CPU 3 irqstacks, hard=c075d000 soft=c073d000
+Booting processor 3 APIC 0x6 ip 0x6000
+Initializing CPU#3
+Mapping cpu 3 to node 0
+Calibrating delay using timer specific routine.. 6601.05 BogoMIPS (lpj=13202106)
+CPU: Physical Processor ID: 0
+CPU: Processor Core ID: 3
+CPU: L1 I cache: 32K, L1 D cache: 32K
+CPU: L2 cache: 256K
+CPU: L3 cache: 8192K
+Intel machine check architecture supported.
+Intel machine check reporting enabled on CPU#3.
+x86 PAT enabled: cpu 3, old 0x7040600070406, new 0x7010600070106
+CPU3: Intel(R) Xeon(R) CPU E3-1230 V2 @ 3.30GHz stepping 09
+checking TSC synchronization [CPU#2 -&gt; CPU#3]: passed.
+platform microcode: firmware: requesting intel-ucode/06-3a-09
+Switched to high resolution mode on CPU 3
+hpet: hpet5 irq 27 for MSI
+mtrr: type mismatch for de000000,1000000 old: write-back new: write-combining
+e1000e: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX/TX
+ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+eth0: no IPv6 routers present
+opalpci: driver loaded  (major 250)
+pci 0000:01:00.0: PCI INT A -&gt; GSI 16 (level, low) -&gt; IRQ 16
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+pci 0000:01:00.0: setting latency timer to 64
+                    </value>
+                </textlog>
+            </item>
+            <property name="User name">
+                <value>
+                    root
+                </value>
+            </property>
+        </item>
     </item>
     <item name="log">
         <item name="Compilation">
@@ -5333,7 +6973,7 @@ HttpClient::connect 127.0.0.1: Success
                 <value>
                     
 -------------------- Starting compilation --------------------
-Start at : Monday, March 06, 2017, 17:19:02
+Start at : Friday, May 26, 2017, 22:42:46
 
 The current RT-LAB version is:  v11.0.8.13
 The current model is:           C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\my_pv_system\my_pv_system.mdl
@@ -5388,7 +7028,7 @@ Separating RT-LAB subsystem 'SS_controller'.
 WARNING: Saving subsystems with breaklinks option has been disabled. Subsystems real-time behavior may be different.
 WARNING: Saving subsystems with breaklinks option has been disabled. Subsystems real-time behavior may be different.
 A monitoring block (OpMonitor) has been found. The monitoring will be enabled.
-Model preparation and separation duration : 00h:00m:29s
+Model preparation and separation duration : 00h:00m:42s
 -------------------- Completed successfully --------------------
 
 Generating model because C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\my_pv_system\Opcommon\my_pv_system_1_sm_master.mdl has changed.
@@ -5414,8 +7054,44 @@ simulation results may differ]
 GRT/ERT code, Simulink will automatically use fixed buffer of the initial buffer size set by user. Code generation results and
 simulation results may differ] 
 
-### Generated code for 'my_pv_system_1_sm_master' is up to date because no structural, parameter or code replacement library changes were found.
+### Invoking Target Language Compiler on my_pv_system_1_sm_master.rtw
+### Using System Target File: D:\OPAL-RT\RT-LAB\v11.0.8.13\Simulink\rtw\c\common\rtlab_rtmodel.tlc
+### Loading TLC function libraries
+......
+### Initial pass through model to cache user defined code
+.......
+### Caching model source code
+...............................................................................
+.....................................................
+### Writing header file my_pv_system_1_sm_master.h
+### Writing header file my_pv_system_1_sm_master_types.h
 .
+### Writing header file rtwtypes.h
+### Writing header file builtin_typeid_types.h
+.
+### Writing header file multiword_types.h
+### Writing header file rtGetInf.h
+.
+### Writing source file rtGetInf.c
+### Writing source file my_pv_system_1_sm_master.c
+.
+### Writing header file my_pv_system_1_sm_master_private.h
+### Writing header file rtmodel.h
+.
+### Writing source file my_pv_system_1_sm_master_data.c
+### Writing header file rt_nonfinite.h
+.
+### Writing source file rt_nonfinite.c
+### Writing header file rt_defines.h
+### Writing header file rtGetNaN.h
+.
+### Writing source file rtGetNaN.c
+### TLC code generation complete.
+.
+Warning:  Version[0] 8 Version[1] . Version[2] 7
+### Creating model mapping file my_pv_system_1_sm_master.map using map_r2014b.tlc
+...............................................................................
+....
 ### Processing Template Makefile: D:\OPAL-RT\RT-LAB\v11.0.8.13\Simulink\rtw\c\common\rtlab_rtmodel.tmf
 ### Wrapping unrecognized make command (angle brackets added)
 ###    &lt;make&gt;
@@ -5424,7 +7100,7 @@ simulation results may differ]
 ### Successful completion of code generation for model: my_pv_system_1_sm_master
 
 
-my_pv_system_1_sm_master : Generating C code duration : 00h:00m:07s
+my_pv_system_1_sm_master : Generating C code duration : 00h:00m:21s
 
 -------------------- Generating my_pv_system_3_ss_controller C code --------------------
 Calling RTW Make Command make_rtw...
@@ -5447,8 +7123,8 @@ Calling RTW Make Command make_rtw...
 ### Successful completion of code generation for model: my_pv_system_3_ss_controller
 
 
-my_pv_system_3_ss_controller : Generating C code duration : 00h:00m:04s
-Generating C code total duration : 00h:00m:11s
+my_pv_system_3_ss_controller : Generating C code duration : 00h:00m:06s
+Generating C code total duration : 00h:00m:27s
 
 -------------------- Completed successfully --------------------
 
@@ -5462,14 +7138,14 @@ Parameter database creation duration: 00h:00m:00s
 Signal(s) with more than 20 values will be disabled.
 Use SIGNALS_VECTOR_SIZE_LIMIT environment variable to modify this limit.
 
-Signal database creation duration: 00h:00m:00s
+Signal database creation duration: 00h:00m:01s
 -------------------- Signal database created successfully --------------------
 Generating simulation data...
 Data generated in 00h:00m:00s
 
 Closing Matlab... OK.
 Updating dependencies... OK.
-Compiling model because setting 'DevNodeIP' has changed.
+Compiling model because C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\my_pv_system\my_pv_system_SM_master\OpREDHAWKtarget\my_pv_system_1_sm_master_data.c has changed.
 
 -------------------- Validating sources files --------------------------
 
@@ -5547,7 +7223,7 @@ Transferring in ascii: C:\Program Files (x86)\MATLAB\R2014b\toolbox\physmod\powe
 Transferring in binary: D:\OPAL-RT\ARTEMIS\v7.0.5.931\art_r2014b\lib\redhawk\artemis_RT705931r2014br.a (SM_master) ... OK.
 Transferring in binary: D:\OPAL-RT\ARTEMIS\v7.0.5.931\art_r2014b\lib\redhawk\artemis_RT705931r2014br.a (SS_controller) ... OK.
 
-File transfer duration : 00h:00m:10s
+File transfer duration : 00h:00m:08s
 -------------------- Completed successfully --------------------
 
 -------------------- Building the generated C code --------------------
@@ -5607,8 +7283,14 @@ Transferring in binary mode /home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_
 Transferring in ascii mode /home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_workspace/pv_inverter/models/my_pv_system/compilation_target_report.xml ... OK.
 Transferring in binary mode /home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_workspace/pv_inverter/models/my_pv_system/my_pv_system_ss_controller/my_pv_system_3_ss_controller ... OK.
 
-File transfer duration : 00h:00m:02s
+File transfer duration : 00h:00m:03s
 -------------------- Completed successfully --------------------
+
+End at : Friday, May 26, 2017, 22:44:31
+
+Compilation duration : 00h:01m:45s
+
+Updating status for next build...OK
 
                 </value>
             </textlog>
@@ -5663,18 +7345,18 @@ D:\OPAL-RT\ARTEMIS\v7.0.5.931\art_r2014b\lib\redhawk\artemis_RT705931r2014br.a=B
 [ExtraPutFilesComp_3_RT_LAB]
 D:\OPAL-RT\ARTEMIS\v7.0.5.931\art_r2014b\lib\redhawk\artemis_RT705931r2014br.a=Binary|Other
 [General]
-ATT_CHECKSUM1=2526396858
-ATT_CHECKSUM2=731195662
-ATT_CHECKSUM3=2639449348
-ATT_CHECKSUM4=1048842503
+ATT_CHECKSUM1=444990070
+ATT_CHECKSUM2=3820693710
+ATT_CHECKSUM3=1747659222
+ATT_CHECKSUM4=2359726787
 ATT_CREATED_BY=Paul Baracos
 ATT_CREATED_ON=Wed Nov 21 11:28:32 2001
 ATT_ENABLE_PTA=OFF
 ATT_HANDLE_CONSOLE=ON
 ATT_LAST_SAVED_BY=jiang
-ATT_LAST_SAVED_ON=Tue Feb 28 16:43:46 2017
+ATT_LAST_SAVED_ON=Fri May 26 22:41:27 2017
 ATT_REFERENCE_MDL_PATHS=
-ATT_REVISION=1.226
+ATT_REVISION=1.230
 AutoRetrieveFiles=ON
 AutoRetrieveRtlab=ON
 CompilerVersion=AUTOMATIC
@@ -5704,7 +7386,7 @@ SS_controllerTimeStep=0.000049999998737
 SimulationMode=2
 TLC=Automatic
 TMF=Automatic
-TRANSFERFILE_AT_LOAD=ON
+TRANSFERFILE_AT_LOAD=OFF
 TargetCompileCmd=
 TargetPlatform=REDHAWK
 TimeFactor=1.000000000000000
@@ -5728,6 +7410,916 @@ SS_controller_XHP_ENABLE=TRUE
 
                 </value>
             </textlog>
+        </item>
+        <item name="Execution">
+            <item name="SM_master">
+                <textlog name="SM_master">
+                    <value>
+                        
+--------------- Transferring files ... ------------------------------
+
+Transferring in binary: C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\my_pv_system\my_pv_system_SM_master\OpREDHAWKtarget\my_pv_system_1_sm_master (SM_master) ... OK.
+Transferring in binary: C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\my_pv_system\my_pv_system_SM_master\OpREDHAWKtarget\Opal*Creator.data (SM_master) ... OK.
+
+--------------- Done transferring files -----------------------------
+
+
+Executing script /usr/opalrt/v11.0.8.13/common/python/rtlab/global/target_preload.py ... done
+Executing script /usr/opalrt/v11.0.8.13/common/python/rtlab/global/target_subsys_preload.py ... done
+[      0.001 ]           Begin to register on OpalRoot
+[      0.002 ]           Registered on OpalRoot
+[      0.003 ]           Loading services from &quot;/usr/opalrt/v11.0.8.13/common/bin/Services&quot;
+[      0.014 ]             Plugin &quot;Web&quot;: services informations retrieved
+[      0.026 ]             Plugin &quot;DVP&quot;: services informations retrieved
+[      0.038 ]             Plugin &quot;RFM&quot;: services informations retrieved
+[      0.051 ]             Plugin &quot;sFlashUpdate&quot;: services informations retrieved
+[      0.064 ]             Plugin &quot;DataAcquisition&quot;: services informations retrieved
+[      0.077 ]             Plugin &quot;SimulationSetup&quot;: services informations retrieved
+[      0.105 ]             Plugin &quot;HEI&quot;: services informations retrieved
+[      0.116 ]             Plugin &quot;MODBUS&quot;: services informations retrieved
+[      0.128 ]             Plugin &quot;DriverIdentification&quot;: services informations retrieved
+[      0.150 ]             Plugin &quot;IRTS&quot;: services informations retrieved
+[      0.160 ]             Plugin &quot;WatchDogClient&quot;: services informations retrieved
+[      0.170 ]             Plugin &quot;Pickering-41-752&quot;: services informations retrieved
+[      0.182 ]             Plugin &quot;IEC104&quot;: services informations retrieved
+[      0.195 ]             Plugin &quot;Parameters&quot;: services informations retrieved
+[      0.205 ]             Plugin &quot;LogRT&quot;: services informations retrieved
+[      0.219 ]             Plugin &quot;ARINC&quot;: services informations retrieved
+[      0.229 ]             Plugin &quot;WatchDogServer&quot;: services informations retrieved
+[      0.239 ]             Plugin &quot;Dummy&quot;: services informations retrieved
+[      0.240 ]           Service DataAcquisition/DataAcquisition found
+[      0.240 ]           WatchDogServer service - server socket created, available on address: 192.168.5.113:46304
+[      0.240 ]           Root initialized: 192.168.5.113:25256/resources/root
+[      0.240 ]           Initialization done
+[      0.320 ]           OpalRtMain.c        : Calculated cpu speed = 3300 MHz
+[      0.320 ]           OpalRtMain.c        : Model 'my_pv_system_1_sm_master' compiled in RELEASE mode.
+[      0.320 ]           OpalRtMain.c        : 4 CPUs active on this Computer
+[      0.320 ]           OpalRtMain.c        : libOpalR2014B.a : v11.0.8.13 (build = undefined)
+[      0.361 ]           OpalRtMain.c        : 
+[      0.361 ]           OpalRtMain.c        : ------- License info dump START -------
+[      0.361 ]           OpalRtMain.c        : ##For support, do not hesitate to contact OPAL-RT Technologies through 
+[      0.361 ]           OpalRtMain.c        : ##our web site support section : http://opal-rt.com/support/support-request
+[      0.361 ]           OpalRtMain.c        : ##Company Name: University New South Wales
+[      0.361 ]           OpalRtMain.c        : ##Name: Georgios Konstantinou 
+[      0.361 ]           OpalRtMain.c        : ##Email: g.konstantinou@unsw.edu.au
+[      0.361 ]           OpalRtMain.c        : ##Country: Australia
+[      0.361 ]           OpalRtMain.c        : ##Serial Number: PF914-241
+[      0.361 ]           OpalRtMain.c        : ##Target Number: PF914-241S08
+[      0.361 ]           OpalRtMain.c        : ##Created by: CG
+[      0.361 ]           OpalRtMain.c        : ##RT3: 288002
+[      0.361 ]           OpalRtMain.c        : EXPIRATION=INFINITE
+[      0.361 ]           OpalRtMain.c        : END_OF_SUPPORT=27/12/2018
+[      0.361 ]           OpalRtMain.c        : TARGET_NUMBER=PF914-241-S08
+[      0.361 ]           OpalRtMain.c        : LICENSE_NUMBER=201600453
+[      0.361 ]           OpalRtMain.c        : RTLAB_NRT.value=true
+[      0.361 ]           OpalRtMain.c        : RTLAB_NRT.version=11.0
+[      0.361 ]           OpalRtMain.c        : RTLAB_NRT.description=Allows to execute a model in non real-time mode
+[      0.361 ]           OpalRtMain.c        : RTLAB_RT.value=true
+[      0.361 ]           OpalRtMain.c        : RTLAB_RT.version=11.0
+[      0.361 ]           OpalRtMain.c        : RTLAB_RT.description=Allows to execute a model in real-time mode with RT-LAB.
+[      0.361 ]           OpalRtMain.c        : RTLAB_NUM_CORES.value=2
+[      0.361 ]           OpalRtMain.c        : RTLAB_NUM_CORES.version=11.0
+[      0.361 ]           OpalRtMain.c        : RTLAB_NUM_CORES.description=Number of activated core to execute a model in real-time.
+[      0.361 ]           OpalRtMain.c        : RTLAB_XHP.value=true
+[      0.361 ]           OpalRtMain.c        : RTLAB_XHP.version=11.0
+[      0.361 ]           OpalRtMain.c        : RTLAB_XHP.description=Enables the XHP mode within RT-LAB.
+[      0.361 ]           OpalRtMain.c        : ARTEMIS_RTE.value=true
+[      0.361 ]           OpalRtMain.c        : ARTEMIS_RTE.version=7.0
+[      0.361 ]           OpalRtMain.c        : ARTEMIS_RTE.description=Enables ARTEMIS blockset.
+[      0.361 ]           OpalRtMain.c        : ARTEMIS_SSN.value=true
+[      0.362 ]           OpalRtMain.c        : ARTEMIS_SSN.version=7.0
+[      0.362 ]           OpalRtMain.c        : ARTEMIS_SSN.description=Enables ARTEMIS blockset with SSN option.
+[      0.362 ]           OpalRtMain.c        : RTE_RT.value=true
+[      0.362 ]           OpalRtMain.c        : RTE_RT.version=4.0
+[      0.362 ]           OpalRtMain.c        : RTE_RT.description=Allows to execute models in real-time within RT-EVENTS.
+[      0.362 ]           OpalRtMain.c        : ARTEMIS_NUM_CORES.value=2
+[      0.362 ]           OpalRtMain.c        : ARTEMIS_NUM_CORES.version=7.0
+[      0.362 ]           OpalRtMain.c        : ARTEMIS_NUM_CORES.description=Number of activated core to execute a model in real-time with ARTEMiS library.
+[      0.362 ]           OpalRtMain.c        : RTE_DRIVE_NUM_CORES.value=2
+[      0.362 ]           OpalRtMain.c        : RTE_DRIVE_NUM_CORES.version=4.0
+[      0.362 ]           OpalRtMain.c        : RTE_DRIVE_NUM_CORES.description=Number of activated core to execute a model in real-time with RT-EVENTS library.
+[      0.362 ]           OpalRtMain.c        : RTE_NUM_CORES.value=2
+[      0.362 ]           OpalRtMain.c        : RTE_NUM_CORES.version=4.0
+[      0.362 ]           OpalRtMain.c        : RTE_NUM_CORES.description=Number of activated core to execute a model in real-time with RT-EVENTS library.
+[      0.362 ]           OpalRtMain.c        : SCOPEVIEW.value=true
+[      0.362 ]           OpalRtMain.c        : SCOPEVIEW.version=11.0
+[      0.362 ]           OpalRtMain.c        : SCOPEVIEW.description=Enables the ScopeView module for data analysis and chart reporting.
+[      0.362 ]           OpalRtMain.c        : ARTEMIS_RT.value=true
+[      0.362 ]           OpalRtMain.c        : ARTEMIS_RT.version=7.0
+[      0.362 ]           OpalRtMain.c        : ARTEMIS_RT.description=Allows to execute models in real-time with ARTEMIS library. 
+[      0.362 ]           OpalRtMain.c        : ARTEMIS_MMC.value=true
+[      0.362 ]           OpalRtMain.c        : ARTEMIS_MMC.version=7.0
+[      0.362 ]           OpalRtMain.c        : ARTEMIS_MMC.description=Enables  MMC block within ARTEMiS library.
+[      0.362 ]           OpalRtMain.c        : ARTEMIS_MMC_CONTROLLER.value=true
+[      0.362 ]           OpalRtMain.c        : ARTEMIS_MMC_CONTROLLER.version=7.0
+[      0.362 ]           OpalRtMain.c        : ARTEMIS_MMC_CONTROLLER.description=Enables  MMC controller block within ARTEMiS library.
+[      0.362 ]           OpalRtMain.c        : PHASOR_RT.value=true
+[      0.362 ]           OpalRtMain.c        : PHASOR_RT.version=11.0
+[      0.362 ]           OpalRtMain.c        : PHASOR_RT.description=Enables ePHASORsim real-time
+[      0.362 ]           OpalRtMain.c        : PHASOR_NRT.value=true
+[      0.362 ]           OpalRtMain.c        : PHASOR_NRT.version=11.0
+[      0.362 ]           OpalRtMain.c        : PHASOR_NRT.description=Enables ePHASORsim offline
+[      0.362 ]           OpalRtMain.c        : RTLAB_C37_118_SLAVE.value=true
+[      0.362 ]           OpalRtMain.c        : RTLAB_C37_118_SLAVE.version=11.0
+[      0.362 ]           OpalRtMain.c        : RTLAB_C37_118_SLAVE.description=Enables slave Synchrophasor Protocol C37.118.
+[      0.362 ]           OpalRtMain.c        : RTLAB_DNP3_SLAVE.value=true
+[      0.362 ]           OpalRtMain.c        : RTLAB_DNP3_SLAVE.version=11.0
+[      0.362 ]           OpalRtMain.c        : RTLAB_DNP3_SLAVE.description=Enables slave Distributed Network Protocol (DNP3).
+[      0.362 ]           OpalRtMain.c        : RTLAB_SPECTRACOM_TSYNC_PCIE.value=true
+[      0.362 ]           OpalRtMain.c        : RTLAB_SPECTRACOM_TSYNC_PCIE.version=11.0
+[      0.362 ]           OpalRtMain.c        : RTLAB_SPECTRACOM_TSYNC_PCIE.description=Enables GPS synchronization with the Spectracom TSync PCIe card.
+[      0.362 ]           OpalRtMain.c        : RTE_DRIVE_RT.value=true
+[      0.362 ]           OpalRtMain.c        : RTE_DRIVE_RT.version=4.0
+[      0.362 ]           OpalRtMain.c        : RTE_DRIVE_RT.description=Allows to execute models in real-time within RT-EVENTS
+[      0.362 ]           OpalRtMain.c        : XSG_PMSM_VDQ.value=true
+[      0.362 ]           OpalRtMain.c        : XSG_PMSM_VDQ.version=11.0
+[      0.362 ]           OpalRtMain.c        : XSG_PMSM_VDQ.description=Enables variable-DQ (VDQ) PMSM motor models on FPGA
+[      0.362 ]           OpalRtMain.c        : XSG_PMSM_SH.value=true
+[      0.362 ]           OpalRtMain.c        : XSG_PMSM_SH.version=11.0
+[      0.362 ]           OpalRtMain.c        : XSG_PMSM_SH.description=Enables spacial harmonic  (SH) PMSM motor models on FPGA
+[      0.362 ]           OpalRtMain.c        : XSG_EHS.value=true
+[      0.362 ]           OpalRtMain.c        : XSG_EHS.version=11.0
+[      0.362 ]           OpalRtMain.c        : XSG_EHS.description=Enables ultra-fast electric solver (eHS) on FPGA 
+[      0.362 ]           OpalRtMain.c        : ARTEMIS_MMC_FPGA.value=true
+[      0.362 ]           OpalRtMain.c        : ARTEMIS_MMC_FPGA.version=7.0
+[      0.362 ]           OpalRtMain.c        : ARTEMIS_MMC_FPGA.description=Enables multi-modular converter (MMC) models on FPGA
+[      0.362 ]           OpalRtMain.c        : XSG_FP.value=true
+[      0.362 ]           OpalRtMain.c        : XSG_FP.version=11.0
+[      0.362 ]           OpalRtMain.c        : XSG_FP.description=Enables XSG floating point (FP) block set on FPGA
+[      0.362 ]           OpalRtMain.c        : XSG_DEV.value=true
+[      0.362 ]           OpalRtMain.c        : XSG_DEV.version=11.0
+[      0.362 ]           OpalRtMain.c        : XSG_DEV.description=Enables XSG development of custom firmware on FPGA
+[      0.362 ]           OpalRtMain.c        : XSG_RT.value=true
+[      0.362 ]           OpalRtMain.c        : XSG_RT.version=11.0
+[      0.362 ]           OpalRtMain.c        : XSG_RT.description=Enables XSG runtime execution of custom firmware on FPGA
+[      0.362 ]           OpalRtMain.c        : RTXSG_MMC.value=true
+[      0.362 ]           OpalRtMain.c        : RTXSG_MMC.version=11.0
+[      0.362 ]           OpalRtMain.c        : RTXSG_MMC.description=Enables RT-XSG blockset with MMC Block
+[      0.362 ]           OpalRtMain.c        : RTLAB_C37_118_MASTER.value=true
+[      0.362 ]           OpalRtMain.c        : RTLAB_C37_118_MASTER.version=11.0
+[      0.362 ]           OpalRtMain.c        : RTLAB_C37_118_MASTER.description=Enables C37.118 master protocol option.
+[      0.362 ]           OpalRtMain.c        : XSG_MMC_VALVE_CONTROLLERS.value=6
+[      0.362 ]           OpalRtMain.c        : XSG_MMC_VALVE_CONTROLLERS.version=11.0
+[      0.362 ]           OpalRtMain.c        : XSG_MMC_VALVE_CONTROLLERS.description=Maximum number of valve controllers
+[      0.362 ]           OpalRtMain.c        : ARTEMIS_MMC_2P.value=true
+[      0.362 ]           OpalRtMain.c        : ARTEMIS_MMC_2P.version=7.0
+[      0.362 ]           OpalRtMain.c        : ARTEMIS_MMC_2P.description=Enables ARTEMIS blockset with MMC 2P Block
+[      0.362 ]           OpalRtMain.c        : PHASOR_PARALLEL.value=1
+[      0.362 ]           OpalRtMain.c        : PHASOR_PARALLEL.version=11.0
+[      0.362 ]           OpalRtMain.c        : PHASOR_PARALLEL.description=Number of enabled threads for the ePHASORsim parallel feature
+[      0.362 ]           OpalRtMain.c        : XSG_MMC_CELLS_PER_VALVE.value=100
+[      0.362 ]           OpalRtMain.c        : XSG_MMC_CELLS_PER_VALVE.version=11.0
+[      0.362 ]           OpalRtMain.c        : XSG_MMC_CELLS_PER_VALVE.description=MMC cells per valve
+[      0.362 ]           OpalRtMain.c        : XSG_MMC_VALVES.value=6
+[      0.363 ]           OpalRtMain.c        : XSG_MMC_VALVES.version=11.0
+[      0.363 ]           OpalRtMain.c        : XSG_MMC_VALVES.description=MMC Valves
+[      0.363 ]           OpalRtMain.c        : RTLAB_DEV.value=true
+[      0.363 ]           OpalRtMain.c        : RTLAB_DEV.version=11.0
+[      0.363 ]           OpalRtMain.c        : RTLAB_DEV.description=Allows to compile a model
+[      0.363 ]           OpalRtMain.c        : C37_118_MASTER.value=true
+[      0.363 ]           OpalRtMain.c        : C37_118_MASTER.version=11.0
+[      0.363 ]           OpalRtMain.c        : C37_118_MASTER.description=C37118 MASTER
+[      0.363 ]           OpalRtMain.c        : C37_118_SLAVE.value=true
+[      0.363 ]           OpalRtMain.c        : C37_118_SLAVE.version=11.0
+[      0.363 ]           OpalRtMain.c        : C37_118_SLAVE.description=C37118 SLAVE
+[      0.363 ]           OpalRtMain.c        : MACHINE_INFO_BEGIN
+[      0.363 ]           OpalRtMain.c        : MAC_RANK=0
+[      0.363 ]           OpalRtMain.c        : INFO_TIME=06/05/2016
+[      0.363 ]           OpalRtMain.c        : MAC Address=0C:C4:7A:0C:1F:5A
+[      0.363 ]           OpalRtMain.c        : HD Serial Number=SATA_Samsung_SSD_840S1ANNSADB62748Y
+[      0.363 ]           OpalRtMain.c        : MACHINE_INFO_END
+[      0.363 ]           OpalRtMain.c        : -------  License info dump END  -------
+[      0.363 ]           OpalRtMain.c        : 
+[      0.363 ]           Highest active CPU: 4
+[      0.363 ]           Subsystem SM_master allocates 1 cores.
+[      0.363 ]           Subsystem SS_controller allocates 1 cores.
+[      0.380 ]           OpalRtMain.c        : model my_pv_system_1_sm_master assigned to logical cpu 1
+[      0.380 ]           OpalRtMain.c        : Line 8131
+[      0.380 ]           OpalRtMain.c        : Line 863
+[      0.380 ]           OpalRtMain.c        : Monitoring is enabled
+[      0.380 ]           MonLogger.c         : Monitoring shmem created
+[      0.380 ]           MonLogger.c         : Registering internal probes ...
+[      0.380 ]           MonLogger.c         : id  0 given to event &quot;Sync Handler Jitter&quot;
+[      0.380 ]           MonLogger.c         : id  1 given to event &quot;Synchronized IOs&quot;
+[      0.380 ]           MonLogger.c         : id  2 given to event &quot;Status Update&quot;
+[      0.380 ]           MonLogger.c         : id  3 given to event &quot;Data Acquisition&quot;
+[      0.380 ]           MonLogger.c         : id  4 given to event &quot;New Data Acquisition&quot;
+[      0.380 ]           MonLogger.c         : id  5 given to event &quot;Signals Change&quot;
+[      0.380 ]           MonLogger.c         : id  6 given to event &quot;User Blobs&quot;
+[      0.380 ]           MonLogger.c         : id  7 given to event &quot;Send Status&quot;
+[      0.380 ]           MonLogger.c         : id  8 given to event &quot;Multi-Receive&quot;
+[      0.380 ]           MonLogger.c         : id  9 given to event &quot;Handle target requests&quot;
+[      0.380 ]           MonLogger.c         : id 10 given to event &quot;Handle host requests&quot;
+[      0.380 ]           MonLogger.c         : id 11 given to event &quot;Pre-execution computation time&quot;
+[      0.380 ]           MonLogger.c         : id 12 given to event &quot;Major computation time&quot;
+[      0.380 ]           MonLogger.c         : id 13 given to event &quot;Minor computation time&quot;
+[      0.380 ]           MonLogger.c         : id 14 given to event &quot;Post-execution computation time&quot;
+[      0.380 ]           MonLogger.c         : id 15 given to event &quot;Execution Cycle&quot;
+[      0.380 ]           MonLogger.c         : id 16 given to event &quot;Total Step Size&quot;
+[      0.380 ]           MonLogger.c         : id 17 given to event &quot;Idle wait for clock&quot;
+[      0.380 ]           MonLogger.c         : id 18 given to event &quot;Idle wait for comm&quot;
+[      0.380 ]           MonLogger.c         : id 19 given to event &quot;Idle wait for io&quot;
+[      0.380 ]           MonLogger.c         : id 20 given to event &quot;Total idle&quot;
+[      0.380 ]           MonLogger.c         : id 21 given to event &quot;Number of Overruns&quot;
+[      0.380 ]           MonLogger.c         : id 22 given to event &quot;Send_RT to SS_controller&quot;
+[      0.380 ]           MonLogger.c         : id 23 given to event &quot;Recv_RT from SS_controller&quot;
+[      0.380 ]           MonLogger.c         : Done registering 22 internal probes.
+[      0.380 ]           OpalSync.c          : Monitoring Controller initialization, step 1 done
+[      0.380 ]           OpalRtMain.c        : OpalAcq_Init()
+[      0.380 ]           Loading data file: OpalAcquisitionSourcesCreator.data
+[      0.380 ]           Loading data file: OpalRealTimeParametersCreator.data
+[      0.381 ]           Service Parameters/ParametersService found
+[      0.381 ]           HostRequest.c       : Requests from host will be received from thread
+[      0.382 ]           OpalHostRecvIf.c    : Recv Thread started
+[      0.382 ]           TargetRequest.c     : Requests to host will be sent from thread
+[      0.382 ]           TargetRequest.c     : Requests to file will be sent from thread
+[      0.382 ]           OpalHostSendIf.c    : Send Thread started
+[      4.995 ]           OpalHostRecvIf.c    : RECV: connection to host established
+[      5.088 ]           OpalPrint.c         : Sending path notification request for system control (cmd 29)
+[      5.088 ]           OpalHostSendIf.c    : SEND: connection to host established
+[      5.288 ]           OpalTarget.c        : OPALRT Shared Memory unlocked (post)
+[      5.288 ]           OpalTarget.c        : Sub-systems added at position 1.
+[      5.288 ]           OpalRtMain.c        : OpalInit: OPALRT shared memory found and opened
+[      5.288 ]           OpalRtMain.c        : Line 1130
+[      5.288 ]           OpalRtMain.c        : RT_mem_name = RT_my_pv_system_1_sm_master_7632
+[      5.288 ]           OpalRtMain.c        : Line 1136
+[      5.288 ]           OpalRtIf.c          : Shared memory RT created
+[      5.294 ]           OpalRtMain.c        : Line 1141
+[      5.294 ]           OpalRtMain.c        : State and status will be send first.
+[      5.294 ]           OpalRtMain.c        : A Unit delay is applied on status exchange.
+[      5.294 ]           OpalRtMain.c        : Line 1246
+[      5.294 ]           OpalRtMain.c        : Model stop time has been set to 0.000000 s
+[      5.294 ]           OpalRtMain.c        : Model pause time has been set to 0.000000 s
+[      5.294 ]           OpalRtMain.c        : Line 1311
+[      5.294 ]           OpalRtMain.c        : Snapshot enabled.
+[      5.294 ]           OpalRtMain.c        : Line 1342
+[      5.294 ]           OpalRtMain.c        : Line 1418
+[      5.294 ]           OpalRtMain.c        : Line 1542
+[      5.294 ]           OpalRtMain.c        : Line 1579
+[      5.294 ]           OpalRtMain.c        : Line 1601
+[      5.294 ]           OpalRtMain.c        : Line 1640
+[      5.294 ]           OpalRtMain.c        : Line 1664
+[      5.294 ]           OpalRtMain.c        : Assigned main thread to CPU 1 (mask 0x2)
+[      5.294 ]           OpalRtMain.c        : Display of standard output will be disabled
+[      5.294 ]           OpalRtMain.c        : Standard output has been redirected to /dev/null
+[      5.294 ]           OpalRtMain.c        : Standard error has been redirected to /dev/null
+[      5.294 ]           OpalRtMain.c        : Standard input has been redirected to /dev/null
+[      5.294 ]           OpalRtMain.c        : Line 1696
+[      5.294 ]           MonLogger.c         : Monitoring: start time = 0.000 ms, using CPU speed = 3300 MHz
+[      5.294 ]           OpalBlobsInternal.c : blobs: new callback function registered for blob id &quot;OP_INFO_REGISTER_GET_INFO&quot;
+[      5.294 ]           OpalBlobsInternal.c : blobs: new callback function registered for blob id &quot;OP_INFO_REGISTER_SET_INFO_1&quot;
+[      5.294 ]           OpalRtMain.c        : Exiting from OpalInit function. User block(s) will be called.
+[      5.294 ]           send_rt.c           : Send_RT: Sending 17 signal(s) to logical node 3
+[      5.294 ]           OpalAcquisition.c   : Successfully registered acq group 1 for 17 fixed signals and 0 max dynamic signals
+[      5.294 ]           OpalAcquisition.c   : Successfully registered acq group 2 for 4 fixed signals and 0 max dynamic signals
+[      5.294 ]           recv_rt.c           : Recv_RT: Receiving 6 signal(s) from logical node 3
+[      5.295 ]           Loading data file: OpalControlSignalsCreator.data
+[      5.295 ]           OpalRtMain.c        : SyncExchanger manager licenses registering...
+[      5.295 ]           OpalRtMain.c        : OpalMainLoop()
+[      5.295 ]           OpalSync.c          : Monitoring Controller initialization completed.
+[      5.295 ]           MonLogger.c         : Acq source memory created for monitoring, 24 probes, 48 signals
+[      5.295 ]           MonLogger.c         : Monitoring Logger initialization completed.
+[      5.295 ]           OpalAcquisition.c   : Successfully registered 48 signals for monitoring
+[      5.295 ]           OpalAcquisition.c   : Registering trigger for acq group 1 : type is 3, offset is 0
+[      5.295 ]           OpalAcquisition.c   : Registering trigger for acq group 2 : type is 3, offset is 0
+[      5.295 ]           OpalAcquisition.c   : Registering trigger for acq group 25 : type is 3, offset is 0
+[      5.295 ]           OpalBlobsInternal.c : blobs: new callback function registered for blob id &quot;STATIC_ACQ_INFO&quot;
+[      5.296 ]           OpalClientServer.c  : DATA MEM allocated: 728336 bytes for client 6
+[      5.296 ]           OpalClientServer.c  : (One extra signal for Write to File)
+[      5.296 ]           OpalClientServer.c  : DATA MEM allocated: 208336 bytes for client 7
+[      5.296 ]           OpalClientServer.c  : (One extra signal for Write to File)
+[      5.296 ]           OpalClientServer.c  : DATA MEM allocated: 87504 bytes for client 30
+[      5.296 ]           OpalClientServer.c  : (One extra signal for Write to File)
+[      5.312 ]           OpalRtMain.c        : Line 1778
+[      5.312 ]           OpalClientServer.c  : DATA MEM allocated: 3980 bytes for client 1
+[      5.312 ]           OpalClientServer.c  : (One extra signal for Write to File)
+[      5.312 ]           OpalRtMain.c        : Line 1783
+[      5.312 ]           OpalRtBlobs.c       : Number of registered blobs ids = 3
+[      5.312 ]           OpalClientServer.c  : DATA MEM allocated: 66092 bytes for client 5
+[      5.312 ]           OpalClientServer.c  : (One extra signal for Write to File)
+[      5.312 ]           OpalRtBlobs.c       : OpalBlobs_MemInit, frame 0, actualDataSize 66092
+[      5.312 ]           OpalRtMain.c        : Line 1785
+[      5.312 ]           OpalIO.c            : Searching call back INIT for sample time 0.000000 ...
+[      5.312 ]           OpalIO.c            : Searching call back INIT for sample time 0.000050 ...
+[      5.312 ]           OpalRtMain.c        : Line 1795
+[      5.312 ]           OpalRtIf.c          : Shared memory MRate created
+[      5.312 ]           OpalRtIf.c          : Line 2338
+[      5.312 ]           OpalRtIf.c          : Line 2363
+[      5.620 ]           OpalRtIf.c          : sm_master have 513 points (500+0+5+0+4+4+0+0)
+[      5.620 ]           OpalRtIf.c          : ss_controller have 513 points (500+0+5+0+4+4+0+0)
+[      5.720 ]           OpalRtIf.c          : BossClk : sm_master
+[      5.720 ]           OpalRtIf.c          : Status sample time: 0.000050
+[      5.720 ]           OpalRtIf.c          : Line 3040
+[      5.720 ]           OpalRtMain.c        : SubSystem step size = 0.000050 sec. Status updated at every 1 local step.
+[      5.720 ]           OpalRtMain.c        : ------- Log node 1 -------
+[      5.720 ]           OpalRtMain.c        : IO               = 0
+[      5.720 ]           OpalRtMain.c        : subSysSampleTime = 0.000050
+[      5.720 ]           OpalRtMain.c        : typeOfClock      = 3
+[      5.720 ]           OpalRtMain.c        : clockFactor      = 1
+[      5.720 ]           OpalRtMain.c        : OpSyncHard       = 0
+[      5.720 ]           OpalRtMain.c        : NeedSync         = 0
+[      5.720 ]           OpalRtMain.c        : StatusST         = 0.000050
+[      5.720 ]           OpalRtMain.c        : skip             = 1
+[      5.720 ]           OpalRtMain.c        : ------- Log node 3 -------
+[      5.720 ]           OpalRtMain.c        : IO               = 0
+[      5.720 ]           OpalRtMain.c        : subSysSampleTime = 0.000050
+[      5.720 ]           OpalRtMain.c        : typeOfClock      = 1
+[      5.720 ]           OpalRtMain.c        : clockFactor      = 1
+[      5.720 ]           OpalRtMain.c        : OpSyncHard       = 0
+[      5.720 ]           OpalRtMain.c        : NeedSync         = 0
+[      5.720 ]           OpalRtMain.c        : StatusST         = 0.000050
+[      5.720 ]           OpalRtMain.c        : skip             = 0
+[      5.720 ]           OpalRtMain.c        : XHP mode enabled on this CPU.
+[      5.720 ]           OpalSyncOs.c        : Registered CB_WaitForTimer_sync_Polling
+[      5.720 ]           OpalRtMain.c        : Synchronized with polling  software timer.
+[      5.720 ]           OpalRtMain.c        : Line 2231
+[      5.721 ]           OpalClientServer.c  : DATA MEM allocated: 276689 bytes for client 3
+[      5.721 ]           OpalClientServer.c  : (One extra signal for Write to File)
+[      5.721 ]           OpalRtMain.c        : Line 2296
+[      5.721 ]           OpalRtMain.c        : Parameters Init: subsystem has 703 values (703), 1 pages.
+
+[      5.721 ]           OpalClientServer.c  : DATA MEM allocated: 12382 bytes for client 2
+[      5.721 ]           OpalClientServer.c  : (One extra signal for Write to File)
+[      5.721 ]           OpalRtMain.c        : Line 2302
+[      5.721 ]           OpalClientServer.c  : DATA MEM allocated: 327645 bytes for client 4
+[      5.721 ]           OpalClientServer.c  : (One extra signal for Write to File)
+[      5.721 ]           Signals.c           : ReturnSignalsInit, id 4, maxNbSignals 1015, buf size 327645
+[      5.721 ]           Signals.c           : ReturnSignalsInit, frame 0, actualDataSize 327645
+[      5.721 ]           OpalRtMain.c        : Line 2320
+[      5.728 ]           OpalRtMain.c        : Subsys found in shared memory.
+[      5.728 ]           commrt_shmem.c      : useFlag 1 to send to logical node 3
+[      5.728 ]           commrt_shmem.c      : useFlag 1 to recv from logical node 3
+[      5.757 ]           commrt_shmem.c      : CommRtRecvPrepShmem: using RecvXhpFromXhpWithMonitoring to receive from logical node 3
+[      5.757 ]           commrt_shmem.c      : CommRtSendPrepShmem: using SendShmemXhpToXhp to send to logical node 3
+[      5.757 ]           OpalRtMain.c        : Line 2347
+[      6.257 ]           OpalTarget.c        : Sending notification request for system control (cmd 7)
+[      6.270 ]           OpalRtMain.c        : Line 2352
+[      6.270 ]           OpalRtMain.c        : Line 2418
+[      6.270 ]           OpalRtMain.c        : The model contains 2 sample times.
+[      6.270 ]           OpalRtMain.c        : Base sample time = 0.000050
+[      6.270 ]           OpalRtMain.c        : Real-time SingleTasking mode.
+[      6.270 ]           OpalRtMain.c        : OpalExecutionMainLoop()
+[      6.270 ]           OpalRtMain.c        : *** Fetched 2 cores, remains 0
+[      6.270 ]           OpalRtMain.c        : RT-LAB license ok. Unlimited time license.
+[      6.270 ]           OpalRtSnapshot.c    : Snapshot taken (opmy_pv_system_sm_master_0.snap).
+[      6.270 ]           OpalRtSnapshot.c    : Estimated time to take a snapshot = 29 us.
+[      6.272 ]           OpalPrint.c         : Sending file name notification request for system control (cmd 30)
+[      6.272 ]           OpalHostSendIf.c    : Open file done (/home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_workspace/pv_inverter/models/my_pv_system/my_pv_system_sm_master/opmy_pv_system_sm_master_0.snap)
+[      6.291 ]           OpalHostSendIf.c    : Close file done (/home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_workspace/pv_inverter/models/my_pv_system/my_pv_system_sm_master/opmy_pv_system_sm_master_0.snap)
+[      6.291 ]           OpalPrint.c         : Sending file name notification request for system control (cmd 33)
+[      6.292 ]           OpalSyncOs.c        : clk_res = 50 us
+[      6.292 ]           OpalSyncOs.c        : clk_res_factor = 1
+[      6.292 ]           OpalTarget.c        : Sending notification request for system control (cmd 20)
+[      6.292 ]           OpalRtMain.c        :  [0]: PAUSE mode, IO set to pause value.
+[      6.292 ]           OpalRtMain.c        : 		Total of 0 Overrun detected.
+[      6.292 ]           OpalRtMain.c        : 		Fri May 26 22:48:21 2017
+
+[      6.402 ]           OpalRtMain.c        : SYS_CALC_STEP Command (0.000050)
+[      6.402 ]           OpalTarget.c        : Sending feedback request for system control (cmd 8)
+[      6.423 ]           OpalRtMain.c        : received blob cmd 60 at cycle 0
+[      6.423 ]           OpalRtBlobs.c       : Sending feedback request for blobs (cmd 60)
+[      6.423 ]           OpalTarget.c        : Send data request for client 5 (Queue=1)
+[      6.443 ]           OpalRtMain.c        : received blob cmd 61 at cycle 0
+[      6.443 ]           OpalRtBlobs.c       : Sending feedback request for blobs (cmd 61)
+[      6.443 ]           OpalTarget.c        : Send data request for client 5 (Queue=1)
+[      6.483 ]           OpalRtMain.c        : received blob cmd 59 at cycle 0
+[      6.513 ]           OpalRtMain.c        : handling blob cmd 59 at cycle 0 (blob OP_INFO_REGISTER_GET_INFO)
+[      6.513 ]           OpalRtBlobs.c       : Sending feedback request for blobs (cmd 59)
+[      6.513 ]           OpalTarget.c        : Send data request for client 5 (Queue=1)
+[      6.533 ]           OpalSync.c          : Monitoring: received request for number of probes
+[      6.534 ]           OpalSync.c          : Sending feedback request for monitoring (cmd 48)
+[      6.534 ]           OpalTarget.c        : Send data request for client 1 (Queue=1)
+[      6.959 ]           Unable to create a new HTTP connection - aborting
+[      6.985 ]           192.168.5.200:25254/resources/root/613C0B6A-21A5-4BE0-820E-483640ED5320 : data -&gt; 1
+[     10.106 ]           OpalRtMain.c        : received blob cmd 59 at cycle 0
+[     10.116 ]           OpalRtMain.c        : handling blob cmd 59 at cycle 0 (blob STATIC_ACQ_INFO)
+[     10.116 ]           OpalRtBlobs.c       : Sending feedback request for blobs (cmd 59)
+[     10.116 ]           OpalTarget.c        : Send data request for client 5 (Queue=1)
+[     10.157 ]           OpalSync.c          : Group 1: Receive 9 cmd from probe
+[     10.157 ]           OpalAcquisition.c   : Changing trigger for acq group 1 : type is 3, offset is 0
+[     10.157 ]           OpalSync.c          : Probe cmd 34 for 1 subSys (group 1)
+[     10.177 ]           OpalAcquisition.c   : Probe cmd (34) group 1: ok to apply at pass 0.000000
+[     10.177 ]           OpalAcquisition.c   : ACQ GROUP 1: UPDATING PARAMETER AT PASS 0.000000 ....
+
+[     10.177 ]           OpalAcquisition.c   : Group 1: repeat factor = 1 (1), status decimation = 1
+[     10.177 ]           OpalAcquisition.c   : Probe cmd has been applied at pass 0.000000.
+[     10.187 ]           OpalSync.c          : Sending feedback request for probe (cmd 34, group 1)
+[     10.187 ]           OpalTarget.c        : Send data request for client 1 (Queue=1)
+[     10.217 ]           OpalSync.c          : Group 2: Receive 9 cmd from probe
+[     10.217 ]           OpalAcquisition.c   : Changing trigger for acq group 2 : type is 3, offset is 0
+[     10.217 ]           OpalSync.c          : Probe cmd 34 for 2 subSys (group 2)
+[     10.227 ]           OpalAcquisition.c   : Probe cmd (34) group 2: ok to apply at pass 0.000000
+[     10.227 ]           OpalAcquisition.c   : ACQ GROUP 2: UPDATING PARAMETER AT PASS 0.000000 ....
+
+[     10.227 ]           OpalAcquisition.c   : Group 2: repeat factor = 1 (1), status decimation = 1
+[     10.227 ]           OpalAcquisition.c   : Probe cmd has been applied at pass 0.000000.
+[     10.237 ]           OpalSync.c          : Sending feedback request for probe (cmd 34, group 2)
+[     10.237 ]           OpalTarget.c        : Send data request for client 1 (Queue=1)
+[     10.267 ]           OpalSync.c          : Group 25: Receive 9 cmd from probe
+[     10.267 ]           OpalAcquisition.c   : Changing trigger for acq group 25 : type is 3, offset is 0
+[     10.267 ]           OpalSync.c          : Probe cmd 34 for 2 subSys (group 25)
+[     10.277 ]           OpalAcquisition.c   : Probe cmd (34) group 25: ok to apply at pass 0.000000
+[     10.277 ]           OpalAcquisition.c   : ACQ GROUP 25: UPDATING PARAMETER AT PASS 0.000000 ....
+
+[     10.278 ]           OpalAcquisition.c   : Group 25: repeat factor = 1 (1), status decimation = 1
+[     10.278 ]           OpalAcquisition.c   : Probe cmd has been applied at pass 0.000000.
+[     10.288 ]           OpalSync.c          : Sending feedback request for probe (cmd 34, group 25)
+[     10.288 ]           OpalTarget.c        : Send data request for client 1 (Queue=1)
+[     10.301 ]           Unable to create a new HTTP connection - aborting
+[     10.302 ]           Unable to create a new HTTP connection - aborting
+Starting transfer of /home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_workspace/pv_inverter/models/my_pv_system/my_pv_system_sm_master/opmy_pv_system_sm_master_0.snap...
+Transfer of /home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_workspace/pv_inverter/models/my_pv_system/my_pv_system_sm_master/opmy_pv_system_sm_master_0.snap OK
+[    116.731 ]           OpalRtMain.c        : SYS_CALC_STEP Command (0.000050)
+[    116.731 ]           OpalTarget.c        : Sending feedback request for system control (cmd 8)
+[    116.742 ]           OpalRtMain.c        : SYS_EXECUTE Command
+[    116.742 ]           OpalRtMain.c        : Calculation step set to 0.000050, stopTime = 0.000000, pauseTime = 0.000000
+[    116.742 ]           OpalRtMain.c        : XHP mode enabled
+[    116.742 ]           OpalTarget.c        : Sending notification request for system control (cmd 9)
+[    116.742 ]           OpalTarget.c        : Sending feedback request for system control (cmd 9)
+[    116.742 ]           OpalRtMain.c        :  [1]: RUN mode, IO set to run value.
+[    116.742 ]           OpalRtMain.c        : 		Synchronized step size = 50 us.
+[    116.742 ]           OpalRtMain.c        : 		Fri May 26 22:50:11 2017
+
+[    116.742 ]           OpalAcquisition.c   : ACQ GROUP 1: UPDATING PARAMETER AT PASS 0.000000 ....
+
+[    116.742 ]           OpalAcquisition.c   : Group 1: repeat factor = 1 (1), status decimation = 1
+[    116.742 ]           OpalAcquisition.c   : ACQ GROUP 2: UPDATING PARAMETER AT PASS 0.000000 ....
+
+[    116.742 ]           OpalAcquisition.c   : Group 2: repeat factor = 1 (1), status decimation = 1
+[    116.742 ]           OpalAcquisition.c   : ACQ GROUP 25: UPDATING PARAMETER AT PASS 0.000000 ....
+
+[    116.742 ]           OpalAcquisition.c   : Group 25: repeat factor = 1 (1), status decimation = 1
+[    116.752 ]           OpalRtMain.c        : Main priority set to 99
+[    400.677 ]           OpalRtMain.c        : XHP mode disabled
+[    400.677 ]           OpalRtMain.c        :  [5678466]: Reset
+[    400.677 ]           OpalRtMain.c        : 		Total of 0 Overrun detected.
+[    400.677 ]           OpalRtMain.c        : 		Fri May 26 22:54:55 2017
+
+[    400.677 ]           OpalRtMain.c        : OpalCloseBeforeUserFunction()
+[    400.677 ]           OpalIO.c            : Searching call back CLOSE for sample time 0.000000 ...
+[    400.677 ]           OpalIO.c            : Searching call back CLOSE for sample time 0.000050 ...
+[    400.677 ]           OpalRtMain.c        : OpalClose()
+[    400.677 ]           OpalTarget.c        : Sending feedback request for system control (cmd 13)
+[    400.677 ]           OpalRtMain.c        : PrintOverrunMsg()
+[    400.677 ]           OpalRtMain.c        : OpalParameter_Close()
+[    400.677 ]           OpalRtMain.c        : CommRtClose()
+[    400.678 ]           OpalPrint.c         : Sending file name notification request for system control (cmd 30)
+[    400.678 ]           TargetRequest.c     : Purging target requests priority 0 ...
+[    400.678 ]           TargetRequest.c     : Done purging target requests priority 0.
+[    400.678 ]           TargetRequest.c     : Purging target requests priority 1 ...
+[    400.688 ]           TargetRequest.c     : Done purging target requests priority 1.
+[    400.688 ]           TargetRequest.c     : Reset done
+[    400.788 ]           OpalHostSendIf.c    : SEND: connection to host closed
+[    400.889 ]           OpalRtMain.c        : *** Returned used cores, remains 2
+[    400.890 ]           OpalTarget.c        : Subsystem at position 1 (total = 1) has been deleted.
+[    400.890 ]           
+
+MasterRoot shutdown!
+[    400.890 ]           Unable to create a new HTTP connection - aborting
+[    400.891 ]           Objects destruction
+Executing script /usr/opalrt/v11.0.8.13/common/python/rtlab/global/target_postreset.py ... done
+Executing script /usr/opalrt/v11.0.8.13/common/python/rtlab/global/target_subsys_postreset.py ... done
+
+
+--------------- Retrieving files ... ---------------------------------
+
+Setting local directory to C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\my_pv_system\my_pv_system_sm_master\OpREDHAWKtarget\... OK.
+Transferring in ascii mode /home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_workspace/pv_inverter/models/my_pv_system/target_report.xml ... OK.
+
+--------------- Done retrieving files --------------------------------
+
+                    </value>
+                </textlog>
+            </item>
+            <item name="SS_controller">
+                <textlog name="SS_controller">
+                    <value>
+                        
+--------------- Transferring files ... ------------------------------
+
+Transferring in binary: C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\my_pv_system\my_pv_system_SS_controller\OpREDHAWKtarget\my_pv_system_3_ss_controller (SS_controller) ... OK.
+Transferring in binary: C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\my_pv_system\my_pv_system_SS_controller\OpREDHAWKtarget\Opal*Creator.data (SS_controller) ... OK.
+
+--------------- Done transferring files -----------------------------
+
+
+Executing script /usr/opalrt/v11.0.8.13/common/python/rtlab/global/target_subsys_preload.py ... done
+[      0.001 ]           Begin to register on OpalRoot
+[      0.002 ]           Registered on OpalRoot
+[      0.003 ]           Loading services from &quot;/usr/opalrt/v11.0.8.13/common/bin/Services&quot;
+[      0.014 ]             Plugin &quot;Web&quot;: services informations retrieved
+[      0.025 ]             Plugin &quot;DVP&quot;: services informations retrieved
+[      0.039 ]             Plugin &quot;RFM&quot;: services informations retrieved
+[      0.049 ]             Plugin &quot;sFlashUpdate&quot;: services informations retrieved
+[      0.063 ]             Plugin &quot;DataAcquisition&quot;: services informations retrieved
+[      0.076 ]             Plugin &quot;SimulationSetup&quot;: services informations retrieved
+[      0.086 ]             Plugin &quot;HEI&quot;: services informations retrieved
+[      0.098 ]             Plugin &quot;MODBUS&quot;: services informations retrieved
+[      0.109 ]             Plugin &quot;DriverIdentification&quot;: services informations retrieved
+[      0.132 ]             Plugin &quot;IRTS&quot;: services informations retrieved
+[      0.142 ]             Plugin &quot;WatchDogClient&quot;: services informations retrieved
+[      0.152 ]             Plugin &quot;Pickering-41-752&quot;: services informations retrieved
+[      0.164 ]             Plugin &quot;IEC104&quot;: services informations retrieved
+[      0.177 ]             Plugin &quot;Parameters&quot;: services informations retrieved
+[      0.187 ]             Plugin &quot;LogRT&quot;: services informations retrieved
+[      0.202 ]             Plugin &quot;ARINC&quot;: services informations retrieved
+[      0.212 ]             Plugin &quot;WatchDogServer&quot;: services informations retrieved
+[      0.221 ]             Plugin &quot;Dummy&quot;: services informations retrieved
+[      0.222 ]           Service DataAcquisition/DataAcquisition found
+[      0.223 ]           WatchDogServer service - server socket created, available on address: 192.168.5.113:40203
+[      0.223 ]           Root initialized: 192.168.5.113:25257/resources/root
+[      0.223 ]           Initialization done
+[      0.311 ]           OpalRtMain.c        : Calculated cpu speed = 3300 MHz
+[      0.311 ]           OpalRtMain.c        : Model 'my_pv_system_3_ss_controller' compiled in RELEASE mode.
+[      0.311 ]           OpalRtMain.c        : 4 CPUs active on this Computer
+[      0.311 ]           OpalRtMain.c        : libOpalR2014B.a : v11.0.8.13 (build = undefined)
+[      0.370 ]           OpalRtMain.c        : 
+[      0.370 ]           OpalRtMain.c        : ------- License info dump START -------
+[      0.370 ]           OpalRtMain.c        : ##For support, do not hesitate to contact OPAL-RT Technologies through 
+[      0.370 ]           OpalRtMain.c        : ##our web site support section : http://opal-rt.com/support/support-request
+[      0.370 ]           OpalRtMain.c        : ##Company Name: University New South Wales
+[      0.370 ]           OpalRtMain.c        : ##Name: Georgios Konstantinou 
+[      0.370 ]           OpalRtMain.c        : ##Email: g.konstantinou@unsw.edu.au
+[      0.370 ]           OpalRtMain.c        : ##Country: Australia
+[      0.370 ]           OpalRtMain.c        : ##Serial Number: PF914-241
+[      0.370 ]           OpalRtMain.c        : ##Target Number: PF914-241S08
+[      0.370 ]           OpalRtMain.c        : ##Created by: CG
+[      0.370 ]           OpalRtMain.c        : ##RT3: 288002
+[      0.370 ]           OpalRtMain.c        : EXPIRATION=INFINITE
+[      0.370 ]           OpalRtMain.c        : END_OF_SUPPORT=27/12/2018
+[      0.370 ]           OpalRtMain.c        : TARGET_NUMBER=PF914-241-S08
+[      0.370 ]           OpalRtMain.c        : LICENSE_NUMBER=201600453
+[      0.370 ]           OpalRtMain.c        : RTLAB_NRT.value=true
+[      0.370 ]           OpalRtMain.c        : RTLAB_NRT.version=11.0
+[      0.370 ]           OpalRtMain.c        : RTLAB_NRT.description=Allows to execute a model in non real-time mode
+[      0.370 ]           OpalRtMain.c        : RTLAB_RT.value=true
+[      0.370 ]           OpalRtMain.c        : RTLAB_RT.version=11.0
+[      0.370 ]           OpalRtMain.c        : RTLAB_RT.description=Allows to execute a model in real-time mode with RT-LAB.
+[      0.370 ]           OpalRtMain.c        : RTLAB_NUM_CORES.value=2
+[      0.370 ]           OpalRtMain.c        : RTLAB_NUM_CORES.version=11.0
+[      0.370 ]           OpalRtMain.c        : RTLAB_NUM_CORES.description=Number of activated core to execute a model in real-time.
+[      0.370 ]           OpalRtMain.c        : RTLAB_XHP.value=true
+[      0.370 ]           OpalRtMain.c        : RTLAB_XHP.version=11.0
+[      0.370 ]           OpalRtMain.c        : RTLAB_XHP.description=Enables the XHP mode within RT-LAB.
+[      0.370 ]           OpalRtMain.c        : ARTEMIS_RTE.value=true
+[      0.370 ]           OpalRtMain.c        : ARTEMIS_RTE.version=7.0
+[      0.370 ]           OpalRtMain.c        : ARTEMIS_RTE.description=Enables ARTEMIS blockset.
+[      0.370 ]           OpalRtMain.c        : ARTEMIS_SSN.value=true
+[      0.370 ]           OpalRtMain.c        : ARTEMIS_SSN.version=7.0
+[      0.370 ]           OpalRtMain.c        : ARTEMIS_SSN.description=Enables ARTEMIS blockset with SSN option.
+[      0.370 ]           OpalRtMain.c        : RTE_RT.value=true
+[      0.370 ]           OpalRtMain.c        : RTE_RT.version=4.0
+[      0.370 ]           OpalRtMain.c        : RTE_RT.description=Allows to execute models in real-time within RT-EVENTS.
+[      0.370 ]           OpalRtMain.c        : ARTEMIS_NUM_CORES.value=2
+[      0.370 ]           OpalRtMain.c        : ARTEMIS_NUM_CORES.version=7.0
+[      0.370 ]           OpalRtMain.c        : ARTEMIS_NUM_CORES.description=Number of activated core to execute a model in real-time with ARTEMiS library.
+[      0.370 ]           OpalRtMain.c        : RTE_DRIVE_NUM_CORES.value=2
+[      0.370 ]           OpalRtMain.c        : RTE_DRIVE_NUM_CORES.version=4.0
+[      0.370 ]           OpalRtMain.c        : RTE_DRIVE_NUM_CORES.description=Number of activated core to execute a model in real-time with RT-EVENTS library.
+[      0.370 ]           OpalRtMain.c        : RTE_NUM_CORES.value=2
+[      0.370 ]           OpalRtMain.c        : RTE_NUM_CORES.version=4.0
+[      0.370 ]           OpalRtMain.c        : RTE_NUM_CORES.description=Number of activated core to execute a model in real-time with RT-EVENTS library.
+[      0.370 ]           OpalRtMain.c        : SCOPEVIEW.value=true
+[      0.370 ]           OpalRtMain.c        : SCOPEVIEW.version=11.0
+[      0.370 ]           OpalRtMain.c        : SCOPEVIEW.description=Enables the ScopeView module for data analysis and chart reporting.
+[      0.370 ]           OpalRtMain.c        : ARTEMIS_RT.value=true
+[      0.370 ]           OpalRtMain.c        : ARTEMIS_RT.version=7.0
+[      0.370 ]           OpalRtMain.c        : ARTEMIS_RT.description=Allows to execute models in real-time with ARTEMIS library. 
+[      0.370 ]           OpalRtMain.c        : ARTEMIS_MMC.value=true
+[      0.370 ]           OpalRtMain.c        : ARTEMIS_MMC.version=7.0
+[      0.370 ]           OpalRtMain.c        : ARTEMIS_MMC.description=Enables  MMC block within ARTEMiS library.
+[      0.370 ]           OpalRtMain.c        : ARTEMIS_MMC_CONTROLLER.value=true
+[      0.371 ]           OpalRtMain.c        : ARTEMIS_MMC_CONTROLLER.version=7.0
+[      0.371 ]           OpalRtMain.c        : ARTEMIS_MMC_CONTROLLER.description=Enables  MMC controller block within ARTEMiS library.
+[      0.371 ]           OpalRtMain.c        : PHASOR_RT.value=true
+[      0.371 ]           OpalRtMain.c        : PHASOR_RT.version=11.0
+[      0.371 ]           OpalRtMain.c        : PHASOR_RT.description=Enables ePHASORsim real-time
+[      0.371 ]           OpalRtMain.c        : PHASOR_NRT.value=true
+[      0.371 ]           OpalRtMain.c        : PHASOR_NRT.version=11.0
+[      0.371 ]           OpalRtMain.c        : PHASOR_NRT.description=Enables ePHASORsim offline
+[      0.371 ]           OpalRtMain.c        : RTLAB_C37_118_SLAVE.value=true
+[      0.371 ]           OpalRtMain.c        : RTLAB_C37_118_SLAVE.version=11.0
+[      0.371 ]           OpalRtMain.c        : RTLAB_C37_118_SLAVE.description=Enables slave Synchrophasor Protocol C37.118.
+[      0.371 ]           OpalRtMain.c        : RTLAB_DNP3_SLAVE.value=true
+[      0.371 ]           OpalRtMain.c        : RTLAB_DNP3_SLAVE.version=11.0
+[      0.371 ]           OpalRtMain.c        : RTLAB_DNP3_SLAVE.description=Enables slave Distributed Network Protocol (DNP3).
+[      0.371 ]           OpalRtMain.c        : RTLAB_SPECTRACOM_TSYNC_PCIE.value=true
+[      0.371 ]           OpalRtMain.c        : RTLAB_SPECTRACOM_TSYNC_PCIE.version=11.0
+[      0.371 ]           OpalRtMain.c        : RTLAB_SPECTRACOM_TSYNC_PCIE.description=Enables GPS synchronization with the Spectracom TSync PCIe card.
+[      0.371 ]           OpalRtMain.c        : RTE_DRIVE_RT.value=true
+[      0.371 ]           OpalRtMain.c        : RTE_DRIVE_RT.version=4.0
+[      0.371 ]           OpalRtMain.c        : RTE_DRIVE_RT.description=Allows to execute models in real-time within RT-EVENTS
+[      0.371 ]           OpalRtMain.c        : XSG_PMSM_VDQ.value=true
+[      0.371 ]           OpalRtMain.c        : XSG_PMSM_VDQ.version=11.0
+[      0.371 ]           OpalRtMain.c        : XSG_PMSM_VDQ.description=Enables variable-DQ (VDQ) PMSM motor models on FPGA
+[      0.371 ]           OpalRtMain.c        : XSG_PMSM_SH.value=true
+[      0.371 ]           OpalRtMain.c        : XSG_PMSM_SH.version=11.0
+[      0.371 ]           OpalRtMain.c        : XSG_PMSM_SH.description=Enables spacial harmonic  (SH) PMSM motor models on FPGA
+[      0.371 ]           OpalRtMain.c        : XSG_EHS.value=true
+[      0.371 ]           OpalRtMain.c        : XSG_EHS.version=11.0
+[      0.371 ]           OpalRtMain.c        : XSG_EHS.description=Enables ultra-fast electric solver (eHS) on FPGA 
+[      0.371 ]           OpalRtMain.c        : ARTEMIS_MMC_FPGA.value=true
+[      0.371 ]           OpalRtMain.c        : ARTEMIS_MMC_FPGA.version=7.0
+[      0.371 ]           OpalRtMain.c        : ARTEMIS_MMC_FPGA.description=Enables multi-modular converter (MMC) models on FPGA
+[      0.371 ]           OpalRtMain.c        : XSG_FP.value=true
+[      0.371 ]           OpalRtMain.c        : XSG_FP.version=11.0
+[      0.371 ]           OpalRtMain.c        : XSG_FP.description=Enables XSG floating point (FP) block set on FPGA
+[      0.371 ]           OpalRtMain.c        : XSG_DEV.value=true
+[      0.371 ]           OpalRtMain.c        : XSG_DEV.version=11.0
+[      0.371 ]           OpalRtMain.c        : XSG_DEV.description=Enables XSG development of custom firmware on FPGA
+[      0.371 ]           OpalRtMain.c        : XSG_RT.value=true
+[      0.371 ]           OpalRtMain.c        : XSG_RT.version=11.0
+[      0.371 ]           OpalRtMain.c        : XSG_RT.description=Enables XSG runtime execution of custom firmware on FPGA
+[      0.371 ]           OpalRtMain.c        : RTXSG_MMC.value=true
+[      0.371 ]           OpalRtMain.c        : RTXSG_MMC.version=11.0
+[      0.371 ]           OpalRtMain.c        : RTXSG_MMC.description=Enables RT-XSG blockset with MMC Block
+[      0.371 ]           OpalRtMain.c        : RTLAB_C37_118_MASTER.value=true
+[      0.371 ]           OpalRtMain.c        : RTLAB_C37_118_MASTER.version=11.0
+[      0.371 ]           OpalRtMain.c        : RTLAB_C37_118_MASTER.description=Enables C37.118 master protocol option.
+[      0.371 ]           OpalRtMain.c        : XSG_MMC_VALVE_CONTROLLERS.value=6
+[      0.371 ]           OpalRtMain.c        : XSG_MMC_VALVE_CONTROLLERS.version=11.0
+[      0.371 ]           OpalRtMain.c        : XSG_MMC_VALVE_CONTROLLERS.description=Maximum number of valve controllers
+[      0.371 ]           OpalRtMain.c        : ARTEMIS_MMC_2P.value=true
+[      0.371 ]           OpalRtMain.c        : ARTEMIS_MMC_2P.version=7.0
+[      0.371 ]           OpalRtMain.c        : ARTEMIS_MMC_2P.description=Enables ARTEMIS blockset with MMC 2P Block
+[      0.371 ]           OpalRtMain.c        : PHASOR_PARALLEL.value=1
+[      0.371 ]           OpalRtMain.c        : PHASOR_PARALLEL.version=11.0
+[      0.371 ]           OpalRtMain.c        : PHASOR_PARALLEL.description=Number of enabled threads for the ePHASORsim parallel feature
+[      0.371 ]           OpalRtMain.c        : XSG_MMC_CELLS_PER_VALVE.value=100
+[      0.371 ]           OpalRtMain.c        : XSG_MMC_CELLS_PER_VALVE.version=11.0
+[      0.371 ]           OpalRtMain.c        : XSG_MMC_CELLS_PER_VALVE.description=MMC cells per valve
+[      0.371 ]           OpalRtMain.c        : XSG_MMC_VALVES.value=6
+[      0.371 ]           OpalRtMain.c        : XSG_MMC_VALVES.version=11.0
+[      0.371 ]           OpalRtMain.c        : XSG_MMC_VALVES.description=MMC Valves
+[      0.371 ]           OpalRtMain.c        : RTLAB_DEV.value=true
+[      0.371 ]           OpalRtMain.c        : RTLAB_DEV.version=11.0
+[      0.371 ]           OpalRtMain.c        : RTLAB_DEV.description=Allows to compile a model
+[      0.371 ]           OpalRtMain.c        : C37_118_MASTER.value=true
+[      0.371 ]           OpalRtMain.c        : C37_118_MASTER.version=11.0
+[      0.371 ]           OpalRtMain.c        : C37_118_MASTER.description=C37118 MASTER
+[      0.371 ]           OpalRtMain.c        : C37_118_SLAVE.value=true
+[      0.371 ]           OpalRtMain.c        : C37_118_SLAVE.version=11.0
+[      0.371 ]           OpalRtMain.c        : C37_118_SLAVE.description=C37118 SLAVE
+[      0.371 ]           OpalRtMain.c        : MACHINE_INFO_BEGIN
+[      0.371 ]           OpalRtMain.c        : MAC_RANK=0
+[      0.371 ]           OpalRtMain.c        : INFO_TIME=06/05/2016
+[      0.371 ]           OpalRtMain.c        : MAC Address=0C:C4:7A:0C:1F:5A
+[      0.371 ]           OpalRtMain.c        : HD Serial Number=SATA_Samsung_SSD_840S1ANNSADB62748Y
+[      0.371 ]           OpalRtMain.c        : MACHINE_INFO_END
+[      0.372 ]           OpalRtMain.c        : -------  License info dump END  -------
+[      0.372 ]           OpalRtMain.c        : 
+[      0.372 ]           Highest active CPU: 4
+[      0.372 ]           Subsystem SM_master allocates 1 cores.
+[      0.372 ]           Subsystem SS_controller allocates 1 cores.
+[      0.386 ]           OpalRtMain.c        : model my_pv_system_3_ss_controller assigned to logical cpu 2
+[      0.386 ]           OpalRtMain.c        : Line 8131
+[      0.386 ]           OpalRtMain.c        : Line 863
+[      0.386 ]           OpalRtMain.c        : Monitoring is enabled
+[      0.887 ]           MonLogger.c         : Monitoring: finding synchronization data from other subsys on this machine ...
+[      0.887 ]           MonLogger.c         : Registering internal probes ...
+[      0.887 ]           MonLogger.c         : id  0 given to event &quot;Sync Handler Jitter&quot;
+[      0.887 ]           MonLogger.c         : id  1 given to event &quot;Synchronized IOs&quot;
+[      0.887 ]           MonLogger.c         : id  2 given to event &quot;Status Update&quot;
+[      0.887 ]           MonLogger.c         : id  3 given to event &quot;Data Acquisition&quot;
+[      0.887 ]           MonLogger.c         : id  4 given to event &quot;New Data Acquisition&quot;
+[      0.887 ]           MonLogger.c         : id  5 given to event &quot;Signals Change&quot;
+[      0.887 ]           MonLogger.c         : id  6 given to event &quot;User Blobs&quot;
+[      0.887 ]           MonLogger.c         : id  7 given to event &quot;Send Status&quot;
+[      0.887 ]           MonLogger.c         : id  8 given to event &quot;Multi-Receive&quot;
+[      0.887 ]           MonLogger.c         : id  9 given to event &quot;Handle target requests&quot;
+[      0.887 ]           MonLogger.c         : id 10 given to event &quot;Handle host requests&quot;
+[      0.887 ]           MonLogger.c         : id 11 given to event &quot;Pre-execution computation time&quot;
+[      0.887 ]           MonLogger.c         : id 12 given to event &quot;Major computation time&quot;
+[      0.887 ]           MonLogger.c         : id 13 given to event &quot;Minor computation time&quot;
+[      0.887 ]           MonLogger.c         : id 14 given to event &quot;Post-execution computation time&quot;
+[      0.887 ]           MonLogger.c         : id 15 given to event &quot;Execution Cycle&quot;
+[      0.887 ]           MonLogger.c         : id 16 given to event &quot;Total Step Size&quot;
+[      0.887 ]           MonLogger.c         : id 17 given to event &quot;Idle wait for clock&quot;
+[      0.887 ]           MonLogger.c         : id 18 given to event &quot;Idle wait for comm&quot;
+[      0.887 ]           MonLogger.c         : id 19 given to event &quot;Idle wait for io&quot;
+[      0.887 ]           MonLogger.c         : id 20 given to event &quot;Total idle&quot;
+[      0.887 ]           MonLogger.c         : id 21 given to event &quot;Number of Overruns&quot;
+[      0.887 ]           MonLogger.c         : id 22 given to event &quot;Send_RT to SM_master&quot;
+[      0.887 ]           MonLogger.c         : id 23 given to event &quot;Recv_RT from SM_master&quot;
+[      0.887 ]           MonLogger.c         : Done registering 22 internal probes.
+[      0.887 ]           OpalSync.c          : Monitoring Controller initialization, step 1 done
+[      0.887 ]           OpalRtMain.c        : OpalAcq_Init()
+[      0.887 ]           Loading data file: OpalAcquisitionSourcesCreator.data
+[      0.889 ]           Loading data file: OpalRealTimeParametersCreator.data
+[      0.891 ]           Service Parameters/ParametersService found
+[      0.891 ]           HostRequest.c       : Requests from host will be received from thread
+[      0.891 ]           OpalHostRecvIf.c    : Recv Thread started
+[      0.891 ]           TargetRequest.c     : Requests to host will be sent from thread
+[      0.891 ]           TargetRequest.c     : Requests to file will be sent from thread
+[      0.892 ]           OpalHostSendIf.c    : Send Thread started
+[      2.688 ]           OpalHostRecvIf.c    : RECV: connection to host established
+[      2.694 ]           OpalPrint.c         : Sending path notification request for system control (cmd 29)
+[      2.694 ]           OpalHostSendIf.c    : SEND: connection to host established
+[      2.894 ]           OpalTarget.c        : OPALRT Shared Memory unlocked (post)
+[      2.895 ]           OpalTarget.c        : Sub-systems added at position 0.
+[      2.895 ]           OpalRtMain.c        : OpalInit: OPALRT shared memory found and opened
+[      2.895 ]           OpalRtMain.c        : Line 1130
+[      2.895 ]           OpalRtMain.c        : RT_mem_name = RT_my_pv_system_3_ss_controller_7671
+[      2.895 ]           OpalRtMain.c        : Line 1136
+[      2.895 ]           OpalRtIf.c          : Shared memory RT created
+[      2.900 ]           OpalRtMain.c        : Line 1141
+[      2.900 ]           OpalRtMain.c        : State and status will be send first.
+[      2.900 ]           OpalRtMain.c        : A Unit delay is applied on status exchange.
+[      2.900 ]           OpalRtMain.c        : Line 1246
+[      2.900 ]           OpalRtMain.c        : Model stop time has been set to 0.000000 s
+[      2.900 ]           OpalRtMain.c        : Model pause time has been set to 0.000000 s
+[      2.900 ]           OpalRtMain.c        : Line 1311
+[      2.900 ]           OpalRtMain.c        : Snapshot enabled.
+[      2.900 ]           OpalRtMain.c        : Line 1342
+[      2.900 ]           OpalRtMain.c        : Line 1418
+[      2.900 ]           OpalRtMain.c        : Line 1542
+[      2.900 ]           OpalRtMain.c        : Line 1579
+[      2.900 ]           OpalRtMain.c        : Line 1601
+[      2.900 ]           OpalRtMain.c        : Line 1640
+[      2.900 ]           OpalRtMain.c        : Line 1664
+[      2.900 ]           OpalRtMain.c        : Assigned main thread to CPU 2 (mask 0x4)
+[      2.900 ]           OpalRtMain.c        : Display of standard output will be disabled
+[      2.900 ]           OpalRtMain.c        : Standard output has been redirected to /dev/null
+[      2.900 ]           OpalRtMain.c        : Standard error has been redirected to /dev/null
+[      2.900 ]           OpalRtMain.c        : Standard input has been redirected to /dev/null
+[      2.900 ]           OpalRtMain.c        : Line 1696
+[      2.900 ]           OpalBlobsInternal.c : blobs: new callback function registered for blob id &quot;OP_INFO_REGISTER_GET_INFO&quot;
+[      2.900 ]           OpalBlobsInternal.c : blobs: new callback function registered for blob id &quot;OP_INFO_REGISTER_SET_INFO_3&quot;
+[      2.901 ]           OpalRtMain.c        : Exiting from OpalInit function. User block(s) will be called.
+[      2.901 ]           send_rt.c           : Send_RT: Sending 6 signal(s) to logical node 1
+[      2.901 ]           OpalAcquisition.c   : Successfully registered acq group 2 for 4 fixed signals and 0 max dynamic signals
+[      2.901 ]           recv_rt.c           : Recv_RT: Receiving 17 signal(s) from logical node 1
+[      2.901 ]           OpalRtMain.c        : SyncExchanger manager licenses registering...
+[      2.901 ]           OpalRtMain.c        : OpalMainLoop()
+[      2.901 ]           OpalSync.c          : Monitoring Controller initialization completed.
+[      2.901 ]           MonLogger.c         : Acq source memory created for monitoring, 24 probes, 48 signals
+[      2.901 ]           MonLogger.c         : Monitoring Logger initialization completed.
+[      2.901 ]           OpalAcquisition.c   : Successfully registered 48 signals for monitoring
+[      2.901 ]           OpalAcquisition.c   : Registering trigger for acq group 2 : type is 3, offset is 0
+[      2.901 ]           OpalAcquisition.c   : Registering trigger for acq group 25 : type is 3, offset is 0
+[      2.901 ]           OpalBlobsInternal.c : blobs: new callback function registered for blob id &quot;STATIC_ACQ_INFO&quot;
+[      2.901 ]           OpalClientServer.c  : DATA MEM allocated: 208336 bytes for client 7
+[      2.901 ]           OpalClientServer.c  : (One extra signal for Write to File)
+[      2.901 ]           OpalClientServer.c  : DATA MEM allocated: 87504 bytes for client 30
+[      2.901 ]           OpalClientServer.c  : (One extra signal for Write to File)
+[      3.001 ]           OpalRtMain.c        : Line 1778
+[      3.001 ]           OpalClientServer.c  : DATA MEM allocated: 3940 bytes for client 1
+[      3.001 ]           OpalClientServer.c  : (One extra signal for Write to File)
+[      3.001 ]           OpalRtMain.c        : Line 1783
+[      3.002 ]           OpalRtBlobs.c       : Number of registered blobs ids = 3
+[      3.002 ]           OpalClientServer.c  : DATA MEM allocated: 66092 bytes for client 5
+[      3.002 ]           OpalClientServer.c  : (One extra signal for Write to File)
+[      3.002 ]           OpalRtBlobs.c       : OpalBlobs_MemInit, frame 0, actualDataSize 66092
+[      3.002 ]           OpalRtMain.c        : Line 1785
+[      3.002 ]           OpalIO.c            : Searching call back INIT for sample time 0.000000 ...
+[      3.002 ]           OpalIO.c            : Searching call back INIT for sample time 0.000050 ...
+[      3.002 ]           OpalRtMain.c        : Line 1795
+[      3.002 ]           OpalRtIf.c          : Shared memory MRate opened
+[      3.002 ]           OpalRtIf.c          : Line 2338
+[      3.202 ]           OpalRtIf.c          : Line 2363
+[      3.309 ]           OpalRtIf.c          : sm_master have 513 points (500+0+5+0+4+4+0+0)
+[      3.309 ]           OpalRtIf.c          : ss_controller have 513 points (500+0+5+0+4+4+0+0)
+[      3.309 ]           OpalRtIf.c          : Status sample time: 0.000050
+[      3.309 ]           OpalRtIf.c          : Line 3040
+[      3.309 ]           OpalRtMain.c        : SubSystem step size = 0.000050 sec. Status updated at every 1 local step.
+[      3.309 ]           OpalRtMain.c        : XHP mode enabled on this CPU.
+[      3.309 ]           OpalRtMain.c        : Not synchronized: Time step is determined by reception of data from another subsystem.
+[      3.309 ]           OpalRtMain.c        : Line 2231
+[      3.309 ]           OpalClientServer.c  : DATA MEM allocated: 10890 bytes for client 3
+[      3.309 ]           OpalClientServer.c  : (One extra signal for Write to File)
+[      3.309 ]           OpalRtMain.c        : Line 2296
+[      3.309 ]           OpalRtMain.c        : Parameters Init: subsystem has 328 values (328), 1 pages.
+
+[      3.309 ]           OpalClientServer.c  : DATA MEM allocated: 6382 bytes for client 2
+[      3.309 ]           OpalClientServer.c  : (One extra signal for Write to File)
+[      3.309 ]           OpalRtMain.c        : Line 2302
+[      3.309 ]           OpalClientServer.c  : DATA MEM allocated: 327645 bytes for client 4
+[      3.310 ]           OpalClientServer.c  : (One extra signal for Write to File)
+[      3.310 ]           Signals.c           : ReturnSignalsInit, id 4, maxNbSignals 1015, buf size 327645
+[      3.310 ]           Signals.c           : ReturnSignalsInit, frame 0, actualDataSize 327645
+[      3.310 ]           OpalRtMain.c        : Line 2320
+[      3.417 ]           OpalRtMain.c        : Subsys found in shared memory.
+[      3.417 ]           commrt_shmem.c      : useFlag 1 to send to logical node 1
+[      3.417 ]           commrt_shmem.c      : useFlag 1 to recv from logical node 1
+[      3.444 ]           commrt_shmem.c      : CommRtRecvPrepShmem: using RecvXhpFromXhpWithMonitoring to receive from logical node 1
+[      3.444 ]           commrt_shmem.c      : CommRtSendPrepShmem: using SendShmemXhpToXhp to send to logical node 1
+[      3.444 ]           OpalRtMain.c        : Line 2347
+[      3.952 ]           OpalTarget.c        : Sending notification request for system control (cmd 7)
+[      3.959 ]           OpalRtMain.c        : Line 2352
+[      3.959 ]           OpalRtMain.c        : Line 2418
+[      3.959 ]           OpalRtMain.c        : The model contains 1 sample times.
+[      3.959 ]           OpalRtMain.c        : Base sample time = 0.000050
+[      3.959 ]           OpalRtMain.c        : Real-time SingleTasking mode.
+[      3.959 ]           OpalRtMain.c        : OpalExecutionMainLoop()
+[      3.959 ]           OpalRtMain.c        : RT-LAB license ok. Unlimited time license.
+[      3.959 ]           MonLogger.c         : Monitoring: finding synchronization data from other subsys on this machine ...
+[      3.959 ]           MonLogger.c         : Monitoring: synchronization data found.
+[      3.959 ]           MonLogger.c         : Monitoring: start time = 979.835 ms, using CPU speed = 3300 MHz
+[      3.959 ]           OpalRtSnapshot.c    : Snapshot taken (opmy_pv_system_ss_controller_0.snap).
+[      3.959 ]           OpalRtSnapshot.c    : Estimated time to take a snapshot = 2 us.
+[      3.960 ]           OpalPrint.c         : Sending file name notification request for system control (cmd 30)
+[      3.960 ]           OpalHostSendIf.c    : Open file done (/home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_workspace/pv_inverter/models/my_pv_system/my_pv_system_ss_controller/opmy_pv_system_ss_controller_0.snap)
+[      3.960 ]           OpalHostSendIf.c    : Close file done (/home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_workspace/pv_inverter/models/my_pv_system/my_pv_system_ss_controller/opmy_pv_system_ss_controller_0.snap)
+[      3.960 ]           OpalPrint.c         : Sending file name notification request for system control (cmd 33)
+[      3.961 ]           OpalTarget.c        : Sending notification request for system control (cmd 20)
+[      3.961 ]           OpalRtMain.c        :  [0]: PAUSE mode, IO set to pause value.
+[      3.961 ]           OpalRtMain.c        : 		Fri May 26 22:48:21 2017
+
+[      4.088 ]           OpalRtMain.c        : SYS_CALC_STEP Command (0.000050)
+[      4.088 ]           OpalTarget.c        : Sending feedback request for system control (cmd 8)
+[      4.139 ]           OpalRtMain.c        : received blob cmd 60 at cycle 0
+[      4.139 ]           OpalRtBlobs.c       : Sending feedback request for blobs (cmd 60)
+[      4.139 ]           OpalTarget.c        : Send data request for client 5 (Queue=1)
+[      4.159 ]           OpalRtMain.c        : received blob cmd 61 at cycle 0
+[      4.159 ]           OpalRtBlobs.c       : Sending feedback request for blobs (cmd 61)
+[      4.159 ]           OpalTarget.c        : Send data request for client 5 (Queue=1)
+[      4.179 ]           OpalRtMain.c        : received blob cmd 59 at cycle 0
+[      4.199 ]           OpalRtMain.c        : handling blob cmd 59 at cycle 0 (blob OP_INFO_REGISTER_GET_INFO)
+[      4.199 ]           OpalRtBlobs.c       : Sending feedback request for blobs (cmd 59)
+[      4.199 ]           OpalTarget.c        : Send data request for client 5 (Queue=1)
+[      4.229 ]           OpalSync.c          : Monitoring: received request for number of probes
+[      4.229 ]           OpalSync.c          : Sending feedback request for monitoring (cmd 48)
+[      4.229 ]           OpalTarget.c        : Send data request for client 1 (Queue=1)
+[      7.562 ]           Unable to create a new HTTP connection - aborting
+[      7.591 ]           192.168.5.200:25254/resources/root/B79D7999-7DEA-46E4-B369-42E114845D7C : data -&gt; 1
+[      7.792 ]           OpalRtMain.c        : received blob cmd 59 at cycle 0
+[      7.802 ]           OpalRtMain.c        : handling blob cmd 59 at cycle 0 (blob STATIC_ACQ_INFO)
+[      7.802 ]           OpalRtBlobs.c       : Sending feedback request for blobs (cmd 59)
+[      7.802 ]           OpalTarget.c        : Send data request for client 5 (Queue=1)
+[      7.903 ]           OpalSync.c          : Group 2: Receive 9 cmd from probe
+[      7.903 ]           OpalAcquisition.c   : Changing trigger for acq group 2 : type is 3, offset is 0
+[      7.903 ]           OpalSync.c          : Probe cmd 34 for 2 subSys (group 2)
+[      7.913 ]           OpalAcquisition.c   : Probe cmd (34) group 2: ok to apply at pass 0.000000
+[      7.913 ]           OpalAcquisition.c   : ACQ GROUP 2: UPDATING PARAMETER AT PASS 0.000000 ....
+
+[      7.913 ]           OpalAcquisition.c   : Group 2: repeat factor = 1 (1), status decimation = 1
+[      7.913 ]           OpalAcquisition.c   : Probe cmd has been applied at pass 0.000000.
+[      7.953 ]           OpalSync.c          : Group 25: Receive 9 cmd from probe
+[      7.953 ]           OpalAcquisition.c   : Changing trigger for acq group 25 : type is 3, offset is 0
+[      7.953 ]           OpalSync.c          : Probe cmd 34 for 2 subSys (group 25)
+[      7.963 ]           OpalAcquisition.c   : Probe cmd (34) group 25: ok to apply at pass 0.000000
+[      7.963 ]           OpalAcquisition.c   : ACQ GROUP 25: UPDATING PARAMETER AT PASS 0.000000 ....
+
+[      7.963 ]           OpalAcquisition.c   : Group 25: repeat factor = 1 (1), status decimation = 1
+[      7.963 ]           OpalAcquisition.c   : Probe cmd has been applied at pass 0.000000.
+[      8.045 ]           Unable to create a new HTTP connection - aborting
+[      8.045 ]           Unable to create a new HTTP connection - aborting
+Starting transfer of /home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_workspace/pv_inverter/models/my_pv_system/my_pv_system_ss_controller/opmy_pv_system_ss_controller_0.snap...
+Transfer of /home/laptop-5fbkhmjv/users/jiang/opal-rt/rt-labv11_workspace/pv_inverter/models/my_pv_system/my_pv_system_ss_controller/opmy_pv_system_ss_controller_0.snap OK
+[    114.417 ]           OpalRtMain.c        : SYS_CALC_STEP Command (0.000050)
+[    114.417 ]           OpalTarget.c        : Sending feedback request for system control (cmd 8)
+[    114.427 ]           OpalRtMain.c        : SYS_EXECUTE Command
+[    114.427 ]           OpalRtMain.c        : Calculation step set to 0.000050, stopTime = 0.000000, pauseTime = 0.000000
+[    114.427 ]           OpalRtMain.c        : XHP mode enabled
+[    114.427 ]           OpalTarget.c        : Sending notification request for system control (cmd 9)
+[    114.427 ]           OpalTarget.c        : Sending feedback request for system control (cmd 9)
+[    114.427 ]           OpalRtMain.c        :  [1]: RUN mode, IO set to run value.
+[    114.427 ]           OpalRtMain.c        : 		Approximative step size = 50 us.
+[    114.427 ]           OpalRtMain.c        : 		Fri May 26 22:50:11 2017
+
+[    114.427 ]           OpalAcquisition.c   : ACQ GROUP 2: UPDATING PARAMETER AT PASS 0.000000 ....
+
+[    114.427 ]           OpalAcquisition.c   : Group 2: repeat factor = 1 (1), status decimation = 1
+[    114.427 ]           OpalAcquisition.c   : ACQ GROUP 25: UPDATING PARAMETER AT PASS 0.000000 ....
+
+[    114.427 ]           OpalAcquisition.c   : Group 25: repeat factor = 1 (1), status decimation = 1
+[    114.438 ]           OpalRtMain.c        : Main priority set to 99
+[    398.363 ]           OpalRtMain.c        : XHP mode disabled
+[    398.363 ]           OpalRtMain.c        :  [5678466]: Reset
+[    398.363 ]           OpalRtMain.c        : 		Fri May 26 22:54:55 2017
+
+[    398.363 ]           OpalRtMain.c        : OpalCloseBeforeUserFunction()
+[    398.363 ]           OpalIO.c            : Searching call back CLOSE for sample time 0.000000 ...
+[    398.363 ]           OpalIO.c            : Searching call back CLOSE for sample time 0.000050 ...
+[    398.363 ]           OpalRtMain.c        : OpalClose()
+[    398.363 ]           OpalTarget.c        : Sending feedback request for system control (cmd 13)
+[    398.363 ]           OpalRtMain.c        : OpalParameter_Close()
+[    398.363 ]           OpalRtMain.c        : CommRtClose()
+[    398.364 ]           OpalPrint.c         : Sending file name notification request for system control (cmd 30)
+[    398.364 ]           TargetRequest.c     : Purging target requests priority 0 ...
+[    398.364 ]           TargetRequest.c     : Done purging target requests priority 0.
+[    398.364 ]           TargetRequest.c     : Purging target requests priority 1 ...
+[    398.374 ]           TargetRequest.c     : Done purging target requests priority 1.
+[    398.374 ]           TargetRequest.c     : Reset done
+[    398.474 ]           OpalHostSendIf.c    : SEND: connection to host closed
+[    398.575 ]           OpalTarget.c        : Subsystem at position 0 (total = 2) has been deleted.
+[    398.576 ]           
+
+MasterRoot shutdown!
+[    398.576 ]           Unable to create a new HTTP connection - aborting
+[    398.577 ]           Objects destruction
+Executing script /usr/opalrt/v11.0.8.13/common/python/rtlab/global/target_subsys_postreset.py ... done
+
+
+--------------- Retrieving files ... ---------------------------------
+
+Setting local directory to C:\Users\jiang\OPAL-RT\RT-LABv11_Workspace\pv_inverter\models\my_pv_system\my_pv_system_ss_controller\OpREDHAWKtarget\... OK.
+
+--------------- Done retrieving files --------------------------------
+
+                    </value>
+                </textlog>
+            </item>
         </item>
     </item>
 </item>

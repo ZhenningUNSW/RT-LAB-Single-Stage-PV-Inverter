@@ -4396,7 +4396,7 @@ NetworkInterfacesManager on LAPTOP-5FBKHMJV: (5 interfaces)
   - state: Up
   ` subnet boundaries: [127.0.0.0, 127.255.255.255]
   - found in subnet map: Loopback Pseudo-Interface 1
-* VMware Network Adapter VMnet1 (index: 16)
+* VMware Network Adapter VMnet1 (index: 14)
   - IP address: 192.168.163.1 [0xc0a8a301]
   - MAC address: 00-50-56-c0-00-01
   - type: Wired
@@ -4410,7 +4410,7 @@ NetworkInterfacesManager on LAPTOP-5FBKHMJV: (5 interfaces)
   - state: Up
   ` subnet boundaries: [192.168.44.0, 192.168.44.255]
   - found in subnet map: VMware Network Adapter VMnet8
-* Wi-Fi (index: 26)
+* Wi-Fi (index: 25)
   - IP address: 10.248.73.220 [0x0af849dc]
   - MAC address: 48-e2-44-4e-21-dd
   - type: Wireless

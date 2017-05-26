@@ -7,7 +7,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.227"
+    ComputedModelVersion    "1.230"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -58,12 +58,12 @@ Model {
 	  ViewObjType		  "SimulinkTopLevel"
 	  LoadSaveID		  "0"
 	  Extents		  [924.0, 832.0]
-	  ZoomFactor		  [2.0]
-	  Offset		  [330.0, -7.0]
+	  ZoomFactor		  [1.5]
+	  Offset		  [230.90476190476193, -99.571428571428612]
 	}
 	Object {
 	  $ObjectID		  6
-	  IsActive		  [1]
+	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "27"
 	  Extents		  [924.0, 832.0]
@@ -81,12 +81,12 @@ Model {
 	}
 	Object {
 	  $ObjectID		  8
-	  IsActive		  [0]
+	  IsActive		  [1]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "2"
 	  Extents		  [924.0, 832.0]
-	  ZoomFactor		  [1.25]
-	  Offset		  [458.48319000819049, -71.903521703521676]
+	  ZoomFactor		  [1.0]
+	  Offset		  [420.08319000819051, -179.10352170352166]
 	}
 	Object {
 	  $ObjectID		  9
@@ -112,7 +112,7 @@ Model {
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "187"
 	  Extents		  [924.0, 832.0]
-	  ZoomFactor		  [1.5520517907486686]
+	  ZoomFactor		  [1.5520517907486688]
 	  Offset		  [686.64881593110829, 32.746165231431576]
 	}
 	PropName		"EditorsInfo"
@@ -129,9 +129,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "jiang"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Thu Mar 09 19:13:15 2017"
-  RTWModifiedTimeStamp	  410987593
-  ModelVersionFormat	  "1.%<AutoIncrement:227>"
+  LastModifiedDate	  "Fri May 26 22:41:27 2017"
+  RTWModifiedTimeStamp	  417739284
+  ModelVersionFormat	  "1.%<AutoIncrement:230>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1190,9 +1190,9 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "200"
+    ZoomFactor		    "150"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "402"
+    SIDHighWatermark	    "405"
     Block {
       BlockType		      Reference
       Name		      "ARTEMIS Guide"
@@ -1287,7 +1287,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"125"
+	ZoomFactor		"100"
 	Block {
 	  BlockType		  Inport
 	  Name			  "sc_in1"
@@ -1694,28 +1694,6 @@ Model {
 	}
 	Block {
 	  BlockType		  Reference
-	  Name			  "adjust reference"
-	  SID			  "10"
-	  Ports			  [1, 1]
-	  Position		  [770, 257, 860, 273]
-	  ZOrder		  -8
-	  BackgroundColor	  "[0.380392, 0.741176, 0.988235]"
-	  LibraryVersion	  "1.354"
-	  SourceBlock		  "simulink/Math\nOperations/Slider\nGain"
-	  SourceType		  "Slider Gain"
-	  ContentPreviewEnabled	  off
-	  low			  "0"
-	  gain			  "1000"
-	  high			  "1000"
-	  Port {
-	    PortNumber		    1
-	    Name		    "Irradiance_con"
-	    RTWStorageClass	    "Auto"
-	    DataLoggingNameMode	    "SignalName"
-	  }
-	}
-	Block {
-	  BlockType		  Reference
 	  Name			  "adjust reference1"
 	  SID			  "79"
 	  Ports			  [1, 1]
@@ -1732,6 +1710,28 @@ Model {
 	  Port {
 	    PortNumber		    1
 	    Name		    "Temperature_con"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "adjust reference2"
+	  SID			  "404"
+	  Ports			  [1, 1]
+	  Position		  [770, 257, 860, 273]
+	  ZOrder		  4338
+	  BackgroundColor	  "[0.380392, 0.741176, 0.988235]"
+	  LibraryVersion	  "1.354"
+	  SourceBlock		  "simulink/Math\nOperations/Slider\nGain"
+	  SourceType		  "Slider Gain"
+	  ContentPreviewEnabled	  off
+	  low			  "0"
+	  gain			  "500"
+	  high			  "1000"
+	  Port {
+	    PortNumber		    1
+	    Name		    "Irradiance_con"
 	    RTWStorageClass	    "Auto"
 	    DataLoggingNameMode	    "SignalName"
 	  }
@@ -1756,18 +1756,18 @@ Model {
 	}
 	Block {
 	  BlockType		  Constant
-	  Name			  "one"
-	  SID			  "11"
-	  Position		  [710, 255, 730, 275]
-	  ZOrder		  -9
-	  BackgroundColor	  "[0.380392, 0.741176, 0.988235]"
-	}
-	Block {
-	  BlockType		  Constant
 	  Name			  "one1"
 	  SID			  "78"
 	  Position		  [710, 305, 730, 325]
 	  ZOrder		  1
+	  BackgroundColor	  "[0.380392, 0.741176, 0.988235]"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "one2"
+	  SID			  "405"
+	  Position		  [710, 255, 730, 275]
+	  ZOrder		  4339
 	  BackgroundColor	  "[0.380392, 0.741176, 0.988235]"
 	}
 	Block {
@@ -1784,13 +1784,6 @@ Model {
 	  SrcBlock		  "sc_in1"
 	  SrcPort		  1
 	  DstBlock		  "OpComm"
-	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  3
-	  SrcBlock		  "one"
-	  SrcPort		  1
-	  DstBlock		  "adjust reference"
 	  DstPort		  1
 	}
 	Line {
@@ -2007,15 +2000,6 @@ Model {
 	  DstPort		  3
 	}
 	Line {
-	  Name			  "Irradiance_con"
-	  ZOrder		  127
-	  Labels		  [0, 0]
-	  SrcBlock		  "adjust reference"
-	  SrcPort		  1
-	  DstBlock		  "Bus\nCreator"
-	  DstPort		  1
-	}
-	Line {
 	  Name			  "Temperature_con"
 	  ZOrder		  128
 	  Labels		  [1, 1]
@@ -2043,6 +2027,22 @@ Model {
 	  Points		  [79, 0; 0, -40]
 	  DstBlock		  "Scope1"
 	  DstPort		  4
+	}
+	Line {
+	  ZOrder		  170
+	  SrcBlock		  "one2"
+	  SrcPort		  1
+	  DstBlock		  "adjust reference2"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "Irradiance_con"
+	  ZOrder		  174
+	  Labels		  [1, 1]
+	  SrcBlock		  "adjust reference2"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator"
+	  DstPort		  1
 	}
 	Annotation {
 	  SID			  "13"
@@ -2109,12 +2109,12 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"56"
+	ZoomFactor		"100"
 	Block {
 	  BlockType		  Inport
 	  Name			  "sm_in1_irradiance"
 	  SID			  "15"
-	  Position		  [85, 418, 115, 432]
+	  Position		  [10, 418, 40, 432]
 	  ZOrder		  -1
 	  BackgroundColor	  "lightBlue"
 	  IconDisplay		  "Port number"
@@ -2886,7 +2886,7 @@ Model {
 	  Name			  "OpComm"
 	  SID			  "21"
 	  Ports			  [1, 1]
-	  Position		  [185, 397, 245, 453]
+	  Position		  [110, 397, 170, 453]
 	  ZOrder		  -7
 	  LibraryVersion	  "1.471"
 	  FontSize		  10
@@ -3193,7 +3193,7 @@ Model {
 	  RequestExecContextInheritance	off
 	  System {
 	    Name		    "Subsystem"
-	    Location		    [-8, 0, 968, 1038]
+	    Location		    [952, 0, 1928, 1038]
 	    Open		    off
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
@@ -3205,7 +3205,7 @@ Model {
 	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
-	    ZoomFactor		    "60"
+	    ZoomFactor		    "125"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "console"

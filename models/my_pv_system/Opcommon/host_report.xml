@@ -186,35 +186,60 @@
                     </property>
                     <property name="35">
                         <value>
-                            d:\jiang\anaconda
+                            d:\strawberry\perl\bin
                         </value>
                     </property>
                     <property name="36">
                         <value>
-                            d:\jiang\anaconda\scripts
+                            d:\strawberry\perl\site\bin
                         </value>
                     </property>
                     <property name="37">
                         <value>
-                            d:\jiang\anaconda\library\bin
+                            d:\strawberry\c\bin
                         </value>
                     </property>
                     <property name="38">
                         <value>
-                            c:\users\jiang\appdata\local\microsoft\windowsapps
+                            d:\jiang\anaconda
                         </value>
                     </property>
                     <property name="39">
                         <value>
-                            d:\program files (x86)\microsoft vs code\bin
+                            d:\jiang\anaconda\scripts
                         </value>
                     </property>
                     <property name="40">
                         <value>
-                            d:\program files (x86)\microsoft vs code\bin
+                            d:\jiang\anaconda\library\bin
                         </value>
                     </property>
                     <property name="41">
+                        <value>
+                            c:\users\jiang\appdata\local\microsoft\windowsapps
+                        </value>
+                    </property>
+                    <property name="42">
+                        <value>
+                            d:\program files (x86)\microsoft vs code\bin
+                        </value>
+                    </property>
+                    <property name="43">
+                        <value>
+                            d:\program files (x86)\microsoft vs code\bin
+                        </value>
+                    </property>
+                    <property name="44">
+                        <value>
+                            d:\program files (x86)\microsoft vs code\bin
+                        </value>
+                    </property>
+                    <property name="45">
+                        <value>
+                            d:\program files (x86)\microsoft vs code\bin
+                        </value>
+                    </property>
+                    <property name="46">
                         <value>
                             d:\opal-rt\rt-lab\v11.0.8.13
                         </value>
@@ -276,8 +301,8 @@ NetworkInterfacesManager on LAPTOP-5FBKHMJV: (5 interfaces)
   - state: Up
   ` subnet boundaries: [192.168.44.0, 192.168.44.255]
   - found in subnet map: VMware Network Adapter VMnet8
-* Wi-Fi (index: 22)
-  - IP address: 10.248.65.9 [0x0af84109]
+* Wi-Fi (index: 25)
+  - IP address: 10.248.73.220 [0x0af849dc]
   - MAC address: 48-e2-44-4e-21-dd
   - type: Wireless
   - state: Up

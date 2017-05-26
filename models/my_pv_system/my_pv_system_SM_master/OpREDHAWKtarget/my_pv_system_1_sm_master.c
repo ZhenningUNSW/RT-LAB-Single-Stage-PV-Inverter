@@ -3,9 +3,9 @@
  *
  * Code generation for model "my_pv_system_1_sm_master".
  *
- * Model version              : 1.225
+ * Model version              : 1.231
  * Simulink Coder version : 8.7 (R2014b) 08-Sep-2014
- * C source code generated on : Mon Feb 27 11:22:27 2017
+ * C source code generated on : Fri May 26 22:43:51 2017
  *
  * Target selection: rtlab_rtmodel.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -449,13 +449,13 @@ void my_pv_system_1_sm_master_output(void)
 
     /* DataTypeConversion: '<S27>/Data Type Conversion' */
     my_pv_system_1_sm_master_B.DataTypeConversion[0] =
-      my_pv_system_1_sm_master_B.SFunction_g[0];
+      my_pv_system_1_sm_master_B.SFunction_c[0];
     my_pv_system_1_sm_master_B.DataTypeConversion[1] =
-      my_pv_system_1_sm_master_B.SFunction_g[1];
+      my_pv_system_1_sm_master_B.SFunction_c[1];
     my_pv_system_1_sm_master_B.DataTypeConversion[2] =
-      my_pv_system_1_sm_master_B.SFunction_g[2];
+      my_pv_system_1_sm_master_B.SFunction_c[2];
     my_pv_system_1_sm_master_B.DataTypeConversion[3] =
-      my_pv_system_1_sm_master_B.SFunction_g[3];
+      my_pv_system_1_sm_master_B.SFunction_c[3];
 
     /* Outputs for Enabled SubSystem: '<S24>/Tail' incorporates:
      *  EnablePort: '<S25>/Enable'
@@ -1072,7 +1072,7 @@ void my_pv_system_1_sm_master_output(void)
       my_pv_system_1_sm_master_B.donotdeletethisgain_a;
 
     /* RateLimiter: '<S12>/Rate Limiter' */
-    u1 = my_pv_system_1_sm_master_B.SFunction_l[0] -
+    u1 = my_pv_system_1_sm_master_B.SFunction_f[0] -
       my_pv_system_1_sm_master_DW.PrevY;
     if (u1 > my_pv_system_1_sm_master_P.RateLimiter_RisingLim) {
       my_pv_system_1_sm_master_B.IrradianceWm2_j =
@@ -1084,7 +1084,7 @@ void my_pv_system_1_sm_master_output(void)
         my_pv_system_1_sm_master_P.RateLimiter_FallingLim;
     } else {
       my_pv_system_1_sm_master_B.IrradianceWm2_j =
-        my_pv_system_1_sm_master_B.SFunction_l[0];
+        my_pv_system_1_sm_master_B.SFunction_f[0];
     }
 
     my_pv_system_1_sm_master_DW.PrevY =
@@ -1093,7 +1093,7 @@ void my_pv_system_1_sm_master_output(void)
     /* End of RateLimiter: '<S12>/Rate Limiter' */
 
     /* Saturate: '<S12>/Saturation' */
-    y = my_pv_system_1_sm_master_B.SFunction_l[1];
+    y = my_pv_system_1_sm_master_B.SFunction_f[1];
     u1 = my_pv_system_1_sm_master_P.Saturation_LowerSat_o;
     u2 = my_pv_system_1_sm_master_P.Saturation_UpperSat_e;
     if (y > u2) {
@@ -1156,7 +1156,7 @@ void my_pv_system_1_sm_master_update(void)
 
     /* Update for Memory: '<S3>/Memory' */
     my_pv_system_1_sm_master_DW.Memory_4_PreviousInput =
-      my_pv_system_1_sm_master_B.SFunction_g[5];
+      my_pv_system_1_sm_master_B.SFunction_c[5];
 
     /* Update for Memory: '<S3>/Memory' */
     my_pv_system_1_sm_master_DW.Memory_5_PreviousInput =
@@ -1196,13 +1196,13 @@ void my_pv_system_1_sm_master_update(void)
 
     /* Update for Memory: '<S3>/Memory1' */
     my_pv_system_1_sm_master_DW.Memory1_8_PreviousInput[0] =
-      my_pv_system_1_sm_master_B.SFunction_g[0];
+      my_pv_system_1_sm_master_B.SFunction_c[0];
     my_pv_system_1_sm_master_DW.Memory1_8_PreviousInput[1] =
-      my_pv_system_1_sm_master_B.SFunction_g[1];
+      my_pv_system_1_sm_master_B.SFunction_c[1];
     my_pv_system_1_sm_master_DW.Memory1_8_PreviousInput[2] =
-      my_pv_system_1_sm_master_B.SFunction_g[2];
+      my_pv_system_1_sm_master_B.SFunction_c[2];
     my_pv_system_1_sm_master_DW.Memory1_8_PreviousInput[3] =
-      my_pv_system_1_sm_master_B.SFunction_g[3];
+      my_pv_system_1_sm_master_B.SFunction_c[3];
 
     /* Update for UnitDelay: '<S24>/Unit Delay' */
     my_pv_system_1_sm_master_DW.UnitDelay_DSTATE[0] =
@@ -1901,7 +1901,7 @@ RT_MODEL_my_pv_system_1_sm_master_T *my_pv_system_1_sm_master(void)
   {
     int_T i;
     for (i = 0; i < 6; i++) {
-      my_pv_system_1_sm_master_B.SFunction_g[i] = 0.0;
+      my_pv_system_1_sm_master_B.SFunction_c[i] = 0.0;
     }
 
     for (i = 0; i < 12; i++) {
@@ -1971,8 +1971,8 @@ RT_MODEL_my_pv_system_1_sm_master_T *my_pv_system_1_sm_master(void)
     my_pv_system_1_sm_master_B.TransportDelay_j = 0.0;
     my_pv_system_1_sm_master_B.Memory_j = 0.0;
     my_pv_system_1_sm_master_B.Switch_p = 0.0;
-    my_pv_system_1_sm_master_B.SFunction_l[0] = 0.0;
-    my_pv_system_1_sm_master_B.SFunction_l[1] = 0.0;
+    my_pv_system_1_sm_master_B.SFunction_f[0] = 0.0;
+    my_pv_system_1_sm_master_B.SFunction_f[1] = 0.0;
     my_pv_system_1_sm_master_B.Product = 0.0;
     my_pv_system_1_sm_master_B.donotdeletethisgain_d = 0.0;
     my_pv_system_1_sm_master_B.donotdeletethisgain_a = 0.0;
@@ -2278,7 +2278,7 @@ RT_MODEL_my_pv_system_1_sm_master_T *my_pv_system_1_sm_master(void)
       }
 
       /* work vectors */
-      ssSetIWork(rts, (int_T *) &my_pv_system_1_sm_master_DW.SFunction_IWORK_n[0]);
+      ssSetIWork(rts, (int_T *) &my_pv_system_1_sm_master_DW.SFunction_IWORK_c[0]);
 
       {
         struct _ssDWorkRecord *dWorkRecord = (struct _ssDWorkRecord *)
@@ -2293,7 +2293,7 @@ RT_MODEL_my_pv_system_1_sm_master_T *my_pv_system_1_sm_master(void)
         ssSetDWorkWidth(rts, 0, 5);
         ssSetDWorkDataType(rts, 0,SS_INTEGER);
         ssSetDWorkComplexSignal(rts, 0, 0);
-        ssSetDWork(rts, 0, &my_pv_system_1_sm_master_DW.SFunction_IWORK_n[0]);
+        ssSetDWork(rts, 0, &my_pv_system_1_sm_master_DW.SFunction_IWORK_c[0]);
       }
 
       /* registration */
@@ -2417,7 +2417,7 @@ RT_MODEL_my_pv_system_1_sm_master_T *my_pv_system_1_sm_master(void)
         ssSetSFcnParamsCount(rts, 1);
         ssSetSFcnParamsPtr(rts, &sfcnParams[0]);
         ssSetSFcnParam(rts, 0, (mxArray*)
-                       my_pv_system_1_sm_master_P.SFunction_P1_Size_i);
+                       my_pv_system_1_sm_master_P.SFunction_P1_Size_c);
       }
 
       /* work vectors */
@@ -2726,11 +2726,11 @@ RT_MODEL_my_pv_system_1_sm_master_T *my_pv_system_1_sm_master(void)
         ssSetSFcnParamsCount(rts, 1);
         ssSetSFcnParamsPtr(rts, &sfcnParams[0]);
         ssSetSFcnParam(rts, 0, (mxArray*)
-                       my_pv_system_1_sm_master_P.SFunction_P1_Size_p);
+                       my_pv_system_1_sm_master_P.SFunction_P1_Size_b);
       }
 
       /* work vectors */
-      ssSetIWork(rts, (int_T *) &my_pv_system_1_sm_master_DW.SFunction_IWORK_b[0]);
+      ssSetIWork(rts, (int_T *) &my_pv_system_1_sm_master_DW.SFunction_IWORK_n[0]);
 
       {
         struct _ssDWorkRecord *dWorkRecord = (struct _ssDWorkRecord *)
@@ -2745,7 +2745,7 @@ RT_MODEL_my_pv_system_1_sm_master_T *my_pv_system_1_sm_master(void)
         ssSetDWorkWidth(rts, 0, 5);
         ssSetDWorkDataType(rts, 0,SS_INTEGER);
         ssSetDWorkComplexSignal(rts, 0, 0);
-        ssSetDWork(rts, 0, &my_pv_system_1_sm_master_DW.SFunction_IWORK_b[0]);
+        ssSetDWork(rts, 0, &my_pv_system_1_sm_master_DW.SFunction_IWORK_n[0]);
       }
 
       /* registration */
@@ -2831,7 +2831,7 @@ RT_MODEL_my_pv_system_1_sm_master_T *my_pv_system_1_sm_master(void)
           _ssSetOutputPortNumDimensions(rts, 0, 1);
           ssSetOutputPortWidth(rts, 0, 6);
           ssSetOutputPortSignal(rts, 0, ((real_T *)
-            my_pv_system_1_sm_master_B.SFunction_g));
+            my_pv_system_1_sm_master_B.SFunction_c));
         }
       }
 
@@ -2851,11 +2851,11 @@ RT_MODEL_my_pv_system_1_sm_master_T *my_pv_system_1_sm_master(void)
         ssSetSFcnParamsCount(rts, 3);
         ssSetSFcnParamsPtr(rts, &sfcnParams[0]);
         ssSetSFcnParam(rts, 0, (mxArray*)
-                       my_pv_system_1_sm_master_P.SFunction_P1_Size_d);
+                       my_pv_system_1_sm_master_P.SFunction_P1_Size_b3);
         ssSetSFcnParam(rts, 1, (mxArray*)
-                       my_pv_system_1_sm_master_P.SFunction_P2_Size_b);
+                       my_pv_system_1_sm_master_P.SFunction_P2_Size_o);
         ssSetSFcnParam(rts, 2, (mxArray*)
-                       my_pv_system_1_sm_master_P.SFunction_P3_Size_d);
+                       my_pv_system_1_sm_master_P.SFunction_P3_Size_c);
       }
 
       /* work vectors */
@@ -2960,8 +2960,8 @@ RT_MODEL_my_pv_system_1_sm_master_T *my_pv_system_1_sm_master(void)
           sfcnUPtrs[2] = &my_pv_system_1_sm_master_B.Product_d[2];
           sfcnUPtrs[3] = &my_pv_system_1_sm_master_B.Product_d[3];
           sfcnUPtrs[4] = &my_pv_system_1_sm_master_B.AC;
-          sfcnUPtrs[5] = &my_pv_system_1_sm_master_B.SFunction_g[5];
-          sfcnUPtrs[6] = &my_pv_system_1_sm_master_B.SFunction_g[4];
+          sfcnUPtrs[5] = &my_pv_system_1_sm_master_B.SFunction_c[5];
+          sfcnUPtrs[6] = &my_pv_system_1_sm_master_B.SFunction_c[4];
           ssSetInputPortSignalPtrs(rts, 0, (InputPtrsType)&sfcnUPtrs[0]);
           _ssSetInputPortNumDimensions(rts, 0, 1);
           ssSetInputPortWidth(rts, 0, 7);
@@ -3196,7 +3196,7 @@ RT_MODEL_my_pv_system_1_sm_master_T *my_pv_system_1_sm_master(void)
           _ssSetOutputPortNumDimensions(rts, 0, 1);
           ssSetOutputPortWidth(rts, 0, 2);
           ssSetOutputPortSignal(rts, 0, ((real_T *)
-            my_pv_system_1_sm_master_B.SFunction_l));
+            my_pv_system_1_sm_master_B.SFunction_f));
         }
       }
 
@@ -3216,9 +3216,9 @@ RT_MODEL_my_pv_system_1_sm_master_T *my_pv_system_1_sm_master(void)
         ssSetSFcnParamsCount(rts, 2);
         ssSetSFcnParamsPtr(rts, &sfcnParams[0]);
         ssSetSFcnParam(rts, 0, (mxArray*)
-                       my_pv_system_1_sm_master_P.SFunction_P1_Size_f);
+                       my_pv_system_1_sm_master_P.SFunction_P1_Size_k);
         ssSetSFcnParam(rts, 1, (mxArray*)
-                       my_pv_system_1_sm_master_P.SFunction_P2_Size_m);
+                       my_pv_system_1_sm_master_P.SFunction_P2_Size_k);
       }
 
       /* registration */

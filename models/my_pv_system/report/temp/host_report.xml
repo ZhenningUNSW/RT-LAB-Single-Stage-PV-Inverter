@@ -186,35 +186,60 @@
                     </property>
                     <property name="35">
                         <value>
-                            d:\jiang\anaconda
+                            d:\strawberry\perl\bin
                         </value>
                     </property>
                     <property name="36">
                         <value>
-                            d:\jiang\anaconda\scripts
+                            d:\strawberry\perl\site\bin
                         </value>
                     </property>
                     <property name="37">
                         <value>
-                            d:\jiang\anaconda\library\bin
+                            d:\strawberry\c\bin
                         </value>
                     </property>
                     <property name="38">
                         <value>
-                            c:\users\jiang\appdata\local\microsoft\windowsapps
+                            d:\jiang\anaconda
                         </value>
                     </property>
                     <property name="39">
                         <value>
-                            d:\program files (x86)\microsoft vs code\bin
+                            d:\jiang\anaconda\scripts
                         </value>
                     </property>
                     <property name="40">
                         <value>
-                            d:\program files (x86)\microsoft vs code\bin
+                            d:\jiang\anaconda\library\bin
                         </value>
                     </property>
                     <property name="41">
+                        <value>
+                            c:\users\jiang\appdata\local\microsoft\windowsapps
+                        </value>
+                    </property>
+                    <property name="42">
+                        <value>
+                            d:\program files (x86)\microsoft vs code\bin
+                        </value>
+                    </property>
+                    <property name="43">
+                        <value>
+                            d:\program files (x86)\microsoft vs code\bin
+                        </value>
+                    </property>
+                    <property name="44">
+                        <value>
+                            d:\program files (x86)\microsoft vs code\bin
+                        </value>
+                    </property>
+                    <property name="45">
+                        <value>
+                            d:\program files (x86)\microsoft vs code\bin
+                        </value>
+                    </property>
+                    <property name="46">
                         <value>
                             d:\opal-rt\rt-lab\v11.0.8.13
                         </value>
@@ -276,8 +301,8 @@ NetworkInterfacesManager on LAPTOP-5FBKHMJV: (5 interfaces)
   - state: Up
   ` subnet boundaries: [192.168.44.0, 192.168.44.255]
   - found in subnet map: VMware Network Adapter VMnet8
-* Wi-Fi (index: 22)
-  - IP address: 10.248.65.9 [0x0af84109]
+* Wi-Fi (index: 25)
+  - IP address: 10.248.73.220 [0x0af849dc]
   - MAC address: 48-e2-44-4e-21-dd
   - type: Wireless
   - state: Up
@@ -4083,6 +4108,357 @@ HttpClient::connect 127.0.0.1: Success
                     </property>
                 </item>
             </item>
+        </item>
+        <item name="Execution - Host (LAPTOP-5FBKHMJV)">
+            <property name="Computer name">
+                <value>
+                    LAPTOP-5FBKHMJV
+                </value>
+            </property>
+            <item name="Environment variables">
+                <item name="Path">
+                    <property name="0">
+                        <value>
+                            d:\opal-rt\rt-lab\v11.0.8.13\common\bin
+                        </value>
+                    </property>
+                    <property name="1">
+                        <value>
+                            d:/opal-rt/rt-lab/v11.0.8.13/common/ui/jre/bin/client
+                        </value>
+                    </property>
+                    <property name="2">
+                        <value>
+                            d:/opal-rt/rt-lab/v11.0.8.13/common/ui/jre/bin
+                        </value>
+                    </property>
+                    <property name="3">
+                        <value>
+                            d:/opal-rt/rt-lab/v11.0.8.13/common/ui/jre/lib/i386
+                        </value>
+                    </property>
+                    <property name="4">
+                        <value>
+                            c:\program files\nvidia gpu computing toolkit\cuda\v8.0\bin
+                        </value>
+                    </property>
+                    <property name="5">
+                        <value>
+                            c:\program files\nvidia gpu computing toolkit\cuda\v8.0\libnvvp
+                        </value>
+                    </property>
+                    <property name="6">
+                        <value>
+                            c:\programdata\oracle\java\javapath
+                        </value>
+                    </property>
+                    <property name="7">
+                        <value>
+                            c:\program files (x86)\intel\icls client\
+                        </value>
+                    </property>
+                    <property name="8">
+                        <value>
+                            c:\program files\intel\icls client\
+                        </value>
+                    </property>
+                    <property name="9">
+                        <value>
+                            c:\windows\system32
+                        </value>
+                    </property>
+                    <property name="10">
+                        <value>
+                            c:\windows
+                        </value>
+                    </property>
+                    <property name="11">
+                        <value>
+                            c:\windows\system32\wbem
+                        </value>
+                    </property>
+                    <property name="12">
+                        <value>
+                            c:\windows\system32\windowspowershell\v1.0\
+                        </value>
+                    </property>
+                    <property name="13">
+                        <value>
+                            c:\program files (x86)\nvidia corporation\physx\common
+                        </value>
+                    </property>
+                    <property name="14">
+                        <value>
+                            c:\program files\git\cmd
+                        </value>
+                    </property>
+                    <property name="15">
+                        <value>
+                            c:\python27
+                        </value>
+                    </property>
+                    <property name="16">
+                        <value>
+                            c:\users\jiang\.dnx\bin
+                        </value>
+                    </property>
+                    <property name="17">
+                        <value>
+                            c:\program files\microsoft dnx\dnvm\
+                        </value>
+                    </property>
+                    <property name="18">
+                        <value>
+                            c:\program files\microsoft sql server\130\tools\binn\
+                        </value>
+                    </property>
+                    <property name="19">
+                        <value>
+                            d:\program files\miktex 2.9\miktex\bin\x64
+                        </value>
+                    </property>
+                    <property name="20">
+                        <value>
+                            c:\program files (x86)\notepad++
+                        </value>
+                    </property>
+                    <property name="21">
+                        <value>
+                            c:\windows\system32
+                        </value>
+                    </property>
+                    <property name="22">
+                        <value>
+                            c:\windows
+                        </value>
+                    </property>
+                    <property name="23">
+                        <value>
+                            c:\windows\system32\wbem
+                        </value>
+                    </property>
+                    <property name="24">
+                        <value>
+                            c:\windows\system32\windowspowershell\v1.0\
+                        </value>
+                    </property>
+                    <property name="25">
+                        <value>
+                            c:\program files (x86)\intel\intel(r) management engine components\dal
+                        </value>
+                    </property>
+                    <property name="26">
+                        <value>
+                            c:\program files\intel\intel(r) management engine components\dal
+                        </value>
+                    </property>
+                    <property name="27">
+                        <value>
+                            c:\program files (x86)\intel\intel(r) management engine components\ipt
+                        </value>
+                    </property>
+                    <property name="28">
+                        <value>
+                            c:\program files\intel\intel(r) management engine components\ipt
+                        </value>
+                    </property>
+                    <property name="29">
+                        <value>
+                            c:\program files (x86)\matlab\r2014b\runtime\win32
+                        </value>
+                    </property>
+                    <property name="30">
+                        <value>
+                            d:\program files\gs\gs920\bin
+                        </value>
+                    </property>
+                    <property name="31">
+                        <value>
+                            c:\program files (x86)\microsoft sql server\110\dts\binn\
+                        </value>
+                    </property>
+                    <property name="32">
+                        <value>
+                            c:\program files (x86)\microsoft sql server\120\dts\binn\
+                        </value>
+                    </property>
+                    <property name="33">
+                        <value>
+                            c:\program files (x86)\microsoft sql server\130\dts\binn\
+                        </value>
+                    </property>
+                    <property name="34">
+                        <value>
+                            c:\program files (x86)\windows kits\10\windows performance toolkit\
+                        </value>
+                    </property>
+                    <property name="35">
+                        <value>
+                            d:\strawberry\perl\bin
+                        </value>
+                    </property>
+                    <property name="36">
+                        <value>
+                            d:\strawberry\perl\site\bin
+                        </value>
+                    </property>
+                    <property name="37">
+                        <value>
+                            d:\strawberry\c\bin
+                        </value>
+                    </property>
+                    <property name="38">
+                        <value>
+                            d:\jiang\anaconda
+                        </value>
+                    </property>
+                    <property name="39">
+                        <value>
+                            d:\jiang\anaconda\scripts
+                        </value>
+                    </property>
+                    <property name="40">
+                        <value>
+                            d:\jiang\anaconda\library\bin
+                        </value>
+                    </property>
+                    <property name="41">
+                        <value>
+                            c:\users\jiang\appdata\local\microsoft\windowsapps
+                        </value>
+                    </property>
+                    <property name="42">
+                        <value>
+                            d:\program files (x86)\microsoft vs code\bin
+                        </value>
+                    </property>
+                    <property name="43">
+                        <value>
+                            d:\program files (x86)\microsoft vs code\bin
+                        </value>
+                    </property>
+                    <property name="44">
+                        <value>
+                            d:\program files (x86)\microsoft vs code\bin
+                        </value>
+                    </property>
+                    <property name="45">
+                        <value>
+                            d:\program files (x86)\microsoft vs code\bin
+                        </value>
+                    </property>
+                    <property name="46">
+                        <value>
+                            d:\opal-rt\rt-lab\v11.0.8.13
+                        </value>
+                    </property>
+                </item>
+                <item name="PYTHONPATH">
+                    <property name="0">
+                        <value>
+                            d:\opal-rt\rt-lab\v11.0.8.13\common\python
+                        </value>
+                    </property>
+                    <property name="1">
+                        <value>
+                            d:\opal-rt\rt-lab\v11.0.8.13\common\bin
+                        </value>
+                    </property>
+                </item>
+                <property name="RTLAB_ROOT">
+                    <value>
+                        D:\OPAL-RT\RT-LAB\v11.0.8.13\
+                    </value>
+                </property>
+            </item>
+            <property name="IP">
+                <value>
+                    ['::1']
+                </value>
+            </property>
+            <item name="Network">
+                <textlog name="Network">
+                    <value>
+                        
+---------- Network interfaces list ----------
+NetworkInterfacesManager on LAPTOP-5FBKHMJV: (5 interfaces)
+* Ethernet (index: 2)
+  - IP address: 192.168.5.200 [0xc0a805c8]
+  - MAC address: 30-65-ec-89-ff-86
+  - type: Wired
+  - state: Up
+  ` subnet boundaries: [192.168.5.0, 192.168.5.255]
+  - found in subnet map: Ethernet
+* Loopback Pseudo-Interface 1 (index: 1)
+  - IP address: 127.0.0.1 [0x7f000001]
+  - MAC address: 
+  - type: Loopback
+  - state: Up
+  ` subnet boundaries: [127.0.0.0, 127.255.255.255]
+  - found in subnet map: Loopback Pseudo-Interface 1
+* VMware Network Adapter VMnet1 (index: 14)
+  - IP address: 192.168.163.1 [0xc0a8a301]
+  - MAC address: 00-50-56-c0-00-01
+  - type: Wired
+  - state: Up
+  ` subnet boundaries: [192.168.163.0, 192.168.163.255]
+  - found in subnet map: VMware Network Adapter VMnet1
+* VMware Network Adapter VMnet8 (index: 3)
+  - IP address: 192.168.44.1 [0xc0a82c01]
+  - MAC address: 00-50-56-c0-00-08
+  - type: Wired
+  - state: Up
+  ` subnet boundaries: [192.168.44.0, 192.168.44.255]
+  - found in subnet map: VMware Network Adapter VMnet8
+* Wi-Fi (index: 25)
+  - IP address: 10.248.73.220 [0x0af849dc]
+  - MAC address: 48-e2-44-4e-21-dd
+  - type: Wireless
+  - state: Up
+  ` subnet boundaries: [10.248.64.0, 10.248.79.255]
+  - found in subnet map: Wi-Fi
+---------------------------------------------
+
+
+---------- Object name resolution ----------
+IP successfully selected: 127.0.0.1:2525
+
+--------------------------------------------
+
+---------- HTTP Client ----------
+HttpClient::connect 127.0.0.1: Success
+
+------------------------------
+
+---------- Looking for self in own subnet ----------
+
+---------- Success ----------
+
+                    </value>
+                </textlog>
+            </item>
+            <item name="OS= Windows">
+                <property name="Other information">
+                    <value>
+                        
+                    </value>
+                </property>
+                <property name="Release">
+                    <value>
+                        post2008Server
+                    </value>
+                </property>
+                <property name="Version">
+                    <value>
+                        6.2.9200
+                    </value>
+                </property>
+            </item>
+            <property name="User Name">
+                <value>
+                    jiang
+                </value>
+            </property>
         </item>
     </item>
 </item>

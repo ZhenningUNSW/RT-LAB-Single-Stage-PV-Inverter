@@ -3,9 +3,9 @@
  *
  * Code generation for model "my_pv_system_1_sm_master".
  *
- * Model version              : 1.225
+ * Model version              : 1.231
  * Simulink Coder version : 8.7 (R2014b) 08-Sep-2014
- * C source code generated on : Mon Feb 27 11:22:27 2017
+ * C source code generated on : Fri May 26 22:43:51 2017
  *
  * Target selection: rtlab_rtmodel.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -819,7 +819,7 @@ typedef struct {
   real_T Idletime;                     /* '<S3>/OpMonitor' */
   real_T Overruntimes;                 /* '<S3>/OpMonitor' */
   real_T UnitDelay[4];                 /* '<S24>/Unit Delay' */
-  real_T SFunction_g[6];               /* '<S51>/S-Function' */
+  real_T SFunction_c[6];               /* '<S51>/S-Function' */
   real_T DataTypeConversion[4];        /* '<S27>/Data Type Conversion' */
   real_T AC;                           /* '<S44>/AC' */
   real_T StateSpace_o1[12];            /* '<S54>/State-Space' */
@@ -839,7 +839,7 @@ typedef struct {
   real_T TransportDelay_j;             /* '<S30>/Transport Delay' */
   real_T Memory_j;                     /* '<S30>/Memory' */
   real_T Switch_p;                     /* '<S30>/Switch' */
-  real_T SFunction_l[2];               /* '<S31>/S-Function' */
+  real_T SFunction_f[2];               /* '<S31>/S-Function' */
   real_T Product;                      /* '<S3>/Product' */
   real_T donotdeletethisgain_d;        /* '<S35>/do not delete this gain' */
   real_T donotdeletethisgain_a;        /* '<S34>/do not delete this gain' */
@@ -917,7 +917,7 @@ typedef struct {
   } TransportDelay_PWORK_a;            /* '<S30>/Transport Delay' */
 
   int_T SFunction_IWORK[5];            /* '<S48>/S-Function' */
-  int_T SFunction_IWORK_b[5];          /* '<S49>/S-Function' */
+  int_T SFunction_IWORK_n[5];          /* '<S49>/S-Function' */
   int_T StateSpace_IWORK[317];         /* '<S54>/State-Space' */
   struct {
     int_T Tail;
@@ -933,7 +933,7 @@ typedef struct {
     int_T CircularBufSize;
   } TransportDelay_IWORK_i;            /* '<S30>/Transport Delay' */
 
-  int_T SFunction_IWORK_n[5];          /* '<S50>/S-Function' */
+  int_T SFunction_IWORK_c[5];          /* '<S50>/S-Function' */
   int8_T DiscreteTimeIntegrator_PrevRese[4];/* '<S25>/Discrete-Time Integrator' */
   boolean_T Tail_MODE;                 /* '<S24>/Tail' */
 } DW_my_pv_system_1_sm_master_T;
@@ -1110,10 +1110,10 @@ struct P_my_pv_system_1_sm_master_T_ {
   real_T Memory1_8_X0;                 /* Expression: 0
                                         * Referenced by: '<S3>/Memory1'
                                         */
-  real_T SFunction_P1_Size_i[2];       /* Computed Parameter: SFunction_P1_Size_i
+  real_T SFunction_P1_Size_c[2];       /* Computed Parameter: SFunction_P1_Size_c
                                         * Referenced by: '<S48>/S-Function'
                                         */
-  real_T SFunction_P1_j;               /* Expression: Acqu_group
+  real_T SFunction_P1_l;               /* Expression: Acqu_group
                                         * Referenced by: '<S48>/S-Function'
                                         */
   real_T OpMonitor_P1_Size[2];         /* Computed Parameter: OpMonitor_P1_Size
@@ -1152,10 +1152,10 @@ struct P_my_pv_system_1_sm_master_T_ {
   real_T OpMonitor_P6[32];             /* Computed Parameter: OpMonitor_P6
                                         * Referenced by: '<S3>/OpMonitor'
                                         */
-  real_T SFunction_P1_Size_p[2];       /* Computed Parameter: SFunction_P1_Size_p
+  real_T SFunction_P1_Size_b[2];       /* Computed Parameter: SFunction_P1_Size_b
                                         * Referenced by: '<S49>/S-Function'
                                         */
-  real_T SFunction_P1_l;               /* Expression: Acqu_group
+  real_T SFunction_P1_b;               /* Expression: Acqu_group
                                         * Referenced by: '<S49>/S-Function'
                                         */
   real_T u_Value;                      /* Expression: 0
@@ -1164,22 +1164,22 @@ struct P_my_pv_system_1_sm_master_T_ {
   real_T UnitDelay_InitialCondition_p; /* Expression: 0
                                         * Referenced by: '<S24>/Unit Delay'
                                         */
-  real_T SFunction_P1_Size_d[2];       /* Computed Parameter: SFunction_P1_Size_d
+  real_T SFunction_P1_Size_b3[2];      /* Computed Parameter: SFunction_P1_Size_b3
                                         * Referenced by: '<S51>/S-Function'
                                         */
-  real_T SFunction_P1_d;               /* Expression: src
+  real_T SFunction_P1_bg;              /* Expression: src
                                         * Referenced by: '<S51>/S-Function'
                                         */
-  real_T SFunction_P2_Size_b[2];       /* Computed Parameter: SFunction_P2_Size_b
+  real_T SFunction_P2_Size_o[2];       /* Computed Parameter: SFunction_P2_Size_o
                                         * Referenced by: '<S51>/S-Function'
                                         */
-  real_T SFunction_P2_a;               /* Expression: Data_width
+  real_T SFunction_P2_o;               /* Expression: Data_width
                                         * Referenced by: '<S51>/S-Function'
                                         */
-  real_T SFunction_P3_Size_d[2];       /* Computed Parameter: SFunction_P3_Size_d
+  real_T SFunction_P3_Size_c[2];       /* Computed Parameter: SFunction_P3_Size_c
                                         * Referenced by: '<S51>/S-Function'
                                         */
-  real_T SFunction_P3_d;               /* Expression: st
+  real_T SFunction_P3_h;               /* Expression: st
                                         * Referenced by: '<S51>/S-Function'
                                         */
   real_T NotinARTEMIS_Value;           /* Expression: 0
@@ -1377,16 +1377,16 @@ struct P_my_pv_system_1_sm_master_T_ {
   real_T Memory_X0_k;                  /* Expression: sps.Vinit
                                         * Referenced by: '<S30>/Memory'
                                         */
-  real_T SFunction_P1_Size_f[2];       /* Computed Parameter: SFunction_P1_Size_f
+  real_T SFunction_P1_Size_k[2];       /* Computed Parameter: SFunction_P1_Size_k
                                         * Referenced by: '<S31>/S-Function'
                                         */
-  real_T SFunction_P1_o;               /* Expression: Data_width
+  real_T SFunction_P1_n;               /* Expression: Data_width
                                         * Referenced by: '<S31>/S-Function'
                                         */
-  real_T SFunction_P2_Size_m[2];       /* Computed Parameter: SFunction_P2_Size_m
+  real_T SFunction_P2_Size_k[2];       /* Computed Parameter: SFunction_P2_Size_k
                                         * Referenced by: '<S31>/S-Function'
                                         */
-  real_T SFunction_P2_l[2];            /* Expression: InitialConditions
+  real_T SFunction_P2_f[2];            /* Expression: InitialConditions
                                         * Referenced by: '<S31>/S-Function'
                                         */
   real_T donotdeletethisgain_Gain_n;   /* Expression: 1
