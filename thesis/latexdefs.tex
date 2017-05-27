@@ -15,7 +15,16 @@
 \usepackage[english]{babel}%for dealing neatly with umlautes
 \usepackage{units}%for consistent use of units
 \usepackage{url}%for type setting urls
-\usepackage{hyperref}%for internal document links
+\usepackage{varioref}
+\usepackage[hidelinks,%clickable cross references and URLs
+%            colorlinks=true,
+            pdftex,%pdf meta data
+            hypertexnames=false,
+            pdfauthor={Author name},%pdf meta data
+            pdftitle={Thesis title},%pdf meta data
+            % pdfsubject={\@title},%pdf meta data
+            pdfkeywords={thesis,and,other,keywords}]{hyperref}%for internal document links
+\usepackage{cleveref}
 \hypersetup{pdfborder=0 0 0}
 \hypersetup{colorlinks=true}
 \hypersetup{allcolors=unswred2}
@@ -32,8 +41,9 @@
 \usepackage{tocbibind}%for adding bibliography to toc
 \usepackage[acronym, nonumberlist, nopostdot, nogroupskip]{glossaries} %for the list of acronyms
 \setacronymstyle{long-short}
+
 \renewcommand{\baselinestretch}{1.5}%
-\usepackage{varioref}
+
 
 
 \newacronym{PV}{PV}{Photovoltaic}
@@ -59,3 +69,4 @@
 \newacronym{PR}{PR controller}{proportional–resonant controller}
 \newacronym{DSP}{DSP}{digital signal processor}
 \newacronym{SSGPVC}{SSGPVC}{single stage grid-connected PV converter}
+\newacronym{SSGPVS}{SSGPVS}{single stage grid-connected PV system}

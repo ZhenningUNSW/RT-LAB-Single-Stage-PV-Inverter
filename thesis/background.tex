@@ -1,6 +1,6 @@
 \chapter{Background}\label{ch:background}
-
-\section{General Introduction}
+This chapter present more detailed introduction to solar \gls{PV} and \gls{PVS} in section \ref{sec:general_intro}. The following is context of \gls{HIL} and its applications and advantages in section \ref{sec:HIL}. 
+\section{General Introduction}\label{sec:general_intro}
 \gls{PVS} is type of power system which convert solar power into electricity by means of photovoltaic effect. \gls{PVS} have many advantages and become more and more popular nowadays compared with traditional fossil fuel based energy generation method. It has became a vital part of renewable energy or green energy, since it generate zero green house gas during operation. The module or panel price have experienced huge decline since middle of 2008\cite{Bazilian2013329}, which makes the the whole \gls{PV} industry prospered. According to the literature, \gls{PV} cell is able to become an important alternate renewable energy source till 2040\cite{RN3}. 
 \begin{figure}[b]
     \centering
@@ -9,7 +9,7 @@
     \label{fig:typical pv system}
 \end{figure}
 
-Power electronic is a vital part for solar power generation. Typically, a \gls{SSGPVC} consist of a solar panel which absorb and convert sunlight into electricity and one or more stages of power converters that transform the electricity from \gls{DC} into \gls{AC}, as well as other accessories for mounting and connecting different components. \vref{fig:typical pv system} indicate a general configuration of \gls{PVS}. Due to the output characteristic of a typical solar cell and the need to inject power into the grid, there are at least two stages in a grid-connected PVS conventionally. The use of optional DC/DC convert(s) is to extract maximum power from upstream solar cells or units, of which is also known as \gls{MPPT}. Additionally, it is able to provide required voltage for next stage inverter to work with a appropriate duty cycle. The functionality of DC/AC converter is to inject sinusoidal current whose phase may or may not be synchronized with grid voltage(depends on applications) into grid. 
+Power electronic is a vital part for solar power generation. Typically, a \gls{SSGPVC} consist of a solar panel which absorb and convert sunlight into electricity and one or more stages of power converters that transform the electricity from \gls{DC} into \gls{AC}, as well as other accessories for mounting and connecting different components. \Vref{fig:typical pv system} indicate a general configuration of \gls{PVS}. Due to the output characteristic of a typical solar cell and the need to inject power into the grid, there are at least two stages in a grid-connected PVS conventionally. The use of optional DC/DC convert(s) is to extract maximum power from upstream solar cells or units, of which is also known as \gls{MPPT}. Additionally, it is able to provide required voltage for next stage inverter to work with a appropriate duty cycle. The functionality of DC/AC converter is to inject sinusoidal current whose phase may or may not be synchronized with grid voltage(depends on applications) into grid. 
 
 Currently, there are various configurations for grid-connected \gls{PVS} including centralized structure, the string structure, the multi-string structure and ac-module structure.\cite{5540302}. Especially, multi-string and ac-module structure have been used in a broad range of applications. Although multi-string configuration have many advantages like reducing loss due to solar panel unbalanced and a centralized \gls{MPPT} over centralized configuration, it also suffers from lacking redundancy and scalability. With optional DC/DC converter, the overall system efficiency is compromised compared with a \gls{SSGPVC}. 
 
@@ -17,7 +17,7 @@ As a result, ac-module configuration which is based on \gls{SSGPVC} is gaining m
 
 Although the \gls{SSGPVC} has some limitations, it is worth to improve the system performance and make it a better solution. Its 'apply and plug' characteristic can be consider to be a general solution to various grid-connected \gls{PV} applications. 
 
-\section{Hardware-in-the-loop Simulation}
+\section{Hardware-in-the-loop Simulation}\label{sec:HIL}
 Nowadays, the complexity of various digital algorithms for power electronic applications, circuit topology is rising incredibly, which makes the simulation and development of power electronics related product increasingly time-consuming.\cite{7497546} In order to fulfill the need for fast prototyping, verified the controller functionalities without implementation of hardware, and avoid hazardous situation while testing the controller on a real hardware, the \gls{HIL} simulation or more specific \gls{PIL} simulation is deployed and used intensively for such applications. 
 
 High-performance embedded system enabled a power electronic revolution. The increasing demand for digital controlled power electronics system requires the development to verify the controller functionalities before the controllers are tested on a real hardware platform. \gls{PIL} allow developers test and verify processors' performance on a simulator which host the virtual hardware, so it become a crucial part of developing a digital controlled power electronics system.  
