@@ -100,7 +100,7 @@ Among those \gls{PLL} structures, \gls{SOGI} have been widely discussed and used
 \end{align}
 For current control of \gls{SSGPVC}, \gls{PI} and \gls{PR} are common choices. The transfer function of a typical \gls{PI} is illustrated in Equation \eqref{equ:pi}. In a negtive feedback system, \gls{PI} can be used to eliminate error between target and output value. The proportional term may help reduce the error quickly and the integral term may be used to eliminate steady state error. It features simplicity as well as reliability and has been used widely in many control engineering applications. Since \gls{PI} is a first order system, the performance to track a sinusoidal target is actually not very great and the error cannot be eliminated. It also suffers poor high frequency components rejection performance.
 
-Equation \eqref{equ:pr} represents \gls{PR} where $\omega_1$ is the fundamental frequency of the grid in radiance. $\omega_1$ is either $50\times 2\pi=314.16$ rad/s for 50 Hz system or $377$ rad/s for 60 Hz system. Equation \eqref{equ:compensator} represents harmonic compensators for output current where $\omega_n$ are harmonics. Typically in a \gls{PVS}, both \gls{PR} and compensator are used in conjunction to archive better performance. One good aspect offered by the compensator is that harmonics can be selectively eliminated by varying $\omega_n$ where $\omega_n = n \times \omega_1$ and $n=3,5,7\dots$. The downside of the compensator is that it may result in high orders system which requires more computation power that some low end microcontrolers may struggle to offer. 
+Equation \eqref{equ:pr} represents \gls{PR} where $\omega_1$ is the fundamental frequency of the grid in radiance. $\omega_1$ is either $50\times 2\pi=314.16$ rad/s for 50 Hz system or $377$ rad/s for 60 Hz system. Equation \eqref{equ:compensator} represents harmonic compensators for output current where $\omega_n$ are harmonics. Typically in a \gls{PVS}, both \gls{PR} and compensator are used in conjunction to archive better performance. One good aspect offered by the compensator is that harmonics can be selectively eliminated by varying $\omega_n$ where $\omega_n = n \times \omega_1$ and $n=3,5,7\dots$. The downside of the compensator is that it may result in high orders system which requires more computation power that some low end microcontrollers may struggle to offer. 
 
 \section{Opal-RT Simulator}
 \begin{figure}[b]
@@ -110,8 +110,27 @@ Equation \eqref{equ:pr} represents \gls{PR} where $\omega_1$ is the fundamental 
      \label{fig:op4500}
 \end{figure}
 Opal-RT is a company based in Canada which provide \gls{RT} simulators and its software solutions to make \gls{RT} simulation possible. In this project, their simulator model OP4500 which is shown in \Vref{fig:op4500} is used. OP4500 combine traditional X86 architecture and latest \gls{FPGA} simulation technique to accelerate the process. The onboard Intel CPU can archive minimum time step of 7 $\mu
-$s without getting overrun and \textit{eHS} \gls{FPGA} based simulation solver is able to archive minimum time steps of 250 ns. It also multiple Input and Output(IO) modules including both analog and digital types, for interfacing external hardwares to perform \gls{HIL} simulation. The simulartor can be either a controller to run control algorithm and generate desired signal to control actual hardwares or become a simulated plant to develop and verify functionalities of external controller. 
+$s without getting overrun and \textit{eHS} \gls{FPGA} based simulation solver is able to archive minimum time steps of 250 ns. It also multiple Input and Output(IO) modules including both analog and digital types, for interfacing external hardware to perform \gls{HIL} simulation. The simulartor can be either a controller to run control algorithm and generate desired signal to control actual hardware or become a simulated plant to develop and verify functionalities of external controller. 
 
 \textit{RTLAB} is the software running inside a host personal computer(PC) in order to be able to use the box for simulations. \textit{RTLAB} currently is fully compatible with \textit{MATLAB} and \textit{SIMULINK} which make it easy to develop models for \gls{RT} simulation. currently, \textit{RTLAB} only supports up to \textit{MATLAB 2014B} and not all models in \textit{SIMULINK} are supported. 
+
+\section{Controller Development Kit}
+Implementation of all controller functionalities is an vital part of this project. As stated in previous chapter, cost need to be considered since upfront cost of modular \gls{SSGPVS} is still a bit higher at the moment. Microcontroller as the most important part of controller system, could be expensive sometimes depending on performance configurations. Obviously, higher the performance, greater the cost on microcontroller. 
+\begin{figure}[h]
+     \centering
+     \includegraphics[width = 0.5\textwidth]{figures/control_card}
+     \caption{TMS320F28027 Experiment Kit}
+     \label{fig:TMS320F28027}
+\end{figure}
+The controller is implemented in using a Texas Instrument C2000 microcontroller (TMS320F28027). The experiment controller kit is completely off-the-shelf and it is quite inexpensive to obtain. The volume price for this microcontroller is quite competitive considering the performance it can offer. This is a 32-bit fix-point microcontroller with clock frequency up to 60 Mhz and some necessary peripherals, of which is designed for microinverter applications. The microcontroller structure block diagram is shown in \Vref{fig:tms320}.
+\begin{figure}[h]
+     \centering
+     \includegraphics[width = 0.7\textwidth]{figures/tms320}
+     \caption{TMS320F28027 structure and on-chip peripherals}
+     \label{fig:tms320}
+\end{figure}
+
+
+
 
 
