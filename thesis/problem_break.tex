@@ -1,0 +1,30 @@
+\chapter{Implementation}\label{ch:problem}
+\section{Breaking Down the Problem}
+Having examined the state of art developments of \gls{SSGPVS}, what are essentials to successfully make a \gls{SSGPVS} using \gls{RT} simulators and microcontroller is pretty clear. Although theory behind \gls{SSGPVS}  has been studied for quite a long time and there has been existing products on the market already, documentations on development process of a \gls{RT} or \gls{HIL} simulation are still limited. So far the reviews have shed the light on tasks needed to complete the whole project. 
+
+The first task is to develop a \gls{SSGPVS} in the pure software environment which may pave th way for developing a \gls{RT} model for the simulator. The process involved is described in detail in \Vref{sec:build_simulink}. The second issue which is discussed in \Vref{sec:convert_rt} is to revise the model so that it can be load into \gls{RT} simulator and runs in \gls{RT}. 
+The third issue is to implement the controller functionalities using a \gls{DSP}. The implementation involves some advanced C language programing which is something I enjoy doing. The details of implementation are presented in \Vref{sec:implement_micro}.
+The fourth issue which discussed in \Vref{sec:perform_pil} is to perform \gls{PIL} simulation. This issue is a little bit complicated since it requires me to be well familiar with the real time simulator. And I have not found much resources on this so far. It is a milestone to this project.
+\section{Building Model in \textit{SIMULINK}}\label{sec:build_simulink}
+The purpose of a pure software simulation model is to verify the correctness of circuit topology, solar panel model and proper design of LCL filter. Luckily, \textit{SIMULINK} has a build-in \gls{SSGPVS} model which can be found in \textit{MALTAB 2015B} and later versions\cite{solar_buildin_model}. It provide a good starting point of this project. Since the project focus on performing \gls{RT} simulations, any already known to work model can be used to accelerate the process of building the whole model and save some time avoid doing everything from scratch. 
+
+The model was quite well designed and simulation ran with not error. Minor adjustment may be made before turning it into a \gls{RT} model. The system was design for North America market which result in a 60 Hz operation of grid frequency. Since the grid voltage in Australia is 50 Hz, the grid frequency of original model need to be change to 50 Hz. In order to change the frequency, the minimum time step, \gls{PWM} frequency of the inverter and controller sampling time need to be changed as well. The reason for changing the minimum time step is that fixed time solver for solving ordinary differential equations(ODE) is used for simulation which means grid frequency, controller sampling time or any other components' sampling time need to be integer multiple of minimum time step. \Vref{tab:change_list} is a summary of different configurations between models. 
+\begin{center}\label{tab:change_list}
+\begin{tabular}{ |c|c|c| } 
+ \hline
+ Items Changed & Origin Configuration & New Configuration\\ \hline
+ Minimum time step &  $1.323e^{-6}$ s & $6.25e^{-7}$ s \\ \hline
+ Carrier frequency & 3780 Hz & 8000 Hz\\ \hline
+ Controller sampling & $2.6455e^{-5}$ s& $1.25e^{-5}$ s\\ \hline
+\end{tabular}
+\end{center}
+
+Noticing that the switching frequency is set to 8 kHz because higher switching frequency may lead to less bulky inductors in real life which is less expensive. Instead of setting switching frequency to nearer 4 kHz, double of the frequency is chosen. In order to ensure the accuracy of simulation and avoid limited resolution on duty cycle, $6.25e^{-7}$ s of minimum time step has been chosen to ensure minimum stepping of duty cycle is 0.5\%. The duty cycle resolution could affect \gls{SSGPVC} creating high output current THD and undesired phase shift since duty cycle can only vary in discrete steps.
+
+Changed made in \gls{PWM} frequency lead to smaller minimum time step, thus, more time needed to generate one second simulation results. The time it takes to run the simulation depends on configurations of the host PC and it is common to run simulation for around five minutes to generate one second of results. 
+
+The controller design in the model is different from what has been mentioned previously. Bearing in mind that the purpose of using this model is to obtain a working plant for performing \gls{RT} simulation in the next stage, as a result, the design of the controller is not thoroughly studied. 
+ 
+\section{Convert to Real-time}\label{sec:convert_rt}\
+\section{Implementation In Microcontroller}\label{sec:implement_micro}
+\section{Performing \gls{PIL} Simulation}\label{sec:perform_pil}
