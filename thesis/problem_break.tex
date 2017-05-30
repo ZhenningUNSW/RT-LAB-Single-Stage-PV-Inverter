@@ -121,7 +121,7 @@ Timer of \tms~is extremely powerful, since our \gls{PWM} frequency is relatvely 
 \begin{align}
     Duty = \frac{Comparator\ value}{Period\ value}
 \end{align} 
-\begin{figure}[b]
+\begin{figure}[h]
      \centering
      \includegraphics[width = 0.9\textwidth]{figures/timer_wave}
      \caption{Timer waveform}
@@ -144,8 +144,73 @@ where $y= (\omega_nT_s)^2$ and $x=2k\omega_nT_s$. $\omega_n$ is the fundamental 
 
 The current PR controller given in previous chapter is also defined in continuous time domain. Same method, ie trapezoidal approximation, has been used to derive the discrete time system.
 \begin{align}
-    G_pr &= K_p+\frac{K_i\frac{2(z-1)}{T(z+1)}}{\frac{4(z-1)^2}{T^2(z+1)^2}+\omega_n^2}\\
-         &= \frac{(K_p+\frac{2K_iT}{(4+T^2\omega^2)})+}{y}
+    G_{pr} &= K_p+\frac{K_i\frac{2(z-1)}{T(z+1)}}{\frac{4(z-1)^2}{T^2(z+1)^2}+\omega_n^2}\\
+         &= \frac{(K_p+\frac{2K_iT}{(4+T^2\omega^2)})+(\frac{2K_p(T^2\omega^2-4)}{(T^2\omega^2+4)})z^{-1}+(K_p-\frac{2K_iT}{T^2\omega^2+4})}{1+\frac{2T^2\omega^2-4}{T^2\omega^2+4}z^{-1}+z^{-2}}
 \end{align}
+Transfer function can be implemented reusing the 2 poles 2 zeros system function to make coding easier. 
 
+At the closing stage of this project, harmonic compensators are not added into the current transfer function because adding more transfer functions in parallel makes it hard to debug the system. Turns out that absorbing $K_p$ is not a good practice here because it makes adding harmonic compensation difficult. Developer can take advantage of parallel implementation here to separate origin transfer function into gain $K_p$ part and resonant second order system part $\frac{K_is}{s^2+\omega_n^2}$ to reuse resonant part in code to add harmonic compensation easily. 
 \section{Performing \gls{PIL} Simulation}\label{sec:perform_pil}
+\subsection{Simulator Output}
+The simulator is able to generate two types of output signals, which are analog and digital.
+
+Digital output implemented in the simulator is open-drain which means the output would be able to generate high voltage level without an external power supply. But one advantage offered by this structure is that the output voltage level can be determined by users with proper power supply. 
+
+Analog output is quite straightforward, \rtlab offers a configuration model to let users set channel properties easily. Those properties include upper/lower bound, offsets and scaling, which makes it easy to interface with external circuit. 
+
+\subsection{Simulator Input}
+There are two types of input the simulator can accept which are analog and digital. Since microcontroller does not have DAC build-in and there is no use to feed analog signal into simulator. So use of analog input is out of scope for this project. 
+
+The usage of digital input is critical for the success of this project. After examining simulator's device sheets and various reference manuals, there are many different types of digital input to feed digital signal into \gls{CPU} simulation environment. One vital thing developers need to be careful about is the time step of \gls{CPU}. The time step of \gls{CPU} environment imposes maximum sampling frequency of digital input. This is extremely important, particularly for power electronic applications when uses want to feed high frequency \gls{PWM} into the simulator. If the \gls{PWM} frequency is too high, duty cycle resolution may be sacrificed due to sampling effect. The available types of digital input which can be implemented in \gls{CPU} environment are listed below. 
+\begin{enumerate}
+\item \textbf{Static input} \\
+This type of digital inputs is the easiest to understand. Before simulation start, the \gls{CPU} would read the digital input ports and record current input state for one time. The values read back from IO would be used later in the simulation. After simulation start, \gls{CPU} would not read digital input anymore. 
+\item \textbf{PWM input} \\
+This type of digital input is based on digital counter which means instead of directly transmit input state into simulation environment, the \gls{CPU} calculate the number of impulse received during one computation interval and record the time span of high and low level to obtain the duty cycle. In this way, \gls{PWM} input signal is actually demodulated and extra modulation blocks are needed to modulate signal again. So the output ports presented in \simulink~are frequency in Hz and duty cycle. \Vref{fig:pwm_in} illustrates how the input looks like in \simulink.
+
+In order to perform simulation close to real scenarios, use of this method for \gls{PWM} input is cumbersome and undesired. 
+\begin{figure}[h]
+     \centering
+     \includegraphics[width = 0.5\textwidth]{figures/PWM_in}
+     \caption{PWM type digital input block diagram}
+     \label{fig:pwm_in}
+\end{figure}
+\item \textbf{Event detection} \\
+Event detection is capable of detect any digital event, including rising edge and failing edge which means we can use this feature to generate recover the input \gls{PWM}. In order to be able to convert event into \gls{PWM} signals, \Vref{fig:edge_detect} illustrates a nice way to archive the goal. The module can also generate time stamps when events occur. 
+\begin{figure}[h]
+     \centering
+     \includegraphics[width = 0.9\textwidth]{figures/event_detect}
+     \caption{Edge dectection input block diagram}
+     \label{fig:edge_detect}
+\end{figure}
+\end{enumerate}
+
+In this project, the third approach (Event detection) is used and become a pitfall. The problem is that in this case the minimum time step of \gls{CPU} environment is set to $2e^{-5}$ s which is the minimum time step tried without getting overruns in the simulator, which lead to a maximum sampling frequency of digital input at 50 kHz. In this case, if a 25 kHz external \gls{PWM} is fed into the system, the duty cycle resolution is merely $\frac{50e^3}{25e^3}=2$, which is far more from sufficient. It was not until the closing stage of this project before this issue was found, which made it difficult to fix the issue due to limited time. 
+
+One possible workaround for the problem encountered above is to feed external \gls{PWM} into \gls{FPGA} environment directly in stead of \gls{CPU} environment. \Vref{fig:fpga_digital} illustrates the available sources to control switching elements simulated using \gls{FPGA}. Although achievable minimum time step depends on model configuration, \ehs~can achieve average 250 ns of step size. Assuming minimum duty cycle variance is 1\% and it is possible to calculate the maximum external \gls{PWM} frequency is allowed. In this case, the frequency is $\frac{1}{250 \times 10 \times 10^{-9}}=400\ kHz$ which can be suitable for a wider range of simulation applications. Unfortunately, at the end of this project, this method has not been verified working yet. 
+\begin{figure}[h]
+     \centering
+     \includegraphics[width = 0.6\textwidth]{figures/fpga_digital}
+     \caption{eHS gate source configurations}
+     \label{fig:fpga_digital}
+\end{figure}
+\subsection{Test Setup}
+\begin{figure}[h]
+     \centering
+     \includegraphics[width = 0.9\textwidth]{figures/setup}
+     \caption{Simulation setup}
+     \label{fig:setup}
+\end{figure}
+\Vref{fig:setup} illustrates the whole test setup for \gls{PIL} for this project. It clearly shows all the necessaries in order to perform \gls{PIL} simulation. Process required to run simulation are summarized here. 
+\begin{enumerate}
+\item \textbf{Setup wires} \\
+Connect all wires required and it would be nice to use oscilloscope for debugging purpose. Double check wire connections to avoid making mistakes. 
+\item \textbf{Upload model onto simulator} \\
+Users have to upload loadable model onto simulator and make sure the simulator is ready to run simulation first. If the model is never ran before, it would be better if flag to force flush \gls{FPGA} firmware is turned on. Doing this can ensure we always have the up-to-date model being uploaded. However, programing \gls{FPGA} firmware takes more than five minutes which could lead to waste of precious time. 
+\item \textbf{Program microcontroller} \\
+\tms~may requires re-programming each time it gets powered up depending on RAM or FlASH version of binary file was previously programed. 
+\item \textbf{Start running simulation} \\
+Once the model is loaded and ready to run, users can start to run \gls{PIL} simulation. Waveforms can be accessed via host PC using auto-generated control console. It is more convenient to use oscilloscope to observe how model runs because communication bandwidth between host PC and simulator is so poor which makes it hard to use console for observation if more than five signals need to be watched. Once the model is running, simulator can be treated as virtual hardware and generated waveforms should be the same as expected. \\
+\item \textbf{Stop simulation} \\
+Once simulation is finished, users should always manually reset the simulator otherwise \rtlab~may crash and file results in the simulator may not be retrieved. 
+\end{enumerate}
